@@ -46,7 +46,13 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        flex-direction: column;
         font-size: 18px;
+      }
+      #player-mock a,
+      #player-mock a:visited {
+        color: #fff;
+        text-decoration: underline;
       }
       #player {
         display: none;
@@ -159,7 +165,13 @@
   </head>
   <body>
     <div id="left">
-      <div id="player-mock">AJJ Live from Quarantine<br/>Pick a song to start<br/>Then keep picking to add songs to your queue</div>
+      <div id="player-mock">
+        <h2>AJJ – Live from Quarantine<br/>Pick a song to start<br/>Then keep picking to add songs to your queue</h2><br/>
+<a href="https://venmo.com/bonnseanette" target="_blank">Venmo: @bonnseanette</a>
+<a href="https://paypal.me/bonnseanette" target="_blank">Paypal: paypal.me/bonnseanette</a>
+<a href="https://cash.app/$bonnseanette" target="_blank">Cash App: $bonnseanette</a>
+<a href="http://shop.ajjtheband.com" target="_blank">Merch</a>
+</div>
       <div id="player"></div>
       <p id="title">
         <button id="reset">Reset</button>
