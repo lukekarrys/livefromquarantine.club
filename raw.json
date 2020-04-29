@@ -1,14 +1,104 @@
 {
  "kind": "youtube#playlistItemListResponse",
- "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/vEbajEy0G1Bzf3pzAAO63Mzpmk4\"",
+ "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/GOtjujhnqTf3byr6UMMXSkcWb5I\"",
  "pageInfo": {
-  "totalResults": 46,
+  "totalResults": 48,
   "resultsPerPage": 50
  },
  "items": [
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/at4uLXP-Qi8kw_CDC7rVJDxmGMU\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/wNOU78gHIU1GMBuU1Wpo-rywtO8\"",
+   "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS41NTZEOThBNThFOUVGQkVB",
+   "snippet": {
+    "publishedAt": "2020-04-29T18:45:26.000Z",
+    "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+    "title": "Live from Quarantine - April 28",
+    "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\nAJJ - Kokopelli Face Tattoo 0:15\nAJJ - Now That I'm at the Top of My Game 4:20\nLeonard Cohen - Chelsea Hotel 7:34\nKimya Dawson - Hadlock Padlock 11:16\nAJJ - American Garbage 15:42\nAJJ - People II: The Reckoning 18:15\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/qHll4LNerNI/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/qHll4LNerNI/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/qHll4LNerNI/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/qHll4LNerNI/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/qHll4LNerNI/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "AJJ the band",
+    "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+    "position": 0,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "qHll4LNerNI"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/rNteOD7e0TfNAfckIFnEskuVLTU\"",
+   "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS42Qzk5MkEzQjVFQjYwRDA4",
+   "snippet": {
+    "publishedAt": "2020-04-29T18:45:12.000Z",
+    "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+    "title": "Live from Quarantine - April 28",
+    "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\nAJJ - Kokopelli Face Tattoo 0:15\nAJJ - Now That I'm at the Top of My Game 4:20\nLeonard Cohen - Chelsea Hotel 7:34\nKimya Dawson - Hadlock Padlock 11:16\nAJJ - American Garbage 15:42\nAJJ - People II: The Reckoning 18:15\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/qHll4LNerNI/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/qHll4LNerNI/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/qHll4LNerNI/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/qHll4LNerNI/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/qHll4LNerNI/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "AJJ the band",
+    "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+    "position": 1,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "qHll4LNerNI"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/8Z81gbdPIcu9tBxpsEmzNykuHuQ\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4zMEQ1MEIyRTFGNzhDQzFB",
    "snippet": {
     "publishedAt": "2020-04-28T06:08:38.000Z",
@@ -44,7 +134,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 0,
+    "position": 2,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "AIBbCySzIT0"
@@ -53,7 +143,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/H1Wd1iRmN9LEi5FQ3Pk9Zi7o3G0\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/KxRFdzgbQyneBOiPlyCBTC7MkpM\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4xMzgwMzBERjQ4NjEzNUE5",
    "snippet": {
     "publishedAt": "2020-04-27T19:15:42.000Z",
@@ -89,7 +179,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 1,
+    "position": 3,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "RMeGSbb6ZKI"
@@ -98,7 +188,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/97p8ElhfeDNXfIU_uYUHZWuofhw\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/B_BSHUrf2e7m68-qr_DWG3Sb-g0\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS44QzVGQUU2QjE2NDgxM0M4",
    "snippet": {
     "publishedAt": "2020-04-26T04:55:48.000Z",
@@ -134,7 +224,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 2,
+    "position": 4,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "jafhcRvR1iY"
@@ -143,7 +233,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/2G2v38JtkGGALtggnroVp1NjB68\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/aYkk_x-XZIplO0fFGoRqNYKAkgM\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5ENjI1QUI0MDI5NEQzODFE",
    "snippet": {
     "publishedAt": "2020-04-25T19:57:24.000Z",
@@ -179,7 +269,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 3,
+    "position": 5,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "_dS15JS1rfU"
@@ -188,7 +278,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/1OxIMNfXeB3DVaCyrMNUm4HZ5uU\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/iwL8AqtunpHvHoOS3QQweUt-B1w\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS41RTNBREYwMkI5QzU3RkY2",
    "snippet": {
     "publishedAt": "2020-04-24T21:20:46.000Z",
@@ -224,7 +314,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 4,
+    "position": 6,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "UxDtGetyKJA"
@@ -233,7 +323,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/qDQf7_qokpdZg1QTq16JuZVc8dI\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/AtT1MwPHSDyLV6HKX8RyUtnhsVo\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS40QzRDOEU0QUYwNUIxN0M1",
    "snippet": {
     "publishedAt": "2020-04-24T21:20:35.000Z",
@@ -269,7 +359,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 5,
+    "position": 7,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "UxDtGetyKJA"
@@ -278,7 +368,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/uXcLHFMhrqTfDbi9hJJ_b-Q3IXE\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/U9i_xStuowBAQw3_fYxBB21f2Lg\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4yQUJFNUVCMzVDNjcxRTlF",
    "snippet": {
     "publishedAt": "2020-04-23T19:45:21.000Z",
@@ -314,7 +404,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 6,
+    "position": 8,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "B95fKLU-R7M"
@@ -323,7 +413,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/2yaY0y_6cIO3Zr-Vhme9OO63z2o\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/w3w5MhcyNOcqgrPIosBPVIsU8mk\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4yQjZFRkExQjFGODk3RUFD",
    "snippet": {
     "publishedAt": "2020-04-22T19:16:51.000Z",
@@ -359,7 +449,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 7,
+    "position": 9,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "2HrrgJbnisc"
@@ -368,7 +458,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/eoa-7oRGrcLDGbknBJFBvxa69Pg\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/udZpxFkI7wCbnFabfzuvUmiDakU\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS41MzY4MzcwOUFFRUU3QzEx",
    "snippet": {
     "publishedAt": "2020-04-21T21:18:37.000Z",
@@ -404,7 +494,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 8,
+    "position": 10,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "N2QzHsWnrrE"
@@ -413,7 +503,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/PtFBGOAymbE3Tteh3NLgC3txfnI\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/yxClXo7pBzVjUBkO0e5yXvqwAd0\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5DRUQwODMxQzUyRTlGRkY3",
    "snippet": {
     "publishedAt": "2020-04-20T19:54:51.000Z",
@@ -449,7 +539,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 9,
+    "position": 11,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "E9u4ecwBvZY"
@@ -458,7 +548,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/sx-J8QIWqEdZPe4EVVNgWtJQviw\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/R8vr8929JDGeWH9U2lMUXpDBUYk\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5DNkMwRUI2MkI4QkI4NDFG",
    "snippet": {
     "publishedAt": "2020-04-19T18:56:58.000Z",
@@ -494,7 +584,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 10,
+    "position": 12,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "33AQ-7nMPco"
@@ -503,7 +593,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/rpO-LQPpV993i0SsGmbxKKiAWHo\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/zeBlxsL4MonbOVnWMwv_CJDidvQ\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS45NkVENTkxRDdCQUFBMDY4",
    "snippet": {
     "publishedAt": "2020-04-19T18:56:45.000Z",
@@ -539,7 +629,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 11,
+    "position": 13,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "33AQ-7nMPco"
@@ -548,7 +638,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/9iXZziVrcpK5f-s_WEfBh34iQJE\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/q8r_PkQpNc8qpP_KI7bhFufGihI\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4zQzFBN0RGNzNFREFCMjBE",
    "snippet": {
     "publishedAt": "2020-04-18T20:30:32.000Z",
@@ -584,7 +674,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 12,
+    "position": 14,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "atruJT4Pd9U"
@@ -593,7 +683,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/-Ldv2a47HMGdYoYMTdaHnaiXWAo\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/_U0ZPP1S7TFVa116u69Aepmj4us\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5GNDg1Njc1QzZERjlFRjE5",
    "snippet": {
     "publishedAt": "2020-04-17T18:52:57.000Z",
@@ -629,7 +719,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 13,
+    "position": 15,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "nUTSDIw546o"
@@ -638,7 +728,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/p91J208MLha7QgI11vvvCmAm9ag\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/Lf1fwASB2PCym2wZ5QNnt385-tI\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4xOTEzQzhBQzU3MDNDNjcz",
    "snippet": {
     "publishedAt": "2020-04-16T19:50:35.000Z",
@@ -674,7 +764,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 14,
+    "position": 16,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "IfLUpQhPS_Q"
@@ -683,7 +773,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/6lCsPv0r2u7UNgd-HZv9v8zQ4Eg\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/C4Rx7EBjhOeLR8eShfN6MeisAn4\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5BRjJDODk5REM0NjkzMUIy",
    "snippet": {
     "publishedAt": "2020-04-15T21:23:17.000Z",
@@ -719,7 +809,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 15,
+    "position": 17,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "OdoYQ7Yu__I"
@@ -728,7 +818,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/rubwZBQ9-kBc775M4OglX0hIuH0\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/UC5DEG0oDclTJv9557Sd6qDTpGE\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS45RjNFMDhGQ0Q2RkFCQTc1",
    "snippet": {
     "publishedAt": "2020-04-14T19:10:11.000Z",
@@ -764,7 +854,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 16,
+    "position": 18,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "ntB5v4hEcr0"
@@ -773,7 +863,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/1JTd9g9BfBbsCzlwbgGdBoaeiqI\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/oynxE_msXUoBNEfOJdmp6WPrs1Q\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5CMEQ2Mjk5NTc3NDZFRUNB",
    "snippet": {
     "publishedAt": "2020-04-13T20:41:16.000Z",
@@ -809,7 +899,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 17,
+    "position": 19,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "wR9OQ1Xqxx0"
@@ -818,7 +908,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/-6pRB6L7JHJ2Rwf8u3VHoXPf7KY\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/_mB28SqtmmMzc3QXrmUJz6nqQ3g\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4zRDBDOEZDOUM0MDY5NEEz",
    "snippet": {
     "publishedAt": "2020-04-12T18:31:19.000Z",
@@ -854,7 +944,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 18,
+    "position": 20,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "ceaVdlyX9Os"
@@ -863,7 +953,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/vU95XsmfASlFYqp7F_Dd5Nw7zRg\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/Espiw9PPTzSEYovyzPliIONz3Wc\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS41QUZGQTY5OTE4QTREQUU4",
    "snippet": {
     "publishedAt": "2020-04-11T20:12:35.000Z",
@@ -899,7 +989,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 19,
+    "position": 21,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "L0tggV58ouY"
@@ -908,7 +998,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/wJpYXKS0xqAppoiNJ1o_Q69_p2I\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/a_ZS10r-S7zNnPvAbrHr9AUGy64\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS43NDhFRTgwOTRERTU4Rjg3",
    "snippet": {
     "publishedAt": "2020-04-10T18:25:31.000Z",
@@ -944,7 +1034,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 20,
+    "position": 22,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "t6IwawYO-x8"
@@ -953,7 +1043,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/fXGQCeGAoBzl4oUSIuDtomhHq-M\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/PefuvdT03yMVDr6LtLuBgnQkhEg\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS44Mjc5REFBRUE2MTdFRDU0",
    "snippet": {
     "publishedAt": "2020-04-09T16:23:28.000Z",
@@ -989,7 +1079,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 21,
+    "position": 23,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "XoXabiKMhmg"
@@ -998,7 +1088,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/7SUYnXE4Vt1cBl1SBudMPCbnOEw\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/iQ0GaS1yuLuZCZIXTF3Sw9u5lQw\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5DMkU4NTY1QUFGQTYwMDE3",
    "snippet": {
     "publishedAt": "2020-04-08T22:50:39.000Z",
@@ -1034,7 +1124,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 22,
+    "position": 24,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "dubJxTm0tOM"
@@ -1043,7 +1133,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/Rq8RDAyAwPxfSqwdHOCXTlxHz8g\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/I3_RWtasbJXH9O89J9nhc4AakV0\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4yQUE2Q0JEMTk4NTM3RTZC",
    "snippet": {
     "publishedAt": "2020-04-07T19:57:13.000Z",
@@ -1079,7 +1169,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 23,
+    "position": 25,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "wPMCbfbq7KU"
@@ -1088,7 +1178,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/p52FsSm6cuAx3HlJKGBA6rWW5Kw\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/OAWvyyQLmRZSomsaHpLawKErPHU\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS43MTI1NDIwOTMwQjIxMzNG",
    "snippet": {
     "publishedAt": "2020-04-06T21:27:05.000Z",
@@ -1119,7 +1209,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 24,
+    "position": 26,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "mfCc5mT_I64"
@@ -1128,7 +1218,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/4akVdKWwtBwsrbObDN_qepbatPs\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/C0JGzvDn9Jqg5o5zH1y3RiYaKcw\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5DNzE1RjZEMUZCMjA0RDBB",
    "snippet": {
     "publishedAt": "2020-04-05T18:22:06.000Z",
@@ -1164,7 +1254,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 25,
+    "position": 27,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "VY4nSI-0gJQ"
@@ -1173,7 +1263,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/E69q1BTTLSnIvueeKwaB_LpnVeA\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/T-rBXHMdicPue_8abKTsl9ItXs8\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS45NzUwQkI1M0UxNThBMkU0",
    "snippet": {
     "publishedAt": "2020-04-04T23:41:36.000Z",
@@ -1209,7 +1299,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 26,
+    "position": 28,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "kRu_s_Er_vs"
@@ -1218,7 +1308,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/tTUnmatk43lBIhEJ9FcB-H815ac\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/HH6Xq7vhruiNsUTtZKa4OfYlQC4\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5GM0Q3M0MzMzY5NTJFNTdE",
    "snippet": {
     "publishedAt": "2020-04-03T20:08:09.000Z",
@@ -1254,7 +1344,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 27,
+    "position": 29,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "dkUIfRFo3cE"
@@ -1263,7 +1353,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/w24pMQkkzMWq5tI6zQJsE94__kM\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/pN_XWtvztxwHnwd61u_2Qwh0kSM\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4yMDhBMkNBNjRDMjQxQTg1",
    "snippet": {
     "publishedAt": "2020-04-02T23:52:14.000Z",
@@ -1299,7 +1389,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 28,
+    "position": 30,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "6qhGWwgm3qo"
@@ -1308,7 +1398,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/b47WcwstViteYK8Fu4-IZiJyuKQ\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/D-tjNq4GYn6GxClbS7jsKWu3v4M\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5ENDU4Q0M4RDExNzM1Mjcy",
    "snippet": {
     "publishedAt": "2020-04-01T20:09:11.000Z",
@@ -1344,7 +1434,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 29,
+    "position": 31,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "rcyFwiauUcw"
@@ -1353,7 +1443,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/ErYE7Bn7nOcYrN5oJmJZHqvxkrA\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/BWonVOTjZMk1My1V2b1Qgc3SNNo\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS45RTgxNDRBMzUwRjQ0MDhC",
    "snippet": {
     "publishedAt": "2020-03-31T18:58:24.000Z",
@@ -1389,7 +1479,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 30,
+    "position": 32,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "NauXNPCK3Dk"
@@ -1398,7 +1488,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/cF8k698nfDMCCZ6OxJwFaAMe5aI\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/gi8vtimHN2mT43pvKtF3ga2wVfM\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4yMUQyQTQzMjRDNzMyQTMy",
    "snippet": {
     "publishedAt": "2020-03-30T19:19:24.000Z",
@@ -1434,7 +1524,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 31,
+    "position": 33,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "z65QOiVKiNw"
@@ -1443,7 +1533,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/ikSqJgpJNdbLrMZF9Pu1c4Thsws\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/kIYxywAZovWv7OTK8Pn9qUE1KCU\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5EQUE1NTFDRjcwMDg0NEMz",
    "snippet": {
     "publishedAt": "2020-03-29T19:39:52.000Z",
@@ -1479,7 +1569,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 32,
+    "position": 34,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "GySHvIDk24U"
@@ -1488,7 +1578,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/FYvwVlEusuwIfNjWroGzf-Tap10\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/DCg1aHdLtTP-MvwzYroM3-3cX84\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS41Mzk2QTAxMTkzNDk4MDhF",
    "snippet": {
     "publishedAt": "2020-03-29T18:27:39.000Z",
@@ -1524,7 +1614,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 33,
+    "position": 35,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "w0-82S7RCic"
@@ -1533,7 +1623,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/lngmD6hZO51vkliSYrCJ-ojWccY\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/glIg-jj-Qqr73o8F2YHH9gUOn3g\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4zMDg5MkQ5MEVDMEM1NTg2",
    "snippet": {
     "publishedAt": "2020-03-29T18:23:17.000Z",
@@ -1569,7 +1659,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 34,
+    "position": 36,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "E6aX5rGi2aI"
@@ -1578,7 +1668,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/7cxCrjpWbuMQShHGrYBV67hkthE\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/Dsx-nsT4AdUq0hhfDF3V3Jsyr70\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS45ODRDNTg0QjA4NkFBNkQy",
    "snippet": {
     "publishedAt": "2020-03-28T15:48:28.000Z",
@@ -1609,7 +1699,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 35,
+    "position": 37,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "kWwshUCILQI"
@@ -1618,7 +1708,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/wZVg0-O-7-m5aCYaMaiDjrPxkdw\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/MbW8Lg8CUeZeutT0eGF_c7LEZY4\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5EMEEwRUY5M0RDRTU3NDJC",
    "snippet": {
     "publishedAt": "2020-03-26T19:04:33.000Z",
@@ -1654,7 +1744,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 36,
+    "position": 38,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "8abkrQrdh5U"
@@ -1663,7 +1753,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/To5pKy5rjbZ3UszQq5E2kWMnkO4\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/NjV_x328fcv4xVExhDSUDDK5TWQ\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5GNjNDRDREMDQxOThCMDQ2",
    "snippet": {
     "publishedAt": "2020-03-25T03:40:30.000Z",
@@ -1694,7 +1784,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 37,
+    "position": 39,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "TGJjttNEvVI"
@@ -1703,7 +1793,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/LtBOQkIfKodz_zwhtxG5OqgiSZ8\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/niJDa7ZekiAgLkHnVagFfSjyWDA\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS45NDk1REZENzhEMzU5MDQz",
    "snippet": {
     "publishedAt": "2020-03-24T18:57:49.000Z",
@@ -1739,7 +1829,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 38,
+    "position": 40,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "-ir2Yh8UL30"
@@ -1748,7 +1838,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/w7MPetuBB_wt8YcjdYPJnninjQ0\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/J8YRpCL8t5lWqfMpOOnZH6dLXG0\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5DQUNERDQ2NkIzRUQxNTY1",
    "snippet": {
     "publishedAt": "2020-03-23T16:36:07.000Z",
@@ -1784,7 +1874,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 39,
+    "position": 41,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "Up1LshJo2gg"
@@ -1793,7 +1883,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/E1CccXXAI0L5LyWW8na5DDvpY9Q\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/0r-rc3qgo3yHYsUhD4qdBZ-A9mE\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS41MzJCQjBCNDIyRkJDN0VD",
    "snippet": {
     "publishedAt": "2020-03-22T17:29:34.000Z",
@@ -1829,7 +1919,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 40,
+    "position": 42,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "NnlUMfxjHfE"
@@ -1838,7 +1928,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/SVPV6mwPFthTjaQoBD5Zsuqyj90\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/pjbS2G25KPZ0owOEO8lj-5AM9bg\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4xMkVGQjNCMUM1N0RFNEUx",
    "snippet": {
     "publishedAt": "2020-03-21T06:17:21.000Z",
@@ -1874,7 +1964,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 41,
+    "position": 43,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "E1L4rJsFPg0"
@@ -1883,7 +1973,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/hu3Uw9e6Byy0PuvgfC7BjANb1Es\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/VFL2wIvKCc11AMVCdxWJ7fXqRNs\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4wOTA3OTZBNzVEMTUzOTMy",
    "snippet": {
     "publishedAt": "2020-03-20T19:27:51.000Z",
@@ -1919,7 +2009,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 42,
+    "position": 44,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "zBPt-Bk9CpY"
@@ -1928,7 +2018,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/DajH8ClxdTEC1ynAHUo6s62gT9Y\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/9oR2yN2GQPFN8lcCDjbbnoLCGpU\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS41MjE1MkI0OTQ2QzJGNzNG",
    "snippet": {
     "publishedAt": "2020-03-20T01:43:59.000Z",
@@ -1964,7 +2054,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 43,
+    "position": 45,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "HHoi6Nr1clM"
@@ -1973,7 +2063,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/jK8h5b4COKAxy0Rr0SHbKjY-V78\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/m-9MkLstxYfbstYkrmbtTkvQW1w\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4wMTcyMDhGQUE4NTIzM0Y5",
    "snippet": {
     "publishedAt": "2020-03-20T01:43:13.000Z",
@@ -2009,7 +2099,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 44,
+    "position": 46,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "CnJl97Y_3W4"
@@ -2018,7 +2108,7 @@
   },
   {
    "kind": "youtube#playlistItem",
-   "etag": "\"nxOHAKTVB7baOKsQgTtJIyGxcs8/BS0WL81YFR7NFS6Opl_76kq2SuY\"",
+   "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/sROHNRP-shPvWncFawVFyKA-_Xs\"",
    "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4yODlGNEE0NkRGMEEzMEQy",
    "snippet": {
     "publishedAt": "2020-03-20T01:21:14.000Z",
@@ -2054,7 +2144,7 @@
     },
     "channelTitle": "AJJ the band",
     "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-    "position": 45,
+    "position": 47,
     "resourceId": {
      "kind": "youtube#video",
      "videoId": "_IUnh0k0hxw"
