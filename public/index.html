@@ -13,6 +13,7 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
       }
       button {
         border: 1px solid #000;
@@ -22,6 +23,10 @@
         cursor: pointer;
         margin: 0;
       }
+      button.is-playing {
+        background: #000;
+        color: #fff;
+      }
       h2 {
         margin: 0 10px 0 0;
         font-size: 18px;
@@ -29,10 +34,22 @@
       p {
         margin: 0;
       }
-      iframe {
+      #player, #player-mock {
+        height: 390px;
+        width: 640px;
         max-width: 100%;
         display: block;
         border-right: 1px solid #000;
+        background: #000;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 18px;
+      }
+      #player {
+        display: none;
       }
       #title, #songs {
         width: 636px;
@@ -56,6 +73,11 @@
         display: flex;
         flex-wrap: wrap;
       }
+      #songs .video {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px dashed #000;
+      }
       #songs > *:last-child,
       #upnext > *:last-child {
         margin-bottom: 30px;
@@ -72,27 +94,45 @@
         left: 640px;
         padding: 2px 2px 0 2px;
         top: 0;
-        overflow: scroll;
-        max-height: 100vh;
+        height: 100vh;
         z-index: 100;
+        background: #000;
+        width: calc(100vw - 640px - 4px);
       }
-      #upnext-header {
+      #upnext {
+        height: calc(100vh - 20px);
+        overflow: scroll;
+      }
+      #upnext-toggle {
         display: none;
         margin-left: auto;
+        height: 20px;
+      }
+      #upnext-header {
+        display: block;
+        margin-left: auto;
+        color: #fff;
+        height: 20px;
       }
       @media screen and (max-width: 740px) {
+        .drawer-open #right {
+          background: #000;
+        }
         #right {
+          background: transparent;
           left: initial;
           right: 0;
-          max-width: 20%;
-          background: #000;
+          width: 20%;
         }
         #upnext {
           display: none;
         }
-        #upnext-header {
+        #upnext-toggle {
           display: block;
           margin-bottom: 2px;
+        }
+        #upnext-header {
+          display: none;
         }
         .drawer-open #upnext {
           display: block;
@@ -100,7 +140,8 @@
         .drawer-open #left {
           width: 80%;
         }
-        .drawer-open #title, .drawer-open #songs {
+        .drawer-open #title,
+        .drawer-open #songs {
           width: auto;
         }
       }
@@ -108,6 +149,7 @@
   </head>
   <body>
     <div id="left">
+      <div id="player-mock">AJJ Live from Quarantine<br/>Pick a song below</div>
       <div id="player"></div>
       <p id="title">
         <button id="reset">Reset</button>
@@ -118,7 +160,8 @@
       <div id="songs"></div>
     </div>
     <div id="right">
-      <button id="upnext-header">Up next</button>
+      <button id="upnext-toggle" class="upnext-text">Up next</button>
+      <p id="upnext-header" class="upnext-text">Up next</p>
       <div id="upnext"></div>
     </div>
 
@@ -134,6 +177,10 @@
       const $el = (t, text = '', props = {}) => {
         const el = document.createElement(t)
         el.innerText = text
+        if (props.class) {
+          el.classList.add(props.class)
+          delete props.class
+        }
         Object.keys(props).forEach((k) => {
           el[k] = props[k]
         })
@@ -141,6 +188,7 @@
       }
 
       const $ = (sel) => document.querySelector(sel)
+      const $$ = (sel) => document.querySelectorAll(sel)
 
       const removeNode = (n) => n.parentNode.removeChild(n);
 
@@ -163,6 +211,7 @@
 
       let player;
       let playing = false;
+      let initial = true;
       let nowPlaying = null;
       let upNext = []
       const DATA = window.__DATA
@@ -172,10 +221,10 @@
       const resetQueue = () => {
         upNext = []
         $upnext.innerHTML = '';
+        $$('.upnext-text').forEach(n => n.textContent = `Up next`)
       }
 
       const addShuffleToQueue = () => {
-        resetQueue()
         const shuffledSongs = shuffleArray(DATA.reduce((acc, video) => {
           (video.songs || []).forEach((song) => {
             acc.push({ video, song })
@@ -202,17 +251,11 @@
         removeNode($(`#${item.id}`))
       }
 
-      const skipToNextInQueue = () => {
+      const playNextInQueue = () => {
         const next = upNext[0]
         if (next) {
           removeFromQueue(next)
           play(next)
-        }
-      }
-
-      const playNextInQueue = () => {
-        if (upNext.length) {
-          skipToNextInQueue()
         } else if (nowPlaying) {
           const { video, song } = nowPlaying
           const next = nextItem(video.songs, song)
@@ -222,6 +265,8 @@
             const nextVideo = nextItem(DATA, video)
             if (nextVideo) {
               play({ video: nextVideo, song: nextVideo.songs[0] })
+            } else {
+              play({ video: DATA[0], song: DATA[0].songs[0] })
             }
           }
         }
@@ -241,10 +286,16 @@
           upNext.unshift(item)
           $upnext.prepend(button)
         }
-        console.log(item, upNext.length)
+        $$('.upnext-text').forEach(n => n.textContent = `Up next (${upNext.length})`)
+        // console.log(item, upNext.length)
       }
 
       const play = ({ video, song }) => {
+        if (initial) {
+          $('#player').style.display = 'block'
+          $('#player-mock').style.display = 'none'
+        }
+
         const v = {
           videoId: video.id,
         }
@@ -260,14 +311,18 @@
           }
         }
 
-        console.log('loadVideoById', v)
-        $('#nowplaying').innerText = getTitle({video, song})
         nowPlaying = { video, song }
+        $('#nowplaying').innerText = getTitle({video, song})
+        $$('.play-button').forEach(n => n.classList.remove('is-playing'))
+        $(`#b-${video.id}-${parseSeconds(song.time.start)}`).classList.add('is-playing')
+        $(`#b-${video.id}-${parseSeconds(song.time.start)}`).parentNode.parentNode.scrollIntoView()
 
         // debug queue
         // v.endSeconds = v.startSeconds + 10
 
+        console.log('loadVideoById', v)
         player.loadVideoById(v)
+       
       }
 
       const playOrAddToQueue = ({ video, song }) => {
@@ -280,14 +335,14 @@
       }
 
       DATA.forEach(video => {
-        $songs.appendChild($el('h2', parseVideoTitle(video.title)))
+        const $videoHolder = $el('div', '', { class: 'video' })
+        $videoHolder.appendChild($el('h2', parseVideoTitle(video.title)))
 
         if (!video.songs) {
-          $songs.appendChild($el('p', 'No timestamps for this video'))
+          $videoHolder.appendChild($el('p', 'No timestamps for this video'))
         }
 
-        const $buttonHolder = $el('div')
-        $buttonHolder.classList.add('buttons')
+        const $buttonHolder = $el('div', '', { class: 'buttons' })
 
         $buttonHolder.appendChild($el('button', '+PLAY ALL+', {
           onclick: () => playOrAddToQueue({ video })
@@ -295,6 +350,8 @@
 
         ;(video.songs || []).forEach((song) => {
           $buttonHolder.appendChild($el('button', song.name, {
+            id: `b-${video.id}-${parseSeconds(song.time.start)}`,
+            class: 'play-button',
             onclick: () => playOrAddToQueue({
               video,
               song
@@ -302,7 +359,8 @@
           }))
         })
 
-        $songs.appendChild($buttonHolder)
+        $videoHolder.appendChild($buttonHolder)
+        $songs.appendChild($videoHolder)
       })
 
       
@@ -310,7 +368,6 @@
         player = new YT.Player('player', {
           height: '390',
           width: '640',
-          videoId: DATA[0].id,
           playerVars: { 'autoplay': 0, 'controls': 0 },
           events: {
             'onReady': onPlayerReady,
@@ -339,9 +396,9 @@
       }
 
       $('#shuffle').addEventListener('click', addShuffleToQueue)
-      $('#next').addEventListener('click', skipToNextInQueue)
+      $('#next').addEventListener('click', playNextInQueue)
       $('#reset').addEventListener('click', resetQueue)
-      $('#upnext-header').addEventListener('click', () => {
+      $('#upnext-toggle').addEventListener('click', () => {
         document.body.classList.toggle('drawer-open')
       })
     </script>
