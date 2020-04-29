@@ -56,4 +56,4 @@ const data = raw.items.map((r) => {
 })
 
 
-fs.writeFileSync('./public/parsed.js', `window.__DATA=${JSON.stringify(data)}`)
+console.log(`window.__DATA=${JSON.stringify(data)}`)

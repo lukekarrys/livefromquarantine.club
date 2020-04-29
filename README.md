@@ -7,11 +7,11 @@
 Run this to get `raw.json`:
 
 ```sh
-curl \
-  'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1&key=[YOUR_API_KEY]' \
-  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
-  --header 'Accept: application/json' \
-  --compressed
+curl https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=[PLAYLIST_ID]&key=[YOUR_API_KEY] > raw.json
 ```
 
-Then run `node parse-data.js` which saves data to `public/parsed.js`
+Then run thiss to save `public/parsed.js`
+
+```sh
+node parse-data.js > public/parsed.js
+```
