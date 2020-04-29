@@ -14,4 +14,4 @@ curl \
   --compressed
 ```
 
-Then run `node parse-data.js` which saves data to `parsed.js`
+Then run `node parse-data.js` which saves data to `public/parsed.js`

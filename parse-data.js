@@ -32,4 +32,4 @@ const data = raw.items.map((r) => {
   }
 }).sort((a, b) => a.publishedAt - b.publishedAt)
 
-fs.writeFileSync('./parsed.js', `window.__DATA=${JSON.stringify(data)}`)
+fs.writeFileSync('./public/parsed.js', `window.__DATA=${JSON.stringify(data)}`)
