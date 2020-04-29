@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>AJJ Live From Quarantine</title>
+    <script src="parsed.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+      }
+      #songs {
+        max-height: calc(100vh - 390px);
+        overflow: scroll;
+      }
+      #songs button, #upnext button {
+        display: block;
+      }
+      #upnext {
+        position: absolute;
+        left: 641px;
+        top: 0;
+        overflow: scroll;
+        max-height: 100vh;
+      }
+      #shuffle {
+        position: absolute;;
+        bottom: 0;
+        right: 0;
+      }
+  </style>
+  </head>
+  <body>
+    <div id="player"></div>
+    <div id="songs"></div>
+    <div id="upnext"></div>
+
+    <script>
+      const parseSeconds = (str) => {
+        let seconds = 0
+        const [min, sec] = str.split(':').map((v) => parseInt(v, 10))
+        if (min) seconds += min * 60
+        seconds += sec
+        console.log('parsing', str, 'to', seconds)
+        return seconds
+      }
+
+      const $el = (t, text, props = {}) => {
+        const el = document.createElement(t)
+        el.innerText = text
+        Object.keys(props).forEach((k) => {
+          el[k] = props[k]
+        })
+        return el
+      }
+
+      const removeNode = (n) => n.parentNode.removeChild(n);
+
+      let player;
+      let playing = false;
+      const upNext = []
+      const DATA = window.__DATA
+      const $songs = document.getElementById('songs')
+      const $upnext = document.getElementById('upnext')
+
+      const shuffleArray = (a) => {
+        var j, x, i;
+        for (i = a.length - 1; i > 0; i--) {
+            j = Math.floor(Math.random() * (i + 1));
+            x = a[i];
+            a[i] = a[j];
+            a[j] = x;
+        }
+        return a;
+      }
+
+      const shuffle = () => {
+        const shuffledSongs = shuffleArray(DATA.reduce((acc, video) => {
+          (video.songs || []).forEach((song) => {
+            acc.push({ video, song })
+          })
+          return acc
+        }, []))
+        const [first, ...rest] = shuffledSongs
+        play(first)
+        rest.forEach(queueUpNext)
+      }
+
+      document.body.appendChild($el('button', 'Shuffle',{ id: 'shuffle', onclick: shuffle }))
+
+      const queueUpNext = ({ video, song }) => {
+        const id = `n-${Math.random().toString().slice(2)}`
+        const item = {video, song, id }
+        upNext.push(item)
+        $upnext.appendChild($el('button', `${video.title} - ${song.name || 'All'}`, { id, onclick: () => removeFromUpNext(item) }))
+      }
+
+      const removeFromUpNext = (item) => {
+        const index = upNext.findIndex((i) => i ===item)
+        upNext.splice(index, 1)
+        removeNode(document.getElementById(item.id))
+      }
+
+      const playUpNext = () => {
+        if (upNext.length) {
+          const next = upNext.shift()
+          removeNode(document.getElementById(next.id))
+          play(next)
+        }
+      }
+
+      const play = ({ video, song }) => {
+        const v = {
+          videoId: video.resourceId.videoId,
+        }
+
+        if (song) {
+          if (song.time.start) {
+            v.startSeconds = parseSeconds(song.time.start)
+          }
+          const next = video.songs[video.songs.findIndex(s => s === song) + 1]
+          const end = song.time.end || next ? next.time.start : null
+          if (end) {
+            v.endSeconds = parseSeconds(end)
+          }
+        }
+
+        console.log('loadVideoById', v)
+        player.loadVideoById(v)
+      }
+
+      const playOrUpNext = ({ video, song }) => {
+        console.log('play or up next', video, song)
+        if (!playing && upNext.length === 0) {
+          play({ video, song })
+        } else {
+          queueUpNext({ video, song })
+        }
+      }
+
+      DATA.forEach(video => {
+        $songs.appendChild($el('h2', video.title))
+
+        if (!video.songs) {
+          const noTimestampsMessage = $el('p', 'No timestamps for this video')
+          $songs.appendChild(noTimestampsMessage)
+        }
+
+        const playAll = $el('button', 'Play whole video', {
+          onclick: () => playOrUpNext({ video })
+        })
+        $songs.appendChild(playAll)
+
+        ;(video.songs || []).forEach((song) => {
+          const p = $el('button', song.name, {
+            onclick: () => playOrUpNext({
+              video,
+              song
+            })
+          })
+          $songs.appendChild(p)
+        })
+      })
+
+      
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: window.__DATA[0].resourceId.videoId,
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      function onPlayerReady(event) {
+        console.log('ready', event)
+        //event.target.playVideo();
+      }
+
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING) {
+          console.log('playing', event)
+          playing = true
+        }
+        else if (event.data === YT.PlayerState.ENDED) {
+          console.log('ended', event)
+          playing = false
+          playUpNext()
+        }
+      }
+
+    </script>
+  </body>
+</html>
