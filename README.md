@@ -9,6 +9,6 @@
 ## Get and parse data
 
 ```sh
-node get-data.js > raw.json
-node parse-data.js > public/parsed.js
+npm run data
+npm run build
 ```

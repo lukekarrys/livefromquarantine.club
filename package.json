@@ -1,0 +1,20 @@
+{
+  "name": "livefromquarantine.club",
+  "description": "## Links",
+  "version": "1.0.0",
+  "author": "Luke Karrys <luke@lukekarrys.com>",
+  "bugs": {
+    "url": "https://github.com/lukekarrys/livefromquarantine.club/issues"
+  },
+  "homepage": "https://github.com/lukekarrys/livefromquarantine.club#readme",
+  "keywords": [],
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukekarrys/livefromquarantine.club.git"
+  },
+  "scripts": {
+    "build": "node parse/index.js",
+    "data": "node get-data.js > raw.json"
+  }
+}
