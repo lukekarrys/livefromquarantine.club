@@ -1,0 +1,20 @@
+{
+  "name": "livefromquarantine.club",
+  "version": "1.0.0",
+  "description": "AJJ Live from Quarantine",
+  "main": "parse-data.js",
+  "scripts": {
+    "build": "mkdir -p public && cp ./{index.html,parsed.js} public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukekarrys/livefromquarantine.club.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukekarrys/livefromquarantine.club/issues"
+  },
+  "homepage": "https://github.com/lukekarrys/livefromquarantine.club#readme"
+}
