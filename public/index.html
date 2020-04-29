@@ -64,7 +64,9 @@
 
       const removeNode = (n) => n.parentNode.removeChild(n);
 
-      const getTitle = ({video, song}) => `${video.title} - ${song && song.name || 'All'}`
+      const parseVideoTitle = (str) => str.replace(/Live from Quarantine\s+-?/i, '').trim()
+
+      const getTitle = ({video, song}) => `${parseVideoTitle(video.title)} - ${song && song.name || 'All'}`
 
       const shuffleArray = (a) => {
         var j, x, i;
@@ -164,7 +166,7 @@
       }
 
       DATA.forEach(video => {
-        $songs.appendChild($el('h2', video.title))
+        $songs.appendChild($el('h2', parseVideoTitle(video.title)))
 
         if (!video.songs) {
           const noTimestampsMessage = $el('p', 'No timestamps for this video')
