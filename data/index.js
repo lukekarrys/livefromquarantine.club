@@ -1,6 +1,11 @@
 const fs = require("fs").promises
 const https = require("https")
 
+const channels = {
+  dcfc: 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv',
+  ajj: 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1'
+}
+
 const getJson = (url) =>
   new Promise((resolve, reject) => {
     https.get(url, (res) => {
@@ -31,10 +36,14 @@ const getEnvVars = async () =>
 
 const main = async () => {
   const envVars = await getEnvVars()
-  const resp = await getJson(
-    `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=${envVars.PLAYLIST_ID}&key=${envVars.API_KEY}`
-  )
-  return resp
+
+  const channelEntries = Object.entries(channels)
+  const resps = await Promise.all(channelEntries.map(([key, value]) => getJson(`${value}&key=${envVars.API_KEY}`)))
+
+  return channelEntries.reduce((acc, [key], index) => {
+    acc[key] = resps[index]
+    return acc
+  }, {})
 }
 
 main()
