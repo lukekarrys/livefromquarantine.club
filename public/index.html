@@ -3,66 +3,124 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="manifest.json">
     <title>AJJ Live From Quarantine</title>
+    <meta name="description" content="All the AJJ songs live From quarantine" />
     <script src="parsed.js?v=2"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
     <style>
       body{
         margin: 0;
         padding: 0;
-      }
-      iframe {
-        max-width: 100%;
-      }
-      #title {
-        margin: 0;
-        height: 22px;
-        border-bottom: 1px solid #000;
-        width: 640px;
-        max-width: 100%;
         overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-      }
-      #songs {
-        max-height: calc(100vh - 390px - 22px);
-        overflow: scroll;
-        width: 640px;
-        max-width: 100%;
       }
       button {
         border: 1px solid #000;
         padding: 2px 4px;
         background: white;
         border-radius: 4px;
+        cursor: pointer;
+        margin: 0;
       }
-      #songs button, #upnext button {
+      h2 {
+        margin: 0 10px 0 0;
+        font-size: 18px;
+      }
+      p {
+        margin: 0;
+      }
+      iframe {
+        max-width: 100%;
         display: block;
+        border-right: 1px solid #000;
       }
-      #upnext {
+      #title, #songs {
+        width: 636px;
+        padding: 0 2px;
+        max-width: 100%;
+        border-right: 1px solid #000;
+      }
+      #title {
+        margin: 0;
+        height: 22px;
+        border-bottom: 1px solid #000;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      #songs {
+        max-height: calc(100vh - 390px - 22px);
+        overflow-y: scroll;
+      }
+      #songs .buttons {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      #songs > *:last-child,
+      #upnext > *:last-child {
+        margin-bottom: 30px;
+      }
+      #songs button,
+      #upnext button {
+        display: block;
+        padding: 4px 8px;
+        margin: 0 2px 2px 0;
+        word-break: break-word;
+      }
+      #right {
         position: absolute;
-        left: 641px;
+        left: 640px;
+        padding: 2px 2px 0 2px;
         top: 0;
         overflow: scroll;
         max-height: 100vh;
+        z-index: 100;
       }
-      @media screen and (max-width: 700px) {
+      #upnext-header {
+        display: none;
+        margin-left: auto;
+      }
+      @media screen and (max-width: 740px) {
+        #right {
+          left: initial;
+          right: 0;
+          max-width: 20%;
+          background: #000;
+        }
         #upnext {
-          left: 100%;
+          display: none;
+        }
+        #upnext-header {
+          display: block;
+          margin-bottom: 2px;
+        }
+        .drawer-open #upnext {
+          display: block;
+        }
+        .drawer-open #left {
+          width: 80%;
+        }
+        .drawer-open #title, .drawer-open #songs {
+          width: auto;
         }
       }
   </style>
   </head>
   <body>
-    <div id="player"></div>
-    <p id="title">
-      <button id="reset">Reset</button>
-      <button id="shuffle">Shuffle</button>
-      <button id="next">Next</button>
-      Now playing: <span id="nowplaying"></span>
-    </p>
-    <div id="songs"></div>
-    <div id="upnext"></div>
+    <div id="left">
+      <div id="player"></div>
+      <p id="title">
+        <button id="reset">Reset</button>
+        <button id="shuffle">Shuffle</button>
+        <button id="next">Next</button>
+        <span id="nowplaying"></span>
+      </p>
+      <div id="songs"></div>
+    </div>
+    <div id="right">
+      <button id="upnext-header">Up next</button>
+      <div id="upnext"></div>
+    </div>
 
     <script>
       const parseSeconds = (str) => {
@@ -73,7 +131,7 @@
         return seconds
       }
 
-      const $el = (t, text, props = {}) => {
+      const $el = (t, text = '', props = {}) => {
         const el = document.createElement(t)
         el.innerText = text
         Object.keys(props).forEach((k) => {
@@ -82,14 +140,18 @@
         return el
       }
 
+      const $ = (sel) => document.querySelector(sel)
+
       const removeNode = (n) => n.parentNode.removeChild(n);
 
       const parseVideoTitle = (str) => str.replace(/Live from Quarantine\s+-?/i, '').trim()
 
       const getTitle = ({video, song}) => `${parseVideoTitle(video.title)} - ${song && song.name || 'All'}`
 
+      const nextItem = (arr, item) => arr[arr.findIndex(i => i === item) + 1]
+
       const shuffleArray = (a) => {
-        var j, x, i;
+        let j, x, i;
         for (i = a.length - 1; i > 0; i--) {
             j = Math.floor(Math.random() * (i + 1));
             x = a[i];
@@ -101,10 +163,11 @@
 
       let player;
       let playing = false;
+      let nowPlaying = null;
       let upNext = []
       const DATA = window.__DATA
-      const $songs = document.getElementById('songs')
-      const $upnext = document.getElementById('upnext')
+      const $songs =$('#songs')
+      const $upnext = $('#upnext')
 
       const resetQueue = () => {
         upNext = []
@@ -126,33 +189,62 @@
             addToQueue(item)
           }
         })
-        console.log(upNext.length)
       }
 
-      const addToQueue = ({ video, song }) => {
-        const id = `n-${Math.random().toString().slice(2)}`
-        const item = {video, song, id }
-        upNext.push(item)
-        console.log(upNext.length, item)
-        $upnext.appendChild($el('button', getTitle({video,song}), { id, onclick: () => removeFromQueue(item) }))
+      const moveToFrontOfQueue = (item) => {
+        removeFromQueue(item)
+        addToQueue({ video: item.video, song: item.song }, false)
       }
 
       const removeFromQueue = (item) => {
         const index = upNext.findIndex((i) => i === item)
         upNext.splice(index, 1)
-        removeNode(document.getElementById(item.id))
+        removeNode($(`#${item.id}`))
       }
 
-      const playNextInQueue = () => {
-        if (upNext.length) {
-          const next = upNext[0]
+      const skipToNextInQueue = () => {
+        const next = upNext[0]
+        if (next) {
           removeFromQueue(next)
           play(next)
         }
       }
 
+      const playNextInQueue = () => {
+        if (upNext.length) {
+          skipToNextInQueue()
+        } else if (nowPlaying) {
+          const { video, song } = nowPlaying
+          const next = nextItem(video.songs, song)
+          if (next) {
+            play({ video, song: next })
+          } else {
+            const nextVideo = nextItem(DATA, video)
+            if (nextVideo) {
+              play({ video: nextVideo, song: nextVideo.songs[0] })
+            }
+          }
+        }
+      }
+
+      const addToQueue = ({ video, song }, back = true) => {
+        const id = `n-${Math.random().toString().slice(2)}`
+        const item = { video, song, id }
+        const button = $el('button', getTitle({video,song}), {
+          id,
+          onclick: () => moveToFrontOfQueue(item)
+        })
+        if (back) {
+          upNext.push(item)
+          $upnext.appendChild(button)
+        } else {
+          upNext.unshift(item)
+          $upnext.prepend(button)
+        }
+        console.log(item, upNext.length)
+      }
+
       const play = ({ video, song }) => {
-        console.log(video)
         const v = {
           videoId: video.id,
         }
@@ -161,7 +253,7 @@
           if (song.time.start) {
             v.startSeconds = parseSeconds(song.time.start)
           }
-          const next = video.songs[video.songs.findIndex(s => s === song) + 1]
+          const next = nextItem(video.songs, song)
           const end = song.time.end || next ? next.time.start : null
           if (end) {
             v.endSeconds = parseSeconds(end)
@@ -169,7 +261,8 @@
         }
 
         console.log('loadVideoById', v)
-        document.getElementById('nowplaying').innerText = getTitle({video, song})
+        $('#nowplaying').innerText = getTitle({video, song})
+        nowPlaying = { video, song }
 
         // debug queue
         // v.endSeconds = v.startSeconds + 10
@@ -178,7 +271,7 @@
       }
 
       const playOrAddToQueue = ({ video, song }) => {
-        console.log('play or up next', video, song, playing, upNext.length)
+        console.log('play or up next', playing, upNext.length)
         if (!playing && upNext.length === 0) {
           play({ video, song })
         } else {
@@ -190,24 +283,26 @@
         $songs.appendChild($el('h2', parseVideoTitle(video.title)))
 
         if (!video.songs) {
-          const noTimestampsMessage = $el('p', 'No timestamps for this video')
-          $songs.appendChild(noTimestampsMessage)
+          $songs.appendChild($el('p', 'No timestamps for this video'))
         }
 
-        const playAll = $el('button', 'Play whole video', {
+        const $buttonHolder = $el('div')
+        $buttonHolder.classList.add('buttons')
+
+        $buttonHolder.appendChild($el('button', '+PLAY ALL+', {
           onclick: () => playOrAddToQueue({ video })
-        })
-        $songs.appendChild(playAll)
+        }))
 
         ;(video.songs || []).forEach((song) => {
-          const p = $el('button', song.name, {
+          $buttonHolder.appendChild($el('button', song.name, {
             onclick: () => playOrAddToQueue({
               video,
               song
             })
-          })
-          $songs.appendChild(p)
+          }))
         })
+
+        $songs.appendChild($buttonHolder)
       })
 
       
@@ -237,12 +332,18 @@
           console.log('ended', event)
           playing = false
           playNextInQueue()
+        } else if (event.data === YT.PlayerState.PAUSED) {
+          console.log('paused', event)
+          playing = false
         }
       }
 
-      document.getElementById('shuffle').addEventListener('click', addShuffleToQueue)
-      document.getElementById('next').addEventListener('click', playNextInQueue)
-      document.getElementById('reset').addEventListener('click', resetQueue)
+      $('#shuffle').addEventListener('click', addShuffleToQueue)
+      $('#next').addEventListener('click', skipToNextInQueue)
+      $('#reset').addEventListener('click', resetQueue)
+      $('#upnext-header').addEventListener('click', () => {
+        document.body.classList.toggle('drawer-open')
+      })
     </script>
   </body>
 </html>
