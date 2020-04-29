@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AJJ Live From Quarantine</title>
     <script src="parsed.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
@@ -10,15 +11,30 @@
         margin: 0;
         padding: 0;
       }
+      iframe {
+        max-width: 100%;
+      }
       #title {
         margin: 0;
-        height: 40px;
+        height: 22px;
+        border-bottom: 1px solid #000;
         width: 640px;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
       #songs {
         max-height: calc(100vh - 390px - 40px);
         overflow: scroll;
         width: 640px;
+        max-width: 100%;
+      }
+      button {
+        border: 1px solid #000;
+        padding: 2px 4px;
+        background: white;
+        border-radius: 4px;
       }
       #songs button, #upnext button {
         display: block;
@@ -30,19 +46,23 @@
         overflow: scroll;
         max-height: 100vh;
       }
-      #shuffle {
-        position: absolute;
-        bottom: 0;
-        right: 0;
+      @media screen and (max-width: 700px) {
+        #upnext {
+          left: 100%;
+        }
       }
   </style>
   </head>
   <body>
     <div id="player"></div>
-    <p id="title">Now playing: <span id="nowplaying"></span> <button id="next">Next</button></p>
+    <p id="title">
+      <button id="reset">Reset</button>
+      <button id="shuffle">Shuffle</button>
+      <button id="next">Next</button>
+      Now playing: <span id="nowplaying"></span>
+    </p>
     <div id="songs"></div>
     <div id="upnext"></div>
-    <button id="shuffle">Shuffle</button>
 
     <script>
       const parseSeconds = (str) => {
@@ -87,11 +107,11 @@
       const $upnext = document.getElementById('upnext')
 
       const resetQueue = () => {
-        player.stopVideo()
-        upNext.forEach((item) => removeFromQueue(item))
+        upNext = []
+        $upnext.innerHTML = '';
       }
 
-      const resetAndShuffle = () => {
+      const addShuffleToQueue = () => {
         resetQueue()
         const shuffledSongs = shuffleArray(DATA.reduce((acc, video) => {
           (video.songs || []).forEach((song) => {
@@ -101,11 +121,12 @@
         }, []))
         shuffledSongs.forEach((item, index) => {
           if (index === 0) {
-            play(item)
+            playOrAddToQueue(item)
           } else {
             addToQueue(item)
           }
         })
+        console.log(upNext.length)
       }
 
       const addToQueue = ({ video, song }) => {
@@ -124,7 +145,6 @@
 
       const playNextInQueue = () => {
         if (upNext.length) {
-          player.stopVideo()
           const next = upNext[0]
           removeFromQueue(next)
           play(next)
@@ -157,7 +177,7 @@
       }
 
       const playOrAddToQueue = ({ video, song }) => {
-        console.log('play or up next', video, song, upNext.length)
+        console.log('play or up next', video, song, playing, upNext.length)
         if (!playing && upNext.length === 0) {
           play({ video, song })
         } else {
@@ -219,8 +239,9 @@
         }
       }
 
-      document.getElementById('shuffle').addEventListener('click', resetAndShuffle)
+      document.getElementById('shuffle').addEventListener('click', addShuffleToQueue)
       document.getElementById('next').addEventListener('click', playNextInQueue)
+      document.getElementById('reset').addEventListener('click', resetQueue)
     </script>
   </body>
 </html>
