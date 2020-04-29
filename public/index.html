@@ -195,6 +195,7 @@
           height: '390',
           width: '640',
           videoId: window.__DATA[0].resourceId.videoId,
+          playerVars: { 'autoplay': 0, 'controls': 0 },
           events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
