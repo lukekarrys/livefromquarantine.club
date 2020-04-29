@@ -1,1 +1,3 @@
 .env
+public/
+!public/manifest.json
