@@ -196,6 +196,8 @@
 
       const getTitle = ({video, song}) => `${parseVideoTitle(video.title)} - ${song && song.name || 'All'}`
 
+      const playId = ({video, song}) => `b-${video.id}${song ? `-${parseSeconds(song.time.start)}` : ''}`
+
       const nextItem = (arr, item) => arr[arr.findIndex(i => i === item) + 1]
 
       const shuffleArray = (a) => {
@@ -314,8 +316,10 @@
         nowPlaying = { video, song }
         $('#nowplaying').innerText = getTitle({video, song})
         $$('.play-button').forEach(n => n.classList.remove('is-playing'))
-        $(`#b-${video.id}-${parseSeconds(song.time.start)}`).classList.add('is-playing')
-        $(`#b-${video.id}-${parseSeconds(song.time.start)}`).parentNode.parentNode.scrollIntoView()
+
+        const buttonId = `#${playId({ video, song })}`
+        $(buttonId).classList.add('is-playing')
+        $(buttonId).parentNode.parentNode.scrollIntoView()
 
         // debug queue
         // v.endSeconds = v.startSeconds + 10
@@ -345,12 +349,14 @@
         const $buttonHolder = $el('div', '', { class: 'buttons' })
 
         $buttonHolder.appendChild($el('button', '+PLAY ALL+', {
+          id: playId({ video }),
+          class: 'play-button',
           onclick: () => playOrAddToQueue({ video })
         }))
 
         ;(video.songs || []).forEach((song) => {
           $buttonHolder.appendChild($el('button', song.name, {
-            id: `b-${video.id}-${parseSeconds(song.time.start)}`,
+            id: playId({ video, song }),
             class: 'play-button',
             onclick: () => playOrAddToQueue({
               video,
