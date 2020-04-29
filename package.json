@@ -20,9 +20,26 @@
     "type": "git",
     "url": "git+https://github.com/lukekarrys/livefromquarantine.club.git"
   },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended"
+    ],
+    "env": {
+      "es2017": true,
+      "browser": true,
+      "node": true
+    }
+  },
   "scripts": {
     "build": "node build/index.js",
     "data": "node data/index.js > data/data.json",
-    "lint": "prettier  --write '**/*.{js,md,css,json}'"
+    "prettier": "prettier  --write '**/*.{js,md,css,json}'",
+    "eslint": "eslint . --fix",
+    "lint": "npm run prettier && npm run eslint"
   }
 }

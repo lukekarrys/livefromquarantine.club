@@ -9,11 +9,30 @@ const dcfc = require('./dcfc')
 const parsers = { ajj, dcfc }
 
 const validate = (data) => {
-  assert.ok(data.every(v => v.title), 'Every video has a title')
-  assert.ok(data.every(v => v.id), 'Every video has an id')
-  assert.ok(data.every(v => v.songs), 'Every video has songs')
-  assert.ok(data.every(v => v.songs.every(s => s.name && s.time.start && s.time.start.match(/^\d+:\d+$/))), 'Every song has a name and time')
-  assert.ok(data.every(v => v.songs.every(s => s.name && s.time.start)), 'Every song has a name and time')
+  assert.ok(
+    data.every((v) => v.title),
+    'Every video has a title'
+  )
+  assert.ok(
+    data.every((v) => v.id),
+    'Every video has an id'
+  )
+  assert.ok(
+    data.every((v) => v.songs),
+    'Every video has songs'
+  )
+  assert.ok(
+    data.every((v) =>
+      v.songs.every(
+        (s) => s.name && s.time.start && s.time.start.match(/^\d+:\d+$/)
+      )
+    ),
+    'Every song has a name and time'
+  )
+  assert.ok(
+    data.every((v) => v.songs.every((s) => s.name && s.time.start)),
+    'Every song has a name and time'
+  )
 }
 
 const parsePath = (...parts) => path.join(__dirname, ...parts)
@@ -32,11 +51,13 @@ const writeParsed = async (name) => {
   if (parser.validate) parser.validate(data)
 
   await fs.writeFile(publicPath(`${name}.html`), index)
-  await fs.writeFile(publicPath(`${name}.js`), `window.__DATA=${JSON.stringify(data, null, 2)};`)
+  await fs.writeFile(
+    publicPath(`${name}.js`),
+    `window.__DATA = ${JSON.stringify(data, null, 2)}`
+  )
   if (name === 'ajj') {
     await fs.writeFile(publicPath('index.html'), index)
   }
-  
 }
 
 const main = async () => {

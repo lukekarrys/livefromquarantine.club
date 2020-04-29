@@ -225,10 +225,7 @@ const extraDescriptions = {
 }
 
 const getSongsFromText = (title) => {
-  const titleIdMatch = title.match(/\((.*)\)/)
-  const titleId = titleIdMatch ? titleIdMatch[1] : title
-  const text = extraDescriptions[titleId]
-
+  const text = extraDescriptions[title]
   const descLines = text.split('\n')
   const songLines = descLines.filter((line) => /\d+:\d+/.test(line))
   return songLines.map((line) => {
@@ -238,8 +235,8 @@ const getSongsFromText = (title) => {
       name: name.trim().replace(/^[-:]/, '').replace(/[-:]$/, '').trim(),
       time: {
         start,
-        end
-      }
+        end,
+      },
     }
   })
 }
@@ -247,35 +244,39 @@ const getSongsFromText = (title) => {
 const skipIds = []
 
 module.exports.parse = (items) => {
-  const data = items.map((r) => {
-    const { title, resourceId: { videoId } } = r.snippet
-    const songs = getSongsFromText(title)
+  const data = items
+    .map((r) => {
+      const {
+        title,
+        resourceId: { videoId },
+      } = r.snippet
+      const fullTitle = title
+        .replace(/Ben Gibbard: Live From Home \((.*)\)/i, '$1')
+        .trim()
+      const songs = getSongsFromText(fullTitle)
 
-    if (!songs) {
-      return null
-      console.log(r)
-      throw new Error('wtf')
-    }
-
-    return {
-      title: title.replace(/Ben Gibbard: Live From Home \((.*)\)/i, '$1').trim(),
-      id: videoId,
-      songs
-    }
-  }).filter(Boolean).filter((video) => {
-    return !skipIds.includes(video.id)
-  }).filter((video, index, videos) => {
-    return videos.findIndex(v => v.id === video.id) === index;
-  })
+      return {
+        title: fullTitle,
+        id: videoId,
+        songs,
+      }
+    })
+    .filter(Boolean)
+    .filter((video) => {
+      return !skipIds.includes(video.id)
+    })
+    .filter((video, index, videos) => {
+      return videos.findIndex((v) => v.id === video.id) === index
+    })
 
   return data
 }
 
 module.exports.meta = {
-  title: 'Ben Gibbard Live From Home',
+  title: 'Ben Gibbard – Live From Home',
   description: 'All the Ben Gibbard songs live from home',
   id: 'dcfc',
   main: `
-    <h2>Ben Gibbard – Live from Home<br/>Pick a song to start<br/>Then keep picking to add songs to your queue</h2>
-  `
+    <a href="https://venmo.com/BenGibbardLiveFromHome" target="_blank">Venmo: @BenGibbardLiveFromHome</a>
+  `,
 }
