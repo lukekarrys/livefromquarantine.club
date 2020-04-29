@@ -15,6 +15,6 @@
   },
   "scripts": {
     "build": "node parse/index.js",
-    "data": "node get-data.js > raw.json"
+    "data": "node data/index.js > data/data.json"
   }
 }
