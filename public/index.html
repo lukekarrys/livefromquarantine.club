@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AJJ Live From Quarantine</title>
-    <script src="parsed.js"></script>
+    <script src="parsed.js?v=2"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
     <style>
       body{
@@ -152,8 +152,9 @@
       }
 
       const play = ({ video, song }) => {
+        console.log(video)
         const v = {
-          videoId: video.resourceId.videoId,
+          videoId: video.id,
         }
 
         if (song) {
@@ -214,7 +215,7 @@
         player = new YT.Player('player', {
           height: '390',
           width: '640',
-          videoId: window.__DATA[0].resourceId.videoId,
+          videoId: DATA[0].id,
           playerVars: { 'autoplay': 0, 'controls': 0 },
           events: {
             'onReady': onPlayerReady,

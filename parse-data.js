@@ -26,10 +26,13 @@ const data = raw.items.map((r) => {
   return {
     title,
     publishedAt,
-    description,
-    resourceId,
+    id: resourceId.videoId,
     songs
   }
-}).sort((a, b) => a.publishedAt - b.publishedAt)
+}).sort((a, b) => a.publishedAt - b.publishedAt).map((v) => ({
+  title: v.title,
+  id: v.id,
+  songs: v.songs
+}))
 
 fs.writeFileSync('./public/parsed.js', `window.__DATA=${JSON.stringify(data)}`)
