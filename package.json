@@ -9,6 +9,7 @@
   "homepage": "https://github.com/lukekarrys/livefromquarantine.club#readme",
   "keywords": [],
   "license": "ISC",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lukekarrys/livefromquarantine.club.git"
