@@ -1,4 +1,5 @@
 const fs = require('fs')
+const assert = require('assert')
 const raw = require('./raw.json')
 
 const extraDescriptions = {
@@ -21,7 +22,7 @@ const getSongsFromText = (text) => {
   const descLines = descWithSet.split('\n')
   const songLines = descLines.filter((line) => /\d+:\d+/.test(line))
   return songLines.map((line) => {
-    const [match, start, __, end] = line.match(/(\d+:\d+)( ?- ?(\d+:\d+))?/)
+    const [match, start, end] = line.match(/(\d+:\d+)(?: ?- ?(\d+:\d+))?/)
     const name = line.replace(match, '')
     return {
       name: name.trim().replace(/^-/, '').replace(/-$/, '').trim(),
@@ -55,5 +56,11 @@ const data = raw.items.map((r) => {
   return videos.findIndex(v => v.id === video.id) === index;
 })
 
+assert.ok(data.every(v => v.title), 'Every video has a title')
+assert.ok(data.every(v => v.id), 'Every video has an id')
+assert.ok(data.every(v => v.songs), 'Every video has songs')
+assert.ok(data.every(v => v.songs.every(s => s.name && s.time.start && s.time.start.match(/^\d+:\d+$/))), 'Every song has a name and time')
+assert.ok(data.every(v => v.songs.every(s => s.name && s.time.start)), 'Every song has a name and time')
+assert.ok(data.some(v => v.songs.some(s => s.time.end && s.time.end.match(/^\d+:\d+$/))), 'Some songs have an end')
 
 console.log(`window.__DATA=${JSON.stringify(data)}`)
