@@ -1,1 +1,5 @@
 package-lock.json
+public/*
+!public/manifest.json
+!public/app.css
+!public/app.js

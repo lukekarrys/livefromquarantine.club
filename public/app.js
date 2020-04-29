@@ -8,8 +8,6 @@ const parseSeconds = (str) => {
   return seconds
 }
 
-
-
 const $el = (t, text = '', props = {}) => {
   const el = document.createElement(t)
   el.innerText = text
