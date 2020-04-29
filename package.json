@@ -14,7 +14,7 @@
     "url": "git+https://github.com/lukekarrys/livefromquarantine.club.git"
   },
   "scripts": {
-    "build": "node parse/index.js",
+    "build": "node build/index.js",
     "data": "node data/index.js > data/data.json"
   }
 }

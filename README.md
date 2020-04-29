@@ -6,7 +6,7 @@
 - [Docs to get youtube playlist videos](https://developers.google.com/youtube/v3/docs/playlistItems/list)
 - [Google API Dashboard](https://console.developers.google.com/apis/credentials?project=livefromquarantine)
 
-## Get and parse data
+## Get data and build site
 
 ```sh
 npm run data
