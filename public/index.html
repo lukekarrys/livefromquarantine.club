@@ -121,6 +121,12 @@
         height: 20px;
       }
       @media screen and (max-width: 740px) {
+        #player, #player-mock {
+          max-height: 35vh;
+        }
+        #songs {
+          max-height: calc(65vh - 22px);
+        }
         .drawer-open #right {
           background: #000;
         }
@@ -128,7 +134,11 @@
           background: transparent;
           left: initial;
           right: 0;
-          width: 20%;
+          width: 30%;
+          height: auto;
+        }
+        .drawer-open #right {
+          height: 100vh;
         }
         #upnext {
           display: none;
@@ -144,7 +154,7 @@
           display: block;
         }
         .drawer-open #left {
-          width: 80%;
+          width: 70%;
         }
         .drawer-open #title,
         .drawer-open #songs {
@@ -156,7 +166,7 @@
   <body>
     <div id="left">
       <div id="player-mock">
-        <h2>AJJ – Live from Quarantine<br/>Pick a song below</h2><br/>
+        <h2>AJJ – Live from Quarantine<br/>Pick a song to start<br/>Then keep picking to add songs to your queue</h2><br/>
 <a href="https://venmo.com/bonnseanette" target="_blank">Venmo: @bonnseanette</a>
 <a href="https://paypal.me/bonnseanette" target="_blank">Paypal: paypal.me/bonnseanette</a>
 <a href="https://cash.app/$bonnseanette" target="_blank">Cash App: $bonnseanette</a>
@@ -207,6 +217,8 @@
       const parseVideoTitle = (str) => str.replace(/Live from Quarantine\s+-?/i, '').trim()
 
       const getTitle = ({video, song}) => `${parseVideoTitle(video.title)} - ${song && song.name || 'All'}`
+
+      const playId = ({video, song}) => `b-${video.id}${song ? `-${parseSeconds(song.time.start)}` : ''}`
 
       const nextItem = (arr, item) => arr[arr.findIndex(i => i === item) + 1]
 
@@ -261,6 +273,7 @@
         const index = upNext.findIndex((i) => i === item)
         upNext.splice(index, 1)
         removeNode($(`#${item.id}`))
+        $$('.upnext-text').forEach(n => n.textContent = `Up next (${upNext.length})`)
       }
 
       const playNextInQueue = () => {
@@ -326,8 +339,10 @@
         nowPlaying = { video, song }
         $('#nowplaying').innerText = getTitle({video, song})
         $$('.play-button').forEach(n => n.classList.remove('is-playing'))
-        $(`#b-${video.id}-${parseSeconds(song.time.start)}`).classList.add('is-playing')
-        $(`#b-${video.id}-${parseSeconds(song.time.start)}`).parentNode.parentNode.scrollIntoView()
+
+        const buttonId = `#${playId({ video, song })}`
+        $(buttonId).classList.add('is-playing')
+        $(buttonId).parentNode.parentNode.scrollIntoView()
 
         // debug queue
         // v.endSeconds = v.startSeconds + 10
@@ -357,12 +372,14 @@
         const $buttonHolder = $el('div', '', { class: 'buttons' })
 
         $buttonHolder.appendChild($el('button', '+PLAY ALL+', {
+          id: playId({ video }),
+          class: 'play-button',
           onclick: () => playOrAddToQueue({ video })
         }))
 
         ;(video.songs || []).forEach((song) => {
           $buttonHolder.appendChild($el('button', song.name, {
-            id: `b-${video.id}-${parseSeconds(song.time.start)}`,
+            id: playId({ video, song }),
             class: 'play-button',
             onclick: () => playOrAddToQueue({
               video,
@@ -380,7 +397,7 @@
         player = new YT.Player('player', {
           height: '390',
           width: '640',
-          playerVars: { 'autoplay': 0, 'controls': 0 },
+          playerVars: { 'autoplay': 0, 'controls': 0, rel: 0, playsinline: 1, modestbranding: 1 },
           events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
