@@ -1,5 +1,5 @@
 .env
-public/
+public/*
 !public/manifest.json
 !public/app.css
 !public/app.js
