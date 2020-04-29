@@ -10,9 +10,15 @@
         margin: 0;
         padding: 0;
       }
+      #title {
+        margin: 0;
+        height: 40px;
+        width: 640px;
+      }
       #songs {
-        max-height: calc(100vh - 390px);
+        max-height: calc(100vh - 390px - 40px);
         overflow: scroll;
+        width: 640px;
       }
       #songs button, #upnext button {
         display: block;
@@ -33,6 +39,7 @@
   </head>
   <body>
     <div id="player"></div>
+    <p id="title">Now playing: <span id="nowplaying"></span></p>
     <div id="songs"></div>
     <div id="upnext"></div>
 
@@ -59,7 +66,7 @@
 
       let player;
       let playing = false;
-      const upNext = []
+      let upNext = []
       const DATA = window.__DATA
       const $songs = document.getElementById('songs')
       const $upnext = document.getElementById('upnext')
@@ -75,7 +82,13 @@
         return a;
       }
 
+      const resetUpNext = () => {
+        player.stopVideo()
+        upNext.forEach((item) => removeFromUpNext(item))
+      }
+
       const shuffle = () => {
+        resetUpNext()
         const shuffledSongs = shuffleArray(DATA.reduce((acc, video) => {
           (video.songs || []).forEach((song) => {
             acc.push({ video, song })
@@ -89,15 +102,17 @@
 
       document.body.appendChild($el('button', 'Shuffle',{ id: 'shuffle', onclick: shuffle }))
 
+      const getTitle = ({video, song}) => `${video.title} - ${song && song.name || 'All'}`
+
       const queueUpNext = ({ video, song }) => {
         const id = `n-${Math.random().toString().slice(2)}`
         const item = {video, song, id }
         upNext.push(item)
-        $upnext.appendChild($el('button', `${video.title} - ${song.name || 'All'}`, { id, onclick: () => removeFromUpNext(item) }))
+        $upnext.appendChild($el('button', getTitle({video,song}), { id, onclick: () => removeFromUpNext(item) }))
       }
 
       const removeFromUpNext = (item) => {
-        const index = upNext.findIndex((i) => i ===item)
+        const index = upNext.findIndex((i) => i === item)
         upNext.splice(index, 1)
         removeNode(document.getElementById(item.id))
       }
@@ -127,6 +142,7 @@
         }
 
         console.log('loadVideoById', v)
+        document.getElementById('nowplaying').innerText = getTitle({video, song})
         player.loadVideoById(v)
       }
 
@@ -178,7 +194,6 @@
 
       function onPlayerReady(event) {
         console.log('ready', event)
-        //event.target.playVideo();
       }
 
       function onPlayerStateChange(event) {
