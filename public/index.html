@@ -261,6 +261,7 @@
         const index = upNext.findIndex((i) => i === item)
         upNext.splice(index, 1)
         removeNode($(`#${item.id}`))
+        $$('.upnext-text').forEach(n => n.textContent = `Up next (${upNext.length})`)
       }
 
       const playNextInQueue = () => {
