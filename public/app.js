@@ -32,7 +32,7 @@ const getTitle = ({ video, song }) =>
 const playId = ({ video, song }) =>
   `b-${video.id}${song ? `-${parseSeconds(song.time.start)}` : ''}`
 
-const nextItem = (arr, item) => arr[arr.findIndex((i) => i === item) + 1]
+const nextItem = (arr, item) => item ? arr[arr.findIndex((i) => i === item) + 1] : undefined
 
 const shuffleArray = (a) => {
   let j, x, i
@@ -105,9 +105,9 @@ const playNextInQueue = () => {
     } else {
       const nextVideo = nextItem(DATA, video)
       if (nextVideo) {
-        play({ video: nextVideo, song: nextVideo.songs[0] })
+        play({ video: nextVideo, song: song && nextVideo.songs[0] })
       } else {
-        play({ video: DATA[0], song: DATA[0].songs[0] })
+        play({ video: DATA[0], song: song && DATA[0].songs[0] })
       }
     }
   }
