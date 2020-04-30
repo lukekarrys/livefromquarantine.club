@@ -3,10 +3,8 @@ const fs = require('fs').promises
 const path = require('path')
 
 const raw = require('../data/data.json')
-const ajj = require('./ajj')
-const dcfc = require('./dcfc')
 
-const parsers = { ajj, dcfc }
+const parsers = [require('./ajj'), require('./dcfc')]
 
 const validate = (data) => {
   assert.ok(
@@ -38,30 +36,26 @@ const validate = (data) => {
 const parsePath = (...parts) => path.join(__dirname, ...parts)
 const publicPath = (...parts) => path.join(__dirname, '..', 'public', ...parts)
 
-const writeParsed = async (name) => {
-  const parser = parsers[name]
-
+const writeParsed = async (parser) => {
+  const { id } = parser.meta
   let index = (await fs.readFile(parsePath('index.html'))).toString()
   Object.entries(parser.meta).forEach(([key, value]) => {
     index = index.replace(new RegExp(`{{${key}}}`, 'g'), value)
   })
 
-  const data = parser.parse(raw[name].items)
+  const data = parser.parse(raw[id].items)
   validate(data)
   if (parser.validate) parser.validate(data)
 
-  await fs.writeFile(publicPath(`${name}.html`), index)
+  await fs.writeFile(publicPath(`${id}.html`), index)
   await fs.writeFile(
-    publicPath(`${name}.js`),
+    publicPath(`${id}.js`),
     `window.__DATA = ${JSON.stringify(data, null, 2)}`
   )
-  if (name === 'ajj') {
-    await fs.writeFile(publicPath('index.html'), index)
-  }
 }
 
 const main = async () => {
-  await Promise.all(Object.keys(parsers).map(writeParsed))
+  await Promise.all(parsers.map(writeParsed))
 }
 
 main().catch(console.error)

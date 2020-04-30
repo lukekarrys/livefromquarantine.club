@@ -36,7 +36,7 @@
     }
   },
   "scripts": {
-    "build": "node build/index.js",
+    "build": "node build/index.js && ls -lha public/",
     "data": "node data/index.js > data/data.json",
     "prettier": "prettier  --write '**/*.{js,md,css,json}'",
     "eslint": "eslint . --fix",
