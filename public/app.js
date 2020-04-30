@@ -231,6 +231,7 @@ function onYouTubeIframeAPIReady() {
     },
   })
 }
+window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady
 
 function onPlayerReady(event) {
   console.log('ready', event)
