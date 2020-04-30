@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="manifest" href="manifest.json">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="manifest.json" />
     <title>{{title}}</title>
     <meta name="description" content="{{description}}" />
     <script src="{{id}}.js"></script>
-    <script src="https://www.youtube.com/iframe_api"></script>
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="app.css" />
   </head>
   <body>
     <div id="left">
       <div id="player-mock">
-        <h2>{{title}}<br/>Pick a song to start<br/>Pick more songs to add to your queue</h2><br/>
+        <h2>
+          {{title}}<br />Pick a song to start<br />Pick more songs to add to
+          your queue
+        </h2>
+        <br />
         {{main}}
-    </div>
+      </div>
       <div id="player"></div>
       <p id="title">
         <button id="reset">Reset</button>
@@ -31,5 +34,6 @@
       <div id="upnext"></div>
     </div>
     <script src="app.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
   </body>
 </html>
