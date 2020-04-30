@@ -78,18 +78,7 @@ const main = async (...artists) => {
         .then(() => ({ id, ok: true }))
         .catch((error) => ({ id, ok: false, error }))
     )
-  ).then((res) => {
-    const errors = res.filter((r) => !r.ok)
-    if (errors.length) {
-      throw new Error(
-        `Error building artists: ${errors
-          .map((e) => e.id)
-          .join(',')}\n\n${errors.map((e) => e.error.message).join('\n\n')}`
-      )
-    } else {
-      return res
-    }
-  })
+  )
 }
 
 main(...process.argv.slice(2).flatMap((v) => v.split(',')))
