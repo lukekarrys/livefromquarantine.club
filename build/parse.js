@@ -29,8 +29,8 @@ const getSongsFromText = (text, parsers) => {
           parsers.songName,
           name
             .trim()
-            .replace(/^(\()?[\s-:]+/, '$1')
-            .replace(/[\s-:]+(\))?$/, '$2')
+            .replace(/^(\()?[\s-:]+/, (match, p1) => p1 || '')
+            .replace(/[\s-:]+(\))?$/, (match, p1) => p1 || '')
             .replace(/[\n\r\t]/g, ' ')
             .replace(/\s+/g, ' ')
             .trim()
