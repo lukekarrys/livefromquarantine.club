@@ -1,6 +1,6 @@
 const fs = require('fs').promises
 const https = require('https')
-const channels = const parsers = [require('../build/ajj'), require('../build/dcfc')]
+const channels = [require('../build/dcfc'), require('../build/ajj')]
 
 const getJson = (url) =>
   new Promise((resolve, reject) => {
@@ -34,13 +34,11 @@ const main = async () => {
   const envVars = await getEnvVars()
 
   const resps = await Promise.all(
-    channels.map((c) =>
-      getJson(`${c.meta.api}&key=${envVars.API_KEY}`)
-    )
+    channels.map((c) => getJson(`${c.meta.api}&key=${envVars.API_KEY}`))
   )
 
   return channels.reduce((acc, c, index) => {
-    acc[c.id] = resps[index]
+    acc[c.meta.id] = resps[index]
     return acc
   }, {})
 }

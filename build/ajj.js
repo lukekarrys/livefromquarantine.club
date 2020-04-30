@@ -79,7 +79,8 @@ module.exports.meta = {
   title: 'Sean Bonnette – Live From Quarantine',
   description: 'All the Sean Bonnette Live From Quarantine songs',
   id: 'seanbonnette',
-  api: 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1',
+  api:
+    'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1',
   main: `
     <a href="https://venmo.com/bonnseanette" target="_blank">Venmo: @bonnseanette</a>
     <a href="https://paypal.me/bonnseanette" target="_blank">Paypal: paypal.me/bonnseanette</a>
