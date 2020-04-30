@@ -163,7 +163,7 @@ const play = ({ video, song }) => {
   $(buttonId).parentNode.parentNode.scrollIntoView()
 
   // debug queue
-  v.endSeconds = v.startSeconds + 10
+  // v.endSeconds = v.startSeconds + 10
 
   console.log('loadVideoById', v)
   player.loadVideoById(v)
