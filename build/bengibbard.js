@@ -1,5 +1,3 @@
-const assert = require('assert')
-
 module.exports.parsers = {
   title: (title) =>
     title.replace(/Ben Gibbard: Live From Home \((.*)\)/i, '$1').trim(),

@@ -3,12 +3,6 @@ const fs = require('fs').promises
 const path = require('path')
 const mainParser = require('./parse')
 
-const bgData = require('../data/bengibbard.json')
-const bgParser = require('./bengibbard')
-
-const sbData = require('../data/seanbonnette.json')
-const sbParser = require('./seanbonnette')
-
 const validate = (data) => {
   assert.ok(
     data.every((v) => v.title),
@@ -67,14 +61,14 @@ const writeParsed = async (parser, data) => {
 }
 
 const buildArtist = async (artistKey) => {
-  const artist = {
-    seanbonnette: { data: sbData, parser: sbParser },
-    bengibbard: { data: bgData, parser: bgParser },
-  }[artistKey]
+  const artistData = require(`../data/${artistKey}.json`)
+  const artistParser = require(`./${artistKey}`)
 
-  if (!artist) throw new Error(`Invalid artistKey: ${artistKey}`)
+  if (!artistData || !artistParser) {
+    throw new Error(`Invalid artistKey: ${artistKey}`)
+  }
 
-  await writeParsed(artist.parser, artist.data)
+  await writeParsed(artistParser, artistData)
 }
 
 const main = async (...artists) => {
@@ -98,6 +92,6 @@ const main = async (...artists) => {
   })
 }
 
-main(...process.argv.slice(2))
+main(...process.argv.slice(2).flatMap((v) => v.split(',')))
   .then(console.log)
   .catch(console.error)

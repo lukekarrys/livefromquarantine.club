@@ -2,9 +2,6 @@ const fs = require('fs').promises
 const path = require('path')
 const axios = require('axios')
 
-const bgData = require('../build/bengibbard')
-const sbData = require('../build/seanbonnette')
-
 const commentUrl =
   'https://www.googleapis.com/youtube/v3/commentThreads?part=snippet&order=relevance&textFormat=plainText&videoId='
 
@@ -57,10 +54,7 @@ const writeFile = async (artist, resp) => {
 }
 
 const getArtist = async (artistKey) => {
-  const artist = {
-    seanbonnette: sbData,
-    bengibbard: bgData,
-  }[artistKey]
+  const artist = require(`../build/${artistKey}`)
 
   if (!artist) {
     throw new Error(`Invalid artistKey: ${artistKey}`)
@@ -92,6 +86,6 @@ const main = async (...artists) => {
   })
 }
 
-main(...process.argv.slice(2))
+main(...process.argv.slice(2).flatMap((v) => v.split(',')))
   .then(console.log)
   .catch(console.error)
