@@ -47,6 +47,7 @@ p {
 }
 #player {
   display: none;
+  filter: grayscale();
 }
 #title,
 #songs {
