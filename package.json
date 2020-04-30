@@ -7,7 +7,8 @@
     "url": "https://github.com/lukekarrys/livefromquarantine.club/issues"
   },
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
