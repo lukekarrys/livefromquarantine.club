@@ -170,7 +170,10 @@ const play = ({ video, song }) => {
 }
 
 const playOrAddToQueue = ({ video, song }) => {
-  console.log('play or up next', playing, upNext.length)
+  console.log('play or up next', playing, upNext.length, !!player)
+
+  if (!player) return
+
   if (!playing && upNext.length === 0) {
     play({ video, song })
   } else {
