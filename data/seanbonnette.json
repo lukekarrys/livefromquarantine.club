@@ -2137,8 +2137,7 @@
         }
       }
     ],
-    "kind": "youtube#playlistItemListResponse",
-    "prevPageToken": "CDIQAQ"
+    "kind": "youtube#playlistItemListResponse"
   },
   "comments": {
     "gJrZXIEwGY4": {
