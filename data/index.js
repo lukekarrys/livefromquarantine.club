@@ -54,7 +54,7 @@ const normalizeData = (d) =>
             'canRate',
             'pageInfo',
             'nextPageToken',
-            'previousPageToken',
+            'prevPageToken',
           ].includes(key)
         ) {
           return undefined
