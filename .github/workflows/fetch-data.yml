@@ -14,9 +14,8 @@ jobs:
         with:
           node-version: 12.x
 
-      - name: Checkout and install
+      - name: Install
         run: |
-          git checkout -b fetch_data
           npm install
           git checkout package-lock.json
 
