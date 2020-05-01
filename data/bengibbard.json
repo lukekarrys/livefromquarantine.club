@@ -776,11 +776,7 @@
         }
       }
     ],
-    "kind": "youtube#playlistItemListResponse",
-    "pageInfo": {
-      "resultsPerPage": 50,
-      "totalResults": 18
-    }
+    "kind": "youtube#playlistItemListResponse"
   },
   "comments": {
     "QQ15BaDEo0Q": {
@@ -811,11 +807,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "T58oySghwLk": {
       "items": [
@@ -845,11 +837,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "Z3BiBB0W1Eo": {
       "items": [
@@ -879,11 +867,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "SrmFQa_iByw": {
       "items": [
@@ -913,11 +897,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "s6oJjUvB9TA": {
       "items": [
@@ -947,11 +927,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "5pgVzSMqjWA": {
       "items": [
@@ -981,11 +957,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "Hk-xqMKLyRo": {
       "items": [
@@ -1015,11 +987,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "2TiCThAAcNM": {
       "items": [
@@ -1049,11 +1017,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "IFXCGJs8nOY": {
       "items": [
@@ -1083,11 +1047,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "tBhqwnL8Zck": {
       "items": [
@@ -1142,11 +1102,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "25OCP0qBD_A": {
       "items": [
@@ -1201,11 +1157,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "QHTXnGLb4I0": {
       "items": [
@@ -1235,11 +1187,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "1eEcVCyKMb8": {
       "items": [
@@ -1294,11 +1242,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "dLWmIJV4GMg": {
       "items": [
@@ -1328,11 +1272,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "PX7A8tQNp8g": {
       "items": [
@@ -1387,11 +1327,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "jhgssMW8L0U": {
       "items": [
@@ -1419,13 +1355,34 @@
             },
             "videoId": "jhgssMW8L0U"
           }
+        },
+        {
+          "id": "UgzfNOpl8FJgtuk4mAh4AaABAg",
+          "kind": "youtube#commentThread",
+          "snippet": {
+            "topLevelComment": {
+              "id": "UgzfNOpl8FJgtuk4mAh4AaABAg",
+              "kind": "youtube#comment",
+              "snippet": {
+                "authorChannelId": {
+                  "value": "UCwlNNvXVfKMlifaAkg-GUiA"
+                },
+                "authorChannelUrl": "http://www.youtube.com/channel/UCwlNNvXVfKMlifaAkg-GUiA",
+                "authorDisplayName": "zulmatthews",
+                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxKLt27q2fNA7eT_95mz84vAtFLjiCsaHyG5Q=s48-c-k-c0xffffffff-no-rj-mo",
+                "publishedAt": "2020-03-20T00:28:46.000Z",
+                "textDisplay": "0:11: St. Peter’s Cathedral\n4:06: Photobooth\n8:14: 405\n12:42: Little Wanderer\n20:55: Brothers On A Hotel Bed\n24:25: Soul Meets Body\n28:14: Talking Bird\n33:57: 60 & Punk\n38:48: Grace Cathedral Hill\n44:08: Broken Yolk in Western Sky\n48:55: The Sound of Settling",
+                "textOriginal": "0:11: St. Peter’s Cathedral\n4:06: Photobooth\n8:14: 405\n12:42: Little Wanderer\n20:55: Brothers On A Hotel Bed\n24:25: Soul Meets Body\n28:14: Talking Bird\n33:57: 60 & Punk\n38:48: Grace Cathedral Hill\n44:08: Broken Yolk in Western Sky\n48:55: The Sound of Settling",
+                "updatedAt": "2020-03-20T00:28:46.000Z",
+                "videoId": "jhgssMW8L0U",
+                "viewerRating": "none"
+              }
+            },
+            "videoId": "jhgssMW8L0U"
+          }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "o0EpwT9fg1I": {
       "items": [
@@ -1480,11 +1437,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "Ei9xuVkbQuU": {
       "items": [
@@ -1514,11 +1467,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     }
   }
 }

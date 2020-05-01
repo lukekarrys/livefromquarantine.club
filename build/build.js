@@ -1,6 +1,7 @@
 const assert = require('assert')
 const fs = require('fs').promises
 const path = require('path')
+const prettier = require('prettier')
 const mainParser = require('./parse')
 
 const validate = (data) => {
@@ -54,9 +55,13 @@ const writeParsed = async (parser, data) => {
   validate(parsedData)
 
   await fs.writeFile(publicPath(`${id}.html`), index)
+  const prettierOptions = await prettier.resolveConfig(__dirname)
   await fs.writeFile(
     publicPath(`${id}.js`),
-    `window.__DATA = ${JSON.stringify(parsedData, null, 2)}`
+    prettier.format(`window.__DATA = ${JSON.stringify(parsedData, null, 2)}`, {
+      parser: 'babel',
+      ...prettierOptions,
+    })
   )
 }
 
