@@ -45,6 +45,6 @@
     "eslint": "eslint . --fix",
     "lint": "npm run prettier && npm run eslint",
     "prettier": "prettier --write '**/*.{js,md,css,json}'",
-    "trigger": "node trigger-gh-data.js"
+    "trigger": "node data/trigger.js"
   }
 }
