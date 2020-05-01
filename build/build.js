@@ -1,10 +1,7 @@
 const assert = require('assert')
 const fs = require('fs').promises
 const path = require('path')
-
-const raw = require('../data/data.json')
-
-const parsers = [require('./ajj'), require('./dcfc')]
+const mainParser = require('./parse')
 
 const validate = (data) => {
   assert.ok(
@@ -36,26 +33,54 @@ const validate = (data) => {
 const parsePath = (...parts) => path.join(__dirname, ...parts)
 const publicPath = (...parts) => path.join(__dirname, '..', 'public', ...parts)
 
-const writeParsed = async (parser) => {
+const writeParsed = async (parser, data) => {
   const { id } = parser.meta
+
   let index = (await fs.readFile(parsePath('index.html'))).toString()
+
   Object.entries(parser.meta).forEach(([key, value]) => {
     index = index.replace(new RegExp(`{{${key}}}`, 'g'), value)
   })
 
-  const data = parser.parse(raw[id].items)
-  validate(data)
-  if (parser.validate) parser.validate(data)
+  const parsedData = mainParser(
+    data.videos,
+    data.comments,
+    parser.parsers
+  ).filter((video, index, videos) => {
+    // The same video could be included multiple times in a playlist so remove dupes
+    return videos.findIndex((v) => v.id === video.id) === index
+  })
+
+  validate(parsedData)
 
   await fs.writeFile(publicPath(`${id}.html`), index)
   await fs.writeFile(
     publicPath(`${id}.js`),
-    `window.__DATA = ${JSON.stringify(data, null, 2)}`
+    `window.__DATA = ${JSON.stringify(parsedData, null, 2)}`
   )
 }
 
-const main = async () => {
-  await Promise.all(parsers.map(writeParsed))
+const buildArtist = async (artistKey) => {
+  const artistData = require(`../data/${artistKey}.json`)
+  const artistParser = require(`./${artistKey}`)
+
+  if (!artistData || !artistParser) {
+    throw new Error(`Invalid artistKey: ${artistKey}`)
+  }
+
+  await writeParsed(artistParser, artistData)
 }
 
-main().catch(console.error)
+const main = async (...artists) => {
+  return Promise.all(
+    artists.map((id) =>
+      buildArtist(id)
+        .then(() => ({ id, ok: true }))
+        .catch((error) => ({ id, ok: false, error }))
+    )
+  )
+}
+
+main(...process.argv.slice(2).flatMap((v) => v.split(',')))
+  .then(console.log)
+  .catch(console.error)

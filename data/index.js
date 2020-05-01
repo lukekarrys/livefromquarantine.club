@@ -1,48 +1,111 @@
+require('dotenv').config()
+
 const fs = require('fs').promises
-const https = require('https')
-const channels = [require('../build/dcfc'), require('../build/ajj')]
+const path = require('path')
+const axios = require('axios')
 
-const getJson = (url) =>
-  new Promise((resolve, reject) => {
-    https.get(url, (res) => {
-      res.setEncoding('utf8')
-      let rawData = ''
-      res.on('data', (chunk) => {
-        rawData += chunk
-      })
-      res.on('end', () => {
-        try {
-          resolve(JSON.parse(rawData))
-        } catch (e) {
-          reject(e)
-        }
-      })
-    })
-  })
+const apiUrl = `https://www.googleapis.com/youtube/v3`
 
-const getEnvVars = async () =>
-  (await fs.readFile('.env'))
-    .toString()
-    .split('\n')
-    .map((l) => l.split('='))
-    .reduce((acc, item) => {
-      acc[item[0]] = item[1]
-      return acc
-    }, {})
+const commentUrl = (id, key) => {
+  const url = new URL(`${apiUrl}/commentThreads`, apiUrl)
+  url.searchParams.set('part', 'snippet')
+  url.searchParams.set('order', 'relevance')
+  url.searchParams.set('textFormat', 'plainText')
+  url.searchParams.set('maxResults', '5')
+  url.searchParams.set('videoId', id)
+  url.searchParams.set('key', key)
+  return url.toString()
+}
 
-const main = async () => {
-  const envVars = await getEnvVars()
+const playlistUrl = (id, key) => {
+  const url = new URL(`${apiUrl}/playlistItems`, apiUrl)
+  url.searchParams.set('part', 'snippet')
+  url.searchParams.set('maxResults', '50')
+  url.searchParams.set('playlistId', id)
+  url.searchParams.set('key', key)
+  return url.toString()
+}
 
-  const resps = await Promise.all(
-    channels.map((c) => getJson(`${c.meta.api}&key=${envVars.API_KEY}`))
-  )
-
-  return channels.reduce((acc, c, index) => {
-    acc[c.meta.id] = resps[index]
+const sortKeys = (obj) => {
+  const keys = Object.keys(obj)
+  keys.sort()
+  return keys.reduce((acc, k) => {
+    acc[k] = obj[k]
     return acc
   }, {})
 }
 
-main()
-  .then((r) => console.log(JSON.stringify(r, null, 2)))
+const normalizeData = (d) =>
+  sortKeys(
+    JSON.parse(
+      JSON.stringify(d, (key, value) => {
+        if (key === 'etag') return undefined
+        if (value && !Array.isArray(value) && typeof value === 'object') {
+          return sortKeys(value)
+        }
+        if (key === 'updatedAt' || key === 'publishedAt') {
+          return new Date(value).toJSON()
+        }
+        return value
+      })
+    )
+  )
+
+const getVideosAndComments = async (artist, key) => {
+  const videosResp = await axios.get(playlistUrl(artist.meta.playlistId, key))
+  const videos = normalizeData(videosResp.data)
+
+  const videosComments = await Promise.all(
+    videos.items.map((video) =>
+      axios
+        .get(commentUrl(video.snippet.resourceId.videoId, key))
+        .then((r) => normalizeData(r.data))
+    )
+  )
+
+  const commentsByVideoId = videosComments.reduce(
+    (acc, videoComments, index) => {
+      acc[videos.items[index].snippet.resourceId.videoId] = videoComments
+      return acc
+    },
+    {}
+  )
+
+  return {
+    videos,
+    comments: commentsByVideoId,
+  }
+}
+
+const writeFile = async (artist, resp) => {
+  await fs.writeFile(
+    path.join(__dirname, `${artist.meta.id}.json`),
+    JSON.stringify(resp, null, 2)
+  )
+}
+
+const getArtist = async (artistKey) => {
+  const artist = require(`../build/${artistKey}`)
+
+  if (!artist) {
+    throw new Error(`Invalid artistKey: ${artistKey}`)
+  }
+
+  const { API_KEY } = process.env
+  const resp = await getVideosAndComments(artist, API_KEY)
+  await writeFile(artist, resp)
+}
+
+const main = async (...artists) => {
+  return Promise.all(
+    artists.map((id) =>
+      getArtist(id)
+        .then(() => ({ id, ok: true }))
+        .catch((error) => ({ id, ok: false, error }))
+    )
+  )
+}
+
+main(...process.argv.slice(2).flatMap((v) => v.split(',')))
+  .then(console.log)
   .catch(console.error)
