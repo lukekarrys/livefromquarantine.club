@@ -19,12 +19,13 @@ const commentUrl = (id, key) => {
   return url.toString()
 }
 
-const playlistUrl = (id, key) => {
+const playlistUrl = (id, key, pageToken) => {
   const url = new URL(`${apiUrl}/playlistItems`, apiUrl)
   url.searchParams.set('part', 'snippet')
   url.searchParams.set('maxResults', '50')
   url.searchParams.set('playlistId', id)
   url.searchParams.set('key', key)
+  if (pageToken) url.searchParams.set('pageToken', pageToken)
   return url.toString()
 }
 
@@ -53,7 +54,7 @@ const normalizeData = (d) =>
             'canRate',
             'pageInfo',
             'nextPageToken',
-            'previousPageToken'
+            'previousPageToken',
           ].includes(key)
         ) {
           return undefined
@@ -68,20 +69,20 @@ const normalizeData = (d) =>
       })
     )
   )
-  
-const getPaginatedVideos = async (id, key, token, previousItems) => {
-  const resp = await axios.get(playlistUrl(id, key, token))
-  const {items, nextPageToken } = resp.data
+
+const getPaginatedVideos = async (id, key, pageToken, previousItems = []) => {
+  const resp = await axios.get(playlistUrl(id, key, pageToken))
+  const { items, nextPageToken } = resp.data
   const newItems = [...previousItems, ...items]
   if (nextPageToken) {
     return await getPaginatedVideos(id, key, nextPageToken, newItems)
   }
   return {
-  ...resp,
-  data: {
-  ...resp.data,
-  items: newItems
-  }
+    ...resp,
+    data: {
+      ...resp.data,
+      items: newItems,
+    },
   }
 }
 
