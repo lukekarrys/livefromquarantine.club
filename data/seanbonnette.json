@@ -2137,188 +2137,100 @@
         }
       }
     ],
-    "kind": "youtube#playlistItemListResponse",
-    "pageInfo": {
-      "resultsPerPage": 50,
-      "totalResults": 50
-    }
+    "kind": "youtube#playlistItemListResponse"
   },
   "comments": {
+    "gJrZXIEwGY4": {
+      "items": [],
+      "kind": "youtube#commentThreadListResponse"
+    },
     "Qn9HXWyDSos": {
       "items": [],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "qHll4LNerNI": {
       "items": [],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "AIBbCySzIT0": {
       "items": [],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "RMeGSbb6ZKI": {
       "items": [],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "jafhcRvR1iY": {
       "items": [],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "_dS15JS1rfU": {
       "items": [],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "UxDtGetyKJA": {
       "items": [],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "B95fKLU-R7M": {
       "items": [],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "2HrrgJbnisc": {
       "items": [],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "N2QzHsWnrrE": {
       "items": [],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "E9u4ecwBvZY": {
       "items": [],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "33AQ-7nMPco": {
       "items": [],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "atruJT4Pd9U": {
       "items": [],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "nUTSDIw546o": {
       "items": [],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "IfLUpQhPS_Q": {
       "items": [],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "OdoYQ7Yu__I": {
       "items": [],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "ntB5v4hEcr0": {
       "items": [],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "wR9OQ1Xqxx0": {
       "items": [],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "ceaVdlyX9Os": {
       "items": [],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "L0tggV58ouY": {
       "items": [],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "t6IwawYO-x8": {
       "items": [],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "XoXabiKMhmg": {
       "items": [],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "dubJxTm0tOM": {
       "items": [
@@ -2348,11 +2260,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "wPMCbfbq7KU": {
       "items": [
@@ -2382,11 +2290,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "mfCc5mT_I64": {
       "items": [
@@ -2416,11 +2320,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "VY4nSI-0gJQ": {
       "items": [
@@ -2450,11 +2350,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "kRu_s_Er_vs": {
       "items": [
@@ -2484,11 +2380,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "dkUIfRFo3cE": {
       "items": [
@@ -2518,11 +2410,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "6qhGWwgm3qo": {
       "items": [
@@ -2552,11 +2440,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "rcyFwiauUcw": {
       "items": [
@@ -2586,11 +2470,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "NauXNPCK3Dk": {
       "items": [
@@ -2620,11 +2500,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "z65QOiVKiNw": {
       "items": [
@@ -2654,11 +2530,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "GySHvIDk24U": {
       "items": [
@@ -2688,19 +2560,11 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "w0-82S7RCic": {
       "items": [],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "E6aX5rGi2aI": {
       "items": [
@@ -2730,11 +2594,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "kWwshUCILQI": {
       "items": [
@@ -2764,11 +2624,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "8abkrQrdh5U": {
       "items": [
@@ -2798,11 +2654,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "TGJjttNEvVI": {
       "items": [
@@ -2832,11 +2684,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "-ir2Yh8UL30": {
       "items": [
@@ -2866,11 +2714,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "Up1LshJo2gg": {
       "items": [
@@ -2900,11 +2744,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "NnlUMfxjHfE": {
       "items": [
@@ -2934,11 +2774,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "E1L4rJsFPg0": {
       "items": [
@@ -2968,11 +2804,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "zBPt-Bk9CpY": {
       "items": [
@@ -3027,11 +2859,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "HHoi6Nr1clM": {
       "items": [
@@ -3061,11 +2889,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "CnJl97Y_3W4": {
       "items": [
@@ -3095,11 +2919,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     },
     "_IUnh0k0hxw": {
       "items": [
@@ -3129,11 +2949,7 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse",
-      "pageInfo": {
-        "resultsPerPage": 5,
-        "totalResults": 5
-      }
+      "kind": "youtube#commentThreadListResponse"
     }
   }
 }
