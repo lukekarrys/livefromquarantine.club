@@ -2,7 +2,7 @@ name: Fetch YouTube Data
 on: repository_dispatch
 
 jobs:
-  run:
+  data:
     name: Get latest video data
     runs-on: ubuntu-latest
 
