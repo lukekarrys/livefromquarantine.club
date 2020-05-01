@@ -32,7 +32,8 @@ const getTitle = ({ video, song }) =>
 const playId = ({ video, song }) =>
   `b-${video.id}${song ? `-${parseSeconds(song.time.start)}` : ''}`
 
-const nextItem = (arr, item) => item ? arr[arr.findIndex((i) => i === item) + 1] : undefined
+const nextItem = (arr, item) =>
+  item ? arr[arr.findIndex((i) => i === item) + 1] : undefined
 
 const shuffleArray = (a) => {
   let j, x, i
@@ -238,6 +239,22 @@ window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady
 
 function onPlayerReady(event) {
   console.log('ready', event)
+  const hash = window.location.hash.slice(1)
+  if (hash) {
+    const [playSong, ...queueSongs] = hash.split(',')
+    $(`#b-${playSong}`).click()
+    queueSongs
+      .map((songId) => {
+        const [videoId, songStart] = songId.split('-')
+        const video = DATA.find((v) => v.id === videoId)
+        const song = (video.songs || []).find(
+          (s) => parseSeconds(s.time.start) === parseInt(songStart)
+        )
+        return video && song ? { video, song } : null
+      })
+      .filter(Boolean)
+      .forEach((v) => addToQueue(v))
+  }
 }
 
 function onPlayerStateChange(event) {
