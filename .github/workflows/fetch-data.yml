@@ -14,6 +14,7 @@ jobs:
         with:
           node-version: 12.x
 
+      - run: git checkout -b fetch_data
       - run: npm install
       - run: npm run data ${{ github.event.client_payload.artist }}
         env:
@@ -22,11 +23,6 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v4.1.6
         with:
           commit_message: 'Fetch new data for ${{ github.event.client_payload.artist }}'
-
           branch: fetch_data
-
-          # Optional git params
           commit_options: '--no-verify --signoff'
-
-          # Optional glob pattern of files which should be added to the commit
           file_pattern: data/*.json
