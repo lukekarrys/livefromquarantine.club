@@ -50,6 +50,9 @@ const normalizeData = (d) =>
             'canReply',
             'isPublic',
             'canRate',
+            'pageInfo',
+            'nextPageToken',
+            'previousPageToken'
           ].includes(key)
         ) {
           return undefined
@@ -64,9 +67,25 @@ const normalizeData = (d) =>
       })
     )
   )
+  
+const getPaginatedVideos = async (id, key, token, previousItems) => {
+  const resp = await axios.get(playlistUrl(id, key, token))
+  const {items, nextPageToken } = resp.data
+  const newItems = [...previousItems, ...items]
+  if (nextPageToken) {
+    return await getPaginatedVideos(id, key, nextPageToken, newItems)
+  }
+  return {
+  ...resp,
+  data: {
+  ...resp.data,
+  items: newItems
+  }
+  }
+}
 
 const getVideosAndComments = async (artist, key) => {
-  const videosResp = await axios.get(playlistUrl(artist.meta.playlistId, key))
+  const videosResp = await getPaginatedVideos(artist.meta.playlistId, key)
   const videos = normalizeData(videosResp.data)
 
   const videosComments = await Promise.all(
