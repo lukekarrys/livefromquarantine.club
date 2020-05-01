@@ -96,17 +96,11 @@ const getVideosAndComments = async (artist, key) => {
         .get(commentUrl(video.snippet.resourceId.videoId, key))
         .then((resp) => {
           return Object.assign(resp.data, {
-            items: resp.data.items
-              .filter((comment) =>
-                isCommentMaybeSetlist(
-                  comment.snippet.topLevelComment.snippet.textDisplay
-                )
+            items: resp.data.items.filter((comment) =>
+              isCommentMaybeSetlist(
+                comment.snippet.topLevelComment.snippet.textDisplay
               )
-              .sort(
-                (a, b) =>
-                  a.snippet.topLevelComment.updatedAt -
-                  b.snippet.topLevelComment.updatedAt
-              ),
+            ),
           })
         })
         .then((r) => normalizeData(r))
