@@ -2,6 +2,49 @@
   "videos": {
     "items": [
       {
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5CQkEwRDA0MDkwNUM2MDY1",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\nAJJ - Your Voice, As I Remember It 0:35\nThe Thermals - Pillar of Salt 3:38\nAJJ - Do, Re, Me 6:41\nFoot Ox - Lucky Strike 11:51\nAJJ - People II 2: Still Peoplin' 14:21\nAJJ - Goodbye, Oh Goodbye 17:28\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-05-01T06:35:56.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "gJrZXIEwGY4"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/gJrZXIEwGY4/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/gJrZXIEwGY4/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/gJrZXIEwGY4/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/gJrZXIEwGY4/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/gJrZXIEwGY4/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - April 30"
+        }
+      },
+      {
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5GNjAwN0Y0QTFGOTVDMEMy",
         "kind": "youtube#playlistItem",
         "snippet": {
