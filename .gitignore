@@ -5,3 +5,4 @@ public/*
 !public/app.js
 !public/_redirects
 node_modules/
+test-repository-dispatch.sh

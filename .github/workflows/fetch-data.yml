@@ -20,7 +20,7 @@ jobs:
       - name: Push to built branch
         uses: Automattic/action-commit-to-branch@master
         with:
-          branch: 'video-data-latest'
+          branch: 'fetch_data'
           commit_message: 'Fetch new data for ${{ github.event.client_payload.artist }}'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
