@@ -143,4 +143,7 @@ main(...process.argv.slice(2).flatMap((v) => v.split(',')))
       throw new Error('Data error')
     }
   })
-  .catch(console.error)
+  .catch((err) => {
+    console.error(err)
+    process.exit(1)
+  })
