@@ -2,6 +2,49 @@
   "videos": {
     "items": [
       {
+        "id": "UExWdUtIaTl2MlJuNld5dFlfMjZLZmdPMkYyeXA0R3Fndi4yMUQyQTQzMjRDNzMyQTMy",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCOtn115fCfFKIxG7_Quv9ZA",
+          "channelTitle": "Death Cab for Cutie",
+          "description": "Hey y’all, \n\nMy next Live From Home show is this Thursday at 4pm PT.\n\nThis week’s livestream will be in benefit of Seattle's Hunger Intervention Program, a non-profit that is helping make sure food gets on the table for people in need during this time. If you’re able, please donate via http://hungerintervention.org or our Venmo @BenGibbardLiveFromHome – all donations will go to the Hunger Intervention Program.\n⁣⁣\nLet me know what songs you want to hear. \n\nSee you then!\n\nxo\nBen",
+          "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
+          "publishedAt": "2020-05-01T00:18:26.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "QQ15BaDEo0Q"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/QQ15BaDEo0Q/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/QQ15BaDEo0Q/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/QQ15BaDEo0Q/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/QQ15BaDEo0Q/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/QQ15BaDEo0Q/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Ben Gibbard: Live From Home (4/30/20)"
+        }
+      },
+      {
         "id": "UExWdUtIaTl2MlJuNld5dFlfMjZLZmdPMkYyeXA0R3Fndi41QTY1Q0UxMTVCODczNThE",
         "kind": "youtube#playlistItem",
         "snippet": {
@@ -9,7 +52,6 @@
           "channelTitle": "Death Cab for Cutie",
           "description": "Hey everyone, \n\nTune into my next Live From Home show tomorrow 4/23 at 4pm PT. It will be an all-piano set.\n\nThis week’s livestream is in benefit of Seattle-based non-profit LANGSTON’s GoFundMe for the Seattle Artist Relief Fund Amid COVID-19 which will help creatives in need during this time. If you’re able, please donate via https://www.gofundme.com/f/for-artists or our Venmo @BenGibbardLiveFromHome – all donations will go to the Seattle Artist Relief Fund Amid COVID-19. \n\nSend in any song requests ASAP!\n\nSee you tomorrow. \n\nxo\nBen",
           "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "position": 0,
           "publishedAt": "2020-04-23T23:54:53.000Z",
           "resourceId": {
             "kind": "youtube#video",
@@ -53,7 +95,6 @@
           "channelTitle": "Death Cab for Cutie",
           "description": "Hey y’all, \n\nI’m baaaaaaaack for another installment of Live From Home, tomorrow (Thursday) at 4pm PT. Get those requests in ASAP!\n\nTomorrow’s show will be a benefit for one of my fav’s, Teen Feed who are helping support homeless and at-risk youth during these difficult times. If you’re able, please donate via http://www.teenfeed.org or our Venmo @BenGibbardLiveFromHome – all donations will go directly to Teen Feed. \n\nxo\nBen",
           "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "position": 1,
           "publishedAt": "2020-04-17T01:20:06.000Z",
           "resourceId": {
             "kind": "youtube#video",
@@ -97,7 +138,6 @@
           "channelTitle": "Death Cab for Cutie",
           "description": "Hey y'all, \n\nIn recognition of the 20th anniversary, tomorrow’s Live From Home will be a deep dive on 'We Have the Facts and We’re Voting Yes'. I’ll be giving the background and playing songs from this album exclusively. \n\nGet your questions ready!\n\nAlso, we’re moving back to 4pm PT. \n\nThe show will be a benefit for SMASH, a wonderful organization here in Seattle that helps local musicians access health care. If you’re able, please donate via https://smashseattle.org or our Venmo @BenGibbardLiveFromHome – all donations will go directly to SMASH. \n\nSee you guys tomorrow!\n\nxo\n\nBen\n\n#StayAtHome #WithMe",
           "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "position": 2,
           "publishedAt": "2020-04-10T00:05:15.000Z",
           "resourceId": {
             "kind": "youtube#video",
@@ -141,7 +181,6 @@
           "channelTitle": "Death Cab for Cutie",
           "description": "The weekly Live From Home shows begin today at 6pm PT. Get your requests in! \n\nToday’s show will be a benefit for MusiCares, a non-profit that provides critical assistance for the music community in times of need. If you’re able, please donate via https://www.grammy.com/musicares or our Venmo @BenGibbardLiveFromHome – all donations will go directly to MusiCares. \n\nSee you soon!\n\nxo \n\nBen\n\n#StayAtHome #WithMe",
           "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "position": 3,
           "publishedAt": "2020-04-03T02:13:01.000Z",
           "resourceId": {
             "kind": "youtube#video",
@@ -185,7 +224,6 @@
           "channelTitle": "Death Cab for Cutie",
           "description": "Tomorrow’s covers only show will be the last of the daily livestreams! Thank you all for submitting your requests, can’t wait to play them for you.\n\nTomorrow’s show will be in benefit of Aurora Commons, a Seattle-based non-profit that provides a safe space for people temporarily experiencing homelessness. If you have enjoyed the livestream shows for the last couple weeks and are able, please donate to these incredible folks via their Venmo @Aurora-Commons or website https://www.auroracommons.org – consider it the tip jar! \n\nSee you tomorrow at 4pm PT!",
           "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "position": 4,
           "publishedAt": "2020-03-30T00:07:29.000Z",
           "resourceId": {
             "kind": "youtube#video",
@@ -229,7 +267,6 @@
           "channelTitle": "Death Cab for Cutie",
           "description": "See you at 4pm PT for the Dealer’s Choice show – I've picked out some songs to play for you all today. Sunday’s cover show will be the last of the daily livestreams, please get in any requests asap!\n\nToday’s show is in benefit of Washington Low Income Housing Alliance (https://www.wliha.org), an organization leading the movement to ensure that all Washington State residents thrive in safe, healthy, affordable homes. Please donate if you are able!",
           "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "position": 5,
           "publishedAt": "2020-03-29T02:03:07.000Z",
           "resourceId": {
             "kind": "youtube#video",
@@ -273,7 +310,6 @@
           "channelTitle": "Death Cab for Cutie",
           "description": "Thank you all so much for voting for the top-10 songs you want me to play! Voting is now closed and all your votes have been counted… Tune in at 4pm PT for tomorrow’s livestream where I’ll be performing the resulting top-10, countdown style!\n\nTomorrow’s show is in benefit of Americans for Immigrant Justice (http://aijustice.org). AI Justice is a non-profit law firm that protects and promotes the basic human rights of immigrants through legal / advocacy services, policy reform, and public education at local, state, and national levels. Please donate if you are able!",
           "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "position": 6,
           "publishedAt": "2020-03-28T01:13:54.000Z",
           "resourceId": {
             "kind": "youtube#video",
@@ -317,7 +353,6 @@
           "channelTitle": "Death Cab for Cutie",
           "description": "Hello everyone, \n\nWe’re heading into the home stretch of the daily shows! Thank you to everyone who’s watched, asked great questions and made requests. This has been a blast for me. \n\nI wanted to give you guys a heads up for the rest of the week. The schedule is as follows;\n\nTHURSDAY (TODAY)\n\nAn all request set culled from the years 2012-present. Get your requests in for songs from such albums as;\n\n- Former Lives \n- Kintsugi\n- Bandwagonesque\n- Thank You For Today\n\nPlus soundtrack cuts, singles, etc. \n\nToday’s show is in benefit of Your Supplies Save Lives (https://www.suppliessaveliveswa.org). Washington State health care workers are running out of safety equipment to protect themselves on the front lines of the COVID-19 outbreak. If you have any, please donate your unopened boxes of masks (N95 preferred), gowns, eye protection, and gloves to keep front-line health care workers healthy so they can save lives! All supplies will be allocated to Washington State hospitals and first responders treating COVID-19 patients. \n\nFRIDAY\n\nA Top-10, all request show voted on by YOU! Vote here: https://found.ee/BenGibbard-LiveFromHome-Vote\n\nI’ll play the resulting top-10, countdown style! \n\nVoting closes tonight 3/26 at 9pm PT.\n\nSATURDAY\n\nDealer’s Choice. \n\nSUNDAY\n\nThe last of the daily shows. This will be an all-request cover show. \n\nSee you guys soon! \n\nxo \n\nBen",
           "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "position": 7,
           "publishedAt": "2020-03-27T00:38:33.000Z",
           "resourceId": {
             "kind": "youtube#video",
@@ -361,7 +396,6 @@
           "channelTitle": "Death Cab for Cutie",
           "description": "For tomorrow’s livestream;\n\nGet your requests in for songs from 2007-2011. The following albums are in play;\n\n- Narrow Stairs\n- The Open Door e.p.\n- One Fast Move or I’m Gone\n- Codes and Keys\n\nPlus any and all obscuro's you might think of!\n\nTomorrow’s show will be in benefit of the Seattle Foundation’s COVID-19 Response Fund. The Fund makes grants to nonprofits that are working on the frontlines to provide the Seattle region’s most vulnerable communities with emergency assistance, such as financial support, healthcare, and childcare. Please donate here if you are able: https://www.seattlefoundation.org/communityimpact/civic-leadership/covid-19-response-fund\n\nAlso, I'm going to play the top 10 songs as voted on by YOU for the livestream this Friday, March 27! The winning songs will be revealed live as a countdown during the show. Place your vote now through Thursday at 9pm PT here: https://found.ee/BenGibbard-LiveFromHome-Vote\n\nxo\n\nBen",
           "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "position": 8,
           "publishedAt": "2020-03-26T01:43:31.000Z",
           "resourceId": {
             "kind": "youtube#video",
@@ -405,7 +439,6 @@
           "channelTitle": "Death Cab for Cutie",
           "description": "Thanks for tuning in today, everyone! \n\nTomorrow’s set (4pm PT) will be created from the years 2002-2005. Please send in your requests from the following;\n\n- Give Up\n- Transatlanticism\n- The Home e.p.\n- Plans\n\nAs well as any and all obscure collabs, singles, etc.\n\nTomorrow’s show will be in benefit of the University of Washington hospital staff. The folks at The London Plane have a GoFundMe set up to help feed the hospital staff who are working on the front lines to contain this pandemic and treat the sick. Please donate here if you are able: https://www.gofundme.com/f/feeding-uw-hospital-staff\n\nSee ya!\n\nxo\n\nBen",
           "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "position": 9,
           "publishedAt": "2020-03-25T01:08:18.000Z",
           "resourceId": {
             "kind": "youtube#video",
@@ -449,7 +482,6 @@
           "channelTitle": "Death Cab for Cutie",
           "description": "Hey everyone, \n\nTomorrow’s set (Monday) will be culled exclusively from 1997-2001. Please send in any and all requests from;\n\n- You Can Play These Songs With Chords\n- Something About Airplanes\n- All Time Quarterback\n- We Have the Facts…\n- The Forbidden Love e.p.\n- The Photo Album\n\nPlus any obscure singles from that era. \n\nSee you tomorrow! Tomorrow’s show will be in benefit of White Center Food Bank (https://www.whitecenterfoodbank.org) in Seattle. They are in need of non-expired unopened food (such as canned goods, rice noodles, spices, peanut butter, coffee and more), diapers, baby wipes, Similac formula, hand sanitizer, clean supplies and toilet paper. Monetary donations are also welcome to help ensure that they can continue to serve the 1,600 families per month they see regularly plus any new families that come to them during this time. Please donate if you are able!\n\nxo\n\nBen",
           "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "position": 10,
           "publishedAt": "2020-03-24T00:56:32.000Z",
           "resourceId": {
             "kind": "youtube#video",
@@ -493,7 +525,6 @@
           "channelTitle": "Death Cab for Cutie",
           "description": "Ben is really excited for today’s covers only show! Make sure to get your requests in asap. Tune in at 4pm PT.\n\nToday's show is in benefit of Country Doctor Community Health Centers (https://countrydoctor.org) based in Seattle. They are a nonprofit organization that provides high quality, comprehensive health care to their patients. Community health centers are an indispensable resource for Seattle amid the COVID-19 outbreak, please donate to help support them during this time if you can!",
           "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "position": 11,
           "publishedAt": "2020-03-23T00:06:09.000Z",
           "resourceId": {
             "kind": "youtube#video",
@@ -537,7 +568,6 @@
           "channelTitle": "Death Cab for Cutie",
           "description": "Ben will be livestreaming daily over the weekend too! Tune in at 4pm PT for tomorrow’s show which will be in benefit of Bloodworks Northwest (https://www.bloodworksnw.org), a community-based nonprofit organization harnessing donor gifts to provide a safe, lifesaving blood supply to more than 90 Northwest hospitals. Their centers and drives are currently operating by appointment only to adhere to social distancing recommendations in addition to ensuring a safe and reliable blood supply throughout this time. If you’re able, financial contributions are also welcome to help support patient services and blood research.",
           "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "position": 12,
           "publishedAt": "2020-03-21T23:52:57.000Z",
           "resourceId": {
             "kind": "youtube#video",
@@ -581,7 +611,6 @@
           "channelTitle": "Death Cab for Cutie",
           "description": "I had a good time answering your questions and playing some tunes today. More fun tomorrow at 4pm PT!\n\nTomorrow’s show will be in benefit of New Horizons Ministries (https://nhmin.org), an organization that helps provide resources for youth experiencing homelessness in the Seattle area.",
           "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "position": 13,
           "publishedAt": "2020-03-20T23:54:15.000Z",
           "resourceId": {
             "kind": "youtube#video",
@@ -625,7 +654,6 @@
           "channelTitle": "Death Cab for Cutie",
           "description": "Had a lot of fun playing songs for you again today! I'll be back online livestreaming at 4pm PT tomorrow. Keep those requests and questions coming! \n\nTomorrow’s show will be in benefit of University District Food Bank (https://www.udistrictfoodbank.org) based in Seattle. In addition to food, they are looking for folks to donate toiletries, diapers, baby formula and more. If you're able, please consider donating some of these items to help those in need!",
           "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "position": 14,
           "publishedAt": "2020-03-20T01:03:44.000Z",
           "resourceId": {
             "kind": "youtube#video",
@@ -669,7 +697,6 @@
           "channelTitle": "Death Cab for Cutie",
           "description": "Hey there everyone,\n\nThanks so much for tuning in yesterday. I hope it was as cathartic for you as is was for me. Please keep those requests and questions coming, I’ll be back on the virtual air at 4pm PST.\n\nI do have a request for those who might be able to help...\n\nToday’s show will be in benefit of the Aurora Commons (https://www.auroracommons.org). For those who are not familiar, they are a wonderful organization that provides a safe space for people temporarily experiencing homelessness on Aurora Avenue here in Seattle. \n\nAt this point, there are no shelters available in North Seattle near The AC and only a few number of beds in neighboring hotels. The AC currently is pushing the city to allow for organized homeless encampments so that housed people don’t become afraid of folks setting up camp on their front lawns. So here’s what I’d like to ask of you...\n\nIf you are in the Seattle area OR have access to an open and safe post office/shipping location, please drop off or send any and all tents/sleeping bags (used is fine) to the following address;\n\nThe Aurora Commons c/o\nLisa Etter-Carson\n927 N 89th St\nSeattle, WA 98013\n\nIf you do drop off, please knock, leave your donations on the front porch, and walk away to maintain appreciate social distancing. \n\nThank you,\n\nBen",
           "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "position": 15,
           "publishedAt": "2020-03-19T03:42:01.000Z",
           "resourceId": {
             "kind": "youtube#video",
@@ -713,7 +740,6 @@
           "channelTitle": "Death Cab for Cutie",
           "description": "Hey Everyone,\n\nI know you are all really freaked out right now.  I am too.  And while I’m proud that we’re all doing the necessary things at the moment to help flatten the curve, I know it has left us all incredibly isolated.  \n\nBut because we’re all going through this nightmare together we are quite literally NOT alone. Our lives and stories are all linked, maybe more now than they have ever been.  \n\nBe it with DCFC, Postal Service, or solo I have always been grateful for the honor you have bestowed upon us by choosing to congregate en masse around our music.  Some of you have traveled great distances and/or shelled out large sums of money to see us play and that has never been lost on me.  So in this crazy and unprecedented time, I’d like to return the favor by coming to YOU.\n\nFor the next few weeks I will be playing songs everyday from my home studio.  We will be streaming on YouTube at 4pm PST daily.  We’re still working out the details but I’m hoping to take some requests and maybe even have a guest or two stop by digitally.  The first show will be tomorrow.  It will assuredly be a little wonky and glitchy but we’re gonna do our best.\n\nSee You Tomorrow.\n\nxo\n\nBen",
           "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "position": 16,
           "publishedAt": "2020-03-19T03:41:47.000Z",
           "resourceId": {
             "kind": "youtube#video",
@@ -753,10 +779,159 @@
     "kind": "youtube#playlistItemListResponse",
     "pageInfo": {
       "resultsPerPage": 50,
-      "totalResults": 17
+      "totalResults": 18
     }
   },
   "comments": {
+    "QQ15BaDEo0Q": {
+      "items": [
+        {
+          "id": "Ugz9MqOhywdpaqXkF4B4AaABAg",
+          "kind": "youtube#commentThread",
+          "snippet": {
+            "canReply": true,
+            "isPublic": true,
+            "topLevelComment": {
+              "id": "Ugz9MqOhywdpaqXkF4B4AaABAg",
+              "kind": "youtube#comment",
+              "snippet": {
+                "authorChannelId": {
+                  "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
+                },
+                "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
+                "authorDisplayName": "MeinKampfyChair",
+                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
+                "canRate": true,
+                "publishedAt": "2020-05-01T00:05:34.000Z",
+                "textDisplay": "00:27 Monday Morning \r\n05:08 The District Sleeps Alone Tonight\r\n10:06 Your Hurricane\r\n14:51 Jealousy Rides With Me\r\n17:26 (Q & A)\r\n25:33 Life in Life in Quarantine\r\n29:34 You've Haunted Me All My Life\r\n34:50 Someday You Will Be Loved \r\n39:39 The Things You Said [Depeche Mode cover]\r\n44:50 I Will Follow You into the Dark",
+                "textOriginal": "00:27 Monday Morning \r\n05:08 The District Sleeps Alone Tonight\r\n10:06 Your Hurricane\r\n14:51 Jealousy Rides With Me\r\n17:26 (Q & A)\r\n25:33 Life in Life in Quarantine\r\n29:34 You've Haunted Me All My Life\r\n34:50 Someday You Will Be Loved \r\n39:39 The Things You Said [Depeche Mode cover]\r\n44:50 I Will Follow You into the Dark",
+                "updatedAt": "2020-05-01T00:05:34.000Z",
+                "videoId": "QQ15BaDEo0Q",
+                "viewerRating": "none"
+              }
+            },
+            "videoId": "QQ15BaDEo0Q"
+          }
+        },
+        {
+          "id": "Ugzv_8Ik11hXicEmUR54AaABAg",
+          "kind": "youtube#commentThread",
+          "snippet": {
+            "canReply": true,
+            "isPublic": true,
+            "topLevelComment": {
+              "id": "Ugzv_8Ik11hXicEmUR54AaABAg",
+              "kind": "youtube#comment",
+              "snippet": {
+                "authorChannelId": {
+                  "value": "UCKs5IcdS4m3TKD6vjj-poVw"
+                },
+                "authorChannelUrl": "http://www.youtube.com/channel/UCKs5IcdS4m3TKD6vjj-poVw",
+                "authorDisplayName": "Anton Andrenko",
+                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJzutyiNdYzazo-qpy3AtrU6OB0sVRF3lVRM7Q=s48-c-k-c0xffffffff-no-rj-mo",
+                "canRate": true,
+                "publishedAt": "2020-05-01T00:00:27.000Z",
+                "textDisplay": "Is it me or the stream had audio glitches during \"The Things You Said\"? Such a shame such a beautifully played song was spoiled by Youtube crappiness...",
+                "textOriginal": "Is it me or the stream had audio glitches during \"The Things You Said\"? Such a shame such a beautifully played song was spoiled by Youtube crappiness...",
+                "updatedAt": "2020-05-01T00:00:27.000Z",
+                "videoId": "QQ15BaDEo0Q",
+                "viewerRating": "none"
+              }
+            },
+            "videoId": "QQ15BaDEo0Q"
+          }
+        },
+        {
+          "id": "UgyWDTndgbKbNDXoKmx4AaABAg",
+          "kind": "youtube#commentThread",
+          "snippet": {
+            "canReply": true,
+            "isPublic": true,
+            "topLevelComment": {
+              "id": "UgyWDTndgbKbNDXoKmx4AaABAg",
+              "kind": "youtube#comment",
+              "snippet": {
+                "authorChannelId": {
+                  "value": "UCi0khcDD4-NtHgliDpPZriA"
+                },
+                "authorChannelUrl": "http://www.youtube.com/channel/UCi0khcDD4-NtHgliDpPZriA",
+                "authorDisplayName": "Jeff Miletich",
+                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJzz3xoOQP0spNtpCIWZgfsX7bAXYwl45fA8yA=s48-c-k-c0xffffffff-no-rj-mo",
+                "canRate": true,
+                "publishedAt": "2020-05-01T01:45:26.000Z",
+                "textDisplay": "\"The Distict... \" still holds up well..",
+                "textOriginal": "\"The Distict... \" still holds up well..",
+                "updatedAt": "2020-05-01T01:45:26.000Z",
+                "videoId": "QQ15BaDEo0Q",
+                "viewerRating": "none"
+              }
+            },
+            "videoId": "QQ15BaDEo0Q"
+          }
+        },
+        {
+          "id": "Ugz4mPdWsb7YMOi4Xq54AaABAg",
+          "kind": "youtube#commentThread",
+          "snippet": {
+            "canReply": true,
+            "isPublic": true,
+            "topLevelComment": {
+              "id": "Ugz4mPdWsb7YMOi4Xq54AaABAg",
+              "kind": "youtube#comment",
+              "snippet": {
+                "authorChannelId": {
+                  "value": "UC8qqb7ytAKQQ2heb8_krqxg"
+                },
+                "authorChannelUrl": "http://www.youtube.com/channel/UC8qqb7ytAKQQ2heb8_krqxg",
+                "authorDisplayName": "Michael Walter",
+                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxpi2vvTCNfCWw55CnMSwPPoGmWxEDQDJ7FTA=s48-c-k-c0xffffffff-no-rj-mo",
+                "canRate": true,
+                "publishedAt": "2020-05-01T00:44:30.000Z",
+                "textDisplay": "Jamey sent me here. Paradoxically, I will also send him here.",
+                "textOriginal": "Jamey sent me here. Paradoxically, I will also send him here.",
+                "updatedAt": "2020-05-01T00:44:30.000Z",
+                "videoId": "QQ15BaDEo0Q",
+                "viewerRating": "none"
+              }
+            },
+            "videoId": "QQ15BaDEo0Q"
+          }
+        },
+        {
+          "id": "Ugwc6wAaDPyvt63dxXp4AaABAg",
+          "kind": "youtube#commentThread",
+          "snippet": {
+            "canReply": true,
+            "isPublic": true,
+            "topLevelComment": {
+              "id": "Ugwc6wAaDPyvt63dxXp4AaABAg",
+              "kind": "youtube#comment",
+              "snippet": {
+                "authorChannelId": {
+                  "value": "UCNTNFWA2NBg1u5JQuB79cDA"
+                },
+                "authorChannelUrl": "http://www.youtube.com/channel/UCNTNFWA2NBg1u5JQuB79cDA",
+                "authorDisplayName": "mick crowley",
+                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJzs1TbOfe6KaH-bN74K1eKoigsDQhLyFm2pSg=s48-c-k-c0xffffffff-no-rj-mo",
+                "canRate": true,
+                "publishedAt": "2020-05-01T01:00:21.000Z",
+                "textDisplay": "Would love to see \"Sound of Settling\" - isolation edition  :-)",
+                "textOriginal": "Would love to see \"Sound of Settling\" - isolation edition  :-)",
+                "updatedAt": "2020-05-01T01:00:21.000Z",
+                "videoId": "QQ15BaDEo0Q",
+                "viewerRating": "none"
+              }
+            },
+            "videoId": "QQ15BaDEo0Q"
+          }
+        }
+      ],
+      "kind": "youtube#commentThreadListResponse",
+      "pageInfo": {
+        "resultsPerPage": 5,
+        "totalResults": 5
+      }
+    },
     "T58oySghwLk": {
       "items": [
         {
@@ -776,7 +951,6 @@
                 "authorDisplayName": "MeinKampfyChair",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 202,
                 "publishedAt": "2020-04-24T00:10:59.000Z",
                 "textDisplay": "00:21 Unobstructed Views\r\n05:17 Passenger Seat\r\n10:25 The Ice Is Getting Thinner\r\n15:07 Tulsa Telephone Book\r [Tom T. Hall cover]\n18:21 (Q & A)\r\n24:26 Binary Sea\r\n28:22 What Sarah Said\r\n33:57 Proxima B\r\n39:03 All Apologies [Nirvana cover]\r\n42:34 (Seattle Artist Relief Fund Amid COVID-19 charity shout out)\r\n44:08 Blacking Out the Friction\r\n47:32 Soul Meets Body",
                 "textOriginal": "00:21 Unobstructed Views\r\n05:17 Passenger Seat\r\n10:25 The Ice Is Getting Thinner\r\n15:07 Tulsa Telephone Book\r [Tom T. Hall cover]\n18:21 (Q & A)\r\n24:26 Binary Sea\r\n28:22 What Sarah Said\r\n33:57 Proxima B\r\n39:03 All Apologies [Nirvana cover]\r\n42:34 (Seattle Artist Relief Fund Amid COVID-19 charity shout out)\r\n44:08 Blacking Out the Friction\r\n47:32 Soul Meets Body",
@@ -785,7 +959,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 5,
             "videoId": "T58oySghwLk"
           }
         },
@@ -806,7 +979,6 @@
                 "authorDisplayName": "Rachel Hurst",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxxQYdG_xbFqHyXVidcmAw8wZLvvhkMEtO27Q=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 80,
                 "publishedAt": "2020-04-24T14:32:48.000Z",
                 "textDisplay": "“What Sarah Said” is an all-time favorite of mine. It’s been on my mind a lot lately as I graduate medical school in a week and start residency in a couple months. For those of you who can’t be there with your loved ones at the end, especially during this pandemic, I promise I will be.",
                 "textOriginal": "“What Sarah Said” is an all-time favorite of mine. It’s been on my mind a lot lately as I graduate medical school in a week and start residency in a couple months. For those of you who can’t be there with your loved ones at the end, especially during this pandemic, I promise I will be.",
@@ -815,7 +987,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 2,
             "videoId": "T58oySghwLk"
           }
         },
@@ -836,7 +1007,6 @@
                 "authorDisplayName": "Jen Cira",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxCNseYlWt2uK5YVXGJ2CcSip-Vd1IkHujU5A=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 53,
                 "publishedAt": "2020-04-24T03:21:13.000Z",
                 "textDisplay": "I had no idea the story behind 'the ice is getting thinner' thats honestly hilarious. Lol would never have expected that",
                 "textOriginal": "I had no idea the story behind 'the ice is getting thinner' thats honestly hilarious. Lol would never have expected that",
@@ -845,7 +1015,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 1,
             "videoId": "T58oySghwLk"
           }
         },
@@ -866,7 +1035,6 @@
                 "authorDisplayName": "dontcallmegus",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJzWuSpwPJsXsUCDQdzNO-oCuauOBs-I5djZxA=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 21,
                 "publishedAt": "2020-04-24T03:43:50.000Z",
                 "textDisplay": "Ben,\nPlease - I'm LITERALLY BEGGING YOU - PLEASE do The New Year! Thanks a million.",
                 "textOriginal": "Ben,\nPlease - I'm LITERALLY BEGGING YOU - PLEASE do The New Year! Thanks a million.",
@@ -875,7 +1043,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 1,
             "videoId": "T58oySghwLk"
           }
         },
@@ -896,7 +1063,6 @@
                 "authorDisplayName": "Hey! Otter",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJweLcxmhZ9eME4uC8-DQmcLYV4GlmFG1qBH=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 13,
                 "publishedAt": "2020-04-25T05:53:52.000Z",
                 "textDisplay": "What you've been doing for over a month is like a live concert in all of our houses.  Thank you so much Ben!",
                 "textOriginal": "What you've been doing for over a month is like a live concert in all of our houses.  Thank you so much Ben!",
@@ -905,13 +1071,11 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 0,
             "videoId": "T58oySghwLk"
           }
         }
       ],
       "kind": "youtube#commentThreadListResponse",
-      "nextPageToken": "QURTSl9pMEdnRTk5MlBVZ0huVWRQdmVlSms0ZUlaMlhYM2JndEVfb0Q2Q2hNd01LeG83UUp0YUsxcEJPRmQ0dnlVc2YtUHRmcFY1YUY0SUpzSUtmM0JQRTgwU0R0d1VrUWc4LW1USjllTkNWbzVtVURpR3RMZjRjSTFFcm9rblpKV1B2bHpKS21jeG45dTNZemh5QTFKdWpHNVkyNEhBVHNUZ3lXZzVUR1JrYkhPa0JzRDg=",
       "pageInfo": {
         "resultsPerPage": 5,
         "totalResults": 5
@@ -936,7 +1100,6 @@
                 "authorDisplayName": "MeinKampfyChair",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 184,
                 "publishedAt": "2020-04-16T23:54:36.000Z",
                 "textDisplay": "00:33 Your Heart is an Empty Room\r\n04:13 Autumn Love\r\n08:43 Styrofoam Plates\r\n13:49 Willamine \r\n18:21 (Q & A)\r\n25:40 Man In Blue\r\n30:28 Grapevine Fires\r\n37:23 Photobooth\r\n42:27 A Movie Script Ending\r\n46:23 Don't Cry No Tears [Neil Young cover]",
                 "textOriginal": "00:33 Your Heart is an Empty Room\r\n04:13 Autumn Love\r\n08:43 Styrofoam Plates\r\n13:49 Willamine \r\n18:21 (Q & A)\r\n25:40 Man In Blue\r\n30:28 Grapevine Fires\r\n37:23 Photobooth\r\n42:27 A Movie Script Ending\r\n46:23 Don't Cry No Tears [Neil Young cover]",
@@ -945,7 +1108,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 5,
             "videoId": "Z3BiBB0W1Eo"
           }
         },
@@ -966,7 +1128,6 @@
                 "authorDisplayName": "Lankie",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxZrs9s40_GfG2yQ78THPFKqJRmqePl1gBOiA=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 35,
                 "publishedAt": "2020-04-17T08:02:28.000Z",
                 "textDisplay": "I just need him to do The New Year",
                 "textOriginal": "I just need him to do The New Year",
@@ -975,7 +1136,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 2,
             "videoId": "Z3BiBB0W1Eo"
           }
         },
@@ -996,7 +1156,6 @@
                 "authorDisplayName": "ana",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwH9aQQvx9Qgha3F2msgjxREqu0qRw7HVayoA=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 59,
                 "publishedAt": "2020-04-17T00:59:50.000Z",
                 "textDisplay": "FIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIINALLYYYY STYROFOAM PLATESSSSSS THANK YOU SO MUCHHHHHH <3",
                 "textOriginal": "FIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIINALLYYYY STYROFOAM PLATESSSSSS THANK YOU SO MUCHHHHHH <3",
@@ -1005,7 +1164,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 2,
             "videoId": "Z3BiBB0W1Eo"
           }
         },
@@ -1026,7 +1184,6 @@
                 "authorDisplayName": "My Favorite Vegan",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJz6Ek2bZy8VadXwJLCRRXovFUgVPSPQheLrzA=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 40,
                 "publishedAt": "2020-04-17T00:42:59.000Z",
                 "textDisplay": "That one person who gave this video a dislike, needs to get their life together.",
                 "textOriginal": "That one person who gave this video a dislike, needs to get their life together.",
@@ -1035,7 +1192,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 3,
             "videoId": "Z3BiBB0W1Eo"
           }
         },
@@ -1056,7 +1212,6 @@
                 "authorDisplayName": "Sam Jones",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJzdK4nrie2zL3Gb2VGNB8v0DYUWclg8SuPcKQ=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 40,
                 "publishedAt": "2020-04-16T23:56:19.000Z",
                 "textDisplay": "These shows have been so good during this challenging time. Really appreciate and look forward to them. Does anyone know if We Laugh Indoors has been played and if so which show was it?",
                 "textOriginal": "These shows have been so good during this challenging time. Really appreciate and look forward to them. Does anyone know if We Laugh Indoors has been played and if so which show was it?",
@@ -1065,13 +1220,11 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 5,
             "videoId": "Z3BiBB0W1Eo"
           }
         }
       ],
       "kind": "youtube#commentThreadListResponse",
-      "nextPageToken": "QURTSl9pMlhRWV9aVVZ0YW5WWHVoZUFVbkM5dVhuV2dqZXRMbnhDRnBjMGFKcV9CNjY3emRQcDYtU2VhRHVqUTZTNExOM2gxcmtUQkZ4WTdTSGVYMXZoSDctdGdaTVg3ak5SeThUbFJybHFaeFVFclJ1YUhCTWZLMk1UYUUyN3hLTUN5cDNwWXMxVXBxM2NyOEdrVjZiQ2hLd3VDMzktdWVqVnFCMkJDZS10YnFKdnJuQQ==",
       "pageInfo": {
         "resultsPerPage": 5,
         "totalResults": 5
@@ -1096,7 +1249,6 @@
                 "authorDisplayName": "MeinKampfyChair",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 144,
                 "publishedAt": "2020-04-10T00:07:45.000Z",
                 "textDisplay": "00:26 Title Track\r\n05:14 Employment Pages\r\n09:51 For What Reason\r\n13:53 Lowell, MA\r\n17:09 (Q & A #1)\r\n23:48 405\r\n28:15 Little Fury Bugs\r\n32:46 Company Calls\r\n37:54 Company Calls Epilogue\r\n43:16 (Q & A #2)\r\n51:03 No Joy in Mudville\r\n57:34 Scientist Studies",
                 "textOriginal": "00:26 Title Track\r\n05:14 Employment Pages\r\n09:51 For What Reason\r\n13:53 Lowell, MA\r\n17:09 (Q & A #1)\r\n23:48 405\r\n28:15 Little Fury Bugs\r\n32:46 Company Calls\r\n37:54 Company Calls Epilogue\r\n43:16 (Q & A #2)\r\n51:03 No Joy in Mudville\r\n57:34 Scientist Studies",
@@ -1105,7 +1257,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 3,
             "videoId": "SrmFQa_iByw"
           }
         },
@@ -1126,7 +1277,6 @@
                 "authorDisplayName": "Erik Strong",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxoa5ztTRlGIfoenK2mQi0caRrS3n44Ij5bRw=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 42,
                 "publishedAt": "2020-04-10T02:50:16.000Z",
                 "textDisplay": "The guitar work on this album is beautiful.",
                 "textOriginal": "The guitar work on this album is beautiful.",
@@ -1135,7 +1285,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 1,
             "videoId": "SrmFQa_iByw"
           }
         },
@@ -1156,7 +1305,6 @@
                 "authorDisplayName": "Nate Monick",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxfCc0Je9UDD5TF9049V-bc7ZeSgJqitc34qg=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 40,
                 "publishedAt": "2020-04-10T02:13:42.000Z",
                 "textDisplay": "It’s interesting to me how much more complicated these song seem to play than more recent stuff. These are my jams for sure, but you sure seem to have found a simplicity as you have matured that suits you. And your lyrics have always been top notch. No criticisms here. Just liking what you do. Keep on keeping on!",
                 "textOriginal": "It’s interesting to me how much more complicated these song seem to play than more recent stuff. These are my jams for sure, but you sure seem to have found a simplicity as you have matured that suits you. And your lyrics have always been top notch. No criticisms here. Just liking what you do. Keep on keeping on!",
@@ -1165,7 +1313,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 0,
             "videoId": "SrmFQa_iByw"
           }
         },
@@ -1186,7 +1333,6 @@
                 "authorDisplayName": "gPlan",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxJlCef5lmieYunRvDYU5H_-0Ity7qOsX8Ixw=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 26,
                 "publishedAt": "2020-04-10T00:22:17.000Z",
                 "textDisplay": "Ben, your music — now more than ever — means so much to me. Thank you for creating all of this and doing these streams",
                 "textOriginal": "Ben, your music — now more than ever — means so much to me. Thank you for creating all of this and doing these streams",
@@ -1195,7 +1341,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 0,
             "videoId": "SrmFQa_iByw"
           }
         },
@@ -1216,7 +1361,6 @@
                 "authorDisplayName": "Seevan Hawkins",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwHEJKfqGU478OcCws5E7YkHizkN9hcuzSM=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 33,
                 "publishedAt": "2020-04-10T00:46:17.000Z",
                 "textDisplay": "My favorite Death Cab album. 💜",
                 "textOriginal": "My favorite Death Cab album. 💜",
@@ -1225,13 +1369,11 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 0,
             "videoId": "SrmFQa_iByw"
           }
         }
       ],
       "kind": "youtube#commentThreadListResponse",
-      "nextPageToken": "QURTSl9pMWVGRGt4Q3Q5cHdzRU9zaldWTDdEbERVQWRtWmJMMVU2ZkxlakxEb1RxS2hhVGs5NUlWTkxDVDVNbEtEMkZfVDZfdHVaLVhMR1BTZzZ0QmRKV1pFQndXZVZhT1NtY1dDZXJHMzJYQUdGUkZiSzV5Z1QyWWNoeC1hdDd1bFdMV2Y3UXJpZzVuNFgzbzN2eFJEcVBYY1plVTRkVmJpcGJ2MHFGLVAtakVMSDA0VHlQSkE=",
       "pageInfo": {
         "resultsPerPage": 5,
         "totalResults": 5
@@ -1256,7 +1398,6 @@
                 "authorDisplayName": "Joe Lawrie",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJywtDHyc_hcfF63if0_npnCN819HBkmK8YYPQ=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 8,
                 "publishedAt": "2020-04-03T18:28:41.000Z",
                 "textDisplay": "Fountains of Wayne trivia: The song the radio was kept playing was \"Champagne Supernova\"",
                 "textOriginal": "Fountains of Wayne trivia: The song the radio was kept playing was \"Champagne Supernova\"",
@@ -1265,7 +1406,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 0,
             "videoId": "s6oJjUvB9TA"
           }
         },
@@ -1286,7 +1426,6 @@
                 "authorDisplayName": "JerichaG92",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJybPYV_Ot6tu_GwunMIfBe0flqXW9tQL7auJQ=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 60,
                 "publishedAt": "2020-04-03T02:18:25.000Z",
                 "textDisplay": "Hey, all you cool cats and kittens!!",
                 "textOriginal": "Hey, all you cool cats and kittens!!",
@@ -1295,7 +1434,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 1,
             "videoId": "s6oJjUvB9TA"
           }
         },
@@ -1316,7 +1454,6 @@
                 "authorDisplayName": "Alec Critten",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwFBjYI5HB4qOFrZc64lEtl-6Q2kmWumv6fIA=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 217,
                 "publishedAt": "2020-04-03T02:20:51.000Z",
                 "textDisplay": "0:24 - Lightness\n4:10 - Everything's A Ceiling\n9:02 - The Ghosts of Beverly Drive\n14:08 - A Hard One to Know\n16:15 - (Q&A)\n25:49 - When We Drive\n30:25 - Passenger Seat\n34:09 - (s/o to MusiCares)\n37:40 - Pictures in an Exhibition\n42:49 - Barbara H. (by Fountains of Wayne, tribute to Adam Schlesinger)\n47:20 - Song for Kelly Huckaby\n\nThanks Ben!",
                 "textOriginal": "0:24 - Lightness\n4:10 - Everything's A Ceiling\n9:02 - The Ghosts of Beverly Drive\n14:08 - A Hard One to Know\n16:15 - (Q&A)\n25:49 - When We Drive\n30:25 - Passenger Seat\n34:09 - (s/o to MusiCares)\n37:40 - Pictures in an Exhibition\n42:49 - Barbara H. (by Fountains of Wayne, tribute to Adam Schlesinger)\n47:20 - Song for Kelly Huckaby\n\nThanks Ben!",
@@ -1325,7 +1462,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 6,
             "videoId": "s6oJjUvB9TA"
           }
         },
@@ -1346,7 +1482,6 @@
                 "authorDisplayName": "Screaming Skull",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJyfOerV8HkC3n5h_4IytcLhkdjIh9zk2Q4QEA=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 31,
                 "publishedAt": "2020-04-03T21:30:16.000Z",
                 "textDisplay": "Honestly, Ben could set my shopping list to some chords and it would make me cry with emotion.",
                 "textOriginal": "Honestly, Ben could set my shopping list to some chords and it would make me cry with emotion.",
@@ -1355,7 +1490,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 0,
             "videoId": "s6oJjUvB9TA"
           }
         },
@@ -1376,7 +1510,6 @@
                 "authorDisplayName": "SAM",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxXW_cTrWEHRHza4zBrfkoH6Xk80aZepev5gw=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 23,
                 "publishedAt": "2020-04-03T05:42:28.000Z",
                 "textDisplay": "Felt my eyes get a little teary during Everything's a Ceiling. Listened to that track a lot during a pretty tough time.",
                 "textOriginal": "Felt my eyes get a little teary during Everything's a Ceiling. Listened to that track a lot during a pretty tough time.",
@@ -1385,13 +1518,11 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 2,
             "videoId": "s6oJjUvB9TA"
           }
         }
       ],
       "kind": "youtube#commentThreadListResponse",
-      "nextPageToken": "QURTSl9pMUlmNEZfVHI0S2ZLV2pvZlh2TXVSb3hhWnVmbW5lZURfUlJ1aXA1NTRwUV9rUy1MbHhNdVpZX3hCc0dfWE9jQzBZZHV5dTdadW80Rkg3d2NKd3dIWUUwclIzeTlwVTk5eDJzRkhPVHR4T2U3c3pJaHYxQ0JIUTdBdzdqWjk1UE5OWF9hR1QyQjZHVDRJQnRuUkhoRUhvTld0S2ZIOFZETmsxclY2NDJPQlBIQQ==",
       "pageInfo": {
         "resultsPerPage": 5,
         "totalResults": 5
@@ -1416,7 +1547,6 @@
                 "authorDisplayName": "Death Cab for Cutie",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJye47VIG3zUXwFFqDmc2oBnsU47v8RYZCsjhg=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 178,
                 "publishedAt": "2020-03-30T01:17:23.000Z",
                 "textDisplay": "Here is the setlist of all the covers Ben played today:\n\n00:58 \"Half A World Away” by R.E.M.\n05:26 \"Just Like Heaven” by The Cure\n09:47 \"Everyday Is Like Sunday” by Morrissey\n15:12 \"Out of Touch” by Hall & Oates\n20:13 \"Strange Powers” by The Magnetic Fields\n31:21 \"Harvest Moon” by Neil Young\n35:20 \"Please Don't Tell Me How the Story Ends” by Kris Kristofferson\n40:44 \"The Only Living Boy in New York” by Simon & Garfunkel\n47:08 \"Hold On” by Spiritualized\n\nSpotify playlist of these songs here: https://found.ee/BG-Mar29-Covers\n\nToday was the last of the daily shows, but Ben will be back streaming on a weekly basis! Tune in on Thursday, April 2 at 6pm PT for the next show.",
                 "textOriginal": "Here is the setlist of all the covers Ben played today:\n\n00:58 \"Half A World Away” by R.E.M.\n05:26 \"Just Like Heaven” by The Cure\n09:47 \"Everyday Is Like Sunday” by Morrissey\n15:12 \"Out of Touch” by Hall & Oates\n20:13 \"Strange Powers” by The Magnetic Fields\n31:21 \"Harvest Moon” by Neil Young\n35:20 \"Please Don't Tell Me How the Story Ends” by Kris Kristofferson\n40:44 \"The Only Living Boy in New York” by Simon & Garfunkel\n47:08 \"Hold On” by Spiritualized\n\nSpotify playlist of these songs here: https://found.ee/BG-Mar29-Covers\n\nToday was the last of the daily shows, but Ben will be back streaming on a weekly basis! Tune in on Thursday, April 2 at 6pm PT for the next show.",
@@ -1425,7 +1555,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 8,
             "videoId": "5pgVzSMqjWA"
           }
         },
@@ -1446,7 +1575,6 @@
                 "authorDisplayName": "flawed1",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwOeLC4OYHhdXv6vUwIo-781cvJE6cO-yf9TA=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 148,
                 "publishedAt": "2020-03-30T02:40:19.000Z",
                 "textDisplay": "Because I’m disabled and I can’t drive, I’ve never been able to pick up and leave the house whenever I want to. However, I always look forward to getting out of the house for work and a couple of weekly outings.  Now of course, my time out of the house has fallen to zero.  These shows have meant so much to me as something to look forward to. I will never be able to put it into words.  Years from now,  when I’m telling people what it was like to live through this, I hope I remember to mention you. I hope I tell people that you really seemed to understand that music can help people through difficult times.",
                 "textOriginal": "Because I’m disabled and I can’t drive, I’ve never been able to pick up and leave the house whenever I want to. However, I always look forward to getting out of the house for work and a couple of weekly outings.  Now of course, my time out of the house has fallen to zero.  These shows have meant so much to me as something to look forward to. I will never be able to put it into words.  Years from now,  when I’m telling people what it was like to live through this, I hope I remember to mention you. I hope I tell people that you really seemed to understand that music can help people through difficult times.",
@@ -1455,7 +1583,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 3,
             "videoId": "5pgVzSMqjWA"
           }
         },
@@ -1476,7 +1603,6 @@
                 "authorDisplayName": "K G",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJzDccDS4Lcuqfo4CAepvl52fSKK64Vqs4cOdw=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 11,
                 "publishedAt": "2020-04-02T02:27:15.000Z",
                 "textDisplay": "20 years ago I fell in love with a boy. We shared your music back and forth in a time I now call our youth. 40 years old now and he is in Seattle - I am still in our home town. I hadn't listened to your music in a long time bc it just HURT. We are close but never amounted to a happily ever after- friendship though sometimes has to be more valuable. Anyway he sent me the link to the 3/24 show - then called telling me that the playlist was our youth. Thank you. It seems so small I am sure.. but the fact that I remind him - that the music didn't only remind me of him.. it was a 2 way street. Be well.",
                 "textOriginal": "20 years ago I fell in love with a boy. We shared your music back and forth in a time I now call our youth. 40 years old now and he is in Seattle - I am still in our home town. I hadn't listened to your music in a long time bc it just HURT. We are close but never amounted to a happily ever after- friendship though sometimes has to be more valuable. Anyway he sent me the link to the 3/24 show - then called telling me that the playlist was our youth. Thank you. It seems so small I am sure.. but the fact that I remind him - that the music didn't only remind me of him.. it was a 2 way street. Be well.",
@@ -1485,7 +1611,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 0,
             "videoId": "5pgVzSMqjWA"
           }
         },
@@ -1506,7 +1631,6 @@
                 "authorDisplayName": "Tamalyn Dawn",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxQFthOVRKL2Pfi4iM_-oMwikKAk1gGg1ughQ=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 36,
                 "publishedAt": "2020-03-30T01:06:48.000Z",
                 "textDisplay": "This is the very BEST thing that could happen during a quarantine. 💔❤️🙌🏻 I WANT THESE COVERS ON A RECORD.",
                 "textOriginal": "This is the very BEST thing that could happen during a quarantine. 💔❤️🙌🏻 I WANT THESE COVERS ON A RECORD.",
@@ -1515,7 +1639,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 1,
             "videoId": "5pgVzSMqjWA"
           }
         },
@@ -1536,7 +1659,6 @@
                 "authorDisplayName": "Kevin Mccollum",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxSpV_0cHNhrPBABNsrSxQ7asBltytmUC1HHQ=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 28,
                 "publishedAt": "2020-03-30T03:18:10.000Z",
                 "textDisplay": "Still I pray for bright eyes or modest mouse cover.",
                 "textOriginal": "Still I pray for bright eyes or modest mouse cover.",
@@ -1545,13 +1667,11 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 2,
             "videoId": "5pgVzSMqjWA"
           }
         }
       ],
       "kind": "youtube#commentThreadListResponse",
-      "nextPageToken": "QURTSl9pMW03bGJxTG03NmhJaTZzOG1nTDlWMzFxc25pWmxSX2poTTFKU1VfVlZINWsyZGViTWRiS3VvZ3V0Qk01a29XZ1JUV1I2bi1IYTBiT0Q1T1FzZkRFODUzMVRmOFhPdHctLVhuNERBS3dmWWZVVkV3c0c0RUhtRVNNaG40U3g2d19KdGtLR2NvWVFCdUZITHB4NXB5TFZwRElSTmF5eEtRZUxsMllkSHRtTmNqMEpmWTY4Z0REVHVQNHc3X21kNw==",
       "pageInfo": {
         "resultsPerPage": 5,
         "totalResults": 5
@@ -1576,7 +1696,6 @@
                 "authorDisplayName": "Mark T.",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJzn3HIKtPTIpe1M4E33N_vsSduK9xYPCrbp9w=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 5,
                 "publishedAt": "2020-03-29T01:41:57.000Z",
                 "textDisplay": "I'm rooting for a cover of Alabama Shakes \"dont wanna fight\" and/or Talking Heads' \"this must be the place\"",
                 "textOriginal": "I'm rooting for a cover of Alabama Shakes \"dont wanna fight\" and/or Talking Heads' \"this must be the place\"",
@@ -1585,7 +1704,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 0,
             "videoId": "Hk-xqMKLyRo"
           }
         },
@@ -1606,7 +1724,6 @@
                 "authorDisplayName": "Aaron B",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwzeQqXJ0CoLoBStHw_LiucEXc1Fi-XLpsfIA=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 169,
                 "publishedAt": "2020-03-29T00:17:15.000Z",
                 "textDisplay": "00:51 Me and Magdalena\n05:52 Underwater\n08:56 El Dorado\n13:25 Duncan where have you gone?\n21:39 Stable Song\n25:00 Summer Years\n38:20 Life in Quarantine\n42:47 St Swithin's Day\n47:36 I'm Building a Fire",
                 "textOriginal": "00:51 Me and Magdalena\n05:52 Underwater\n08:56 El Dorado\n13:25 Duncan where have you gone?\n21:39 Stable Song\n25:00 Summer Years\n38:20 Life in Quarantine\n42:47 St Swithin's Day\n47:36 I'm Building a Fire",
@@ -1615,7 +1732,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 1,
             "videoId": "Hk-xqMKLyRo"
           }
         },
@@ -1636,7 +1752,6 @@
                 "authorDisplayName": "bigheadtaco",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJyyMFEcXNxucrq-XvaitkqzZ6l9TXW2mRROFg=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 43,
                 "publishedAt": "2020-03-28T23:59:31.000Z",
                 "textDisplay": "I’m here for the t-shirt selection. Awesomeness.",
                 "textOriginal": "I’m here for the t-shirt selection. Awesomeness.",
@@ -1645,7 +1760,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 2,
             "videoId": "Hk-xqMKLyRo"
           }
         },
@@ -1666,7 +1780,6 @@
                 "authorDisplayName": "SH_20 H",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJz15nuszAuJY6TKnqynbXvBBuxj5ylhinZUCA=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 20,
                 "publishedAt": "2020-03-29T02:28:32.000Z",
                 "textDisplay": "please cover a Sufjan Stevens song!",
                 "textOriginal": "please cover a Sufjan Stevens song!",
@@ -1675,7 +1788,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 0,
             "videoId": "Hk-xqMKLyRo"
           }
         },
@@ -1696,7 +1808,6 @@
                 "authorDisplayName": "Sarah Dowell",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJz0yqvwHleqdlJmzaj0YdyjseB7BQw8yo0efQ=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 68,
                 "publishedAt": "2020-03-28T23:57:29.000Z",
                 "textDisplay": "Who in the world would downvote this?? Ben Gibbard is a lovely person, and these shows have been such a treat.",
                 "textOriginal": "Who in the world would downvote this?? Ben Gibbard is a lovely person, and these shows have been such a treat.",
@@ -1705,13 +1816,11 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 8,
             "videoId": "Hk-xqMKLyRo"
           }
         }
       ],
       "kind": "youtube#commentThreadListResponse",
-      "nextPageToken": "QURTSl9pMHJ3Uk9SYlZQNTBhVWdlUmFvSEpoUDZsNnRxWU1nclBRZG1hU0FteDYzeTNpYTZlZ0N2elZaRHRMZG03aXRoUkhkdjM1SUlXNHU1NWwxVl8zZEpqcnh6bFVHYVFSZTR3dFdTOHVTVE1MX2NYdUJ6TEYySHhlVDlzaDNGQTY4MjJacU9RUWQ2M01VdHRmR1lFRkN3WGlGemJuUTNqb0Vxc0lSTkxQTTVqMmlMVXFsX1E=",
       "pageInfo": {
         "resultsPerPage": 5,
         "totalResults": 5
@@ -1736,7 +1845,6 @@
                 "authorDisplayName": "MeinKampfyChair",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 505,
                 "publishedAt": "2020-03-28T00:02:07.000Z",
                 "textDisplay": "00:41 Title and Registration\r\n05:25 A Lack of Color\r\n09:45 Tiny Vessels\r\n14:59 We Looked Like Giants\r\n19:43 The District Sleeps Alone Tonight [The Postal Service]\r\n23:20 (Q & A)\r\n30:32 I Will Possess Your Heart\r\n33:26 Soul Meets Body\r\n37:11 (Americans for Immigrant Justice mention)\r\n40:35 I Will Follow You into the Dark\r\n44:56 Transatlanticism\r\n53:20 Such Greats Heights [The Postal Service]",
                 "textOriginal": "00:41 Title and Registration\r\n05:25 A Lack of Color\r\n09:45 Tiny Vessels\r\n14:59 We Looked Like Giants\r\n19:43 The District Sleeps Alone Tonight [The Postal Service]\r\n23:20 (Q & A)\r\n30:32 I Will Possess Your Heart\r\n33:26 Soul Meets Body\r\n37:11 (Americans for Immigrant Justice mention)\r\n40:35 I Will Follow You into the Dark\r\n44:56 Transatlanticism\r\n53:20 Such Greats Heights [The Postal Service]",
@@ -1745,7 +1853,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 14,
             "videoId": "2TiCThAAcNM"
           }
         },
@@ -1766,7 +1873,6 @@
                 "authorDisplayName": "Matthew Maurer",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwJCGiTMWFSJf8l6UD3jrwXiGTaqX4XHEWnWw=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 155,
                 "publishedAt": "2020-03-28T03:12:46.000Z",
                 "textDisplay": "50% of the songs were from Transatlancism. Not surprising as it's such a beastly album.",
                 "textOriginal": "50% of the songs were from Transatlancism. Not surprising as it's such a beastly album.",
@@ -1775,7 +1881,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 0,
             "videoId": "2TiCThAAcNM"
           }
         },
@@ -1796,7 +1901,6 @@
                 "authorDisplayName": "Terrence The Phirst",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwb4o5N-jslyLO1R8aY9uFpxvVuSVw4Gq4Gdg=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 57,
                 "publishedAt": "2020-03-28T02:36:54.000Z",
                 "textDisplay": "I’ve listened to your music through so many stages of my life. And right now with so much uncertainty in the world, being able to hear your play through your catalog live and describe your own experiences during the pandemic just really means a lot. Thanks and keep doing you Ben G!",
                 "textOriginal": "I’ve listened to your music through so many stages of my life. And right now with so much uncertainty in the world, being able to hear your play through your catalog live and describe your own experiences during the pandemic just really means a lot. Thanks and keep doing you Ben G!",
@@ -1805,7 +1909,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 0,
             "videoId": "2TiCThAAcNM"
           }
         },
@@ -1826,7 +1929,6 @@
                 "authorDisplayName": "Robert Roberts",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJzWVNw2FkeCV3UhOHO0ihtRhnNhUv9gsErLbw=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 111,
                 "publishedAt": "2020-03-28T03:43:34.000Z",
                 "textDisplay": "When you try to search for \"Death Cab For Cutie\" on the YouTube app it refuses to recognize that name and instead it wants to search for \"Death Cab For A Cute\" and I don't know why and it's very disturbing.",
                 "textOriginal": "When you try to search for \"Death Cab For Cutie\" on the YouTube app it refuses to recognize that name and instead it wants to search for \"Death Cab For A Cute\" and I don't know why and it's very disturbing.",
@@ -1835,7 +1937,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 9,
             "videoId": "2TiCThAAcNM"
           }
         },
@@ -1856,7 +1957,6 @@
                 "authorDisplayName": "Bob Maulucci",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwriotExTVK3TVhdZyRiG4fMMxHLhtb6mdYvQ=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 54,
                 "publishedAt": "2020-03-28T00:58:32.000Z",
                 "textDisplay": "A great show, but I especially love We Looked Like Giants. I didn't expect to hear that favorite.",
                 "textOriginal": "A great show, but I especially love We Looked Like Giants. I didn't expect to hear that favorite.",
@@ -1865,13 +1965,11 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 1,
             "videoId": "2TiCThAAcNM"
           }
         }
       ],
       "kind": "youtube#commentThreadListResponse",
-      "nextPageToken": "QURTSl9pMi1DSWo4QTJuaUxmSTM0VU1wa0FPNVZSaThqb3p0NC04YzBPRjJBWkgyYXkwanBXNVI0c2pMQ0ZXUTdrZVAwV1FZd2JkWHV5NUp6dmF0Mm1BT3hzQmltTlVmQmVzQjBnVjRRcXZ3Q1YyN25SZTdWb2NWeGhDZEt4bEQ5UktqTV9McWJJYzBRdlFsU3pmSEw0UnVjMTRZWWFRMWttN2g2ZnNlcEwyNkR0ZXhtMVM5V0ZR",
       "pageInfo": {
         "resultsPerPage": 5,
         "totalResults": 5
@@ -1896,7 +1994,6 @@
                 "authorDisplayName": "Ken Clarke",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxFdEKfntpLedbXMFZTCt24Ph-tAARgrLPXtg=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 6,
                 "publishedAt": "2020-03-27T00:14:52.000Z",
                 "textDisplay": "Man In Blue is such a great song and it’s just S Tier  acoustic",
                 "textOriginal": "Man In Blue is such a great song and it’s just S Tier  acoustic",
@@ -1905,7 +2002,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 0,
             "videoId": "IFXCGJs8nOY"
           }
         },
@@ -1926,7 +2022,6 @@
                 "authorDisplayName": "MeinKampfyChair",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 198,
                 "publishedAt": "2020-03-27T00:00:30.000Z",
                 "textDisplay": "00:22 Ingénue\r\n04:06 Autumn Love\r\n08:33 Hold No Guns\r\n13:19 Lily\r\n16:15 It's Never Too Late (End Credits)\r\n19:19 (Q & A)\r\n29:44 Binary Sea\r\n33:58 December\r\n37:57 Man In Blue\r\n41:16 (Supplies Save Lives WA mention)\r\n43:08 Northern Lights\r\n48:19 Black Sun",
                 "textOriginal": "00:22 Ingénue\r\n04:06 Autumn Love\r\n08:33 Hold No Guns\r\n13:19 Lily\r\n16:15 It's Never Too Late (End Credits)\r\n19:19 (Q & A)\r\n29:44 Binary Sea\r\n33:58 December\r\n37:57 Man In Blue\r\n41:16 (Supplies Save Lives WA mention)\r\n43:08 Northern Lights\r\n48:19 Black Sun",
@@ -1935,7 +2030,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 10,
             "videoId": "IFXCGJs8nOY"
           }
         },
@@ -1956,7 +2050,6 @@
                 "authorDisplayName": "Mickey Laundry",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJy14ejPKimpBJv1pQCn67sTp9eUTqK7Yks-Iw=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 44,
                 "publishedAt": "2020-03-27T01:29:41.000Z",
                 "textDisplay": "Ben is one of the best lyricists & composers of our time.",
                 "textOriginal": "Ben is one of the best lyricists & composers of our time.",
@@ -1965,7 +2058,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 0,
             "videoId": "IFXCGJs8nOY"
           }
         },
@@ -1986,7 +2078,6 @@
                 "authorDisplayName": "Jamiegrrl",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxV_YBITWo9sxOMKR0LsPMgg-te_DsfF2N0iQ=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 14,
                 "publishedAt": "2020-03-27T06:00:35.000Z",
                 "textDisplay": "I keep thinking this is one of those experiences we endure collectively and we will emerge forever changed. Thank you, Ben, for being a part of a more positive narrative.",
                 "textOriginal": "I keep thinking this is one of those experiences we endure collectively and we will emerge forever changed. Thank you, Ben, for being a part of a more positive narrative.",
@@ -1995,7 +2086,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 0,
             "videoId": "IFXCGJs8nOY"
           }
         },
@@ -2016,7 +2106,6 @@
                 "authorDisplayName": "music?!",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJznPMs0TpzkArRsE_CWh-RAWTdHDDDV4CI3Zg=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 31,
                 "publishedAt": "2020-03-27T00:16:07.000Z",
                 "textDisplay": "never realized Black Sun was actually the perfect cowboy anthem",
                 "textOriginal": "never realized Black Sun was actually the perfect cowboy anthem",
@@ -2025,13 +2114,11 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 0,
             "videoId": "IFXCGJs8nOY"
           }
         }
       ],
       "kind": "youtube#commentThreadListResponse",
-      "nextPageToken": "QURTSl9pMWduZUpleGt0VXFyYTFhckJSR0JJN0xEZkJkVEtiMFdpdzFLSWNxQXRmWUZxT3JEa29YQ0ZLNGhLY2I1OHFXU2RISW9LYmZFcG9nWE85a0lVZzFkSVAxNEJ6NXdsTk52eG02VVllN2plUG42d0tsVTh3WmViUloxbDlJOWViU3lDckdfNldrdGM2REJIR2tPR1JCLUlpUS1LdTl0V2pjM0dJMk8xLVdJckVzdlVBbzVZ",
       "pageInfo": {
         "resultsPerPage": 5,
         "totalResults": 5
@@ -2056,7 +2143,6 @@
                 "authorDisplayName": "zulmatthews",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxKLt27q2fNA7eT_95mz84vAtFLjiCsaHyG5Q=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 248,
                 "publishedAt": "2020-03-26T00:05:46.000Z",
                 "textDisplay": "0:23: You Can Do Better Than Me\n2:47: Unobstructed Views\n7:34: Little Bribes\n11:34: A Diamond and a Tether\n18:07: Where Our Destination Lies\n20:49: Cath...\n34:44: One Fast Move or I'm Gone\n39:32: Grapevine Fires\n43:44: Bixby Canyon Bridge\n50:42: Stay Young, Go Dancing",
                 "textOriginal": "0:23: You Can Do Better Than Me\n2:47: Unobstructed Views\n7:34: Little Bribes\n11:34: A Diamond and a Tether\n18:07: Where Our Destination Lies\n20:49: Cath...\n34:44: One Fast Move or I'm Gone\n39:32: Grapevine Fires\n43:44: Bixby Canyon Bridge\n50:42: Stay Young, Go Dancing",
@@ -2065,7 +2151,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 4,
             "videoId": "tBhqwnL8Zck"
           }
         },
@@ -2086,7 +2171,6 @@
                 "authorDisplayName": "Chris Evans",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJzzsHpzQzCOsuY9zdJsf7wcNePcPTZjuU6QhQ=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 78,
                 "publishedAt": "2020-03-26T00:13:44.000Z",
                 "textDisplay": "Dude you've been using the webcam mic this whole time lol",
                 "textOriginal": "Dude you've been using the webcam mic this whole time lol",
@@ -2095,7 +2179,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 4,
             "videoId": "tBhqwnL8Zck"
           }
         },
@@ -2116,7 +2199,6 @@
                 "authorDisplayName": "MeinKampfyChair",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 45,
                 "publishedAt": "2020-03-26T00:00:13.000Z",
                 "textDisplay": "00:23 You Can Do Better Than Me\r\n02:46 Unobstructed Views \r\n07:34 Little Bribes\r\n11:34 A Diamond and a Tether\r\n18:06 Where Our Destination Lies\r\n20:48 Cath...\r\n25:06 (Q & A)\r\n34:44 One Fast Move or I'm Gone\r\n38:36 (\"We Have the Facts and We're Voting\" mention)\r\n39:32 Grapevine Fires\r\n43:44 Bixby Canyon Bridge\r\n49:07 (Seattle Foundation’s COVID-19 Response Fund mention)\r\n50:41 Stay Young, Go Dancing",
                 "textOriginal": "00:23 You Can Do Better Than Me\r\n02:46 Unobstructed Views \r\n07:34 Little Bribes\r\n11:34 A Diamond and a Tether\r\n18:06 Where Our Destination Lies\r\n20:48 Cath...\r\n25:06 (Q & A)\r\n34:44 One Fast Move or I'm Gone\r\n38:36 (\"We Have the Facts and We're Voting\" mention)\r\n39:32 Grapevine Fires\r\n43:44 Bixby Canyon Bridge\r\n49:07 (Seattle Foundation’s COVID-19 Response Fund mention)\r\n50:41 Stay Young, Go Dancing",
@@ -2125,7 +2207,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 3,
             "videoId": "tBhqwnL8Zck"
           }
         },
@@ -2146,7 +2227,6 @@
                 "authorDisplayName": "Jen Cira",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxCNseYlWt2uK5YVXGJ2CcSip-Vd1IkHujU5A=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 54,
                 "publishedAt": "2020-03-26T00:19:20.000Z",
                 "textDisplay": "Damn, i feel compelled to clap after every song but then i remember im just sitting here with my cats. Lol",
                 "textOriginal": "Damn, i feel compelled to clap after every song but then i remember im just sitting here with my cats. Lol",
@@ -2155,7 +2235,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 3,
             "videoId": "tBhqwnL8Zck"
           }
         },
@@ -2176,7 +2255,6 @@
                 "authorDisplayName": "Parker",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxasN1KU26VtzvVK0UmwqMlFetmAdPV9z8v5Q=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 27,
                 "publishedAt": "2020-03-26T00:36:00.000Z",
                 "textDisplay": "Can you play Tiny Vessels soon please?",
                 "textOriginal": "Can you play Tiny Vessels soon please?",
@@ -2185,13 +2263,11 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 2,
             "videoId": "tBhqwnL8Zck"
           }
         }
       ],
       "kind": "youtube#commentThreadListResponse",
-      "nextPageToken": "QURTSl9pMW9BRl9XZ2pad2R3UGl0eXpyN0tIcnIxX1lJbDBLbVlLVW5mSGdYUXc2d01PSFpNV3JKZlljbFVlWWh5QmZoaDdFM0hrc2NLSU1XNkc5eTNBeG9ZckNCMS1CR29NbUJSV3ZVY1YtOWV3cHRELVhVdDFHcE15dmNMWm9DSEZSd2Q4emJoMUFCdzRZWUJqdU16Y1lZRThiRXhCREFtaWlyZXo2aGtCSG5jMEIwdw==",
       "pageInfo": {
         "resultsPerPage": 5,
         "totalResults": 5
@@ -2216,7 +2292,6 @@
                 "authorDisplayName": "MeinKampfyChair",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 396,
                 "publishedAt": "2020-03-25T00:00:10.000Z",
                 "textDisplay": "00:02 Transatlanticism\r\n5:37 Someday You Will Be Loved\r\n9:44 Farmer Chords\r\n13:02 This Place Is a Prison [The Postal Service]\r\n17:58 Couches In Alleys [Styrofoam]\r\n20:42 (Q & A)\r\n27:09 Sleeping In [The Postal Service]\r\n30:02 Summer Skin\r\n32:25 What Sarah Said\r\n38:11 Title and Registration\r\n42:47 (Feeding UW Hospital Staff GoFundMe)\r\n44:42 Marching Bands of Manhattan\r\n49:39 I Will Follow You into the Dark",
                 "textOriginal": "00:02 Transatlanticism\r\n5:37 Someday You Will Be Loved\r\n9:44 Farmer Chords\r\n13:02 This Place Is a Prison [The Postal Service]\r\n17:58 Couches In Alleys [Styrofoam]\r\n20:42 (Q & A)\r\n27:09 Sleeping In [The Postal Service]\r\n30:02 Summer Skin\r\n32:25 What Sarah Said\r\n38:11 Title and Registration\r\n42:47 (Feeding UW Hospital Staff GoFundMe)\r\n44:42 Marching Bands of Manhattan\r\n49:39 I Will Follow You into the Dark",
@@ -2225,7 +2300,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 11,
             "videoId": "25OCP0qBD_A"
           }
         },
@@ -2246,7 +2320,6 @@
                 "authorDisplayName": "Heather M",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxBkw7i0nzVS4gBkA33cOT8-PZ8M0o8b4avyg=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 58,
                 "publishedAt": "2020-03-25T01:18:48.000Z",
                 "textDisplay": "Your Codes and Keys album got me through Afghanistan, when I hear songs from that album in public I am right back there (for better or worse). Plans takes me back to college days... Your music is the soundtrack of my life!",
                 "textOriginal": "Your Codes and Keys album got me through Afghanistan, when I hear songs from that album in public I am right back there (for better or worse). Plans takes me back to college days... Your music is the soundtrack of my life!",
@@ -2255,7 +2328,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 2,
             "videoId": "25OCP0qBD_A"
           }
         },
@@ -2276,7 +2348,6 @@
                 "authorDisplayName": "Jade Eliot",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwjr0msznjey20q_HtmbixamE6PKzjJQt_8jA=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 101,
                 "publishedAt": "2020-03-25T00:09:53.000Z",
                 "textDisplay": "SONGS FROM 2002-2005 SETLIST\n\n0:02 - Transatlanticism\n5:37 - Someday You Will Be Loved\n9:44 - Farmer Chords\n13:01 - This Place Is A Prison\n17:58 - Couches In Alleys\n(20:33 - Q&A)\n27:09 - Sleeping In\n30:02 - Summer Skin\n32:25 - What Sarah Said\n38:11 - Title And Registration\n(41:53 - The London Plane GoFundMe)\n44:41 - Marching Bands Of Manhattan\n49:39 - I Will Follow You Into The Dark",
                 "textOriginal": "SONGS FROM 2002-2005 SETLIST\n\n0:02 - Transatlanticism\n5:37 - Someday You Will Be Loved\n9:44 - Farmer Chords\n13:01 - This Place Is A Prison\n17:58 - Couches In Alleys\n(20:33 - Q&A)\n27:09 - Sleeping In\n30:02 - Summer Skin\n32:25 - What Sarah Said\n38:11 - Title And Registration\n(41:53 - The London Plane GoFundMe)\n44:41 - Marching Bands Of Manhattan\n49:39 - I Will Follow You Into The Dark",
@@ -2285,7 +2356,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 1,
             "videoId": "25OCP0qBD_A"
           }
         },
@@ -2306,7 +2376,6 @@
                 "authorDisplayName": "T Howell",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJz0tA7Ajvo3u45od6LUrgCW3gNao-o4hdDBHw=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 36,
                 "publishedAt": "2020-03-25T00:36:39.000Z",
                 "textDisplay": "Oh golly, you finally played What Sarah Said. ❤",
                 "textOriginal": "Oh golly, you finally played What Sarah Said. ❤",
@@ -2315,7 +2384,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 3,
             "videoId": "25OCP0qBD_A"
           }
         },
@@ -2336,7 +2404,6 @@
                 "authorDisplayName": "Jamie Gnosis",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwwaVaEsuXRAC7JvaWf0wpbcvECmhjZbFhqqA=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 61,
                 "publishedAt": "2020-03-25T00:19:44.000Z",
                 "textDisplay": "This session was extremely nostalgic for my husband and me today! We met 13 years ago when were 19. I was more into Postal Service stuff but he was a die hard DCFC fan. Lol I think at one point he was in love with you😂 He was traveling for work when we met and would call to serenade me. All of these songs today made us go back in time..I can't hear Follow you into the Dark without sobbing. Thanks for filling our heart bubbles! Sending love from Mukilteo WA☺",
                 "textOriginal": "This session was extremely nostalgic for my husband and me today! We met 13 years ago when were 19. I was more into Postal Service stuff but he was a die hard DCFC fan. Lol I think at one point he was in love with you😂 He was traveling for work when we met and would call to serenade me. All of these songs today made us go back in time..I can't hear Follow you into the Dark without sobbing. Thanks for filling our heart bubbles! Sending love from Mukilteo WA☺",
@@ -2345,13 +2412,11 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 3,
             "videoId": "25OCP0qBD_A"
           }
         }
       ],
       "kind": "youtube#commentThreadListResponse",
-      "nextPageToken": "QURTSl9pMFRhV3dSNmNINTRERnhlUXVpTndMdmhuelB3OFBnWVo4S2o5cVVYLUFmcmJLWUNUaHZtd0tIUEhaOGk2T1R2LWxZUEVfWWxrWkV6cXhvZl9lR3JVS2FJNlMzLU15MGlDLVJoVmdobFRKR3lGdFlGQkEzN0N2anpYeG1iVjVjZjNHUUQ4bWNwM3JqbGQ5aGF1czlsOEJaT21yMGNDRkd2bFBzS2ZYOXFvcGU=",
       "pageInfo": {
         "resultsPerPage": 5,
         "totalResults": 5
@@ -2376,7 +2441,6 @@
                 "authorDisplayName": "Kelly Cole",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJz9aVorcAQolqT7rpF2sO1QJ9NOa8tSh-xeCA=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 162,
                 "publishedAt": "2020-03-24T00:05:07.000Z",
                 "textDisplay": "Here is a list of every song he has done Day one setlist\n\nWe Will Become Silhouettes\nA Lack of Color \nTitle Track \nNorthern Lights \nCrooked Teeth \nCath… \nGrapevine Fires\nFake Plastic Trees (Radiohead cover)\nCalifornia Zephyr (Jay Farrar & Ben Gibbard song)\nThe District Sleeps Alone Tonight\n\nDay 2\nNo Room in Frame \nTeardrop Windows\nTitle and Registration \nTechnicolor Girls\nCodes and Keys \nPassenger Seat\nWhen We Drive \nMe and Magdalena (The Monkees song, written by Ben)\nCeremony (Joy Division/New Order cover)\nSuch Great Heights (The Postal Service song)\n\nBen day 3 \n\nSt. Peter’s cathedral \nPhoto booth \n405\nLittle wanderer \nBrothers hotel bed\nSoul meets body \nTalking bird \n60 and punk\nDecemberist cover grace cathedral hill\nBroken yolk western sky\nSound of settling \n\nDay 4 setlist\nSteadier Footing (Death Cab)\nYou Remind Me of Home\nWhy You’d Want to Live Here \nWhen the Sun Goes Down\nThese Roads Don’t Move (Jay Farrar & Benjamin Gibbard cover)\nConey Island \nKeep Yourself Warm (Frightened Rabbit cover)\nLife in Quarantine (live debut)\nSomething’s Rattling (Cowpoke)\nBrand New Colony (The Postal Service song)\n\nDay 5 setlist\n\nLady Adelaide\nRecycled Air \nYour New Twin Sized Bed \nWilliamine (Jay Farrar & Benjamin Gibbard song)\nA Movie Script Ending\nYour Hurricane \nYour Heart Is An Empty Room (Death Cab\nCarolina\nI Will Follow You into the dark\n\nRead More: Ben Gibbard livestreaming performances from home daily\n\nCover day Sunday 3/22\n\nIsolation John Lennon \nSilver lining Jenny Lewis \nThirteen big star 🌟 \nWaltz 2 Elliot smith \nMotion sickness phoebe bridgers \nBob Dylan if not for you \nNew slang the shins \nDef leopard hysteria \nDo you realize?? flaming lips\n\n\n3/23/20\n\nChampagne from paper cup\nDebate expose doubt \nScientist studies        wait\nCompany calls epilogue \nAll time quarterbacks Cleveland \nDream of Evan and chan \nBlacking our the friction \nLine of best fit\nI was a kaleidoscope \nNo joy in Mudville \nFace that launched 1000 sh***",
                 "textOriginal": "Here is a list of every song he has done Day one setlist\n\nWe Will Become Silhouettes\nA Lack of Color \nTitle Track \nNorthern Lights \nCrooked Teeth \nCath… \nGrapevine Fires\nFake Plastic Trees (Radiohead cover)\nCalifornia Zephyr (Jay Farrar & Ben Gibbard song)\nThe District Sleeps Alone Tonight\n\nDay 2\nNo Room in Frame \nTeardrop Windows\nTitle and Registration \nTechnicolor Girls\nCodes and Keys \nPassenger Seat\nWhen We Drive \nMe and Magdalena (The Monkees song, written by Ben)\nCeremony (Joy Division/New Order cover)\nSuch Great Heights (The Postal Service song)\n\nBen day 3 \n\nSt. Peter’s cathedral \nPhoto booth \n405\nLittle wanderer \nBrothers hotel bed\nSoul meets body \nTalking bird \n60 and punk\nDecemberist cover grace cathedral hill\nBroken yolk western sky\nSound of settling \n\nDay 4 setlist\nSteadier Footing (Death Cab)\nYou Remind Me of Home\nWhy You’d Want to Live Here \nWhen the Sun Goes Down\nThese Roads Don’t Move (Jay Farrar & Benjamin Gibbard cover)\nConey Island \nKeep Yourself Warm (Frightened Rabbit cover)\nLife in Quarantine (live debut)\nSomething’s Rattling (Cowpoke)\nBrand New Colony (The Postal Service song)\n\nDay 5 setlist\n\nLady Adelaide\nRecycled Air \nYour New Twin Sized Bed \nWilliamine (Jay Farrar & Benjamin Gibbard song)\nA Movie Script Ending\nYour Hurricane \nYour Heart Is An Empty Room (Death Cab\nCarolina\nI Will Follow You into the dark\n\nRead More: Ben Gibbard livestreaming performances from home daily\n\nCover day Sunday 3/22\n\nIsolation John Lennon \nSilver lining Jenny Lewis \nThirteen big star 🌟 \nWaltz 2 Elliot smith \nMotion sickness phoebe bridgers \nBob Dylan if not for you \nNew slang the shins \nDef leopard hysteria \nDo you realize?? flaming lips\n\n\n3/23/20\n\nChampagne from paper cup\nDebate expose doubt \nScientist studies        wait\nCompany calls epilogue \nAll time quarterbacks Cleveland \nDream of Evan and chan \nBlacking our the friction \nLine of best fit\nI was a kaleidoscope \nNo joy in Mudville \nFace that launched 1000 sh***",
@@ -2385,7 +2449,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 8,
             "videoId": "QHTXnGLb4I0"
           }
         },
@@ -2406,7 +2469,6 @@
                 "authorDisplayName": "MeinKampfyChair",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 204,
                 "publishedAt": "2020-03-24T00:05:16.000Z",
                 "textDisplay": "00:31 Champagne from a Paper Cup\r\n04:08 Debate Exposes Doubt\r\n07:54 Scientist Studies\r\n13:28 Wait [Secret Stars cover] \r\n17:27 Company Calls Epilogue\r\n22:47 (Q & A)\r\n28:17 Cleveland [¡All-Time Quarterback!]\r\n31:05 (This Is) The Dream of Evan and Chan [Dntel]\r\n34:51 Blacking Out the Friction\r\n37:40 Line of Best Fit \r\n44:18 I Was a Kaleidoscope\r\n49:24 No Joy in Mudville\r\n55:21 The Face That Launched 1000 Shits [The Revolutionary Hydra cover]",
                 "textOriginal": "00:31 Champagne from a Paper Cup\r\n04:08 Debate Exposes Doubt\r\n07:54 Scientist Studies\r\n13:28 Wait [Secret Stars cover] \r\n17:27 Company Calls Epilogue\r\n22:47 (Q & A)\r\n28:17 Cleveland [¡All-Time Quarterback!]\r\n31:05 (This Is) The Dream of Evan and Chan [Dntel]\r\n34:51 Blacking Out the Friction\r\n37:40 Line of Best Fit \r\n44:18 I Was a Kaleidoscope\r\n49:24 No Joy in Mudville\r\n55:21 The Face That Launched 1000 Shits [The Revolutionary Hydra cover]",
@@ -2415,7 +2477,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 5,
             "videoId": "QHTXnGLb4I0"
           }
         },
@@ -2436,7 +2497,6 @@
                 "authorDisplayName": "Jen Cira",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxCNseYlWt2uK5YVXGJ2CcSip-Vd1IkHujU5A=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 106,
                 "publishedAt": "2020-03-24T00:06:10.000Z",
                 "textDisplay": "Please keep doing this even when this virus stuff is over! Maybe not every day, maybe once a week - or even just once a month. Youre very good virtual company. Lol",
                 "textOriginal": "Please keep doing this even when this virus stuff is over! Maybe not every day, maybe once a week - or even just once a month. Youre very good virtual company. Lol",
@@ -2445,7 +2505,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 0,
             "videoId": "QHTXnGLb4I0"
           }
         },
@@ -2466,7 +2525,6 @@
                 "authorDisplayName": "Rachel",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJyJGr12tgKrkiE60FKIE0RNnGrekI_jVh7CzA=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 44,
                 "publishedAt": "2020-03-24T03:05:17.000Z",
                 "textDisplay": "Can you please play “Marching Bands of Manhattan,” “We Looked Like Giants,” “Summer Skin,” “Bixby Canyon Bridge,” and “No Sunlight?” For covers on Sunday, could you please play “Earth Angel” and “This Charming Man?”",
                 "textOriginal": "Can you please play “Marching Bands of Manhattan,” “We Looked Like Giants,” “Summer Skin,” “Bixby Canyon Bridge,” and “No Sunlight?” For covers on Sunday, could you please play “Earth Angel” and “This Charming Man?”",
@@ -2475,7 +2533,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 2,
             "videoId": "QHTXnGLb4I0"
           }
         },
@@ -2496,7 +2553,6 @@
                 "authorDisplayName": "Godzilla",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJyUJvFSs9I7LF63AOkEpWwM5URp9KLJLA6Exg=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 23,
                 "publishedAt": "2020-03-24T01:10:55.000Z",
                 "textDisplay": "Ben OMG thanks for listening to my request at 44:14 with 'I was a Kaleidoscope', it really made my Birthday! I will never forget that. I was spamming it so hard and I'm glad you did it!",
                 "textOriginal": "Ben OMG thanks for listening to my request at 44:14 with 'I was a Kaleidoscope', it really made my Birthday! I will never forget that. I was spamming it so hard and I'm glad you did it!",
@@ -2505,13 +2561,11 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 1,
             "videoId": "QHTXnGLb4I0"
           }
         }
       ],
       "kind": "youtube#commentThreadListResponse",
-      "nextPageToken": "QURTSl9pMFI0Nmk4Zk5CUUhlTDI5T3BVNG5xTEQwRlJKNE5mOXhwUmhYS29wS3Njdkhra0thaWdyZXFfMUg4TGxfYzh5UlpOSm5sR2dGTHhGTmtEdkhvOW9MSFVDUXZ4LXl0Z2hYa3NsMHFid0pSdXRJcVRVZzhoQVV6dDhxWXl2Tmxwb2VJWU4zWnRRSDM1NlhXT1N4SlpDclczOUljUHEtel9EZUdIN2ZsSTZkZWwxcDJ2",
       "pageInfo": {
         "resultsPerPage": 5,
         "totalResults": 5
@@ -2536,7 +2590,6 @@
                 "authorDisplayName": "zulmatthews",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxKLt27q2fNA7eT_95mz84vAtFLjiCsaHyG5Q=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 368,
                 "publishedAt": "2020-03-23T00:37:38.000Z",
                 "textDisplay": "0:48: Isolation\n5:43: Silver Lining\n10:05: Thirteen \n14:11: Waltz #2 (XO)\n19:19: Motion Sickness\n24:36: If Not For You\n33:52: New Slang (When You Notice The Stripes)\n39:38: Hysteria\n44:33: The Bones Are The Skeletons’ Money\n46:39: Do You Realize?",
                 "textOriginal": "0:48: Isolation\n5:43: Silver Lining\n10:05: Thirteen \n14:11: Waltz #2 (XO)\n19:19: Motion Sickness\n24:36: If Not For You\n33:52: New Slang (When You Notice The Stripes)\n39:38: Hysteria\n44:33: The Bones Are The Skeletons’ Money\n46:39: Do You Realize?",
@@ -2545,7 +2598,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 10,
             "videoId": "1eEcVCyKMb8"
           }
         },
@@ -2566,7 +2618,6 @@
                 "authorDisplayName": "Death Cab for Cutie",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJye47VIG3zUXwFFqDmc2oBnsU47v8RYZCsjhg=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 224,
                 "publishedAt": "2020-03-23T05:02:12.000Z",
                 "textDisplay": "Here is the setlist of all the covers Ben played today:\n\n0:48: “Isolation\" by John Lennon\n5:43: \"Silver Lining\" by Rilo Kiley\n10:05: “Thirteen” by Big Star\n14:11: “Waltz #2 (XO)” by Elliott Smith\n19:19: “Motion Sickness” by Phoebe Bridgers\n24:36: “If Not for You” by Bob Dylan\n33:52: “New Slang” by The Shins\n39:38: “Hysteria” by Def Leppard\n44:33: \"The Bones Are Their Money\" from Tim Robinson's show 'I Think You Should Leave' [ original here: http://youtu.be/Z3fTRk2yEgU ]\n46:39: “Do You Realize??” by The Flaming Lips\n\nSpotify playlist of these songs here: http://found.ee/BG-Mar22-Covers",
                 "textOriginal": "Here is the setlist of all the covers Ben played today:\n\n0:48: “Isolation\" by John Lennon\n5:43: \"Silver Lining\" by Rilo Kiley\n10:05: “Thirteen” by Big Star\n14:11: “Waltz #2 (XO)” by Elliott Smith\n19:19: “Motion Sickness” by Phoebe Bridgers\n24:36: “If Not for You” by Bob Dylan\n33:52: “New Slang” by The Shins\n39:38: “Hysteria” by Def Leppard\n44:33: \"The Bones Are Their Money\" from Tim Robinson's show 'I Think You Should Leave' [ original here: http://youtu.be/Z3fTRk2yEgU ]\n46:39: “Do You Realize??” by The Flaming Lips\n\nSpotify playlist of these songs here: http://found.ee/BG-Mar22-Covers",
@@ -2575,7 +2626,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 10,
             "videoId": "1eEcVCyKMb8"
           }
         },
@@ -2596,7 +2646,6 @@
                 "authorDisplayName": "Solange",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxhQCmpAvgRkudQ950ss8iyCLnwAh4QJeAUrQ=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 50,
                 "publishedAt": "2020-03-23T00:08:11.000Z",
                 "textDisplay": "Woah! Waltz #2?? Thank you so much for this.",
                 "textOriginal": "Woah! Waltz #2?? Thank you so much for this.",
@@ -2605,7 +2654,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 2,
             "videoId": "1eEcVCyKMb8"
           }
         },
@@ -2626,7 +2674,6 @@
                 "authorDisplayName": "CharlieKnottFilms",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwfUir9aLJdQfjW_E7Ur8O6gKwGMUTDwYbZFw=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 66,
                 "publishedAt": "2020-03-23T02:21:50.000Z",
                 "textDisplay": "Motion Sickness is a really powerful Phoebe Bridgers song. I’m honored to have heard it live covered by you Ben.",
                 "textOriginal": "Motion Sickness is a really powerful Phoebe Bridgers song. I’m honored to have heard it live covered by you Ben.",
@@ -2635,7 +2682,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 0,
             "videoId": "1eEcVCyKMb8"
           }
         },
@@ -2656,7 +2702,6 @@
                 "authorDisplayName": "Cucamonga Duke",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwzB0h6A2YUtIloNR5wOZaEI2rY7-z_vODbbg=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 82,
                 "publishedAt": "2020-03-23T02:08:32.000Z",
                 "textDisplay": "Elliot is another artist we lost way too soon. I’m sure he’d be proud of that cover, Ben. Great work.",
                 "textOriginal": "Elliot is another artist we lost way too soon. I’m sure he’d be proud of that cover, Ben. Great work.",
@@ -2665,13 +2710,11 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 4,
             "videoId": "1eEcVCyKMb8"
           }
         }
       ],
       "kind": "youtube#commentThreadListResponse",
-      "nextPageToken": "QURTSl9pMXgxbUZwSFJib2RMcnFHM2h2MHBIczF4SC04SC1zZHFTVHdfWlRfREZnVkFQZmlZZTZZUG5raHppVEZUbzkwYzVkT25TbzRHT1RJbkRDNlRDdWpKeWpRUm5UNXVjYmcxZlNoMTg4dGZKU2JiUVF3RFdrWHVIMnY1WmpucXJNbC1YUFJESGxWM0VWdld0R3NRbkpadDNNbGNtb1ZCckVGRFkzd0cyMHAyd040RGtBZlhIbg==",
       "pageInfo": {
         "resultsPerPage": 5,
         "totalResults": 5
@@ -2696,7 +2739,6 @@
                 "authorDisplayName": "garrett griggs",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJzsjmjGz-n_vL_5OnIEV3eQF1U3H-0c34MPFw=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 362,
                 "publishedAt": "2020-03-22T00:12:50.000Z",
                 "textDisplay": "0:35 Lady Adelaide\r\n4:22 Recycled Air\r\n8:34 Your New Twin Sized Bed\r\n13:35 Willamine\r\n17:29 Q&A\n24:24 A Movie Script Ending\r\n29:44 Your Hurricane\r\n33:14 Your Heart Is An Empty Room\r\n39:38 Carolina\r\n42:07 PSA\r\n44:30 I Will Follow You Into The Dark\r\n\r\n\r\n\r\n\r\nI think that's all of them, hopefully.",
                 "textOriginal": "0:35 Lady Adelaide\r\n4:22 Recycled Air\r\n8:34 Your New Twin Sized Bed\r\n13:35 Willamine\r\n17:29 Q&A\n24:24 A Movie Script Ending\r\n29:44 Your Hurricane\r\n33:14 Your Heart Is An Empty Room\r\n39:38 Carolina\r\n42:07 PSA\r\n44:30 I Will Follow You Into The Dark\r\n\r\n\r\n\r\n\r\nI think that's all of them, hopefully.",
@@ -2705,7 +2747,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 8,
             "videoId": "dLWmIJV4GMg"
           }
         },
@@ -2726,7 +2767,6 @@
                 "authorDisplayName": "Kelly Cole",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJz9aVorcAQolqT7rpF2sO1QJ9NOa8tSh-xeCA=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 132,
                 "publishedAt": "2020-03-22T02:07:05.000Z",
                 "textDisplay": "Ben- as someone who has been listening to your music since 2005, these live streams are definitely the best possible thing you could do for your fans. You are basically answering every question I’ve had for you for the last 15 years ❤️🎧 thank you",
                 "textOriginal": "Ben- as someone who has been listening to your music since 2005, these live streams are definitely the best possible thing you could do for your fans. You are basically answering every question I’ve had for you for the last 15 years ❤️🎧 thank you",
@@ -2735,7 +2775,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 2,
             "videoId": "dLWmIJV4GMg"
           }
         },
@@ -2756,7 +2795,6 @@
                 "authorDisplayName": "Pavlo Vlasenko",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJw988bs06Pgi6ZVfgfl01YXevl2qA4t7eqXfw=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 47,
                 "publishedAt": "2020-03-21T23:55:38.000Z",
                 "textDisplay": "On fifth day Ben gave up and finnaly played it.",
                 "textOriginal": "On fifth day Ben gave up and finnaly played it.",
@@ -2765,7 +2803,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 6,
             "videoId": "dLWmIJV4GMg"
           }
         },
@@ -2786,7 +2823,6 @@
                 "authorDisplayName": "Steve X",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJzrKqFi6AxABgmOi-flqTbh9RiHZQ_UDdAPDQ=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 53,
                 "publishedAt": "2020-03-22T00:06:57.000Z",
                 "textDisplay": "Ben's played I Will Follow You a billion times but still ever so generously plays it like he wrote it yesterday with feeling, for us. And even tho I've heard it a billion times it still punches me right in the feelz",
                 "textOriginal": "Ben's played I Will Follow You a billion times but still ever so generously plays it like he wrote it yesterday with feeling, for us. And even tho I've heard it a billion times it still punches me right in the feelz",
@@ -2795,7 +2831,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 4,
             "videoId": "dLWmIJV4GMg"
           }
         },
@@ -2816,7 +2851,6 @@
                 "authorDisplayName": "WillColeman1992",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwb6zoaUn4qld1lkkBfqFX8OyXYGL3gzM2KLA=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 15,
                 "publishedAt": "2020-03-22T00:49:35.000Z",
                 "textDisplay": "Ben,\nThanks for doing \"Your New Twin Sized Bed,\" it's also one of my favorites!\nWill",
                 "textOriginal": "Ben,\nThanks for doing \"Your New Twin Sized Bed,\" it's also one of my favorites!\nWill",
@@ -2825,13 +2859,11 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 0,
             "videoId": "dLWmIJV4GMg"
           }
         }
       ],
       "kind": "youtube#commentThreadListResponse",
-      "nextPageToken": "QURTSl9pM0VCNWpOSEtxQVYtWk02d1RyLVhlY2lTNmczcm5fbTRfSTlxcXotamdMLUlxc3ZaNnIzZjZtSUNqelBkSXFFY0hsNF80TngzREdSbDRVSC1xN2FsN2pBN1o4UVZXNDV1U1VGeFJ4QTdCR1ZrUzJDVzkyYXhSS0YyazNiaHZ0M1EtcHlka0tEbGNyc252aWhoampFeWRhQ0pZWTZEclpOY1lacTF4N09oXzRtQQ==",
       "pageInfo": {
         "resultsPerPage": 5,
         "totalResults": 5
@@ -2856,7 +2888,6 @@
                 "authorDisplayName": "Jade Eliot",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwjr0msznjey20q_HtmbixamE6PKzjJQt_8jA=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 200,
                 "publishedAt": "2020-03-21T01:26:45.000Z",
                 "textDisplay": "1:10 - Steadier Footing\n3:20 - You Remind Me of Home\n6:33 - Why You'd Want To Live Here\n(11:15 - Q&A)\n17:14 - When The Sun Goes Down On Your Street\n20:37 - These Roads Don't Move\n24:03 - Coney Island\n26:54 - Keep Yourself Warm (Frightened Rabbit cover)\n(31:00 - New Horizon Ministries)\n34:14 - Life In Quarantine\n38:35 - Something's Rattling\n43:07 - Brand New Colony\n\n\nWow a couple songs on this set that I had to look up to get the names! Ben's got so many hidden gems!",
                 "textOriginal": "1:10 - Steadier Footing\n3:20 - You Remind Me of Home\n6:33 - Why You'd Want To Live Here\n(11:15 - Q&A)\n17:14 - When The Sun Goes Down On Your Street\n20:37 - These Roads Don't Move\n24:03 - Coney Island\n26:54 - Keep Yourself Warm (Frightened Rabbit cover)\n(31:00 - New Horizon Ministries)\n34:14 - Life In Quarantine\n38:35 - Something's Rattling\n43:07 - Brand New Colony\n\n\nWow a couple songs on this set that I had to look up to get the names! Ben's got so many hidden gems!",
@@ -2865,7 +2896,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 4,
             "videoId": "PX7A8tQNp8g"
           }
         },
@@ -2886,7 +2916,6 @@
                 "authorDisplayName": "DenaInWyo",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxCEg_9UaL8UIlTDu_n6KGyEWx8e6PTDei4ZQ=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 105,
                 "publishedAt": "2020-03-21T00:13:43.000Z",
                 "textDisplay": "This is becoming the thing I look forward to coming home from work for every night.  Thank you SO MUCH..wow, what a privilege to get to just hang out with you like this.  I hope you keep it up, but if not, I can go back to the earlier ones.  Right now, we're just kinda bracing for impact but it hasn't hit yet.  I did travel nursing in Bellingham and still have friends back there and I'm so worried for them.  This is a real comfort and connection for me...just like your songs have been for years through other tough times.  Again..thank you.",
                 "textOriginal": "This is becoming the thing I look forward to coming home from work for every night.  Thank you SO MUCH..wow, what a privilege to get to just hang out with you like this.  I hope you keep it up, but if not, I can go back to the earlier ones.  Right now, we're just kinda bracing for impact but it hasn't hit yet.  I did travel nursing in Bellingham and still have friends back there and I'm so worried for them.  This is a real comfort and connection for me...just like your songs have been for years through other tough times.  Again..thank you.",
@@ -2895,7 +2924,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 0,
             "videoId": "PX7A8tQNp8g"
           }
         },
@@ -2916,7 +2944,6 @@
                 "authorDisplayName": "MeinKampfyChair",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 65,
                 "publishedAt": "2020-03-21T01:29:42.000Z",
                 "textDisplay": "01:11 Steadier Footing\n3:20 You Remind Me of Home\n6:32 Why You'd Want to Live Here\n11:27 (Q & A)\n17:14 When the Sun Goes Down on Your Street\n20:37 These Roads Don't Move\n24:03 Coney Island\n26:55 Keep Yourself Warm (Frightened Rabbit cover)\n31:03 (New Horizons Ministries Charity)\n34:25 Life in Quarantine [NEW SONG]\n38:35 Something's Rattling (Cowpoke)\n43:07 Brand New Colony",
                 "textOriginal": "01:11 Steadier Footing\n3:20 You Remind Me of Home\n6:32 Why You'd Want to Live Here\n11:27 (Q & A)\n17:14 When the Sun Goes Down on Your Street\n20:37 These Roads Don't Move\n24:03 Coney Island\n26:55 Keep Yourself Warm (Frightened Rabbit cover)\n31:03 (New Horizons Ministries Charity)\n34:25 Life in Quarantine [NEW SONG]\n38:35 Something's Rattling (Cowpoke)\n43:07 Brand New Colony",
@@ -2925,7 +2952,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 0,
             "videoId": "PX7A8tQNp8g"
           }
         },
@@ -2946,7 +2972,6 @@
                 "authorDisplayName": "Noah McKelvie",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwSVpl42u1uhdY26HzSSLFhVRfvQD7vi9kBgw=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 35,
                 "publishedAt": "2020-03-21T02:11:59.000Z",
                 "textDisplay": "Kind of random, but I'd love to hear you do \"The Rainbow Connection\" from The Muppet Movie.",
                 "textOriginal": "Kind of random, but I'd love to hear you do \"The Rainbow Connection\" from The Muppet Movie.",
@@ -2955,7 +2980,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 2,
             "videoId": "PX7A8tQNp8g"
           }
         },
@@ -2976,7 +3000,6 @@
                 "authorDisplayName": "Angelina Rude",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxvPq-a4V37zJbvnTx2E_PJAdL-kvIWF6_N=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 25,
                 "publishedAt": "2020-03-21T00:14:13.000Z",
                 "textDisplay": "Could you play “this must be the place” :)",
                 "textOriginal": "Could you play “this must be the place” :)",
@@ -2985,13 +3008,11 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 0,
             "videoId": "PX7A8tQNp8g"
           }
         }
       ],
       "kind": "youtube#commentThreadListResponse",
-      "nextPageToken": "QURTSl9pMTlTeEtLTE5IcEkyYXdPMDNsVGxTRkd4LUQzLVdrR3hlanNhbWs4RUlsOFo3SjRYR1R3dEhJS0V1NXd3ZElkc0lqRXNCYThpdzhmd3BmWnU1MWhydWpPWjVYNDZZRlMtaVVPRXFrUXpUeGt5ek5IYU51WnJWVHJGcVhPN1FwdmpqUFJYUTJqOV84UmdjdUI2TktxQTFFdGJqdndiYy0yT0tQdGFMaklXQjExUUlramVN",
       "pageInfo": {
         "resultsPerPage": 5,
         "totalResults": 5
@@ -3016,7 +3037,6 @@
                 "authorDisplayName": "Jade Eliot",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwjr0msznjey20q_HtmbixamE6PKzjJQt_8jA=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 446,
                 "publishedAt": "2020-03-20T00:15:20.000Z",
                 "textDisplay": "0:10 - St. Peter's Cathedral\n4:04 - Photobooth\n8:30 -  405\n12:41 - Little Wanderer\n(17:15 - Q&A)\n20:55 - Brother's on a Hotel Bed\n24:24 - Soul Meets Body\n28:13 - Talking Bird\n(32:00 - University District Food Bank)\n33:56 - 60 & Punk\n38:47 - Grace Cathedral Hill (The Decemberists cover!!!)\n44:07 - Broken Yolk in Western Sky\n48:54 - The Sound of Settling",
                 "textOriginal": "0:10 - St. Peter's Cathedral\n4:04 - Photobooth\n8:30 -  405\n12:41 - Little Wanderer\n(17:15 - Q&A)\n20:55 - Brother's on a Hotel Bed\n24:24 - Soul Meets Body\n28:13 - Talking Bird\n(32:00 - University District Food Bank)\n33:56 - 60 & Punk\n38:47 - Grace Cathedral Hill (The Decemberists cover!!!)\n44:07 - Broken Yolk in Western Sky\n48:54 - The Sound of Settling",
@@ -3025,7 +3045,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 6,
             "videoId": "jhgssMW8L0U"
           }
         },
@@ -3046,7 +3065,6 @@
                 "authorDisplayName": "Ksee",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwBzL4Bw8LhMPVZDAF3NvMhX9jvnidrhea19g=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 40,
                 "publishedAt": "2020-03-19T23:57:15.000Z",
                 "textDisplay": "Dude you don’t age lol",
                 "textOriginal": "Dude you don’t age lol",
@@ -3055,7 +3073,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 1,
             "videoId": "jhgssMW8L0U"
           }
         },
@@ -3076,7 +3093,6 @@
                 "authorDisplayName": "Vanessa D",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJx1Rdq4t5LV2-nzBRqHT4Rsubws9qTfgTbA_g=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 98,
                 "publishedAt": "2020-03-20T00:31:11.000Z",
                 "textDisplay": "DCFC has been comforting me since I was in high school. Now that I'm older, I'm so grateful you're still here for me. Thank you.",
                 "textOriginal": "DCFC has been comforting me since I was in high school. Now that I'm older, I'm so grateful you're still here for me. Thank you.",
@@ -3085,7 +3101,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 5,
             "videoId": "jhgssMW8L0U"
           }
         },
@@ -3106,7 +3121,6 @@
                 "authorDisplayName": "Ryan Smith",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwOtbN253-PfupfknSVjvOwTH8BHWp7MKv9PA=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 87,
                 "publishedAt": "2020-03-20T01:19:55.000Z",
                 "textDisplay": "A Sufjan Stevens song would be neat.\n\n\nTalking Bird was lovely here.",
                 "textOriginal": "A Sufjan Stevens song would be neat.\n\n\nTalking Bird was lovely here.",
@@ -3115,7 +3129,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 2,
             "videoId": "jhgssMW8L0U"
           }
         },
@@ -3136,7 +3149,6 @@
                 "authorDisplayName": "Diego I.",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxXkjQO1DE0lUE604YloXetLRy0K-EiXh1y_g=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 91,
                 "publishedAt": "2020-03-20T00:20:36.000Z",
                 "textDisplay": "Can we request a cover of Bright Eyes' The First Day of My Life? Something to play in our heads once we all get out of our houses and start seeing our loved ones again :D thanks for keeping us company in quarantine, Ben!",
                 "textOriginal": "Can we request a cover of Bright Eyes' The First Day of My Life? Something to play in our heads once we all get out of our houses and start seeing our loved ones again :D thanks for keeping us company in quarantine, Ben!",
@@ -3145,13 +3157,11 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 9,
             "videoId": "jhgssMW8L0U"
           }
         }
       ],
       "kind": "youtube#commentThreadListResponse",
-      "nextPageToken": "QURTSl9pM29iRXpIaHpyNFg3S2pILXJQR1ROdWxXRHMxbnpMMlVCMHFQQjVGZ2JTRlQ4VXVXUFVuZmo4T2tyWktfVUoxclZ0RmF2emE0UmFQaUhHcmVsbFFmd0pmUXM5VFNIWTc1Y1hsMklROC1HX2x4LWdrVV84WTI2V3ZTd1EwU1M4UU1XS1NDaXZuSEotYWFjMTBGYTU2QWNMUWdiMWlpV3RwWFcxdFVTQUN4SUMtUWx1VlE=",
       "pageInfo": {
         "resultsPerPage": 5,
         "totalResults": 5
@@ -3176,7 +3186,6 @@
                 "authorDisplayName": "zulmatthews",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxKLt27q2fNA7eT_95mz84vAtFLjiCsaHyG5Q=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 540,
                 "publishedAt": "2020-03-19T00:30:08.000Z",
                 "textDisplay": "0:11: No Room In Frame\n4:11: Teardrop Windows\n9:17: Title and Registration\n15:54: Technicolor Girls\n19:44: Codes and keys\n23:37: Passenger Seat\n27:48: When We Drive\n36:23: Me and Magdalena\n41:35: Ceremony\n46:07: Such Great Heights",
                 "textOriginal": "0:11: No Room In Frame\n4:11: Teardrop Windows\n9:17: Title and Registration\n15:54: Technicolor Girls\n19:44: Codes and keys\n23:37: Passenger Seat\n27:48: When We Drive\n36:23: Me and Magdalena\n41:35: Ceremony\n46:07: Such Great Heights",
@@ -3185,7 +3194,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 14,
             "videoId": "o0EpwT9fg1I"
           }
         },
@@ -3206,7 +3214,6 @@
                 "authorDisplayName": "Ryan Smith",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwOtbN253-PfupfknSVjvOwTH8BHWp7MKv9PA=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 112,
                 "publishedAt": "2020-03-19T00:51:56.000Z",
                 "textDisplay": "Ben still has that adorable teenage hair cut. Suits him, though. Passenger Seat has to be one of the best things he's ever written.\n\nWould kill to hear Your New Twin Sized Bed.",
                 "textOriginal": "Ben still has that adorable teenage hair cut. Suits him, though. Passenger Seat has to be one of the best things he's ever written.\n\nWould kill to hear Your New Twin Sized Bed.",
@@ -3215,7 +3222,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 7,
             "videoId": "o0EpwT9fg1I"
           }
         },
@@ -3236,7 +3242,6 @@
                 "authorDisplayName": "Oveidamusic",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJyOSmrICTIb5BelyJmeTlTRtib5QBNEhgmhUA=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 62,
                 "publishedAt": "2020-03-19T00:27:49.000Z",
                 "textDisplay": "Please do a cover of any Conor Oberst or bright eyes, time forget was mentioned",
                 "textOriginal": "Please do a cover of any Conor Oberst or bright eyes, time forget was mentioned",
@@ -3245,7 +3250,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 2,
             "videoId": "o0EpwT9fg1I"
           }
         },
@@ -3266,7 +3270,6 @@
                 "authorDisplayName": "Fauna Beauty",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxHJ6Xdr09nWAnuDhxpcFVWfd7-_zb65OgnHw=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 42,
                 "publishedAt": "2020-03-19T00:07:49.000Z",
                 "textDisplay": "This is the first time I have felt calm in three months.",
                 "textOriginal": "This is the first time I have felt calm in three months.",
@@ -3275,7 +3278,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 0,
             "videoId": "o0EpwT9fg1I"
           }
         },
@@ -3296,7 +3298,6 @@
                 "authorDisplayName": "Nones Garcia",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJzX5w25TK_q-Za7UU2QH1v42jSrtJmkmfdhJg=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 43,
                 "publishedAt": "2020-03-19T01:32:30.000Z",
                 "textDisplay": "0:00 No Room in Frame \n4:08 Teardrop Windows\n9:18 Title and Registration \n15:55 Technicolor Girls\n19:44 Codes & Keys\n23:37 Passenger Seat\n27:47 When We Drive\n36:23 Me and Magdalena (Monkees Cover)\n41:35 Ceremony (New Order Cover)\n46:07 Such Great Heights",
                 "textOriginal": "0:00 No Room in Frame \n4:08 Teardrop Windows\n9:18 Title and Registration \n15:55 Technicolor Girls\n19:44 Codes & Keys\n23:37 Passenger Seat\n27:47 When We Drive\n36:23 Me and Magdalena (Monkees Cover)\n41:35 Ceremony (New Order Cover)\n46:07 Such Great Heights",
@@ -3305,13 +3306,11 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 0,
             "videoId": "o0EpwT9fg1I"
           }
         }
       ],
       "kind": "youtube#commentThreadListResponse",
-      "nextPageToken": "QURTSl9pMVZQSlVvNTg2VVpfOUY4T3VJUEl4RDZScmZwZFlWSUNReEdfQm45LXBVdk55WldvSkhyMnVJcS16ZHN0aXVvaG5OamxEYnFkUDBpQlo1aVgyN3MwNW1BSFZkUWxFbC1Jc1RrWGdobDhPMWhuZmt5cjRjSHg2aEJkQVBYdEw0RDkxbnlVQUFBc3lJaVBLNE1vd2FmRkFEeFdpWnpiUUtWMUxtanhnbldVbUN3bDFJZWZjV3R3",
       "pageInfo": {
         "resultsPerPage": 5,
         "totalResults": 5
@@ -3336,7 +3335,6 @@
                 "authorDisplayName": "Death Cab for Cutie",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJye47VIG3zUXwFFqDmc2oBnsU47v8RYZCsjhg=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 297,
                 "publishedAt": "2020-03-17T21:56:21.000Z",
                 "textDisplay": "It was so fun going live today! If you’re able, please consider donating to http://www.teenfeed.org to help support homeless and at-risk youth during these difficult times. Visit https://www.headcount.org to make sure you are registered to vote. Thank you, see you again tomorrow at 4pm PT!",
                 "textOriginal": "It was so fun going live today! If you’re able, please consider donating to http://www.teenfeed.org to help support homeless and at-risk youth during these difficult times. Visit https://www.headcount.org to make sure you are registered to vote. Thank you, see you again tomorrow at 4pm PT!",
@@ -3345,7 +3343,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 15,
             "videoId": "Ei9xuVkbQuU"
           }
         },
@@ -3366,7 +3363,6 @@
                 "authorDisplayName": "zulmatthews",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxKLt27q2fNA7eT_95mz84vAtFLjiCsaHyG5Q=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 852,
                 "publishedAt": "2020-03-18T04:02:53.000Z",
                 "textDisplay": "0:19: We Will Become Silhouettes\n3:38: A Lack of Color\n7:46: Title Track\n12:22: Northern Lights\n18:30: Crooked Teeth\n22:34: Cath...\n28:39: Grapevine Fires\n33:54: Fake Plastic Trees\n40:01: California Zephyr\n44:06: The District Sleeps Alone Tonight",
                 "textOriginal": "0:19: We Will Become Silhouettes\n3:38: A Lack of Color\n7:46: Title Track\n12:22: Northern Lights\n18:30: Crooked Teeth\n22:34: Cath...\n28:39: Grapevine Fires\n33:54: Fake Plastic Trees\n40:01: California Zephyr\n44:06: The District Sleeps Alone Tonight",
@@ -3375,7 +3371,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 15,
             "videoId": "Ei9xuVkbQuU"
           }
         },
@@ -3396,7 +3391,6 @@
                 "authorDisplayName": "JB Bonifacio",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJzLL2zMDgj4pNGxxR2A_kIRgsLiN25zY9Xb-g=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 183,
                 "publishedAt": "2020-03-17T23:55:48.000Z",
                 "textDisplay": "Acoustic Postal Service is the 2020 energy we need right now.",
                 "textOriginal": "Acoustic Postal Service is the 2020 energy we need right now.",
@@ -3405,7 +3399,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 3,
             "videoId": "Ei9xuVkbQuU"
           }
         },
@@ -3426,7 +3419,6 @@
                 "authorDisplayName": "joseph davisson",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJzSd_SH7ykNk4Ai-18dgYpJ2P5_6yG192VeJQ=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 78,
                 "publishedAt": "2020-03-22T20:01:20.000Z",
                 "textDisplay": "This is literally the fourth decade he’s had that hairstyle",
                 "textOriginal": "This is literally the fourth decade he’s had that hairstyle",
@@ -3435,7 +3427,6 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 2,
             "videoId": "Ei9xuVkbQuU"
           }
         },
@@ -3456,7 +3447,6 @@
                 "authorDisplayName": "Glenn Lyons",
                 "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJznUOnKBV7flFD4thPa9Wwzyg1mz-3WzdbtVQ=s48-c-k-c0xffffffff-no-rj-mo",
                 "canRate": true,
-                "likeCount": 230,
                 "publishedAt": "2020-03-18T00:43:39.000Z",
                 "textDisplay": "Fake Plastic Trees was a surprise that made my whole isolation worth it",
                 "textOriginal": "Fake Plastic Trees was a surprise that made my whole isolation worth it",
@@ -3465,13 +3455,11 @@
                 "viewerRating": "none"
               }
             },
-            "totalReplyCount": 8,
             "videoId": "Ei9xuVkbQuU"
           }
         }
       ],
       "kind": "youtube#commentThreadListResponse",
-      "nextPageToken": "QURTSl9pMlNGcS1KaDNBSi16NHByb0ZlOG9wakdnSHRKeWdxbG4xaDBGX2d3b2tRMlIxLTZZSGtGMlRSQUFMTFZrTGNrTmUtTEdjRnVCM2dEaVhENHBGaGwtXzdkSVpsallaNHNCRHlfeDBmaWxWRHlIbTdFcEUwZDFURzFvUG1lVVhTTGZXczRwa3dGQmhpbi1fWXJiOHc5QnUwU0JhcDlIbVhFQTNTMjJNdG4wX3pmeVFLZGgzbVB0VVlnc3FuZmZmaw==",
       "pageInfo": {
         "resultsPerPage": 5,
         "totalResults": 5

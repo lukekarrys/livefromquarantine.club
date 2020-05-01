@@ -39,7 +39,17 @@ const normalizeData = (d) =>
   sortKeys(
     JSON.parse(
       JSON.stringify(d, (key, value) => {
-        if (key === 'etag') return undefined
+        if (
+          [
+            'etag',
+            'nextPageToken',
+            'likeCount',
+            'totalReplyCount',
+            'position',
+          ].includes(key)
+        ) {
+          return undefined
+        }
         if (value && !Array.isArray(value) && typeof value === 'object') {
           return sortKeys(value)
         }
