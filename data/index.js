@@ -3,6 +3,7 @@ require('dotenv').config()
 const fs = require('fs').promises
 const path = require('path')
 const axios = require('axios')
+const prettier = require('prettier')
 const { isCommentMaybeSetlist } = require('../build/parse')
 
 const apiUrl = `https://www.googleapis.com/youtube/v3`
@@ -126,9 +127,13 @@ const getVideosAndComments = async (artist, key) => {
 }
 
 const writeFile = async (artist, resp) => {
+  const prettierOptions = await prettier.resolveConfig(__dirname)
   await fs.writeFile(
     path.join(__dirname, `${artist.meta.id}.json`),
-    JSON.stringify(resp, null, 2)
+    prettier.format(JSON.stringify(resp, null, 2), {
+      parser: 'json',
+      ...prettierOptions,
+    })
   )
 }
 

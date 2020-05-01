@@ -22,7 +22,7 @@
       "plugin:prettier/recommended"
     ],
     "env": {
-      "es2017": true,
+      "es2020": true,
       "browser": true,
       "node": true
     }
@@ -44,6 +44,7 @@
     "data": "node data/index.js",
     "eslint": "eslint . --fix",
     "lint": "npm run prettier && npm run eslint",
-    "prettier": "prettier  --write '**/*.{js,md,css,json}'"
+    "prettier": "prettier --write '**/*.{js,md,css,json}'",
+    "trigger": "node trigger-gh-data.js"
   }
 }
