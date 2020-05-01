@@ -3,6 +3,7 @@ require('dotenv').config()
 const fs = require('fs').promises
 const path = require('path')
 const axios = require('axios')
+const { isCommentMaybeSetlist } = require('../build/parse')
 
 const apiUrl = `https://www.googleapis.com/youtube/v3`
 
@@ -46,6 +47,9 @@ const normalizeData = (d) =>
             'likeCount',
             'totalReplyCount',
             'position',
+            'canReply',
+            'isPublic',
+            'canRate',
           ].includes(key)
         ) {
           return undefined
@@ -69,7 +73,23 @@ const getVideosAndComments = async (artist, key) => {
     videos.items.map((video) =>
       axios
         .get(commentUrl(video.snippet.resourceId.videoId, key))
-        .then((r) => normalizeData(r.data))
+        .then((resp) => {
+          return Object.assign(resp.data, {
+            items: resp.data.items
+              .filter((comment) =>
+                isCommentMaybeSetlist(
+                  comment.snippet.topLevelComment.snippet.textDisplay
+                )
+              )
+              .sort(
+                (a, b) =>
+                  a.snippet.topLevelComment.updatedAt -
+                  b.snippet.topLevelComment.updatedAt
+              ),
+          })
+        })
+        .then((c) => (console.log(c), c))
+        .then((r) => normalizeData(r))
     )
   )
 
@@ -107,6 +127,7 @@ const getArtist = async (artistKey) => {
 }
 
 const main = async (...artists) => {
+  if (!artists.length) throw new Error('No artists')
   return Promise.all(
     artists.map((id) =>
       getArtist(id)
@@ -117,5 +138,10 @@ const main = async (...artists) => {
 }
 
 main(...process.argv.slice(2).flatMap((v) => v.split(',')))
-  .then(console.log)
+  .then((res) => {
+    console.log(res)
+    if (res.some((r) => !r.ok)) {
+      throw new Error('Data error')
+    }
+  })
   .catch(console.error)

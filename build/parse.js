@@ -46,6 +46,12 @@ const getSongsFromText = (text, parsers) => {
   return songs.length ? songs : null
 }
 
+const isCommentMaybeSetlist = (commentText) => {
+  const commentTimestamps =
+    commentText.match(new RegExp(TIMESTAMP.source, 'g')) || []
+  return commentTimestamps.length >= 3
+}
+
 const parseVideo = (video, comments, parsers) => {
   const {
     title,
@@ -65,10 +71,9 @@ const parseVideo = (video, comments, parsers) => {
   if (!songs) {
     for (let i = 0; i < comments.length; i++) {
       const comment = comments[i].topLevelComment.snippet.textDisplay
-      const commentTimestamps = comment.match(/\d+:\d+/g) || []
       // Get timestamps from top rated comments by finding the first one with
       // at least 3 timestamps
-      if (commentTimestamps.length >= 3) {
+      if (isCommentMaybeSetlist(comment)) {
         const songsFromComment = getSongsFromText(
           callParser(parsers.comment, comment),
           parsers
@@ -99,3 +104,5 @@ module.exports = (videos, comments, parsers) => {
   })
   return callParser(parsers.data, data)
 }
+
+module.exports.isCommentMaybeSetlist = isCommentMaybeSetlist

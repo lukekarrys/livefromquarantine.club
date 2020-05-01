@@ -72,6 +72,7 @@ const buildArtist = async (artistKey) => {
 }
 
 const main = async (...artists) => {
+  if (!artists.length) throw new Error('No artists')
   return Promise.all(
     artists.map((id) =>
       buildArtist(id)
@@ -82,5 +83,10 @@ const main = async (...artists) => {
 }
 
 main(...process.argv.slice(2).flatMap((v) => v.split(',')))
-  .then(console.log)
+  .then((res) => {
+    console.log(res)
+    if (res.some((r) => !r.ok)) {
+      throw new Error('Build error')
+    }
+  })
   .catch(console.error)
