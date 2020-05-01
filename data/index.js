@@ -88,7 +88,6 @@ const getVideosAndComments = async (artist, key) => {
               ),
           })
         })
-        .then((c) => (console.log(c), c))
         .then((r) => normalizeData(r))
     )
   )
