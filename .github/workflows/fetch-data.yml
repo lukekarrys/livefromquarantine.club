@@ -1,0 +1,26 @@
+name: Fetch YouTube Data
+on: repository_dispatch
+
+jobs:
+  run:
+    name: Get latest video data
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - run: npm install
+      - run: npm run data ${{ github.event.client_payload.artist }}
+
+      - name: Push to built branch
+        uses: Automattic/action-commit-to-branch@master
+        with:
+          branch: 'video-data-latest'
+          commit_message: 'Fetch new data for ${{ github.event.client_payload.artist }}'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
