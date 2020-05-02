@@ -3,12 +3,7 @@
     "items": [
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT49M12S",
-          "licensedContent": false,
-          "projection": "rectangular"
+          "duration": "PT49M12S"
         },
         "id": "UExWdUtIaTl2MlJuNld5dFlfMjZLZmdPMkYyeXA0R3Fndi4yMUQyQTQzMjRDNzMyQTMy",
         "kind": "youtube#playlistItem",
@@ -54,12 +49,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT51M9S",
-          "licensedContent": false,
-          "projection": "rectangular"
+          "duration": "PT51M9S"
         },
         "id": "UExWdUtIaTl2MlJuNld5dFlfMjZLZmdPMkYyeXA0R3Fndi41QTY1Q0UxMTVCODczNThE",
         "kind": "youtube#playlistItem",
@@ -105,12 +95,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT48M53S",
-          "licensedContent": false,
-          "projection": "rectangular"
+          "duration": "PT48M53S"
         },
         "id": "UExWdUtIaTl2MlJuNld5dFlfMjZLZmdPMkYyeXA0R3Fndi5EQUE1NTFDRjcwMDg0NEMz",
         "kind": "youtube#playlistItem",
@@ -156,12 +141,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT1H1M19S",
-          "licensedContent": false,
-          "projection": "rectangular"
+          "duration": "PT1H1M19S"
         },
         "id": "UExWdUtIaTl2MlJuNld5dFlfMjZLZmdPMkYyeXA0R3Fndi41Mzk2QTAxMTkzNDk4MDhF",
         "kind": "youtube#playlistItem",
@@ -207,12 +187,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT50M52S",
-          "licensedContent": false,
-          "projection": "rectangular"
+          "duration": "PT50M52S"
         },
         "id": "UExWdUtIaTl2MlJuNld5dFlfMjZLZmdPMkYyeXA0R3Fndi4zMDg5MkQ5MEVDMEM1NTg2",
         "kind": "youtube#playlistItem",
@@ -258,12 +233,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT50M16S",
-          "licensedContent": false,
-          "projection": "rectangular"
+          "duration": "PT50M16S"
         },
         "id": "UExWdUtIaTl2MlJuNld5dFlfMjZLZmdPMkYyeXA0R3Fndi45ODRDNTg0QjA4NkFBNkQy",
         "kind": "youtube#playlistItem",
@@ -309,12 +279,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT50M19S",
-          "licensedContent": false,
-          "projection": "rectangular"
+          "duration": "PT50M19S"
         },
         "id": "UExWdUtIaTl2MlJuNld5dFlfMjZLZmdPMkYyeXA0R3Fndi5EMEEwRUY5M0RDRTU3NDJC",
         "kind": "youtube#playlistItem",
@@ -360,12 +325,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT56M45S",
-          "licensedContent": false,
-          "projection": "rectangular"
+          "duration": "PT56M45S"
         },
         "id": "UExWdUtIaTl2MlJuNld5dFlfMjZLZmdPMkYyeXA0R3Fndi40NzZCMERDMjVEN0RFRThB",
         "kind": "youtube#playlistItem",
@@ -411,12 +371,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT53M19S",
-          "licensedContent": false,
-          "projection": "rectangular"
+          "duration": "PT53M19S"
         },
         "id": "UExWdUtIaTl2MlJuNld5dFlfMjZLZmdPMkYyeXA0R3Fndi5GNjNDRDREMDQxOThCMDQ2",
         "kind": "youtube#playlistItem",
@@ -462,12 +417,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "sd",
-          "dimension": "2d",
-          "duration": "PT53M59S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT53M59S"
         },
         "id": "UExWdUtIaTl2MlJuNld5dFlfMjZLZmdPMkYyeXA0R3Fndi45NDk1REZENzhEMzU5MDQz",
         "kind": "youtube#playlistItem",
@@ -513,12 +463,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT53M24S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT53M24S"
         },
         "id": "UExWdUtIaTl2MlJuNld5dFlfMjZLZmdPMkYyeXA0R3Fndi5DQUNERDQ2NkIzRUQxNTY1",
         "kind": "youtube#playlistItem",
@@ -564,12 +509,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "sd",
-          "dimension": "2d",
-          "duration": "PT58M19S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT58M19S"
         },
         "id": "UExWdUtIaTl2MlJuNld5dFlfMjZLZmdPMkYyeXA0R3Fndi41MzJCQjBCNDIyRkJDN0VD",
         "kind": "youtube#playlistItem",
@@ -615,12 +555,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "sd",
-          "dimension": "2d",
-          "duration": "PT50M27S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT50M27S"
         },
         "id": "UExWdUtIaTl2MlJuNld5dFlfMjZLZmdPMkYyeXA0R3Fndi4xMkVGQjNCMUM1N0RFNEUx",
         "kind": "youtube#playlistItem",
@@ -666,12 +601,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "sd",
-          "dimension": "2d",
-          "duration": "PT48M6S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT48M6S"
         },
         "id": "UExWdUtIaTl2MlJuNld5dFlfMjZLZmdPMkYyeXA0R3Fndi4wOTA3OTZBNzVEMTUzOTMy",
         "kind": "youtube#playlistItem",
@@ -717,12 +647,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT46M53S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT46M53S"
         },
         "id": "UExWdUtIaTl2MlJuNld5dFlfMjZLZmdPMkYyeXA0R3Fndi41MjE1MkI0OTQ2QzJGNzNG",
         "kind": "youtube#playlistItem",
@@ -768,12 +693,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT51M41S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT51M41S"
         },
         "id": "UExWdUtIaTl2MlJuNld5dFlfMjZLZmdPMkYyeXA0R3Fndi4wMTcyMDhGQUE4NTIzM0Y5",
         "kind": "youtube#playlistItem",
@@ -819,12 +739,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "sd",
-          "dimension": "2d",
-          "duration": "PT50M11S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT50M11S"
         },
         "id": "UExWdUtIaTl2MlJuNld5dFlfMjZLZmdPMkYyeXA0R3Fndi4yODlGNEE0NkRGMEEzMEQy",
         "kind": "youtube#playlistItem",
@@ -870,12 +785,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT47M55S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT47M55S"
         },
         "id": "UExWdUtIaTl2MlJuNld5dFlfMjZLZmdPMkYyeXA0R3Fndi41NkI0NEY2RDEwNTU3Q0M2",
         "kind": "youtube#playlistItem",
@@ -924,7 +834,33 @@
   },
   "comments": {
     "QQ15BaDEo0Q": {
-      "items": [],
+      "items": [
+        {
+          "id": "Ugz9MqOhywdpaqXkF4B4AaABAg",
+          "kind": "youtube#commentThread",
+          "snippet": {
+            "topLevelComment": {
+              "id": "Ugz9MqOhywdpaqXkF4B4AaABAg",
+              "kind": "youtube#comment",
+              "snippet": {
+                "authorChannelId": {
+                  "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
+                },
+                "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
+                "authorDisplayName": "MeinKampfyChair",
+                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
+                "publishedAt": "2020-05-01T00:05:34.000Z",
+                "textDisplay": "00:27 Monday Morning \r\n05:08 The District Sleeps Alone Tonight\r\n10:06 Your Hurricane\r\n14:51 Jealousy Rides With Me\r\n17:26 (Q & A)\r\n25:33 Life in Quarantine\r\n29:34 You've Haunted Me All My Life\r\n34:50 Someday You Will Be Loved \r\n39:39 The Things You Said [Depeche Mode cover]\r\n44:50 I Will Follow You into the Dark",
+                "textOriginal": "00:27 Monday Morning \r\n05:08 The District Sleeps Alone Tonight\r\n10:06 Your Hurricane\r\n14:51 Jealousy Rides With Me\r\n17:26 (Q & A)\r\n25:33 Life in Quarantine\r\n29:34 You've Haunted Me All My Life\r\n34:50 Someday You Will Be Loved \r\n39:39 The Things You Said [Depeche Mode cover]\r\n44:50 I Will Follow You into the Dark",
+                "updatedAt": "2020-05-01T03:10:21.000Z",
+                "videoId": "QQ15BaDEo0Q",
+                "viewerRating": "none"
+              }
+            },
+            "videoId": "QQ15BaDEo0Q"
+          }
+        }
+      ],
       "kind": "youtube#commentThreadListResponse"
     },
     "T58oySghwLk": {

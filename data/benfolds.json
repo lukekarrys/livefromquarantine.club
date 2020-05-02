@@ -3,12 +3,7 @@
     "items": [
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT56M19S",
-          "licensedContent": false,
-          "projection": "rectangular"
+          "duration": "PT56M19S"
         },
         "id": "UExrN1NnTkZ5ZGVZMUh5ckVFTlhqMTBIUlpnZFQyV2ZDVy4yODlGNEE0NkRGMEEzMEQy",
         "kind": "youtube#playlistItem",
@@ -54,12 +49,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT1H20M6S",
-          "licensedContent": false,
-          "projection": "rectangular"
+          "duration": "PT1H20M6S"
         },
         "id": "UExrN1NnTkZ5ZGVZMUh5ckVFTlhqMTBIUlpnZFQyV2ZDVy41NkI0NEY2RDEwNTU3Q0M2",
         "kind": "youtube#playlistItem",
@@ -105,12 +95,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT1H8M42S",
-          "licensedContent": false,
-          "projection": "rectangular"
+          "duration": "PT1H8M42S"
         },
         "id": "UExrN1NnTkZ5ZGVZMUh5ckVFTlhqMTBIUlpnZFQyV2ZDVy4wMTcyMDhGQUE4NTIzM0Y5",
         "kind": "youtube#playlistItem",
@@ -156,12 +141,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT1H22M42S",
-          "licensedContent": false,
-          "projection": "rectangular"
+          "duration": "PT1H22M42S"
         },
         "id": "UExrN1NnTkZ5ZGVZMUh5ckVFTlhqMTBIUlpnZFQyV2ZDVy4xMkVGQjNCMUM1N0RFNEUx",
         "kind": "youtube#playlistItem",
@@ -197,12 +177,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT1H9M47S",
-          "licensedContent": false,
-          "projection": "rectangular"
+          "duration": "PT1H9M47S"
         },
         "id": "UExrN1NnTkZ5ZGVZMUh5ckVFTlhqMTBIUlpnZFQyV2ZDVy5DQUNERDQ2NkIzRUQxNTY1",
         "kind": "youtube#playlistItem",

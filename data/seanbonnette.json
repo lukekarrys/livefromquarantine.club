@@ -3,12 +3,7 @@
     "items": [
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT21M9S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT21M9S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4wNEU1MTI4NkZEMzVBN0JF",
         "kind": "youtube#playlistItem",
@@ -54,12 +49,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT20M35S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT20M35S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5CQkEwRDA0MDkwNUM2MDY1",
         "kind": "youtube#playlistItem",
@@ -105,12 +95,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT20M39S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT20M39S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5GNjAwN0Y0QTFGOTVDMEMy",
         "kind": "youtube#playlistItem",
@@ -156,12 +141,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT22M55S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT22M55S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS41NTZEOThBNThFOUVGQkVB",
         "kind": "youtube#playlistItem",
@@ -207,12 +187,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT23M36S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT23M36S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4zMEQ1MEIyRTFGNzhDQzFB",
         "kind": "youtube#playlistItem",
@@ -258,12 +233,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT22M30S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT22M30S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4xMzgwMzBERjQ4NjEzNUE5",
         "kind": "youtube#playlistItem",
@@ -309,12 +279,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT17M8S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT17M8S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS44QzVGQUU2QjE2NDgxM0M4",
         "kind": "youtube#playlistItem",
@@ -360,12 +325,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT18M37S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT18M37S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5ENjI1QUI0MDI5NEQzODFE",
         "kind": "youtube#playlistItem",
@@ -411,12 +371,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT21M3S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT21M3S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS41RTNBREYwMkI5QzU3RkY2",
         "kind": "youtube#playlistItem",
@@ -462,12 +417,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT20M11S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT20M11S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4yQUJFNUVCMzVDNjcxRTlF",
         "kind": "youtube#playlistItem",
@@ -513,12 +463,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT22M17S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT22M17S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4yQjZFRkExQjFGODk3RUFD",
         "kind": "youtube#playlistItem",
@@ -564,12 +509,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT19M5S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT19M5S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS41MzY4MzcwOUFFRUU3QzEx",
         "kind": "youtube#playlistItem",
@@ -615,12 +555,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT22M29S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT22M29S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5DRUQwODMxQzUyRTlGRkY3",
         "kind": "youtube#playlistItem",
@@ -666,12 +601,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT17M24S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT17M24S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS45NkVENTkxRDdCQUFBMDY4",
         "kind": "youtube#playlistItem",
@@ -717,12 +647,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT32M30S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT32M30S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4zQzFBN0RGNzNFREFCMjBE",
         "kind": "youtube#playlistItem",
@@ -768,12 +693,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT20M39S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT20M39S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5GNDg1Njc1QzZERjlFRjE5",
         "kind": "youtube#playlistItem",
@@ -819,12 +739,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT24M14S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT24M14S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4xOTEzQzhBQzU3MDNDNjcz",
         "kind": "youtube#playlistItem",
@@ -870,12 +785,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT28M16S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT28M16S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5BRjJDODk5REM0NjkzMUIy",
         "kind": "youtube#playlistItem",
@@ -921,12 +831,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT22M25S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT22M25S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS45RjNFMDhGQ0Q2RkFCQTc1",
         "kind": "youtube#playlistItem",
@@ -972,12 +877,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT22M39S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT22M39S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5CMEQ2Mjk5NTc3NDZFRUNB",
         "kind": "youtube#playlistItem",
@@ -1023,12 +923,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT22M46S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT22M46S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4zRDBDOEZDOUM0MDY5NEEz",
         "kind": "youtube#playlistItem",
@@ -1074,12 +969,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT21M25S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT21M25S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS41QUZGQTY5OTE4QTREQUU4",
         "kind": "youtube#playlistItem",
@@ -1125,12 +1015,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT20M45S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT20M45S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS43NDhFRTgwOTRERTU4Rjg3",
         "kind": "youtube#playlistItem",
@@ -1176,12 +1061,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT21M35S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT21M35S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS44Mjc5REFBRUE2MTdFRDU0",
         "kind": "youtube#playlistItem",
@@ -1227,12 +1107,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT23M18S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT23M18S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5DMkU4NTY1QUFGQTYwMDE3",
         "kind": "youtube#playlistItem",
@@ -1278,12 +1153,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT21M36S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT21M36S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4yQUE2Q0JEMTk4NTM3RTZC",
         "kind": "youtube#playlistItem",
@@ -1329,12 +1199,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT26M23S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT26M23S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS43MTI1NDIwOTMwQjIxMzNG",
         "kind": "youtube#playlistItem",
@@ -1375,12 +1240,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT25M8S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT25M8S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5DNzE1RjZEMUZCMjA0RDBB",
         "kind": "youtube#playlistItem",
@@ -1426,12 +1286,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT25M35S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT25M35S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS45NzUwQkI1M0UxNThBMkU0",
         "kind": "youtube#playlistItem",
@@ -1477,12 +1332,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT22M47S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT22M47S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5GM0Q3M0MzMzY5NTJFNTdE",
         "kind": "youtube#playlistItem",
@@ -1528,12 +1378,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT23M23S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT23M23S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4yMDhBMkNBNjRDMjQxQTg1",
         "kind": "youtube#playlistItem",
@@ -1579,12 +1424,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT20M49S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT20M49S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5ENDU4Q0M4RDExNzM1Mjcy",
         "kind": "youtube#playlistItem",
@@ -1630,12 +1470,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT18M43S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT18M43S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS45RTgxNDRBMzUwRjQ0MDhC",
         "kind": "youtube#playlistItem",
@@ -1681,12 +1516,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT24M53S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT24M53S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4yMUQyQTQzMjRDNzMyQTMy",
         "kind": "youtube#playlistItem",
@@ -1732,12 +1562,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT24M24S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT24M24S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5EQUE1NTFDRjcwMDg0NEMz",
         "kind": "youtube#playlistItem",
@@ -1783,12 +1608,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT20M59S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT20M59S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4zMDg5MkQ5MEVDMEM1NTg2",
         "kind": "youtube#playlistItem",
@@ -1834,12 +1654,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT21M7S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT21M7S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS45ODRDNTg0QjA4NkFBNkQy",
         "kind": "youtube#playlistItem",
@@ -1880,12 +1695,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT24M47S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT24M47S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5EMEEwRUY5M0RDRTU3NDJC",
         "kind": "youtube#playlistItem",
@@ -1931,12 +1741,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT22M46S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT22M46S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5GNjNDRDREMDQxOThCMDQ2",
         "kind": "youtube#playlistItem",
@@ -1977,12 +1782,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT28M20S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT28M20S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS45NDk1REZENzhEMzU5MDQz",
         "kind": "youtube#playlistItem",
@@ -2028,12 +1828,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT30M28S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT30M28S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5DQUNERDQ2NkIzRUQxNTY1",
         "kind": "youtube#playlistItem",
@@ -2079,12 +1874,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT21M50S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT21M50S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS41MzJCQjBCNDIyRkJDN0VD",
         "kind": "youtube#playlistItem",
@@ -2130,12 +1920,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT16M3S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT16M3S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4xMkVGQjNCMUM1N0RFNEUx",
         "kind": "youtube#playlistItem",
@@ -2181,12 +1966,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT19M12S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT19M12S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4wOTA3OTZBNzVEMTUzOTMy",
         "kind": "youtube#playlistItem",
@@ -2232,12 +2012,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT19M41S",
-          "licensedContent": false,
-          "projection": "rectangular"
+          "duration": "PT19M41S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS41MjE1MkI0OTQ2QzJGNzNG",
         "kind": "youtube#playlistItem",
@@ -2283,12 +2058,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT21M20S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT21M20S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4wMTcyMDhGQUE4NTIzM0Y5",
         "kind": "youtube#playlistItem",
@@ -2334,12 +2104,7 @@
       },
       {
         "contentDetails": {
-          "caption": "false",
-          "definition": "hd",
-          "dimension": "2d",
-          "duration": "PT16M56S",
-          "licensedContent": true,
-          "projection": "rectangular"
+          "duration": "PT16M56S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4yODlGNEE0NkRGMEEzMEQy",
         "kind": "youtube#playlistItem",
@@ -2773,6 +2538,31 @@
                 "textDisplay": "Self Esteem by AJJ - 1:55\nLucky Strike by Foot Ox - 4:46\nReturn of the Grievous Angel by Gram Parsons ft. Emmylou Harris - 7:21\nChildren of God by AJJ - 11:19\nLight hearted ACDC shit-talk by Sean Bonnette - 13:24\nIf You Have Love in Your Heart by AJJ - 14:06\nReason to Believe by Tim Hardin - 15:22\nSmall Red Boy by AJJ - 18:53\n\nI suggest watching the entirety of the concert before skipping around, be respectful and enjoy as intended.",
                 "textOriginal": "Self Esteem by AJJ - 1:55\nLucky Strike by Foot Ox - 4:46\nReturn of the Grievous Angel by Gram Parsons ft. Emmylou Harris - 7:21\nChildren of God by AJJ - 11:19\nLight hearted ACDC shit-talk by Sean Bonnette - 13:24\nIf You Have Love in Your Heart by AJJ - 14:06\nReason to Believe by Tim Hardin - 15:22\nSmall Red Boy by AJJ - 18:53\n\nI suggest watching the entirety of the concert before skipping around, be respectful and enjoy as intended.",
                 "updatedAt": "2020-03-30T20:17:49.000Z",
+                "videoId": "z65QOiVKiNw",
+                "viewerRating": "none"
+              }
+            },
+            "videoId": "z65QOiVKiNw"
+          }
+        },
+        {
+          "id": "UgwflN3qeLkbfNCeXWJ4AaABAg",
+          "kind": "youtube#commentThread",
+          "snippet": {
+            "topLevelComment": {
+              "id": "UgwflN3qeLkbfNCeXWJ4AaABAg",
+              "kind": "youtube#comment",
+              "snippet": {
+                "authorChannelId": {
+                  "value": "UCwlY3DIaaCuCiz5TvOyxuDw"
+                },
+                "authorChannelUrl": "http://www.youtube.com/channel/UCwlY3DIaaCuCiz5TvOyxuDw",
+                "authorDisplayName": "Łania",
+                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwBc7Foxa0QtDtMcaFKRye6eyCti5-eQw1I8w=s48-c-k-c0xffffffff-no-rj-mo",
+                "publishedAt": "2020-03-30T20:40:26.000Z",
+                "textDisplay": "01:54 Self Eseetem - AJJ\n04:45 Lucky Strike - Foot Ox\n07:20 Return of the Grievous Angel - Gram Parsons and EmmyLou Harris\n11:17 Children of God - AJJ\n14:07 If You Have Love in Your Heart - AJJ\n15:23 Reason To Believe - Tim Hardin\n18:53 Small Red Boy - AJJ",
+                "textOriginal": "01:54 Self Eseetem - AJJ\n04:45 Lucky Strike - Foot Ox\n07:20 Return of the Grievous Angel - Gram Parsons and EmmyLou Harris\n11:17 Children of God - AJJ\n14:07 If You Have Love in Your Heart - AJJ\n15:23 Reason To Believe - Tim Hardin\n18:53 Small Red Boy - AJJ",
+                "updatedAt": "2020-03-30T20:40:26.000Z",
                 "videoId": "z65QOiVKiNw",
                 "viewerRating": "none"
               }

@@ -3,16 +3,20 @@ const TIMESTAMP = /(?:\d+:)?\d+:\d+/
 const startWithTimestamp = new RegExp(`^[(]?${TIMESTAMP.source}`)
 const endWithTimestamp = new RegExp(`${TIMESTAMP.source}[)]?$`)
 
-const callParser = (p, v) => (typeof p === 'function' ? p(v) : v)
-
-const getSongsFromText = (text, parsers) => {
-  const lines = text.split('\n')
-
-  const linesWithTimestamp = lines
+const getLinesWithTimestamp = (text) =>
+  text
+    .split('\n')
     .map((l) => l.trim())
     .filter((l) => startWithTimestamp.test(l) || endWithTimestamp.test(l))
 
-  const songs = linesWithTimestamp
+const isCommentMaybeSetlist = (commentText) => {
+  return getLinesWithTimestamp(commentText).length >= 3
+}
+
+const callParser = (p, v) => (typeof p === 'function' ? p(v) : v)
+
+const getSongsFromText = (text, parsers) => {
+  const songs = getLinesWithTimestamp(text)
     .map((line) => {
       const startEndTimestamps = new RegExp(
         `(${TIMESTAMP.source})(?: ?- ?(${TIMESTAMP.source}))?`
@@ -44,12 +48,6 @@ const getSongsFromText = (text, parsers) => {
     .filter(Boolean)
 
   return songs.length ? songs : null
-}
-
-const isCommentMaybeSetlist = (commentText) => {
-  const commentTimestamps =
-    commentText.match(new RegExp(TIMESTAMP.source, 'g')) || []
-  return commentTimestamps.length >= 3
 }
 
 const parseVideo = (video, comments, parsers) => {

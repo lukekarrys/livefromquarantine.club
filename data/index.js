@@ -9,15 +9,14 @@ const { isCommentMaybeSetlist } = require('../build/parse')
 const { API_KEY } = process.env
 
 const apiUrl = `https://www.googleapis.com/youtube/v3`
-const hideKey = (str) =>
-  str.replace(API_KEY, 'X'.repeat(API_KEY.length)).replace(apiUrl, '')
+const hideKey = (str) => str.replace(API_KEY, 'X'.repeat(3)).replace(apiUrl, '')
 
 const commentUrl = (id, key) => {
   const url = new URL(`${apiUrl}/commentThreads`, apiUrl)
   url.searchParams.set('part', 'snippet')
   url.searchParams.set('order', 'relevance')
   url.searchParams.set('textFormat', 'plainText')
-  url.searchParams.set('maxResults', '5')
+  url.searchParams.set('maxResults', '50')
   url.searchParams.set('videoId', id)
   url.searchParams.set('key', key)
   return url.toString()
@@ -67,6 +66,13 @@ const normalizeData = (d) =>
             'pageInfo',
             'nextPageToken',
             'prevPageToken',
+            'caption',
+            'contentRating',
+            'definition',
+            'dimension',
+            'licensedContent',
+            'projection',
+            'regionRestriction',
           ].includes(key)
         ) {
           return undefined
@@ -145,11 +151,15 @@ const getVideosAndComments = async (artist, key) => {
         .get(url)
         .then((resp) => {
           return Object.assign(resp.data, {
-            items: resp.data.items.filter((comment) =>
-              isCommentMaybeSetlist(
-                comment.snippet.topLevelComment.snippet.textDisplay
+            items: resp.data.items
+              .filter((comment) =>
+                isCommentMaybeSetlist(
+                  comment.snippet.topLevelComment.snippet.textDisplay
+                )
               )
-            ),
+              // Sort by likeCount before removing it. YouTube returns comments
+              // by "relevance" but likeCount is a better indicator of timestamps I think
+              .sort((a, b) => a.snippet.likeCount - b.snippet.likeCount),
           })
         })
         .then((r) => normalizeData(r))
