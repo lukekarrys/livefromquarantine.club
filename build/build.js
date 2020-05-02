@@ -38,9 +38,11 @@ const writeParsed = async (parser, data) => {
   const { id } = parser.meta
 
   let index = (await fs.readFile(parsePath('index.html'))).toString()
+  let manifest = (await fs.readFile(parsePath('manifest.json'))).toString()
 
   Object.entries(parser.meta).forEach(([key, value]) => {
     index = index.replace(new RegExp(`{{${key}}}`, 'g'), value)
+    manifest = manifest.replace(new RegExp(`{{${key}}}`, 'g'), value)
   })
 
   const parsedData = mainParser(
@@ -55,6 +57,7 @@ const writeParsed = async (parser, data) => {
   validate(parsedData)
 
   await fs.writeFile(publicPath(`${id}.html`), index)
+  await fs.writeFile(publicPath(`manifest-${id}.json`), manifest)
   const prettierOptions = await prettier.resolveConfig(__dirname)
   await fs.writeFile(
     publicPath(`${id}.js`),
