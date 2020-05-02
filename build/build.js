@@ -42,7 +42,7 @@ const writeParsed = async (parser, data) => {
 
   Object.entries(parser.meta).forEach(([key, value]) => {
     index = index.replace(new RegExp(`{{${key}}}`, 'g'), value)
-    manifest = index.replace(new RegExp(`{{${key}}}`, 'g'), value)
+    manifest = manifest.replace(new RegExp(`{{${key}}}`, 'g'), value)
   })
 
   const parsedData = mainParser(
