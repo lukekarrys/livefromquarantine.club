@@ -57,7 +57,7 @@ const writeParsed = async (parser, data) => {
   validate(parsedData)
 
   await fs.writeFile(publicPath(`${id}.html`), index)
-  await fs.writeFile(publicPath(`manifest-${id}.json`), index)
+  await fs.writeFile(publicPath(`manifest-${id}.json`), manifest)
   const prettierOptions = await prettier.resolveConfig(__dirname)
   await fs.writeFile(
     publicPath(`${id}.js`),
