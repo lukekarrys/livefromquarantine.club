@@ -2,6 +2,49 @@
   "videos": {
     "items": [
       {
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4wNEU1MTI4NkZEMzVBN0JF",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\nDavid Bowie - Quicksand 0:27\nAJJ - We're All Gonna Die 5:48\nAJJ - Fucc the Devil 10:30\nAJJ - Human Kittens 12:41\nAJJ - When I'm A Dead Boy 16:00\nSheryl Crow - Strong Enough 17:40\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-05-02T06:30:19.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "lZAWvrrH0UQ"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/lZAWvrrH0UQ/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/lZAWvrrH0UQ/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/lZAWvrrH0UQ/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/lZAWvrrH0UQ/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/lZAWvrrH0UQ/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - May 1"
+        }
+      },
+      {
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5CQkEwRDA0MDkwNUM2MDY1",
         "kind": "youtube#playlistItem",
         "snippet": {
@@ -1459,49 +1502,6 @@
         }
       },
       {
-        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS41Mzk2QTAxMTkzNDk4MDhF",
-        "kind": "youtube#playlistItem",
-        "snippet": {
-          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
-          "channelTitle": "AJJ the band",
-          "description": "Sean plays songs from his house to entertain you while you are staying inside your house. Sorry bout the audio on this'n.",
-          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-          "publishedAt": "2020-03-29T18:27:39.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "w0-82S7RCic"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/w0-82S7RCic/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/w0-82S7RCic/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/w0-82S7RCic/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/w0-82S7RCic/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/w0-82S7RCic/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Live from Quarantine 3/25/20"
-        }
-      },
-      {
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4zMDg5MkQ5MEVDMEM1NTg2",
         "kind": "youtube#playlistItem",
         "snippet": {
@@ -1579,7 +1579,7 @@
               "width": 640
             }
           },
-          "title": "Live from Quarantine March 27, 2020"
+          "title": "Live from Quarantine March 27"
         }
       },
       {
@@ -2011,6 +2011,10 @@
     "kind": "youtube#playlistItemListResponse"
   },
   "comments": {
+    "lZAWvrrH0UQ": {
+      "items": [],
+      "kind": "youtube#commentThreadListResponse"
+    },
     "gJrZXIEwGY4": {
       "items": [],
       "kind": "youtube#commentThreadListResponse"
@@ -2431,10 +2435,6 @@
           }
         }
       ],
-      "kind": "youtube#commentThreadListResponse"
-    },
-    "w0-82S7RCic": {
-      "items": [],
       "kind": "youtube#commentThreadListResponse"
     },
     "E6aX5rGi2aI": {
