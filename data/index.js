@@ -33,9 +33,9 @@ const playlistUrl = (id, key, pageToken) => {
   return url.toString()
 }
 
-const liveStreamUrl = (id, key) => {
+const videosUrl = (id, parts, key) => {
   const url = new URL(`${apiUrl}/videos`, apiUrl)
-  url.searchParams.set('part', 'liveStreamingDetails')
+  url.searchParams.set('part', `liveStreamingDetails,${parts.join(',')}`)
   url.searchParams.set('id', id)
   url.searchParams.set('key', key)
   return url.toString()
@@ -89,18 +89,33 @@ const getPaginatedVideos = async (id, key, pageToken, previousItems = []) => {
   const resp = await axios.get(url)
   let { items, nextPageToken } = resp.data
 
-  const liveStreamResp = await axios.get(
-    liveStreamUrl(items.map((v) => v.snippet.resourceId.videoId).join(','), key)
+  const detailParts = ['contentDetails']
+  const videosDetailsResp = await axios.get(
+    videosUrl(
+      items.map((v) => v.snippet.resourceId.videoId).join(','),
+      detailParts,
+      key
+    )
   )
-  const { items: liveStreamItems } = liveStreamResp.data
+  const { items: videoItems } = videosDetailsResp.data
 
-  const filteredItems = items.filter((video, index) => {
-    const liveStream = liveStreamItems[index]
-    if (liveStream.liveStreamingDetails) {
-      return !!liveStream.liveStreamingDetails.actualEndTime
-    }
-    return true
-  })
+  const filteredItems = items
+    .filter((video, index) => {
+      const videoDetails = videoItems[index]
+      if (videoDetails.liveStreamingDetails) {
+        return !!videoDetails.liveStreamingDetails.actualEndTime
+      }
+      return true
+    })
+    .map((video, index) => {
+      const videoDetails = videoItems[index]
+      detailParts.forEach((detailPart) => {
+        Object.assign(video, {
+          [detailPart]: videoDetails[detailPart],
+        })
+      })
+      return video
+    })
 
   const newItems = [...previousItems, ...filteredItems]
 
