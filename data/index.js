@@ -6,6 +6,9 @@ const axios = require('axios')
 const prettier = require('prettier')
 const { isCommentMaybeSetlist } = require('../build/parse')
 
+const hideKey = (str) =>
+  str.replace(process.env.API_KEY, 'X'.repeat(process.env.API_KEY))
+
 const apiUrl = `https://www.googleapis.com/youtube/v3`
 
 const commentUrl = (id, key) => {
@@ -71,7 +74,10 @@ const normalizeData = (d) =>
   )
 
 const getPaginatedVideos = async (id, key, pageToken, previousItems = []) => {
-  const resp = await axios.get(playlistUrl(id, key, pageToken))
+  const url = playlistUrl(id, key, pageToken)
+  console.log(`Fetching url: ${hideKey(url)}`)
+
+  const resp = await axios.get(url)
   const { items, nextPageToken } = resp.data
   const newItems = [...previousItems, ...items]
   if (nextPageToken) {
@@ -91,9 +97,12 @@ const getVideosAndComments = async (artist, key) => {
   const videos = normalizeData(videosResp.data)
 
   const videosComments = await Promise.all(
-    videos.items.map((video) =>
-      axios
-        .get(commentUrl(video.snippet.resourceId.videoId, key))
+    videos.items.map((video) => {
+      const url = commentUrl(video.snippet.resourceId.videoId, key)
+      console.log(`Fetching url: ${hideKey(url)}`)
+
+      return axios
+        .get(url)
         .then((resp) => {
           return Object.assign(resp.data, {
             items: resp.data.items.filter((comment) =>
@@ -104,7 +113,7 @@ const getVideosAndComments = async (artist, key) => {
           })
         })
         .then((r) => normalizeData(r))
-    )
+    })
   )
 
   const commentsByVideoId = videosComments.reduce(
@@ -157,7 +166,7 @@ const main = async (...artists) => {
 
 main(...process.argv.slice(2).flatMap((v) => v.split(',')))
   .then((res) => {
-    console.log(res)
+    console.log(hideKey(JSON.stringify(res, null, 2)))
     if (res.some((r) => !r.ok)) {
       throw new Error('Data error')
     }
