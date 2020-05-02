@@ -6,17 +6,17 @@ const axios = require('axios')
 const prettier = require('prettier')
 const { isCommentMaybeSetlist } = require('../build/parse')
 
-const hideKey = (str) =>
-  str.replace(process.env.API_KEY, 'X'.repeat(process.env.API_KEY))
+const { API_KEY } = process.env
 
 const apiUrl = `https://www.googleapis.com/youtube/v3`
+const hideKey = (str) => str.replace(API_KEY, 'X'.repeat(3)).replace(apiUrl, '')
 
 const commentUrl = (id, key) => {
   const url = new URL(`${apiUrl}/commentThreads`, apiUrl)
   url.searchParams.set('part', 'snippet')
   url.searchParams.set('order', 'relevance')
   url.searchParams.set('textFormat', 'plainText')
-  url.searchParams.set('maxResults', '5')
+  url.searchParams.set('maxResults', '50')
   url.searchParams.set('videoId', id)
   url.searchParams.set('key', key)
   return url.toString()
@@ -29,6 +29,14 @@ const playlistUrl = (id, key, pageToken) => {
   url.searchParams.set('playlistId', id)
   url.searchParams.set('key', key)
   if (pageToken) url.searchParams.set('pageToken', pageToken)
+  return url.toString()
+}
+
+const videosUrl = (id, parts, key) => {
+  const url = new URL(`${apiUrl}/videos`, apiUrl)
+  url.searchParams.set('part', `liveStreamingDetails,${parts.join(',')}`)
+  url.searchParams.set('id', id)
+  url.searchParams.set('key', key)
   return url.toString()
 }
 
@@ -58,6 +66,13 @@ const normalizeData = (d) =>
             'pageInfo',
             'nextPageToken',
             'prevPageToken',
+            'caption',
+            'contentRating',
+            'definition',
+            'dimension',
+            'licensedContent',
+            'projection',
+            'regionRestriction',
           ].includes(key)
         ) {
           return undefined
@@ -78,11 +93,42 @@ const getPaginatedVideos = async (id, key, pageToken, previousItems = []) => {
   console.log(`Fetching url: ${hideKey(url)}`)
 
   const resp = await axios.get(url)
-  const { items, nextPageToken } = resp.data
-  const newItems = [...previousItems, ...items]
+  let { items, nextPageToken } = resp.data
+
+  const detailParts = ['contentDetails']
+  const videosDetailsResp = await axios.get(
+    videosUrl(
+      items.map((v) => v.snippet.resourceId.videoId).join(','),
+      detailParts,
+      key
+    )
+  )
+  const { items: videoItems } = videosDetailsResp.data
+
+  const filteredItems = items
+    .filter((video, index) => {
+      const videoDetails = videoItems[index]
+      if (videoDetails.liveStreamingDetails) {
+        return !!videoDetails.liveStreamingDetails.actualEndTime
+      }
+      return true
+    })
+    .map((video, index) => {
+      const videoDetails = videoItems[index]
+      detailParts.forEach((detailPart) => {
+        Object.assign(video, {
+          [detailPart]: videoDetails[detailPart],
+        })
+      })
+      return video
+    })
+
+  const newItems = [...previousItems, ...filteredItems]
+
   if (nextPageToken) {
     return await getPaginatedVideos(id, key, nextPageToken, newItems)
   }
+
   return {
     ...resp,
     data: {
@@ -105,11 +151,15 @@ const getVideosAndComments = async (artist, key) => {
         .get(url)
         .then((resp) => {
           return Object.assign(resp.data, {
-            items: resp.data.items.filter((comment) =>
-              isCommentMaybeSetlist(
-                comment.snippet.topLevelComment.snippet.textDisplay
+            items: resp.data.items
+              .filter((comment) =>
+                isCommentMaybeSetlist(
+                  comment.snippet.topLevelComment.snippet.textDisplay
+                )
               )
-            ),
+              // Sort by likeCount before removing it. YouTube returns comments
+              // by "relevance" but likeCount is a better indicator of timestamps I think
+              .sort((a, b) => a.snippet.likeCount - b.snippet.likeCount),
           })
         })
         .then((r) => normalizeData(r))
@@ -148,7 +198,6 @@ const getArtist = async (artistKey) => {
     throw new Error(`Invalid artistKey: ${artistKey}`)
   }
 
-  const { API_KEY } = process.env
   const resp = await getVideosAndComments(artist, API_KEY)
   await writeFile(artist, resp)
 }

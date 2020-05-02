@@ -1,0 +1,404 @@
+{
+  "videos": {
+    "items": [
+      {
+        "contentDetails": {
+          "duration": "PT56M19S"
+        },
+        "id": "UExrN1NnTkZ5ZGVZMUh5ckVFTlhqMTBIUlpnZFQyV2ZDVy4yODlGNEE0NkRGMEEzMEQy",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCNZqzLZe1uwizvKvVu0SuMA",
+          "channelTitle": "Christian Wilson",
+          "description": "Music I hope",
+          "playlistId": "PLk7SgNFydeY1HyrEENXj10HRZgdT2WfCW",
+          "publishedAt": "2020-03-30T17:01:02.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "zS_2Pj3FIxM"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/zS_2Pj3FIxM/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/zS_2Pj3FIxM/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/zS_2Pj3FIxM/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/zS_2Pj3FIxM/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/zS_2Pj3FIxM/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Part Too Electric Boogaluuuu"
+        }
+      },
+      {
+        "contentDetails": {
+          "duration": "PT1H20M6S"
+        },
+        "id": "UExrN1NnTkZ5ZGVZMUh5ckVFTlhqMTBIUlpnZFQyV2ZDVy41NkI0NEY2RDEwNTU3Q0M2",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCNZqzLZe1uwizvKvVu0SuMA",
+          "channelTitle": "Christian Wilson",
+          "description": "Each Saturday whilst locked down and isolated - Free to public",
+          "playlistId": "PLk7SgNFydeY1HyrEENXj10HRZgdT2WfCW",
+          "publishedAt": "2020-03-30T17:00:42.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "CC5ZFxCtZBo"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/CC5ZFxCtZBo/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/CC5ZFxCtZBo/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/CC5ZFxCtZBo/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/CC5ZFxCtZBo/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/CC5ZFxCtZBo/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Folds Saturday Apartment Requests #2"
+        }
+      },
+      {
+        "contentDetails": {
+          "duration": "PT1H8M42S"
+        },
+        "id": "UExrN1NnTkZ5ZGVZMUh5ckVFTlhqMTBIUlpnZFQyV2ZDVy4wMTcyMDhGQUE4NTIzM0Y5",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCNZqzLZe1uwizvKvVu0SuMA",
+          "channelTitle": "Christian Wilson",
+          "description": "",
+          "playlistId": "PLk7SgNFydeY1HyrEENXj10HRZgdT2WfCW",
+          "publishedAt": "2020-04-05T02:08:04.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "j_GrG-Exdd8"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/j_GrG-Exdd8/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/j_GrG-Exdd8/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/j_GrG-Exdd8/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/j_GrG-Exdd8/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/j_GrG-Exdd8/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "#3 Ben Folds Apartment Requests"
+        }
+      },
+      {
+        "contentDetails": {
+          "duration": "PT1H22M42S"
+        },
+        "id": "UExrN1NnTkZ5ZGVZMUh5ckVFTlhqMTBIUlpnZFQyV2ZDVy4xMkVGQjNCMUM1N0RFNEUx",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCNZqzLZe1uwizvKvVu0SuMA",
+          "channelTitle": "Christian Wilson",
+          "description": "",
+          "playlistId": "PLk7SgNFydeY1HyrEENXj10HRZgdT2WfCW",
+          "publishedAt": "2020-04-18T23:16:33.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "KwSerpoR-o4"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/KwSerpoR-o4/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/KwSerpoR-o4/hqdefault.jpg",
+              "width": 480
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/KwSerpoR-o4/mqdefault.jpg",
+              "width": 320
+            }
+          },
+          "title": "TRYING AGAIN"
+        }
+      },
+      {
+        "contentDetails": {
+          "duration": "PT1H9M47S"
+        },
+        "id": "UExrN1NnTkZ5ZGVZMUh5ckVFTlhqMTBIUlpnZFQyV2ZDVy5DQUNERDQ2NkIzRUQxNTY1",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCNZqzLZe1uwizvKvVu0SuMA",
+          "channelTitle": "Christian Wilson",
+          "description": "",
+          "playlistId": "PLk7SgNFydeY1HyrEENXj10HRZgdT2WfCW",
+          "publishedAt": "2020-04-23T00:48:46.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "XlQ2JKZZZg0"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/XlQ2JKZZZg0/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/XlQ2JKZZZg0/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/XlQ2JKZZZg0/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/XlQ2JKZZZg0/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/XlQ2JKZZZg0/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "#5 Saturday Apartment Requests w Ben Folds"
+        }
+      }
+    ],
+    "kind": "youtube#playlistItemListResponse"
+  },
+  "comments": {
+    "zS_2Pj3FIxM": {
+      "items": [
+        {
+          "id": "UgwvgZU4_f_OW1C3J_V4AaABAg",
+          "kind": "youtube#commentThread",
+          "snippet": {
+            "topLevelComment": {
+              "id": "UgwvgZU4_f_OW1C3J_V4AaABAg",
+              "kind": "youtube#comment",
+              "snippet": {
+                "authorChannelId": {
+                  "value": "UCCPfNRYvddFf06fAtP-EL-A"
+                },
+                "authorChannelUrl": "http://www.youtube.com/channel/UCCPfNRYvddFf06fAtP-EL-A",
+                "authorDisplayName": "Brad Preston",
+                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwwT0534PLvGtMBmbtBiO8oLS0UBLMR6uKHFw=s48-c-k-c0xffffffff-no-rj-mo",
+                "publishedAt": "2020-03-29T08:23:45.000Z",
+                "textDisplay": "0:01:48 — Still Fighting It\n0:07:49 — One Angry Dwarf and 200 Solemn Faces\n0:12:11 — Emaline\n0:15:43 — Improv #1 (Crowdcast)\n0:19:18 — Video\n0:23:52 — Capable of Anything\n0:30:43 — There’s Always Someone Cooler Than You\n0:35:46 — Improv #2 (Hits in a Pandemic)\n0:37:38 — Improv #3 (No Synonym for Cinnamon)\n0:39:56 — Fired\n0:44:59 — Silver Street\n0:50:08 — Annie Waits\n0:55:32 — Outro Improv (Don’t Touch Your Face)",
+                "textOriginal": "0:01:48 — Still Fighting It\n0:07:49 — One Angry Dwarf and 200 Solemn Faces\n0:12:11 — Emaline\n0:15:43 — Improv #1 (Crowdcast)\n0:19:18 — Video\n0:23:52 — Capable of Anything\n0:30:43 — There’s Always Someone Cooler Than You\n0:35:46 — Improv #2 (Hits in a Pandemic)\n0:37:38 — Improv #3 (No Synonym for Cinnamon)\n0:39:56 — Fired\n0:44:59 — Silver Street\n0:50:08 — Annie Waits\n0:55:32 — Outro Improv (Don’t Touch Your Face)",
+                "updatedAt": "2020-03-30T20:21:54.000Z",
+                "videoId": "zS_2Pj3FIxM",
+                "viewerRating": "none"
+              }
+            },
+            "videoId": "zS_2Pj3FIxM"
+          }
+        }
+      ],
+      "kind": "youtube#commentThreadListResponse"
+    },
+    "CC5ZFxCtZBo": {
+      "items": [
+        {
+          "id": "Ugw09aYCt1HNFIs7tyx4AaABAg",
+          "kind": "youtube#commentThread",
+          "snippet": {
+            "topLevelComment": {
+              "id": "Ugw09aYCt1HNFIs7tyx4AaABAg",
+              "kind": "youtube#comment",
+              "snippet": {
+                "authorChannelId": {
+                  "value": "UCCPfNRYvddFf06fAtP-EL-A"
+                },
+                "authorChannelUrl": "http://www.youtube.com/channel/UCCPfNRYvddFf06fAtP-EL-A",
+                "authorDisplayName": "Brad Preston",
+                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwwT0534PLvGtMBmbtBiO8oLS0UBLMR6uKHFw=s48-c-k-c0xffffffff-no-rj-mo",
+                "publishedAt": "2020-04-05T01:38:11.000Z",
+                "textDisplay": "0:01:56 — Alice Childress/Microphone Calibration\n0:11:01 — Zak and Sara\n0:15:14 — All U Can Eat\n0:18:38 — Landed\n0:25:53 — Effington\n0:31:26 — Improv #1 (No Rhyme for Menagerie)\n0:33:17 — Improv #2 (Morning Beer)\n0:34:40 — Best Imitation of Myself\n0:37:39 — Gracie\n0:40:29 — Uncle Walter\n0:48:30 — Levi Johnston’s Blues\n0:52:17 — Don’t Change Your Plans\n0:56:12 — Kate\n1:01:07 — Evaporated\n1:05:20 — Phone in a Pool\n1:08:05 — Outro Medley: Rockin’ the Suburbs/Jackson Cannery/Smoke/Fred Jones Part 2/Trusted/Cologne/Not the Same/Army/Eddie Walker/Brainwascht/Improv #3 (Rockin’ This Bitch)",
+                "textOriginal": "0:01:56 — Alice Childress/Microphone Calibration\n0:11:01 — Zak and Sara\n0:15:14 — All U Can Eat\n0:18:38 — Landed\n0:25:53 — Effington\n0:31:26 — Improv #1 (No Rhyme for Menagerie)\n0:33:17 — Improv #2 (Morning Beer)\n0:34:40 — Best Imitation of Myself\n0:37:39 — Gracie\n0:40:29 — Uncle Walter\n0:48:30 — Levi Johnston’s Blues\n0:52:17 — Don’t Change Your Plans\n0:56:12 — Kate\n1:01:07 — Evaporated\n1:05:20 — Phone in a Pool\n1:08:05 — Outro Medley: Rockin’ the Suburbs/Jackson Cannery/Smoke/Fred Jones Part 2/Trusted/Cologne/Not the Same/Army/Eddie Walker/Brainwascht/Improv #3 (Rockin’ This Bitch)",
+                "updatedAt": "2020-04-05T21:15:29.000Z",
+                "videoId": "CC5ZFxCtZBo",
+                "viewerRating": "none"
+              }
+            },
+            "videoId": "CC5ZFxCtZBo"
+          }
+        }
+      ],
+      "kind": "youtube#commentThreadListResponse"
+    },
+    "j_GrG-Exdd8": {
+      "items": [
+        {
+          "id": "UgybR8FtjgU0gPf6lCx4AaABAg",
+          "kind": "youtube#commentThread",
+          "snippet": {
+            "topLevelComment": {
+              "id": "UgybR8FtjgU0gPf6lCx4AaABAg",
+              "kind": "youtube#comment",
+              "snippet": {
+                "authorChannelId": {
+                  "value": "UCCPfNRYvddFf06fAtP-EL-A"
+                },
+                "authorChannelUrl": "http://www.youtube.com/channel/UCCPfNRYvddFf06fAtP-EL-A",
+                "authorDisplayName": "Brad Preston",
+                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwwT0534PLvGtMBmbtBiO8oLS0UBLMR6uKHFw=s48-c-k-c0xffffffff-no-rj-mo",
+                "publishedAt": "2020-04-12T03:27:59.000Z",
+                "textDisplay": "0:01:49 — Hello In There (John Prine cover)\n0:06:32 — There’s Always Someone Cooler Than You (false start)\n0:07:18 — There’s Always Someone Cooler Than You\n0:12:22 — Sentimental Guy\n0:16:17 — The Ascent of Stan\n0:21:10 — Improv #1 (Mad Scrollers)\n0:22:07 — Where’s Summer B.? (false start)\n0:24:48 — Jackson Cannery\n0:29:27 — Selfless, Cold and Composed\n0:38:51 — Bastard\n0:43:48 — The Last Polka\n0:46:36 — Hava Nagila (Traditional)\n0:47:53 — Missing the War\n0:51:07 — Medley: Boxing/Kylie from Connecticut/Emaline/Philosophy/Levi Johnston’s Blues/Uncle Walter/Eddie Walker/Brick/Carrying Cathy/So There/Tiny Dancer (Elton John cover)/Songs of Love/Fired/Mess/Raindrops Keep Fallin' on My Head (B.J. Thomas cover)/Steven’s Last Night in Town/Lullabye/Draw a Crowd\n1:01:20 — Where’s Summer B.?\n1:03:53 — The Luckiest",
+                "textOriginal": "0:01:49 — Hello In There (John Prine cover)\n0:06:32 — There’s Always Someone Cooler Than You (false start)\n0:07:18 — There’s Always Someone Cooler Than You\n0:12:22 — Sentimental Guy\n0:16:17 — The Ascent of Stan\n0:21:10 — Improv #1 (Mad Scrollers)\n0:22:07 — Where’s Summer B.? (false start)\n0:24:48 — Jackson Cannery\n0:29:27 — Selfless, Cold and Composed\n0:38:51 — Bastard\n0:43:48 — The Last Polka\n0:46:36 — Hava Nagila (Traditional)\n0:47:53 — Missing the War\n0:51:07 — Medley: Boxing/Kylie from Connecticut/Emaline/Philosophy/Levi Johnston’s Blues/Uncle Walter/Eddie Walker/Brick/Carrying Cathy/So There/Tiny Dancer (Elton John cover)/Songs of Love/Fired/Mess/Raindrops Keep Fallin' on My Head (B.J. Thomas cover)/Steven’s Last Night in Town/Lullabye/Draw a Crowd\n1:01:20 — Where’s Summer B.?\n1:03:53 — The Luckiest",
+                "updatedAt": "2020-04-12T03:29:11.000Z",
+                "videoId": "j_GrG-Exdd8",
+                "viewerRating": "none"
+              }
+            },
+            "videoId": "j_GrG-Exdd8"
+          }
+        },
+        {
+          "id": "UgzmXwOLMjjR1H8Te2B4AaABAg",
+          "kind": "youtube#commentThread",
+          "snippet": {
+            "topLevelComment": {
+              "id": "UgzmXwOLMjjR1H8Te2B4AaABAg",
+              "kind": "youtube#comment",
+              "snippet": {
+                "authorChannelId": {
+                  "value": "UCQdGACjxIPAjmtaWHUt-Xtw"
+                },
+                "authorChannelUrl": "http://www.youtube.com/channel/UCQdGACjxIPAjmtaWHUt-Xtw",
+                "authorDisplayName": "ZachDanny23",
+                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJyRSiFet14MFtoWw5z35Seyv1XyDOj_PjNR5g=s48-c-k-c0xffffffff-no-rj-mo",
+                "publishedAt": "2020-04-12T03:22:39.000Z",
+                "textDisplay": "1:49 - Hello in There (originally by John Prine)\n6:32 - There’s Always Someone Cooler Than You\n12:26 - Sentimental Guy\n16:17 - The Ascent of Stan\n21:11 - Mad Scrollers (Idk if that’s the title)\n22:07 - Where’s Summer B?\n24:48 - Jackson Cannery (on guitar)\n29:27 - Selfless, Cold, and Composed\n38:51 - Bastard\n41:35 - Ben Discusses Bastard’s Background Vocals (Send him a video on Twitter)\n43:48 - The Last Polka\n46:36 - Hava Neguila\n47:54 - Missing the War\n51:07 - Boxing\n51:50 - Kylie from Connecticut \n52:11 - Emaline\n52:55 - Levi Johnston’s Blues\n53:21 - Uncle Walter\n53:44 - Eddie Walker\n53:53 - Brick\n54:29 - Carrying Cathy\n55:00 - So There\n55:25 - Tiny Dancer\n55:59 - Songs of Love\n56:25 - Fired\n56:51 - Mess\n57:20 - Raindrops Keep Fallin’ on my Head (originally by B.J. Thomas)\n57:55 - Steven’s Last Night in Town\n58:16-58:52 - Buncha Other Short Songs\n1:01:19 - Where’s Summer B? (Retry)\n1:03:53 - The Luckiest",
+                "textOriginal": "1:49 - Hello in There (originally by John Prine)\n6:32 - There’s Always Someone Cooler Than You\n12:26 - Sentimental Guy\n16:17 - The Ascent of Stan\n21:11 - Mad Scrollers (Idk if that’s the title)\n22:07 - Where’s Summer B?\n24:48 - Jackson Cannery (on guitar)\n29:27 - Selfless, Cold, and Composed\n38:51 - Bastard\n41:35 - Ben Discusses Bastard’s Background Vocals (Send him a video on Twitter)\n43:48 - The Last Polka\n46:36 - Hava Neguila\n47:54 - Missing the War\n51:07 - Boxing\n51:50 - Kylie from Connecticut \n52:11 - Emaline\n52:55 - Levi Johnston’s Blues\n53:21 - Uncle Walter\n53:44 - Eddie Walker\n53:53 - Brick\n54:29 - Carrying Cathy\n55:00 - So There\n55:25 - Tiny Dancer\n55:59 - Songs of Love\n56:25 - Fired\n56:51 - Mess\n57:20 - Raindrops Keep Fallin’ on my Head (originally by B.J. Thomas)\n57:55 - Steven’s Last Night in Town\n58:16-58:52 - Buncha Other Short Songs\n1:01:19 - Where’s Summer B? (Retry)\n1:03:53 - The Luckiest",
+                "updatedAt": "2020-04-13T02:48:20.000Z",
+                "videoId": "j_GrG-Exdd8",
+                "viewerRating": "none"
+              }
+            },
+            "videoId": "j_GrG-Exdd8"
+          }
+        }
+      ],
+      "kind": "youtube#commentThreadListResponse"
+    },
+    "KwSerpoR-o4": {
+      "items": [
+        {
+          "id": "UgyKZKf355D0yzCOkZV4AaABAg",
+          "kind": "youtube#commentThread",
+          "snippet": {
+            "topLevelComment": {
+              "id": "UgyKZKf355D0yzCOkZV4AaABAg",
+              "kind": "youtube#comment",
+              "snippet": {
+                "authorChannelId": {
+                  "value": "UCdXItDe15LJ7Yme3WLk9WWg"
+                },
+                "authorChannelUrl": "http://www.youtube.com/channel/UCdXItDe15LJ7Yme3WLk9WWg",
+                "authorDisplayName": "Google is literally the worst",
+                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxt4nocIUy4KieiloR1x1Psq3dUjxlDBMtKzg=s48-c-k-c0xffffffff-no-rj-mo",
+                "publishedAt": "2020-04-19T03:24:58.000Z",
+                "textDisplay": "A timestamp, cuz there's so much good shit in here:\n\n3:24 - One Angry Dwarf and 200 Solemn Faces\n7:16 - Rockin' the Suburbs\n12:03 - Picture Window\n15:56 - Jane\n18:35 - Magic\n23:15 - Narcolepsy\n29:18 - Mister Peepers\n31:43 - Carol Pillow Jam\nMedley:\n34:22 - Hiro's Song\n35:31 - Fred Jones, Pt. 2\n36:23 - Trusted\n37:04 - Cologne\n38:04 - You to Thank\n38:35 - Erase Me\n39:10 - Late\n40:22 - Careless Whisper\n41:15 - Phone in a Pool\n41:51 - Carrying Cathy\n42:39 - Brick\n43:24 - Capable of Anything\n44:05 - Philosophy\n44:33 - Gracie\n45:11 - Purple Haze\n45:39 - Golden Slumbers\n46:15 - Philosophy (for another beautiful 2 seconds)\n46:18 - Jesusland\n46:48 - Eddie Walker\n47:11 - A B-flat Major Chord\n47:14 - Tom & Mary\n47:38 - Alice Childress\n47:59 - All U Can Eat\n48:15 - Sky High\n48:59 - Smoke\n49:44 - 金返せ (Japanese version of \"Song For The Dumped\")\n50:22 - Sentimental Guy\n50:57 - Give Judy My Notice\n51:54 - Do It Anyway\n52:50 - Still Fighting It\n55:28 - Away When You Were Here\n56:05 - On Being Frank\n57:13 - Raindrops Keep Falling On My Head\n58:10 - You Don't Know Me\n58:43 - The Ascent of Stan\n59:39 - Kate\n1:00:25 - The Secret Life of Morgan Davis\n1:01:00 - Kylie from Connecticut\n1:01:33 - Boxing\n1:02:13 - Air\n1:03:03 - Levi Johnston's Blues\n1:03:36 - It's Scrollin' So Fast\n1:14:29 - Exhausting Lover\n1:16:14 - The Luckiest\n\nHoly shit.  Thank you Ben, I hope you're staying safe too.  Your music is a dang blessing.",
+                "textOriginal": "A timestamp, cuz there's so much good shit in here:\n\n3:24 - One Angry Dwarf and 200 Solemn Faces\n7:16 - Rockin' the Suburbs\n12:03 - Picture Window\n15:56 - Jane\n18:35 - Magic\n23:15 - Narcolepsy\n29:18 - Mister Peepers\n31:43 - Carol Pillow Jam\nMedley:\n34:22 - Hiro's Song\n35:31 - Fred Jones, Pt. 2\n36:23 - Trusted\n37:04 - Cologne\n38:04 - You to Thank\n38:35 - Erase Me\n39:10 - Late\n40:22 - Careless Whisper\n41:15 - Phone in a Pool\n41:51 - Carrying Cathy\n42:39 - Brick\n43:24 - Capable of Anything\n44:05 - Philosophy\n44:33 - Gracie\n45:11 - Purple Haze\n45:39 - Golden Slumbers\n46:15 - Philosophy (for another beautiful 2 seconds)\n46:18 - Jesusland\n46:48 - Eddie Walker\n47:11 - A B-flat Major Chord\n47:14 - Tom & Mary\n47:38 - Alice Childress\n47:59 - All U Can Eat\n48:15 - Sky High\n48:59 - Smoke\n49:44 - 金返せ (Japanese version of \"Song For The Dumped\")\n50:22 - Sentimental Guy\n50:57 - Give Judy My Notice\n51:54 - Do It Anyway\n52:50 - Still Fighting It\n55:28 - Away When You Were Here\n56:05 - On Being Frank\n57:13 - Raindrops Keep Falling On My Head\n58:10 - You Don't Know Me\n58:43 - The Ascent of Stan\n59:39 - Kate\n1:00:25 - The Secret Life of Morgan Davis\n1:01:00 - Kylie from Connecticut\n1:01:33 - Boxing\n1:02:13 - Air\n1:03:03 - Levi Johnston's Blues\n1:03:36 - It's Scrollin' So Fast\n1:14:29 - Exhausting Lover\n1:16:14 - The Luckiest\n\nHoly shit.  Thank you Ben, I hope you're staying safe too.  Your music is a dang blessing.",
+                "updatedAt": "2020-04-19T19:27:23.000Z",
+                "videoId": "KwSerpoR-o4",
+                "viewerRating": "none"
+              }
+            },
+            "videoId": "KwSerpoR-o4"
+          }
+        }
+      ],
+      "kind": "youtube#commentThreadListResponse"
+    },
+    "XlQ2JKZZZg0": {
+      "items": [
+        {
+          "id": "Ugyr45jjglVMSo__gph4AaABAg",
+          "kind": "youtube#commentThread",
+          "snippet": {
+            "topLevelComment": {
+              "id": "Ugyr45jjglVMSo__gph4AaABAg",
+              "kind": "youtube#comment",
+              "snippet": {
+                "authorChannelId": {
+                  "value": "UCDTneXT1WsdW8UpeODHJRRA"
+                },
+                "authorChannelUrl": "http://www.youtube.com/channel/UCDTneXT1WsdW8UpeODHJRRA",
+                "authorDisplayName": "Kelsey Kingsbury",
+                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJycmAPJ3skY9uxG0G5tE5YUgN2XLSFbhTbBSw=s48-c-k-c0xffffffff-no-rj-mo",
+                "publishedAt": "2020-04-26T04:47:37.000Z",
+                "textDisplay": "4:52 Underground\r\n6:23 You Don’t Know Me\r\n7:08 Army\r\n7:44 The Ascent of Stan\r\n11:47 Still\r\n14:30 Lullabye\r\n16:35 Philosophy\r\n23:43 Piano lesson for kids 😊\r\n28:53 Evaporated\r\n33:02 Battle of Who Could Care Less\r\n34:18 Kate\r\n34:58 Landed\r\n36:26 Draw a Crowd\r\n37:17 One Down\r\n39:06 Hiroshima\r\n40:23 Belinda\r\n41:41 House\r\n43:12 Still Fighting it\r\n44:31 Phone in a Pool\r\n45:28 Julianne\r\n46:26 There’s Always Someone Cooler than You\r\n48:08 Bruised\r\n49:07 Silver Street\r\n50:50 Family of Me\r\n51:35 Zak and Sara\r\n52:24 Rockin’ the Suburbs\r\n53:44 Annie Waits (just a taste)\r\n53:49 Steven’s Last Night in Town\r\n54:40 All U Can Eat\r\n55:13 The Last Polka\r\n56:29 Gone\r\n57:17 Bastard\r\n58:01 Sky High\r\n59:27 Air\r\n1:00:54 Bitch Went Nutz (Fake Leak)\r\n1:03:51 Rock This Bitch\r\n1:07:00 “Stop the scroll” for healthcare workers",
+                "textOriginal": "4:52 Underground\r\n6:23 You Don’t Know Me\r\n7:08 Army\r\n7:44 The Ascent of Stan\r\n11:47 Still\r\n14:30 Lullabye\r\n16:35 Philosophy\r\n23:43 Piano lesson for kids 😊\r\n28:53 Evaporated\r\n33:02 Battle of Who Could Care Less\r\n34:18 Kate\r\n34:58 Landed\r\n36:26 Draw a Crowd\r\n37:17 One Down\r\n39:06 Hiroshima\r\n40:23 Belinda\r\n41:41 House\r\n43:12 Still Fighting it\r\n44:31 Phone in a Pool\r\n45:28 Julianne\r\n46:26 There’s Always Someone Cooler than You\r\n48:08 Bruised\r\n49:07 Silver Street\r\n50:50 Family of Me\r\n51:35 Zak and Sara\r\n52:24 Rockin’ the Suburbs\r\n53:44 Annie Waits (just a taste)\r\n53:49 Steven’s Last Night in Town\r\n54:40 All U Can Eat\r\n55:13 The Last Polka\r\n56:29 Gone\r\n57:17 Bastard\r\n58:01 Sky High\r\n59:27 Air\r\n1:00:54 Bitch Went Nutz (Fake Leak)\r\n1:03:51 Rock This Bitch\r\n1:07:00 “Stop the scroll” for healthcare workers",
+                "updatedAt": "2020-04-26T04:47:37.000Z",
+                "videoId": "XlQ2JKZZZg0",
+                "viewerRating": "none"
+              }
+            },
+            "videoId": "XlQ2JKZZZg0"
+          }
+        }
+      ],
+      "kind": "youtube#commentThreadListResponse"
+    }
+  }
+}

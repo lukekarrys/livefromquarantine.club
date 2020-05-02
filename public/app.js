@@ -1,10 +1,11 @@
 /* global YT */
 
 const parseSeconds = (str) => {
-  let seconds = 0
-  const [min, sec] = str.split(':').map((v) => parseInt(v, 10))
-  if (min) seconds += min * 60
-  seconds += sec
+  const seconds = str
+    .split(':')
+    .reverse()
+    .map((v, i) => parseInt(v, 10) * Math.pow(60, i))
+    .reduce((sum, v) => sum + v, 0)
   return seconds
 }
 
