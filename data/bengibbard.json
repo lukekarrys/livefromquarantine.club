@@ -780,33 +780,7 @@
   },
   "comments": {
     "QQ15BaDEo0Q": {
-      "items": [
-        {
-          "id": "Ugz9MqOhywdpaqXkF4B4AaABAg",
-          "kind": "youtube#commentThread",
-          "snippet": {
-            "topLevelComment": {
-              "id": "Ugz9MqOhywdpaqXkF4B4AaABAg",
-              "kind": "youtube#comment",
-              "snippet": {
-                "authorChannelId": {
-                  "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
-                },
-                "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
-                "authorDisplayName": "MeinKampfyChair",
-                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
-                "publishedAt": "2020-05-01T00:05:34.000Z",
-                "textDisplay": "00:27 Monday Morning \r\n05:08 The District Sleeps Alone Tonight\r\n10:06 Your Hurricane\r\n14:51 Jealousy Rides With Me\r\n17:26 (Q & A)\r\n25:33 Life in Quarantine\r\n29:34 You've Haunted Me All My Life\r\n34:50 Someday You Will Be Loved \r\n39:39 The Things You Said [Depeche Mode cover]\r\n44:50 I Will Follow You into the Dark",
-                "textOriginal": "00:27 Monday Morning \r\n05:08 The District Sleeps Alone Tonight\r\n10:06 Your Hurricane\r\n14:51 Jealousy Rides With Me\r\n17:26 (Q & A)\r\n25:33 Life in Quarantine\r\n29:34 You've Haunted Me All My Life\r\n34:50 Someday You Will Be Loved \r\n39:39 The Things You Said [Depeche Mode cover]\r\n44:50 I Will Follow You into the Dark",
-                "updatedAt": "2020-05-01T03:10:21.000Z",
-                "videoId": "QQ15BaDEo0Q",
-                "viewerRating": "none"
-              }
-            },
-            "videoId": "QQ15BaDEo0Q"
-          }
-        }
-      ],
+      "items": [],
       "kind": "youtube#commentThreadListResponse"
     },
     "T58oySghwLk": {

@@ -3,32 +3,25 @@ const fs = require('fs').promises
 const path = require('path')
 const prettier = require('prettier')
 const mainParser = require('./parse')
+const { timestamp } = mainParser
 
 const validate = (data) => {
-  assert.ok(
-    data.every((v) => v.title),
-    'Every video has a title'
-  )
-  assert.ok(
-    data.every((v) => v.id),
-    'Every video has an id'
-  )
-  assert.ok(
-    data.every((v) => v.songs),
-    'Every video has songs'
-  )
-  assert.ok(
-    data.every((v) =>
-      v.songs.every(
-        (s) => s.name && s.time.start && s.time.start.match(/^\d+:\d+$/)
+  data.forEach((v) => {
+    assert.ok(v.title, `Every video has a title`)
+    assert.ok(v.id, `Has an id - ${v.title}`)
+    assert.ok(v.songs, `Has songs - ${v.title}`)
+    v.songs.forEach((s) => {
+      assert.ok(s.name, `Every song has a name - ${v.title}`)
+      assert.ok(
+        s.time.start,
+        `Every song has a start time - ${v.title} / ${s.name}`
       )
-    ),
-    'Every song has a name and time'
-  )
-  assert.ok(
-    data.every((v) => v.songs.every((s) => s.name && s.time.start)),
-    'Every song has a name and time'
-  )
+      assert.ok(
+        s.time.start.match(timestamp),
+        `Every song has a valid timestamp - ${v.title} / ${s.name}`
+      )
+    })
+  })
 }
 
 const parsePath = (...parts) => path.join(__dirname, ...parts)

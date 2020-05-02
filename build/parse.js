@@ -1,4 +1,4 @@
-const TIMESTAMP = /\d+:\d+/
+const TIMESTAMP = /(?:\d+:)?\d+:\d+/
 
 const startWithTimestamp = new RegExp(`^[(]?${TIMESTAMP.source}`)
 const endWithTimestamp = new RegExp(`${TIMESTAMP.source}[)]?$`)
@@ -29,8 +29,8 @@ const getSongsFromText = (text, parsers) => {
           parsers.songName,
           name
             .trim()
-            .replace(/^(\()?[\s-:]+/, (match, p1) => p1 || '')
-            .replace(/[\s-:]+(\))?$/, (match, p1) => p1 || '')
+            .replace(/^(\()?[\s-—:]+/, (match, p1) => p1 || '')
+            .replace(/[\s-—:]+(\))?$/, (match, p1) => p1 || '')
             .replace(/[\n\r\t]/g, ' ')
             .replace(/\s+/g, ' ')
             .trim()
@@ -106,3 +106,4 @@ module.exports = (videos, comments, parsers) => {
 }
 
 module.exports.isCommentMaybeSetlist = isCommentMaybeSetlist
+module.exports.timestamp = TIMESTAMP

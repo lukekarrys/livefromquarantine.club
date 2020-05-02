@@ -6,10 +6,11 @@ const axios = require('axios')
 const prettier = require('prettier')
 const { isCommentMaybeSetlist } = require('../build/parse')
 
-const hideKey = (str) =>
-  str.replace(process.env.API_KEY, 'X'.repeat(process.env.API_KEY))
+const { API_KEY } = process.env
 
 const apiUrl = `https://www.googleapis.com/youtube/v3`
+const hideKey = (str) =>
+  str.replace(API_KEY, 'X'.repeat(API_KEY.length)).replace(apiUrl, '')
 
 const commentUrl = (id, key) => {
   const url = new URL(`${apiUrl}/commentThreads`, apiUrl)
@@ -29,6 +30,14 @@ const playlistUrl = (id, key, pageToken) => {
   url.searchParams.set('playlistId', id)
   url.searchParams.set('key', key)
   if (pageToken) url.searchParams.set('pageToken', pageToken)
+  return url.toString()
+}
+
+const liveStreamUrl = (id, key) => {
+  const url = new URL(`${apiUrl}/videos`, apiUrl)
+  url.searchParams.set('part', 'liveStreamingDetails')
+  url.searchParams.set('id', id)
+  url.searchParams.set('key', key)
   return url.toString()
 }
 
@@ -78,11 +87,27 @@ const getPaginatedVideos = async (id, key, pageToken, previousItems = []) => {
   console.log(`Fetching url: ${hideKey(url)}`)
 
   const resp = await axios.get(url)
-  const { items, nextPageToken } = resp.data
-  const newItems = [...previousItems, ...items]
+  let { items, nextPageToken } = resp.data
+
+  const liveStreamResp = await axios.get(
+    liveStreamUrl(items.map((v) => v.snippet.resourceId.videoId).join(','), key)
+  )
+  const { items: liveStreamItems } = liveStreamResp.data
+
+  const filteredItems = items.filter((video, index) => {
+    const liveStream = liveStreamItems[index]
+    if (liveStream.liveStreamingDetails) {
+      return !!liveStream.liveStreamingDetails.actualEndTime
+    }
+    return true
+  })
+
+  const newItems = [...previousItems, ...filteredItems]
+
   if (nextPageToken) {
     return await getPaginatedVideos(id, key, nextPageToken, newItems)
   }
+
   return {
     ...resp,
     data: {
@@ -148,7 +173,6 @@ const getArtist = async (artistKey) => {
     throw new Error(`Invalid artistKey: ${artistKey}`)
   }
 
-  const { API_KEY } = process.env
   const resp = await getVideosAndComments(artist, API_KEY)
   await writeFile(artist, resp)
 }
