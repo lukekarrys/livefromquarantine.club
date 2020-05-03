@@ -3,6 +3,52 @@
     "items": [
       {
         "contentDetails": {
+          "duration": "PT17M52S"
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4wMTYxQzVBRDI1NEVDQUZE",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\nAJJ - We Didn't Come Here to Rock 0:03\nAJJ - Feedbag 1:24\nThe Beatles - Eleanor Rigby 4:07\nAJJ - Junkie Church 7:12\nElliott Smith - Waltz #2 9:58\nAJJ - Little Prince 15:28\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-05-03T06:07:01.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "SH_iT61Me9I"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/SH_iT61Me9I/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/SH_iT61Me9I/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/SH_iT61Me9I/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/SH_iT61Me9I/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/SH_iT61Me9I/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - May 2"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": "PT21M9S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4wNEU1MTI4NkZEMzVBN0JF",
@@ -2152,6 +2198,10 @@
     "kind": "youtube#playlistItemListResponse"
   },
   "comments": {
+    "SH_iT61Me9I": {
+      "items": [],
+      "kind": "youtube#commentThreadListResponse"
+    },
     "lZAWvrrH0UQ": {
       "items": [],
       "kind": "youtube#commentThreadListResponse"
