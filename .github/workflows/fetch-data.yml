@@ -23,15 +23,15 @@ jobs:
           git checkout package-lock.json
 
       - name: Fetch new data
-        run: 'npm run data ${{ github.event.client_payload.artist }}'
+        run: 'npm run data ${{ github.event.client_payload.artist || "seanbonnette,bengibbard,benfolds" }}'
         env:
           API_KEY: ${{ secrets.API_KEY }}
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v2
         with:
-          commit-message: 'Fetch new data for ${{ github.event.client_payload.artist }}'
+          commit-message: 'Fetch new data for ${{ github.event.client_payload.artist || "seanbonnette,bengibbard,benfolds" }}'
           branch: fetch_data
-          title: 'New Data for ${{ github.event.client_payload.artist }}'
+          title: 'New Data for ${{ github.event.client_payload.artist || "seanbonnette,bengibbard,benfolds" }}'
           body: |
             Automated data fetch triggered by ${{ github.event.client_payload.type }}.
