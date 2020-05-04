@@ -1,5 +1,8 @@
 name: Fetch YouTube Data
-on: repository_dispatch
+on:
+  repository_dispatch
+  schedule:
+    - cron:  '0 */2 * * *'
 
 jobs:
   data:
