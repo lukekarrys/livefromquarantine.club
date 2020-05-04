@@ -5,6 +5,7 @@ const path = require('path')
 const axios = require('axios')
 const prettier = require('prettier')
 const { isCommentMaybeSetlist } = require('../build/parse')
+const config = require('../config')
 
 const { API_KEY } = process.env
 
@@ -213,7 +214,8 @@ const main = async (...artists) => {
   )
 }
 
-main(...process.argv.slice(2).flatMap((v) => v.split(',')))
+const cliArtists = process.argv.slice(2).flatMap((v) => v.split(','))
+main(...(cliArtists.length ? cliArtists : config.artists))
   .then((res) => {
     console.log(hideKey(JSON.stringify(res, null, 2)))
     if (res.some((r) => !r.ok)) {

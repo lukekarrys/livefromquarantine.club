@@ -1,7 +1,10 @@
+require('dotenv').config()
+
 const assert = require('assert')
 const fs = require('fs').promises
 const path = require('path')
 const prettier = require('prettier')
+const config = require('../config')
 const mainParser = require('./parse')
 const { timestamp } = mainParser
 
@@ -83,7 +86,8 @@ const main = async (...artists) => {
   )
 }
 
-main(...process.argv.slice(2).flatMap((v) => v.split(',')))
+const cliArtists = process.argv.slice(2).flatMap((v) => v.split(','))
+main(...(cliArtists.length ? cliArtists : config.artists))
   .then((res) => {
     console.log(res)
     if (res.some((r) => !r.ok)) {

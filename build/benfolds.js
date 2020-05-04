@@ -1,13 +1,9 @@
-module.exports.parsers = {
-  data: (videos) => {
-    return videos.reverse()
-  },
-}
+module.exports.parsers = {}
 
 module.exports.meta = {
   title: 'Ben Folds – Apartment Requests',
   description: 'All the Ben Folds Apartment Requests songs',
   id: 'benfolds',
-  playlistId: 'PLk7SgNFydeY1HyrEENXj10HRZgdT2WfCW',
+  playlistId: 'PLG507gy2-Kp8Vj66jnxn1AA0XFr1L_QXy',
   main: '',
 }
