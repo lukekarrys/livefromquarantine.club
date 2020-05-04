@@ -3,6 +3,52 @@
     "items": [
       {
         "contentDetails": {
+          "duration": "PT18M34S"
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4zMUEyMkQwOTk0NTg4MDgw",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\nAJJ - I Wanna Rock Out In My Dreams 0:12\nTim Hardin - Lady from Baltimore 4:24\nAJJ - Inner City Basehead History Teacher 7:04\nAJJ - Loudmouth 8:20\nAJJ - My Brain is a Human Body 11:24\nThe Beatles - Rocky Raccoon 14:22\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-05-04T06:31:57.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "5IxJW9Z3acw"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/5IxJW9Z3acw/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/5IxJW9Z3acw/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/5IxJW9Z3acw/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/5IxJW9Z3acw/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/5IxJW9Z3acw/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - May 3"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": "PT17M52S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4wMTYxQzVBRDI1NEVDQUZE",
@@ -2198,6 +2244,10 @@
     "kind": "youtube#playlistItemListResponse"
   },
   "comments": {
+    "5IxJW9Z3acw": {
+      "items": [],
+      "kind": "youtube#commentThreadListResponse"
+    },
     "SH_iT61Me9I": {
       "items": [],
       "kind": "youtube#commentThreadListResponse"
