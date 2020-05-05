@@ -3,6 +3,52 @@
     "items": [
       {
         "contentDetails": {
+          "duration": "PT21M50S"
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS42QzdBMzlBQzQzRjQ0QkQy",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\nAJJ - Sad Songs 0:12\nPixies - Wave of Mutilation 3:42\nAJJ - You Don't Deserve Yourself 7:00\nAJJ - Maggie 10:27\nAJJ - Mega Guillotine 2020 14:28\nDavid Bowie - Rock and Roll Suicide 17:30\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-05-05T06:05:45.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "QqGn3KtuCf8"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/QqGn3KtuCf8/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/QqGn3KtuCf8/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/QqGn3KtuCf8/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/QqGn3KtuCf8/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/QqGn3KtuCf8/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - May 4"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": "PT18M34S"
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4zMUEyMkQwOTk0NTg4MDgw",
@@ -2244,6 +2290,10 @@
     "kind": "youtube#playlistItemListResponse"
   },
   "comments": {
+    "QqGn3KtuCf8": {
+      "items": [],
+      "kind": "youtube#commentThreadListResponse"
+    },
     "5IxJW9Z3acw": {
       "items": [],
       "kind": "youtube#commentThreadListResponse"
