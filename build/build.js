@@ -41,14 +41,12 @@ const writeParsed = async (parser, data) => {
     manifest = manifest.replace(new RegExp(`{{${key}}}`, 'g'), value)
   })
 
-  const parsedData = mainParser(
-    data.videos,
-    data.comments,
-    parser.parsers
-  ).filter((video, index, videos) => {
-    // The same video could be included multiple times in a playlist so remove dupes
-    return videos.findIndex((v) => v.id === video.id) === index
-  })
+  const parsedData = mainParser(data.videos, parser.parsers).filter(
+    (video, index, videos) => {
+      // The same video could be included multiple times in a playlist so remove dupes
+      return videos.findIndex((v) => v.id === video.id) === index
+    }
+  )
 
   validate(parsedData)
 

@@ -143,12 +143,12 @@ const getVideosAndComments = async (artist, key) => {
   const videosResp = await getPaginatedVideos(artist.meta.playlistId, key)
   const videos = normalizeData(videosResp.data)
 
-  const videosComments = await Promise.all(
-    videos.items.map((video) => {
+  await Promise.all(
+    videos.items.map(async (video) => {
       const url = commentUrl(video.snippet.resourceId.videoId, key)
       console.log(`Fetching url: ${hideKey(url)}`)
 
-      return axios
+      video.comments = await axios
         .get(url)
         .then((resp) => {
           return Object.assign(resp.data, {
@@ -167,17 +167,8 @@ const getVideosAndComments = async (artist, key) => {
     })
   )
 
-  const commentsByVideoId = videosComments.reduce(
-    (acc, videoComments, index) => {
-      acc[videos.items[index].snippet.resourceId.videoId] = videoComments
-      return acc
-    },
-    {}
-  )
-
   return {
     videos,
-    comments: commentsByVideoId,
   }
 }
 

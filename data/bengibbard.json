@@ -45,6 +45,36 @@
             }
           },
           "title": "Ben Gibbard: Live From Home (4/30/20)"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "Ugz9MqOhywdpaqXkF4B4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "Ugz9MqOhywdpaqXkF4B4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
+                    "authorDisplayName": "MeinKampfyChair",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-05-01T00:05:34.000Z",
+                    "textDisplay": "00:27 Monday Morning \r\n05:08 The District Sleeps Alone Tonight\r\n10:06 Your Hurricane\r\n14:51 Jealousy Rides With Me\r\n17:26 (Q & A)\r\n25:33 Life in Quarantine\r\n29:34 You've Haunted Me All My Life\r\n34:50 Someday You Will Be Loved \r\n39:39 The Things You Said [Depeche Mode cover]\r\n44:50 I Will Follow You into the Dark",
+                    "textOriginal": "00:27 Monday Morning \r\n05:08 The District Sleeps Alone Tonight\r\n10:06 Your Hurricane\r\n14:51 Jealousy Rides With Me\r\n17:26 (Q & A)\r\n25:33 Life in Quarantine\r\n29:34 You've Haunted Me All My Life\r\n34:50 Someday You Will Be Loved \r\n39:39 The Things You Said [Depeche Mode cover]\r\n44:50 I Will Follow You into the Dark",
+                    "updatedAt": "2020-05-01T03:10:21.000Z",
+                    "videoId": "QQ15BaDEo0Q",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "QQ15BaDEo0Q"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
         }
       },
       {
@@ -91,6 +121,36 @@
             }
           },
           "title": "Ben Gibbard: Live From Home (4/23/20)"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "UgxqBZ7gR-19kWQ2PXV4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgxqBZ7gR-19kWQ2PXV4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
+                    "authorDisplayName": "MeinKampfyChair",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-04-24T00:10:59.000Z",
+                    "textDisplay": "00:21 Unobstructed Views\r\n05:17 Passenger Seat\r\n10:25 The Ice Is Getting Thinner\r\n15:07 Tulsa Telephone Book\r [Tom T. Hall cover]\n18:21 (Q & A)\r\n24:26 Binary Sea\r\n28:22 What Sarah Said\r\n33:57 Proxima B\r\n39:03 All Apologies [Nirvana cover]\r\n42:34 (Seattle Artist Relief Fund Amid COVID-19 charity shout out)\r\n44:08 Blacking Out the Friction\r\n47:32 Soul Meets Body",
+                    "textOriginal": "00:21 Unobstructed Views\r\n05:17 Passenger Seat\r\n10:25 The Ice Is Getting Thinner\r\n15:07 Tulsa Telephone Book\r [Tom T. Hall cover]\n18:21 (Q & A)\r\n24:26 Binary Sea\r\n28:22 What Sarah Said\r\n33:57 Proxima B\r\n39:03 All Apologies [Nirvana cover]\r\n42:34 (Seattle Artist Relief Fund Amid COVID-19 charity shout out)\r\n44:08 Blacking Out the Friction\r\n47:32 Soul Meets Body",
+                    "updatedAt": "2020-04-24T00:23:19.000Z",
+                    "videoId": "T58oySghwLk",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "T58oySghwLk"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
         }
       },
       {
@@ -137,6 +197,36 @@
             }
           },
           "title": "Ben Gibbard: Live From Home (4/16/20)"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "UgxNYU6vFCjeZEG2q2V4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgxNYU6vFCjeZEG2q2V4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
+                    "authorDisplayName": "MeinKampfyChair",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-04-16T23:54:36.000Z",
+                    "textDisplay": "00:33 Your Heart is an Empty Room\r\n04:13 Autumn Love\r\n08:43 Styrofoam Plates\r\n13:49 Willamine \r\n18:21 (Q & A)\r\n25:40 Man In Blue\r\n30:28 Grapevine Fires\r\n37:23 Photobooth\r\n42:27 A Movie Script Ending\r\n46:23 Don't Cry No Tears [Neil Young cover]",
+                    "textOriginal": "00:33 Your Heart is an Empty Room\r\n04:13 Autumn Love\r\n08:43 Styrofoam Plates\r\n13:49 Willamine \r\n18:21 (Q & A)\r\n25:40 Man In Blue\r\n30:28 Grapevine Fires\r\n37:23 Photobooth\r\n42:27 A Movie Script Ending\r\n46:23 Don't Cry No Tears [Neil Young cover]",
+                    "updatedAt": "2020-04-16T23:56:10.000Z",
+                    "videoId": "Z3BiBB0W1Eo",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "Z3BiBB0W1Eo"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
         }
       },
       {
@@ -183,6 +273,36 @@
             }
           },
           "title": "Ben Gibbard: Live From Home (4/9/20)"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "UgxQuS9Btr2wpO4cN0R4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgxQuS9Btr2wpO4cN0R4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
+                    "authorDisplayName": "MeinKampfyChair",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-04-10T00:07:45.000Z",
+                    "textDisplay": "00:26 Title Track\r\n05:14 Employment Pages\r\n09:51 For What Reason\r\n13:53 Lowell, MA\r\n17:09 (Q & A #1)\r\n23:48 405\r\n28:15 Little Fury Bugs\r\n32:46 Company Calls\r\n37:54 Company Calls Epilogue\r\n43:16 (Q & A #2)\r\n51:03 No Joy in Mudville\r\n57:34 Scientist Studies",
+                    "textOriginal": "00:26 Title Track\r\n05:14 Employment Pages\r\n09:51 For What Reason\r\n13:53 Lowell, MA\r\n17:09 (Q & A #1)\r\n23:48 405\r\n28:15 Little Fury Bugs\r\n32:46 Company Calls\r\n37:54 Company Calls Epilogue\r\n43:16 (Q & A #2)\r\n51:03 No Joy in Mudville\r\n57:34 Scientist Studies",
+                    "updatedAt": "2020-04-10T00:07:45.000Z",
+                    "videoId": "SrmFQa_iByw",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "SrmFQa_iByw"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
         }
       },
       {
@@ -229,6 +349,36 @@
             }
           },
           "title": "Ben Gibbard: Live From Home (4/2/20)"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "UgxF1EDv5ScoKhHXXQx4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgxF1EDv5ScoKhHXXQx4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCDjkbUu5gWJpc1eqAiqulRA"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCDjkbUu5gWJpc1eqAiqulRA",
+                    "authorDisplayName": "Alec Critten",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwFBjYI5HB4qOFrZc64lEtl-6Q2kmWumv6fIA=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-04-03T02:20:51.000Z",
+                    "textDisplay": "0:24 - Lightness\n4:10 - Everything's A Ceiling\n9:02 - The Ghosts of Beverly Drive\n14:08 - A Hard One to Know\n16:15 - (Q&A)\n25:49 - When We Drive\n30:25 - Passenger Seat\n34:09 - (s/o to MusiCares)\n37:40 - Pictures in an Exhibition\n42:49 - Barbara H. (by Fountains of Wayne, tribute to Adam Schlesinger)\n47:20 - Song for Kelly Huckaby\n\nThanks Ben!",
+                    "textOriginal": "0:24 - Lightness\n4:10 - Everything's A Ceiling\n9:02 - The Ghosts of Beverly Drive\n14:08 - A Hard One to Know\n16:15 - (Q&A)\n25:49 - When We Drive\n30:25 - Passenger Seat\n34:09 - (s/o to MusiCares)\n37:40 - Pictures in an Exhibition\n42:49 - Barbara H. (by Fountains of Wayne, tribute to Adam Schlesinger)\n47:20 - Song for Kelly Huckaby\n\nThanks Ben!",
+                    "updatedAt": "2020-04-03T02:33:54.000Z",
+                    "videoId": "s6oJjUvB9TA",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "s6oJjUvB9TA"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
         }
       },
       {
@@ -275,6 +425,36 @@
             }
           },
           "title": "Ben Gibbard: Live From Home (3/29/20)"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "UgzRAHVkYJMPgFMeUeR4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgzRAHVkYJMPgFMeUeR4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCOtn115fCfFKIxG7_Quv9ZA"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCOtn115fCfFKIxG7_Quv9ZA",
+                    "authorDisplayName": "Death Cab for Cutie",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJye47VIG3zUXwFFqDmc2oBnsU47v8RYZCsjhg=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-03-30T01:17:23.000Z",
+                    "textDisplay": "Here is the setlist of all the covers Ben played today:\n\n00:58 \"Half A World Away” by R.E.M.\n05:26 \"Just Like Heaven” by The Cure\n09:47 \"Everyday Is Like Sunday” by Morrissey\n15:12 \"Out of Touch” by Hall & Oates\n20:13 \"Strange Powers” by The Magnetic Fields\n31:21 \"Harvest Moon” by Neil Young\n35:20 \"Please Don't Tell Me How the Story Ends” by Kris Kristofferson\n40:44 \"The Only Living Boy in New York” by Simon & Garfunkel\n47:08 \"Hold On” by Spiritualized\n\nSpotify playlist of these songs here: https://found.ee/BG-Mar29-Covers\n\nToday was the last of the daily shows, but Ben will be back streaming on a weekly basis! Tune in on Thursday, April 2 at 6pm PT for the next show.",
+                    "textOriginal": "Here is the setlist of all the covers Ben played today:\n\n00:58 \"Half A World Away” by R.E.M.\n05:26 \"Just Like Heaven” by The Cure\n09:47 \"Everyday Is Like Sunday” by Morrissey\n15:12 \"Out of Touch” by Hall & Oates\n20:13 \"Strange Powers” by The Magnetic Fields\n31:21 \"Harvest Moon” by Neil Young\n35:20 \"Please Don't Tell Me How the Story Ends” by Kris Kristofferson\n40:44 \"The Only Living Boy in New York” by Simon & Garfunkel\n47:08 \"Hold On” by Spiritualized\n\nSpotify playlist of these songs here: https://found.ee/BG-Mar29-Covers\n\nToday was the last of the daily shows, but Ben will be back streaming on a weekly basis! Tune in on Thursday, April 2 at 6pm PT for the next show.",
+                    "updatedAt": "2020-03-30T01:17:23.000Z",
+                    "videoId": "5pgVzSMqjWA",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "5pgVzSMqjWA"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
         }
       },
       {
@@ -321,6 +501,36 @@
             }
           },
           "title": "Ben Gibbard: Live From Home (3/28/20)"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "Ugy0lRQEKiRUoRpOenN4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "Ugy0lRQEKiRUoRpOenN4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCvaI0CdQzT2qaGEBmvxn3Cg"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCvaI0CdQzT2qaGEBmvxn3Cg",
+                    "authorDisplayName": "Aaron B",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwzeQqXJ0CoLoBStHw_LiucEXc1Fi-XLpsfIA=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-03-29T00:17:15.000Z",
+                    "textDisplay": "00:51 Me and Magdalena\n05:52 Underwater\n08:56 El Dorado\n13:25 Duncan where have you gone?\n21:39 Stable Song\n25:00 Summer Years\n38:20 Life in Quarantine\n42:47 St Swithin's Day\n47:36 I'm Building a Fire",
+                    "textOriginal": "00:51 Me and Magdalena\n05:52 Underwater\n08:56 El Dorado\n13:25 Duncan where have you gone?\n21:39 Stable Song\n25:00 Summer Years\n38:20 Life in Quarantine\n42:47 St Swithin's Day\n47:36 I'm Building a Fire",
+                    "updatedAt": "2020-03-29T00:17:15.000Z",
+                    "videoId": "Hk-xqMKLyRo",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "Hk-xqMKLyRo"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
         }
       },
       {
@@ -367,6 +577,36 @@
             }
           },
           "title": "Ben Gibbard: Live From Home (3/27/20)"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "UgwvCic7D4tgMsv6fHJ4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgwvCic7D4tgMsv6fHJ4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
+                    "authorDisplayName": "MeinKampfyChair",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-03-28T00:02:07.000Z",
+                    "textDisplay": "00:41 Title and Registration\r\n05:25 A Lack of Color\r\n09:45 Tiny Vessels\r\n14:59 We Looked Like Giants\r\n19:43 The District Sleeps Alone Tonight [The Postal Service]\r\n23:20 (Q & A)\r\n30:32 I Will Possess Your Heart\r\n33:26 Soul Meets Body\r\n37:11 (Americans for Immigrant Justice mention)\r\n40:35 I Will Follow You into the Dark\r\n44:56 Transatlanticism\r\n53:20 Such Greats Heights [The Postal Service]",
+                    "textOriginal": "00:41 Title and Registration\r\n05:25 A Lack of Color\r\n09:45 Tiny Vessels\r\n14:59 We Looked Like Giants\r\n19:43 The District Sleeps Alone Tonight [The Postal Service]\r\n23:20 (Q & A)\r\n30:32 I Will Possess Your Heart\r\n33:26 Soul Meets Body\r\n37:11 (Americans for Immigrant Justice mention)\r\n40:35 I Will Follow You into the Dark\r\n44:56 Transatlanticism\r\n53:20 Such Greats Heights [The Postal Service]",
+                    "updatedAt": "2020-03-28T00:02:07.000Z",
+                    "videoId": "2TiCThAAcNM",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "2TiCThAAcNM"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
         }
       },
       {
@@ -413,6 +653,36 @@
             }
           },
           "title": "Ben Gibbard: Live From Home (3/26/20)"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "Ugxuq7DKOYvk5nYSkYZ4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "Ugxuq7DKOYvk5nYSkYZ4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
+                    "authorDisplayName": "MeinKampfyChair",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-03-27T00:00:30.000Z",
+                    "textDisplay": "00:22 Ingénue\r\n04:06 Autumn Love\r\n08:33 Hold No Guns\r\n13:19 Lily\r\n16:15 It's Never Too Late (End Credits)\r\n19:19 (Q & A)\r\n29:44 Binary Sea\r\n33:58 December\r\n37:57 Man In Blue\r\n41:16 (Supplies Save Lives WA mention)\r\n43:08 Northern Lights\r\n48:19 Black Sun",
+                    "textOriginal": "00:22 Ingénue\r\n04:06 Autumn Love\r\n08:33 Hold No Guns\r\n13:19 Lily\r\n16:15 It's Never Too Late (End Credits)\r\n19:19 (Q & A)\r\n29:44 Binary Sea\r\n33:58 December\r\n37:57 Man In Blue\r\n41:16 (Supplies Save Lives WA mention)\r\n43:08 Northern Lights\r\n48:19 Black Sun",
+                    "updatedAt": "2020-03-27T00:00:30.000Z",
+                    "videoId": "IFXCGJs8nOY",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "IFXCGJs8nOY"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
         }
       },
       {
@@ -459,6 +729,61 @@
             }
           },
           "title": "Ben Gibbard: Live From Home (3/25/20)"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "UgzCyKx_L9OGPX7fZvh4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgzCyKx_L9OGPX7fZvh4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCwlNNvXVfKMlifaAkg-GUiA"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCwlNNvXVfKMlifaAkg-GUiA",
+                    "authorDisplayName": "zulmatthews",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxKLt27q2fNA7eT_95mz84vAtFLjiCsaHyG5Q=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-03-26T00:05:46.000Z",
+                    "textDisplay": "0:23: You Can Do Better Than Me\n2:47: Unobstructed Views\n7:34: Little Bribes\n11:34: A Diamond and a Tether\n18:07: Where Our Destination Lies\n20:49: Cath...\n34:44: One Fast Move or I'm Gone\n39:32: Grapevine Fires\n43:44: Bixby Canyon Bridge\n50:42: Stay Young, Go Dancing",
+                    "textOriginal": "0:23: You Can Do Better Than Me\n2:47: Unobstructed Views\n7:34: Little Bribes\n11:34: A Diamond and a Tether\n18:07: Where Our Destination Lies\n20:49: Cath...\n34:44: One Fast Move or I'm Gone\n39:32: Grapevine Fires\n43:44: Bixby Canyon Bridge\n50:42: Stay Young, Go Dancing",
+                    "updatedAt": "2020-03-26T00:05:46.000Z",
+                    "videoId": "tBhqwnL8Zck",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "tBhqwnL8Zck"
+              }
+            },
+            {
+              "id": "UgwDOMQ9Udp6sWV9pPd4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgwDOMQ9Udp6sWV9pPd4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
+                    "authorDisplayName": "MeinKampfyChair",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-03-26T00:00:13.000Z",
+                    "textDisplay": "00:23 You Can Do Better Than Me\r\n02:46 Unobstructed Views \r\n07:34 Little Bribes\r\n11:34 A Diamond and a Tether\r\n18:06 Where Our Destination Lies\r\n20:48 Cath...\r\n25:06 (Q & A)\r\n34:44 One Fast Move or I'm Gone\r\n38:36 (\"We Have the Facts and We're Voting\" mention)\r\n39:32 Grapevine Fires\r\n43:44 Bixby Canyon Bridge\r\n49:07 (Seattle Foundation’s COVID-19 Response Fund mention)\r\n50:41 Stay Young, Go Dancing",
+                    "textOriginal": "00:23 You Can Do Better Than Me\r\n02:46 Unobstructed Views \r\n07:34 Little Bribes\r\n11:34 A Diamond and a Tether\r\n18:06 Where Our Destination Lies\r\n20:48 Cath...\r\n25:06 (Q & A)\r\n34:44 One Fast Move or I'm Gone\r\n38:36 (\"We Have the Facts and We're Voting\" mention)\r\n39:32 Grapevine Fires\r\n43:44 Bixby Canyon Bridge\r\n49:07 (Seattle Foundation’s COVID-19 Response Fund mention)\r\n50:41 Stay Young, Go Dancing",
+                    "updatedAt": "2020-03-26T00:05:38.000Z",
+                    "videoId": "tBhqwnL8Zck",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "tBhqwnL8Zck"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
         }
       },
       {
@@ -505,6 +830,61 @@
             }
           },
           "title": "Ben Gibbard: Live From Home (3/24/20)"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "UgxOFkjslsYiGtQ8d4J4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgxOFkjslsYiGtQ8d4J4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
+                    "authorDisplayName": "MeinKampfyChair",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-03-25T00:00:10.000Z",
+                    "textDisplay": "00:02 Transatlanticism\r\n5:37 Someday You Will Be Loved\r\n9:44 Farmer Chords\r\n13:02 This Place Is a Prison [The Postal Service]\r\n17:58 Couches In Alleys [Styrofoam]\r\n20:42 (Q & A)\r\n27:09 Sleeping In [The Postal Service]\r\n30:02 Summer Skin\r\n32:25 What Sarah Said\r\n38:11 Title and Registration\r\n42:47 (Feeding UW Hospital Staff GoFundMe)\r\n44:42 Marching Bands of Manhattan\r\n49:39 I Will Follow You into the Dark",
+                    "textOriginal": "00:02 Transatlanticism\r\n5:37 Someday You Will Be Loved\r\n9:44 Farmer Chords\r\n13:02 This Place Is a Prison [The Postal Service]\r\n17:58 Couches In Alleys [Styrofoam]\r\n20:42 (Q & A)\r\n27:09 Sleeping In [The Postal Service]\r\n30:02 Summer Skin\r\n32:25 What Sarah Said\r\n38:11 Title and Registration\r\n42:47 (Feeding UW Hospital Staff GoFundMe)\r\n44:42 Marching Bands of Manhattan\r\n49:39 I Will Follow You into the Dark",
+                    "updatedAt": "2020-03-25T00:05:52.000Z",
+                    "videoId": "25OCP0qBD_A",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "25OCP0qBD_A"
+              }
+            },
+            {
+              "id": "UgwMX_eb-T8TpDyCWbp4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgwMX_eb-T8TpDyCWbp4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCbYdH-MvR_vNBrd7yVBfcvw"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCbYdH-MvR_vNBrd7yVBfcvw",
+                    "authorDisplayName": "Jade Eliot",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwjr0msznjey20q_HtmbixamE6PKzjJQt_8jA=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-03-25T00:09:53.000Z",
+                    "textDisplay": "SONGS FROM 2002-2005 SETLIST\n\n0:02 - Transatlanticism\n5:37 - Someday You Will Be Loved\n9:44 - Farmer Chords\n13:01 - This Place Is A Prison\n17:58 - Couches In Alleys\n(20:33 - Q&A)\n27:09 - Sleeping In\n30:02 - Summer Skin\n32:25 - What Sarah Said\n38:11 - Title And Registration\n(41:53 - The London Plane GoFundMe)\n44:41 - Marching Bands Of Manhattan\n49:39 - I Will Follow You Into The Dark",
+                    "textOriginal": "SONGS FROM 2002-2005 SETLIST\n\n0:02 - Transatlanticism\n5:37 - Someday You Will Be Loved\n9:44 - Farmer Chords\n13:01 - This Place Is A Prison\n17:58 - Couches In Alleys\n(20:33 - Q&A)\n27:09 - Sleeping In\n30:02 - Summer Skin\n32:25 - What Sarah Said\n38:11 - Title And Registration\n(41:53 - The London Plane GoFundMe)\n44:41 - Marching Bands Of Manhattan\n49:39 - I Will Follow You Into The Dark",
+                    "updatedAt": "2020-03-25T00:10:49.000Z",
+                    "videoId": "25OCP0qBD_A",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "25OCP0qBD_A"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
         }
       },
       {
@@ -551,6 +931,36 @@
             }
           },
           "title": "Ben Gibbard: Live From Home (3/23/20)"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "UgzMtwDHMKaTMXMg0BJ4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgzMtwDHMKaTMXMg0BJ4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
+                    "authorDisplayName": "MeinKampfyChair",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-03-24T00:05:16.000Z",
+                    "textDisplay": "00:31 Champagne from a Paper Cup\r\n04:08 Debate Exposes Doubt\r\n07:54 Scientist Studies\r\n13:28 Wait [Secret Stars cover] \r\n17:27 Company Calls Epilogue\r\n22:47 (Q & A)\r\n28:17 Cleveland [¡All-Time Quarterback!]\r\n31:05 (This Is) The Dream of Evan and Chan [Dntel]\r\n34:51 Blacking Out the Friction\r\n37:40 Line of Best Fit \r\n44:18 I Was a Kaleidoscope\r\n49:24 No Joy in Mudville\r\n55:21 The Face That Launched 1000 Shits [The Revolutionary Hydra cover]",
+                    "textOriginal": "00:31 Champagne from a Paper Cup\r\n04:08 Debate Exposes Doubt\r\n07:54 Scientist Studies\r\n13:28 Wait [Secret Stars cover] \r\n17:27 Company Calls Epilogue\r\n22:47 (Q & A)\r\n28:17 Cleveland [¡All-Time Quarterback!]\r\n31:05 (This Is) The Dream of Evan and Chan [Dntel]\r\n34:51 Blacking Out the Friction\r\n37:40 Line of Best Fit \r\n44:18 I Was a Kaleidoscope\r\n49:24 No Joy in Mudville\r\n55:21 The Face That Launched 1000 Shits [The Revolutionary Hydra cover]",
+                    "updatedAt": "2020-03-24T00:23:28.000Z",
+                    "videoId": "QHTXnGLb4I0",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "QHTXnGLb4I0"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
         }
       },
       {
@@ -597,6 +1007,61 @@
             }
           },
           "title": "Ben Gibbard: Live From Home (3/22/20)"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "UgzyR6a6B-Czl4pI5ZN4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgzyR6a6B-Czl4pI5ZN4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCOtn115fCfFKIxG7_Quv9ZA"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCOtn115fCfFKIxG7_Quv9ZA",
+                    "authorDisplayName": "Death Cab for Cutie",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJye47VIG3zUXwFFqDmc2oBnsU47v8RYZCsjhg=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-03-23T05:02:12.000Z",
+                    "textDisplay": "Here is the setlist of all the covers Ben played today:\n\n0:48: “Isolation\" by John Lennon\n5:43: \"Silver Lining\" by Rilo Kiley\n10:05: “Thirteen” by Big Star\n14:11: “Waltz #2 (XO)” by Elliott Smith\n19:19: “Motion Sickness” by Phoebe Bridgers\n24:36: “If Not for You” by Bob Dylan\n33:52: “New Slang” by The Shins\n39:38: “Hysteria” by Def Leppard\n44:33: \"The Bones Are Their Money\" from Tim Robinson's show 'I Think You Should Leave' [ original here: http://youtu.be/Z3fTRk2yEgU ]\n46:39: “Do You Realize??” by The Flaming Lips\n\nSpotify playlist of these songs here: http://found.ee/BG-Mar22-Covers",
+                    "textOriginal": "Here is the setlist of all the covers Ben played today:\n\n0:48: “Isolation\" by John Lennon\n5:43: \"Silver Lining\" by Rilo Kiley\n10:05: “Thirteen” by Big Star\n14:11: “Waltz #2 (XO)” by Elliott Smith\n19:19: “Motion Sickness” by Phoebe Bridgers\n24:36: “If Not for You” by Bob Dylan\n33:52: “New Slang” by The Shins\n39:38: “Hysteria” by Def Leppard\n44:33: \"The Bones Are Their Money\" from Tim Robinson's show 'I Think You Should Leave' [ original here: http://youtu.be/Z3fTRk2yEgU ]\n46:39: “Do You Realize??” by The Flaming Lips\n\nSpotify playlist of these songs here: http://found.ee/BG-Mar22-Covers",
+                    "updatedAt": "2020-03-23T05:03:56.000Z",
+                    "videoId": "1eEcVCyKMb8",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "1eEcVCyKMb8"
+              }
+            },
+            {
+              "id": "UgyA0JzCcn4gxF1ktmZ4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgyA0JzCcn4gxF1ktmZ4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCwlNNvXVfKMlifaAkg-GUiA"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCwlNNvXVfKMlifaAkg-GUiA",
+                    "authorDisplayName": "zulmatthews",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxKLt27q2fNA7eT_95mz84vAtFLjiCsaHyG5Q=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-03-23T00:37:38.000Z",
+                    "textDisplay": "0:48: Isolation\n5:43: Silver Lining\n10:05: Thirteen \n14:11: Waltz #2 (XO)\n19:19: Motion Sickness\n24:36: If Not For You\n33:52: New Slang (When You Notice The Stripes)\n39:38: Hysteria\n44:33: The Bones Are The Skeletons’ Money\n46:39: Do You Realize?",
+                    "textOriginal": "0:48: Isolation\n5:43: Silver Lining\n10:05: Thirteen \n14:11: Waltz #2 (XO)\n19:19: Motion Sickness\n24:36: If Not For You\n33:52: New Slang (When You Notice The Stripes)\n39:38: Hysteria\n44:33: The Bones Are The Skeletons’ Money\n46:39: Do You Realize?",
+                    "updatedAt": "2020-03-23T00:37:38.000Z",
+                    "videoId": "1eEcVCyKMb8",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "1eEcVCyKMb8"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
         }
       },
       {
@@ -643,6 +1108,36 @@
             }
           },
           "title": "Ben Gibbard: Live From Home (3/21/20)"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "UgxL6OqwiC45hl2UEmx4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgxL6OqwiC45hl2UEmx4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UC1HTWmyHewrYXnnHLPyoe7Q"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UC1HTWmyHewrYXnnHLPyoe7Q",
+                    "authorDisplayName": "garrett griggs",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJzsjmjGz-n_vL_5OnIEV3eQF1U3H-0c34MPFw=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-03-22T00:12:50.000Z",
+                    "textDisplay": "0:35 Lady Adelaide\r\n4:22 Recycled Air\r\n8:34 Your New Twin Sized Bed\r\n13:35 Willamine\r\n17:29 Q&A\n24:24 A Movie Script Ending\r\n29:44 Your Hurricane\r\n33:14 Your Heart Is An Empty Room\r\n39:38 Carolina\r\n42:07 PSA\r\n44:30 I Will Follow You Into The Dark\r\n\r\n\r\n\r\n\r\nI think that's all of them, hopefully.",
+                    "textOriginal": "0:35 Lady Adelaide\r\n4:22 Recycled Air\r\n8:34 Your New Twin Sized Bed\r\n13:35 Willamine\r\n17:29 Q&A\n24:24 A Movie Script Ending\r\n29:44 Your Hurricane\r\n33:14 Your Heart Is An Empty Room\r\n39:38 Carolina\r\n42:07 PSA\r\n44:30 I Will Follow You Into The Dark\r\n\r\n\r\n\r\n\r\nI think that's all of them, hopefully.",
+                    "updatedAt": "2020-03-22T00:13:57.000Z",
+                    "videoId": "dLWmIJV4GMg",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "dLWmIJV4GMg"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
         }
       },
       {
@@ -689,6 +1184,61 @@
             }
           },
           "title": "Ben Gibbard: Live From Home (3/20/20)"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "UgzFrsRd3EU5rpVMfU94AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgzFrsRd3EU5rpVMfU94AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCbYdH-MvR_vNBrd7yVBfcvw"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCbYdH-MvR_vNBrd7yVBfcvw",
+                    "authorDisplayName": "Jade Eliot",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwjr0msznjey20q_HtmbixamE6PKzjJQt_8jA=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-03-21T01:26:45.000Z",
+                    "textDisplay": "1:10 - Steadier Footing\n3:20 - You Remind Me of Home\n6:33 - Why You'd Want To Live Here\n(11:15 - Q&A)\n17:14 - When The Sun Goes Down On Your Street\n20:37 - These Roads Don't Move\n24:03 - Coney Island\n26:54 - Keep Yourself Warm (Frightened Rabbit cover)\n(31:00 - New Horizon Ministries)\n34:14 - Life In Quarantine\n38:35 - Something's Rattling\n43:07 - Brand New Colony\n\n\nWow a couple songs on this set that I had to look up to get the names! Ben's got so many hidden gems!",
+                    "textOriginal": "1:10 - Steadier Footing\n3:20 - You Remind Me of Home\n6:33 - Why You'd Want To Live Here\n(11:15 - Q&A)\n17:14 - When The Sun Goes Down On Your Street\n20:37 - These Roads Don't Move\n24:03 - Coney Island\n26:54 - Keep Yourself Warm (Frightened Rabbit cover)\n(31:00 - New Horizon Ministries)\n34:14 - Life In Quarantine\n38:35 - Something's Rattling\n43:07 - Brand New Colony\n\n\nWow a couple songs on this set that I had to look up to get the names! Ben's got so many hidden gems!",
+                    "updatedAt": "2020-03-21T01:26:45.000Z",
+                    "videoId": "PX7A8tQNp8g",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "PX7A8tQNp8g"
+              }
+            },
+            {
+              "id": "UgyQN0bZ9dNoaOkuzhl4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgyQN0bZ9dNoaOkuzhl4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
+                    "authorDisplayName": "MeinKampfyChair",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-03-21T01:29:42.000Z",
+                    "textDisplay": "01:11 Steadier Footing\n3:20 You Remind Me of Home\n6:32 Why You'd Want to Live Here\n11:27 (Q & A)\n17:14 When the Sun Goes Down on Your Street\n20:37 These Roads Don't Move\n24:03 Coney Island\n26:55 Keep Yourself Warm (Frightened Rabbit cover)\n31:03 (New Horizons Ministries Charity)\n34:25 Life in Quarantine [NEW SONG]\n38:35 Something's Rattling (Cowpoke)\n43:07 Brand New Colony",
+                    "textOriginal": "01:11 Steadier Footing\n3:20 You Remind Me of Home\n6:32 Why You'd Want to Live Here\n11:27 (Q & A)\n17:14 When the Sun Goes Down on Your Street\n20:37 These Roads Don't Move\n24:03 Coney Island\n26:55 Keep Yourself Warm (Frightened Rabbit cover)\n31:03 (New Horizons Ministries Charity)\n34:25 Life in Quarantine [NEW SONG]\n38:35 Something's Rattling (Cowpoke)\n43:07 Brand New Colony",
+                    "updatedAt": "2020-03-21T02:46:12.000Z",
+                    "videoId": "PX7A8tQNp8g",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "PX7A8tQNp8g"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
         }
       },
       {
@@ -735,6 +1285,61 @@
             }
           },
           "title": "Ben Gibbard: Live From Home (3/19/20)"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "Ugw2pd9N-sxBBhapeG94AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "Ugw2pd9N-sxBBhapeG94AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCbYdH-MvR_vNBrd7yVBfcvw"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCbYdH-MvR_vNBrd7yVBfcvw",
+                    "authorDisplayName": "Jade Eliot",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwjr0msznjey20q_HtmbixamE6PKzjJQt_8jA=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-03-20T00:15:20.000Z",
+                    "textDisplay": "0:10 - St. Peter's Cathedral\n4:04 - Photobooth\n8:30 -  405\n12:41 - Little Wanderer\n(17:15 - Q&A)\n20:55 - Brother's on a Hotel Bed\n24:24 - Soul Meets Body\n28:13 - Talking Bird\n(32:00 - University District Food Bank)\n33:56 - 60 & Punk\n38:47 - Grace Cathedral Hill (The Decemberists cover!!!)\n44:07 - Broken Yolk in Western Sky\n48:54 - The Sound of Settling",
+                    "textOriginal": "0:10 - St. Peter's Cathedral\n4:04 - Photobooth\n8:30 -  405\n12:41 - Little Wanderer\n(17:15 - Q&A)\n20:55 - Brother's on a Hotel Bed\n24:24 - Soul Meets Body\n28:13 - Talking Bird\n(32:00 - University District Food Bank)\n33:56 - 60 & Punk\n38:47 - Grace Cathedral Hill (The Decemberists cover!!!)\n44:07 - Broken Yolk in Western Sky\n48:54 - The Sound of Settling",
+                    "updatedAt": "2020-03-20T00:15:20.000Z",
+                    "videoId": "jhgssMW8L0U",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "jhgssMW8L0U"
+              }
+            },
+            {
+              "id": "UgzfNOpl8FJgtuk4mAh4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgzfNOpl8FJgtuk4mAh4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCwlNNvXVfKMlifaAkg-GUiA"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCwlNNvXVfKMlifaAkg-GUiA",
+                    "authorDisplayName": "zulmatthews",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxKLt27q2fNA7eT_95mz84vAtFLjiCsaHyG5Q=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-03-20T00:28:46.000Z",
+                    "textDisplay": "0:11: St. Peter’s Cathedral\n4:06: Photobooth\n8:14: 405\n12:42: Little Wanderer\n20:55: Brothers On A Hotel Bed\n24:25: Soul Meets Body\n28:14: Talking Bird\n33:57: 60 & Punk\n38:48: Grace Cathedral Hill\n44:08: Broken Yolk in Western Sky\n48:55: The Sound of Settling",
+                    "textOriginal": "0:11: St. Peter’s Cathedral\n4:06: Photobooth\n8:14: 405\n12:42: Little Wanderer\n20:55: Brothers On A Hotel Bed\n24:25: Soul Meets Body\n28:14: Talking Bird\n33:57: 60 & Punk\n38:48: Grace Cathedral Hill\n44:08: Broken Yolk in Western Sky\n48:55: The Sound of Settling",
+                    "updatedAt": "2020-03-20T00:28:46.000Z",
+                    "videoId": "jhgssMW8L0U",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "jhgssMW8L0U"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
         }
       },
       {
@@ -781,6 +1386,61 @@
             }
           },
           "title": "Ben Gibbard: Live From Home (3/18/20)"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "Ugy-lywIEk4_-n2JiGB4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "Ugy-lywIEk4_-n2JiGB4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCwlNNvXVfKMlifaAkg-GUiA"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCwlNNvXVfKMlifaAkg-GUiA",
+                    "authorDisplayName": "zulmatthews",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxKLt27q2fNA7eT_95mz84vAtFLjiCsaHyG5Q=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-03-19T00:30:08.000Z",
+                    "textDisplay": "0:11: No Room In Frame\n4:11: Teardrop Windows\n9:17: Title and Registration\n15:54: Technicolor Girls\n19:44: Codes and keys\n23:37: Passenger Seat\n27:48: When We Drive\n36:23: Me and Magdalena\n41:35: Ceremony\n46:07: Such Great Heights",
+                    "textOriginal": "0:11: No Room In Frame\n4:11: Teardrop Windows\n9:17: Title and Registration\n15:54: Technicolor Girls\n19:44: Codes and keys\n23:37: Passenger Seat\n27:48: When We Drive\n36:23: Me and Magdalena\n41:35: Ceremony\n46:07: Such Great Heights",
+                    "updatedAt": "2020-03-19T02:24:26.000Z",
+                    "videoId": "o0EpwT9fg1I",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "o0EpwT9fg1I"
+              }
+            },
+            {
+              "id": "UgxPO2PgCV2bK8aLndJ4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgxPO2PgCV2bK8aLndJ4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCId04t8qjQyYprn1FCucJtw"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCId04t8qjQyYprn1FCucJtw",
+                    "authorDisplayName": "Nones Garcia",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJzX5w25TK_q-Za7UU2QH1v42jSrtJmkmfdhJg=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-03-19T01:32:30.000Z",
+                    "textDisplay": "0:00 No Room in Frame \n4:08 Teardrop Windows\n9:18 Title and Registration \n15:55 Technicolor Girls\n19:44 Codes & Keys\n23:37 Passenger Seat\n27:47 When We Drive\n36:23 Me and Magdalena (Monkees Cover)\n41:35 Ceremony (New Order Cover)\n46:07 Such Great Heights",
+                    "textOriginal": "0:00 No Room in Frame \n4:08 Teardrop Windows\n9:18 Title and Registration \n15:55 Technicolor Girls\n19:44 Codes & Keys\n23:37 Passenger Seat\n27:47 When We Drive\n36:23 Me and Magdalena (Monkees Cover)\n41:35 Ceremony (New Order Cover)\n46:07 Such Great Heights",
+                    "updatedAt": "2020-03-19T01:32:30.000Z",
+                    "videoId": "o0EpwT9fg1I",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "o0EpwT9fg1I"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
         }
       },
       {
@@ -827,701 +1487,39 @@
             }
           },
           "title": "Ben Gibbard: Live From Home"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "UgwYJ-InesYsfLgNCZ14AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgwYJ-InesYsfLgNCZ14AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCwlNNvXVfKMlifaAkg-GUiA"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCwlNNvXVfKMlifaAkg-GUiA",
+                    "authorDisplayName": "zulmatthews",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxKLt27q2fNA7eT_95mz84vAtFLjiCsaHyG5Q=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-03-18T04:02:53.000Z",
+                    "textDisplay": "0:19: We Will Become Silhouettes\n3:38: A Lack of Color\n7:46: Title Track\n12:22: Northern Lights\n18:30: Crooked Teeth\n22:34: Cath...\n28:39: Grapevine Fires\n33:54: Fake Plastic Trees\n40:01: California Zephyr\n44:06: The District Sleeps Alone Tonight",
+                    "textOriginal": "0:19: We Will Become Silhouettes\n3:38: A Lack of Color\n7:46: Title Track\n12:22: Northern Lights\n18:30: Crooked Teeth\n22:34: Cath...\n28:39: Grapevine Fires\n33:54: Fake Plastic Trees\n40:01: California Zephyr\n44:06: The District Sleeps Alone Tonight",
+                    "updatedAt": "2020-03-18T04:06:24.000Z",
+                    "videoId": "Ei9xuVkbQuU",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "Ei9xuVkbQuU"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
         }
       }
     ],
     "kind": "youtube#playlistItemListResponse"
-  },
-  "comments": {
-    "QQ15BaDEo0Q": {
-      "items": [
-        {
-          "id": "Ugz9MqOhywdpaqXkF4B4AaABAg",
-          "kind": "youtube#commentThread",
-          "snippet": {
-            "topLevelComment": {
-              "id": "Ugz9MqOhywdpaqXkF4B4AaABAg",
-              "kind": "youtube#comment",
-              "snippet": {
-                "authorChannelId": {
-                  "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
-                },
-                "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
-                "authorDisplayName": "MeinKampfyChair",
-                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
-                "publishedAt": "2020-05-01T00:05:34.000Z",
-                "textDisplay": "00:27 Monday Morning \r\n05:08 The District Sleeps Alone Tonight\r\n10:06 Your Hurricane\r\n14:51 Jealousy Rides With Me\r\n17:26 (Q & A)\r\n25:33 Life in Quarantine\r\n29:34 You've Haunted Me All My Life\r\n34:50 Someday You Will Be Loved \r\n39:39 The Things You Said [Depeche Mode cover]\r\n44:50 I Will Follow You into the Dark",
-                "textOriginal": "00:27 Monday Morning \r\n05:08 The District Sleeps Alone Tonight\r\n10:06 Your Hurricane\r\n14:51 Jealousy Rides With Me\r\n17:26 (Q & A)\r\n25:33 Life in Quarantine\r\n29:34 You've Haunted Me All My Life\r\n34:50 Someday You Will Be Loved \r\n39:39 The Things You Said [Depeche Mode cover]\r\n44:50 I Will Follow You into the Dark",
-                "updatedAt": "2020-05-01T03:10:21.000Z",
-                "videoId": "QQ15BaDEo0Q",
-                "viewerRating": "none"
-              }
-            },
-            "videoId": "QQ15BaDEo0Q"
-          }
-        }
-      ],
-      "kind": "youtube#commentThreadListResponse"
-    },
-    "T58oySghwLk": {
-      "items": [
-        {
-          "id": "UgxqBZ7gR-19kWQ2PXV4AaABAg",
-          "kind": "youtube#commentThread",
-          "snippet": {
-            "topLevelComment": {
-              "id": "UgxqBZ7gR-19kWQ2PXV4AaABAg",
-              "kind": "youtube#comment",
-              "snippet": {
-                "authorChannelId": {
-                  "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
-                },
-                "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
-                "authorDisplayName": "MeinKampfyChair",
-                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
-                "publishedAt": "2020-04-24T00:10:59.000Z",
-                "textDisplay": "00:21 Unobstructed Views\r\n05:17 Passenger Seat\r\n10:25 The Ice Is Getting Thinner\r\n15:07 Tulsa Telephone Book\r [Tom T. Hall cover]\n18:21 (Q & A)\r\n24:26 Binary Sea\r\n28:22 What Sarah Said\r\n33:57 Proxima B\r\n39:03 All Apologies [Nirvana cover]\r\n42:34 (Seattle Artist Relief Fund Amid COVID-19 charity shout out)\r\n44:08 Blacking Out the Friction\r\n47:32 Soul Meets Body",
-                "textOriginal": "00:21 Unobstructed Views\r\n05:17 Passenger Seat\r\n10:25 The Ice Is Getting Thinner\r\n15:07 Tulsa Telephone Book\r [Tom T. Hall cover]\n18:21 (Q & A)\r\n24:26 Binary Sea\r\n28:22 What Sarah Said\r\n33:57 Proxima B\r\n39:03 All Apologies [Nirvana cover]\r\n42:34 (Seattle Artist Relief Fund Amid COVID-19 charity shout out)\r\n44:08 Blacking Out the Friction\r\n47:32 Soul Meets Body",
-                "updatedAt": "2020-04-24T00:23:19.000Z",
-                "videoId": "T58oySghwLk",
-                "viewerRating": "none"
-              }
-            },
-            "videoId": "T58oySghwLk"
-          }
-        }
-      ],
-      "kind": "youtube#commentThreadListResponse"
-    },
-    "Z3BiBB0W1Eo": {
-      "items": [
-        {
-          "id": "UgxNYU6vFCjeZEG2q2V4AaABAg",
-          "kind": "youtube#commentThread",
-          "snippet": {
-            "topLevelComment": {
-              "id": "UgxNYU6vFCjeZEG2q2V4AaABAg",
-              "kind": "youtube#comment",
-              "snippet": {
-                "authorChannelId": {
-                  "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
-                },
-                "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
-                "authorDisplayName": "MeinKampfyChair",
-                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
-                "publishedAt": "2020-04-16T23:54:36.000Z",
-                "textDisplay": "00:33 Your Heart is an Empty Room\r\n04:13 Autumn Love\r\n08:43 Styrofoam Plates\r\n13:49 Willamine \r\n18:21 (Q & A)\r\n25:40 Man In Blue\r\n30:28 Grapevine Fires\r\n37:23 Photobooth\r\n42:27 A Movie Script Ending\r\n46:23 Don't Cry No Tears [Neil Young cover]",
-                "textOriginal": "00:33 Your Heart is an Empty Room\r\n04:13 Autumn Love\r\n08:43 Styrofoam Plates\r\n13:49 Willamine \r\n18:21 (Q & A)\r\n25:40 Man In Blue\r\n30:28 Grapevine Fires\r\n37:23 Photobooth\r\n42:27 A Movie Script Ending\r\n46:23 Don't Cry No Tears [Neil Young cover]",
-                "updatedAt": "2020-04-16T23:56:10.000Z",
-                "videoId": "Z3BiBB0W1Eo",
-                "viewerRating": "none"
-              }
-            },
-            "videoId": "Z3BiBB0W1Eo"
-          }
-        }
-      ],
-      "kind": "youtube#commentThreadListResponse"
-    },
-    "SrmFQa_iByw": {
-      "items": [
-        {
-          "id": "UgxQuS9Btr2wpO4cN0R4AaABAg",
-          "kind": "youtube#commentThread",
-          "snippet": {
-            "topLevelComment": {
-              "id": "UgxQuS9Btr2wpO4cN0R4AaABAg",
-              "kind": "youtube#comment",
-              "snippet": {
-                "authorChannelId": {
-                  "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
-                },
-                "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
-                "authorDisplayName": "MeinKampfyChair",
-                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
-                "publishedAt": "2020-04-10T00:07:45.000Z",
-                "textDisplay": "00:26 Title Track\r\n05:14 Employment Pages\r\n09:51 For What Reason\r\n13:53 Lowell, MA\r\n17:09 (Q & A #1)\r\n23:48 405\r\n28:15 Little Fury Bugs\r\n32:46 Company Calls\r\n37:54 Company Calls Epilogue\r\n43:16 (Q & A #2)\r\n51:03 No Joy in Mudville\r\n57:34 Scientist Studies",
-                "textOriginal": "00:26 Title Track\r\n05:14 Employment Pages\r\n09:51 For What Reason\r\n13:53 Lowell, MA\r\n17:09 (Q & A #1)\r\n23:48 405\r\n28:15 Little Fury Bugs\r\n32:46 Company Calls\r\n37:54 Company Calls Epilogue\r\n43:16 (Q & A #2)\r\n51:03 No Joy in Mudville\r\n57:34 Scientist Studies",
-                "updatedAt": "2020-04-10T00:07:45.000Z",
-                "videoId": "SrmFQa_iByw",
-                "viewerRating": "none"
-              }
-            },
-            "videoId": "SrmFQa_iByw"
-          }
-        }
-      ],
-      "kind": "youtube#commentThreadListResponse"
-    },
-    "s6oJjUvB9TA": {
-      "items": [
-        {
-          "id": "UgxF1EDv5ScoKhHXXQx4AaABAg",
-          "kind": "youtube#commentThread",
-          "snippet": {
-            "topLevelComment": {
-              "id": "UgxF1EDv5ScoKhHXXQx4AaABAg",
-              "kind": "youtube#comment",
-              "snippet": {
-                "authorChannelId": {
-                  "value": "UCDjkbUu5gWJpc1eqAiqulRA"
-                },
-                "authorChannelUrl": "http://www.youtube.com/channel/UCDjkbUu5gWJpc1eqAiqulRA",
-                "authorDisplayName": "Alec Critten",
-                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwFBjYI5HB4qOFrZc64lEtl-6Q2kmWumv6fIA=s48-c-k-c0xffffffff-no-rj-mo",
-                "publishedAt": "2020-04-03T02:20:51.000Z",
-                "textDisplay": "0:24 - Lightness\n4:10 - Everything's A Ceiling\n9:02 - The Ghosts of Beverly Drive\n14:08 - A Hard One to Know\n16:15 - (Q&A)\n25:49 - When We Drive\n30:25 - Passenger Seat\n34:09 - (s/o to MusiCares)\n37:40 - Pictures in an Exhibition\n42:49 - Barbara H. (by Fountains of Wayne, tribute to Adam Schlesinger)\n47:20 - Song for Kelly Huckaby\n\nThanks Ben!",
-                "textOriginal": "0:24 - Lightness\n4:10 - Everything's A Ceiling\n9:02 - The Ghosts of Beverly Drive\n14:08 - A Hard One to Know\n16:15 - (Q&A)\n25:49 - When We Drive\n30:25 - Passenger Seat\n34:09 - (s/o to MusiCares)\n37:40 - Pictures in an Exhibition\n42:49 - Barbara H. (by Fountains of Wayne, tribute to Adam Schlesinger)\n47:20 - Song for Kelly Huckaby\n\nThanks Ben!",
-                "updatedAt": "2020-04-03T02:33:54.000Z",
-                "videoId": "s6oJjUvB9TA",
-                "viewerRating": "none"
-              }
-            },
-            "videoId": "s6oJjUvB9TA"
-          }
-        }
-      ],
-      "kind": "youtube#commentThreadListResponse"
-    },
-    "5pgVzSMqjWA": {
-      "items": [
-        {
-          "id": "UgzRAHVkYJMPgFMeUeR4AaABAg",
-          "kind": "youtube#commentThread",
-          "snippet": {
-            "topLevelComment": {
-              "id": "UgzRAHVkYJMPgFMeUeR4AaABAg",
-              "kind": "youtube#comment",
-              "snippet": {
-                "authorChannelId": {
-                  "value": "UCOtn115fCfFKIxG7_Quv9ZA"
-                },
-                "authorChannelUrl": "http://www.youtube.com/channel/UCOtn115fCfFKIxG7_Quv9ZA",
-                "authorDisplayName": "Death Cab for Cutie",
-                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJye47VIG3zUXwFFqDmc2oBnsU47v8RYZCsjhg=s48-c-k-c0xffffffff-no-rj-mo",
-                "publishedAt": "2020-03-30T01:17:23.000Z",
-                "textDisplay": "Here is the setlist of all the covers Ben played today:\n\n00:58 \"Half A World Away” by R.E.M.\n05:26 \"Just Like Heaven” by The Cure\n09:47 \"Everyday Is Like Sunday” by Morrissey\n15:12 \"Out of Touch” by Hall & Oates\n20:13 \"Strange Powers” by The Magnetic Fields\n31:21 \"Harvest Moon” by Neil Young\n35:20 \"Please Don't Tell Me How the Story Ends” by Kris Kristofferson\n40:44 \"The Only Living Boy in New York” by Simon & Garfunkel\n47:08 \"Hold On” by Spiritualized\n\nSpotify playlist of these songs here: https://found.ee/BG-Mar29-Covers\n\nToday was the last of the daily shows, but Ben will be back streaming on a weekly basis! Tune in on Thursday, April 2 at 6pm PT for the next show.",
-                "textOriginal": "Here is the setlist of all the covers Ben played today:\n\n00:58 \"Half A World Away” by R.E.M.\n05:26 \"Just Like Heaven” by The Cure\n09:47 \"Everyday Is Like Sunday” by Morrissey\n15:12 \"Out of Touch” by Hall & Oates\n20:13 \"Strange Powers” by The Magnetic Fields\n31:21 \"Harvest Moon” by Neil Young\n35:20 \"Please Don't Tell Me How the Story Ends” by Kris Kristofferson\n40:44 \"The Only Living Boy in New York” by Simon & Garfunkel\n47:08 \"Hold On” by Spiritualized\n\nSpotify playlist of these songs here: https://found.ee/BG-Mar29-Covers\n\nToday was the last of the daily shows, but Ben will be back streaming on a weekly basis! Tune in on Thursday, April 2 at 6pm PT for the next show.",
-                "updatedAt": "2020-03-30T01:17:23.000Z",
-                "videoId": "5pgVzSMqjWA",
-                "viewerRating": "none"
-              }
-            },
-            "videoId": "5pgVzSMqjWA"
-          }
-        }
-      ],
-      "kind": "youtube#commentThreadListResponse"
-    },
-    "Hk-xqMKLyRo": {
-      "items": [
-        {
-          "id": "Ugy0lRQEKiRUoRpOenN4AaABAg",
-          "kind": "youtube#commentThread",
-          "snippet": {
-            "topLevelComment": {
-              "id": "Ugy0lRQEKiRUoRpOenN4AaABAg",
-              "kind": "youtube#comment",
-              "snippet": {
-                "authorChannelId": {
-                  "value": "UCvaI0CdQzT2qaGEBmvxn3Cg"
-                },
-                "authorChannelUrl": "http://www.youtube.com/channel/UCvaI0CdQzT2qaGEBmvxn3Cg",
-                "authorDisplayName": "Aaron B",
-                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwzeQqXJ0CoLoBStHw_LiucEXc1Fi-XLpsfIA=s48-c-k-c0xffffffff-no-rj-mo",
-                "publishedAt": "2020-03-29T00:17:15.000Z",
-                "textDisplay": "00:51 Me and Magdalena\n05:52 Underwater\n08:56 El Dorado\n13:25 Duncan where have you gone?\n21:39 Stable Song\n25:00 Summer Years\n38:20 Life in Quarantine\n42:47 St Swithin's Day\n47:36 I'm Building a Fire",
-                "textOriginal": "00:51 Me and Magdalena\n05:52 Underwater\n08:56 El Dorado\n13:25 Duncan where have you gone?\n21:39 Stable Song\n25:00 Summer Years\n38:20 Life in Quarantine\n42:47 St Swithin's Day\n47:36 I'm Building a Fire",
-                "updatedAt": "2020-03-29T00:17:15.000Z",
-                "videoId": "Hk-xqMKLyRo",
-                "viewerRating": "none"
-              }
-            },
-            "videoId": "Hk-xqMKLyRo"
-          }
-        }
-      ],
-      "kind": "youtube#commentThreadListResponse"
-    },
-    "2TiCThAAcNM": {
-      "items": [
-        {
-          "id": "UgwvCic7D4tgMsv6fHJ4AaABAg",
-          "kind": "youtube#commentThread",
-          "snippet": {
-            "topLevelComment": {
-              "id": "UgwvCic7D4tgMsv6fHJ4AaABAg",
-              "kind": "youtube#comment",
-              "snippet": {
-                "authorChannelId": {
-                  "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
-                },
-                "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
-                "authorDisplayName": "MeinKampfyChair",
-                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
-                "publishedAt": "2020-03-28T00:02:07.000Z",
-                "textDisplay": "00:41 Title and Registration\r\n05:25 A Lack of Color\r\n09:45 Tiny Vessels\r\n14:59 We Looked Like Giants\r\n19:43 The District Sleeps Alone Tonight [The Postal Service]\r\n23:20 (Q & A)\r\n30:32 I Will Possess Your Heart\r\n33:26 Soul Meets Body\r\n37:11 (Americans for Immigrant Justice mention)\r\n40:35 I Will Follow You into the Dark\r\n44:56 Transatlanticism\r\n53:20 Such Greats Heights [The Postal Service]",
-                "textOriginal": "00:41 Title and Registration\r\n05:25 A Lack of Color\r\n09:45 Tiny Vessels\r\n14:59 We Looked Like Giants\r\n19:43 The District Sleeps Alone Tonight [The Postal Service]\r\n23:20 (Q & A)\r\n30:32 I Will Possess Your Heart\r\n33:26 Soul Meets Body\r\n37:11 (Americans for Immigrant Justice mention)\r\n40:35 I Will Follow You into the Dark\r\n44:56 Transatlanticism\r\n53:20 Such Greats Heights [The Postal Service]",
-                "updatedAt": "2020-03-28T00:02:07.000Z",
-                "videoId": "2TiCThAAcNM",
-                "viewerRating": "none"
-              }
-            },
-            "videoId": "2TiCThAAcNM"
-          }
-        }
-      ],
-      "kind": "youtube#commentThreadListResponse"
-    },
-    "IFXCGJs8nOY": {
-      "items": [
-        {
-          "id": "Ugxuq7DKOYvk5nYSkYZ4AaABAg",
-          "kind": "youtube#commentThread",
-          "snippet": {
-            "topLevelComment": {
-              "id": "Ugxuq7DKOYvk5nYSkYZ4AaABAg",
-              "kind": "youtube#comment",
-              "snippet": {
-                "authorChannelId": {
-                  "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
-                },
-                "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
-                "authorDisplayName": "MeinKampfyChair",
-                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
-                "publishedAt": "2020-03-27T00:00:30.000Z",
-                "textDisplay": "00:22 Ingénue\r\n04:06 Autumn Love\r\n08:33 Hold No Guns\r\n13:19 Lily\r\n16:15 It's Never Too Late (End Credits)\r\n19:19 (Q & A)\r\n29:44 Binary Sea\r\n33:58 December\r\n37:57 Man In Blue\r\n41:16 (Supplies Save Lives WA mention)\r\n43:08 Northern Lights\r\n48:19 Black Sun",
-                "textOriginal": "00:22 Ingénue\r\n04:06 Autumn Love\r\n08:33 Hold No Guns\r\n13:19 Lily\r\n16:15 It's Never Too Late (End Credits)\r\n19:19 (Q & A)\r\n29:44 Binary Sea\r\n33:58 December\r\n37:57 Man In Blue\r\n41:16 (Supplies Save Lives WA mention)\r\n43:08 Northern Lights\r\n48:19 Black Sun",
-                "updatedAt": "2020-03-27T00:00:30.000Z",
-                "videoId": "IFXCGJs8nOY",
-                "viewerRating": "none"
-              }
-            },
-            "videoId": "IFXCGJs8nOY"
-          }
-        }
-      ],
-      "kind": "youtube#commentThreadListResponse"
-    },
-    "tBhqwnL8Zck": {
-      "items": [
-        {
-          "id": "UgzCyKx_L9OGPX7fZvh4AaABAg",
-          "kind": "youtube#commentThread",
-          "snippet": {
-            "topLevelComment": {
-              "id": "UgzCyKx_L9OGPX7fZvh4AaABAg",
-              "kind": "youtube#comment",
-              "snippet": {
-                "authorChannelId": {
-                  "value": "UCwlNNvXVfKMlifaAkg-GUiA"
-                },
-                "authorChannelUrl": "http://www.youtube.com/channel/UCwlNNvXVfKMlifaAkg-GUiA",
-                "authorDisplayName": "zulmatthews",
-                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxKLt27q2fNA7eT_95mz84vAtFLjiCsaHyG5Q=s48-c-k-c0xffffffff-no-rj-mo",
-                "publishedAt": "2020-03-26T00:05:46.000Z",
-                "textDisplay": "0:23: You Can Do Better Than Me\n2:47: Unobstructed Views\n7:34: Little Bribes\n11:34: A Diamond and a Tether\n18:07: Where Our Destination Lies\n20:49: Cath...\n34:44: One Fast Move or I'm Gone\n39:32: Grapevine Fires\n43:44: Bixby Canyon Bridge\n50:42: Stay Young, Go Dancing",
-                "textOriginal": "0:23: You Can Do Better Than Me\n2:47: Unobstructed Views\n7:34: Little Bribes\n11:34: A Diamond and a Tether\n18:07: Where Our Destination Lies\n20:49: Cath...\n34:44: One Fast Move or I'm Gone\n39:32: Grapevine Fires\n43:44: Bixby Canyon Bridge\n50:42: Stay Young, Go Dancing",
-                "updatedAt": "2020-03-26T00:05:46.000Z",
-                "videoId": "tBhqwnL8Zck",
-                "viewerRating": "none"
-              }
-            },
-            "videoId": "tBhqwnL8Zck"
-          }
-        },
-        {
-          "id": "UgwDOMQ9Udp6sWV9pPd4AaABAg",
-          "kind": "youtube#commentThread",
-          "snippet": {
-            "topLevelComment": {
-              "id": "UgwDOMQ9Udp6sWV9pPd4AaABAg",
-              "kind": "youtube#comment",
-              "snippet": {
-                "authorChannelId": {
-                  "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
-                },
-                "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
-                "authorDisplayName": "MeinKampfyChair",
-                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
-                "publishedAt": "2020-03-26T00:00:13.000Z",
-                "textDisplay": "00:23 You Can Do Better Than Me\r\n02:46 Unobstructed Views \r\n07:34 Little Bribes\r\n11:34 A Diamond and a Tether\r\n18:06 Where Our Destination Lies\r\n20:48 Cath...\r\n25:06 (Q & A)\r\n34:44 One Fast Move or I'm Gone\r\n38:36 (\"We Have the Facts and We're Voting\" mention)\r\n39:32 Grapevine Fires\r\n43:44 Bixby Canyon Bridge\r\n49:07 (Seattle Foundation’s COVID-19 Response Fund mention)\r\n50:41 Stay Young, Go Dancing",
-                "textOriginal": "00:23 You Can Do Better Than Me\r\n02:46 Unobstructed Views \r\n07:34 Little Bribes\r\n11:34 A Diamond and a Tether\r\n18:06 Where Our Destination Lies\r\n20:48 Cath...\r\n25:06 (Q & A)\r\n34:44 One Fast Move or I'm Gone\r\n38:36 (\"We Have the Facts and We're Voting\" mention)\r\n39:32 Grapevine Fires\r\n43:44 Bixby Canyon Bridge\r\n49:07 (Seattle Foundation’s COVID-19 Response Fund mention)\r\n50:41 Stay Young, Go Dancing",
-                "updatedAt": "2020-03-26T00:05:38.000Z",
-                "videoId": "tBhqwnL8Zck",
-                "viewerRating": "none"
-              }
-            },
-            "videoId": "tBhqwnL8Zck"
-          }
-        }
-      ],
-      "kind": "youtube#commentThreadListResponse"
-    },
-    "25OCP0qBD_A": {
-      "items": [
-        {
-          "id": "UgxOFkjslsYiGtQ8d4J4AaABAg",
-          "kind": "youtube#commentThread",
-          "snippet": {
-            "topLevelComment": {
-              "id": "UgxOFkjslsYiGtQ8d4J4AaABAg",
-              "kind": "youtube#comment",
-              "snippet": {
-                "authorChannelId": {
-                  "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
-                },
-                "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
-                "authorDisplayName": "MeinKampfyChair",
-                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
-                "publishedAt": "2020-03-25T00:00:10.000Z",
-                "textDisplay": "00:02 Transatlanticism\r\n5:37 Someday You Will Be Loved\r\n9:44 Farmer Chords\r\n13:02 This Place Is a Prison [The Postal Service]\r\n17:58 Couches In Alleys [Styrofoam]\r\n20:42 (Q & A)\r\n27:09 Sleeping In [The Postal Service]\r\n30:02 Summer Skin\r\n32:25 What Sarah Said\r\n38:11 Title and Registration\r\n42:47 (Feeding UW Hospital Staff GoFundMe)\r\n44:42 Marching Bands of Manhattan\r\n49:39 I Will Follow You into the Dark",
-                "textOriginal": "00:02 Transatlanticism\r\n5:37 Someday You Will Be Loved\r\n9:44 Farmer Chords\r\n13:02 This Place Is a Prison [The Postal Service]\r\n17:58 Couches In Alleys [Styrofoam]\r\n20:42 (Q & A)\r\n27:09 Sleeping In [The Postal Service]\r\n30:02 Summer Skin\r\n32:25 What Sarah Said\r\n38:11 Title and Registration\r\n42:47 (Feeding UW Hospital Staff GoFundMe)\r\n44:42 Marching Bands of Manhattan\r\n49:39 I Will Follow You into the Dark",
-                "updatedAt": "2020-03-25T00:05:52.000Z",
-                "videoId": "25OCP0qBD_A",
-                "viewerRating": "none"
-              }
-            },
-            "videoId": "25OCP0qBD_A"
-          }
-        },
-        {
-          "id": "UgwMX_eb-T8TpDyCWbp4AaABAg",
-          "kind": "youtube#commentThread",
-          "snippet": {
-            "topLevelComment": {
-              "id": "UgwMX_eb-T8TpDyCWbp4AaABAg",
-              "kind": "youtube#comment",
-              "snippet": {
-                "authorChannelId": {
-                  "value": "UCbYdH-MvR_vNBrd7yVBfcvw"
-                },
-                "authorChannelUrl": "http://www.youtube.com/channel/UCbYdH-MvR_vNBrd7yVBfcvw",
-                "authorDisplayName": "Jade Eliot",
-                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwjr0msznjey20q_HtmbixamE6PKzjJQt_8jA=s48-c-k-c0xffffffff-no-rj-mo",
-                "publishedAt": "2020-03-25T00:09:53.000Z",
-                "textDisplay": "SONGS FROM 2002-2005 SETLIST\n\n0:02 - Transatlanticism\n5:37 - Someday You Will Be Loved\n9:44 - Farmer Chords\n13:01 - This Place Is A Prison\n17:58 - Couches In Alleys\n(20:33 - Q&A)\n27:09 - Sleeping In\n30:02 - Summer Skin\n32:25 - What Sarah Said\n38:11 - Title And Registration\n(41:53 - The London Plane GoFundMe)\n44:41 - Marching Bands Of Manhattan\n49:39 - I Will Follow You Into The Dark",
-                "textOriginal": "SONGS FROM 2002-2005 SETLIST\n\n0:02 - Transatlanticism\n5:37 - Someday You Will Be Loved\n9:44 - Farmer Chords\n13:01 - This Place Is A Prison\n17:58 - Couches In Alleys\n(20:33 - Q&A)\n27:09 - Sleeping In\n30:02 - Summer Skin\n32:25 - What Sarah Said\n38:11 - Title And Registration\n(41:53 - The London Plane GoFundMe)\n44:41 - Marching Bands Of Manhattan\n49:39 - I Will Follow You Into The Dark",
-                "updatedAt": "2020-03-25T00:10:49.000Z",
-                "videoId": "25OCP0qBD_A",
-                "viewerRating": "none"
-              }
-            },
-            "videoId": "25OCP0qBD_A"
-          }
-        }
-      ],
-      "kind": "youtube#commentThreadListResponse"
-    },
-    "QHTXnGLb4I0": {
-      "items": [
-        {
-          "id": "UgzMtwDHMKaTMXMg0BJ4AaABAg",
-          "kind": "youtube#commentThread",
-          "snippet": {
-            "topLevelComment": {
-              "id": "UgzMtwDHMKaTMXMg0BJ4AaABAg",
-              "kind": "youtube#comment",
-              "snippet": {
-                "authorChannelId": {
-                  "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
-                },
-                "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
-                "authorDisplayName": "MeinKampfyChair",
-                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
-                "publishedAt": "2020-03-24T00:05:16.000Z",
-                "textDisplay": "00:31 Champagne from a Paper Cup\r\n04:08 Debate Exposes Doubt\r\n07:54 Scientist Studies\r\n13:28 Wait [Secret Stars cover] \r\n17:27 Company Calls Epilogue\r\n22:47 (Q & A)\r\n28:17 Cleveland [¡All-Time Quarterback!]\r\n31:05 (This Is) The Dream of Evan and Chan [Dntel]\r\n34:51 Blacking Out the Friction\r\n37:40 Line of Best Fit \r\n44:18 I Was a Kaleidoscope\r\n49:24 No Joy in Mudville\r\n55:21 The Face That Launched 1000 Shits [The Revolutionary Hydra cover]",
-                "textOriginal": "00:31 Champagne from a Paper Cup\r\n04:08 Debate Exposes Doubt\r\n07:54 Scientist Studies\r\n13:28 Wait [Secret Stars cover] \r\n17:27 Company Calls Epilogue\r\n22:47 (Q & A)\r\n28:17 Cleveland [¡All-Time Quarterback!]\r\n31:05 (This Is) The Dream of Evan and Chan [Dntel]\r\n34:51 Blacking Out the Friction\r\n37:40 Line of Best Fit \r\n44:18 I Was a Kaleidoscope\r\n49:24 No Joy in Mudville\r\n55:21 The Face That Launched 1000 Shits [The Revolutionary Hydra cover]",
-                "updatedAt": "2020-03-24T00:23:28.000Z",
-                "videoId": "QHTXnGLb4I0",
-                "viewerRating": "none"
-              }
-            },
-            "videoId": "QHTXnGLb4I0"
-          }
-        }
-      ],
-      "kind": "youtube#commentThreadListResponse"
-    },
-    "1eEcVCyKMb8": {
-      "items": [
-        {
-          "id": "UgyA0JzCcn4gxF1ktmZ4AaABAg",
-          "kind": "youtube#commentThread",
-          "snippet": {
-            "topLevelComment": {
-              "id": "UgyA0JzCcn4gxF1ktmZ4AaABAg",
-              "kind": "youtube#comment",
-              "snippet": {
-                "authorChannelId": {
-                  "value": "UCwlNNvXVfKMlifaAkg-GUiA"
-                },
-                "authorChannelUrl": "http://www.youtube.com/channel/UCwlNNvXVfKMlifaAkg-GUiA",
-                "authorDisplayName": "zulmatthews",
-                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxKLt27q2fNA7eT_95mz84vAtFLjiCsaHyG5Q=s48-c-k-c0xffffffff-no-rj-mo",
-                "publishedAt": "2020-03-23T00:37:38.000Z",
-                "textDisplay": "0:48: Isolation\n5:43: Silver Lining\n10:05: Thirteen \n14:11: Waltz #2 (XO)\n19:19: Motion Sickness\n24:36: If Not For You\n33:52: New Slang (When You Notice The Stripes)\n39:38: Hysteria\n44:33: The Bones Are The Skeletons’ Money\n46:39: Do You Realize?",
-                "textOriginal": "0:48: Isolation\n5:43: Silver Lining\n10:05: Thirteen \n14:11: Waltz #2 (XO)\n19:19: Motion Sickness\n24:36: If Not For You\n33:52: New Slang (When You Notice The Stripes)\n39:38: Hysteria\n44:33: The Bones Are The Skeletons’ Money\n46:39: Do You Realize?",
-                "updatedAt": "2020-03-23T00:37:38.000Z",
-                "videoId": "1eEcVCyKMb8",
-                "viewerRating": "none"
-              }
-            },
-            "videoId": "1eEcVCyKMb8"
-          }
-        },
-        {
-          "id": "UgzyR6a6B-Czl4pI5ZN4AaABAg",
-          "kind": "youtube#commentThread",
-          "snippet": {
-            "topLevelComment": {
-              "id": "UgzyR6a6B-Czl4pI5ZN4AaABAg",
-              "kind": "youtube#comment",
-              "snippet": {
-                "authorChannelId": {
-                  "value": "UCOtn115fCfFKIxG7_Quv9ZA"
-                },
-                "authorChannelUrl": "http://www.youtube.com/channel/UCOtn115fCfFKIxG7_Quv9ZA",
-                "authorDisplayName": "Death Cab for Cutie",
-                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJye47VIG3zUXwFFqDmc2oBnsU47v8RYZCsjhg=s48-c-k-c0xffffffff-no-rj-mo",
-                "publishedAt": "2020-03-23T05:02:12.000Z",
-                "textDisplay": "Here is the setlist of all the covers Ben played today:\n\n0:48: “Isolation\" by John Lennon\n5:43: \"Silver Lining\" by Rilo Kiley\n10:05: “Thirteen” by Big Star\n14:11: “Waltz #2 (XO)” by Elliott Smith\n19:19: “Motion Sickness” by Phoebe Bridgers\n24:36: “If Not for You” by Bob Dylan\n33:52: “New Slang” by The Shins\n39:38: “Hysteria” by Def Leppard\n44:33: \"The Bones Are Their Money\" from Tim Robinson's show 'I Think You Should Leave' [ original here: http://youtu.be/Z3fTRk2yEgU ]\n46:39: “Do You Realize??” by The Flaming Lips\n\nSpotify playlist of these songs here: http://found.ee/BG-Mar22-Covers",
-                "textOriginal": "Here is the setlist of all the covers Ben played today:\n\n0:48: “Isolation\" by John Lennon\n5:43: \"Silver Lining\" by Rilo Kiley\n10:05: “Thirteen” by Big Star\n14:11: “Waltz #2 (XO)” by Elliott Smith\n19:19: “Motion Sickness” by Phoebe Bridgers\n24:36: “If Not for You” by Bob Dylan\n33:52: “New Slang” by The Shins\n39:38: “Hysteria” by Def Leppard\n44:33: \"The Bones Are Their Money\" from Tim Robinson's show 'I Think You Should Leave' [ original here: http://youtu.be/Z3fTRk2yEgU ]\n46:39: “Do You Realize??” by The Flaming Lips\n\nSpotify playlist of these songs here: http://found.ee/BG-Mar22-Covers",
-                "updatedAt": "2020-03-23T05:03:56.000Z",
-                "videoId": "1eEcVCyKMb8",
-                "viewerRating": "none"
-              }
-            },
-            "videoId": "1eEcVCyKMb8"
-          }
-        }
-      ],
-      "kind": "youtube#commentThreadListResponse"
-    },
-    "dLWmIJV4GMg": {
-      "items": [
-        {
-          "id": "UgxL6OqwiC45hl2UEmx4AaABAg",
-          "kind": "youtube#commentThread",
-          "snippet": {
-            "topLevelComment": {
-              "id": "UgxL6OqwiC45hl2UEmx4AaABAg",
-              "kind": "youtube#comment",
-              "snippet": {
-                "authorChannelId": {
-                  "value": "UC1HTWmyHewrYXnnHLPyoe7Q"
-                },
-                "authorChannelUrl": "http://www.youtube.com/channel/UC1HTWmyHewrYXnnHLPyoe7Q",
-                "authorDisplayName": "garrett griggs",
-                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJzsjmjGz-n_vL_5OnIEV3eQF1U3H-0c34MPFw=s48-c-k-c0xffffffff-no-rj-mo",
-                "publishedAt": "2020-03-22T00:12:50.000Z",
-                "textDisplay": "0:35 Lady Adelaide\r\n4:22 Recycled Air\r\n8:34 Your New Twin Sized Bed\r\n13:35 Willamine\r\n17:29 Q&A\n24:24 A Movie Script Ending\r\n29:44 Your Hurricane\r\n33:14 Your Heart Is An Empty Room\r\n39:38 Carolina\r\n42:07 PSA\r\n44:30 I Will Follow You Into The Dark\r\n\r\n\r\n\r\n\r\nI think that's all of them, hopefully.",
-                "textOriginal": "0:35 Lady Adelaide\r\n4:22 Recycled Air\r\n8:34 Your New Twin Sized Bed\r\n13:35 Willamine\r\n17:29 Q&A\n24:24 A Movie Script Ending\r\n29:44 Your Hurricane\r\n33:14 Your Heart Is An Empty Room\r\n39:38 Carolina\r\n42:07 PSA\r\n44:30 I Will Follow You Into The Dark\r\n\r\n\r\n\r\n\r\nI think that's all of them, hopefully.",
-                "updatedAt": "2020-03-22T00:13:57.000Z",
-                "videoId": "dLWmIJV4GMg",
-                "viewerRating": "none"
-              }
-            },
-            "videoId": "dLWmIJV4GMg"
-          }
-        }
-      ],
-      "kind": "youtube#commentThreadListResponse"
-    },
-    "PX7A8tQNp8g": {
-      "items": [
-        {
-          "id": "UgzFrsRd3EU5rpVMfU94AaABAg",
-          "kind": "youtube#commentThread",
-          "snippet": {
-            "topLevelComment": {
-              "id": "UgzFrsRd3EU5rpVMfU94AaABAg",
-              "kind": "youtube#comment",
-              "snippet": {
-                "authorChannelId": {
-                  "value": "UCbYdH-MvR_vNBrd7yVBfcvw"
-                },
-                "authorChannelUrl": "http://www.youtube.com/channel/UCbYdH-MvR_vNBrd7yVBfcvw",
-                "authorDisplayName": "Jade Eliot",
-                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwjr0msznjey20q_HtmbixamE6PKzjJQt_8jA=s48-c-k-c0xffffffff-no-rj-mo",
-                "publishedAt": "2020-03-21T01:26:45.000Z",
-                "textDisplay": "1:10 - Steadier Footing\n3:20 - You Remind Me of Home\n6:33 - Why You'd Want To Live Here\n(11:15 - Q&A)\n17:14 - When The Sun Goes Down On Your Street\n20:37 - These Roads Don't Move\n24:03 - Coney Island\n26:54 - Keep Yourself Warm (Frightened Rabbit cover)\n(31:00 - New Horizon Ministries)\n34:14 - Life In Quarantine\n38:35 - Something's Rattling\n43:07 - Brand New Colony\n\n\nWow a couple songs on this set that I had to look up to get the names! Ben's got so many hidden gems!",
-                "textOriginal": "1:10 - Steadier Footing\n3:20 - You Remind Me of Home\n6:33 - Why You'd Want To Live Here\n(11:15 - Q&A)\n17:14 - When The Sun Goes Down On Your Street\n20:37 - These Roads Don't Move\n24:03 - Coney Island\n26:54 - Keep Yourself Warm (Frightened Rabbit cover)\n(31:00 - New Horizon Ministries)\n34:14 - Life In Quarantine\n38:35 - Something's Rattling\n43:07 - Brand New Colony\n\n\nWow a couple songs on this set that I had to look up to get the names! Ben's got so many hidden gems!",
-                "updatedAt": "2020-03-21T01:26:45.000Z",
-                "videoId": "PX7A8tQNp8g",
-                "viewerRating": "none"
-              }
-            },
-            "videoId": "PX7A8tQNp8g"
-          }
-        },
-        {
-          "id": "UgyQN0bZ9dNoaOkuzhl4AaABAg",
-          "kind": "youtube#commentThread",
-          "snippet": {
-            "topLevelComment": {
-              "id": "UgyQN0bZ9dNoaOkuzhl4AaABAg",
-              "kind": "youtube#comment",
-              "snippet": {
-                "authorChannelId": {
-                  "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
-                },
-                "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
-                "authorDisplayName": "MeinKampfyChair",
-                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
-                "publishedAt": "2020-03-21T01:29:42.000Z",
-                "textDisplay": "01:11 Steadier Footing\n3:20 You Remind Me of Home\n6:32 Why You'd Want to Live Here\n11:27 (Q & A)\n17:14 When the Sun Goes Down on Your Street\n20:37 These Roads Don't Move\n24:03 Coney Island\n26:55 Keep Yourself Warm (Frightened Rabbit cover)\n31:03 (New Horizons Ministries Charity)\n34:25 Life in Quarantine [NEW SONG]\n38:35 Something's Rattling (Cowpoke)\n43:07 Brand New Colony",
-                "textOriginal": "01:11 Steadier Footing\n3:20 You Remind Me of Home\n6:32 Why You'd Want to Live Here\n11:27 (Q & A)\n17:14 When the Sun Goes Down on Your Street\n20:37 These Roads Don't Move\n24:03 Coney Island\n26:55 Keep Yourself Warm (Frightened Rabbit cover)\n31:03 (New Horizons Ministries Charity)\n34:25 Life in Quarantine [NEW SONG]\n38:35 Something's Rattling (Cowpoke)\n43:07 Brand New Colony",
-                "updatedAt": "2020-03-21T02:46:12.000Z",
-                "videoId": "PX7A8tQNp8g",
-                "viewerRating": "none"
-              }
-            },
-            "videoId": "PX7A8tQNp8g"
-          }
-        }
-      ],
-      "kind": "youtube#commentThreadListResponse"
-    },
-    "jhgssMW8L0U": {
-      "items": [
-        {
-          "id": "Ugw2pd9N-sxBBhapeG94AaABAg",
-          "kind": "youtube#commentThread",
-          "snippet": {
-            "topLevelComment": {
-              "id": "Ugw2pd9N-sxBBhapeG94AaABAg",
-              "kind": "youtube#comment",
-              "snippet": {
-                "authorChannelId": {
-                  "value": "UCbYdH-MvR_vNBrd7yVBfcvw"
-                },
-                "authorChannelUrl": "http://www.youtube.com/channel/UCbYdH-MvR_vNBrd7yVBfcvw",
-                "authorDisplayName": "Jade Eliot",
-                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwjr0msznjey20q_HtmbixamE6PKzjJQt_8jA=s48-c-k-c0xffffffff-no-rj-mo",
-                "publishedAt": "2020-03-20T00:15:20.000Z",
-                "textDisplay": "0:10 - St. Peter's Cathedral\n4:04 - Photobooth\n8:30 -  405\n12:41 - Little Wanderer\n(17:15 - Q&A)\n20:55 - Brother's on a Hotel Bed\n24:24 - Soul Meets Body\n28:13 - Talking Bird\n(32:00 - University District Food Bank)\n33:56 - 60 & Punk\n38:47 - Grace Cathedral Hill (The Decemberists cover!!!)\n44:07 - Broken Yolk in Western Sky\n48:54 - The Sound of Settling",
-                "textOriginal": "0:10 - St. Peter's Cathedral\n4:04 - Photobooth\n8:30 -  405\n12:41 - Little Wanderer\n(17:15 - Q&A)\n20:55 - Brother's on a Hotel Bed\n24:24 - Soul Meets Body\n28:13 - Talking Bird\n(32:00 - University District Food Bank)\n33:56 - 60 & Punk\n38:47 - Grace Cathedral Hill (The Decemberists cover!!!)\n44:07 - Broken Yolk in Western Sky\n48:54 - The Sound of Settling",
-                "updatedAt": "2020-03-20T00:15:20.000Z",
-                "videoId": "jhgssMW8L0U",
-                "viewerRating": "none"
-              }
-            },
-            "videoId": "jhgssMW8L0U"
-          }
-        },
-        {
-          "id": "UgzfNOpl8FJgtuk4mAh4AaABAg",
-          "kind": "youtube#commentThread",
-          "snippet": {
-            "topLevelComment": {
-              "id": "UgzfNOpl8FJgtuk4mAh4AaABAg",
-              "kind": "youtube#comment",
-              "snippet": {
-                "authorChannelId": {
-                  "value": "UCwlNNvXVfKMlifaAkg-GUiA"
-                },
-                "authorChannelUrl": "http://www.youtube.com/channel/UCwlNNvXVfKMlifaAkg-GUiA",
-                "authorDisplayName": "zulmatthews",
-                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxKLt27q2fNA7eT_95mz84vAtFLjiCsaHyG5Q=s48-c-k-c0xffffffff-no-rj-mo",
-                "publishedAt": "2020-03-20T00:28:46.000Z",
-                "textDisplay": "0:11: St. Peter’s Cathedral\n4:06: Photobooth\n8:14: 405\n12:42: Little Wanderer\n20:55: Brothers On A Hotel Bed\n24:25: Soul Meets Body\n28:14: Talking Bird\n33:57: 60 & Punk\n38:48: Grace Cathedral Hill\n44:08: Broken Yolk in Western Sky\n48:55: The Sound of Settling",
-                "textOriginal": "0:11: St. Peter’s Cathedral\n4:06: Photobooth\n8:14: 405\n12:42: Little Wanderer\n20:55: Brothers On A Hotel Bed\n24:25: Soul Meets Body\n28:14: Talking Bird\n33:57: 60 & Punk\n38:48: Grace Cathedral Hill\n44:08: Broken Yolk in Western Sky\n48:55: The Sound of Settling",
-                "updatedAt": "2020-03-20T00:28:46.000Z",
-                "videoId": "jhgssMW8L0U",
-                "viewerRating": "none"
-              }
-            },
-            "videoId": "jhgssMW8L0U"
-          }
-        }
-      ],
-      "kind": "youtube#commentThreadListResponse"
-    },
-    "o0EpwT9fg1I": {
-      "items": [
-        {
-          "id": "Ugy-lywIEk4_-n2JiGB4AaABAg",
-          "kind": "youtube#commentThread",
-          "snippet": {
-            "topLevelComment": {
-              "id": "Ugy-lywIEk4_-n2JiGB4AaABAg",
-              "kind": "youtube#comment",
-              "snippet": {
-                "authorChannelId": {
-                  "value": "UCwlNNvXVfKMlifaAkg-GUiA"
-                },
-                "authorChannelUrl": "http://www.youtube.com/channel/UCwlNNvXVfKMlifaAkg-GUiA",
-                "authorDisplayName": "zulmatthews",
-                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxKLt27q2fNA7eT_95mz84vAtFLjiCsaHyG5Q=s48-c-k-c0xffffffff-no-rj-mo",
-                "publishedAt": "2020-03-19T00:30:08.000Z",
-                "textDisplay": "0:11: No Room In Frame\n4:11: Teardrop Windows\n9:17: Title and Registration\n15:54: Technicolor Girls\n19:44: Codes and keys\n23:37: Passenger Seat\n27:48: When We Drive\n36:23: Me and Magdalena\n41:35: Ceremony\n46:07: Such Great Heights",
-                "textOriginal": "0:11: No Room In Frame\n4:11: Teardrop Windows\n9:17: Title and Registration\n15:54: Technicolor Girls\n19:44: Codes and keys\n23:37: Passenger Seat\n27:48: When We Drive\n36:23: Me and Magdalena\n41:35: Ceremony\n46:07: Such Great Heights",
-                "updatedAt": "2020-03-19T02:24:26.000Z",
-                "videoId": "o0EpwT9fg1I",
-                "viewerRating": "none"
-              }
-            },
-            "videoId": "o0EpwT9fg1I"
-          }
-        },
-        {
-          "id": "UgxPO2PgCV2bK8aLndJ4AaABAg",
-          "kind": "youtube#commentThread",
-          "snippet": {
-            "topLevelComment": {
-              "id": "UgxPO2PgCV2bK8aLndJ4AaABAg",
-              "kind": "youtube#comment",
-              "snippet": {
-                "authorChannelId": {
-                  "value": "UCId04t8qjQyYprn1FCucJtw"
-                },
-                "authorChannelUrl": "http://www.youtube.com/channel/UCId04t8qjQyYprn1FCucJtw",
-                "authorDisplayName": "Nones Garcia",
-                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJzX5w25TK_q-Za7UU2QH1v42jSrtJmkmfdhJg=s48-c-k-c0xffffffff-no-rj-mo",
-                "publishedAt": "2020-03-19T01:32:30.000Z",
-                "textDisplay": "0:00 No Room in Frame \n4:08 Teardrop Windows\n9:18 Title and Registration \n15:55 Technicolor Girls\n19:44 Codes & Keys\n23:37 Passenger Seat\n27:47 When We Drive\n36:23 Me and Magdalena (Monkees Cover)\n41:35 Ceremony (New Order Cover)\n46:07 Such Great Heights",
-                "textOriginal": "0:00 No Room in Frame \n4:08 Teardrop Windows\n9:18 Title and Registration \n15:55 Technicolor Girls\n19:44 Codes & Keys\n23:37 Passenger Seat\n27:47 When We Drive\n36:23 Me and Magdalena (Monkees Cover)\n41:35 Ceremony (New Order Cover)\n46:07 Such Great Heights",
-                "updatedAt": "2020-03-19T01:32:30.000Z",
-                "videoId": "o0EpwT9fg1I",
-                "viewerRating": "none"
-              }
-            },
-            "videoId": "o0EpwT9fg1I"
-          }
-        }
-      ],
-      "kind": "youtube#commentThreadListResponse"
-    },
-    "Ei9xuVkbQuU": {
-      "items": [
-        {
-          "id": "UgwYJ-InesYsfLgNCZ14AaABAg",
-          "kind": "youtube#commentThread",
-          "snippet": {
-            "topLevelComment": {
-              "id": "UgwYJ-InesYsfLgNCZ14AaABAg",
-              "kind": "youtube#comment",
-              "snippet": {
-                "authorChannelId": {
-                  "value": "UCwlNNvXVfKMlifaAkg-GUiA"
-                },
-                "authorChannelUrl": "http://www.youtube.com/channel/UCwlNNvXVfKMlifaAkg-GUiA",
-                "authorDisplayName": "zulmatthews",
-                "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxKLt27q2fNA7eT_95mz84vAtFLjiCsaHyG5Q=s48-c-k-c0xffffffff-no-rj-mo",
-                "publishedAt": "2020-03-18T04:02:53.000Z",
-                "textDisplay": "0:19: We Will Become Silhouettes\n3:38: A Lack of Color\n7:46: Title Track\n12:22: Northern Lights\n18:30: Crooked Teeth\n22:34: Cath...\n28:39: Grapevine Fires\n33:54: Fake Plastic Trees\n40:01: California Zephyr\n44:06: The District Sleeps Alone Tonight",
-                "textOriginal": "0:19: We Will Become Silhouettes\n3:38: A Lack of Color\n7:46: Title Track\n12:22: Northern Lights\n18:30: Crooked Teeth\n22:34: Cath...\n28:39: Grapevine Fires\n33:54: Fake Plastic Trees\n40:01: California Zephyr\n44:06: The District Sleeps Alone Tonight",
-                "updatedAt": "2020-03-18T04:06:24.000Z",
-                "videoId": "Ei9xuVkbQuU",
-                "viewerRating": "none"
-              }
-            },
-            "videoId": "Ei9xuVkbQuU"
-          }
-        }
-      ],
-      "kind": "youtube#commentThreadListResponse"
-    }
   }
 }
