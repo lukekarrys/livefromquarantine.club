@@ -68,7 +68,7 @@ const parseVideo = (video, comments, parsers) => {
 
   if (!songs) {
     for (let i = 0; i < comments.length; i++) {
-      const comment = comments[i].topLevelComment.snippet.textDisplay
+      const comment = comments[i].snippet.topLevelComment.snippet.textDisplay
       // Get timestamps from top rated comments by finding the first one with
       // at least 3 timestamps
       if (isCommentMaybeSetlist(comment)) {
@@ -91,15 +91,10 @@ const parseVideo = (video, comments, parsers) => {
   }
 }
 
-module.exports = (videos, comments, parsers) => {
-  const data = videos.items.map((video) => {
-    const id = video.snippet.resourceId.videoId
-    return parseVideo(
-      video.snippet,
-      comments[id].items.map((c) => c.snippet),
-      parsers
-    )
-  })
+module.exports = (videos, parsers) => {
+  const data = videos.items.map((video) =>
+    parseVideo(video.snippet, video.comments.items, parsers)
+  )
   return callParser(parsers.data, data)
 }
 
