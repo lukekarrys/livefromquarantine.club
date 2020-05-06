@@ -4,6 +4,7 @@ const fs = require('fs').promises
 const path = require('path')
 const axios = require('axios')
 const prettier = require('prettier')
+const duration = require('iso8601-duration')
 const { isCommentMaybeSetlist } = require('../build/parse')
 const config = require('../config')
 
@@ -83,6 +84,11 @@ const normalizeData = (d) =>
         }
         if (key === 'updatedAt' || key === 'publishedAt') {
           return new Date(value).toJSON()
+        }
+        if (key === 'duration') {
+          // 0 length durations seem to change between seconds (0S) and days (0D)
+          // sometimes so in order to reduce data churn in diffs just store as seconds
+          return duration.toSeconds(duration.parse(value))
         }
         return value
       })
