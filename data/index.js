@@ -115,17 +115,19 @@ const getPaginatedVideos = async (id, key, pageToken, previousItems = []) => {
     )
   )
   const { items: videoItems } = videosDetailsResp.data
+  const findVideoDetails = (video) =>
+    videoItems.find((v) => v.id === video.snippet.resourceId.videoId)
 
   const filteredItems = items
-    .filter((video, index) => {
-      const videoDetails = videoItems[index]
+    .filter((video) => {
+      const videoDetails = findVideoDetails(video)
       if (videoDetails.liveStreamingDetails) {
-        return !!videoDetails.liveStreamingDetails.actualEndTime
+        return videoDetails.liveStreamingDetails.actualEndTime
       }
       return true
     })
-    .map((video, index) => {
-      const videoDetails = videoItems[index]
+    .map((video) => {
+      const videoDetails = findVideoDetails(video)
       detailParts.forEach((detailPart) => {
         Object.assign(video, {
           [detailPart]: videoDetails[detailPart],
