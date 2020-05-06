@@ -13,6 +13,11 @@ const { API_KEY } = process.env
 const apiUrl = `https://www.googleapis.com/youtube/v3`
 const hideKey = (str) => str.replace(API_KEY, 'X'.repeat(3)).replace(apiUrl, '')
 
+const get = (url) => {
+  console.log(`Fetching url: ${hideKey(url)}`)
+  return axios.get(url)
+}
+
 const commentUrl = (id, key) => {
   const url = new URL(`${apiUrl}/commentThreads`, apiUrl)
   url.searchParams.set('part', 'snippet')
@@ -97,13 +102,12 @@ const normalizeData = (d) =>
 
 const getPaginatedVideos = async (id, key, pageToken, previousItems = []) => {
   const url = playlistUrl(id, key, pageToken)
-  console.log(`Fetching url: ${hideKey(url)}`)
 
-  const resp = await axios.get(url)
+  const resp = await get(url)
   let { items, nextPageToken } = resp.data
 
   const detailParts = ['contentDetails']
-  const videosDetailsResp = await axios.get(
+  const videosDetailsResp = await get(
     videosUrl(
       items.map((v) => v.snippet.resourceId.videoId).join(','),
       detailParts,
@@ -152,10 +156,7 @@ const getVideosAndComments = async (artist, key) => {
   await Promise.all(
     videos.items.map(async (video) => {
       const url = commentUrl(video.snippet.resourceId.videoId, key)
-      console.log(`Fetching url: ${hideKey(url)}`)
-
-      video.comments = await axios
-        .get(url)
+      video.comments = await get(url)
         .then((resp) => {
           return Object.assign(resp.data, {
             items: resp.data.items
