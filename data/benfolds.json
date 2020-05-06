@@ -3,7 +3,7 @@
     "items": [
       {
         "contentDetails": {
-          "duration": "PT0S"
+          "duration": "P0D"
         },
         "id": "UExHNTA3Z3kyLUtwOFZqNjZqbnhuMUFBMFhGcjFMX1FYeS41MjE1MkI0OTQ2QzJGNzNG",
         "kind": "youtube#playlistItem",
@@ -79,7 +79,7 @@
       },
       {
         "contentDetails": {
-          "duration": "PT0S"
+          "duration": "P0D"
         },
         "id": "UExHNTA3Z3kyLUtwOFZqNjZqbnhuMUFBMFhGcjFMX1FYeS4wMTcyMDhGQUE4NTIzM0Y5",
         "kind": "youtube#playlistItem",
@@ -180,7 +180,7 @@
       },
       {
         "contentDetails": {
-          "duration": "PT0S"
+          "duration": "P0D"
         },
         "id": "UExHNTA3Z3kyLUtwOFZqNjZqbnhuMUFBMFhGcjFMX1FYeS4yODlGNEE0NkRGMEEzMEQy",
         "kind": "youtube#playlistItem",
@@ -256,7 +256,7 @@
       },
       {
         "contentDetails": {
-          "duration": "PT0S"
+          "duration": "P0D"
         },
         "id": "UExHNTA3Z3kyLUtwOFZqNjZqbnhuMUFBMFhGcjFMX1FYeS41NkI0NEY2RDEwNTU3Q0M2",
         "kind": "youtube#playlistItem",
