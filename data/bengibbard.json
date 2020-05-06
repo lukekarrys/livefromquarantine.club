@@ -1011,31 +1011,6 @@
         "comments": {
           "items": [
             {
-              "id": "UgzyR6a6B-Czl4pI5ZN4AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "UgzyR6a6B-Czl4pI5ZN4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "authorChannelId": {
-                      "value": "UCOtn115fCfFKIxG7_Quv9ZA"
-                    },
-                    "authorChannelUrl": "http://www.youtube.com/channel/UCOtn115fCfFKIxG7_Quv9ZA",
-                    "authorDisplayName": "Death Cab for Cutie",
-                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJye47VIG3zUXwFFqDmc2oBnsU47v8RYZCsjhg=s48-c-k-c0xffffffff-no-rj-mo",
-                    "publishedAt": "2020-03-23T05:02:12.000Z",
-                    "textDisplay": "Here is the setlist of all the covers Ben played today:\n\n0:48: “Isolation\" by John Lennon\n5:43: \"Silver Lining\" by Rilo Kiley\n10:05: “Thirteen” by Big Star\n14:11: “Waltz #2 (XO)” by Elliott Smith\n19:19: “Motion Sickness” by Phoebe Bridgers\n24:36: “If Not for You” by Bob Dylan\n33:52: “New Slang” by The Shins\n39:38: “Hysteria” by Def Leppard\n44:33: \"The Bones Are Their Money\" from Tim Robinson's show 'I Think You Should Leave' [ original here: http://youtu.be/Z3fTRk2yEgU ]\n46:39: “Do You Realize??” by The Flaming Lips\n\nSpotify playlist of these songs here: http://found.ee/BG-Mar22-Covers",
-                    "textOriginal": "Here is the setlist of all the covers Ben played today:\n\n0:48: “Isolation\" by John Lennon\n5:43: \"Silver Lining\" by Rilo Kiley\n10:05: “Thirteen” by Big Star\n14:11: “Waltz #2 (XO)” by Elliott Smith\n19:19: “Motion Sickness” by Phoebe Bridgers\n24:36: “If Not for You” by Bob Dylan\n33:52: “New Slang” by The Shins\n39:38: “Hysteria” by Def Leppard\n44:33: \"The Bones Are Their Money\" from Tim Robinson's show 'I Think You Should Leave' [ original here: http://youtu.be/Z3fTRk2yEgU ]\n46:39: “Do You Realize??” by The Flaming Lips\n\nSpotify playlist of these songs here: http://found.ee/BG-Mar22-Covers",
-                    "updatedAt": "2020-03-23T05:03:56.000Z",
-                    "videoId": "1eEcVCyKMb8",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "1eEcVCyKMb8"
-              }
-            },
-            {
               "id": "UgyA0JzCcn4gxF1ktmZ4AaABAg",
               "kind": "youtube#commentThread",
               "snippet": {
@@ -1053,6 +1028,31 @@
                     "textDisplay": "0:48: Isolation\n5:43: Silver Lining\n10:05: Thirteen \n14:11: Waltz #2 (XO)\n19:19: Motion Sickness\n24:36: If Not For You\n33:52: New Slang (When You Notice The Stripes)\n39:38: Hysteria\n44:33: The Bones Are The Skeletons’ Money\n46:39: Do You Realize?",
                     "textOriginal": "0:48: Isolation\n5:43: Silver Lining\n10:05: Thirteen \n14:11: Waltz #2 (XO)\n19:19: Motion Sickness\n24:36: If Not For You\n33:52: New Slang (When You Notice The Stripes)\n39:38: Hysteria\n44:33: The Bones Are The Skeletons’ Money\n46:39: Do You Realize?",
                     "updatedAt": "2020-03-23T00:37:38.000Z",
+                    "videoId": "1eEcVCyKMb8",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "1eEcVCyKMb8"
+              }
+            },
+            {
+              "id": "UgzyR6a6B-Czl4pI5ZN4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgzyR6a6B-Czl4pI5ZN4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCOtn115fCfFKIxG7_Quv9ZA"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCOtn115fCfFKIxG7_Quv9ZA",
+                    "authorDisplayName": "Death Cab for Cutie",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJye47VIG3zUXwFFqDmc2oBnsU47v8RYZCsjhg=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-03-23T05:02:12.000Z",
+                    "textDisplay": "Here is the setlist of all the covers Ben played today:\n\n0:48: “Isolation\" by John Lennon\n5:43: \"Silver Lining\" by Rilo Kiley\n10:05: “Thirteen” by Big Star\n14:11: “Waltz #2 (XO)” by Elliott Smith\n19:19: “Motion Sickness” by Phoebe Bridgers\n24:36: “If Not for You” by Bob Dylan\n33:52: “New Slang” by The Shins\n39:38: “Hysteria” by Def Leppard\n44:33: \"The Bones Are Their Money\" from Tim Robinson's show 'I Think You Should Leave' [ original here: http://youtu.be/Z3fTRk2yEgU ]\n46:39: “Do You Realize??” by The Flaming Lips\n\nSpotify playlist of these songs here: http://found.ee/BG-Mar22-Covers",
+                    "textOriginal": "Here is the setlist of all the covers Ben played today:\n\n0:48: “Isolation\" by John Lennon\n5:43: \"Silver Lining\" by Rilo Kiley\n10:05: “Thirteen” by Big Star\n14:11: “Waltz #2 (XO)” by Elliott Smith\n19:19: “Motion Sickness” by Phoebe Bridgers\n24:36: “If Not for You” by Bob Dylan\n33:52: “New Slang” by The Shins\n39:38: “Hysteria” by Def Leppard\n44:33: \"The Bones Are Their Money\" from Tim Robinson's show 'I Think You Should Leave' [ original here: http://youtu.be/Z3fTRk2yEgU ]\n46:39: “Do You Realize??” by The Flaming Lips\n\nSpotify playlist of these songs here: http://found.ee/BG-Mar22-Covers",
+                    "updatedAt": "2020-03-23T05:03:56.000Z",
                     "videoId": "1eEcVCyKMb8",
                     "viewerRating": "none"
                   }
