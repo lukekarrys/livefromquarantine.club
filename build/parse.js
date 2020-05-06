@@ -13,6 +13,15 @@ const isCommentMaybeSetlist = (commentText) => {
   return getLinesWithTimestamp(commentText).length >= 3
 }
 
+const parseSeconds = (str) => {
+  const seconds = str
+    .split(':')
+    .reverse()
+    .map((v, i) => parseInt(v, 10) * Math.pow(60, i))
+    .reduce((sum, v) => sum + v, 0)
+  return seconds
+}
+
 const callParser = (p, v) => (typeof p === 'function' ? p(v) : v)
 
 const getSongsFromText = (text, parsers) => {
@@ -40,8 +49,8 @@ const getSongsFromText = (text, parsers) => {
             .trim()
         ),
         time: {
-          start,
-          end,
+          start: parseSeconds(start),
+          end: end && parseSeconds(end),
         },
       }
     })
@@ -50,11 +59,15 @@ const getSongsFromText = (text, parsers) => {
   return songs.length ? songs : null
 }
 
-const parseVideo = (video, comments, parsers) => {
+const parseVideo = (video, parsers) => {
   const {
-    title,
-    description,
-    resourceId: { videoId },
+    snippet: {
+      title,
+      description,
+      resourceId: { videoId },
+    },
+    comments: { items: comments },
+    contentDetails: { duration },
   } = video
 
   let songs = null
@@ -87,16 +100,14 @@ const parseVideo = (video, comments, parsers) => {
   return {
     title: callParser(parsers.title, title),
     id: videoId,
+    duration,
     songs,
   }
 }
 
-module.exports = (videos, parsers) => {
-  const data = videos.items.map((video) =>
-    parseVideo(video.snippet, video.comments.items, parsers)
-  )
+module.exports.main = (videos, parsers) => {
+  const data = videos.items.map((video) => parseVideo(video, parsers))
   return callParser(parsers.data, data)
 }
 
 module.exports.isCommentMaybeSetlist = isCommentMaybeSetlist
-module.exports.timestamp = TIMESTAMP

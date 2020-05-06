@@ -5,13 +5,17 @@ const fs = require('fs').promises
 const path = require('path')
 const prettier = require('prettier')
 const config = require('../config')
-const mainParser = require('./parse')
-const { timestamp } = mainParser
+const { main: mainParser } = require('./parse')
 
 const validate = (data) => {
   data.forEach((v) => {
     assert.ok(v.title, `Every video has a title`)
     assert.ok(v.id, `Has an id - ${v.title}`)
+    assert.equal(
+      typeof v.duration,
+      'number',
+      `Duration is a number - ${v.title}`
+    )
     assert.ok(v.songs, `Has songs - ${v.title}`)
     v.songs.forEach((s) => {
       assert.ok(s.name, `Every song has a name - ${v.title}`)
@@ -20,7 +24,7 @@ const validate = (data) => {
         `Every song has a start time - ${v.title} / ${s.name}`
       )
       assert.ok(
-        s.time.start.match(timestamp),
+        s.time.start > 0,
         `Every song has a valid timestamp - ${v.title} / ${s.name}`
       )
     })
@@ -57,6 +61,13 @@ const writeParsed = async (parser, data) => {
     publicPath(`${id}.js`),
     prettier.format(`window.__DATA = ${JSON.stringify(parsedData, null, 2)}`, {
       parser: 'babel',
+      ...prettierOptions,
+    })
+  )
+  await fs.writeFile(
+    publicPath(`${id}.json`),
+    prettier.format(JSON.stringify(parsedData, null, 2), {
+      parser: 'json',
       ...prettierOptions,
     })
   )
