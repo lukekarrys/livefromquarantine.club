@@ -14,7 +14,6 @@ const apiUrl = `https://www.googleapis.com/youtube/v3`
 const hideKey = (str) => str.replace(API_KEY, 'X'.repeat(3)).replace(apiUrl, '')
 
 const get = (url) => {
-  console.log(`Fetching url: ${hideKey(url)}`)
   return axios.get(url)
 }
 
