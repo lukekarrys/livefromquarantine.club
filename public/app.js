@@ -1,14 +1,5 @@
 /* global YT */
 
-const parseSeconds = (str) => {
-  const seconds = str
-    .split(':')
-    .reverse()
-    .map((v, i) => parseInt(v, 10) * Math.pow(60, i))
-    .reduce((sum, v) => sum + v, 0)
-  return seconds
-}
-
 const $el = (t, text = '', props = {}) => {
   const el = document.createElement(t)
   el.innerText = text
@@ -31,7 +22,7 @@ const getTitle = ({ video, song }) =>
   `${video.title} - ${(song && song.name) || 'All'}`
 
 const playId = ({ video, song }) =>
-  `b-${video.id}${song ? `-${parseSeconds(song.time.start)}` : ''}`
+  `b-${video.id}${song ? `-${song.time.start}` : ''}`
 
 const nextItem = (arr, item) =>
   item ? arr[arr.findIndex((i) => i === item) + 1] : undefined
@@ -147,12 +138,12 @@ const play = ({ video, song }) => {
 
   if (song) {
     if (song.time.start) {
-      v.startSeconds = parseSeconds(song.time.start)
+      v.startSeconds = song.time.start
     }
     const next = nextItem(video.songs, song)
     const end = song.time.end || next ? next.time.start : null
     if (end) {
-      v.endSeconds = parseSeconds(end)
+      v.endSeconds = end
     }
   }
 
@@ -249,7 +240,7 @@ function onPlayerReady(event) {
         const [videoId, songStart] = songId.split('-')
         const video = DATA.find((v) => v.id === videoId)
         const song = (video.songs || []).find(
-          (s) => parseSeconds(s.time.start) === parseInt(songStart)
+          (s) => s.time.start === parseInt(songStart)
         )
         return video && song ? { video, song } : null
       })

@@ -3,6 +3,56 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 0
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS41OURENDc2NEM1MDI5Mjky",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\nAJJ - A Big Day for Grimley 0:25\nThe Magnetic Fields - All My Little Words 3:48\nAJJ - Brave as a Noun 6:58\nAJJ - Skipping Stone 8:15\nSilver Jews - Candy Jail 11:00\nAJJ - White Face, Black Eyes 13:50\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-05-06T18:50:43.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "OGqcyBysbbY"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/OGqcyBysbbY/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/OGqcyBysbbY/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/OGqcyBysbbY/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/OGqcyBysbbY/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/OGqcyBysbbY/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - May 5"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1310
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS42QzdBMzlBQzQzRjQ0QkQy",
