@@ -373,6 +373,10 @@
   function onPlayerStateChange(event) {
     if (event.data === YT.PlayerState.ENDED && isPlaying) {
       playNextInQueue()
+    } else if (event.data === YT.PlayerState.PAUSED) {
+      pause()
+    } else if (event.data === YT.PlayerState.PLAYING) {
+      play()
     }
   }
 
