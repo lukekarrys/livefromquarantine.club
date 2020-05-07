@@ -40,9 +40,14 @@ button {
   cursor: pointer;
   margin: 0;
 }
-button.is-playing {
+button.active,
+button:active {
   background: #000;
   color: #fff;
+}
+button.active svg,
+button:active svg {
+  fill: #fff;
 }
 h2 {
   margin: 0 10px 0 0;
@@ -90,6 +95,22 @@ p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  display: flex;
+}
+#title button {
+  margin-top: 2px;
+  height: 18px;
+  margin-right: 2px;
+}
+#title button svg {
+  height: 18px;
+}
+#pause-icon,
+.playing #play-icon {
+  display: none;
+}
+.playing #pause-icon {
+  display: inline-block;
 }
 #songs {
   max-height: calc(100vh - 390px - 22px);
@@ -129,16 +150,19 @@ p {
   height: calc(100vh - 20px);
   overflow: scroll;
 }
-#upnext-toggle {
+#upnext-small {
   display: none;
   margin-left: auto;
   height: 20px;
 }
-#upnext-header {
-  display: block;
+#upnext-big {
+  display: flex;
   margin-left: auto;
   color: #fff;
   height: 20px;
+}
+.reset-button {
+  margin-left: 2px;
 }
 @media screen and (max-width: 740px) {
   #player,
@@ -164,11 +188,12 @@ p {
   #upnext {
     display: none;
   }
-  #upnext-toggle {
-    display: block;
+  #upnext-small {
+    display: flex;
     margin-bottom: 2px;
+    justify-content: flex-end;
   }
-  #upnext-header {
+  #upnext-big {
     display: none;
   }
   .drawer-open #upnext {

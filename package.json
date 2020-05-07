@@ -44,7 +44,7 @@
     "url": "git+https://github.com/lukekarrys/livefromquarantine.club.git"
   },
   "scripts": {
-    "build": "terser -c -m -- public/app.js > public/app.min.js && cssmin public/app.css > public/app.min.css && node build/build.js",
+    "build": "terser -c drop_console -m -- public/app.js > public/app.min.js && cssmin public/app.css > public/app.min.css && node build/build.js",
     "data": "node data/index.js",
     "eslint": "eslint . --fix",
     "lint": "npm run prettier && npm run eslint",

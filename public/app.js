@@ -36,15 +36,22 @@
   }
 
   let player
-  let playing = false
   let initial = true
+  let isPlaying = false
+  let isShuffled = false
   let nowPlaying = null
   let upNext = []
+  let shuffleUpNext = []
   const DATA = window.__DATA
+  const FLAT_DATA = DATA.flatMap((video) =>
+    (video.songs || []).map((song) => ({ video, song }))
+  )
+  const $shuffleButton = $('#shuffle')
   const $songs = $('#songs')
   const $upnext = $('#upnext')
   const $upnextText = $$('.upnext-text')
-  const isPlayingClass = 'is-playing'
+  const $playPause = $('#play-pause')
+  const activeClass = 'active'
   const playButtonClass = 'play-button'
   const buttonPrefix = 'b-'
 
@@ -65,22 +72,11 @@
     setUpNextText()
   }
 
-  const addShuffleToQueue = () => {
-    const shuffledSongs = shuffleArray(
-      DATA.reduce((acc, video) => {
-        ;(video.songs || []).forEach((song) => {
-          acc.push({ video, song })
-        })
-        return acc
-      }, [])
-    )
-    shuffledSongs.forEach((item, index) => {
-      if (index === 0) {
-        playOrAddToQueue(item)
-      } else {
-        addToQueue(item)
-      }
-    })
+  const setShuffle = () => {
+    isShuffled = !isShuffled
+    $shuffleButton.classList[isShuffled ? 'add' : 'remove'](activeClass)
+    shuffleUpNext = isShuffled ? shuffleArray(FLAT_DATA) : []
+    if (isShuffled && !isPlaying) playNextInQueue()
   }
 
   const moveToFrontOfQueue = (item) => {
@@ -95,11 +91,25 @@
     setUpNextText()
   }
 
+  const removeFromShuffleQueue = (item) => {
+    const index = shuffleUpNext.findIndex((i) => i === item)
+    shuffleUpNext.splice(index, 1)
+    // If removing the last song from the shuffle queue but still in shuffle mode
+    // set it up again. FROM THE TOP!
+    if (isShuffled && !shuffleUpNext.length) {
+      shuffleUpNext = shuffleArray(FLAT_DATA)
+    }
+  }
+
   const playNextInQueue = () => {
     const next = upNext[0]
+    const shuffleNext = shuffleUpNext[0]
     if (next) {
       removeFromQueue(next)
       play(next)
+    } else if (shuffleNext) {
+      removeFromShuffleQueue(shuffleNext)
+      play(shuffleNext)
     } else if (nowPlaying) {
       const { video, song } = nowPlaying
       const next = nextItem(video.songs, song)
@@ -107,9 +117,12 @@
         play({ video, song: next })
       } else {
         const nextVideo = nextItem(DATA, video)
+        // If we are currently playing a whole video instead of an individual
+        // song, then go to the next whole video
         if (nextVideo) {
           play({ video: nextVideo, song: song && nextVideo.songs[0] })
         } else {
+          // wrap around back to the beginning, NEVER STOP NEVER STOPPING
           play({ video: DATA[0], song: song && DATA[0].songs[0] })
         }
       }
@@ -156,25 +169,42 @@
 
     nowPlaying = { video, song }
     $('#nowplaying').innerText = getTitle({ video, song })
-    $$(`.${playButtonClass}`).forEach((n) => n.classList.remove(isPlayingClass))
+    $$(`.${playButtonClass}`).forEach((n) => n.classList.remove(activeClass))
 
     const buttonId = `#${playId({ video, song })}`
-    $(buttonId).classList.add(isPlayingClass)
+    $(buttonId).classList.add(activeClass)
     $(buttonId).parentNode.parentNode.scrollIntoView()
 
     // debug queue
     // v.endSeconds = v.startSeconds + 10
 
     console.log('loadVideoById', v)
+    isPlaying = true
+    $playPause.classList.add('playing')
     player.loadVideoById(v)
   }
 
+  const togglePlayPause = () => {
+    isPlaying = !isPlaying
+    if (isPlaying) {
+      $playPause.classList.add('playing')
+      if (!nowPlaying) {
+        play(FLAT_DATA[0])
+      } else {
+        player.playVideo()
+      }
+    } else {
+      $playPause.classList.remove('playing')
+      player.pauseVideo()
+    }
+  }
+
   const playOrAddToQueue = ({ video, song }) => {
-    console.log('play or up next', playing, upNext.length, !!player)
+    console.log('play or up next', isPlaying, upNext.length, !!player)
 
     if (!player) return
 
-    if (!playing && upNext.length === 0) {
+    if (!isPlaying && upNext.length === 0) {
       play({ video, song })
     } else {
       addToQueue({ video, song })
@@ -267,26 +297,26 @@
   }
 
   function onPlayerStateChange(event) {
-    if (event.data == YT.PlayerState.PLAYING) {
-      console.log('playing', event)
-      playing = true
-    } else if (event.data === YT.PlayerState.ENDED && playing) {
-      console.log('ended', event)
-      playing = false
+    if (event.data === YT.PlayerState.ENDED && isPlaying) {
       playNextInQueue()
-    } else if (event.data === YT.PlayerState.PAUSED) {
-      console.log('paused', event)
-      playing = false
     }
   }
 
-  $('#shuffle').addEventListener('click', addShuffleToQueue)
+  $shuffleButton.addEventListener('click', setShuffle)
   $('#next').addEventListener('click', playNextInQueue)
-  $('#reset').addEventListener('click', resetQueue)
+  $playPause.addEventListener('click', togglePlayPause)
+  $$('.reset-button').forEach((n) => n.addEventListener('click', resetQueue))
   $('#upnext-toggle').addEventListener('click', () => {
     document.body.classList.toggle('drawer-open')
   })
   $('#share').addEventListener('click', () => {
     window.prompt('This url has your current queue', getShareUrl())
+  })
+  document.addEventListener('keydown', (e) => {
+    if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return
+    else if (e.key === 'ArrowRight') playNextInQueue()
+    else if (e.key === ' ') togglePlayPause()
+    else if (e.key === 's') setShuffle()
+    else if (e.key === 'r') resetQueue()
   })
 })()
