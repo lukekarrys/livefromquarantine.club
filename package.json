@@ -12,10 +12,13 @@
     "iso8601-duration": "^1.2.0"
   },
   "devDependencies": {
+    "cssmin": "^0.4.3",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",
-    "prettier": "^2.0.5"
+    "html-minifier": "^4.0.0",
+    "prettier": "^2.0.5",
+    "terser": "^4.6.13"
   },
   "eslintConfig": {
     "extends": [
@@ -41,7 +44,7 @@
     "url": "git+https://github.com/lukekarrys/livefromquarantine.club.git"
   },
   "scripts": {
-    "build": "node build/build.js",
+    "build": "terser -c -m -- public/app.js > public/app.min.js && cssmin public/app.css > public/app.min.css && node build/build.js",
     "data": "node data/index.js",
     "eslint": "eslint . --fix",
     "lint": "npm run prettier && npm run eslint",

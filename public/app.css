@@ -6,8 +6,17 @@ body {
     Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   background: #000;
 }
+#actions {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+}
 #contact,
-#contact:visited {
+#contact:visited,
+#share {
   border: 1px solid #000;
   background: #000;
   color: white;
@@ -16,12 +25,10 @@ body {
   border-radius: 4px;
   cursor: pointer;
   margin: 0;
-  position: absolute;
-  bottom: 2px;
-  right: 2px;
-  z-index: 200;
+  margin-top: 5px;
 }
-#contact svg {
+#contact svg,
+#share svg {
   width: 20px;
   fill: #fff;
 }
