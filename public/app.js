@@ -36,7 +36,6 @@
   }
 
   let player
-  let initial = true
   let isPlaying = false
   let isShuffled = false
   let nowPlaying = null
@@ -126,6 +125,8 @@
           play({ video: DATA[0], song: song && DATA[0].songs[0] })
         }
       }
+    } else {
+      play(FLAT_DATA[0])
     }
   }
 
@@ -147,7 +148,7 @@
   }
 
   const play = ({ video, song }) => {
-    if (initial) {
+    if (!nowPlaying) {
       $('#player').style.display = 'block'
       $('#player-mock').style.display = 'none'
     }
@@ -189,7 +190,7 @@
     if (isPlaying) {
       $playPause.classList.add('playing')
       if (!nowPlaying) {
-        play(FLAT_DATA[0])
+        playNextInQueue()
       } else {
         player.playVideo()
       }
