@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 body {
   margin: 0;
   padding: 0;
@@ -19,7 +27,7 @@ body {
 #share {
   border: 1px solid #000;
   background: #000;
-  color: white;
+  color: #fff;
   text-decoration: none;
   padding: 0 4px;
   border-radius: 4px;
@@ -35,7 +43,7 @@ body {
 button {
   border: 1px solid #000;
   padding: 2px 4px;
-  background: white;
+  background: #fff;
   border-radius: 4px;
   cursor: pointer;
   margin: 0;
@@ -92,10 +100,8 @@ p {
   margin: 0;
   height: 22px;
   border-bottom: 1px solid #000;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   display: flex;
+  padding-right: 0;
 }
 #title button {
   margin-top: 2px;
@@ -104,6 +110,27 @@ p {
 }
 #title button svg {
   height: 18px;
+}
+#nowplaying {
+  flex: 1;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#nowplaying > * {
+  position: relative;
+}
+#nowplaying-text {
+  padding-left: 2px;
+}
+#progress {
+  background: #ccc;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 #repeat {
   display: flex;

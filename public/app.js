@@ -41,6 +41,7 @@
   let isRepeat = null
   let isQueueMode = true // TODO: figure out good UX to toggle this for skipping between songs
   let nowPlaying = null
+  let progressInterval = null
   let upNext = []
   let shuffleUpNext = []
   const DATA = window.__DATA
@@ -50,6 +51,7 @@
   const $shuffleButton = $('#shuffle')
   const $repeatButton = $('#repeat')
   const $repeatText = $('#repeat-type')
+  const $progress = $('#progress')
   const $songs = $('#songs')
   const $upnext = $('#upnext')
   const $upnextText = $$('.upnext-text')
@@ -194,7 +196,7 @@
     }
 
     nowPlaying = { video, song }
-    $('#nowplaying').innerText = getTitle({ video, song })
+    $('#nowplaying-text').innerText = getTitle({ video, song })
     $$(`.${playButtonClass}`).forEach((n) => n.classList.remove(activeClass))
 
     const buttonId = `#${playId({ video, song })}`
@@ -213,8 +215,32 @@
 
     console.log('loadVideoById', v)
     isPlaying = true
+    $progress.style.width = '0'
+    setProgressInterval()
     $playPause.classList.add('playing')
     player.loadVideoById(v)
+  }
+
+  const setProgressInterval = () => {
+    const { video, song } = nowPlaying
+    let start = 0
+    let end = player.getDuration()
+    if (song && song.time.start) {
+      start = song.time.start
+      const next = nextItem(video.songs, song)
+      const songEnd = song.time.end || next ? next.time.start : null
+      if (songEnd) {
+        end = songEnd
+      }
+    }
+
+    clearInterval(progressInterval)
+    progressInterval = setInterval(() => {
+      const current = player.getCurrentTime()
+      if (!current) return
+      const p = ((current - start) / (end - start)) * 100
+      $progress.style.width = `${p}%`
+    }, 1000 / 60)
   }
 
   const togglePlayPause = () => {
@@ -225,10 +251,12 @@
       if (!nowPlaying) {
         playNextInQueue()
       } else {
+        setProgressInterval()
         player.playVideo()
       }
     } else {
       $playPause.classList.remove('playing')
+      clearInterval(progressInterval)
       player.pauseVideo()
     }
   }
