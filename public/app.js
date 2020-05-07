@@ -21,9 +21,6 @@
   const getTitle = ({ video, song }) =>
     `${video.title} - ${(song && song.name) || 'All'}`
 
-  const playId = ({ video, song }) =>
-    `b-${video.id}${song ? `-${song.time.start}` : ''}`
-
   const nextItem = (arr, item) =>
     item ? arr[arr.findIndex((i) => i === item) + 1] : undefined
 
@@ -47,11 +44,25 @@
   const $songs = $('#songs')
   const $upnext = $('#upnext')
   const $upnextText = $$('.upnext-text')
+  const isPlayingClass = 'is-playing'
+  const playButtonClass = 'play-button'
+  const buttonPrefix = 'b-'
+
+  const playId = ({ video, song }) =>
+    `${buttonPrefix}${video.id}${
+      song ? `-${video.songs.findIndex((s) => s === song)}` : ''
+    }`
+
+  const setUpNextText = () =>
+    $upnextText.forEach(
+      (n) =>
+        (n.textContent = `Up next${upNext.length ? ` (${upNext.length})` : ''}`)
+    )
 
   const resetQueue = () => {
     upNext = []
     $upnext.innerHTML = ''
-    $upnextText.forEach((n) => (n.textContent = `Up next`))
+    setUpNextText()
   }
 
   const addShuffleToQueue = () => {
@@ -81,7 +92,7 @@
     const index = upNext.findIndex((i) => i === item)
     upNext.splice(index, 1)
     removeNode($(`#${item.id}`))
-    $upnextText.forEach((n) => (n.textContent = `Up next (${upNext.length})`))
+    setUpNextText()
   }
 
   const playNextInQueue = () => {
@@ -119,8 +130,7 @@
       upNext.unshift(item)
       $upnext.prepend(button)
     }
-    $upnextText.forEach((n) => (n.textContent = `Up next (${upNext.length})`))
-    // console.log(item, upNext.length)
+    setUpNextText()
   }
 
   const play = ({ video, song }) => {
@@ -146,10 +156,10 @@
 
     nowPlaying = { video, song }
     $('#nowplaying').innerText = getTitle({ video, song })
-    $$('.play-button').forEach((n) => n.classList.remove('is-playing'))
+    $$(`.${playButtonClass}`).forEach((n) => n.classList.remove(isPlayingClass))
 
     const buttonId = `#${playId({ video, song })}`
-    $(buttonId).classList.add('is-playing')
+    $(buttonId).classList.add(isPlayingClass)
     $(buttonId).parentNode.parentNode.scrollIntoView()
 
     // debug queue
@@ -184,7 +194,7 @@
     $buttonHolder.appendChild(
       $el('button', '+PLAY ALL+', {
         id: playId({ video }),
-        class: 'play-button',
+        class: playButtonClass,
         onclick: () => playOrAddToQueue({ video }),
       })
     )
@@ -192,7 +202,7 @@
       $buttonHolder.appendChild(
         $el('button', song.name, {
           id: playId({ video, song }),
-          class: 'play-button',
+          class: playButtonClass,
           onclick: () =>
             playOrAddToQueue({
               video,
@@ -231,19 +241,29 @@
     const hash = window.location.hash.slice(1)
     if (hash) {
       const [playSong, ...queueSongs] = hash.split(',')
-      $(`#b-${playSong}`).click()
+      $(`#${buttonPrefix}${playSong}`).click()
       queueSongs
         .map((songId) => {
-          const [videoId, songStart] = songId.split('-')
+          const [videoId, songIndex] = songId.split('-')
           const video = DATA.find((v) => v.id === videoId)
-          const song = (video.songs || []).find(
-            (s) => s.time.start === parseInt(songStart)
-          )
-          return video && song ? { video, song } : null
+          const song = (video.songs || [])[songIndex]
+          return video ? { video, song } : null
         })
         .filter(Boolean)
         .forEach((v) => addToQueue(v))
     }
+  }
+
+  const getShareUrl = () => {
+    return (
+      window.location.origin +
+      window.location.pathname +
+      '#' +
+      [nowPlaying, ...upNext]
+        .filter(Boolean)
+        .map((v) => playId(v).replace(buttonPrefix, ''))
+        .join(',')
+    )
   }
 
   function onPlayerStateChange(event) {
@@ -265,5 +285,8 @@
   $('#reset').addEventListener('click', resetQueue)
   $('#upnext-toggle').addEventListener('click', () => {
     document.body.classList.toggle('drawer-open')
+  })
+  $('#share').addEventListener('click', () => {
+    window.prompt('This url has your current queue', getShareUrl())
   })
 })()
