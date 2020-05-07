@@ -4,8 +4,11 @@ const assert = require('assert')
 const fs = require('fs').promises
 const path = require('path')
 const prettier = require('prettier')
+const { minify: htmlMinify } = require('html-minifier')
 const config = require('../config')
 const { main: mainParser } = require('./parse')
+
+const PRODUCTION = process.env.NODE_ENV === 'production'
 
 const validate = (data) => {
   data.forEach((v) => {
@@ -43,6 +46,9 @@ const writeParsed = async (parser, data) => {
   Object.entries(parser.meta).forEach(([key, value]) => {
     index = index.replace(new RegExp(`{{${key}}}`, 'g'), value)
     manifest = manifest.replace(new RegExp(`{{${key}}}`, 'g'), value)
+    if (PRODUCTION) {
+      index = index.replace(/\bapp\.(css|js)/g, 'app.min.$1')
+    }
   })
 
   const parsedData = mainParser(data.videos, parser.parsers).filter(
@@ -54,22 +60,32 @@ const writeParsed = async (parser, data) => {
 
   validate(parsedData)
 
-  await fs.writeFile(publicPath(`${id}.html`), index)
+  await fs.writeFile(
+    publicPath(`${id}.html`),
+    PRODUCTION ? htmlMinify(index, { collapseWhitespace: true }) : index
+  )
   await fs.writeFile(publicPath(`manifest-${id}.json`), manifest)
   const prettierOptions = await prettier.resolveConfig(__dirname)
   await fs.writeFile(
     publicPath(`${id}.js`),
-    prettier.format(`window.__DATA = ${JSON.stringify(parsedData, null, 2)}`, {
-      parser: 'babel',
-      ...prettierOptions,
-    })
+    PRODUCTION
+      ? `window.__DATA=${JSON.stringify(parsedData)}`
+      : prettier.format(
+          `window.__DATA = ${JSON.stringify(parsedData, null, 2)}`,
+          {
+            parser: 'babel',
+            ...prettierOptions,
+          }
+        )
   )
   await fs.writeFile(
     publicPath(`${id}.json`),
-    prettier.format(JSON.stringify(parsedData, null, 2), {
-      parser: 'json',
-      ...prettierOptions,
-    })
+    PRODUCTION
+      ? JSON.stringify(parsedData)
+      : prettier.format(JSON.stringify(parsedData, null, 2), {
+          parser: 'json',
+          ...prettierOptions,
+        })
   )
 }
 
