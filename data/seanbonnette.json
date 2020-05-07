@@ -3,6 +3,56 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 2406
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4wRjhFM0MxMTU1MEUzQ0VB",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\nTemple Grandin 0:48\nChildren of God 2:55\nDo, Re, Me 6:23\nCoffin Dance 10:07\nGetting Naked, Playing with Guns 13:30\nI Wanna Rock Out In My Dreams 16:25\nKokopelli Face Tattoo 19:32\nBest Friend 23:00\nLinda Ronstadt 25:04\nDeathlessness 28:40\nTemple Grandin Too 33:10\nAngel of Death 36:50\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-05-07T07:40:31.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "QgI8n9Nm8Xg"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/QgI8n9Nm8Xg/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/QgI8n9Nm8Xg/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/QgI8n9Nm8Xg/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/QgI8n9Nm8Xg/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/QgI8n9Nm8Xg/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - May 6"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1052
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS41OURENDc2NEM1MDI5Mjky",
