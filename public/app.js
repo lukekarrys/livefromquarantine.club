@@ -38,6 +38,8 @@
   let player
   let isPlaying = false
   let isShuffled = false
+  let isRepeat = null
+  let isQueueMode = true // TODO: figure out good UX to toggle this for skipping between songs
   let nowPlaying = null
   let upNext = []
   let shuffleUpNext = []
@@ -46,6 +48,8 @@
     (video.songs || []).map((song) => ({ video, song }))
   )
   const $shuffleButton = $('#shuffle')
+  const $repeatButton = $('#repeat')
+  const $repeatText = $('#repeat-type')
   const $songs = $('#songs')
   const $upnext = $('#upnext')
   const $upnextText = $$('.upnext-text')
@@ -78,6 +82,16 @@
     if (isShuffled && !isPlaying) playNextInQueue()
   }
 
+  const setRepeat = () => {
+    const repeatTypes = [null, 'REPEAT_SONG', 'REPEAT_VIDEO']
+    const repeatLabels = ['', 'song', 'video']
+    const current = repeatTypes.findIndex((v) => v === isRepeat)
+    const nextIndex = current + 1 >= repeatTypes.length ? 0 : current + 1
+    isRepeat = repeatTypes[nextIndex]
+    $repeatText.innerText = repeatLabels[nextIndex]
+    $repeatButton.classList.toggle('active', nextIndex > 0)
+  }
+
   const moveToFrontOfQueue = (item) => {
     removeFromQueue(item)
     addToQueue({ video: item.video, song: item.song }, false)
@@ -103,7 +117,19 @@
   const playNextInQueue = () => {
     const next = upNext[0]
     const shuffleNext = shuffleUpNext[0]
-    if (next) {
+    if (isRepeat && nowPlaying) {
+      const { video, song } = nowPlaying
+      if (isRepeat === 'REPEAT_SONG') {
+        play({ video, song })
+      } else if (isRepeat === 'REPEAT_VIDEO') {
+        const next = nextItem(video.songs, song)
+        if (next) {
+          play({ video, song: next })
+        } else {
+          play({ video, song: song && video.songs[0] })
+        }
+      }
+    } else if (next) {
       removeFromQueue(next)
       play(next)
     } else if (shuffleNext) {
@@ -112,18 +138,16 @@
     } else if (nowPlaying) {
       const { video, song } = nowPlaying
       const next = nextItem(video.songs, song)
+      const nextVideo = nextItem(DATA, video)
       if (next) {
         play({ video, song: next })
-      } else {
-        const nextVideo = nextItem(DATA, video)
+      } else if (nextVideo) {
         // If we are currently playing a whole video instead of an individual
         // song, then go to the next whole video
-        if (nextVideo) {
-          play({ video: nextVideo, song: song && nextVideo.songs[0] })
-        } else {
-          // wrap around back to the beginning, NEVER STOP NEVER STOPPING
-          play({ video: DATA[0], song: song && DATA[0].songs[0] })
-        }
+        play({ video: nextVideo, song: song && nextVideo.songs[0] })
+      } else {
+        // wrap around back to the beginning, NEVER STOP NEVER STOPPING
+        play({ video: DATA[0], song: song && DATA[0].songs[0] })
       }
     } else {
       play(FLAT_DATA[0])
@@ -148,6 +172,7 @@
   }
 
   const play = ({ video, song }) => {
+    if (!player) return
     if (!nowPlaying) {
       $('#player').style.display = 'block'
       $('#player-mock').style.display = 'none'
@@ -173,8 +198,15 @@
     $$(`.${playButtonClass}`).forEach((n) => n.classList.remove(activeClass))
 
     const buttonId = `#${playId({ video, song })}`
-    $(buttonId).classList.add(activeClass)
-    $(buttonId).parentNode.parentNode.scrollIntoView()
+    const $button = $(buttonId)
+    $button.classList.add(activeClass)
+
+    const buttonTop = $button.offsetTop - $songs.offsetTop - $songs.scrollTop
+    const buttonBottom = $button.getBoundingClientRect().height + buttonTop
+    const songsHeight = $songs.getBoundingClientRect().height
+    if (buttonTop < 0 || buttonBottom > songsHeight) {
+      $button.parentNode.parentNode.scrollIntoView()
+    }
 
     // debug queue
     // v.endSeconds = v.startSeconds + 10
@@ -186,6 +218,7 @@
   }
 
   const togglePlayPause = () => {
+    if (!player) return
     isPlaying = !isPlaying
     if (isPlaying) {
       $playPause.classList.add('playing')
@@ -201,11 +234,12 @@
   }
 
   const playOrAddToQueue = ({ video, song }) => {
-    console.log('play or up next', isPlaying, upNext.length, !!player)
-
-    if (!player) return
-
-    if (!isPlaying && upNext.length === 0) {
+    console.log('play or up next', {
+      isPlaying,
+      length: upNext.length,
+      isQueueMode,
+    })
+    if ((!isPlaying && upNext.length === 0) || !isQueueMode) {
       play({ video, song })
     } else {
       addToQueue({ video, song })
@@ -226,7 +260,7 @@
       $el('button', '+PLAY ALL+', {
         id: playId({ video }),
         class: playButtonClass,
-        onclick: () => playOrAddToQueue({ video }),
+        onclick: () => playOrAddToQueue({ video }, false),
       })
     )
     ;(video.songs || []).forEach((song) => {
@@ -235,10 +269,13 @@
           id: playId({ video, song }),
           class: playButtonClass,
           onclick: () =>
-            playOrAddToQueue({
-              video,
-              song,
-            }),
+            playOrAddToQueue(
+              {
+                video,
+                song,
+              },
+              false
+            ),
         })
       )
     })
@@ -304,6 +341,7 @@
   }
 
   $shuffleButton.addEventListener('click', setShuffle)
+  $repeatButton.addEventListener('click', setRepeat)
   $('#next').addEventListener('click', playNextInQueue)
   $playPause.addEventListener('click', togglePlayPause)
   $$('.reset-button').forEach((n) => n.addEventListener('click', resetQueue))
@@ -318,6 +356,7 @@
     else if (e.key === 'ArrowRight') playNextInQueue()
     else if (e.key === ' ') togglePlayPause()
     else if (e.key === 's') setShuffle()
-    else if (e.key === 'r') resetQueue()
+    else if (e.key === 'x') resetQueue()
+    else if (e.key === 'r') setRepeat()
   })
 })()

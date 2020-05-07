@@ -105,6 +105,12 @@ p {
 #title button svg {
   height: 18px;
 }
+#repeat {
+  display: flex;
+}
+#repeat-type {
+  margin-left: 2px;
+}
 #pause-icon,
 .playing #play-icon {
   display: none;
