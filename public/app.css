@@ -16,7 +16,8 @@ body {
 }
 #actions {
   position: absolute;
-  bottom: 2px;
+  bottom: 20px;
+  bottom: env(safe-area-inset-bottom, 20px);
   right: 2px;
   z-index: 200;
   display: flex;
@@ -160,7 +161,7 @@ p {
 }
 #songs > *:last-child,
 #upnext > *:last-child {
-  margin-bottom: 30px;
+  margin-bottom: env(safe-area-inset-bottom);
 }
 #songs button,
 #upnext button {

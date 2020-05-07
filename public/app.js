@@ -35,6 +35,20 @@
     return a
   }
 
+  const getSongStartEnd = ({ song, video }) => {
+    const res = {}
+    if (!song) return res
+    if (song.time.start) {
+      res.start = song.time.start
+    }
+    const next = nextItem(video.songs, song)
+    const end = song.time.end || next ? next.time.start : null
+    if (end) {
+      res.end = end
+    }
+    return res
+  }
+
   let player
   let isPlaying = false
   let isShuffled = false
@@ -59,6 +73,11 @@
   const activeClass = 'active'
   const playButtonClass = 'play-button'
   const buttonPrefix = 'b-'
+
+  const guardPlayer = (cb) => (...args) => {
+    if (!player) return
+    return cb(...args)
+  }
 
   const playId = ({ video, song }) =>
     `${buttonPrefix}${video.id}${
@@ -122,37 +141,37 @@
     if (isRepeat && nowPlaying) {
       const { video, song } = nowPlaying
       if (isRepeat === 'REPEAT_SONG') {
-        play({ video, song })
+        playSong({ video, song })
       } else if (isRepeat === 'REPEAT_VIDEO') {
         const next = nextItem(video.songs, song)
         if (next) {
-          play({ video, song: next })
+          playSong({ video, song: next })
         } else {
-          play({ video, song: song && video.songs[0] })
+          playSong({ video, song: song && video.songs[0] })
         }
       }
     } else if (next) {
       removeFromQueue(next)
-      play(next)
+      playSong(next)
     } else if (shuffleNext) {
       removeFromShuffleQueue(shuffleNext)
-      play(shuffleNext)
+      playSong(shuffleNext)
     } else if (nowPlaying) {
       const { video, song } = nowPlaying
       const next = nextItem(video.songs, song)
       const nextVideo = nextItem(DATA, video)
       if (next) {
-        play({ video, song: next })
+        playSong({ video, song: next })
       } else if (nextVideo) {
         // If we are currently playing a whole video instead of an individual
         // song, then go to the next whole video
-        play({ video: nextVideo, song: song && nextVideo.songs[0] })
+        playSong({ video: nextVideo, song: song && nextVideo.songs[0] })
       } else {
         // wrap around back to the beginning, NEVER STOP NEVER STOPPING
-        play({ video: DATA[0], song: song && DATA[0].songs[0] })
+        playSong({ video: DATA[0], song: song && DATA[0].songs[0] })
       }
     } else {
-      play(FLAT_DATA[0])
+      playSong(FLAT_DATA[0])
     }
   }
 
@@ -173,8 +192,7 @@
     setUpNextText()
   }
 
-  const play = ({ video, song }) => {
-    if (!player) return
+  const playSong = guardPlayer(({ video, song }) => {
     if (!nowPlaying) {
       $('#player').style.display = 'block'
       $('#player-mock').style.display = 'none'
@@ -185,14 +203,9 @@
     }
 
     if (song) {
-      if (song.time.start) {
-        v.startSeconds = song.time.start
-      }
-      const next = nextItem(video.songs, song)
-      const end = song.time.end || next ? next.time.start : null
-      if (end) {
-        v.endSeconds = end
-      }
+      const { start, end } = getSongStartEnd({ video, song })
+      v.startSeconds = start
+      if (end) v.endSeconds = end
     }
 
     nowPlaying = { video, song }
@@ -214,50 +227,45 @@
     // v.endSeconds = v.startSeconds + 10
 
     console.log('loadVideoById', v)
-    isPlaying = true
     $progress.style.width = '0'
-    setProgressInterval()
-    $playPause.classList.add('playing')
     player.loadVideoById(v)
-  }
+    play()
+  })
 
-  const setProgressInterval = () => {
-    const { video, song } = nowPlaying
-    let start = 0
-    let end = player.getDuration()
-    if (song && song.time.start) {
-      start = song.time.start
-      const next = nextItem(video.songs, song)
-      const songEnd = song.time.end || next ? next.time.start : null
-      if (songEnd) {
-        end = songEnd
-      }
-    }
+  const setProgressInterval = guardPlayer(() => {
+    const song = getSongStartEnd(nowPlaying)
+    const start = song.start || 0
 
     clearInterval(progressInterval)
     progressInterval = setInterval(() => {
+      const end = song.end || player.getDuration()
       const current = player.getCurrentTime()
       if (!current) return
-      const p = ((current - start) / (end - start)) * 100
-      $progress.style.width = `${p}%`
+      $progress.style.width = `${((current - start) / (end - start)) * 100}%`
     }, 1000 / 60)
-  }
+  })
+
+  const play = guardPlayer(() => {
+    isPlaying = true
+    $playPause.classList.add('playing', 'active')
+    setProgressInterval()
+    player.playVideo()
+  })
+
+  const pause = guardPlayer(() => {
+    isPlaying = false
+    $playPause.classList.remove('playing', 'active')
+    clearInterval(progressInterval)
+    player.pauseVideo()
+  })
 
   const togglePlayPause = () => {
-    if (!player) return
-    isPlaying = !isPlaying
     if (isPlaying) {
-      $playPause.classList.add('playing')
-      if (!nowPlaying) {
-        playNextInQueue()
-      } else {
-        setProgressInterval()
-        player.playVideo()
-      }
+      pause()
+    } else if (!nowPlaying) {
+      playNextInQueue()
     } else {
-      $playPause.classList.remove('playing')
-      clearInterval(progressInterval)
-      player.pauseVideo()
+      play()
     }
   }
 
@@ -268,7 +276,7 @@
       isQueueMode,
     })
     if ((!isPlaying && upNext.length === 0) || !isQueueMode) {
-      play({ video, song })
+      playSong({ video, song })
     } else {
       addToQueue({ video, song })
     }
@@ -377,7 +385,12 @@
     document.body.classList.toggle('drawer-open')
   })
   $('#share').addEventListener('click', () => {
-    window.prompt('This url has your current queue', getShareUrl())
+    const wasPlaying = isPlaying
+    wasPlaying && pause()
+    setTimeout(() => {
+      window.prompt('This url has your current queue', getShareUrl())
+      wasPlaying && play()
+    }, 1)
   })
   document.addEventListener('keydown', (e) => {
     if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return
