@@ -198,9 +198,7 @@
       $('#player-mock').style.display = 'none'
     }
 
-    const v = {
-      videoId: video.id,
-    }
+    const v = { videoId: video.id }
 
     if (song) {
       const { start, end } = getSongStartEnd({ video, song })
@@ -245,18 +243,18 @@
     }, 1000 / 60)
   })
 
-  const play = guardPlayer(() => {
+  const play = guardPlayer((fromYoutube) => {
     isPlaying = true
     $playPause.classList.add('playing', 'active')
     setProgressInterval()
-    player.playVideo()
+    if (!fromYoutube) player.playVideo()
   })
 
-  const pause = guardPlayer(() => {
+  const pause = guardPlayer((fromYoutube) => {
     isPlaying = false
     $playPause.classList.remove('playing', 'active')
     clearInterval(progressInterval)
-    player.pauseVideo()
+    if (!fromYoutube) player.pauseVideo()
   })
 
   const togglePlayPause = () => {
@@ -296,7 +294,7 @@
       $el('button', '+PLAY ALL+', {
         id: playId({ video }),
         class: playButtonClass,
-        onclick: () => playOrAddToQueue({ video }, false),
+        onclick: () => playOrAddToQueue({ video }),
       })
     )
     ;(video.songs || []).forEach((song) => {
@@ -305,13 +303,10 @@
           id: playId({ video, song }),
           class: playButtonClass,
           onclick: () =>
-            playOrAddToQueue(
-              {
-                video,
-                song,
-              },
-              false
-            ),
+            playOrAddToQueue({
+              video,
+              song,
+            }),
         })
       )
     })
@@ -370,13 +365,13 @@
     )
   }
 
-  function onPlayerStateChange(event) {
-    if (event.data === YT.PlayerState.ENDED && isPlaying) {
-      playNextInQueue()
-    } else if (event.data === YT.PlayerState.PAUSED) {
-      pause()
-    } else if (event.data === YT.PlayerState.PLAYING) {
-      play()
+  function onPlayerStateChange(e) {
+    if (e.data === YT.PlayerState.ENDED && isPlaying) {
+      return playNextInQueue()
+    } else if (e.data === YT.PlayerState.PAUSED) {
+      pause(e)
+    } else if (e.data === YT.PlayerState.PLAYING) {
+      play(e)
     }
   }
 
@@ -396,6 +391,7 @@
       wasPlaying && play()
     }, 1)
   })
+
   document.addEventListener('keydown', (e) => {
     if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return
     else if (e.key === 'ArrowRight') playNextInQueue()
