@@ -3,6 +3,56 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1414
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5CNTZFOTNGQzZEODg1RUQx",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\nSmog - Cold Blooded Old Times 1:05\nAJJ - Keep on Chooglin 5:13\nAJJ - Body Terror Song 7:15\nDear Nora - Hung Up 9:48\nAJJ - Cody's Theme 11:31\nAJJ - Guilt: The Song 13:27\nAJJ - Evil 16:51\nAJJ - Big Bird 19:53\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-05-08T18:05:56.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "KOEH6E3YHf4"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/KOEH6E3YHf4/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/KOEH6E3YHf4/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/KOEH6E3YHf4/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/KOEH6E3YHf4/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/KOEH6E3YHf4/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - May 7"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 2406
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4wRjhFM0MxMTU1MEUzQ0VB",
