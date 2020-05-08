@@ -3,6 +3,82 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 2401
+        },
+        "id": "UExWdUtIaTl2MlJuNld5dFlfMjZLZmdPMkYyeXA0R3Fndi45RTgxNDRBMzUwRjQ0MDhC",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCOtn115fCfFKIxG7_Quv9ZA",
+          "channelTitle": "Death Cab for Cutie",
+          "description": "Hey everyone, \n\nFor this Thursday’s 4pm PT Live From Home show, I'll be playing an all-Beatles cover set! \n\nThis week’s livestream is in benefit of Seattle-based non-profit Amara, who help serve children in foster care and the families who care for them. If you’re able, please donate via https://amaraputskidsfirst.org or our Venmo @BenGibbardLiveFromHome – all donations will go to Amara.\n\nxo\nBen",
+          "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
+          "publishedAt": "2020-05-07T23:46:01.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "hfLEvRY1kcA"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/hfLEvRY1kcA/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/hfLEvRY1kcA/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/hfLEvRY1kcA/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/hfLEvRY1kcA/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/hfLEvRY1kcA/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Ben Gibbard: Live From Home (5/7/20)"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "Ugza_OvlzgqIl47Ig5R4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "Ugza_OvlzgqIl47Ig5R4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
+                    "authorDisplayName": "MeinKampfyChair",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-05-07T23:52:02.000Z",
+                    "textDisplay": "00:16 I'm So Tired [The Beatles cover]\r\n02:50 For No One [The Beatles cover]\r\n06:12 I'm Happy Just to Dance with You [The Beatles cover]\r\n10:14 Here, There, and Everywhere [The Beatles cover]\r\n13:50 I'm Only Sleeping [The Beatles cover]\r\n16:59 (Q & A)\r\n23:19 You Won't See Me [The Beatles cover]\r\n27:58 I Will [The Beatles cover]\r\n31:48 (Amara charity shout out)\r\n33:01 I'm Looking Through You [The Beatles cover]\r\n37:14 In My Life [The Beatles cover]",
+                    "textOriginal": "00:16 I'm So Tired [The Beatles cover]\r\n02:50 For No One [The Beatles cover]\r\n06:12 I'm Happy Just to Dance with You [The Beatles cover]\r\n10:14 Here, There, and Everywhere [The Beatles cover]\r\n13:50 I'm Only Sleeping [The Beatles cover]\r\n16:59 (Q & A)\r\n23:19 You Won't See Me [The Beatles cover]\r\n27:58 I Will [The Beatles cover]\r\n31:48 (Amara charity shout out)\r\n33:01 I'm Looking Through You [The Beatles cover]\r\n37:14 In My Life [The Beatles cover]",
+                    "updatedAt": "2020-05-07T23:58:26.000Z",
+                    "videoId": "hfLEvRY1kcA",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "hfLEvRY1kcA"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 2952
         },
         "id": "UExWdUtIaTl2MlJuNld5dFlfMjZLZmdPMkYyeXA0R3Fndi4yMUQyQTQzMjRDNzMyQTMy",
