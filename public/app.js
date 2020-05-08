@@ -222,7 +222,7 @@
     }
 
     // debug queue
-    // v.endSeconds = v.startSeconds + 10
+    // v.endSeconds = v.startSeconds + 5
 
     console.log('loadVideoById', v)
     $progress.style.width = '0'
@@ -365,13 +365,19 @@
     )
   }
 
+  let isTransition = false
   function onPlayerStateChange(e) {
-    if (e.data === YT.PlayerState.ENDED && isPlaying) {
-      return playNextInQueue()
-    } else if (e.data === YT.PlayerState.PAUSED) {
-      pause(e)
-    } else if (e.data === YT.PlayerState.PLAYING) {
+    if (e.data === YT.PlayerState.PLAYING) {
+      isTransition = false
+      console.log('player state playing', e)
       play(e)
+    } else if (e.data === YT.PlayerState.ENDED && !isTransition) {
+      console.log('player state ended', e)
+      isTransition = true
+      playNextInQueue()
+    } else if (e.data === YT.PlayerState.PAUSED) {
+      console.log('player state paused', e)
+      pause(e)
     }
   }
 
