@@ -3,6 +3,106 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1655
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5ERkUyQTM0MzEwQjZCMTY5",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\nAJJ - Brave as a Noun 1:51\nAJJ - Survival Song 3:00\nRoky Erickson - I Think of Demons 5:42\nAJJ - Linda Ronstadt 8:56\nBilly Joel - You May Be Right 12:21\nAJJ - Bad Bad Things 16:00\nAJJ - Small Red Boy 18:05\nAJJ - People 23:44\nAJJ - Little Prince 25:15\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-05-09T07:12:24.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "1f3VuaIJVts"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/1f3VuaIJVts/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/1f3VuaIJVts/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/1f3VuaIJVts/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/1f3VuaIJVts/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/1f3VuaIJVts/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - May 8"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
+          "duration": 1655
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5CNTcxMDQ0NThBNzMxODYz",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\nAJJ - Brave as a Noun 1:51\nAJJ - Survival Song 3:00\nRoky Erickson - I Think of Demons 5:42\nAJJ - Linda Ronstadt 8:56\nBilly Joel - You May Be Right 12:21\nAJJ - Bad Bad Things 16:00\nAJJ - Small Red Boy 18:05\nAJJ - People 23:44\nAJJ - Little Prince 25:15\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-05-09T07:12:12.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "1f3VuaIJVts"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/1f3VuaIJVts/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/1f3VuaIJVts/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/1f3VuaIJVts/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/1f3VuaIJVts/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/1f3VuaIJVts/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - May 8"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1414
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5CNTZFOTNGQzZEODg1RUQx",
