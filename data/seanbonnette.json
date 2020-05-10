@@ -3,6 +3,56 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1086
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4xM0YyM0RDNDE4REQ1NDA0",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\nAJJ - Hate Song for Brains 1:18\nAJJ - Feedbag 4:20\nAJJ - Hate and Kill 6:45\nFoot Ox - New Boyfriend 8:19\nFoot Ox - Lucky Strike 9:40\nFrankie Cosmos - My I Love You 11:57\nAJJ - White Face, Black Eyes 13:38\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-05-10T05:46:32.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "4VvG2rMyFN4"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/4VvG2rMyFN4/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/4VvG2rMyFN4/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/4VvG2rMyFN4/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/4VvG2rMyFN4/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/4VvG2rMyFN4/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - May 9"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1655
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5ERkUyQTM0MzEwQjZCMTY5",
