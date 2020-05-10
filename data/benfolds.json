@@ -3,6 +3,82 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 4420
+        },
+        "id": "UExHNTA3Z3kyLUtwOFZqNjZqbnhuMUFBMFhGcjFMX1FYeS4wOTA3OTZBNzVEMTUzOTMy",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCpd6ZO-gWNdtCOJ0T2ui-Fg",
+          "channelTitle": "Luke Karrys",
+          "description": "Patreon.com/BenFolds \nFor more",
+          "playlistId": "PLG507gy2-Kp8Vj66jnxn1AA0XFr1L_QXy",
+          "publishedAt": "2020-05-04T17:38:16.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "UjF7JnisK6U"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/UjF7JnisK6U/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/UjF7JnisK6U/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/UjF7JnisK6U/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/UjF7JnisK6U/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/UjF7JnisK6U/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "#7 Saturday Apartment Requests w Ben Folds - MAY 9th 7PM Eastern Time USA"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "UgxYYSxPWz1eGijyiMh4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgxYYSxPWz1eGijyiMh4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UC8Wbi3ImFUCjjRUauSBeQSg"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UC8Wbi3ImFUCjjRUauSBeQSg",
+                    "authorDisplayName": "Jake Kanezo",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwWWL2Y-2HXehRgpSI3ZgmXjwCDANYRXo0Rhw=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-05-10T02:06:13.000Z",
+                    "textDisplay": "0:00 - Intro Theme\n3:50 - Army\n8:10 - Theme from Peanuts\n9:20 - Selfless, Cold & Composed\n16:04 - Side of the Road\n21:00 - The Frown Song (with story)\n25:50 - Fair\n28:50 - Kylie from Connecticut\n31:08 - Piano lesson for kids\n48:16 - Golden Slumbers\n50:01 - Learn to Live With What You Are\n51:39 - Philosophy\n55:00 - Ben makes a song\n1:02:22 - Do It Anyway\n1:05:15 - Erase Me\n1:07:00 - Zak and Sara lesson",
+                    "textOriginal": "0:00 - Intro Theme\n3:50 - Army\n8:10 - Theme from Peanuts\n9:20 - Selfless, Cold & Composed\n16:04 - Side of the Road\n21:00 - The Frown Song (with story)\n25:50 - Fair\n28:50 - Kylie from Connecticut\n31:08 - Piano lesson for kids\n48:16 - Golden Slumbers\n50:01 - Learn to Live With What You Are\n51:39 - Philosophy\n55:00 - Ben makes a song\n1:02:22 - Do It Anyway\n1:05:15 - Erase Me\n1:07:00 - Zak and Sara lesson",
+                    "updatedAt": "2020-05-10T02:06:13.000Z",
+                    "videoId": "UjF7JnisK6U",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "UjF7JnisK6U"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 4078
         },
         "id": "UExHNTA3Z3kyLUtwOFZqNjZqbnhuMUFBMFhGcjFMX1FYeS41MjE1MkI0OTQ2QzJGNzNG",
