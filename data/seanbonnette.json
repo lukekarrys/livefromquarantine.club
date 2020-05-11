@@ -3,6 +3,56 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1289
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS42MjYzMTMyQjA0QURCN0JF",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\nAJJ - Distance 1:00\nAJJ - I'm Gonna Love My Children 3:23\nPerfume Genius - Take Me Home 5:55\nAJJ - Fuckboi 8:45\nAJJ - The Michael Jordan of Drunk Driving 11:03\nAJJ - Normalization Blues 11:23\nDaniel Johnston - True Love Will Find You in the End 14:30\nAJJ - People II: The Reckoning 17:05\n\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-05-11T05:19:04.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "QLRDtLSIzxg"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/QLRDtLSIzxg/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/QLRDtLSIzxg/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/QLRDtLSIzxg/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/QLRDtLSIzxg/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/QLRDtLSIzxg/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - May 10"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1086
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4xM0YyM0RDNDE4REQ1NDA0",
