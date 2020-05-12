@@ -103,12 +103,19 @@ const getPaginatedVideos = async (id, key, pageToken, previousItems = []) => {
   const url = playlistUrl(id, key, pageToken)
 
   const resp = await get(url)
-  let { items, nextPageToken } = resp.data
+  const { items, nextPageToken } = resp.data
+
+  const nonPrivateItems = items.filter((v) => {
+    return (
+      v.snippet.title !== 'Private video' &&
+      v.snippet.description !== 'This video is private.'
+    )
+  })
 
   const detailParts = ['contentDetails']
   const videosDetailsResp = await get(
     videosUrl(
-      items.map((v) => v.snippet.resourceId.videoId).join(','),
+      nonPrivateItems.map((v) => v.snippet.resourceId.videoId).join(','),
       detailParts,
       key
     )
@@ -117,7 +124,7 @@ const getPaginatedVideos = async (id, key, pageToken, previousItems = []) => {
   const findVideoDetails = (video) =>
     videoItems.find((v) => v.id === video.snippet.resourceId.videoId)
 
-  const filteredItems = items
+  const filteredItems = nonPrivateItems
     .filter((video) => {
       const videoDetails = findVideoDetails(video)
       if (videoDetails.liveStreamingDetails) {
