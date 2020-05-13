@@ -1,7 +1,7 @@
 import { FunctionalComponent, h } from "preact"
 import { Sender } from "../lib/player-machine"
 import { Progress, Track } from "../types"
-import Button from "./Button"
+import Button from "./button"
 import hhmmss from "../lib/hhmmss"
 
 interface Props {

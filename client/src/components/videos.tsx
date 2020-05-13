@@ -2,7 +2,7 @@ import { FunctionalComponent, h, Fragment } from "preact"
 import cx from "classnames"
 import { useEffect } from "preact/hooks"
 import { Videos as TVideos, Track } from "../types"
-import Button from "./Button"
+import Button from "./button"
 import hhmmss from "../lib/hhmmss"
 
 interface Props {
