@@ -13,6 +13,6 @@
   status = 301
 
 [[redirects]]
-  from = "/"
-  to = "/seanbonnette"
+  from = "/*"
+  to = "/index.html"
   status = 200
