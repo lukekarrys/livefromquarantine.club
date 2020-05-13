@@ -1,8 +1,0 @@
-{
-  "name": "Live from Quarantine",
-  "short_name": "Live from Quarantine",
-  "start_url": "/{{id}}",
-  "display": "standalone",
-  "background_color": "#000",
-  "theme_color": "#000"
-}

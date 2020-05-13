@@ -4,7 +4,7 @@ const assert = require('assert')
 const fs = require('fs').promises
 const path = require('path')
 const prettier = require('prettier')
-const { minify: htmlMinify } = require('html-minifier')
+const mkdirp = require('mkdirp')
 const config = require('../config')
 const { main: mainParser } = require('./parse')
 
@@ -34,22 +34,11 @@ const validate = (data) => {
   })
 }
 
-const parsePath = (...parts) => path.join(__dirname, ...parts)
-const publicPath = (...parts) => path.join(__dirname, '..', 'public', ...parts)
+const publicPath = (...parts) =>
+  path.join(__dirname, '..', 'public', 'api', ...parts)
 
 const writeParsed = async (parser, data) => {
   const { id } = parser.meta
-
-  let index = (await fs.readFile(parsePath('index.html'))).toString()
-  let manifest = (await fs.readFile(parsePath('manifest.json'))).toString()
-
-  Object.entries(parser.meta).forEach(([key, value]) => {
-    index = index.replace(new RegExp(`{{${key}}}`, 'g'), value)
-    manifest = manifest.replace(new RegExp(`{{${key}}}`, 'g'), value)
-    if (PRODUCTION) {
-      index = index.replace(/\bapp\.(css|js)/g, 'app.min.$1')
-    }
-  })
 
   const parsedData = mainParser(data.videos, parser.parsers).filter(
     (video, index, videos) => {
@@ -60,24 +49,8 @@ const writeParsed = async (parser, data) => {
 
   validate(parsedData)
 
-  await fs.writeFile(
-    publicPath(`${id}.html`),
-    PRODUCTION ? htmlMinify(index, { collapseWhitespace: true }) : index
-  )
-  await fs.writeFile(publicPath(`manifest-${id}.json`), manifest)
   const prettierOptions = await prettier.resolveConfig(__dirname)
-  await fs.writeFile(
-    publicPath(`${id}.js`),
-    PRODUCTION
-      ? `window.__DATA=${JSON.stringify(parsedData)}`
-      : prettier.format(
-          `window.__DATA = ${JSON.stringify(parsedData, null, 2)}`,
-          {
-            parser: 'babel',
-            ...prettierOptions,
-          }
-        )
-  )
+  await mkdirp(publicPath())
   await fs.writeFile(
     publicPath(`${id}.json`),
     PRODUCTION

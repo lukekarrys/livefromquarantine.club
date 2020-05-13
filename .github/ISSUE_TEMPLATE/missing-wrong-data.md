@@ -4,7 +4,6 @@ about: Report some incorrect song or video data
 title: ''
 labels: ''
 assignees: ''
-
 ---
 
 **What song/video?**

@@ -9,16 +9,14 @@
   "dependencies": {
     "axios": "^0.19.2",
     "dotenv": "^8.2.0",
-    "iso8601-duration": "^1.2.0"
+    "iso8601-duration": "^1.2.0",
+    "mkdirp": "^1.0.4"
   },
   "devDependencies": {
-    "cssmin": "^0.4.3",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",
-    "html-minifier": "^4.0.0",
-    "prettier": "^2.0.5",
-    "terser": "^4.6.13"
+    "prettier": "^2.0.5"
   },
   "eslintConfig": {
     "extends": [
@@ -31,6 +29,9 @@
       "node": true
     }
   },
+  "eslintIgnore": [
+    "public/*"
+  ],
   "homepage": "https://github.com/lukekarrys/livefromquarantine.club#readme",
   "keywords": [],
   "license": "ISC",
@@ -44,10 +45,14 @@
     "url": "git+https://github.com/lukekarrys/livefromquarantine.club.git"
   },
   "scripts": {
-    "build": "terser -c drop_console -m -- public/app.js > public/app.min.js && cssmin public/app.css > public/app.min.css && node build/build.js",
-    "data": "node data/index.js",
-    "eslint": "eslint . --fix",
-    "lint": "npm run prettier && npm run eslint",
+    "build": "cd client && npm run build",
+    "data:build": "node build/build.js",
+    "data:fetch": "node data/index.js",
+    "eslint": "eslint . --fix --ignore-pattern client",
+    "lint": "npm run prettier && npm run eslint && cd client && npm run lint",
+    "postbuild": "npm run data:build",
+    "postinstall": "cd client && npm install",
+    "prebuild": "if [ ! -d \"client/node_modules\" ]; then npm run postinstall; fi",
     "prettier": "prettier --write '**/*.{js,md,css,json}'",
     "trigger": "node data/trigger.js"
   }
