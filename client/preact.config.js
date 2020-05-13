@@ -18,6 +18,15 @@ export default {
       plugins.unshift(tailwind)
     })
 
+    if (config.devServer) {
+      config.devServer.proxy = {
+        "/api": {
+          target: "http://localhost:8081",
+          pathRewrite: { [`^/api`]: "" },
+        },
+      }
+    }
+
     // Where we're going, we don't need compat
     // (remember to check here if adding any future react libraries)
     config.resolve.alias.react = resolve(

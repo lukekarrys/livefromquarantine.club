@@ -1,9 +1,9 @@
 require('dotenv').config()
 
 const assert = require('assert')
+const http = require('http')
 const fs = require('fs').promises
 const path = require('path')
-const prettier = require('prettier')
 const mkdirp = require('mkdirp')
 const config = require('../config')
 const { main: mainParser } = require('./parse')
@@ -37,9 +37,7 @@ const validate = (data) => {
 const publicPath = (...parts) =>
   path.join(__dirname, '..', 'public', 'api', ...parts)
 
-const writeParsed = async (parser, data) => {
-  const { id } = parser.meta
-
+const buildData = (parser, data) => {
   const parsedData = mainParser(data.videos, parser.parsers).filter(
     (video, index, videos) => {
       // The same video could be included multiple times in a playlist so remove dupes
@@ -49,20 +47,10 @@ const writeParsed = async (parser, data) => {
 
   validate(parsedData)
 
-  const prettierOptions = await prettier.resolveConfig(__dirname)
-  await mkdirp(publicPath())
-  await fs.writeFile(
-    publicPath(`${id}.json`),
-    PRODUCTION
-      ? JSON.stringify(parsedData)
-      : prettier.format(JSON.stringify(parsedData, null, 2), {
-          parser: 'json',
-          ...prettierOptions,
-        })
-  )
+  return parsedData
 }
 
-const buildArtist = async (artistKey) => {
+const buildArtist = (artistKey) => {
   const artistData = require(`../data/${artistKey}.json`)
   const artistParser = require(`./${artistKey}`)
 
@@ -70,29 +58,53 @@ const buildArtist = async (artistKey) => {
     throw new Error(`Invalid artistKey: ${artistKey}`)
   }
 
-  await writeParsed(artistParser, artistData)
+  return {
+    meta: artistParser.meta,
+    data: buildData(artistParser, artistData),
+  }
 }
 
-const main = async (...artists) => {
+const writeFile = async (data) => {
+  const { id } = data.meta
+  await mkdirp(publicPath())
+  await fs.writeFile(publicPath(`${id}.json`), JSON.stringify(data.data))
+}
+
+const buildAndSave = async (...artists) => {
   if (!artists.length) throw new Error('No artists')
   return Promise.all(
     artists.map((id) =>
-      buildArtist(id)
+      writeFile(buildArtist(id))
         .then(() => ({ id, ok: true }))
         .catch((error) => ({ id, ok: false, error }))
     )
   )
 }
 
-const cliArtists = process.argv.slice(2).flatMap((v) => v.split(','))
-main(...(cliArtists.length ? cliArtists : config.artists))
-  .then((res) => {
-    console.log(res)
-    if (res.some((r) => !r.ok)) {
-      throw new Error('Build error')
-    }
-  })
-  .catch((err) => {
-    console.error(err)
-    process.exit(1)
-  })
+if (PRODUCTION) {
+  const cliArtists = process.argv.slice(2).flatMap((v) => v.split(','))
+  buildAndSave(...(cliArtists.length ? cliArtists : config.artists))
+    .then((res) => {
+      console.log(res)
+      if (res.some((r) => !r.ok)) {
+        throw new Error('Build error')
+      }
+    })
+    .catch((err) => {
+      console.error(err)
+      process.exit(1)
+    })
+} else {
+  http
+    .createServer((req, res) => {
+      try {
+        const data = buildArtist(path.basename(req.url, '.json'))
+        res.writeHead(200)
+        res.end(JSON.stringify(data.data))
+      } catch (e) {
+        res.writeHead(500)
+        res.end(JSON.stringify({ error: e.message }))
+      }
+    })
+    .listen(8081)
+}
