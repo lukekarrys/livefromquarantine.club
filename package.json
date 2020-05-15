@@ -52,7 +52,7 @@
     "build": "run-s build:client build:data",
     "build:client": "cd client && npm run build",
     "build:data": "node api/build.js",
-    "data:fetch": "node data/index.js",
+    "data": "node data/index.js",
     "eslint": "eslint . --fix --ignore-pattern client",
     "lint": "npm run prettier && npm run eslint && cd client && npm run lint",
     "postinstall": "cd client && npm install",
