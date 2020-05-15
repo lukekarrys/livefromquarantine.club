@@ -3,6 +3,106 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1229
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS45NDlDQUFFOThDMTAxQjUw",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\nAJJ - Kokopelli Face Tattoo 0:20\nNovi Split - You Got Served 4:26\nTodd Snider - Old Times 6:48\nAJJ - American Body Rentals 11:32\nAJJ - Love in the Time of HPV 12:43\nAJJ - Your Voice, As I Remember It 16:30\nAJJ - American Body Rentals 19:11\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-05-14T06:18:59.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "mUIrpAETtd8"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/mUIrpAETtd8/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/mUIrpAETtd8/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/mUIrpAETtd8/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/mUIrpAETtd8/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/mUIrpAETtd8/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - May 13"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
+          "duration": 1056
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4yQzk4QTA5QjkzMTFFOEI1",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\nThe Pixies - Holiday Song 1:22\nThe Beatles - Eleanor Rigby 3:03\nAJJ - Growing Up 8:13\nAJJ - Mega Guillotine 2020 10:12\nAJJ - Jesus Saves 12:24\nAJJ - Free Bird 14:11\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-05-13T05:33:30.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "Y8o0p0JQwt4"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/Y8o0p0JQwt4/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/Y8o0p0JQwt4/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/Y8o0p0JQwt4/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/Y8o0p0JQwt4/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/Y8o0p0JQwt4/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - May 12"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1147
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5EQkE3RTJCQTJEQkFBQTcz",
@@ -2013,31 +2113,6 @@
                     "textDisplay": "Setlist:\nNo Children (The Mountain Goats cover) 1:06\nYou Don't Deserve Yourself 4:44 \nA Song Dedicated to the Memory of Stormy the Rabbit 12:53\nYou May Be Right (Billy Joel cover) 16:41\nGetting Naked and Playing with Guns 20:50\nReincarnation (Roger Miller cover) 24:11",
                     "textOriginal": "Setlist:\nNo Children (The Mountain Goats cover) 1:06\nYou Don't Deserve Yourself 4:44 \nA Song Dedicated to the Memory of Stormy the Rabbit 12:53\nYou May Be Right (Billy Joel cover) 16:41\nGetting Naked and Playing with Guns 20:50\nReincarnation (Roger Miller cover) 24:11",
                     "updatedAt": "2020-04-06T22:39:57.000Z",
-                    "videoId": "mfCc5mT_I64",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "mfCc5mT_I64"
-              }
-            },
-            {
-              "id": "UgzY1loB0NOTUSY_jgR4AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "UgzY1loB0NOTUSY_jgR4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "authorChannelId": {
-                      "value": "UCi7v6eB0S6cT7nVxNCSLgMA"
-                    },
-                    "authorChannelUrl": "http://www.youtube.com/channel/UCi7v6eB0S6cT7nVxNCSLgMA",
-                    "authorDisplayName": "Hmw",
-                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxOoEH8EJ7UdZnk8pI-ZHjUnyvE0FP5rxuKvg=s48-c-k-c0xffffffff-no-rj-mo",
-                    "publishedAt": "2020-04-06T22:37:08.000Z",
-                    "textDisplay": "(SETLIST) \nNo Children (The Mountain Goats) - 1:07\nYou Dont Deserve Yourself - 4:43\nA Song Dedicated to The Memory of Stormy the Rabbit - 12:52\nYou may be right (Billy Joel) - 16:40\nGetting naked and playing with guns - 20:45\nReincarnation (Roger miller) - 24:11",
-                    "textOriginal": "(SETLIST) \nNo Children (The Mountain Goats) - 1:07\nYou Dont Deserve Yourself - 4:43\nA Song Dedicated to The Memory of Stormy the Rabbit - 12:52\nYou may be right (Billy Joel) - 16:40\nGetting naked and playing with guns - 20:45\nReincarnation (Roger miller) - 24:11",
-                    "updatedAt": "2020-04-06T22:37:08.000Z",
                     "videoId": "mfCc5mT_I64",
                     "viewerRating": "none"
                   }
