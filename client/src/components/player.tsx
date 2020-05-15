@@ -1,34 +1,26 @@
 import { FunctionalComponent, h, Fragment } from "preact"
-import { useState, useCallback, useEffect, useMemo } from "preact/hooks"
+import { useState, useCallback, useEffect, useMemo, useRef } from "preact/hooks"
 import { useMachine } from "@xstate/react/lib/fsm"
-import { Videos as TVideos, Tracks, Track, Progress } from "../types"
+import { Videos as TVideos, Tracks, Track, Progress, TrackId } from "../types"
 import YouTube from "./youtube"
 import Videos from "./videos"
 // import UpNext from "../../components/UpNext"
 import Controls from "./controls"
-import playerMachine from "../lib/player-machine"
+import playerMachine, { selectors } from "../lib/player-machine"
 import debug from "../lib/debug"
 
 interface Props {
   videos: TVideos
   tracks: Tracks
   initial?: {
-    nowPlaying: string
+    nowPlaying: TrackId
   }
 }
 
 const Player: FunctionalComponent<Props> = ({ videos, tracks, initial }) => {
-  const initialSelectedIndex = useMemo(
-    () => tracks.findIndex((t: Track) => t.id === initial?.nowPlaying),
-    [tracks, initial?.nowPlaying]
-  )
   const machine = useMemo(
-    () =>
-      playerMachine({
-        tracks,
-        selectedIndex: initialSelectedIndex,
-      }),
-    [tracks, initialSelectedIndex]
+    () => playerMachine({ tracks, selectedId: initial?.nowPlaying }),
+    [tracks, initial?.nowPlaying]
   )
   const [state, send, service] = useMachine(machine)
 
@@ -37,7 +29,8 @@ const Player: FunctionalComponent<Props> = ({ videos, tracks, initial }) => {
       debug("PLAYER MACHINE", {
         value: s.value,
         actions: s.actions.length ? s.actions.map((a) => a.type) : undefined,
-        context: s.context,
+        order: s.context.order,
+        tracks: s.context.tracks,
       })
     )
     return (): void => subscription.unsubscribe()
@@ -53,7 +46,7 @@ const Player: FunctionalComponent<Props> = ({ videos, tracks, initial }) => {
     setProgress,
   ])
 
-  const selected = state.context.tracks[state.context.selectedIndex]
+  const selected = selectors.getSelected(state.context)
 
   // TODO: share urls
 
@@ -77,9 +70,11 @@ const Player: FunctionalComponent<Props> = ({ videos, tracks, initial }) => {
     return (): void => document.removeEventListener("keydown", listener)
   }, [send, state])
 
+  const playerContainer = useRef<HTMLDivElement>()
+
   return (
     <Fragment>
-      <div class="sticky top-0">
+      <div class="sticky top-0" ref={playerContainer}>
         <div class="bg-gray-600">
           <YouTube
             selected={selected}
@@ -97,12 +92,18 @@ const Player: FunctionalComponent<Props> = ({ videos, tracks, initial }) => {
             selected={selected}
             progress={progress}
             play={state.matches("playing") || state.matches("requesting")}
+            shuffle={state.context.shuffle}
             send={send}
           />
         </div>
       </div>
       <div>
-        <Videos videos={videos} selected={selected} onSelect={onSelect} />
+        <Videos
+          videos={videos}
+          selected={selected}
+          onSelect={onSelect}
+          playerRef={playerContainer}
+        />
       </div>
     </Fragment>
   )

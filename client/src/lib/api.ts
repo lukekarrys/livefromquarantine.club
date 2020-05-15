@@ -1,4 +1,4 @@
-import { Track, Data } from "../types"
+import { Track, Data, VideoId, TrackId } from "../types"
 
 interface ApiSong {
   name: string
@@ -10,7 +10,7 @@ interface ApiSong {
 
 interface ApiVideo {
   title: string
-  id: string
+  id: VideoId
   duration: number
   songs: ApiSong[]
 }
@@ -38,7 +38,7 @@ const videoSongToTrack = ({
   const end =
     song.time.end ?? video.songs[index + 1]?.time.start ?? video.duration
   return {
-    id: `${video.id}-${song.time.start}`,
+    id: `${video.id}-${song.time.start}` as TrackId,
     videoId: video.id,
     title: [video.title, song.name],
     start,
@@ -61,7 +61,7 @@ const normalizeData = (videos: ApiVideo[]): Data => {
 
     resp.videos.push({
       title: video.title,
-      id: video.id,
+      id: video.id as VideoId,
       duration: video.duration,
       tracks: videoTracks,
     })

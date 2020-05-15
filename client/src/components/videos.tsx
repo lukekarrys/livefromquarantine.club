@@ -1,7 +1,7 @@
-import { FunctionalComponent, h, Fragment } from "preact"
+import { FunctionalComponent, h, Fragment, RefObject } from "preact"
 import cx from "classnames"
 import { useEffect } from "preact/hooks"
-import { Videos as TVideos, Track } from "../types"
+import { Videos as TVideos, Track, VideoId, TrackId } from "../types"
 import Button from "./button"
 import hhmmss from "../lib/hhmmss"
 
@@ -9,12 +9,16 @@ interface Props {
   videos: TVideos
   onSelect: (track: Track) => void
   selected?: Track
+  playerRef: RefObject<HTMLDivElement>
 }
 
-type ButtonProps = Omit<Props, "videos"> & {
+type ButtonProps = Omit<Props, "videos" | "playerRef"> & {
   track: Track
   last: boolean
 }
+
+const BUTTON_ID = (id: TrackId): string => `video-track-${id}`
+const VIDEO_ID = (id: VideoId): string => `video-tracks-${id}`
 
 const TrackButton: FunctionalComponent<ButtonProps> = ({
   track,
@@ -25,7 +29,7 @@ const TrackButton: FunctionalComponent<ButtonProps> = ({
   const title = Array.isArray(track.title) ? track.title[1] : "Play All"
   return (
     <Button
-      id={`track-button-${track.id}`}
+      id={BUTTON_ID(track.id)}
       onClick={(): void => onSelect(track)}
       selected={selected?.id === track.id}
       class={cx(
@@ -39,24 +43,43 @@ const TrackButton: FunctionalComponent<ButtonProps> = ({
   )
 }
 
-const Videos: FunctionalComponent<Props> = ({ videos, selected, onSelect }) => {
+const Videos: FunctionalComponent<Props> = ({
+  videos,
+  selected,
+  onSelect,
+  playerRef,
+}) => {
   useEffect(() => {
-    // TODO: fix scroll to
-    // const $button = document.getElementById(`track-button-${selected?.id}`)
-    // if ($button) {
-    //   const $songs = document.documentElement
-    //   const buttonTop = $button.offsetTop - $songs.offsetTop - $songs.scrollTop
-    //   const buttonBottom = $button.getBoundingClientRect().height + buttonTop
-    //   if (buttonTop < 0 || buttonBottom > window.innerHeight) {
-    //     $songs.scrollTop = buttonTop - 475
-    //   }
-    // }
-  }, [selected?.id])
+    if (!selected) return
+
+    const video = document.getElementById(VIDEO_ID(selected.videoId))
+    const trackButton = document.getElementById(BUTTON_ID(selected.id))
+    const player = playerRef.current
+    const scrollContainer = document.documentElement
+
+    if (!video || !trackButton || !scroll || !player) return
+
+    const playerHeight = player.getBoundingClientRect().height
+
+    const buttonBounds = [
+      trackButton.offsetTop,
+      trackButton.offsetTop + trackButton.getBoundingClientRect().height,
+    ]
+
+    const viewport = [playerHeight, window.innerHeight].map(
+      (i) => i + scrollContainer.scrollTop
+    )
+
+    if (buttonBounds[0] < viewport[0] || buttonBounds[1] > viewport[1]) {
+      scrollContainer.scrollTop = video.offsetTop - playerHeight + 2
+    }
+  }, [selected, playerRef])
 
   return (
     <Fragment>
       {videos.map((video) => (
         <div
+          id={VIDEO_ID(video.id)}
           key={video.id}
           class={cx(
             "py-4 border-b px-2 border-gray-600 flex flex-row flex-wrap"

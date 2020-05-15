@@ -1,25 +1,34 @@
-import { createMachine, assign, StateMachine } from "@xstate/fsm"
-import { Tracks, Track, Repeat } from "../types"
+import { createMachine, assign, StateMachine, EventObject } from "@xstate/fsm"
+import { Tracks, Track, Repeat, TrackId } from "../types"
 import { isSeekableTrack, isNextTrack } from "./compare-tracks"
+import shuffleArray from "./shuffle-array"
+import * as debug from "./debug"
+
+type TrackOrder = {
+  trackIndexes: { [key in TrackId]: number }
+  trackOrder: TrackId[]
+  selectedIndex: number
+}
 
 interface PlayerContext {
-  tracks: Tracks
+  tracks: { [key in TrackId]?: Track }
+  order: TrackOrder
   player?: YT.Player
-  selectedIndex: number
   shuffle: boolean
   repeat: Repeat
 }
 
-type SelectTrackEvent = { type: "SELECT_TRACK"; track: Track }
 type ReadyEvent = { type: "READY"; player: YT.Player }
 type PlayEvent = { type: "PLAY" }
 type PauseEvent = { type: "PAUSE" }
 type NextEvent = { type: "NEXT" }
+type SelectTrackEvent = { type: "SELECT_TRACK"; track: Track }
 type EndEvent = { type: "END" }
 type YouTubePlayEvent = { type: "YOUTUBE_PLAY" }
 type YouTubePauseEvent = { type: "YOUTUBE_PAUSE" }
 type YouTubeBufferingEvent = { type: "YOUTUBE_BUFFERING" }
 type YouTubeCuedEvent = { type: "YOUTUBE_CUED" }
+type ShuffleEvent = { type: "SHUFFLE" }
 
 type YouTubeEvent =
   | YouTubePlayEvent
@@ -36,6 +45,7 @@ type PlayerEvent =
   | NextEvent
   | EndEvent
   | YouTubeEvent
+  | ShuffleEvent
 
 type PlayerState =
   | { value: "idle"; context: PlayerContext }
@@ -43,6 +53,10 @@ type PlayerState =
   | { value: "requesting"; context: PlayerContext }
   | { value: "playing"; context: PlayerContext }
   | { value: "paused"; context: PlayerContext }
+
+type PlayerTransition<TEvent extends EventObject> = {
+  [K in TEvent["type"]]: StateMachine.Transition<PlayerContext, TEvent>
+}
 
 export type Sender = (event: PlayerEvent | PlayerEvent["type"]) => void
 
@@ -57,70 +71,151 @@ export const ytToMachineEvent: {
   [5]: "YOUTUBE_CUED",
 }
 
-const findNextIndex = <T>(
-  arr: T[],
-  startIndex: number,
-  cond: (arg: T) => boolean
-): number => {
-  for (let i = startIndex + 1, m = arr.length; i < m; i++) {
-    const item: T = arr[i]
-    if (cond(item)) return i
+export const selectors = {
+  getSelectedByIndex: (
+    context: PlayerContext,
+    index?: number
+  ): Track | undefined => {
+    return index === undefined
+      ? undefined
+      : context.tracks[context.order.trackOrder[index]]
+  },
+  getSelected: (context: PlayerContext): Track | undefined => {
+    return selectors.getSelectedByIndex(context, context.order.selectedIndex)
+  },
+  getNextSelected: (context: PlayerContext): Track | undefined => {
+    return selectors.getSelectedByIndex(
+      context,
+      selectors.getNextIndex(context)
+    )
+  },
+  getEventIndex: (
+    context: PlayerContext,
+    event: SelectTrackEvent
+  ): number | undefined => {
+    return context.order.trackIndexes[event.track.id]
+  },
+  getEventSelected: (
+    context: PlayerContext,
+    event: SelectTrackEvent
+  ): Track | undefined => {
+    return selectors.getSelectedByIndex(
+      context,
+      selectors.getEventIndex(context, event)
+    )
+  },
+  hasSelected: (context: PlayerContext): boolean => {
+    return selectors.getSelected(context) !== undefined
+  },
+  getNextIndex: (context: PlayerContext): number | undefined => {
+    const {
+      order: { trackOrder, selectedIndex },
+    } = context
+
+    const nextIndex = selectedIndex + 1
+    return nextIndex >= trackOrder.length ? 0 : nextIndex
+  },
+  isNextSeekable: (context: PlayerContext): boolean => {
+    const current = selectors.getSelected(context)
+    const next = selectors.getNextSelected(context)
+    return isSeekableTrack(current, next)
+  },
+  isEventSeekable: (
+    context: PlayerContext,
+    event: SelectTrackEvent
+  ): boolean => {
+    return isSeekableTrack(selectors.getSelected(context), event.track)
+  },
+  isNextNext: (context: PlayerContext): boolean => {
+    const current = selectors.getSelected(context)
+    const next = selectors.getNextSelected(context)
+    return isNextTrack(current, next)
+  },
+}
+
+const generateOrder = (
+  tracks: Tracks,
+  filter?: (t: Track) => boolean,
+  selectedId?: TrackId
+): TrackOrder => {
+  let selectedIndex: number | null = null
+  const order: Omit<TrackOrder, "selectedIndex"> = {
+    trackOrder: [],
+    trackIndexes: {} as TrackOrder["trackIndexes"],
   }
-  return 0
+
+  for (let i = 0, m = tracks.length; i < m; i++) {
+    const track = tracks[i]
+    if (!filter || filter(track)) {
+      const position = order.trackOrder.push(track.id)
+      order.trackIndexes[track.id] = position - 1
+      if (selectedId && track.id === selectedId && selectedIndex === null) {
+        selectedIndex = position - 1
+      }
+    }
+  }
+
+  return {
+    ...order,
+    selectedIndex: selectedIndex ?? -1,
+  }
 }
 
-const getSelected = (context: PlayerContext): Track | undefined =>
-  context.tracks[context.selectedIndex]
-
-const hasSelected = (context: PlayerContext): boolean => !!getSelected(context)
-
-const getNextIndex = (context: PlayerContext): number => {
-  const current = getSelected(context)
-  return findNextIndex<Track>(context.tracks, context.selectedIndex, (t) =>
-    current ? t.isSong === current.isSong : true
-  )
+const shuffleTransition: PlayerTransition<ShuffleEvent> = {
+  SHUFFLE: {
+    actions: "shuffleTrackOrder",
+  },
 }
 
-const getNextSelected = (context: PlayerContext): Track | undefined => {
-  const nextIndex = getNextIndex(context)
-  return context.tracks[nextIndex]
-}
-
-const isNextSeekable = (context: PlayerContext): boolean => {
-  const current = getSelected(context)
-  const next = getNextSelected(context)
-  return isSeekableTrack(current, next)
-}
-
-const isEventSeekable = (
-  context: PlayerContext,
-  event: SelectTrackEvent
-): boolean => isSeekableTrack(getSelected(context), event.track)
-
-const isNextNext = (context: PlayerContext): boolean => {
-  const current = getSelected(context)
-  const next = getNextSelected(context)
-  return isNextTrack(current, next)
+type CreateMachine = Partial<
+  Pick<PlayerContext, "repeat" | "shuffle" | "player">
+> & {
+  tracks: Tracks
+  selectedId?: TrackId
 }
 
 const playerMachine = ({
-  tracks,
-  selectedIndex,
-}: {
-  tracks: Tracks
-  selectedIndex: number
-}): StateMachine.Machine<PlayerContext, PlayerEvent, PlayerState> =>
-  createMachine<PlayerContext, PlayerEvent, PlayerState>(
+  tracks: ORIGINAL_TRACKS,
+  selectedId,
+  shuffle = false,
+  repeat = Repeat.None,
+  player,
+}: CreateMachine): StateMachine.Machine<
+  PlayerContext,
+  PlayerEvent,
+  PlayerState
+> => {
+  const tracksById = ORIGINAL_TRACKS.reduce<PlayerContext["tracks"]>(
+    (acc, track: Track) => {
+      acc[track.id] = track
+      return acc
+    },
+    {} as PlayerContext["tracks"]
+  )
+
+  const defaultSongOrder = generateOrder(
+    ORIGINAL_TRACKS,
+    (t) => t.isSong,
+    selectedId
+  )
+
+  const defaultVideoOrder = generateOrder(
+    ORIGINAL_TRACKS,
+    (t) => !t.isSong,
+    selectedId
+  )
+
+  return createMachine<PlayerContext, PlayerEvent, PlayerState>(
     {
       id: "player",
       initial: "idle",
       context: {
-        tracks,
-        selectedIndex,
-        shuffle: false, // TODO:  implement  shuffle
-        repeat: Repeat.None, // TODO: implement repeat including repeat one and repeat within
+        tracks: tracksById,
+        order: defaultSongOrder,
+        shuffle,
+        repeat, // TODO: implement repeat including repeat one and repeat within
         // a video (also including repeat within a video while playing a full video is the same as repeat one)
-        player: undefined,
+        player,
         // TODO: implemetn up next with queueMode toggle
       },
       states: {
@@ -130,13 +225,14 @@ const playerMachine = ({
               {
                 target: "initial",
                 actions: ["setPlayer", "cueVideo"],
-                cond: hasSelected,
+                cond: selectors.hasSelected,
               },
               {
                 actions: "setPlayer",
                 target: "initial",
               },
             ],
+            ...shuffleTransition,
           },
         },
         initial: {
@@ -144,33 +240,33 @@ const playerMachine = ({
             PLAY: [
               {
                 target: "requesting",
-                cond: hasSelected,
+                cond: selectors.hasSelected,
+                actions: "loadVideo",
               },
               {
                 target: "requesting",
-                actions: "setInitialTrack",
+                actions: ["setInitialTrack", "loadVideo"],
               },
             ],
             NEXT: [
               {
                 target: "requesting",
-                actions: "setNextTrack",
-                cond: hasSelected,
+                actions: ["setNextTrack", "loadVideo"],
+                cond: selectors.hasSelected,
               },
               {
                 // You can click the next button on initial state and it
                 // acts the same as the play button because why not
                 target: "requesting",
-                actions: "setInitialTrack",
+                actions: ["setInitialTrack", "loadVideo"],
               },
             ],
             SELECT_TRACK: {
               target: "requesting",
-              actions: "setTrack",
+              actions: ["setTrack", "loadVideo"],
             },
+            ...shuffleTransition,
           },
-          // Load the video before exiting to the requesting state
-          exit: "loadVideo",
         },
         requesting: {
           on: {
@@ -180,11 +276,14 @@ const playerMachine = ({
             // not perfect to tap into YouTube's event system
             // so this ensures its can't get stuck in the requesting state
             YOUTUBE_PLAY: "playing",
-            YOUTUBE_PAUSE: "paused",
+            // Having pause here causes the state to go into paused when
+            // switching between videos since loadVideo causes a temporary
+            // pause state. removing for now to see how it works without it
+            // YOUTUBE_PAUSE: "paused",
             NEXT: [
               {
                 actions: ["setNextTrack", "seekTo", "playVideo"],
-                cond: isNextSeekable,
+                cond: selectors.isNextSeekable,
               },
               {
                 actions: ["setNextTrack", "loadVideo"],
@@ -193,12 +292,13 @@ const playerMachine = ({
             SELECT_TRACK: [
               {
                 actions: ["setTrack", "seekTo", "playVideo"],
-                cond: isEventSeekable,
+                cond: selectors.isEventSeekable,
               },
               {
                 actions: ["setTrack", "loadVideo"],
               },
             ],
+            ...shuffleTransition,
           },
         },
         playing: {
@@ -212,7 +312,7 @@ const playerMachine = ({
               {
                 target: "requesting",
                 actions: ["setNextTrack", "seekTo"],
-                cond: isNextSeekable,
+                cond: selectors.isNextSeekable,
               },
               {
                 target: "requesting",
@@ -224,15 +324,13 @@ const playerMachine = ({
                 // No other action here so that there is seamless
                 // playback when going directly from one song to another
                 actions: "setNextTrack",
-                // TODO: what should happen in shuffle mode? if you are going to
-                // the next song would you expect it to noy play seamlessly?
-                cond: isNextNext,
+                cond: selectors.isNextNext,
               },
               {
                 // The next track could also be in the same video for queues and shuffle
                 target: "requesting",
                 actions: ["setNextTrack", "seekTo"],
-                cond: isNextSeekable,
+                cond: selectors.isNextSeekable,
               },
               {
                 // Any other end event means it is the end of a video
@@ -245,13 +343,14 @@ const playerMachine = ({
               {
                 target: "requesting",
                 actions: ["setTrack", "seekTo"],
-                cond: isEventSeekable,
+                cond: selectors.isEventSeekable,
               },
               {
                 target: "requesting",
                 actions: ["setTrack", "loadVideo"],
               },
             ],
+            ...shuffleTransition,
           },
         },
         paused: {
@@ -263,12 +362,10 @@ const playerMachine = ({
             YOUTUBE_PLAY: "playing",
             NEXT: [
               {
-                target: "requesting",
                 actions: ["setNextTrack", "seekTo"],
-                cond: isNextSeekable,
+                cond: selectors.isNextSeekable,
               },
               {
-                target: "requesting",
                 actions: ["setNextTrack", "cueVideo"],
               },
             ],
@@ -276,13 +373,14 @@ const playerMachine = ({
               {
                 target: "requesting",
                 actions: ["setTrack", "seekTo", "playVideo"],
-                cond: isEventSeekable,
+                cond: selectors.isEventSeekable,
               },
               {
                 target: "requesting",
                 actions: ["setTrack", "loadVideo"],
               },
             ],
+            ...shuffleTransition,
           },
         },
       },
@@ -292,7 +390,7 @@ const playerMachine = ({
         playVideo: (context): void => context.player?.playVideo(),
         pauseVideo: (context): void => context.player?.pauseVideo(),
         cueVideo: (context): void => {
-          const selected = getSelected(context)
+          const selected = selectors.getSelected(context)
           if (selected) {
             context.player?.cueVideoById({
               videoId: selected.videoId,
@@ -301,7 +399,7 @@ const playerMachine = ({
           }
         },
         loadVideo: (context): void => {
-          const selected = getSelected(context)
+          const selected = selectors.getSelected(context)
           if (selected) {
             context.player?.loadVideoById({
               videoId: selected.videoId,
@@ -310,30 +408,98 @@ const playerMachine = ({
           }
         },
         seekTo: (context): void => {
-          const selected = getSelected(context)
+          const selected = selectors.getSelected(context)
           if (selected) {
             context.player?.seekTo(selected.start, true)
           }
         },
         setPlayer: assign<PlayerContext>({
-          player: (context, event) => (event as ReadyEvent).player,
+          player: (_, event) => (event as ReadyEvent).player,
         }),
         setInitialTrack: assign<PlayerContext>({
-          // If not shuffled then the first index is a full show,
-          // so we use the first index which is the first song
-          selectedIndex: (context) => (context.shuffle ? 0 : 1),
+          order: (context) => {
+            return {
+              ...context.order,
+              selectedIndex: 0,
+            }
+          },
         }),
         setNextTrack: assign<PlayerContext>({
-          selectedIndex: getNextIndex,
+          order: (context) => {
+            return {
+              ...context.order,
+              selectedIndex:
+                selectors.getNextIndex(context) ?? context.order.selectedIndex,
+            }
+          },
         }),
         setTrack: assign<PlayerContext>({
-          selectedIndex: (context, event) =>
-            context.tracks.findIndex(
-              (t) => t.id === (event as SelectTrackEvent).track.id
-            ),
+          order: (context, event) => {
+            const selectTrackEvent = event as SelectTrackEvent
+
+            const songMode = selectors.getSelected(context)?.isSong || true
+            const eventSongMode =
+              selectors.getEventSelected(context, selectTrackEvent)?.isSong ||
+              true
+
+            const newOrder =
+              songMode !== eventSongMode
+                ? eventSongMode
+                  ? defaultSongOrder
+                  : defaultVideoOrder
+                : context.order
+            const newIndex = newOrder.trackIndexes[selectTrackEvent.track.id]
+
+            if (newIndex === undefined) {
+              debug.error("SELECT TRACK NOT FOUND", event)
+              return context.order
+            }
+
+            return {
+              ...newOrder,
+              selectedIndex: newIndex,
+            }
+          },
+        }),
+        shuffleTrackOrder: assign<PlayerContext>({
+          shuffle: (context) => !context.shuffle,
+          order: (context) => {
+            const shuffle = !context.shuffle
+            const selected = selectors.getSelected(context)
+            const songMode = selected?.isSong || true
+
+            if (shuffle) {
+              const shuffleOrder = shuffleArray(ORIGINAL_TRACKS)
+              if (selected) shuffleOrder.unshift(selected)
+              return generateOrder(
+                shuffleOrder,
+                (t) => t.isSong === songMode,
+                selected?.id
+              )
+            }
+
+            const newOrder = songMode ? defaultSongOrder : defaultVideoOrder
+
+            if (!selected) {
+              return newOrder
+            }
+
+            const newIndex = newOrder.trackIndexes[selected.id]
+
+            if (newIndex === undefined) {
+              debug.error("CURRENT TRACK NOT IN SHUFFLE", selected)
+              return context.order
+            }
+
+            return {
+              ...newOrder,
+              selectedIndex: newIndex,
+            }
+          },
         }),
       },
     }
   )
+}
 
 export default playerMachine

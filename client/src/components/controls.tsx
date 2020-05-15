@@ -7,6 +7,7 @@ import hhmmss from "../lib/hhmmss"
 interface Props {
   selected?: Track
   play: boolean
+  shuffle: boolean
   progress: Progress
   send: Sender
 }
@@ -16,6 +17,7 @@ const Controls: FunctionalComponent<Props> = ({
   play,
   progress,
   send,
+  shuffle,
 }) => {
   const title = Array.isArray(selected?.title)
     ? selected?.title.join(" - ")
@@ -27,12 +29,17 @@ const Controls: FunctionalComponent<Props> = ({
         style={{ left: "-100%", transform: `translate(${progress.percent}%)` }}
       />
       <div class="relative flex items-center">
+        <Button onClick={(): void => send("SHUFFLE")} selected={shuffle}>
+          shuffle
+        </Button>
         {play ? (
-          <Button onClick={(): void => send("PAUSE")} selected>
+          <Button class="ml-1" onClick={(): void => send("PAUSE")} selected>
             pause
           </Button>
         ) : (
-          <Button onClick={(): void => send("PLAY")}>play</Button>
+          <Button class="ml-1" onClick={(): void => send("PLAY")}>
+            play
+          </Button>
         )}
         <Button class="ml-1" onClick={(): void => send("NEXT")}>
           next

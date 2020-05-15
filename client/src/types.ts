@@ -1,6 +1,9 @@
+export type TrackId = "string"
+export type VideoId = "string"
+
 export type Track = {
-  id: string
-  videoId: string
+  id: TrackId
+  videoId: VideoId
   title: string | string[]
   start: number
   end: number
@@ -12,7 +15,7 @@ export type Tracks = Track[]
 
 export type Video = {
   title: string
-  id: string
+  id: VideoId
   duration: number
   tracks: Tracks
 }
