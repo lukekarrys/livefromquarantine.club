@@ -5,7 +5,7 @@ const path = require('path')
 const axios = require('axios')
 const prettier = require('prettier')
 const duration = require('iso8601-duration')
-const { isCommentMaybeSetlist } = require('../build/parse')
+const { isCommentMaybeSetlist } = require('../api/parse')
 const config = require('../config')
 
 const { API_KEY } = process.env
@@ -208,7 +208,7 @@ const writeFile = async (artist, resp) => {
 }
 
 const getArtist = async (artistKey) => {
-  const artist = require(`../build/${artistKey}`)
+  const artist = require(`../api/${artistKey}`)
 
   if (!artist) {
     throw new Error(`Invalid artistKey: ${artistKey}`)
