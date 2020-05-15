@@ -351,33 +351,7 @@
           "title": "Ben Gibbard: Live From Home (4/16/20)"
         },
         "comments": {
-          "items": [
-            {
-              "id": "UgxNYU6vFCjeZEG2q2V4AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "UgxNYU6vFCjeZEG2q2V4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "authorChannelId": {
-                      "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
-                    },
-                    "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
-                    "authorDisplayName": "MeinKampfyChair",
-                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
-                    "publishedAt": "2020-04-16T23:54:36.000Z",
-                    "textDisplay": "00:33 Your Heart is an Empty Room\r\n04:13 Autumn Love\r\n08:43 Styrofoam Plates\r\n13:49 Willamine \r\n18:21 (Q & A)\r\n25:40 Man In Blue\r\n30:28 Grapevine Fires\r\n37:23 Photobooth\r\n42:27 A Movie Script Ending\r\n46:23 Don't Cry No Tears [Neil Young cover]",
-                    "textOriginal": "00:33 Your Heart is an Empty Room\r\n04:13 Autumn Love\r\n08:43 Styrofoam Plates\r\n13:49 Willamine \r\n18:21 (Q & A)\r\n25:40 Man In Blue\r\n30:28 Grapevine Fires\r\n37:23 Photobooth\r\n42:27 A Movie Script Ending\r\n46:23 Don't Cry No Tears [Neil Young cover]",
-                    "updatedAt": "2020-04-16T23:56:10.000Z",
-                    "videoId": "Z3BiBB0W1Eo",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "Z3BiBB0W1Eo"
-              }
-            }
-          ],
+          "items": [],
           "kind": "youtube#commentThreadListResponse"
         }
       },
@@ -986,31 +960,6 @@
         "comments": {
           "items": [
             {
-              "id": "UgxOFkjslsYiGtQ8d4J4AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "UgxOFkjslsYiGtQ8d4J4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "authorChannelId": {
-                      "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
-                    },
-                    "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
-                    "authorDisplayName": "MeinKampfyChair",
-                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
-                    "publishedAt": "2020-03-25T00:00:10.000Z",
-                    "textDisplay": "00:02 Transatlanticism\r\n5:37 Someday You Will Be Loved\r\n9:44 Farmer Chords\r\n13:02 This Place Is a Prison [The Postal Service]\r\n17:58 Couches In Alleys [Styrofoam]\r\n20:42 (Q & A)\r\n27:09 Sleeping In [The Postal Service]\r\n30:02 Summer Skin\r\n32:25 What Sarah Said\r\n38:11 Title and Registration\r\n42:47 (Feeding UW Hospital Staff GoFundMe)\r\n44:42 Marching Bands of Manhattan\r\n49:39 I Will Follow You into the Dark",
-                    "textOriginal": "00:02 Transatlanticism\r\n5:37 Someday You Will Be Loved\r\n9:44 Farmer Chords\r\n13:02 This Place Is a Prison [The Postal Service]\r\n17:58 Couches In Alleys [Styrofoam]\r\n20:42 (Q & A)\r\n27:09 Sleeping In [The Postal Service]\r\n30:02 Summer Skin\r\n32:25 What Sarah Said\r\n38:11 Title and Registration\r\n42:47 (Feeding UW Hospital Staff GoFundMe)\r\n44:42 Marching Bands of Manhattan\r\n49:39 I Will Follow You into the Dark",
-                    "updatedAt": "2020-03-25T00:05:52.000Z",
-                    "videoId": "25OCP0qBD_A",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "25OCP0qBD_A"
-              }
-            },
-            {
               "id": "UgwMX_eb-T8TpDyCWbp4AaABAg",
               "kind": "youtube#commentThread",
               "snippet": {
@@ -1085,33 +1034,7 @@
           "title": "Ben Gibbard: Live From Home (3/23/20)"
         },
         "comments": {
-          "items": [
-            {
-              "id": "UgzMtwDHMKaTMXMg0BJ4AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "UgzMtwDHMKaTMXMg0BJ4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "authorChannelId": {
-                      "value": "UCnFXceP_wxs3QZsqhQ-kVEg"
-                    },
-                    "authorChannelUrl": "http://www.youtube.com/channel/UCnFXceP_wxs3QZsqhQ-kVEg",
-                    "authorDisplayName": "MeinKampfyChair",
-                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwlwoFu5OFZ6w4yghRAh6oWfVQwVhICVWjBbw=s48-c-k-c0xffffffff-no-rj-mo",
-                    "publishedAt": "2020-03-24T00:05:16.000Z",
-                    "textDisplay": "00:31 Champagne from a Paper Cup\r\n04:08 Debate Exposes Doubt\r\n07:54 Scientist Studies\r\n13:28 Wait [Secret Stars cover] \r\n17:27 Company Calls Epilogue\r\n22:47 (Q & A)\r\n28:17 Cleveland [¡All-Time Quarterback!]\r\n31:05 (This Is) The Dream of Evan and Chan [Dntel]\r\n34:51 Blacking Out the Friction\r\n37:40 Line of Best Fit \r\n44:18 I Was a Kaleidoscope\r\n49:24 No Joy in Mudville\r\n55:21 The Face That Launched 1000 Shits [The Revolutionary Hydra cover]",
-                    "textOriginal": "00:31 Champagne from a Paper Cup\r\n04:08 Debate Exposes Doubt\r\n07:54 Scientist Studies\r\n13:28 Wait [Secret Stars cover] \r\n17:27 Company Calls Epilogue\r\n22:47 (Q & A)\r\n28:17 Cleveland [¡All-Time Quarterback!]\r\n31:05 (This Is) The Dream of Evan and Chan [Dntel]\r\n34:51 Blacking Out the Friction\r\n37:40 Line of Best Fit \r\n44:18 I Was a Kaleidoscope\r\n49:24 No Joy in Mudville\r\n55:21 The Face That Launched 1000 Shits [The Revolutionary Hydra cover]",
-                    "updatedAt": "2020-03-24T00:23:28.000Z",
-                    "videoId": "QHTXnGLb4I0",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "QHTXnGLb4I0"
-              }
-            }
-          ],
+          "items": [],
           "kind": "youtube#commentThreadListResponse"
         }
       },
@@ -1641,33 +1564,7 @@
           "title": "Ben Gibbard: Live From Home"
         },
         "comments": {
-          "items": [
-            {
-              "id": "UgwYJ-InesYsfLgNCZ14AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "UgwYJ-InesYsfLgNCZ14AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "authorChannelId": {
-                      "value": "UCwlNNvXVfKMlifaAkg-GUiA"
-                    },
-                    "authorChannelUrl": "http://www.youtube.com/channel/UCwlNNvXVfKMlifaAkg-GUiA",
-                    "authorDisplayName": "zulmatthews",
-                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxKLt27q2fNA7eT_95mz84vAtFLjiCsaHyG5Q=s48-c-k-c0xffffffff-no-rj-mo",
-                    "publishedAt": "2020-03-18T04:02:53.000Z",
-                    "textDisplay": "0:19: We Will Become Silhouettes\n3:38: A Lack of Color\n7:46: Title Track\n12:22: Northern Lights\n18:30: Crooked Teeth\n22:34: Cath...\n28:39: Grapevine Fires\n33:54: Fake Plastic Trees\n40:01: California Zephyr\n44:06: The District Sleeps Alone Tonight",
-                    "textOriginal": "0:19: We Will Become Silhouettes\n3:38: A Lack of Color\n7:46: Title Track\n12:22: Northern Lights\n18:30: Crooked Teeth\n22:34: Cath...\n28:39: Grapevine Fires\n33:54: Fake Plastic Trees\n40:01: California Zephyr\n44:06: The District Sleeps Alone Tonight",
-                    "updatedAt": "2020-03-18T04:06:24.000Z",
-                    "videoId": "Ei9xuVkbQuU",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "Ei9xuVkbQuU"
-              }
-            }
-          ],
+          "items": [],
           "kind": "youtube#commentThreadListResponse"
         }
       }

@@ -201,31 +201,6 @@
         "comments": {
           "items": [
             {
-              "id": "UgybR8FtjgU0gPf6lCx4AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "UgybR8FtjgU0gPf6lCx4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "authorChannelId": {
-                      "value": "UCCPfNRYvddFf06fAtP-EL-A"
-                    },
-                    "authorChannelUrl": "http://www.youtube.com/channel/UCCPfNRYvddFf06fAtP-EL-A",
-                    "authorDisplayName": "Brad Preston",
-                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwwT0534PLvGtMBmbtBiO8oLS0UBLMR6uKHFw=s48-c-k-c0xffffffff-no-rj-mo",
-                    "publishedAt": "2020-04-12T03:27:59.000Z",
-                    "textDisplay": "0:01:49 — Hello In There (John Prine cover)\n0:06:32 — There’s Always Someone Cooler Than You (false start)\n0:07:18 — There’s Always Someone Cooler Than You\n0:12:22 — Sentimental Guy\n0:16:17 — The Ascent of Stan\n0:21:10 — Improv #1 (Mad Scrollers)\n0:22:07 — Where’s Summer B.? (false start)\n0:24:48 — Jackson Cannery\n0:29:27 — Selfless, Cold and Composed\n0:38:51 — Bastard\n0:43:48 — The Last Polka\n0:46:36 — Hava Nagila (Traditional)\n0:47:53 — Missing the War\n0:51:07 — Medley: Boxing/Kylie from Connecticut/Emaline/Philosophy/Levi Johnston’s Blues/Uncle Walter/Eddie Walker/Brick/Carrying Cathy/So There/Tiny Dancer (Elton John cover)/Songs of Love/Fired/Mess/Raindrops Keep Fallin' on My Head (B.J. Thomas cover)/Steven’s Last Night in Town/Lullabye/Draw a Crowd\n1:01:20 — Where’s Summer B.?\n1:03:53 — The Luckiest",
-                    "textOriginal": "0:01:49 — Hello In There (John Prine cover)\n0:06:32 — There’s Always Someone Cooler Than You (false start)\n0:07:18 — There’s Always Someone Cooler Than You\n0:12:22 — Sentimental Guy\n0:16:17 — The Ascent of Stan\n0:21:10 — Improv #1 (Mad Scrollers)\n0:22:07 — Where’s Summer B.? (false start)\n0:24:48 — Jackson Cannery\n0:29:27 — Selfless, Cold and Composed\n0:38:51 — Bastard\n0:43:48 — The Last Polka\n0:46:36 — Hava Nagila (Traditional)\n0:47:53 — Missing the War\n0:51:07 — Medley: Boxing/Kylie from Connecticut/Emaline/Philosophy/Levi Johnston’s Blues/Uncle Walter/Eddie Walker/Brick/Carrying Cathy/So There/Tiny Dancer (Elton John cover)/Songs of Love/Fired/Mess/Raindrops Keep Fallin' on My Head (B.J. Thomas cover)/Steven’s Last Night in Town/Lullabye/Draw a Crowd\n1:01:20 — Where’s Summer B.?\n1:03:53 — The Luckiest",
-                    "updatedAt": "2020-04-12T03:29:11.000Z",
-                    "videoId": "j_GrG-Exdd8",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "j_GrG-Exdd8"
-              }
-            },
-            {
               "id": "UgzmXwOLMjjR1H8Te2B4AaABAg",
               "kind": "youtube#commentThread",
               "snippet": {

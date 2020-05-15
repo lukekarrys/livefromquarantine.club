@@ -2123,33 +2123,7 @@
           "title": "Live from Quarantine - April 6"
         },
         "comments": {
-          "items": [
-            {
-              "id": "Ugypnv8pR5_XkQ0jd614AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "Ugypnv8pR5_XkQ0jd614AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "authorChannelId": {
-                      "value": "UCi7v6eB0S6cT7nVxNCSLgMA"
-                    },
-                    "authorChannelUrl": "http://www.youtube.com/channel/UCi7v6eB0S6cT7nVxNCSLgMA",
-                    "authorDisplayName": "Hmw",
-                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxOoEH8EJ7UdZnk8pI-ZHjUnyvE0FP5rxuKvg=s48-c-k-c0xffffffff-no-rj-mo",
-                    "publishedAt": "2020-04-07T21:07:25.000Z",
-                    "textDisplay": "(SETLIST)\r\nSmith & Jones Forever (The SIlver Jews) - 0:50\r\nCodys Theme - 4:01\r\nNausea (Jeff Rosenstock) - 6:06\r\nI Am So Mad at You - 8:59\r\nGuilt: The Song - 10:45\r\nHung up (Dear Nora) - 14:16\r\nHeart of Gold (Neil Young) - 15:50 \r\nPeople - 19:42\nAdvice from Sean - 21:25",
-                    "textOriginal": "(SETLIST)\r\nSmith & Jones Forever (The SIlver Jews) - 0:50\r\nCodys Theme - 4:01\r\nNausea (Jeff Rosenstock) - 6:06\r\nI Am So Mad at You - 8:59\r\nGuilt: The Song - 10:45\r\nHung up (Dear Nora) - 14:16\r\nHeart of Gold (Neil Young) - 15:50 \r\nPeople - 19:42\nAdvice from Sean - 21:25",
-                    "updatedAt": "2020-04-07T21:08:35.000Z",
-                    "videoId": "wPMCbfbq7KU",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "wPMCbfbq7KU"
-              }
-            }
-          ],
+          "items": [],
           "kind": "youtube#commentThreadListResponse"
         }
       },
