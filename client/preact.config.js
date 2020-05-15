@@ -19,6 +19,7 @@ export default {
     })
 
     if (config.devServer) {
+      config.devServer.hot = false
       config.devServer.proxy = {
         "/api": {
           target: "http://localhost:8081",

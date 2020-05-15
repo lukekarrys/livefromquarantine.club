@@ -47,17 +47,18 @@
   },
   "scripts": {
     "dev": "run-p dev:**",
-    "dev:data": "NODE_ENV=development node build/build.js",
+    "dev:data": "NODE_ENV=development node api/dev-server.js",
     "dev:client": "cd client && npm run dev",
     "build": "run-s build:client build:data",
     "build:client": "cd client && npm run build",
-    "build:data": "NODE_ENV=production node build/build.js",
+    "build:data": "node api/build.js",
     "data:fetch": "node data/index.js",
     "eslint": "eslint . --fix --ignore-pattern client",
     "lint": "npm run prettier && npm run eslint && cd client && npm run lint",
     "postinstall": "cd client && npm install",
     "prebuild": "if [ ! -d \"client/node_modules\" ]; then npm run postinstall; fi",
     "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,css,md,json}'",
-    "trigger": "node data/trigger.js"
+    "trigger": "node data/trigger.js",
+    "start": "npm run dev"
   }
 }

@@ -1,14 +1,14 @@
 /// <reference types="@types/youtube" />
-
 import { useEffect, useRef, useCallback, Ref } from "preact/hooks"
+import debug from "./debug"
 
 declare global {
   interface Window {
-    YT: {
+    YT?: {
       PlayerState: YT.PlayerState
       Player: YT.Player
     }
-    onYouTubeIframeAPIReady: () => void
+    onYouTubeIframeAPIReady?: () => void
   }
 }
 
@@ -20,26 +20,30 @@ const addScript = (src: string): void => {
 
 const useYouTube = (
   domRef: Ref<HTMLDivElement>,
-  options: Partial<YT.PlayerOptions>
+  onReady: (p: YT.Player) => void,
+  onStateChange: (e: YT.OnStateChangeEvent) => void
 ): YT.Player => {
   const playerRef = useRef<YT.Player>(null)
-
   const setPlayer = useCallback((): void => {
     if (domRef.current) {
       playerRef.current = new window.YT.Player(domRef.current, {
         height: "100%",
         width: "100%",
         playerVars: {
-          autoplay: 1,
+          autoplay: 0,
           controls: 0,
           rel: 0,
           playsinline: 1,
           modestbranding: 1,
         },
-        ...options,
+        events: {
+          onReady: (): void => onReady(playerRef.current),
+          onStateChange,
+          onError: (e: YT.OnErrorEvent): void => debug("PLAYER ERROR", e),
+        },
       })
     }
-  }, [domRef, options])
+  }, [domRef, onReady, onStateChange])
 
   useEffect(() => {
     if (!window.YT) {

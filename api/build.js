@@ -1,14 +1,11 @@
 require('dotenv').config()
 
 const assert = require('assert')
-const http = require('http')
 const fs = require('fs').promises
 const path = require('path')
 const mkdirp = require('mkdirp')
 const config = require('../config')
 const { main: mainParser } = require('./parse')
-
-const PRODUCTION = process.env.NODE_ENV === 'production'
 
 const validate = (data) => {
   data.forEach((v) => {
@@ -81,7 +78,7 @@ const buildAndSave = async (...artists) => {
   )
 }
 
-if (PRODUCTION) {
+if (require.main === module) {
   const cliArtists = process.argv.slice(2).flatMap((v) => v.split(','))
   buildAndSave(...(cliArtists.length ? cliArtists : config.artists))
     .then((res) => {
@@ -95,16 +92,5 @@ if (PRODUCTION) {
       process.exit(1)
     })
 } else {
-  http
-    .createServer((req, res) => {
-      try {
-        const data = buildArtist(path.basename(req.url, '.json'))
-        res.writeHead(200)
-        res.end(JSON.stringify(data.data))
-      } catch (e) {
-        res.writeHead(500)
-        res.end(JSON.stringify({ error: e.message }))
-      }
-    })
-    .listen(8081)
+  module.exports = buildArtist
 }

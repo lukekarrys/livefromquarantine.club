@@ -72,9 +72,10 @@ const normalizeData = (videos: ApiVideo[]): Data => {
 }
 
 const fetchData = (id: string): Promise<Data> =>
-  fetch(`/api/${id}.json`).then((resp) => {
+  fetch(`/api/${id}.json`).then(async (resp) => {
     if (resp.ok) {
-      return resp.json().then(normalizeData)
+      const videos = await resp.json()
+      return normalizeData(videos)
     } else {
       throw new Error(`${resp.status}: not ok`)
     }

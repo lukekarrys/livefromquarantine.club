@@ -2,7 +2,7 @@ import { createMachine, assign } from "@xstate/fsm"
 import { Data } from "../types"
 
 interface DataContext {
-  data: Data
+  data?: Data
   error?: Error
 }
 
@@ -12,16 +12,28 @@ export type ErrorEvent = { type: "ERROR"; data: Error }
 type DataEvent = FetchEvent | SuccessEvent | ErrorEvent
 
 type DataState =
-  | { value: "idle"; context: DataContext }
-  | { value: "loading"; context: DataContext }
-  | { value: "success"; context: DataContext }
-  | { value: "failure"; context: DataContext }
+  | {
+      value: "idle"
+      context: { data: undefined; error: undefined }
+    }
+  | {
+      value: "loading"
+      context: { data: undefined; error: undefined }
+    }
+  | {
+      value: "success"
+      context: { data: Data; error: undefined }
+    }
+  | {
+      value: "failure"
+      context: { data: undefined; error: Error }
+    }
 
 const dataMachine = createMachine<DataContext, DataEvent, DataState>({
   id: "data",
   initial: "idle",
   context: {
-    data: { tracks: [], videos: [] },
+    data: undefined,
     error: undefined,
   },
   states: {

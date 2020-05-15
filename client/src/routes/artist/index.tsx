@@ -10,6 +10,7 @@ interface Props {
   artist: string
 }
 
+// TODO: add  initial upnext
 const initial = JSON.parse(
   localStorage.getItem("initial-data") ||
     JSON.stringify({} || { nowPlaying: "kRu_s_Er_vs-740" })
@@ -32,17 +33,21 @@ const Artist: FunctionalComponent<Props> = ({ artist }) => {
 
   // TODO: render empty player during loading/error
 
-  return state.matches("loading") ? (
-    <div>Loading...</div>
-  ) : state.matches("failure") ? (
-    <div>Error: {state.context.error?.message}</div>
-  ) : state.matches("success") ? (
-    <Player
-      videos={state.context.data?.videos}
-      tracks={state.context.data?.tracks}
-      initial={initial}
-    />
-  ) : null
+  return (
+    <div class="max-w-screen-md border-r border-l mx-auto border-gray-600">
+      {state.matches("loading") ? (
+        <div>Loading...</div>
+      ) : state.matches("failure") ? (
+        <div>Error: {state.context.error?.message}</div>
+      ) : state.matches("success") ? (
+        <Player
+          videos={state.context.data?.videos}
+          tracks={state.context.data?.tracks}
+          initial={initial}
+        />
+      ) : null}
+    </div>
+  )
 }
 
 export default Artist

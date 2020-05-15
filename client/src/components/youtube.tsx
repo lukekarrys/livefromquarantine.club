@@ -1,44 +1,18 @@
+/// <reference types="@types/youtube" />
 import { FunctionalComponent, h, VNode } from "preact"
-import { useEffect, useRef, useMemo } from "preact/hooks"
+import { useEffect, useRef, useCallback } from "preact/hooks"
 import cx from "classnames"
-import { Sender } from "../lib/player-machine"
+import { Sender, ytToMachineEvent } from "../lib/player-machine"
 import { Track } from "../types"
 import useYouTube from "../lib/useYouTube"
-
-const isTrackEqual = (current?: Track, previous?: Track): boolean => {
-  return (
-    !!current &&
-    !!previous &&
-    current.videoId === previous.videoId &&
-    current.start === previous.start &&
-    current.end === previous.end
-  )
-}
-
-const isSeekable = (current?: Track, previous?: Track): boolean => {
-  return (
-    !!current &&
-    !!previous &&
-    current.videoId === previous.videoId &&
-    (current.start !== previous.start || current.end !== previous.end)
-  )
-}
-
-const isNextTrack = (current?: Track, previous?: Track): boolean => {
-  return (
-    !!current &&
-    !!previous &&
-    current.videoId === previous.videoId &&
-    current.start === previous.end
-  )
-}
+import * as debug from "../lib/debug"
 
 interface Props {
   selected?: Track
   play?: boolean
   send: Sender
   onProgress?: ({ time, percent }: { time: number; percent: number }) => void
-  splash?: VNode
+  children?: VNode
 }
 
 const YouTube: FunctionalComponent<Props> = ({
@@ -46,37 +20,29 @@ const YouTube: FunctionalComponent<Props> = ({
   play,
   send,
   onProgress,
-  splash,
+  children,
 }) => {
-  const playRef = useRef(play)
-  const selectedRef = useRef(selected)
   const domRef = useRef<HTMLDivElement>(null)
   const player = useYouTube(
     domRef,
-    useMemo(
-      () => ({
-        events: {
-          onReady: (): void => send("READY"),
-          onStateChange: (e: YT.OnStateChangeEvent): void => {
-            if (e.data === window.YT.PlayerState.PLAYING) {
-              send("YOUTUBE_PLAY")
-            } else if (e.data === window.YT.PlayerState.PAUSED) {
-              send("YOUTUBE_PAUSE")
-            } else if (e.data === window.YT.PlayerState.BUFFERING) {
-              send("YOUTUBE_BUFFERING")
-            } else if (e.data === window.YT.PlayerState.CUED) {
-              send("YOUTUBE_CUED")
-            }
-          },
-        },
-      }),
+    useCallback((player) => send({ type: "READY", player }), [send]),
+    useCallback(
+      (e: YT.OnStateChangeEvent): void => {
+        const sendEvent = ytToMachineEvent[e.data]
+        if (sendEvent) {
+          debug.log("YOUTUBE_EVENT", sendEvent)
+          send(sendEvent)
+        }
+      },
       [send]
     )
   )
 
   useEffect(() => {
+    if (!player || !selected || !play || !onProgress) return
+
     const interval: NodeJS.Timeout = setInterval(() => {
-      if (!player || !selected || !play) {
+      if (!player || !selected || !play || !onProgress) {
         return clearInterval(interval)
       }
 
@@ -84,58 +50,35 @@ const YouTube: FunctionalComponent<Props> = ({
       const current = player.getCurrentTime()
       const time = current - start
 
-      if (onProgress) {
-        if (!time || time <= 0) {
-          onProgress({ time: 0, percent: 0 })
-        } else {
-          onProgress({
-            time,
-            percent: (time / (end - start)) * 100,
-          })
-        }
+      if (!time || time <= 0) {
+        onProgress({ time: 0, percent: 0 })
+      } else {
+        onProgress({
+          time,
+          percent: (time / (end - start)) * 100,
+        })
+      }
+    }, 1000 / 60)
+
+    return (): void => clearInterval(interval)
+  }, [player, selected, play, onProgress])
+
+  useEffect(() => {
+    if (!player || !selected || !play) return
+
+    const interval: NodeJS.Timeout = setInterval(() => {
+      if (!player || !selected || !play) {
+        return clearInterval(interval)
       }
 
-      if (current >= end) {
+      if (player.getCurrentTime() >= selected.end) {
         clearInterval(interval)
         send("END")
       }
-    }, 1000 / 60)
+    }, 1000)
+
     return (): void => clearInterval(interval)
-  }, [selected, play, onProgress, player, send])
-
-  useEffect(() => {
-    if (!player) return
-
-    const sameTrack = isTrackEqual(selected, selectedRef.current)
-
-    if (play !== playRef.current && sameTrack) {
-      player[play ? "playVideo" : "pauseVideo"]()
-    } else if (selected) {
-      if (play) {
-        if (
-          isNextTrack(selected, selectedRef.current) &&
-          player.getCurrentTime() >= selected.start
-        ) {
-          send("YOUTUBE_CUED")
-        } else if (isSeekable(selected, selectedRef.current)) {
-          player.seekTo(selected.start, true)
-        } else {
-          player.loadVideoById({
-            videoId: selected.videoId,
-            startSeconds: selected.start,
-          })
-        }
-      } else {
-        player.cueVideoById({
-          videoId: selected.videoId,
-          startSeconds: selected.start,
-        })
-      }
-    }
-
-    playRef.current = play
-    selectedRef.current = selected
-  }, [selected, play, player, send])
+  }, [player, selected, play, send])
 
   return (
     <div class="relative h-0 overflow-hidden max-w-full pb-video">
@@ -145,7 +88,7 @@ const YouTube: FunctionalComponent<Props> = ({
           selected && "hidden"
         )}
       >
-        {splash}
+        {children}
       </div>
       <div ref={domRef} class="absolute top-0 left-0 w-full h-full" />
     </div>

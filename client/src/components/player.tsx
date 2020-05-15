@@ -1,4 +1,4 @@
-import { FunctionalComponent, h } from "preact"
+import { FunctionalComponent, h, Fragment } from "preact"
 import { useState, useCallback, useEffect, useMemo } from "preact/hooks"
 import { useMachine } from "@xstate/react/lib/fsm"
 import { Videos as TVideos, Tracks, Track, Progress } from "../types"
@@ -25,16 +25,21 @@ const Player: FunctionalComponent<Props> = ({ videos, tracks, initial }) => {
   const machine = useMemo(
     () =>
       playerMachine({
-        videos,
         tracks,
         selectedIndex: initialSelectedIndex,
       }),
-    [videos, tracks, initialSelectedIndex]
+    [tracks, initialSelectedIndex]
   )
   const [state, send, service] = useMachine(machine)
 
   useEffect(() => {
-    const subscription = service.subscribe((s) => debug("PLAYER_MACHINE", s))
+    const subscription = service.subscribe((s) =>
+      debug("PLAYER MACHINE", {
+        value: s.value,
+        actions: s.actions.length ? s.actions.map((a) => a.type) : undefined,
+        context: s.context,
+      })
+    )
     return (): void => subscription.unsubscribe()
   }, [service])
 
@@ -51,38 +56,33 @@ const Player: FunctionalComponent<Props> = ({ videos, tracks, initial }) => {
   const selected = state.context.tracks[state.context.selectedIndex]
 
   return (
-    <div class="max-w-screen-md border-r border-l mx-auto border-gray-600">
+    <Fragment>
       <div class="sticky top-0">
         <div class="bg-gray-600">
           <YouTube
             selected={selected}
-            play={state.matches("playing") || state.matches("requestingPlay")}
+            play={state.matches("playing")}
             send={send}
             onProgress={onProgress}
-            splash={
-              <div class="bg-gray-200 w-full h-full flex justify-center items-center shadow-inner">
-                Hey now...
-              </div>
-            }
-          />
+          >
+            <div class="bg-gray-200 w-full h-full flex justify-center items-center shadow-inner">
+              Hey now...
+            </div>
+          </YouTube>
         </div>
         <div class="bg-white border-t border-b border-gray-600 shadow-sm">
           <Controls
             selected={selected}
             progress={progress}
-            play={state.matches("playing") || state.matches("requestingPlay")}
+            play={state.matches("playing") || state.matches("requesting")}
             send={send}
           />
         </div>
       </div>
       <div>
-        <Videos
-          videos={state.context.videos}
-          selected={selected}
-          onSelect={onSelect}
-        />
+        <Videos videos={videos} selected={selected} onSelect={onSelect} />
       </div>
-    </div>
+    </Fragment>
   )
 }
 
