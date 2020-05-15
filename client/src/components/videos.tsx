@@ -42,15 +42,15 @@ const TrackButton: FunctionalComponent<ButtonProps> = ({
 const Videos: FunctionalComponent<Props> = ({ videos, selected, onSelect }) => {
   useEffect(() => {
     // TODO: fix scroll to
-    const $button = document.getElementById(`track-button-${selected?.id}`)
-    if ($button) {
-      const $songs = document.documentElement
-      const buttonTop = $button.offsetTop - $songs.offsetTop - $songs.scrollTop
-      const buttonBottom = $button.getBoundingClientRect().height + buttonTop
-      if (buttonTop < 0 || buttonBottom > window.innerHeight) {
-        $songs.scrollTop = buttonTop - 475
-      }
-    }
+    // const $button = document.getElementById(`track-button-${selected?.id}`)
+    // if ($button) {
+    //   const $songs = document.documentElement
+    //   const buttonTop = $button.offsetTop - $songs.offsetTop - $songs.scrollTop
+    //   const buttonBottom = $button.getBoundingClientRect().height + buttonTop
+    //   if (buttonTop < 0 || buttonBottom > window.innerHeight) {
+    //     $songs.scrollTop = buttonTop - 475
+    //   }
+    // }
   }, [selected?.id])
 
   return (

@@ -118,7 +118,8 @@ const playerMachine = ({
         tracks,
         selectedIndex,
         shuffle: false, // TODO:  implement  shuffle
-        repeat: Repeat.None, // TODO: implement repeat
+        repeat: Repeat.None, // TODO: implement repeat including repeat one and repeat within
+        // a video (also including repeat within a video while playing a full video is the same as repeat one)
         player: undefined,
         // TODO: implemetn up next with queueMode toggle
       },

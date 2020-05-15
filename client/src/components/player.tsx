@@ -55,6 +55,28 @@ const Player: FunctionalComponent<Props> = ({ videos, tracks, initial }) => {
 
   const selected = state.context.tracks[state.context.selectedIndex]
 
+  // TODO: share urls
+
+  useEffect(() => {
+    const listener = (e: KeyboardEvent): void => {
+      if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return
+      else if (e.key === "ArrowRight") send("NEXT")
+      else if (e.key === " ") {
+        e.preventDefault()
+        state.matches("playing")
+          ? send("PAUSE")
+          : state.matches("paused") || state.matches("initial")
+          ? send("PLAY")
+          : undefined
+      }
+      // else if (e.key === "s") setShuffle()
+      // else if (e.key === "x") resetQueue()
+      // else if (e.key === "r") setRepeat()
+    }
+    document.addEventListener("keydown", listener)
+    return (): void => document.removeEventListener("keydown", listener)
+  }, [send, state])
+
   return (
     <Fragment>
       <div class="sticky top-0">
