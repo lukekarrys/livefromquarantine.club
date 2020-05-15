@@ -13,6 +13,9 @@ const { API_KEY } = process.env
 const apiUrl = `https://www.googleapis.com/youtube/v3`
 const hideKey = (str) => str.replace(API_KEY, 'X'.repeat(3)).replace(apiUrl, '')
 
+const omitCommentIds = ['UgyA0JzCcn4gxF1ktmZ4AaABAg']
+const blessCommentIds = ['UgzyR6a6B-Czl4pI5ZN4AaABAg']
+
 const get = (url) => {
   return axios.get(url)
 }
@@ -168,14 +171,20 @@ const getVideosAndComments = async (artist, key) => {
         .then((resp) => {
           return Object.assign(resp.data, {
             items: resp.data.items
-              .filter((comment) =>
-                isCommentMaybeSetlist(
-                  comment.snippet.topLevelComment.snippet.textDisplay
-                )
+              .filter(
+                (comment) =>
+                  isCommentMaybeSetlist(
+                    comment.snippet.topLevelComment.snippet.textDisplay
+                  ) && !omitCommentIds.includes(comment.id)
               )
               // Sort by likeCount before removing it. YouTube returns comments
               // by "relevance" but likeCount is a better indicator of timestamps I think
-              .sort((a, b) => a.snippet.likeCount - b.snippet.likeCount),
+              .sort((a, b) => {
+                const aIsBlessed = blessCommentIds.includes(a.id)
+                const bIsBlessed = blessCommentIds.includes(b.id)
+                if (aIsBlessed || bIsBlessed) return aIsBlessed ? -1 : 1
+                return a.snippet.likeCount - b.snippet.likeCount
+              }),
           })
         })
         .then((r) => normalizeData(r))

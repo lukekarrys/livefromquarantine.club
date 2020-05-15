@@ -1163,31 +1163,6 @@
         "comments": {
           "items": [
             {
-              "id": "UgyA0JzCcn4gxF1ktmZ4AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "UgyA0JzCcn4gxF1ktmZ4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "authorChannelId": {
-                      "value": "UCwlNNvXVfKMlifaAkg-GUiA"
-                    },
-                    "authorChannelUrl": "http://www.youtube.com/channel/UCwlNNvXVfKMlifaAkg-GUiA",
-                    "authorDisplayName": "zulmatthews",
-                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxKLt27q2fNA7eT_95mz84vAtFLjiCsaHyG5Q=s48-c-k-c0xffffffff-no-rj-mo",
-                    "publishedAt": "2020-03-23T00:37:38.000Z",
-                    "textDisplay": "0:48: Isolation\n5:43: Silver Lining\n10:05: Thirteen \n14:11: Waltz #2 (XO)\n19:19: Motion Sickness\n24:36: If Not For You\n33:52: New Slang (When You Notice The Stripes)\n39:38: Hysteria\n44:33: The Bones Are The Skeletons’ Money\n46:39: Do You Realize?",
-                    "textOriginal": "0:48: Isolation\n5:43: Silver Lining\n10:05: Thirteen \n14:11: Waltz #2 (XO)\n19:19: Motion Sickness\n24:36: If Not For You\n33:52: New Slang (When You Notice The Stripes)\n39:38: Hysteria\n44:33: The Bones Are The Skeletons’ Money\n46:39: Do You Realize?",
-                    "updatedAt": "2020-03-23T00:37:38.000Z",
-                    "videoId": "1eEcVCyKMb8",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "1eEcVCyKMb8"
-              }
-            },
-            {
               "id": "UgzyR6a6B-Czl4pI5ZN4AaABAg",
               "kind": "youtube#commentThread",
               "snippet": {
