@@ -3,6 +3,10 @@ import { Sender } from "../lib/player-machine"
 import { Progress, Track } from "../types"
 import Button from "./button"
 import hhmmss from "../lib/hhmmss"
+import ShuffleIcon from "../icons/shuffle"
+import PauseIcon from "../icons/pause"
+import PlayIcon from "../icons/play"
+import NextIcon from "../icons/next"
 
 interface Props {
   selected?: Track
@@ -25,31 +29,40 @@ const Controls: FunctionalComponent<Props> = ({
   return (
     <div class="px-2 py-1 relative overflow-hidden">
       <div
-        class="absolute h-full w-full left-0 top-0 bg-gray-400"
+        class="absolute h-full w-full left-0 top-0 bg-gray-400 shadow-inner border-r border-gray-600"
         style={{ left: "-100%", transform: `translate(${progress.percent}%)` }}
       />
       <div class="relative flex items-center">
-        <Button onClick={(): void => send("SHUFFLE")} selected={shuffle}>
-          shuffle
+        <Button
+          onClick={(): void => send("SHUFFLE")}
+          selected={shuffle}
+          tight={false}
+        >
+          <ShuffleIcon height={18} />
         </Button>
         {play ? (
-          <Button class="ml-1" onClick={(): void => send("PAUSE")} selected>
-            pause
+          <Button
+            class="ml-1"
+            tight={false}
+            onClick={(): void => send("PAUSE")}
+            selected
+          >
+            <PauseIcon height={18} />
           </Button>
         ) : (
-          <Button class="ml-1" onClick={(): void => send("PLAY")}>
-            play
+          <Button class="ml-1" tight={false} onClick={(): void => send("PLAY")}>
+            <PlayIcon height={18} />
           </Button>
         )}
-        <Button class="ml-1" onClick={(): void => send("NEXT")}>
-          next
+        <Button class="ml-1" tight={false} onClick={(): void => send("NEXT")}>
+          <NextIcon height={18} />
         </Button>
-        <span class="ml-1" style={{ fontVariantNumeric: "tabular-nums" }}>
-          {hhmmss(progress.time)}
-
-          {selected && `/${hhmmss(selected.duration)}`}
+        <span class="truncate ml-1 leading-none">{title}</span>
+        <span class="ml-auto tabular-nums text-sm italic">
+          {`${hhmmss(progress.time)}${
+            selected ? `/${hhmmss(selected.duration)}` : ""
+          }`}
         </span>
-        <span class="truncate ml-1">{title}</span>
       </div>
     </div>
   )

@@ -1,4 +1,4 @@
-import { FunctionalComponent, h, Fragment, RefObject } from "preact"
+import { FunctionalComponent, h, RefObject } from "preact"
 import cx from "classnames"
 import { useEffect } from "preact/hooks"
 import { Videos as TVideos, Track, VideoId, TrackId } from "../types"
@@ -28,18 +28,28 @@ const TrackButton: FunctionalComponent<ButtonProps> = ({
 }) => {
   const title = Array.isArray(track.title) ? track.title[1] : "Play All"
   return (
-    <Button
-      id={BUTTON_ID(track.id)}
-      onClick={(): void => onSelect(track)}
-      selected={selected?.id === track.id}
+    <div
       class={cx(
-        "w-full md:w-auto mb-2 md:mr-2 truncate",
-        last ? "flex-grow-0" : "flex-grow"
+        "mb-2",
+        "w-full sm:w-1/2 md:w-auto",
+        "px-1",
+        last ? "md:flex-grow-0" : "md:flex-grow"
       )}
-      title={title}
     >
-      {title} ({hhmmss(track.end - track.start)})
-    </Button>
+      <Button
+        id={BUTTON_ID(track.id)}
+        onClick={(): void => onSelect(track)}
+        selected={selected?.id === track.id}
+        class={cx("w-full flex justify-between sm:justify-center items-center")}
+        title={title}
+        tight={false}
+      >
+        <span class="truncate">{title}</span>
+        <span class="ml-1 text-sm italic tabular-nums">
+          ({hhmmss(track.end - track.start)})
+        </span>
+      </Button>
+    </div>
   )
 }
 
@@ -76,16 +86,16 @@ const Videos: FunctionalComponent<Props> = ({
   }, [selected, playerRef])
 
   return (
-    <Fragment>
+    <div class="overflow-hidden">
       {videos.map((video) => (
         <div
           id={VIDEO_ID(video.id)}
           key={video.id}
-          class={cx(
-            "py-4 border-b px-2 border-gray-600 flex flex-row flex-wrap"
-          )}
+          class={
+            "pt-2 md:pt-4 pb-2 px-2 border-b border-gray-600 flex flex-row flex-wrap -mx-1"
+          }
         >
-          <h2 class="text-xl md:mr-2 text-center w-full md:w-auto">
+          <h2 class="text-xl md:mx-1 mb-2 text-center w-full md:w-auto">
             {video.title}
           </h2>
           {video.tracks.map((track, index, list) => (
@@ -99,7 +109,7 @@ const Videos: FunctionalComponent<Props> = ({
           ))}
         </div>
       ))}
-    </Fragment>
+    </div>
   )
 }
 

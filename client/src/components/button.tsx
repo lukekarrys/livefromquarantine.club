@@ -4,12 +4,14 @@ import cx from "classnames"
 interface Props extends JSX.HTMLAttributes {
   class?: string
   selected?: boolean
+  tight?: boolean
   as?: string
 }
 
 const Button: FunctionalComponent<Props> = ({
   class: klass,
   selected,
+  tight = true,
   as = "button",
   ...rest
 }) => {
@@ -19,7 +21,8 @@ const Button: FunctionalComponent<Props> = ({
       selected
         ? "bg-gray-900 text-white"
         : "bg-white text-black hover:bg-gray-100",
-      "border p-1 rounded cursor-pointer border-gray-600 hover:shadow-md"
+      tight ? "p-1" : "py-1 px-2",
+      "border rounded cursor-pointer border-gray-600 hover:shadow-md"
     ),
     ...rest,
   })
