@@ -3,6 +3,56 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1935
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5CMEVBRUJERkUyNTBENTkz",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Please take a minute to help out independent venues at www.saveourstages.com\n\nSean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\nRoger Miller - Reincarnation 2:34\nAJJ - Brave as a Noun 4:20\nAJJ - A Poem 5:32\nLana Del Rey - Video Games 9:42\nAJJ - Linda Ronstadt 15:00\nNeil Young - Tell Me Why 19:44\nAJJ - Maggie 22:37\nThe Mountain Goats - No Children 25:20\nAJJ - A Big Day for Grimley 28:30\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-05-16T05:52:40.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "KgqfTahNL6w"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/KgqfTahNL6w/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/KgqfTahNL6w/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/KgqfTahNL6w/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/KgqfTahNL6w/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/KgqfTahNL6w/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - May 15"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1256
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5FQUY2Qzk4RUFDN0ZFRkZF",
@@ -2213,6 +2263,31 @@
                     "textDisplay": "Setlist:\nNo Children (The Mountain Goats cover) 1:06\nYou Don't Deserve Yourself 4:44 \nA Song Dedicated to the Memory of Stormy the Rabbit 12:53\nYou May Be Right (Billy Joel cover) 16:41\nGetting Naked and Playing with Guns 20:50\nReincarnation (Roger Miller cover) 24:11",
                     "textOriginal": "Setlist:\nNo Children (The Mountain Goats cover) 1:06\nYou Don't Deserve Yourself 4:44 \nA Song Dedicated to the Memory of Stormy the Rabbit 12:53\nYou May Be Right (Billy Joel cover) 16:41\nGetting Naked and Playing with Guns 20:50\nReincarnation (Roger Miller cover) 24:11",
                     "updatedAt": "2020-04-06T22:39:57.000Z",
+                    "videoId": "mfCc5mT_I64",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "mfCc5mT_I64"
+              }
+            },
+            {
+              "id": "UgzY1loB0NOTUSY_jgR4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgzY1loB0NOTUSY_jgR4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCi7v6eB0S6cT7nVxNCSLgMA"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCi7v6eB0S6cT7nVxNCSLgMA",
+                    "authorDisplayName": "Hmw",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxOoEH8EJ7UdZnk8pI-ZHjUnyvE0FP5rxuKvg=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-04-06T22:37:08.000Z",
+                    "textDisplay": "(SETLIST) \nNo Children (The Mountain Goats) - 1:07\nYou Dont Deserve Yourself - 4:43\nA Song Dedicated to The Memory of Stormy the Rabbit - 12:52\nYou may be right (Billy Joel) - 16:40\nGetting naked and playing with guns - 20:45\nReincarnation (Roger miller) - 24:11",
+                    "textOriginal": "(SETLIST) \nNo Children (The Mountain Goats) - 1:07\nYou Dont Deserve Yourself - 4:43\nA Song Dedicated to The Memory of Stormy the Rabbit - 12:52\nYou may be right (Billy Joel) - 16:40\nGetting naked and playing with guns - 20:45\nReincarnation (Roger miller) - 24:11",
+                    "updatedAt": "2020-04-06T22:37:08.000Z",
                     "videoId": "mfCc5mT_I64",
                     "viewerRating": "none"
                   }
