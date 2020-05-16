@@ -37,7 +37,7 @@ const Player: FunctionalComponent<Props> = ({ videos, tracks, initial }) => {
   }, [service])
 
   const onSelect = useCallback(
-    (track: Track) => send({ type: "SELECT_TRACK", track }),
+    (track: Track) => send({ type: "SELECT_TRACK", trackId: track.id }),
     [send]
   )
 

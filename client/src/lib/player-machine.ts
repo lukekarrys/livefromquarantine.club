@@ -22,7 +22,7 @@ type ReadyEvent = { type: "READY"; player: YT.Player }
 type PlayEvent = { type: "PLAY" }
 type PauseEvent = { type: "PAUSE" }
 type NextEvent = { type: "NEXT" }
-type SelectTrackEvent = { type: "SELECT_TRACK"; track: Track }
+type SelectTrackEvent = { type: "SELECT_TRACK"; trackId: TrackId }
 type EndEvent = { type: "END" }
 type YouTubePlayEvent = { type: "YOUTUBE_PLAY" }
 type YouTubePauseEvent = { type: "YOUTUBE_PAUSE" }
@@ -89,20 +89,11 @@ export const selectors = {
       selectors.getNextIndex(context)
     )
   },
-  getEventIndex: (
-    context: PlayerContext,
-    event: SelectTrackEvent
-  ): number | undefined => {
-    return context.order.trackIndexes[event.track.id]
-  },
-  getEventSelected: (
+  getEventTrack: (
     context: PlayerContext,
     event: SelectTrackEvent
   ): Track | undefined => {
-    return selectors.getSelectedByIndex(
-      context,
-      selectors.getEventIndex(context, event)
-    )
+    return context.tracks[event.trackId]
   },
   hasSelected: (context: PlayerContext): boolean => {
     return selectors.getSelected(context) !== undefined
@@ -124,7 +115,10 @@ export const selectors = {
     context: PlayerContext,
     event: SelectTrackEvent
   ): boolean => {
-    return isSeekableTrack(selectors.getSelected(context), event.track)
+    return isSeekableTrack(
+      selectors.getSelected(context),
+      selectors.getEventTrack(context, event)
+    )
   },
   isNextNext: (context: PlayerContext): boolean => {
     const current = selectors.getSelected(context)
@@ -152,6 +146,8 @@ const generateOrder = (
       if (selectedId && track.id === selectedId && selectedIndex === null) {
         selectedIndex = position - 1
       }
+    } else {
+      order.trackIndexes[track.id] = -1
     }
   }
 
@@ -437,10 +433,18 @@ const playerMachine = ({
           order: (context, event) => {
             const selectTrackEvent = event as SelectTrackEvent
 
-            const songMode = selectors.getSelected(context)?.isSong || true
-            const eventSongMode =
-              selectors.getEventSelected(context, selectTrackEvent)?.isSong ||
-              true
+            const songMode = selectors.getSelected(context)?.isSong ?? true
+            const eventTrack = selectors.getEventTrack(
+              context,
+              selectTrackEvent
+            )
+
+            if (!eventTrack) {
+              debug.error("SELECT TRACK NOT FOUND", event)
+              return context.order
+            }
+
+            const eventSongMode = eventTrack.isSong
 
             const newOrder =
               songMode !== eventSongMode
@@ -448,11 +452,10 @@ const playerMachine = ({
                   ? defaultSongOrder
                   : defaultVideoOrder
                 : context.order
-            const newIndex = newOrder.trackIndexes[selectTrackEvent.track.id]
+            const newIndex = newOrder.trackIndexes[eventTrack.id]
 
             if (newIndex === undefined) {
-              debug.error("SELECT TRACK NOT FOUND", event)
-              return context.order
+              throw new Error(`SELECT TRACK NOT FOUND ${JSON.stringify(event)}`)
             }
 
             return {
@@ -466,7 +469,7 @@ const playerMachine = ({
           order: (context) => {
             const shuffle = !context.shuffle
             const selected = selectors.getSelected(context)
-            const songMode = selected?.isSong || true
+            const songMode = selected?.isSong ?? true
 
             if (shuffle) {
               const shuffleOrder = shuffleArray(ORIGINAL_TRACKS)
@@ -487,8 +490,9 @@ const playerMachine = ({
             const newIndex = newOrder.trackIndexes[selected.id]
 
             if (newIndex === undefined) {
-              debug.error("CURRENT TRACK NOT IN SHUFFLE", selected)
-              return context.order
+              throw new Error(
+                `CURRENT TRACK NOT IN SHUFFLE ${JSON.stringify(selected)}`
+              )
             }
 
             return {
