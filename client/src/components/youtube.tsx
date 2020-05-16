@@ -2,7 +2,7 @@
 import { FunctionalComponent, h, ComponentChild } from "preact"
 import { useEffect, useRef, useCallback } from "preact/hooks"
 import cx from "classnames"
-import { Sender, ytToMachineEvent } from "../lib/player-machine"
+import { PlayerMachineSend, ytToMachineEvent } from "../machine"
 import { Track } from "../types"
 import useYouTube from "../lib/useYouTube"
 import * as debug from "../lib/debug"
@@ -10,7 +10,7 @@ import * as debug from "../lib/debug"
 interface Props {
   selected?: Track
   play?: boolean
-  send: Sender
+  send: PlayerMachineSend
   onProgress?: ({ time, percent }: { time: number; percent: number }) => void
   children?: ComponentChild
 }
@@ -25,7 +25,7 @@ const YouTube: FunctionalComponent<Props> = ({
   const domRef = useRef<HTMLDivElement>(null)
   const player = useYouTube(
     domRef,
-    useCallback((player) => send({ type: "READY", player }), [send]),
+    useCallback((player) => send({ type: "PLAYER_READY", player }), [send]),
     useCallback(
       (e: YT.OnStateChangeEvent): void => {
         const sendEvent = ytToMachineEvent[e.data]

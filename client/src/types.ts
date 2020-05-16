@@ -1,5 +1,6 @@
 export type TrackId = "string"
 export type VideoId = "string"
+export type ArtistId = "string"
 
 export type Track = {
   id: TrackId
@@ -28,12 +29,6 @@ export interface ArtistMeta {
   main?: string
 }
 
-export interface Data {
-  videos: Videos
-  tracks: Tracks
-  meta: ArtistMeta
-}
-
 export type Progress = {
   time: number
   percent: number
@@ -44,13 +39,4 @@ export enum Repeat {
   All,
   Video,
   Song,
-}
-
-export type ControlState = {
-  progress: number
-  play: boolean
-  shuffle: boolean
-  repeat: Repeat
-  hasPrevious: boolean
-  hasNext: boolean
 }

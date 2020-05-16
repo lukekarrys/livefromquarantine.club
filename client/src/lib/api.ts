@@ -1,4 +1,18 @@
-import { Track, Data, VideoId, TrackId, ArtistMeta } from "../types"
+import {
+  Track,
+  Videos,
+  Tracks,
+  VideoId,
+  TrackId,
+  ArtistMeta,
+  ArtistId,
+} from "../types"
+
+interface NormalizedData {
+  videos: Videos
+  tracks: Tracks
+  meta: ArtistMeta
+}
 
 interface ApiSong {
   name: string
@@ -53,8 +67,8 @@ const videoSongToTrack = ({
   }
 }
 
-const normalizeData = ({ meta, data: videos }: ApiData): Data => {
-  const resp: Data = { videos: [], tracks: [], meta }
+const normalizeData = ({ meta, data: videos }: ApiData): NormalizedData => {
+  const resp: NormalizedData = { videos: [], tracks: [], meta }
 
   videos.forEach((video) => {
     const videoTracks = []
@@ -76,7 +90,7 @@ const normalizeData = ({ meta, data: videos }: ApiData): Data => {
   return resp
 }
 
-const fetchData = (id: string): Promise<Data> =>
+const fetchData = (id: ArtistId): Promise<NormalizedData> =>
   fetch(`/api/${id}.json`).then(async (resp) => {
     if (resp.ok) {
       const videos = await resp.json()

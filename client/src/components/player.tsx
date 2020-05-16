@@ -1,52 +1,24 @@
 import { FunctionalComponent, h, Fragment, ComponentChild } from "preact"
-import { useState, useCallback, useEffect, useMemo, useRef } from "preact/hooks"
-import { useMachine } from "@xstate/react/lib/fsm"
-import { Videos as TVideos, Tracks, Track, Progress, TrackId } from "../types"
+import { useState, useCallback, useEffect, useRef } from "preact/hooks"
+import { Videos as TVideos, Track, Progress } from "../types"
 import YouTube from "./youtube"
 import Videos from "./videos"
-// import UpNext from "../../components/UpNext"
 import Controls from "./controls"
-import playerMachine, { selectors } from "../lib/player-machine"
-import debug from "../lib/debug"
+import { selectors, PlayerMachineState, PlayerMachineSend } from "../machine"
 
 interface Props {
-  loadingState: "loading" | "error" | "success"
-  children?: ComponentChild
+  state: PlayerMachineState
+  send: PlayerMachineSend
+  children: ComponentChild
   videos?: TVideos
-  tracks?: Tracks
-  initial?: {
-    nowPlaying: TrackId
-  }
 }
 
 const Player: FunctionalComponent<Props> = ({
-  loadingState,
-  videos = [],
-  tracks = [],
-  initial,
+  state,
+  send,
   children,
+  videos = [],
 }) => {
-  const machine = useMemo(
-    () =>
-      loadingState === "success"
-        ? playerMachine({ tracks, selectedId: initial?.nowPlaying })
-        : playerMachine({ tracks: [] }),
-    [loadingState, tracks, initial?.nowPlaying]
-  )
-  const [state, send, service] = useMachine(machine)
-
-  useEffect(() => {
-    const subscription = service.subscribe((s) =>
-      debug("PLAYER MACHINE", {
-        value: s.value,
-        actions: s.actions.length ? s.actions.map((a) => a.type) : undefined,
-        order: s.context.order,
-        tracks: s.context.tracks,
-      })
-    )
-    return (): void => subscription.unsubscribe()
-  }, [service])
-
   const onSelect = useCallback(
     (track: Track) => send({ type: "SELECT_TRACK", trackId: track.id }),
     [send]

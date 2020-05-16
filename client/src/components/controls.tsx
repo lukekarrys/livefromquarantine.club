@@ -1,5 +1,5 @@
 import { FunctionalComponent, h } from "preact"
-import { Sender } from "../lib/player-machine"
+import { PlayerMachineSend } from "../machine"
 import { Progress, Track } from "../types"
 import Button from "./button"
 import hhmmss from "../lib/hhmmss"
@@ -13,7 +13,7 @@ interface Props {
   play?: boolean
   shuffle?: boolean
   progress: Progress
-  send: Sender
+  send: PlayerMachineSend
 }
 
 const Controls: FunctionalComponent<Props> = ({
