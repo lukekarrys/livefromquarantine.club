@@ -14,6 +14,22 @@ export type TracksContext = {
   videoOrder: Omit<TrackOrder, "selectedIndex">
 }
 
+export const assignTracksOrder = <TContext, TEvent>(
+  assigner:
+    | (<TContext, TEvent>(
+        context: TContext,
+        event: TEvent
+      ) => Partial<TrackOrder>)
+    | Partial<TrackOrder>
+) => (context: TContext, event: TEvent): TracksContext =>
+  ({
+    ...context.tracks,
+    order: {
+      ...context.tracks.order,
+      ...(typeof assigner === "function" ? assigner(context, event) : assigner),
+    },
+  } as TracksContext)
+
 export const generateTracksOrder = (
   tracks: Tracks,
   filter?: (t: Track) => boolean,

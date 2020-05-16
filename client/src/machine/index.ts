@@ -5,6 +5,7 @@ import {
   generateInitialTracksOrder,
   generateTracksOrder,
   TracksContext,
+  assignTracksOrder,
 } from "./track-order"
 import * as debug from "../lib/debug"
 import shuffleArray from "../lib/shuffle-array"
@@ -452,31 +453,21 @@ const playerMachine = createMachine<PlayerContext, PlayerEvent, PlayerState>(
         },
       }),
       setInitialTrack: assign<PlayerContext>({
-        tracks: (context) => {
-          return {
-            ...context.tracks,
-            order: {
-              ...context.tracks?.order,
-              selectedIndex: 0,
-            },
-          } as TracksContext
-        },
+        tracks: assignTracksOrder({
+          selectedIndex: 0,
+        }),
       }),
       setNextTrack: assign<PlayerContext>({
-        tracks: (context) => {
+        tracks: assignTracksOrder((context) => {
           return {
-            ...context.tracks,
-            order: {
-              ...context.tracks?.order,
-              selectedIndex:
-                selectors.getNextIndex(context) ??
-                context.tracks?.order.selectedIndex,
-            },
-          } as TracksContext
-        },
+            selectedIndex:
+              selectors.getNextIndex(context) ??
+              context.tracks?.order.selectedIndex,
+          }
+        }),
       }),
       setTrack: assign<PlayerContext>({
-        tracks: (context, event) => {
+        tracks: assignTracksOrder((context, event) => {
           const selectTrackEvent = event as SelectTrackEvent
 
           const songMode = selectors.getSelected(context)?.isSong ?? true
@@ -502,17 +493,13 @@ const playerMachine = createMachine<PlayerContext, PlayerEvent, PlayerState>(
           }
 
           return {
-            ...context.tracks,
-            order: {
-              ...newOrder,
-              selectedIndex: newIndex,
-            },
-          } as TracksContext // TODO: fix these to not need as operator and to remove nullish coalescing operator
-        },
+            selectedIndex: newIndex,
+          }
+        }),
       }),
       shuffleTrackOrder: assign<PlayerContext>({
         shuffle: (context) => !context.shuffle,
-        tracks: (context) => {
+        tracks: assignTracksOrder((context) => {
           const shuffle = !context.shuffle
           const selected = selectors.getSelected(context)
           const songMode = selected?.isSong ?? true
@@ -521,15 +508,11 @@ const playerMachine = createMachine<PlayerContext, PlayerEvent, PlayerState>(
             // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
             const shuffleOrder = shuffleArray(context.tracks?.tracks!)
             if (selected) shuffleOrder.unshift(selected)
-            return {
-              // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-              ...context.tracks!,
-              order: generateTracksOrder(
-                shuffleOrder,
-                (t) => t.isSong === songMode,
-                selected?.id
-              ),
-            }
+            return generateTracksOrder(
+              shuffleOrder,
+              (t) => t.isSong === songMode,
+              selected?.id
+            )
           }
 
           // TODO: fix these
@@ -541,13 +524,9 @@ const playerMachine = createMachine<PlayerContext, PlayerEvent, PlayerState>(
 
           if (!selected) {
             return {
-              // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-              ...context.tracks!,
-              order: {
-                ...newOrder,
-                selectedIndex: -1,
-              },
-            } as TracksContext
+              ...newOrder,
+              selectedIndex: -1,
+            }
           }
 
           const newIndex = newOrder.trackIndexes[selected.id]
@@ -559,14 +538,9 @@ const playerMachine = createMachine<PlayerContext, PlayerEvent, PlayerState>(
           }
 
           return {
-            // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-            ...context.tracks!,
-            order: {
-              ...newOrder,
-              selectedIndex: newIndex,
-            },
-          } as TracksContext
-        },
+            selectedIndex: newIndex,
+          }
+        }),
       }),
     },
   }
