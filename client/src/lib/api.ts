@@ -1,4 +1,4 @@
-import { Track, Data, VideoId, TrackId } from "../types"
+import { Track, Data, VideoId, TrackId, ArtistMeta } from "../types"
 
 interface ApiSong {
   name: string
@@ -13,6 +13,11 @@ interface ApiVideo {
   id: VideoId
   duration: number
   songs: ApiSong[]
+}
+
+interface ApiData {
+  meta: ArtistMeta
+  data: ApiVideo[]
 }
 
 const videoToTrack = (video: ApiVideo): Track => ({
@@ -48,8 +53,8 @@ const videoSongToTrack = ({
   }
 }
 
-const normalizeData = (videos: ApiVideo[]): Data => {
-  const resp: Data = { videos: [], tracks: [] }
+const normalizeData = ({ meta, data: videos }: ApiData): Data => {
+  const resp: Data = { videos: [], tracks: [], meta }
 
   videos.forEach((video) => {
     const videoTracks = []
@@ -77,7 +82,7 @@ const fetchData = (id: string): Promise<Data> =>
       const videos = await resp.json()
       return normalizeData(videos)
     } else {
-      throw new Error(`${resp.status}: not ok`)
+      throw new Error(`${resp.status}: ${resp.statusText ?? "Not Ok"}`)
     }
   })
 

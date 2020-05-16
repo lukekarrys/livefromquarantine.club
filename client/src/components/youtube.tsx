@@ -1,5 +1,5 @@
 /// <reference types="@types/youtube" />
-import { FunctionalComponent, h, VNode } from "preact"
+import { FunctionalComponent, h, ComponentChild } from "preact"
 import { useEffect, useRef, useCallback } from "preact/hooks"
 import cx from "classnames"
 import { Sender, ytToMachineEvent } from "../lib/player-machine"
@@ -12,7 +12,7 @@ interface Props {
   play?: boolean
   send: Sender
   onProgress?: ({ time, percent }: { time: number; percent: number }) => void
-  children?: VNode
+  children?: ComponentChild
 }
 
 const YouTube: FunctionalComponent<Props> = ({

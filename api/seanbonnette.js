@@ -17,10 +17,10 @@ module.exports.meta = {
   description: 'All the Sean Bonnette Live From Quarantine songs',
   id: 'seanbonnette',
   playlistId: 'PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1',
-  main: `
-    <a href="https://venmo.com/bonnseanette" target="_blank">Venmo: @bonnseanette</a>
-    <a href="https://paypal.me/bonnseanette" target="_blank">Paypal: paypal.me/bonnseanette</a>
-    <a href="https://cash.app/$bonnseanette" target="_blank">Cash App: $bonnseanette</a>
-    <a href="http://shop.ajjtheband.com" target="_blank">Merch</a>
-  `,
+  main: [
+    '<a href="https://venmo.com/bonnseanette" target="_blank">Venmo: @bonnseanette</a>',
+    '<a href="https://paypal.me/bonnseanette" target="_blank">Paypal: paypal.me/bonnseanette</a>',
+    '<a href="https://cash.app/$bonnseanette" target="_blank">Cash App: $bonnseanette</a>',
+    '<a href="http://shop.ajjtheband.com" target="_blank">Merch</a>',
+  ].join(''),
 }

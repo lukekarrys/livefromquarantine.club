@@ -31,20 +31,35 @@ const Artist: FunctionalComponent<Props> = ({ artist }) => {
     send({ type: "FETCH", artistId: artist })
   }, [artist, send])
 
-  // TODO: render empty player during loading/error
+  useEffect(() => {
+    if (state.context.data?.meta.title) {
+      document.title = state.context.data?.meta.title
+    }
+  }, [state.context.data?.meta.title])
 
   return (
     <div class="max-w-screen-md border-r border-l mx-auto border-gray-600">
       {state.matches("loading") ? (
-        <div>Loading...</div>
+        <Player loadingState="loading">Loading...</Player>
       ) : state.matches("failure") ? (
-        <div>Error: {state.context.error?.message}</div>
+        <Player loadingState="error">
+          {state.context.error?.message ?? "Error"}
+        </Player>
       ) : state.matches("success") ? (
         <Player
-          videos={state.context.data?.videos}
-          tracks={state.context.data?.tracks}
+          loadingState="success"
+          videos={state.context.data.videos}
+          tracks={state.context.data.tracks}
           initial={initial}
-        />
+        >
+          <h1 class="text-xl">{state.context.data.meta.title}</h1>
+          <div
+            class="flex flex-col items-center"
+            dangerouslySetInnerHTML={{
+              __html: state.context.data.meta.main || "",
+            }}
+          />
+        </Player>
       ) : null}
     </div>
   )

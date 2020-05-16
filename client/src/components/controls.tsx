@@ -10,8 +10,8 @@ import NextIcon from "../icons/next"
 
 interface Props {
   selected?: Track
-  play: boolean
-  shuffle: boolean
+  play?: boolean
+  shuffle?: boolean
   progress: Progress
   send: Sender
 }
@@ -30,7 +30,10 @@ const Controls: FunctionalComponent<Props> = ({
     <div class="px-2 py-1 relative overflow-hidden">
       <div
         class="absolute h-full w-full left-0 top-0 bg-gray-400 shadow-inner border-r border-gray-600"
-        style={{ left: "-100%", transform: `translate(${progress.percent}%)` }}
+        style={{
+          left: "-100%",
+          transform: `translate(${progress.percent || 0}%)`,
+        }}
       />
       <div class="relative flex items-center">
         <Button
@@ -58,11 +61,13 @@ const Controls: FunctionalComponent<Props> = ({
           <NextIcon height={18} />
         </Button>
         <span class="truncate ml-1 leading-none">{title}</span>
-        <span class="ml-auto tabular-nums text-sm italic">
-          {`${hhmmss(progress.time)}${
-            selected ? `/${hhmmss(selected.duration)}` : ""
-          }`}
-        </span>
+        {progress && (
+          <span class="ml-auto tabular-nums text-sm italic">
+            {`${hhmmss(progress.time)}${
+              selected ? `/${hhmmss(selected.duration)}` : ""
+            }`}
+          </span>
+        )}
       </div>
     </div>
   )

@@ -8,11 +8,11 @@ const Home: FunctionalComponent = () => {
       {config.artists.map((artist) => (
         <Button
           as="a"
-          key={artist}
-          href={`/${artist}`}
+          key={artist.id}
+          href={`/${artist.id}`}
           class="w-full block text-center mb-4 text-4xl uppercase"
         >
-          {artist}
+          {artist.name}
         </Button>
       ))}
     </div>

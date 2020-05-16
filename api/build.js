@@ -64,7 +64,7 @@ const buildArtist = (artistKey) => {
 const writeFile = async (data) => {
   const { id } = data.meta
   await mkdirp(publicPath())
-  await fs.writeFile(publicPath(`${id}.json`), JSON.stringify(data.data))
+  await fs.writeFile(publicPath(`${id}.json`), JSON.stringify(data))
 }
 
 const buildAndSave = async (...artists) => {
@@ -80,7 +80,9 @@ const buildAndSave = async (...artists) => {
 
 if (require.main === module) {
   const cliArtists = process.argv.slice(2).flatMap((v) => v.split(','))
-  buildAndSave(...(cliArtists.length ? cliArtists : config.artists))
+  buildAndSave(
+    ...(cliArtists.length ? cliArtists : config.artists.map((a) => a.id))
+  )
     .then((res) => {
       console.log(res)
       if (res.some((r) => !r.ok)) {

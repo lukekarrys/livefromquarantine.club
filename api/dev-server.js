@@ -9,7 +9,7 @@ http
     try {
       const data = buildArtist(path.basename(req.url, '.json'))
       res.writeHead(200)
-      res.end(JSON.stringify(data.data))
+      res.end(JSON.stringify(data))
     } catch (e) {
       res.writeHead(500)
       res.end(JSON.stringify({ error: e.message }))

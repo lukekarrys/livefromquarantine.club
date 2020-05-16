@@ -22,9 +22,16 @@ export type Video = {
 
 export type Videos = Video[]
 
+export interface ArtistMeta {
+  title: string
+  description: string
+  main?: string
+}
+
 export interface Data {
   videos: Videos
   tracks: Tracks
+  meta: ArtistMeta
 }
 
 export type Progress = {

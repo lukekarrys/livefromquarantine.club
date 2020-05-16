@@ -230,7 +230,7 @@ const main = async (...artists) => {
 }
 
 const cliArtists = process.argv.slice(2).flatMap((v) => v.split(','))
-main(...(cliArtists.length ? cliArtists : config.artists))
+main(...(cliArtists.length ? cliArtists : config.artists.map((a) => a.id)))
   .then((res) => {
     console.log(hideKey(JSON.stringify(res, null, 2)))
     if (res.some((r) => !r.ok)) {
