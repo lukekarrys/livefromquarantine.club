@@ -2269,31 +2269,6 @@
                 },
                 "videoId": "mfCc5mT_I64"
               }
-            },
-            {
-              "id": "UgzY1loB0NOTUSY_jgR4AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "UgzY1loB0NOTUSY_jgR4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "authorChannelId": {
-                      "value": "UCi7v6eB0S6cT7nVxNCSLgMA"
-                    },
-                    "authorChannelUrl": "http://www.youtube.com/channel/UCi7v6eB0S6cT7nVxNCSLgMA",
-                    "authorDisplayName": "Hmw",
-                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxOoEH8EJ7UdZnk8pI-ZHjUnyvE0FP5rxuKvg=s48-c-k-c0xffffffff-no-rj-mo",
-                    "publishedAt": "2020-04-06T22:37:08.000Z",
-                    "textDisplay": "(SETLIST) \nNo Children (The Mountain Goats) - 1:07\nYou Dont Deserve Yourself - 4:43\nA Song Dedicated to The Memory of Stormy the Rabbit - 12:52\nYou may be right (Billy Joel) - 16:40\nGetting naked and playing with guns - 20:45\nReincarnation (Roger miller) - 24:11",
-                    "textOriginal": "(SETLIST) \nNo Children (The Mountain Goats) - 1:07\nYou Dont Deserve Yourself - 4:43\nA Song Dedicated to The Memory of Stormy the Rabbit - 12:52\nYou may be right (Billy Joel) - 16:40\nGetting naked and playing with guns - 20:45\nReincarnation (Roger miller) - 24:11",
-                    "updatedAt": "2020-04-06T22:37:08.000Z",
-                    "videoId": "mfCc5mT_I64",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "mfCc5mT_I64"
-              }
             }
           ],
           "kind": "youtube#commentThreadListResponse"
