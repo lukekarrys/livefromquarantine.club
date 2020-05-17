@@ -3,6 +3,107 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 4360
+        },
+        "id": "UExHNTA3Z3kyLUtwOFZqNjZqbnhuMUFBMFhGcjFMX1FYeS4xMkVGQjNCMUM1N0RFNEUx",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCpd6ZO-gWNdtCOJ0T2ui-Fg",
+          "channelTitle": "Luke Karrys",
+          "description": "",
+          "playlistId": "PLG507gy2-Kp8Vj66jnxn1AA0XFr1L_QXy",
+          "publishedAt": "2020-05-04T17:38:22.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "wgrDmUWmvh0"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/wgrDmUWmvh0/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/wgrDmUWmvh0/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/wgrDmUWmvh0/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/wgrDmUWmvh0/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/wgrDmUWmvh0/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "#8 Saturday Apartment Requests w Ben Folds"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "UgwV_jin3-OD81Ong-R4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgwV_jin3-OD81Ong-R4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCAHH0Pk8-PQ05NDTipK4XDA"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCAHH0Pk8-PQ05NDTipK4XDA",
+                    "authorDisplayName": "BHodges",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJx_Yv_vf9RBqsrcKdAoKl-7-_4dp32FUiXKxw=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-05-17T03:21:15.000Z",
+                    "textDisplay": "OFFICIAL SET LIST\n0:18 New theme song\n4:27 - All U Can Eat\n9:55 - There's Always Someone Cooler Than You\n16:36 - Belinda\n22:18 - Emaline\n27:24 - Kate\n31:06 - (Piano lesson for kids)\n42:29 - Capable Of Anything\n47:25 - Leather Jacket\n50:32 - Heist\n52:27 - Dr. Yang (partial)\n56:05 - On Being Frank\n1:01:35 - Losing Lisa\n1:05:47 - The Luckiest",
+                    "textOriginal": "OFFICIAL SET LIST\n0:18 New theme song\n4:27 - All U Can Eat\n9:55 - There's Always Someone Cooler Than You\n16:36 - Belinda\n22:18 - Emaline\n27:24 - Kate\n31:06 - (Piano lesson for kids)\n42:29 - Capable Of Anything\n47:25 - Leather Jacket\n50:32 - Heist\n52:27 - Dr. Yang (partial)\n56:05 - On Being Frank\n1:01:35 - Losing Lisa\n1:05:47 - The Luckiest",
+                    "updatedAt": "2020-05-17T03:21:15.000Z",
+                    "videoId": "wgrDmUWmvh0",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "wgrDmUWmvh0"
+              }
+            },
+            {
+              "id": "UgwNl49jqqTfFrixUg14AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgwNl49jqqTfFrixUg14AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCYeXVxfIw0BHYh1mA2YoBkA"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCYeXVxfIw0BHYh1mA2YoBkA",
+                    "authorDisplayName": "Nicholas Silano",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJw8Hue1TSu-vhIxItF_zi1pzP2T1Uk5W7DJlg=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-05-17T03:34:31.000Z",
+                    "textDisplay": "00:00:00 - Introduction\n00:03:45 - Story behind \"All U Can Eat\"\n00:04:27 - \"All U Can Eat\"\n00:08:25 - Story behind \"There's Always Someone Cooler That You\"\n00:09:56 - \"There's Always Someone Cooler Than You\"\n00:14:08 - Story behind \"Belinda\"\n00:16:16 - \"Belinda\"\n00:20:55 - Story behind \"Emaline\"\n00:22:16 - \"Emaline\"\n00:26:32 - Story behind \"Kate\"\n00:27:57 - \"Kate\"\n00:31:15 - Piano Lesson for the Kiddies\n00:41:31 - Story behind \"Capable of Anything\"\n00:42:28 - \"Capable of Anything\"\n00:47:21 - \"Leather Jacket\"\n00:49:07 - Story behind \"Heist\"\n00:50:31 - \"Heist\"\n00:52:24 - \"Dr. Yang\" Snippet\n00:54:01 - Story behind \"On Being Frank\"\n00:56:04 - \"On Being Frank\"\n01:01:33 - \"Losing Lisa\"\n01:05:45 - \"The Luckiest\"",
+                    "textOriginal": "00:00:00 - Introduction\n00:03:45 - Story behind \"All U Can Eat\"\n00:04:27 - \"All U Can Eat\"\n00:08:25 - Story behind \"There's Always Someone Cooler That You\"\n00:09:56 - \"There's Always Someone Cooler Than You\"\n00:14:08 - Story behind \"Belinda\"\n00:16:16 - \"Belinda\"\n00:20:55 - Story behind \"Emaline\"\n00:22:16 - \"Emaline\"\n00:26:32 - Story behind \"Kate\"\n00:27:57 - \"Kate\"\n00:31:15 - Piano Lesson for the Kiddies\n00:41:31 - Story behind \"Capable of Anything\"\n00:42:28 - \"Capable of Anything\"\n00:47:21 - \"Leather Jacket\"\n00:49:07 - Story behind \"Heist\"\n00:50:31 - \"Heist\"\n00:52:24 - \"Dr. Yang\" Snippet\n00:54:01 - Story behind \"On Being Frank\"\n00:56:04 - \"On Being Frank\"\n01:01:33 - \"Losing Lisa\"\n01:05:45 - \"The Luckiest\"",
+                    "updatedAt": "2020-05-17T03:34:31.000Z",
+                    "videoId": "wgrDmUWmvh0",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "wgrDmUWmvh0"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 4420
         },
         "id": "UExHNTA3Z3kyLUtwOFZqNjZqbnhuMUFBMFhGcjFMX1FYeS4wOTA3OTZBNzVEMTUzOTMy",

@@ -3,6 +3,56 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1204
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4xNjIyNEE0MDEyRDlCMjBE",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\nAJJ - We Didn't Come Here to Rock 0:02\nAJJ - Junkie Church 1:25\nPink Floyd - Wish You Were Here 3:50\nAJJ - My Brain is a Human Body 7:35\nAJJ - American Garbage 10:21\nXiu Xiu - Helsabot 13:32\nRoky Erickson - I Think of Demons 17:38\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-05-17T04:56:11.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "HWz9M5CMKzo"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/HWz9M5CMKzo/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/HWz9M5CMKzo/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/HWz9M5CMKzo/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/HWz9M5CMKzo/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/HWz9M5CMKzo/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - May 16"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1935
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5CMEVBRUJERkUyNTBENTkz",
@@ -203,7 +253,7 @@
       },
       {
         "contentDetails": {
-          "duration": 1056
+          "duration": 1057
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4yQzk4QTA5QjkzMTFFOEI1",
         "kind": "youtube#playlistItem",
