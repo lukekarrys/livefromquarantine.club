@@ -1,0 +1,88 @@
+import { Track } from "../types"
+import { isSeekableTrack, isNextTrack } from "../lib/compare-tracks"
+import * as Machine from "./types"
+
+export const defaultSongMode = true
+
+export const hasTracks = (context: Machine.PlayerContext): boolean => {
+  return !!context.tracks
+}
+
+export const getSelectedByIndex = (
+  context: Machine.PlayerContext,
+  index?: number
+): Track | undefined => {
+  return index === undefined ||
+    context.tracksById === undefined ||
+    context.order?.trackOrder === undefined
+    ? undefined
+    : context.tracksById[context.order.trackOrder[index]]
+}
+
+export const getSelected = (
+  context: Machine.PlayerContext
+): Track | undefined => {
+  return getSelectedByIndex(context, context.order?.selectedIndex)
+}
+
+export const getSongModeFilter = (baseTrack: Track) => (
+  filterTrack: Track
+): boolean => {
+  return (baseTrack.isSong ?? defaultSongMode) === filterTrack.isSong
+}
+
+export const getCurrentSongMode = (context: Machine.PlayerContext): boolean => {
+  return getSelected(context)?.isSong ?? defaultSongMode
+}
+
+export const getNextIndex = (
+  context: Machine.PlayerContext
+): number | undefined => {
+  const selectedIndex = context.order?.selectedIndex
+  const trackOrder = context.order?.trackOrder
+
+  if (selectedIndex == null || trackOrder == null) return undefined
+
+  const nextIndex = selectedIndex + 1
+  return nextIndex >= trackOrder.length ? 0 : nextIndex
+}
+
+export const getNextSelected = (
+  context: Machine.PlayerContext
+): Track | undefined => {
+  return getSelectedByIndex(context, getNextIndex(context))
+}
+
+export const getEventTrack = (
+  context: Machine.PlayerContext,
+  event: Machine.SelectTrackEvent | Machine.FetchSuccessEvent
+): Track | undefined => {
+  return event.trackId && context.tracksById?.[event.trackId]
+}
+
+export const hasSelected = (context: Machine.PlayerContext): boolean => {
+  return getSelected(context) !== undefined
+}
+
+export const isNextSeekable = (context: Machine.PlayerContext): boolean => {
+  const current = getSelected(context)
+  const next = getNextSelected(context)
+  return isSeekableTrack(current, next)
+}
+
+export const isEventSeekable = (
+  context: Machine.PlayerContext,
+  event: Machine.SelectTrackEvent
+): boolean => {
+  return isSeekableTrack(getSelected(context), getEventTrack(context, event))
+}
+
+export const isNextNext = (context: Machine.PlayerContext): boolean => {
+  const current = getSelected(context)
+  const next = getNextSelected(context)
+  return isNextTrack(current, next)
+}
+
+export const isPlayerReady = (context: Machine.PlayerContext): boolean => {
+  return !!context.player
+}

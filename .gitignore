@@ -1,7 +1,5 @@
 .env
-public/*
-!public/manifest.json
-!public/app.css
-!public/app.js
-!public/_redirects
 node_modules/
+client/node_modules/
+client/size-plugin.json
+public/

@@ -1,3 +1,7 @@
 {
-  "artists": ["seanbonnette", "bengibbard", "benfolds"]
+  "artists": [
+    { "id": "seanbonnette", "name": "Sean Bonnette" },
+    { "id": "bengibbard", "name": "Ben Gibbard" },
+    { "id": "benfolds", "name": "Ben Folds" }
+  ]
 }

@@ -1,3 +1,18 @@
 [build]
   publish = "public/"
-  command = "NODE_ENV=production npm run build"
+  command = "npm run lint && NODE_ENV=production npm run build"
+
+[[redirects]]
+  from = "/ajj"
+  to = "/seanbonnette"
+  status = 301
+
+[[redirects]]
+  from = "/dcfc"
+  to = "/bengibbard"
+  status = 301
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
