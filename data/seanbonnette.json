@@ -105,56 +105,6 @@
         "contentDetails": {
           "duration": 1256
         },
-        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5FQUY2Qzk4RUFDN0ZFRkZF",
-        "kind": "youtube#playlistItem",
-        "snippet": {
-          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
-          "channelTitle": "AJJ the band",
-          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\nAJJ - Space and Time 0:25\nPixies - Where Is My Mind? 5:35\nAJJ - Getting Naked, Playing with Guns 12:27\nAJJ - The Michael Jordan of Drunk Driving 16:42\nAJJ - American Body Rentals 17:10\nNeil Young - Roll Another Number 18:00\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
-          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-          "publishedAt": "2020-05-15T18:39:00.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "AE8dvKAKIU4"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/AE8dvKAKIU4/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/AE8dvKAKIU4/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/AE8dvKAKIU4/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/AE8dvKAKIU4/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/AE8dvKAKIU4/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Live from Quarantine - May 14"
-        },
-        "comments": {
-          "items": [],
-          "kind": "youtube#commentThreadListResponse"
-        }
-      },
-      {
-        "contentDetails": {
-          "duration": 1256
-        },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4xN0Y2QjVBOEI2MzQ5OUM5",
         "kind": "youtube#playlistItem",
         "snippet": {
@@ -295,56 +245,6 @@
             }
           },
           "title": "Live from Quarantine - May 12"
-        },
-        "comments": {
-          "items": [],
-          "kind": "youtube#commentThreadListResponse"
-        }
-      },
-      {
-        "contentDetails": {
-          "duration": 1147
-        },
-        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5EQkE3RTJCQTJEQkFBQTcz",
-        "kind": "youtube#playlistItem",
-        "snippet": {
-          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
-          "channelTitle": "AJJ the band",
-          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\nThe Beatles - Her Majesty 0:42\nTim Hardin - Black Sheep Boy 1:10\nAJJ - Heartilation 2:14\nAJJ - Angel of Death 5:00\nAJJ - Love Will Fuck Us Apart 8:10\nAJJ - So Mad At You 10:00\nJeff Rosenstock - Nausea 11:20\nAJJ - Big Bird 15:00\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
-          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-          "publishedAt": "2020-05-12T06:47:23.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "XeQWj-ghw1M"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/XeQWj-ghw1M/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/XeQWj-ghw1M/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/XeQWj-ghw1M/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/XeQWj-ghw1M/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/XeQWj-ghw1M/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Live from Quarantine - May 11"
         },
         "comments": {
           "items": [],
@@ -513,56 +413,6 @@
           "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\nAJJ - Brave as a Noun 1:51\nAJJ - Survival Song 3:00\nRoky Erickson - I Think of Demons 5:42\nAJJ - Linda Ronstadt 8:56\nBilly Joel - You May Be Right 12:21\nAJJ - Bad Bad Things 16:00\nAJJ - Small Red Boy 18:05\nAJJ - People 23:44\nAJJ - Little Prince 25:15\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
           "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
           "publishedAt": "2020-05-09T07:12:24.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "1f3VuaIJVts"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/1f3VuaIJVts/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/1f3VuaIJVts/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/1f3VuaIJVts/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/1f3VuaIJVts/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/1f3VuaIJVts/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Live from Quarantine - May 8"
-        },
-        "comments": {
-          "items": [],
-          "kind": "youtube#commentThreadListResponse"
-        }
-      },
-      {
-        "contentDetails": {
-          "duration": 1655
-        },
-        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5CNTcxMDQ0NThBNzMxODYz",
-        "kind": "youtube#playlistItem",
-        "snippet": {
-          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
-          "channelTitle": "AJJ the band",
-          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\nAJJ - Brave as a Noun 1:51\nAJJ - Survival Song 3:00\nRoky Erickson - I Think of Demons 5:42\nAJJ - Linda Ronstadt 8:56\nBilly Joel - You May Be Right 12:21\nAJJ - Bad Bad Things 16:00\nAJJ - Small Red Boy 18:05\nAJJ - People 23:44\nAJJ - Little Prince 25:15\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
-          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-          "publishedAt": "2020-05-09T07:12:12.000Z",
           "resourceId": {
             "kind": "youtube#video",
             "videoId": "1f3VuaIJVts"
