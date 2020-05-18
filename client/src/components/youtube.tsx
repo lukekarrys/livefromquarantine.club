@@ -14,6 +14,7 @@ interface Props {
   send: PlayerSend
   onProgress?: ({ time, percent }: Progress) => void
   children?: ComponentChild
+  show?: boolean
 }
 
 const YouTube: FunctionalComponent<Props> = ({
@@ -22,6 +23,7 @@ const YouTube: FunctionalComponent<Props> = ({
   send,
   onProgress,
   children,
+  show,
 }) => {
   const domRef = useRef<HTMLDivElement>(null)
   const player = useYouTube(
@@ -82,16 +84,9 @@ const YouTube: FunctionalComponent<Props> = ({
   }, [player, selected, play, send])
 
   return (
-    <div class="relative h-0 overflow-hidden max-w-full pb-video">
-      <div
-        class={cx(
-          "absolute top-0 left-0 w-full h-full z-10",
-          selected && "hidden"
-        )}
-      >
-        {children}
-      </div>
-      <div ref={domRef} class="absolute top-0 left-0 w-full h-full" />
+    <div class="video-16/9-container">
+      <div class={cx("video-16/9 z-10", show && "hidden")}>{children}</div>
+      <div ref={domRef} class="video-16/9" />
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import { FunctionalComponent, h, Fragment, ComponentChild } from "preact"
 import { useState, useCallback, useEffect, useRef } from "preact/hooks"
+import cx from "classnames"
 import { Videos as TVideos, Track, Progress } from "../types"
 import YouTube from "./youtube"
 import Videos from "./videos"
@@ -33,6 +34,7 @@ const Player: FunctionalComponent<Props> = ({
   const selected = selectors.getSelected(state.context)
   const isPlaying = state.matches("playing")
   const isVisuallyPlaying = isPlaying || state.matches("requesting")
+  const showPlayer = !!selected
 
   // TODO: share urls
 
@@ -53,19 +55,24 @@ const Player: FunctionalComponent<Props> = ({
   return (
     <Fragment>
       <div class="sticky top-0" ref={playerContainer}>
-        <div class="bg-gray-600">
-          <YouTube
-            selected={selected}
-            play={state.matches("playing")}
-            send={send}
-            onProgress={onProgress}
-          >
-            <div class="bg-gray-200 w-full h-full flex justify-center items-center flex-col shadow-inner">
-              {children}
-            </div>
-          </YouTube>
+        <div
+          class={cx("shadow-inner", showPlayer ? "bg-black" : "bg-gray-200")}
+        >
+          <div class="mx-auto max-w-0 sm-h:max-w-video-16/9-60vh md-h:max-w-screen-c">
+            <YouTube
+              show={showPlayer}
+              selected={selected}
+              play={state.matches("playing")}
+              send={send}
+              onProgress={onProgress}
+            >
+              <div class="bg-gray-200 w-full h-full flex justify-center items-center flex-col">
+                {children}
+              </div>
+            </YouTube>
+          </div>
         </div>
-        <div class="bg-white border-t border-b border-gray-600 shadow-sm">
+        <div class="bg-white border-b border-t border-gray-600 shadow-sm">
           <Controls
             selected={selected}
             progress={progress}

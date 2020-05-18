@@ -4,6 +4,15 @@ import * as Machine from "./types"
 
 export const defaultSongMode = true
 
+export const isReady = (state: Machine.PlayerMachineState): boolean => {
+  return (
+    state.matches("ready") ||
+    state.matches("requesting") ||
+    state.matches("playing") ||
+    state.matches("paused")
+  )
+}
+
 export const hasTracks = (context: Machine.PlayerContext): boolean => {
   return !!context.tracks
 }
@@ -23,12 +32,6 @@ export const getSelected = (
   context: Machine.PlayerContext
 ): Track | undefined => {
   return getSelectedByIndex(context, context.order?.selectedIndex)
-}
-
-export const getSongModeFilter = (baseTrack: Track) => (
-  filterTrack: Track
-): boolean => {
-  return (baseTrack.isSong ?? defaultSongMode) === filterTrack.isSong
 }
 
 export const getCurrentSongMode = (context: Machine.PlayerContext): boolean => {

@@ -5,3 +5,23 @@
 .tabular-nums {
   font-variant-numeric: "tabular-nums";
 }
+
+.video-16\/9-container {
+  @apply relative;
+  @apply h-0;
+  @apply overflow-hidden;
+  @apply max-w-full;
+  padding-bottom: 56.25%;
+}
+
+.video-16\/9 {
+  @apply absolute;
+  @apply top-0;
+  @apply left-0;
+  @apply w-full;
+  @apply h-full;
+}
+
+.main a {
+  @apply underline;
+}

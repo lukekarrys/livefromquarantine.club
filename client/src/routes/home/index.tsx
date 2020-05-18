@@ -4,7 +4,7 @@ import Button from "../../components/button"
 
 const Home: FunctionalComponent = () => {
   return (
-    <div class="mt-4 max-w-screen-md mx-auto border-gray-600 px-2 md:px-0">
+    <div class="mt-4 max-w-screen-md mx-auto px-2 md:px-0">
       {config.artists.map((artist) => (
         <Button
           as="a"
