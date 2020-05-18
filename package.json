@@ -46,19 +46,20 @@
     "url": "git+https://github.com/lukekarrys/livefromquarantine.club.git"
   },
   "scripts": {
-    "dev": "run-p dev:**",
-    "dev:data": "NODE_ENV=development node api/dev-server.js",
-    "dev:client": "cd client && npm run dev",
     "build": "run-s build:client build:data",
     "build:client": "cd client && npm run build",
     "build:data": "node api/build.js",
     "data": "node data/index.js",
+    "dev": "run-p dev:**",
+    "dev:client": "cd client && npm run dev",
+    "dev:data": "NODE_ENV=development node api/dev-server.js",
     "eslint": "eslint . --fix --ignore-pattern client",
     "lint": "npm run prettier && npm run eslint && cd client && npm run lint",
+    "netlify": " npm run lint && npm run build",
     "postinstall": "cd client && npm install",
-    "prebuild": "if [ ! -d \"client/node_modules\" ]; then npm run postinstall; fi",
+    "prenetlify": "if [ ! -d \"client/node_modules\" ]; then npm run postinstall; fi",
     "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,css,md,json}'",
-    "trigger": "node data/trigger.js",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "trigger": "node data/trigger.js"
   }
 }

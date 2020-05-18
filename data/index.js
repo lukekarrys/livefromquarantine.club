@@ -13,7 +13,10 @@ const { API_KEY } = process.env
 const apiUrl = `https://www.googleapis.com/youtube/v3`
 const hideKey = (str) => str.replace(API_KEY, 'X'.repeat(3)).replace(apiUrl, '')
 
-const omitCommentIds = ['UgyA0JzCcn4gxF1ktmZ4AaABAg', 'UgzY1loB0NOTUSY_jgR4AaABAg']
+const omitCommentIds = [
+  'UgyA0JzCcn4gxF1ktmZ4AaABAg',
+  'UgzY1loB0NOTUSY_jgR4AaABAg',
+]
 const blessCommentIds = ['UgzyR6a6B-Czl4pI5ZN4AaABAg']
 
 const get = (url) => {
