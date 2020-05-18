@@ -55,7 +55,7 @@
     "dev:data": "NODE_ENV=development node api/dev-server.js",
     "eslint": "eslint '**/*.{js,jsx,ts,tsx}' --ignore-pattern '/client/' --fix",
     "lint": "npm run prettier && npm run eslint && cd client && npm run lint",
-    "postinstall": "if [ ! -d \"client/node_modules\" ]; then cd client && npm install; fi;",
+    "postinstall": "if [ ! -d \"client/node_modules\" ]; then cd client && npm install; else cd client && npm ls || true; fi;",
     "prettier": "prettier --write '!client' '**/*.{js,jsx,ts,tsx,css,md,json}'",
     "start": "npm run dev",
     "trigger": "node data/trigger.js"
