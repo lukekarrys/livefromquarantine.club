@@ -1,5 +1,5 @@
-import { h } from "preact"
-import { FunctionalComponent } from "preact"
+import { h } from 'preact'
+import { FunctionalComponent } from 'preact'
 
 const PlayIcon: FunctionalComponent<{ height: number }> = ({ height }) => (
   <svg

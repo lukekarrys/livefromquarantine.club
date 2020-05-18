@@ -1,6 +1,6 @@
 /// <reference types="@types/youtube" />
-import { useEffect, useRef, useCallback, Ref } from "preact/hooks"
-import * as debug from "./debug"
+import { useEffect, useRef, useCallback, Ref } from 'preact/hooks'
+import * as debug from './debug'
 
 declare global {
   interface Window {
@@ -13,8 +13,8 @@ declare global {
 }
 
 const addScript = (src: string): void => {
-  const script = document.createElement("script")
-  script.setAttribute("src", src)
+  const script = document.createElement('script')
+  script.setAttribute('src', src)
   document.body.appendChild(script)
 }
 
@@ -27,8 +27,8 @@ const useYouTube = (
   const setPlayer = useCallback((): void => {
     if (domRef.current) {
       playerRef.current = new window.YT.Player(domRef.current, {
-        height: "100%",
-        width: "100%",
+        height: '100%',
+        width: '100%',
         playerVars: {
           autoplay: 0,
           controls: 0,
@@ -39,7 +39,7 @@ const useYouTube = (
         events: {
           onReady: (): void => onReady(playerRef.current),
           onStateChange,
-          onError: (e: YT.OnErrorEvent): void => debug.error("PLAYER ERROR", e),
+          onError: (e: YT.OnErrorEvent): void => debug.error('PLAYER ERROR', e),
         },
       })
     }
@@ -48,7 +48,7 @@ const useYouTube = (
   useEffect(() => {
     if (!window.YT) {
       window.onYouTubeIframeAPIReady = setPlayer
-      addScript("https://www.youtube.com/iframe_api")
+      addScript('https://www.youtube.com/iframe_api')
     } else {
       setPlayer()
     }

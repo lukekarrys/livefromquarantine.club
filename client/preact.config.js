@@ -1,5 +1,5 @@
-import { resolve } from "path"
-import tailwind from "tailwindcss"
+import { resolve } from 'path'
+import tailwind from 'tailwindcss'
 
 export default {
   /**
@@ -12,7 +12,7 @@ export default {
    * @param {object} options - this is mainly relevant for plugins (will always be empty in the config), default to an empty object
    **/
   webpack(config, env, helpers) {
-    helpers.getLoadersByName(config, "postcss-loader").forEach(({ loader }) => {
+    helpers.getLoadersByName(config, 'postcss-loader').forEach(({ loader }) => {
       const plugins = loader.options.plugins
       // Add tailwind css at the top.
       plugins.unshift(tailwind)
@@ -21,9 +21,9 @@ export default {
     if (config.devServer) {
       config.devServer.hot = false
       config.devServer.proxy = {
-        "/api": {
-          target: "http://localhost:8081",
-          pathRewrite: { [`^/api`]: "" },
+        '/api': {
+          target: 'http://localhost:8081',
+          pathRewrite: { [`^/api`]: '' },
         },
       }
     }
@@ -32,22 +32,22 @@ export default {
     // (remember to check here if adding any future react libraries)
     config.resolve.alias.react = resolve(
       process.cwd(),
-      "src",
-      "lib",
-      "preact.js"
+      'src',
+      'lib',
+      'preact.js'
     )
     ;[
-      "react-dom",
-      "react-addons-css-transition-group",
-      "preact-compat",
-      "preact/compat",
+      'react-dom',
+      'react-addons-css-transition-group',
+      'preact-compat',
+      'preact/compat',
     ].forEach((k) => delete config.resolve.alias[k])
 
     // Use any `index` file, not just index.js
-    config.resolve.alias["preact-cli-entrypoint"] = resolve(
+    config.resolve.alias['preact-cli-entrypoint'] = resolve(
       process.cwd(),
-      "src",
-      "index"
+      'src',
+      'index'
     )
   },
 }

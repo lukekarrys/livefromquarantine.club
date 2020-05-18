@@ -1,9 +1,9 @@
-import { FunctionalComponent, h, RefObject } from "preact"
-import cx from "classnames"
-import { useEffect } from "preact/hooks"
-import { Videos as TVideos, Track, VideoId, TrackId } from "../types"
-import Button from "./button"
-import hhmmss from "../lib/hhmmss"
+import { FunctionalComponent, h, RefObject } from 'preact'
+import cx from 'classnames'
+import { useEffect } from 'preact/hooks'
+import { Videos as TVideos, Track, VideoId, TrackId } from '../types'
+import Button from './button'
+import hhmmss from '../lib/hhmmss'
 
 interface Props {
   videos: TVideos
@@ -12,7 +12,7 @@ interface Props {
   playerRef: RefObject<HTMLDivElement>
 }
 
-type ButtonProps = Omit<Props, "videos" | "playerRef"> & {
+type ButtonProps = Omit<Props, 'videos' | 'playerRef'> & {
   track: Track
   last: boolean
 }
@@ -26,21 +26,21 @@ const TrackButton: FunctionalComponent<ButtonProps> = ({
   onSelect,
   last,
 }) => {
-  const title = Array.isArray(track.title) ? track.title[1] : "Play All"
+  const title = Array.isArray(track.title) ? track.title[1] : 'Play All'
   return (
     <div
       class={cx(
-        "mb-2",
-        "w-full sm:w-1/2 md:w-auto",
-        "px-1",
-        last ? "md:flex-grow-0" : "md:flex-grow"
+        'mb-2',
+        'w-full sm:w-1/2 md:w-auto',
+        'px-1',
+        last ? 'md:flex-grow-0' : 'md:flex-grow'
       )}
     >
       <Button
         id={BUTTON_ID(track.id)}
         onClick={(): void => onSelect(track)}
         selected={selected?.id === track.id}
-        class={cx("w-full flex justify-between sm:justify-center items-center")}
+        class={cx('w-full flex justify-between sm:justify-center items-center')}
         title={title}
         tight={false}
       >
@@ -92,7 +92,7 @@ const Videos: FunctionalComponent<Props> = ({
           id={VIDEO_ID(video.id)}
           key={video.id}
           class={
-            "pt-2 md:pt-4 pb-2 px-2 border-b border-gray-600 flex flex-row flex-wrap -mx-1"
+            'pt-2 md:pt-4 pb-2 px-2 border-b border-gray-600 flex flex-row flex-wrap -mx-1'
           }
         >
           <h2 class="text-xl md:mx-1 mb-2 text-center w-full md:w-auto">

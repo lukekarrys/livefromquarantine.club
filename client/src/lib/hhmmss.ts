@@ -8,8 +8,8 @@ const hhmmss = (s: number): string => {
   s %= 3600
   const minutes = Math.floor(s / 60)
   const seconds = s % 60
-  return `${hours ? `${hours}:` : ""}${
-    minutes ? (hours ? pad(minutes) : minutes) : "0"
+  return `${hours ? `${hours}:` : ''}${
+    minutes ? (hours ? pad(minutes) : minutes) : '0'
   }:${pad(Math.round(seconds))}`
 }
 

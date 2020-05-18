@@ -1,19 +1,19 @@
-import { FunctionalComponent, h, Fragment } from "preact"
-import { useEffect, useState } from "preact/hooks"
-import { useMachine } from "@xstate/react/lib/fsm"
-import playerMachine from "../../machine"
-import * as selectors from "../../machine/selectors"
-import Player from "../../components/player"
-import fetchData from "../../lib/api"
-import useDebugService from "../../lib/useDebugService"
-import { ArtistId, Videos, ArtistMeta, TrackId } from "../../types"
+import { FunctionalComponent, h, Fragment } from 'preact'
+import { useEffect, useState } from 'preact/hooks'
+import { useMachine } from '@xstate/react/lib/fsm'
+import playerMachine from '../../machine'
+import * as selectors from '../../machine/selectors'
+import Player from '../../components/player'
+import fetchData from '../../lib/api'
+import useDebugService from '../../lib/useDebugService'
+import { ArtistId, Videos, ArtistMeta, TrackId } from '../../types'
 
 interface Props {
   artist: ArtistId
 }
 
 const hash = window.location.hash.slice(1)
-const initialTracks: TrackId[] = hash ? (hash.split(",") as TrackId[]) : []
+const initialTracks: TrackId[] = hash ? (hash.split(',') as TrackId[]) : []
 
 const Artist: FunctionalComponent<Props> = ({ artist }) => {
   const [videos, setVideos] = useState<Videos | undefined>(undefined)
@@ -23,19 +23,19 @@ const Artist: FunctionalComponent<Props> = ({ artist }) => {
   useDebugService(service)
 
   useEffect(() => {
-    send("FETCH_START")
+    send('FETCH_START')
     fetchData(artist)
       .then((res) => {
         setVideos(res.videos)
         setMeta(res.meta)
         send({
-          type: "FETCH_SUCCESS",
+          type: 'FETCH_SUCCESS',
           tracks: res.tracks,
           trackId: initialTracks[0],
           // TODO: add initial upnext
         })
       })
-      .catch((error) => send({ type: "FETCH_ERROR", error }))
+      .catch((error) => send({ type: 'FETCH_ERROR', error }))
   }, [artist, send])
 
   useEffect(() => {
@@ -47,10 +47,10 @@ const Artist: FunctionalComponent<Props> = ({ artist }) => {
   return (
     <div class="max-w-screen-c c:border-l c:border-r border-r-0 border-l-0 mx-auto border-gray-600">
       <Player state={state} send={send} videos={videos}>
-        {state.matches("idle") || state.matches("loading")
-          ? "Loading..."
-          : state.matches("error")
-          ? state.context.error.message ?? "Error"
+        {state.matches('idle') || state.matches('loading')
+          ? 'Loading...'
+          : state.matches('error')
+          ? state.context.error.message ?? 'Error'
           : selectors.isReady(state)
           ? meta && (
               <Fragment>
@@ -58,7 +58,7 @@ const Artist: FunctionalComponent<Props> = ({ artist }) => {
                 <div
                   class="flex flex-col items-center text-center main"
                   dangerouslySetInnerHTML={{
-                    __html: meta.main || "",
+                    __html: meta.main || '',
                   }}
                 />
               </Fragment>

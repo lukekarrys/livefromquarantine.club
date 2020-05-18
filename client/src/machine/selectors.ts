@@ -1,15 +1,15 @@
-import { Track } from "../types"
-import { isSeekableTrack, isNextTrack } from "../lib/compare-tracks"
-import * as Machine from "./types"
+import { Track } from '../types'
+import { isSeekableTrack, isNextTrack } from '../lib/compare-tracks'
+import * as Machine from './types'
 
 export const defaultSongMode = true
 
 export const isReady = (state: Machine.PlayerMachineState): boolean => {
   return (
-    state.matches("ready") ||
-    state.matches("requesting") ||
-    state.matches("playing") ||
-    state.matches("paused")
+    state.matches('ready') ||
+    state.matches('requesting') ||
+    state.matches('playing') ||
+    state.matches('paused')
   )
 }
 

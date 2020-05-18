@@ -1,5 +1,5 @@
 const DEBUG =
-  localStorage.getItem("debug") || process.env.NODE_ENV === "development"
+  localStorage.getItem('debug') || process.env.NODE_ENV === 'development'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any, no-console
 export const log = (...args: any): void => void (DEBUG && console.log(...args))

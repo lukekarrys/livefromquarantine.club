@@ -1,12 +1,12 @@
-import { FunctionalComponent, h, Fragment, ComponentChild } from "preact"
-import { useState, useCallback, useEffect, useRef } from "preact/hooks"
-import cx from "classnames"
-import { Videos as TVideos, Track, Progress } from "../types"
-import YouTube from "./youtube"
-import Videos from "./videos"
-import Controls from "./controls"
-import * as selectors from "../machine/selectors"
-import { PlayerSend, PlayerMachineState } from "../machine/types"
+import { FunctionalComponent, h, Fragment, ComponentChild } from 'preact'
+import { useState, useCallback, useEffect, useRef } from 'preact/hooks'
+import cx from 'classnames'
+import { Videos as TVideos, Track, Progress } from '../types'
+import YouTube from './youtube'
+import Videos from './videos'
+import Controls from './controls'
+import * as selectors from '../machine/selectors'
+import { PlayerSend, PlayerMachineState } from '../machine/types'
 
 interface Props {
   state: PlayerMachineState
@@ -22,7 +22,7 @@ const Player: FunctionalComponent<Props> = ({
   videos = [],
 }) => {
   const onSelect = useCallback(
-    (track: Track) => send({ type: "SELECT_TRACK", trackId: track.id }),
+    (track: Track) => send({ type: 'SELECT_TRACK', trackId: track.id }),
     [send]
   )
 
@@ -32,8 +32,8 @@ const Player: FunctionalComponent<Props> = ({
   ])
 
   const selected = selectors.getSelected(state.context)
-  const isPlaying = state.matches("playing")
-  const isVisuallyPlaying = isPlaying || state.matches("requesting")
+  const isPlaying = state.matches('playing')
+  const isVisuallyPlaying = isPlaying || state.matches('requesting')
   const showPlayer = !!selected
 
   // TODO: share urls
@@ -41,13 +41,13 @@ const Player: FunctionalComponent<Props> = ({
   useEffect(() => {
     const listener = (e: KeyboardEvent): void => {
       if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return
-      else if (e.key === "ArrowRight") send("NEXT")
-      else if (e.key === " ")
-        e.preventDefault(), send(isVisuallyPlaying ? "PAUSE" : "PLAY")
-      else if (e.key === "s") send("SHUFFLE")
+      else if (e.key === 'ArrowRight') send('NEXT')
+      else if (e.key === ' ')
+        e.preventDefault(), send(isVisuallyPlaying ? 'PAUSE' : 'PLAY')
+      else if (e.key === 's') send('SHUFFLE')
     }
-    document.addEventListener("keydown", listener)
-    return (): void => document.removeEventListener("keydown", listener)
+    document.addEventListener('keydown', listener)
+    return (): void => document.removeEventListener('keydown', listener)
   }, [send, isVisuallyPlaying])
 
   const playerContainer = useRef<HTMLDivElement>()
@@ -56,13 +56,13 @@ const Player: FunctionalComponent<Props> = ({
     <Fragment>
       <div class="sticky top-0" ref={playerContainer}>
         <div
-          class={cx("shadow-inner", showPlayer ? "bg-black" : "bg-gray-200")}
+          class={cx('shadow-inner', showPlayer ? 'bg-black' : 'bg-gray-200')}
         >
           <div class="mx-auto max-w-0 sm-h:max-w-video-16/9-60vh md-h:max-w-screen-c">
             <YouTube
               show={showPlayer}
               selected={selected}
-              play={state.matches("playing")}
+              play={state.matches('playing')}
               send={send}
               onProgress={onProgress}
             >
@@ -76,7 +76,7 @@ const Player: FunctionalComponent<Props> = ({
           <Controls
             selected={selected}
             progress={progress}
-            play={state.matches("playing") || state.matches("requesting")}
+            play={state.matches('playing') || state.matches('requesting')}
             shuffle={state.context.shuffle}
             send={send}
           />

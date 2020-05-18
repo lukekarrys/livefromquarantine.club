@@ -1,36 +1,36 @@
-import { createMachine, assign } from "@xstate/fsm"
-import { Repeat } from "../types"
-import * as Machine from "./types"
-import * as selectors from "./selectors"
-import * as trackOrder from "./track-order"
-import * as debug from "../lib/debug"
+import { createMachine, assign } from '@xstate/fsm'
+import { Repeat } from '../types'
+import * as Machine from './types'
+import * as selectors from './selectors'
+import * as trackOrder from './track-order'
+import * as debug from '../lib/debug'
 
 export const ytToMachineEvent: {
-  [key in YT.PlayerState]: Machine.YouTubeEvent["type"] | null
+  [key in YT.PlayerState]: Machine.YouTubeEvent['type'] | null
 } = {
   [-1]: null, // UNSTARTED, dont need to track this
-  [0]: "END",
-  [1]: "YOUTUBE_PLAY",
-  [2]: "YOUTUBE_PAUSE",
-  [3]: "YOUTUBE_BUFFERING",
-  [5]: "YOUTUBE_CUED",
+  [0]: 'END',
+  [1]: 'YOUTUBE_PLAY',
+  [2]: 'YOUTUBE_PAUSE',
+  [3]: 'YOUTUBE_BUFFERING',
+  [5]: 'YOUTUBE_CUED',
 }
 
 const shuffleTransition: Machine.PlayerTransition<Machine.ShuffleEvent> = {
   SHUFFLE: {
-    actions: "shuffleTrackOrder",
+    actions: 'shuffleTrackOrder',
   },
 }
 
 const playerReadyTransition: Machine.PlayerTransition<Machine.PlayerReadyEvent> = {
   PLAYER_READY: [
     {
-      target: "ready",
-      actions: "setPlayer",
+      target: 'ready',
+      actions: 'setPlayer',
       cond: selectors.hasTracks,
     },
     {
-      actions: "setPlayer",
+      actions: 'setPlayer',
     },
   ],
 }
@@ -41,8 +41,8 @@ const playerMachine = createMachine<
   Machine.PlayerState
 >(
   {
-    id: "player",
-    initial: "idle",
+    id: 'player',
+    initial: 'idle',
     context: {
       tracks: undefined,
       tracksById: undefined,
@@ -62,7 +62,7 @@ const playerMachine = createMachine<
     states: {
       idle: {
         on: {
-          FETCH_START: "loading",
+          FETCH_START: 'loading',
           // TODO: racing the player and the loading could be done on an entry condition in ready? try that later
           ...playerReadyTransition,
           ...shuffleTransition,
@@ -72,17 +72,17 @@ const playerMachine = createMachine<
         on: {
           FETCH_SUCCESS: [
             {
-              target: "ready",
-              actions: "setTracks",
+              target: 'ready',
+              actions: 'setTracks',
               cond: selectors.isPlayerReady,
             },
             {
-              actions: "setTracks",
+              actions: 'setTracks',
             },
           ],
           FETCH_ERROR: {
-            target: "error",
-            actions: "setError",
+            target: 'error',
+            actions: 'setError',
             cond: selectors.isPlayerReady,
           },
           ...playerReadyTransition,
@@ -91,7 +91,7 @@ const playerMachine = createMachine<
       },
       error: {
         on: {
-          FETCH_START: "loading",
+          FETCH_START: 'loading',
           ...playerReadyTransition,
           ...shuffleTransition,
         },
@@ -100,67 +100,67 @@ const playerMachine = createMachine<
         // This is not ideal but the simplest way to cue the initial selected video
         // is to call this always on entry but make it a no-op in the action
         // if there is nothing selected
-        entry: "cueVideo",
+        entry: 'cueVideo',
         on: {
           PLAY: [
             {
-              target: "requesting",
+              target: 'requesting',
               cond: selectors.hasSelected,
-              actions: "loadVideo",
+              actions: 'loadVideo',
             },
             {
-              target: "requesting",
-              actions: ["setInitialTrack", "loadVideo"],
+              target: 'requesting',
+              actions: ['setInitialTrack', 'loadVideo'],
             },
           ],
           NEXT: [
             {
-              target: "requesting",
-              actions: ["setNextTrack", "loadVideo"],
+              target: 'requesting',
+              actions: ['setNextTrack', 'loadVideo'],
               cond: selectors.hasSelected,
             },
             {
               // You can click the next button on initial state and it
               // acts the same as the play button because why not
-              target: "requesting",
-              actions: ["setInitialTrack", "loadVideo"],
+              target: 'requesting',
+              actions: ['setInitialTrack', 'loadVideo'],
             },
           ],
           SELECT_TRACK: {
-            target: "requesting",
-            actions: ["setTrack", "loadVideo"],
+            target: 'requesting',
+            actions: ['setTrack', 'loadVideo'],
           },
           ...shuffleTransition,
         },
       },
       requesting: {
         on: {
-          YOUTUBE_BUFFERING: "playing",
-          YOUTUBE_CUED: "playing",
+          YOUTUBE_BUFFERING: 'playing',
+          YOUTUBE_CUED: 'playing',
           // I think play/pause are necessary here because its
           // not perfect to tap into YouTube's event system
           // so this ensures its can't get stuck in the requesting state
-          YOUTUBE_PLAY: "playing",
+          YOUTUBE_PLAY: 'playing',
           // Having pause here causes the state to go into paused when
           // switching between videos since loadVideo causes a temporary
           // pause state. removing for now to see how it works without it
           // YOUTUBE_PAUSE: "paused",
           NEXT: [
             {
-              actions: ["setNextTrack", "seekTo", "playVideo"],
+              actions: ['setNextTrack', 'seekTo', 'playVideo'],
               cond: selectors.isNextSeekable,
             },
             {
-              actions: ["setNextTrack", "loadVideo"],
+              actions: ['setNextTrack', 'loadVideo'],
             },
           ],
           SELECT_TRACK: [
             {
-              actions: ["setTrack", "seekTo", "playVideo"],
+              actions: ['setTrack', 'seekTo', 'playVideo'],
               cond: selectors.isEventSeekable,
             },
             {
-              actions: ["setTrack", "loadVideo"],
+              actions: ['setTrack', 'loadVideo'],
             },
           ],
           ...shuffleTransition,
@@ -169,50 +169,50 @@ const playerMachine = createMachine<
       playing: {
         on: {
           PAUSE: {
-            target: "paused",
-            actions: "pauseVideo",
+            target: 'paused',
+            actions: 'pauseVideo',
           },
-          YOUTUBE_PAUSE: "paused",
+          YOUTUBE_PAUSE: 'paused',
           NEXT: [
             {
-              target: "requesting",
-              actions: ["setNextTrack", "seekTo"],
+              target: 'requesting',
+              actions: ['setNextTrack', 'seekTo'],
               cond: selectors.isNextSeekable,
             },
             {
-              target: "requesting",
-              actions: ["setNextTrack", "loadVideo"],
+              target: 'requesting',
+              actions: ['setNextTrack', 'loadVideo'],
             },
           ],
           END: [
             {
               // No other action here so that there is seamless
               // playback when going directly from one song to another
-              actions: "setNextTrack",
+              actions: 'setNextTrack',
               cond: selectors.isNextNext,
             },
             {
               // The next track could also be in the same video for queues and shuffle
-              target: "requesting",
-              actions: ["setNextTrack", "seekTo"],
+              target: 'requesting',
+              actions: ['setNextTrack', 'seekTo'],
               cond: selectors.isNextSeekable,
             },
             {
               // Any other end event means it is the end of a video
               // so use loadVideo for the next one
-              target: "requesting",
-              actions: ["setNextTrack", "loadVideo"],
+              target: 'requesting',
+              actions: ['setNextTrack', 'loadVideo'],
             },
           ],
           SELECT_TRACK: [
             {
-              target: "requesting",
-              actions: ["setTrack", "seekTo"],
+              target: 'requesting',
+              actions: ['setTrack', 'seekTo'],
               cond: selectors.isEventSeekable,
             },
             {
-              target: "requesting",
-              actions: ["setTrack", "loadVideo"],
+              target: 'requesting',
+              actions: ['setTrack', 'loadVideo'],
             },
           ],
           ...shuffleTransition,
@@ -221,28 +221,28 @@ const playerMachine = createMachine<
       paused: {
         on: {
           PLAY: {
-            target: "requesting",
-            actions: "playVideo",
+            target: 'requesting',
+            actions: 'playVideo',
           },
-          YOUTUBE_PLAY: "playing",
+          YOUTUBE_PLAY: 'playing',
           NEXT: [
             {
-              actions: ["setNextTrack", "seekTo"],
+              actions: ['setNextTrack', 'seekTo'],
               cond: selectors.isNextSeekable,
             },
             {
-              actions: ["setNextTrack", "cueVideo"],
+              actions: ['setNextTrack', 'cueVideo'],
             },
           ],
           SELECT_TRACK: [
             {
-              target: "requesting",
-              actions: ["setTrack", "seekTo", "playVideo"],
+              target: 'requesting',
+              actions: ['setTrack', 'seekTo', 'playVideo'],
               cond: selectors.isEventSeekable,
             },
             {
-              target: "requesting",
-              actions: ["setTrack", "loadVideo"],
+              target: 'requesting',
+              actions: ['setTrack', 'loadVideo'],
             },
           ],
           ...shuffleTransition,
@@ -307,7 +307,7 @@ const playerMachine = createMachine<
           const nextIndex = selectors.getNextIndex(context)
 
           if (nextIndex === undefined) {
-            debug.error("NEXT TRACK NOT FOUND")
+            debug.error('NEXT TRACK NOT FOUND')
           }
 
           return {
@@ -322,7 +322,7 @@ const playerMachine = createMachine<
           const eventTrack = selectors.getEventTrack(context, selectTrackEvent)
 
           if (!eventTrack) {
-            debug.error("SELECT TRACK NOT FOUND", event)
+            debug.error('SELECT TRACK NOT FOUND', event)
             return context.order
           }
 

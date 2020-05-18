@@ -26,10 +26,8 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^4.0.1",
     "eslint-plugin-testing-library": "^3.1.2",
-    "husky": "^4.2.5",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^25.5.4",
-    "lint-staged": "^10.2.2",
     "preact-cli": "^3.0.0-rc.10",
     "prettier": "^2.0.5",
     "sirv-cli": "^1.0.0-next.3",
@@ -37,23 +35,10 @@
     "ts-loader": "^7.0.4",
     "typescript": "^3.8.3"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "license": "MIT",
-  "lint-staged": {
-    "*.{css,md}": "prettier --write",
-    "*.{js,jsx,ts,tsx}": [
-      "prettier --write",
-      "eslint --fix",
-      "jest --bail --findRelatedTests"
-    ]
-  },
   "prettier": {
-    "tabWidth": 2,
-    "semi": false
+    "semi": false,
+    "singleQuote": true
   },
   "private": true,
   "scripts": {

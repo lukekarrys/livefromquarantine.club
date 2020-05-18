@@ -1,6 +1,6 @@
-import { FunctionalComponent, h } from "preact"
-import config from "../../../../config.json"
-import Button from "../../components/button"
+import { FunctionalComponent, h } from 'preact'
+import config from '../../../../config.json'
+import Button from '../../components/button'
 
 const Home: FunctionalComponent = () => {
   return (

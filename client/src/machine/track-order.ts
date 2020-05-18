@@ -1,7 +1,7 @@
-import { Tracks, Track } from "../types"
-import * as Machine from "./types"
-import shuffleArray from "../lib/shuffle-array"
-import { defaultSongMode } from "./selectors"
+import { Tracks, Track } from '../types'
+import * as Machine from './types'
+import shuffleArray from '../lib/shuffle-array'
+import { defaultSongMode } from './selectors'
 
 export const order = (
   tracks: Tracks,
@@ -9,9 +9,9 @@ export const order = (
   selected?: Track
 ): Machine.TrackOrder => {
   let selectedIndex: number | null = null
-  const order: Required<Omit<Machine.TrackOrder, "selectedIndex">> = {
+  const order: Required<Omit<Machine.TrackOrder, 'selectedIndex'>> = {
     trackOrder: [],
-    trackIndexes: {} as Machine.TrackOrder["trackIndexes"],
+    trackIndexes: {} as Machine.TrackOrder['trackIndexes'],
   }
 
   for (let i = 0, m = tracks.length; i < m; i++) {
@@ -50,14 +50,14 @@ export const initial = (
   { selected, shuffle: _shuffle }: { selected?: Track; shuffle: boolean }
 ): Pick<
   Machine.PlayerContextReady,
-  "tracks" | "tracksById" | "songOrder" | "videoOrder" | "order"
+  'tracks' | 'tracksById' | 'songOrder' | 'videoOrder' | 'order'
 > => {
-  const tracksById = tracks.reduce<Machine.PlayerContextReady["tracksById"]>(
+  const tracksById = tracks.reduce<Machine.PlayerContextReady['tracksById']>(
     (acc, track: Track) => {
       acc[track.id] = track
       return acc
     },
-    {} as Machine.PlayerContextReady["tracksById"]
+    {} as Machine.PlayerContextReady['tracksById']
   )
 
   const songOrder = order(tracks, (t) => t.isSong, selected)

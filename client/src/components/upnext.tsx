@@ -1,5 +1,5 @@
-import { FunctionalComponent, h } from "preact"
-import { Tracks, Track } from "../types"
+import { FunctionalComponent, h } from 'preact'
+import { Tracks, Track } from '../types'
 
 interface Props {
   tracks: Tracks
@@ -18,7 +18,7 @@ const UpNext: FunctionalComponent<Props> = ({
       <button onClick={onClear}>Clear</button>
       {tracks.map((track) => (
         <button key={track.id} onClick={(): void => onSelectTrack(track)}>
-          {Array.isArray(track.title) ? track.title.join(" - ") : track.title}
+          {Array.isArray(track.title) ? track.title.join(' - ') : track.title}
         </button>
       ))}
     </div>

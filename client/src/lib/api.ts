@@ -6,7 +6,7 @@ import {
   TrackId,
   ArtistMeta,
   ArtistId,
-} from "../types"
+} from '../types'
 
 interface NormalizedData {
   videos: Videos
@@ -96,7 +96,7 @@ const fetchData = (id: ArtistId): Promise<NormalizedData> =>
       const videos = await resp.json()
       return normalizeData(videos)
     } else {
-      throw new Error(`${resp.status}: ${resp.statusText ?? "Not Ok"}`)
+      throw new Error(`${resp.status}: ${resp.statusText ?? 'Not Ok'}`)
     }
   })
 
