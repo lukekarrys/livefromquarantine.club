@@ -1,44 +1,17 @@
-import { Tracks, Track, TrackId } from "../types"
+import { Tracks, Track } from "../types"
+import * as Machine from "./types"
+import shuffleArray from "../lib/shuffle-array"
+import { defaultSongMode } from "./selectors"
 
-type TrackOrder = {
-  trackIndexes: { [key in TrackId]: number }
-  trackOrder: TrackId[]
-  selectedIndex: number
-}
-
-export type TracksContext = {
-  tracks: Tracks
-  tracksById: { [key in TrackId]?: Track }
-  order: TrackOrder
-  songOrder: Omit<TrackOrder, "selectedIndex">
-  videoOrder: Omit<TrackOrder, "selectedIndex">
-}
-
-export const assignTracksOrder = <TContext, TEvent>(
-  assigner:
-    | (<TContext, TEvent>(
-        context: TContext,
-        event: TEvent
-      ) => Partial<TrackOrder>)
-    | Partial<TrackOrder>
-) => (context: TContext, event: TEvent): TracksContext =>
-  ({
-    ...context.tracks,
-    order: {
-      ...context.tracks.order,
-      ...(typeof assigner === "function" ? assigner(context, event) : assigner),
-    },
-  } as TracksContext)
-
-export const generateTracksOrder = (
+export const order = (
   tracks: Tracks,
   filter?: (t: Track) => boolean,
-  selectedId?: TrackId
-): TrackOrder => {
+  selected?: Track
+): Machine.TrackOrder => {
   let selectedIndex: number | null = null
-  const order: Omit<TrackOrder, "selectedIndex"> = {
+  const order: Required<Omit<Machine.TrackOrder, "selectedIndex">> = {
     trackOrder: [],
-    trackIndexes: {} as TrackOrder["trackIndexes"],
+    trackIndexes: {} as Machine.TrackOrder["trackIndexes"],
   }
 
   for (let i = 0, m = tracks.length; i < m; i++) {
@@ -46,7 +19,7 @@ export const generateTracksOrder = (
     if (!filter || filter(track)) {
       const position = order.trackOrder.push(track.id)
       order.trackIndexes[track.id] = position - 1
-      if (selectedId && track.id === selectedId && selectedIndex === null) {
+      if (selected && track.id === selected.id && selectedIndex === null) {
         selectedIndex = position - 1
       }
     } else {
@@ -60,26 +33,45 @@ export const generateTracksOrder = (
   }
 }
 
-export const generateInitialTracksOrder = (
+export const shuffle = (
   tracks: Tracks,
-  selectedId?: TrackId
-): TracksContext => {
-  const tracksById = tracks.reduce<TracksContext["tracksById"]>(
+  selected?: Track
+): Machine.TrackOrder => {
+  const shuffleOrder = shuffleArray(tracks)
+  const songMode = selected?.isSong || defaultSongMode
+  if (selected) {
+    shuffleOrder.unshift(selected)
+  }
+  return order(shuffleOrder, (t) => t.isSong === songMode, selected)
+}
+
+export const initial = (
+  tracks: Tracks,
+  { selected, shuffle: _shuffle }: { selected?: Track; shuffle: boolean }
+): Pick<
+  Machine.PlayerContextReady,
+  "tracks" | "tracksById" | "songOrder" | "videoOrder" | "order"
+> => {
+  const tracksById = tracks.reduce<Machine.PlayerContextReady["tracksById"]>(
     (acc, track: Track) => {
       acc[track.id] = track
       return acc
     },
-    {} as TracksContext["tracksById"]
+    {} as Machine.PlayerContextReady["tracksById"]
   )
 
-  const songOrder = generateTracksOrder(tracks, (t) => t.isSong, selectedId)
-  const videoOrder = generateTracksOrder(tracks, (t) => !t.isSong, selectedId)
+  const songOrder = order(tracks, (t) => t.isSong, selected)
+  const videoOrder = order(tracks, (t) => !t.isSong, selected)
 
   return {
     tracks,
     tracksById,
     songOrder,
     videoOrder,
-    order: videoOrder.selectedIndex >= 0 ? videoOrder : songOrder,
+    order: _shuffle
+      ? shuffle(tracks)
+      : videoOrder.selectedIndex >= 0
+      ? videoOrder
+      : songOrder,
   }
 }

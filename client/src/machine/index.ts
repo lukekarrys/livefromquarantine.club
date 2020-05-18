@@ -1,107 +1,12 @@
 import { createMachine, assign, StateMachine, EventObject } from "@xstate/fsm"
-import { Tracks, Track, Repeat, TrackId } from "../types"
-import { isSeekableTrack, isNextTrack } from "../lib/compare-tracks"
-import {
-  generateInitialTracksOrder,
-  generateTracksOrder,
-  TracksContext,
-  assignTracksOrder,
-} from "./track-order"
+import { Repeat } from "../types"
+import * as Machine from "./types"
+import * as selectors from "./selectors"
+import * as trackOrder from "./track-order"
 import * as debug from "../lib/debug"
-import shuffleArray from "../lib/shuffle-array"
-
-type FetchStartEvent = { type: "FETCH_START" }
-type FetchSuccessEvent = {
-  type: "FETCH_SUCCESS"
-  tracks: Tracks
-  selectedId?: TrackId
-}
-type FetchErrorEvent = { type: "FETCH_ERROR"; error: Error }
-type PlayerReadyEvent = { type: "PLAYER_READY"; player: YT.Player }
-type SelectTrackEvent = { type: "SELECT_TRACK"; trackId: TrackId }
-type PlayEvent = { type: "PLAY" }
-type PauseEvent = { type: "PAUSE" }
-type NextEvent = { type: "NEXT" }
-type ShuffleEvent = { type: "SHUFFLE" }
-type EndEvent = { type: "END" }
-type YouTubePlayEvent = { type: "YOUTUBE_PLAY" }
-type YouTubePauseEvent = { type: "YOUTUBE_PAUSE" }
-type YouTubeBufferingEvent = { type: "YOUTUBE_BUFFERING" }
-type YouTubeCuedEvent = { type: "YOUTUBE_CUED" }
-
-type YouTubeEvent =
-  | YouTubePlayEvent
-  | YouTubePauseEvent
-  | YouTubeBufferingEvent
-  | YouTubeCuedEvent
-  | EndEvent
-
-type PlayerEvent =
-  | SelectTrackEvent
-  | PlayerReadyEvent
-  | PlayEvent
-  | PauseEvent
-  | NextEvent
-  | EndEvent
-  | YouTubeEvent
-  | ShuffleEvent
-  | FetchSuccessEvent
-  | FetchErrorEvent
-  | FetchStartEvent
-
-interface PlayerContext {
-  tracks?: TracksContext
-  error?: Error
-  player?: YT.Player
-  shuffle: boolean
-  repeat: Repeat
-}
-
-interface PlayerContextReady extends PlayerContext {
-  tracks: TracksContext
-  error: undefined
-  player: YT.Player
-}
-
-type PlayerState =
-  | {
-      value: "idle"
-      context: PlayerContext & {
-        tracks: undefined
-        error: undefined
-      }
-    }
-  | {
-      value: "loading"
-      context: PlayerContext & {
-        tracks: undefined
-        error: undefined
-      }
-    }
-  | {
-      value: "error"
-      context: PlayerContext & {
-        tracks: undefined
-        error: Error
-      }
-    }
-  | { value: "ready"; context: PlayerContextReady }
-  | { value: "requesting"; context: PlayerContextReady }
-  | { value: "playing"; context: PlayerContextReady }
-  | { value: "paused"; context: PlayerContextReady }
-
-export type PlayerMachineSend = (
-  event: PlayerEvent | PlayerEvent["type"]
-) => void
-
-export type PlayerMachineState = StateMachine.State<
-  PlayerContext,
-  PlayerEvent,
-  PlayerState
->
 
 export const ytToMachineEvent: {
-  [key in YT.PlayerState]: YouTubeEvent["type"] | null
+  [key in YT.PlayerState]: Machine.YouTubeEvent["type"] | null
 } = {
   [-1]: null, // UNSTARTED, dont need to track this
   [0]: "END",
@@ -111,87 +16,21 @@ export const ytToMachineEvent: {
   [5]: "YOUTUBE_CUED",
 }
 
-export const selectors = {
-  hasTracks: (context: PlayerContext): boolean => {
-    return !!context.tracks
-  },
-  getSelectedByIndex: (
-    context: PlayerContext,
-    index?: number
-  ): Track | undefined => {
-    return index === undefined
-      ? undefined
-      : context.tracks?.tracksById[context.tracks.order.trackOrder[index]]
-  },
-  getSelected: (context: PlayerContext): Track | undefined => {
-    return selectors.getSelectedByIndex(
-      context,
-      context.tracks?.order.selectedIndex
-    )
-  },
-  getNextSelected: (context: PlayerContext): Track | undefined => {
-    return selectors.getSelectedByIndex(
-      context,
-      selectors.getNextIndex(context)
-    )
-  },
-  getEventTrack: (
-    context: PlayerContext,
-    event: SelectTrackEvent
-  ): Track | undefined => {
-    return context.tracks?.tracksById[event.trackId]
-  },
-  hasSelected: (context: PlayerContext): boolean => {
-    return selectors.getSelected(context) !== undefined
-  },
-  getNextIndex: (context: PlayerContext): number | undefined => {
-    const selectedIndex = context.tracks?.order.selectedIndex
-    const trackOrder = context.tracks?.order.trackOrder
-
-    if (selectedIndex == null || trackOrder == null) return undefined
-
-    const nextIndex = selectedIndex + 1
-    return nextIndex >= trackOrder.length ? 0 : nextIndex
-  },
-  isNextSeekable: (context: PlayerContext): boolean => {
-    const current = selectors.getSelected(context)
-    const next = selectors.getNextSelected(context)
-    return isSeekableTrack(current, next)
-  },
-  isEventSeekable: (
-    context: PlayerContext,
-    event: SelectTrackEvent
-  ): boolean => {
-    return isSeekableTrack(
-      selectors.getSelected(context),
-      selectors.getEventTrack(context, event)
-    )
-  },
-  isNextNext: (context: PlayerContext): boolean => {
-    const current = selectors.getSelected(context)
-    const next = selectors.getNextSelected(context)
-    return isNextTrack(current, next)
-  },
-  isPlayerReady: (context: PlayerContext): boolean => {
-    return !!context.player
-  },
-}
-
 type SingleOrArray<T> = T[] | T
 
 type PlayerTransition<TEvent extends EventObject> = {
   [K in TEvent["type"]]: SingleOrArray<
-    StateMachine.Transition<PlayerContext, TEvent>
+    StateMachine.Transition<Machine.PlayerContext, TEvent>
   >
 }
 
-const shuffleTransition: PlayerTransition<ShuffleEvent> = {
+const shuffleTransition: PlayerTransition<Machine.ShuffleEvent> = {
   SHUFFLE: {
     actions: "shuffleTrackOrder",
   },
 }
 
-const playerReadyTransition: PlayerTransition<PlayerReadyEvent> = {
+const playerReadyTransition: PlayerTransition<Machine.PlayerReadyEvent> = {
   PLAYER_READY: [
     {
       target: "ready",
@@ -204,12 +43,22 @@ const playerReadyTransition: PlayerTransition<PlayerReadyEvent> = {
   ],
 }
 
-const playerMachine = createMachine<PlayerContext, PlayerEvent, PlayerState>(
+const playerMachine = createMachine<
+  Machine.PlayerContext,
+  Machine.PlayerEvent,
+  Machine.PlayerState
+>(
   {
     id: "player",
     initial: "idle",
     context: {
       tracks: undefined,
+      tracksById: undefined,
+      songOrder: undefined,
+      videoOrder: undefined,
+      order: {
+        selectedIndex: -1,
+      },
       error: undefined,
       player: undefined,
       shuffle: false,
@@ -437,90 +286,84 @@ const playerMachine = createMachine<PlayerContext, PlayerEvent, PlayerState>(
           context.player?.seekTo(selected.start, true)
         }
       },
-      setPlayer: assign<PlayerContext>({
-        player: (_, event) => (event as PlayerReadyEvent).player,
+      setPlayer: assign<Machine.PlayerContext>({
+        player: (_, event) => (event as Machine.PlayerReadyEvent).player,
       }),
-      setTracks: assign<PlayerContext>({
-        tracks: (_, event) => {
-          // TODO: this is only ever called once per session but if it was ever
-          // called more then it would need to account for shuffle and selected state
-          // from context
-          const fetchSuccessEvent = event as FetchSuccessEvent
-          return generateInitialTracksOrder(
-            fetchSuccessEvent.tracks,
-            fetchSuccessEvent.selectedId
-          )
-        },
+      setTracks: assign<Machine.PlayerContext>((context, event) => {
+        // TODO: this is only ever called once per session but if it was ever
+        // called more then it would need to account for shuffle and selected state
+        // from context
+        const fetchSuccessEvent = event as Machine.FetchSuccessEvent
+        const eventSelected = selectors.getEventTrack(
+          context,
+          fetchSuccessEvent
+        )
+        const tracksContext = trackOrder.initial(fetchSuccessEvent.tracks, {
+          selected: eventSelected || selectors.getSelected(context),
+          shuffle: context.shuffle,
+        })
+        return {
+          ...context,
+          ...tracksContext,
+        }
       }),
-      setInitialTrack: assign<PlayerContext>({
-        tracks: assignTracksOrder({
+      setInitialTrack: assign<Machine.PlayerContext>({
+        order: (context) => ({
+          ...context.order,
           selectedIndex: 0,
         }),
       }),
-      setNextTrack: assign<PlayerContext>({
-        tracks: assignTracksOrder((context) => {
-          return {
-            selectedIndex:
-              selectors.getNextIndex(context) ??
-              context.tracks?.order.selectedIndex,
-          }
+      setNextTrack: assign<Machine.PlayerContext>({
+        order: (context) => ({
+          ...context.order,
+          selectedIndex:
+            selectors.getNextIndex(context) ?? context.order?.selectedIndex,
         }),
       }),
-      setTrack: assign<PlayerContext>({
-        tracks: assignTracksOrder((context, event) => {
-          const selectTrackEvent = event as SelectTrackEvent
-
-          const songMode = selectors.getSelected(context)?.isSong ?? true
+      setTrack: assign<Machine.PlayerContext>({
+        order: (context, event) => {
+          const selectTrackEvent = event as Machine.SelectTrackEvent
           const eventTrack = selectors.getEventTrack(context, selectTrackEvent)
 
           if (!eventTrack) {
             debug.error("SELECT TRACK NOT FOUND", event)
-            return context.tracks
+            return context.order
           }
 
           const eventSongMode = eventTrack.isSong
-
           const newOrder =
-            songMode !== eventSongMode
-              ? eventSongMode
-                ? context.tracks?.songOrder
-                : context.tracks?.videoOrder
-              : context.tracks?.order
-          const newIndex = newOrder?.trackIndexes[eventTrack.id]
+            selectors.getCurrentSongMode(context) !== eventSongMode
+              ? // If the current mode is different that the mode picked
+                // in the selected track
+                eventSongMode
+                ? context.songOrder
+                : context.videoOrder
+              : context.order
+
+          const newIndex = newOrder?.trackIndexes?.[eventTrack.id]
 
           if (newIndex === undefined) {
             throw new Error(`SELECT TRACK NOT FOUND ${JSON.stringify(event)}`)
           }
 
           return {
+            ...context.order,
             selectedIndex: newIndex,
           }
-        }),
+        },
       }),
-      shuffleTrackOrder: assign<PlayerContext>({
+      shuffleTrackOrder: assign<Machine.PlayerContext>({
         shuffle: (context) => !context.shuffle,
-        tracks: assignTracksOrder((context) => {
+        order: (context) => {
           const shuffle = !context.shuffle
           const selected = selectors.getSelected(context)
-          const songMode = selected?.isSong ?? true
 
-          if (shuffle) {
-            // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-            const shuffleOrder = shuffleArray(context.tracks?.tracks!)
-            if (selected) shuffleOrder.unshift(selected)
-            return generateTracksOrder(
-              shuffleOrder,
-              (t) => t.isSong === songMode,
-              selected?.id
-            )
+          if (shuffle && context.tracks) {
+            return trackOrder.shuffle(context.tracks, selected)
           }
 
-          // TODO: fix these
-          const newOrder = songMode
-            ? // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-              context.tracks?.songOrder!
-            : // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-              context.tracks?.videoOrder!
+          const songMode = selectors.getCurrentSongMode(context)
+          const newOrder = songMode ? context.songOrder : context.videoOrder
 
           if (!selected) {
             return {
@@ -529,7 +372,7 @@ const playerMachine = createMachine<PlayerContext, PlayerEvent, PlayerState>(
             }
           }
 
-          const newIndex = newOrder.trackIndexes[selected.id]
+          const newIndex = newOrder?.trackIndexes?.[selected.id]
 
           if (newIndex === undefined) {
             throw new Error(
@@ -540,7 +383,7 @@ const playerMachine = createMachine<PlayerContext, PlayerEvent, PlayerState>(
           return {
             selectedIndex: newIndex,
           }
-        }),
+        },
       }),
     },
   }

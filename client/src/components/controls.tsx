@@ -1,5 +1,5 @@
 import { FunctionalComponent, h } from "preact"
-import { PlayerMachineSend } from "../machine"
+import { PlayerMachineSend } from "../machine/types"
 import { Progress, Track } from "../types"
 import Button from "./button"
 import hhmmss from "../lib/hhmmss"

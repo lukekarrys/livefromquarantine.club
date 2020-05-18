@@ -5,17 +5,15 @@ import playerMachine from "../../machine"
 import Player from "../../components/player"
 import fetchData from "../../lib/api"
 import debug from "../../lib/debug"
-import { ArtistId, Videos, ArtistMeta } from "../../types"
+import { ArtistId, Videos, ArtistMeta, TrackId } from "../../types"
 
 interface Props {
   artist: ArtistId
 }
 
 // TODO: add  initial upnext
-const initial = JSON.parse(
-  localStorage.getItem("initial-data") ||
-    JSON.stringify({} || { nowPlaying: "kRu_s_Er_vs-740" })
-)
+const hash = window.location.hash.slice(1)
+const initialTracks: TrackId[] = hash ? (hash.split(",") as TrackId[]) : []
 
 const Artist: FunctionalComponent<Props> = ({ artist }) => {
   const [videos, setVideos] = useState<Videos | undefined>(undefined)
@@ -42,7 +40,7 @@ const Artist: FunctionalComponent<Props> = ({ artist }) => {
         send({
           type: "FETCH_SUCCESS",
           tracks: res.tracks,
-          selectedId: initial?.nowPlaying,
+          trackId: initialTracks[0],
         })
       })
       .catch((error) => send({ type: "FETCH_ERROR", error }))
@@ -60,7 +58,7 @@ const Artist: FunctionalComponent<Props> = ({ artist }) => {
         {state.matches("idle") || state.matches("loading")
           ? "Loading..."
           : state.matches("error")
-          ? state.context.error?.message ?? "Error"
+          ? state.context.error.message ?? "Error"
           : meta && (
               <Fragment>
                 <h1 class="text-xl">{meta.title}</h1>

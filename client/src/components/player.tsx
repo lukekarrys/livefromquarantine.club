@@ -4,7 +4,8 @@ import { Videos as TVideos, Track, Progress } from "../types"
 import YouTube from "./youtube"
 import Videos from "./videos"
 import Controls from "./controls"
-import { selectors, PlayerMachineState, PlayerMachineSend } from "../machine"
+import * as selectors from "../machine/selectors"
+import { PlayerMachineSend, PlayerMachineState } from "../machine/types"
 
 interface Props {
   state: PlayerMachineState
