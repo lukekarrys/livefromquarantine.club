@@ -1,4 +1,4 @@
-import { createMachine, assign, StateMachine, EventObject } from "@xstate/fsm"
+import { createMachine, assign } from "@xstate/fsm"
 import { Repeat } from "../types"
 import * as Machine from "./types"
 import * as selectors from "./selectors"
@@ -16,21 +16,13 @@ export const ytToMachineEvent: {
   [5]: "YOUTUBE_CUED",
 }
 
-type SingleOrArray<T> = T[] | T
-
-type PlayerTransition<TEvent extends EventObject> = {
-  [K in TEvent["type"]]: SingleOrArray<
-    StateMachine.Transition<Machine.PlayerContext, TEvent>
-  >
-}
-
-const shuffleTransition: PlayerTransition<Machine.ShuffleEvent> = {
+const shuffleTransition: Machine.PlayerTransition<Machine.ShuffleEvent> = {
   SHUFFLE: {
     actions: "shuffleTrackOrder",
   },
 }
 
-const playerReadyTransition: PlayerTransition<Machine.PlayerReadyEvent> = {
+const playerReadyTransition: Machine.PlayerTransition<Machine.PlayerReadyEvent> = {
   PLAYER_READY: [
     {
       target: "ready",

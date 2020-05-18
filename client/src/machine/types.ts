@@ -1,4 +1,4 @@
-import { StateMachine } from "@xstate/fsm"
+import { StateMachine, EventObject } from "@xstate/fsm"
 import { Tracks, Track, Repeat, TrackId } from "../types"
 
 export type FetchStartEvent = { type: "FETCH_START" }
@@ -100,6 +100,13 @@ export type PlayerState =
   | { value: "playing"; context: PlayerContext & PlayerContextReady }
   | { value: "paused"; context: PlayerContext & PlayerContextReady }
 
+type SingleOrArray<T> = T[] | T
+
+export type PlayerTransition<TEvent extends EventObject> = {
+  [K in TEvent["type"]]: SingleOrArray<
+    StateMachine.Transition<PlayerContext, TEvent>
+  >
+}
 export type PlayerMachineSend = (
   event: PlayerEvent | PlayerEvent["type"]
 ) => void
