@@ -1,6 +1,6 @@
 /// <reference types="@types/youtube" />
 import { useEffect, useRef, useCallback, Ref } from "preact/hooks"
-import debug from "./debug"
+import * as debug from "./debug"
 
 declare global {
   interface Window {
@@ -39,7 +39,7 @@ const useYouTube = (
         events: {
           onReady: (): void => onReady(playerRef.current),
           onStateChange,
-          onError: (e: YT.OnErrorEvent): void => debug("PLAYER ERROR", e),
+          onError: (e: YT.OnErrorEvent): void => debug.error("PLAYER ERROR", e),
         },
       })
     }

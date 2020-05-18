@@ -4,7 +4,7 @@ import { useMachine } from "@xstate/react/lib/fsm"
 import playerMachine from "../../machine"
 import Player from "../../components/player"
 import fetchData from "../../lib/api"
-import debug from "../../lib/debug"
+import useDebugService from "../../lib/useDebugService"
 import { ArtistId, Videos, ArtistMeta, TrackId } from "../../types"
 
 interface Props {
@@ -20,16 +20,7 @@ const Artist: FunctionalComponent<Props> = ({ artist }) => {
   const [meta, setMeta] = useState<ArtistMeta | undefined>(undefined)
   const [state, send, service] = useMachine(playerMachine)
 
-  useEffect(() => {
-    const subscription = service.subscribe((s) =>
-      debug("PLAYER MACHINE", {
-        value: s.value,
-        actions: s.actions.length ? s.actions.map((a) => a.type) : undefined,
-        context: s.context,
-      })
-    )
-    return (): void => subscription.unsubscribe()
-  }, [service])
+  useDebugService(service)
 
   useEffect(() => {
     send("FETCH_START")

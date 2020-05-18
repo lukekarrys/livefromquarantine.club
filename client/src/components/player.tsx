@@ -5,11 +5,11 @@ import YouTube from "./youtube"
 import Videos from "./videos"
 import Controls from "./controls"
 import * as selectors from "../machine/selectors"
-import { PlayerMachineSend, PlayerMachineState } from "../machine/types"
+import { PlayerSend, PlayerMachineState } from "../machine/types"
 
 interface Props {
   state: PlayerMachineState
-  send: PlayerMachineSend
+  send: PlayerSend
   children: ComponentChild
   videos?: TVideos
 }

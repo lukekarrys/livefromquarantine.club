@@ -303,11 +303,18 @@ const playerMachine = createMachine<
         }),
       }),
       setNextTrack: assign<Machine.PlayerContext>({
-        order: (context) => ({
-          ...context.order,
-          selectedIndex:
-            selectors.getNextIndex(context) ?? context.order?.selectedIndex,
-        }),
+        order: (context) => {
+          const nextIndex = selectors.getNextIndex(context)
+
+          if (nextIndex === undefined) {
+            debug.error("NEXT TRACK NOT FOUND")
+          }
+
+          return {
+            ...context.order,
+            selectedIndex: nextIndex ?? context.order?.selectedIndex,
+          }
+        },
       }),
       setTrack: assign<Machine.PlayerContext>({
         order: (context, event) => {
@@ -323,7 +330,8 @@ const playerMachine = createMachine<
           const newOrder =
             selectors.getCurrentSongMode(context) !== eventSongMode
               ? // If the current mode is different that the mode picked
-                // in the selected track
+                // in the selected track then use either song or video
+                // as the new order
                 eventSongMode
                 ? context.songOrder
                 : context.videoOrder
@@ -336,7 +344,7 @@ const playerMachine = createMachine<
           }
 
           return {
-            ...context.order,
+            ...newOrder,
             selectedIndex: newIndex,
           }
         },
@@ -370,6 +378,7 @@ const playerMachine = createMachine<
           }
 
           return {
+            ...newOrder,
             selectedIndex: newIndex,
           }
         },

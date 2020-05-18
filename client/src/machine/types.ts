@@ -107,9 +107,13 @@ export type PlayerTransition<TEvent extends EventObject> = {
     StateMachine.Transition<PlayerContext, TEvent>
   >
 }
-export type PlayerMachineSend = (
-  event: PlayerEvent | PlayerEvent["type"]
-) => void
+export type PlayerSend = (event: PlayerEvent | PlayerEvent["type"]) => void
+
+export type PlayerService = StateMachine.Service<
+  PlayerContext,
+  PlayerEvent,
+  PlayerState
+>
 
 export type PlayerMachineState = StateMachine.State<
   PlayerContext,

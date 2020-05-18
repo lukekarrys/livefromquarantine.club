@@ -2,7 +2,7 @@
 import { FunctionalComponent, h, ComponentChild } from "preact"
 import { useEffect, useRef, useCallback } from "preact/hooks"
 import cx from "classnames"
-import { PlayerMachineSend } from "../machine/types"
+import { PlayerSend } from "../machine/types"
 import { ytToMachineEvent } from "../machine"
 import { Track, Progress } from "../types"
 import useYouTube from "../lib/useYouTube"
@@ -11,7 +11,7 @@ import * as debug from "../lib/debug"
 interface Props {
   selected?: Track
   play?: boolean
-  send: PlayerMachineSend
+  send: PlayerSend
   onProgress?: ({ time, percent }: Progress) => void
   children?: ComponentChild
 }
