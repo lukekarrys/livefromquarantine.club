@@ -1,6 +1,6 @@
 [build]
   publish = "public/"
-  command = "NODE_ENV=production npm run netlify && echo 1"
+  command = "npm run lint && npm run postinstall && NODE_ENV=production npm run build"
 
 [[redirects]]
   from = "/ajj"
