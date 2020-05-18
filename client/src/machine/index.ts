@@ -282,9 +282,6 @@ const playerMachine = createMachine<
         player: (_, event) => (event as Machine.PlayerReadyEvent).player,
       }),
       setTracks: assign<Machine.PlayerContext>((context, event) => {
-        // TODO: this is only ever called once per session but if it was ever
-        // called more then it would need to account for shuffle and selected state
-        // from context
         const fetchSuccessEvent = event as Machine.FetchSuccessEvent
         const eventSelected = selectors.getEventTrack(
           context,
