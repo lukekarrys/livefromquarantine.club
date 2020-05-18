@@ -3,6 +3,56 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1075
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS44QTY2MEEzNzBFQUJCMUQ2",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:32 AJJ - Cody's Theme\n2:30 AJJ - Body Terror Song\n4:40 AJJ - A Song Dedicated to the Memory of Stormy the Rabbit\n8:03 Guided by Voices - Game of Pricks\n9:32 Guided by Voices - Motor Away\n11:35 AJJ - American Tune\n14:45 Ween - It's Gonna Be Alright\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-05-18T17:47:46.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "kPCMurALJgk"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/kPCMurALJgk/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/kPCMurALJgk/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/kPCMurALJgk/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/kPCMurALJgk/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/kPCMurALJgk/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - May 17"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1204
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4xNjIyNEE0MDEyRDlCMjBE",
