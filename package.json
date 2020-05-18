@@ -57,7 +57,7 @@
     "lint": "npm run prettier && npm run eslint && cd client && npm run lint",
     "netlify": " npm run lint && npm run build",
     "postinstall": "cd client && npm install",
-    "prenetlify": "if [ ! -d \"client/node_modules\" ]; then npm run postinstall; npm ls; fi",
+    "prenetlify": "if [ ! -d \"client/node_modules\" ]; then npm run postinstall; else echo 'client/node_modules exists'; fi; npm ls",
     "prettier": "prettier --write '!client' '**/*.{js,jsx,ts,tsx,css,md,json}'",
     "start": "npm run dev",
     "trigger": "node data/trigger.js"
