@@ -59,7 +59,7 @@
   "scripts": {
     "build": "preact build --sw false --no-prerender --inline-css false --esm false --preload --dest ../public",
     "dev": "preact watch",
-    "eslint": "npm ls && eslint './**/*.{js,jsx,ts,tsx}' --fix",
+    "eslint": "eslint './**/*.{js,jsx,ts,tsx}' --fix",
     "lint": "npm run prettier && npm run eslint",
     "prettier": "prettier '**/*.{js,jsx,ts,tsx,css,md,json}' --write",
     "serve": "sirv build --port 8080 --cors --single",
