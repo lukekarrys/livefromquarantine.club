@@ -10,8 +10,6 @@ const isNextTrack = (track?: Track, nextTrack?: Track): boolean =>
   track.videoId === nextTrack.videoId &&
   track.end === nextTrack.start
 
-export const defaultSongMode = true
-
 export const isReady = (state: Machine.PlayerMachineState): boolean => {
   return (
     state.matches('ready') ||
@@ -42,21 +40,14 @@ export const getSelected = (
   return getSelectedByIndex(context, context.order.selectedIndex)
 }
 
-export const getCurrentSongMode = (context: Machine.PlayerContext): boolean => {
-  return getSelected(context)?.isSong ?? defaultSongMode
-}
-
 export const getNextIndex = (
   context: Machine.PlayerContext
 ): number | undefined => {
-  const repeat = context.repeat
   const selectedIndex = context.order.selectedIndex
   const trackOrder = context.order.trackOrder
 
-  if (selectedIndex == null || trackOrder == null) return undefined
-
-  if (repeat === Repeat.Song) {
-    return selectedIndex
+  if (selectedIndex == null || trackOrder == null) {
+    return undefined
   }
 
   const nextIndex = selectedIndex + 1
@@ -71,7 +62,7 @@ export const getNextSelected = (
 
 export const getEventTrack = (
   context: Machine.PlayerContext,
-  event: Machine.SelectTrackEvent | Machine.FetchSuccessEvent
+  event: Machine.SelectTrackEvent
 ): Track | undefined => {
   return event.trackId && context.tracksById[event.trackId]
 }
@@ -101,4 +92,21 @@ export const isNextNext = (context: Machine.PlayerContext): boolean => {
 
 export const isPlayerReady = (context: Machine.PlayerContext): boolean => {
   return !!context.player
+}
+
+export const getNextShuffle = (context: Machine.PlayerContext): boolean => {
+  return !context.shuffle
+}
+
+export const getNextRepeat = (context: Machine.PlayerContext): Repeat => {
+  switch (context.repeat) {
+    case Repeat.None:
+      return Repeat.Song
+    case Repeat.Song:
+      return Repeat.Video
+    case Repeat.Video:
+      return Repeat.None
+    default:
+      return Repeat.None
+  }
 }

@@ -1,17 +1,20 @@
 import { FunctionalComponent, h } from 'preact'
+import cx from 'classnames'
 import { PlayerSend } from '../machine/types'
-import { Progress, Track } from '../types'
+import { Progress, Track, Repeat } from '../types'
 import Button from './button'
 import hhmmss from '../lib/hhmmss'
 import ShuffleIcon from '../icons/shuffle'
 import PauseIcon from '../icons/pause'
 import PlayIcon from '../icons/play'
 import NextIcon from '../icons/next'
+import RepeatIcon from '../icons/repeat'
 
 interface Props {
   selected?: Track
-  play?: boolean
-  shuffle?: boolean
+  play: boolean
+  shuffle: boolean
+  repeat: Repeat
   progress: Progress
   send: PlayerSend
   onTitleClick: () => void
@@ -23,8 +26,10 @@ const Controls: FunctionalComponent<Props> = ({
   progress,
   send,
   shuffle,
+  repeat,
   onTitleClick,
 }) => {
+  const isRepeat = repeat === Repeat.Song || repeat === Repeat.Video
   const title = Array.isArray(selected?.title)
     ? selected?.title.join(' - ')
     : selected?.title
@@ -44,6 +49,24 @@ const Controls: FunctionalComponent<Props> = ({
           tight={false}
         >
           <ShuffleIcon height={18} />
+        </Button>
+        <Button
+          onClick={(): void => send('REPEAT')}
+          selected={isRepeat}
+          tight={false}
+          class="ml-1 flex items-center"
+        >
+          <RepeatIcon height={18} />
+          <span
+            style={{ height: '18px', lineHeight: '18px' }}
+            class={cx('text-xl font-bold', isRepeat && 'ml-1')}
+          >
+            {repeat === Repeat.Song
+              ? 'S'
+              : repeat === Repeat.Video
+              ? 'V'
+              : null}
+          </span>
         </Button>
         {play ? (
           <Button

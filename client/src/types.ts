@@ -36,7 +36,6 @@ export type Progress = {
 
 export enum Repeat {
   None,
-  All,
   Video,
   Song,
 }

@@ -18,8 +18,19 @@ export const ytToMachineEvent: {
 
 const shuffleTransition: Machine.PlayerTransition<Machine.ShuffleEvent> = {
   SHUFFLE: {
-    actions: 'shuffleTrackOrder',
+    actions: 'setTrackOrder',
   },
+}
+
+const repeatTransition: Machine.PlayerTransition<Machine.RepeatEvent> = {
+  REPEAT: {
+    actions: 'setTrackOrder',
+  },
+}
+
+const alwaysTransitions = {
+  ...shuffleTransition,
+  ...repeatTransition,
 }
 
 const playerReadyTransition: Machine.PlayerTransition<Machine.PlayerReadyEvent> = {
@@ -64,6 +75,7 @@ const playerMachine = createMachine<
         trackIndexes: {},
         trackOrder: [],
       },
+      videoSongOrder: {},
       order: {
         trackIndexes: {},
         trackOrder: [],
@@ -72,8 +84,6 @@ const playerMachine = createMachine<
       error: undefined,
       player: undefined,
       shuffle: false,
-      // TODO: implement repeat including repeat one and repeat within
-      // a video (also including repeat within a video while playing a full video is the same as repeat one)
       repeat: Repeat.None,
       // TODO: implemetn up next with queueMode toggle
     },
@@ -81,7 +91,6 @@ const playerMachine = createMachine<
       idle: {
         on: {
           FETCH_START: 'loading',
-          // TODO: racing the player and the loading could be done on an entry condition in ready? try that later
           ...playerReadyTransition,
           ...shuffleTransition,
         },
@@ -109,14 +118,14 @@ const playerMachine = createMachine<
             cond: selectors.isPlayerReady,
           },
           ...playerReadyTransition,
-          ...shuffleTransition,
+          ...alwaysTransitions,
         },
       },
       error: {
         on: {
           FETCH_START: 'loading',
           ...playerReadyTransition,
-          ...shuffleTransition,
+          ...alwaysTransitions,
         },
       },
       ready: {
@@ -149,7 +158,7 @@ const playerMachine = createMachine<
             target: 'requesting',
             actions: ['setTrack', 'loadVideo'],
           },
-          ...shuffleTransition,
+          ...alwaysTransitions,
         },
       },
       requesting: {
@@ -182,7 +191,7 @@ const playerMachine = createMachine<
               actions: ['setTrack', 'loadVideo'],
             },
           ],
-          ...shuffleTransition,
+          ...alwaysTransitions,
         },
       },
       playing: {
@@ -204,6 +213,7 @@ const playerMachine = createMachine<
             },
           ],
           END: [
+            // TODO: check if next track is last and reshuffle
             {
               // No other action here so that there is seamless
               // playback when going directly from one song to another
@@ -234,7 +244,7 @@ const playerMachine = createMachine<
               actions: ['setTrack', 'loadVideo'],
             },
           ],
-          ...shuffleTransition,
+          ...alwaysTransitions,
         },
       },
       paused: {
@@ -264,7 +274,7 @@ const playerMachine = createMachine<
               actions: ['setTrack', 'loadVideo'],
             },
           ],
-          ...shuffleTransition,
+          ...alwaysTransitions,
         },
       },
     },
@@ -300,19 +310,6 @@ const playerMachine = createMachine<
       setPlayer: assign<Machine.PlayerContext>({
         player: (_, event) => (event as Machine.PlayerReadyEvent).player,
       }),
-      setTracks: assign<Machine.PlayerContext>((context, event) => {
-        const fetchSuccessEvent = event as Machine.FetchSuccessEvent
-        const tracksContext = trackOrder.initial(fetchSuccessEvent.tracks, {
-          selected: fetchSuccessEvent.trackId
-            ? ({ id: fetchSuccessEvent.trackId } as Track)
-            : selectors.getSelected(context),
-          shuffle: context.shuffle,
-        })
-        return {
-          ...context,
-          ...tracksContext,
-        }
-      }),
       setInitialTrack: assign<Machine.PlayerContext>({
         order: (context) => ({
           ...context.order,
@@ -343,62 +340,62 @@ const playerMachine = createMachine<
             return context.order
           }
 
-          const eventSongMode = eventTrack.isSong
-          const newOrder =
-            selectors.getCurrentSongMode(context) !== eventSongMode
-              ? // If the current mode is different that the mode picked
-                // in the selected track then use either song or video
-                // as the new order
-                eventSongMode
-                ? context.songOrder
-                : context.videoOrder
-              : context.order
-
-          const newIndex = newOrder.trackIndexes[eventTrack.id]
-
-          if (newIndex === undefined) {
-            throw new Error(`SELECT TRACK NOT FOUND ${JSON.stringify(event)}`)
-          }
-
-          return {
-            ...newOrder,
-            selectedIndex: newIndex,
-          }
+          return trackOrder.current({
+            shuffle: context.shuffle,
+            repeat: context.repeat,
+            selected: eventTrack,
+            songOrder: context.songOrder,
+            videoOrder: context.videoOrder,
+            videoSongOrder: context.videoSongOrder,
+          })
         },
       }),
-      shuffleTrackOrder: assign<Machine.PlayerContext>({
-        shuffle: (context) => !context.shuffle,
-        order: (context) => {
-          const shuffle = !context.shuffle
-          const selected = selectors.getSelected(context)
+      setTracks: assign<Machine.PlayerContext>((context, _event) => {
+        const event = _event as Machine.FetchSuccessEvent
 
-          if (shuffle && context.tracks) {
-            return trackOrder.shuffle(context.tracks, selected)
-          }
+        const shuffle = event.shuffle ?? context.shuffle
+        const repeat = event.repeat ?? context.repeat
 
-          const songMode = selectors.getCurrentSongMode(context)
-          const newOrder = songMode ? context.songOrder : context.videoOrder
+        return {
+          ...context,
+          shuffle,
+          repeat,
+          ...trackOrder.initial(event.tracks, {
+            selected: event.trackId
+              ? ({ id: event.trackId } as Track)
+              : selectors.getSelected(context),
+            shuffle,
+            repeat,
+          }),
+        }
+      }),
+      setTrackOrder: assign<Machine.PlayerContext>((context, _event) => {
+        const event = _event as Machine.ShuffleEvent | Machine.RepeatEvent
+        const selected = selectors.getSelected(context)
 
-          if (!selected) {
-            return {
-              ...newOrder,
-              selectedIndex: -1,
-            }
-          }
+        const shuffle =
+          event.type === 'SHUFFLE'
+            ? selectors.getNextShuffle(context)
+            : context.shuffle
 
-          const newIndex = newOrder.trackIndexes[selected.id]
+        const repeat =
+          event.type === 'REPEAT'
+            ? selectors.getNextRepeat(context)
+            : context.repeat
 
-          if (newIndex === undefined) {
-            throw new Error(
-              `CURRENT TRACK NOT IN SHUFFLE ${JSON.stringify(selected)}`
-            )
-          }
-
-          return {
-            ...newOrder,
-            selectedIndex: newIndex,
-          }
-        },
+        return {
+          ...context,
+          shuffle,
+          repeat,
+          order: trackOrder.current({
+            shuffle,
+            repeat,
+            selected,
+            songOrder: context.songOrder,
+            videoOrder: context.videoOrder,
+            videoSongOrder: context.videoSongOrder,
+          }),
+        }
       }),
     },
   }

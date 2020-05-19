@@ -1,11 +1,13 @@
 import { StateMachine, EventObject } from '@xstate/fsm'
-import { Tracks, Track, Repeat, TrackId } from '../types'
+import { Tracks, Track, Repeat, TrackId, VideoId } from '../types'
 
 export type FetchStartEvent = { type: 'FETCH_START' }
 export type FetchSuccessEvent = {
   type: 'FETCH_SUCCESS'
   tracks: Tracks
   trackId?: TrackId
+  shuffle?: boolean
+  repeat?: Repeat
 }
 export type FetchErrorEvent = { type: 'FETCH_ERROR'; error: Error }
 export type PlayerReadyEvent = { type: 'PLAYER_READY'; player: YT.Player }
@@ -14,6 +16,7 @@ export type PlayEvent = { type: 'PLAY' }
 export type PauseEvent = { type: 'PAUSE' }
 export type NextEvent = { type: 'NEXT' }
 export type ShuffleEvent = { type: 'SHUFFLE' }
+export type RepeatEvent = { type: 'REPEAT' }
 export type EndEvent = { type: 'END' }
 export type YouTubePlayEvent = { type: 'YOUTUBE_PLAY' }
 export type YouTubePauseEvent = { type: 'YOUTUBE_PAUSE' }
@@ -36,6 +39,7 @@ export type PlayerEvent =
   | EndEvent
   | YouTubeEvent
   | ShuffleEvent
+  | RepeatEvent
   | FetchSuccessEvent
   | FetchErrorEvent
   | FetchStartEvent
@@ -46,7 +50,7 @@ export type TrackOrder = {
   selectedIndex: number
 }
 
-type TrackOrderUnselected = Omit<TrackOrder, 'selectedIndex'>
+export type TrackOrderUnselected = Omit<TrackOrder, 'selectedIndex'>
 
 export interface PlayerContext {
   tracks: Tracks
@@ -54,18 +58,18 @@ export interface PlayerContext {
   order: TrackOrder
   songOrder: TrackOrderUnselected
   videoOrder: TrackOrderUnselected
+  videoSongOrder: { [key in VideoId]?: TrackOrderUnselected }
   player?: YT.Player
   error?: Error
   shuffle: boolean
   repeat: Repeat
 }
 
-export interface PlayerContextNotReady extends PlayerContext {
+interface PlayerContextNotReady {
   player: undefined
 }
 
-export interface PlayerContextReady extends PlayerContext {
-  tracksById: { [key in TrackId]: Track }
+interface PlayerContextReady {
   player: YT.Player
   error: undefined
 }
