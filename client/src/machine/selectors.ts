@@ -1,4 +1,4 @@
-import { Track } from '../types'
+import { Track, Repeat } from '../types'
 import * as Machine from './types'
 
 const isSeekableTrack = (track?: Track, nextTrack?: Track): boolean =>
@@ -49,10 +49,15 @@ export const getCurrentSongMode = (context: Machine.PlayerContext): boolean => {
 export const getNextIndex = (
   context: Machine.PlayerContext
 ): number | undefined => {
+  const repeat = context.repeat
   const selectedIndex = context.order.selectedIndex
   const trackOrder = context.order.trackOrder
 
   if (selectedIndex == null || trackOrder == null) return undefined
+
+  if (repeat === Repeat.Song) {
+    return selectedIndex
+  }
 
   const nextIndex = selectedIndex + 1
   return nextIndex >= trackOrder.length ? 0 : nextIndex
