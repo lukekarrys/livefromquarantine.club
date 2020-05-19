@@ -1,12 +1,12 @@
-require('dotenv').config()
+const path = require('path')
+require('dotenv').config({ path: path.resolve(__dirname, '..', '..', '.env') })
 
 const fs = require('fs').promises
-const path = require('path')
 const axios = require('axios')
 const prettier = require('prettier')
 const duration = require('iso8601-duration')
 const { isCommentMaybeSetlist } = require('../api/parse')
-const config = require('../config')
+const config = require('../../config')
 
 const { API_KEY } = process.env
 

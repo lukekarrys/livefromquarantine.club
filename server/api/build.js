@@ -1,10 +1,10 @@
-require('dotenv').config()
+const path = require('path')
+require('dotenv').config({ path: path.resolve(__dirname, '..', '..', '.env') })
 
 const assert = require('assert')
 const fs = require('fs').promises
-const path = require('path')
 const mkdirp = require('mkdirp')
-const config = require('../config')
+const config = require('../../config')
 const { main: mainParser } = require('./parse')
 
 const validate = (data) => {
@@ -32,7 +32,7 @@ const validate = (data) => {
 }
 
 const publicPath = (...parts) =>
-  path.join(__dirname, '..', 'public', 'api', ...parts)
+  path.join(__dirname, '..', '..', 'public', 'api', ...parts)
 
 const buildData = (parser, data) => {
   const parsedData = mainParser(data.videos, parser.parsers).filter(

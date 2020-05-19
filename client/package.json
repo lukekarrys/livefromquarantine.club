@@ -36,6 +36,16 @@
     "typescript": "^3.8.3"
   },
   "license": "MIT",
+  "lint-staged": {
+    "*.{css,md,json}": [
+      "prettier --write"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix",
+      "jest --bail --findRelatedTests"
+    ]
+  },
   "prettier": {
     "semi": false,
     "singleQuote": true
@@ -46,6 +56,7 @@
     "dev": "preact watch",
     "eslint": "eslint './**/*.{js,jsx,ts,tsx}' --fix",
     "lint": "npm run prettier && npm run eslint",
+    "precommit": "lint-staged",
     "prettier": "prettier '**/*.{js,jsx,ts,tsx,css,md,json}' --write",
     "serve": "sirv build --port 8080 --cors --single",
     "test": "jest ./tests"
