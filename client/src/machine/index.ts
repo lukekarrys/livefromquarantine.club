@@ -1,5 +1,5 @@
 import { createMachine, assign } from '@xstate/fsm'
-import { Repeat } from '../types'
+import { Repeat, Track } from '../types'
 import * as Machine from './types'
 import * as selectors from './selectors'
 import * as trackOrder from './track-order'
@@ -100,7 +100,7 @@ const playerMachine = createMachine<
         // This is not ideal but the simplest way to cue the initial selected video
         // is to call this always on entry but make it a no-op in the action
         // if there is nothing selected
-        entry: 'cueVideo',
+        entry: 'loadVideo',
         on: {
           PLAY: [
             {
@@ -283,12 +283,10 @@ const playerMachine = createMachine<
       }),
       setTracks: assign<Machine.PlayerContext>((context, event) => {
         const fetchSuccessEvent = event as Machine.FetchSuccessEvent
-        const eventSelected = selectors.getEventTrack(
-          context,
-          fetchSuccessEvent
-        )
         const tracksContext = trackOrder.initial(fetchSuccessEvent.tracks, {
-          selected: eventSelected || selectors.getSelected(context),
+          selected: fetchSuccessEvent.trackId
+            ? ({ id: fetchSuccessEvent.trackId } as Track)
+            : selectors.getSelected(context),
           shuffle: context.shuffle,
         })
         return {

@@ -30,7 +30,7 @@ const useYouTube = (
         height: '100%',
         width: '100%',
         playerVars: {
-          autoplay: 0,
+          autoplay: 1,
           controls: 0,
           rel: 0,
           playsinline: 1,
