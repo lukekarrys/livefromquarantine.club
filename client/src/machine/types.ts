@@ -41,40 +41,31 @@ export type PlayerEvent =
   | FetchStartEvent
 
 export type TrackOrder = {
-  trackIndexes: { [key in TrackId]: number }
+  trackIndexes: { [key in TrackId]?: number }
   trackOrder: TrackId[]
   selectedIndex: number
 }
 
-export type TrackOrderUnselected = Omit<TrackOrder, 'selectedIndex'>
+type TrackOrderUnselected = Omit<TrackOrder, 'selectedIndex'>
 
 export interface PlayerContext {
-  tracks?: Tracks
-  tracksById?: { [key in TrackId]?: Track }
-  order?: Partial<TrackOrder>
-  songOrder?: Partial<TrackOrderUnselected>
-  videoOrder?: Partial<TrackOrderUnselected>
+  tracks: Tracks
+  tracksById: { [key in TrackId]?: Track }
+  order: TrackOrder
+  songOrder: TrackOrderUnselected
+  videoOrder: TrackOrderUnselected
   player?: YT.Player
   error?: Error
   shuffle: boolean
   repeat: Repeat
 }
 
-export interface PlayerContextNotReady {
-  tracks: undefined
-  tracksById: undefined
-  order: undefined
-  songOrder: undefined
-  videoOrder: undefined
+export interface PlayerContextNotReady extends PlayerContext {
   player: undefined
 }
 
-export interface PlayerContextReady {
-  tracks: Tracks
-  tracksById: { [key in TrackId]?: Track }
-  order: TrackOrder
-  songOrder: Omit<TrackOrder, 'selectedIndex'>
-  videoOrder: Omit<TrackOrder, 'selectedIndex'>
+export interface PlayerContextReady extends PlayerContext {
+  tracksById: { [key in TrackId]: Track }
   player: YT.Player
   error: undefined
 }

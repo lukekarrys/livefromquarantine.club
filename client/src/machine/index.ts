@@ -54,11 +54,19 @@ const playerMachine = createMachine<
     id: 'player',
     initial: 'idle',
     context: {
-      tracks: undefined,
-      tracksById: undefined,
-      songOrder: undefined,
-      videoOrder: undefined,
+      tracks: [],
+      tracksById: {},
+      songOrder: {
+        trackIndexes: {},
+        trackOrder: [],
+      },
+      videoOrder: {
+        trackIndexes: {},
+        trackOrder: [],
+      },
       order: {
+        trackIndexes: {},
+        trackOrder: [],
         selectedIndex: -1,
       },
       error: undefined,
@@ -321,7 +329,7 @@ const playerMachine = createMachine<
 
           return {
             ...context.order,
-            selectedIndex: nextIndex ?? context.order?.selectedIndex,
+            selectedIndex: nextIndex ?? context.order.selectedIndex,
           }
         },
       }),
@@ -346,7 +354,7 @@ const playerMachine = createMachine<
                 : context.videoOrder
               : context.order
 
-          const newIndex = newOrder?.trackIndexes?.[eventTrack.id]
+          const newIndex = newOrder.trackIndexes[eventTrack.id]
 
           if (newIndex === undefined) {
             throw new Error(`SELECT TRACK NOT FOUND ${JSON.stringify(event)}`)
@@ -378,7 +386,7 @@ const playerMachine = createMachine<
             }
           }
 
-          const newIndex = newOrder?.trackIndexes?.[selected.id]
+          const newIndex = newOrder.trackIndexes[selected.id]
 
           if (newIndex === undefined) {
             throw new Error(

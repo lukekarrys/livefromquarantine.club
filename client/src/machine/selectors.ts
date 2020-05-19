@@ -1,6 +1,14 @@
 import { Track } from '../types'
-import { isSeekableTrack, isNextTrack } from '../lib/compare-tracks'
 import * as Machine from './types'
+
+const isSeekableTrack = (track?: Track, nextTrack?: Track): boolean =>
+  !!track && !!nextTrack && track.videoId === nextTrack.videoId
+
+const isNextTrack = (track?: Track, nextTrack?: Track): boolean =>
+  !!track &&
+  !!nextTrack &&
+  track.videoId === nextTrack.videoId &&
+  track.end === nextTrack.start
 
 export const defaultSongMode = true
 
@@ -23,7 +31,7 @@ export const getSelectedByIndex = (
 ): Track | undefined => {
   return index === undefined ||
     context.tracksById === undefined ||
-    context.order?.trackOrder === undefined
+    context.order.trackOrder === undefined
     ? undefined
     : context.tracksById[context.order.trackOrder[index]]
 }
@@ -31,7 +39,7 @@ export const getSelectedByIndex = (
 export const getSelected = (
   context: Machine.PlayerContext
 ): Track | undefined => {
-  return getSelectedByIndex(context, context.order?.selectedIndex)
+  return getSelectedByIndex(context, context.order.selectedIndex)
 }
 
 export const getCurrentSongMode = (context: Machine.PlayerContext): boolean => {
@@ -41,8 +49,8 @@ export const getCurrentSongMode = (context: Machine.PlayerContext): boolean => {
 export const getNextIndex = (
   context: Machine.PlayerContext
 ): number | undefined => {
-  const selectedIndex = context.order?.selectedIndex
-  const trackOrder = context.order?.trackOrder
+  const selectedIndex = context.order.selectedIndex
+  const trackOrder = context.order.trackOrder
 
   if (selectedIndex == null || trackOrder == null) return undefined
 
@@ -60,7 +68,7 @@ export const getEventTrack = (
   context: Machine.PlayerContext,
   event: Machine.SelectTrackEvent | Machine.FetchSuccessEvent
 ): Track | undefined => {
-  return event.trackId && context.tracksById?.[event.trackId]
+  return event.trackId && context.tracksById[event.trackId]
 }
 
 export const hasSelected = (context: Machine.PlayerContext): boolean => {
