@@ -25,6 +25,16 @@ const shuffleTransition: Machine.PlayerTransition<Machine.ShuffleEvent> = {
 const playerReadyTransition: Machine.PlayerTransition<Machine.PlayerReadyEvent> = {
   PLAYER_READY: [
     {
+      target: 'requesting',
+      actions: ['setPlayer', 'loadVideo'],
+      cond: selectors.hasSelected,
+    },
+    {
+      target: 'ready',
+      actions: 'setPlayer',
+      cond: selectors.hasTracks,
+    },
+    {
       target: 'ready',
       actions: 'setPlayer',
       cond: selectors.hasTracks,
@@ -72,6 +82,11 @@ const playerMachine = createMachine<
         on: {
           FETCH_SUCCESS: [
             {
+              target: 'requesting',
+              actions: ['setTracks', 'loadVideo'],
+              cond: selectors.hasSelected,
+            },
+            {
               target: 'ready',
               actions: 'setTracks',
               cond: selectors.isPlayerReady,
@@ -97,10 +112,6 @@ const playerMachine = createMachine<
         },
       },
       ready: {
-        // This is not ideal but the simplest way to cue the initial selected video
-        // is to call this always on entry but make it a no-op in the action
-        // if there is nothing selected
-        entry: 'loadVideo',
         on: {
           PLAY: [
             {

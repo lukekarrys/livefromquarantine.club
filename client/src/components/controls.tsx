@@ -60,7 +60,7 @@ const Controls: FunctionalComponent<Props> = ({
         <Button class="ml-1" tight={false} onClick={(): void => send('NEXT')}>
           <NextIcon height={18} />
         </Button>
-        <span class="truncate ml-1 leading-none">{title}</span>
+        <span class="truncate ml-1">{title}</span>
         {progress && (
           <span class="ml-auto tabular-nums text-sm italic">
             {`${hhmmss(progress.time)}${
