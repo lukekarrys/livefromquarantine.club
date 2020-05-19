@@ -10,15 +10,18 @@ interface Props {
   onSelect: (track: Track) => void
   selected?: Track
   playerRef: RefObject<HTMLDivElement>
+  scrollTo: boolean
 }
 
-type ButtonProps = Omit<Props, 'videos' | 'playerRef'> & {
+type ButtonProps = Pick<Props, 'onSelect' | 'selected'> & {
   track: Track
   last: boolean
 }
 
 const BUTTON_ID = (id: TrackId): string => `video-track-${id}`
 const VIDEO_ID = (id: VideoId): string => `video-tracks-${id}`
+
+const avg = (nums: number[]): number => (nums[0] + nums[1]) / 2
 
 const TrackButton: FunctionalComponent<ButtonProps> = ({
   track,
@@ -58,6 +61,7 @@ const Videos: FunctionalComponent<Props> = ({
   selected,
   onSelect,
   playerRef,
+  scrollTo,
 }) => {
   useEffect(() => {
     if (!selected) return
@@ -69,21 +73,35 @@ const Videos: FunctionalComponent<Props> = ({
 
     if (!video || !trackButton || !scroll || !player) return
 
+    const videoRect = video.getBoundingClientRect()
+    const trackButtonRect = trackButton.getBoundingClientRect()
     const playerHeight = player.getBoundingClientRect().height
 
+    const videoBounds = [video.offsetTop, video.offsetTop + videoRect.height]
     const buttonBounds = [
       trackButton.offsetTop,
-      trackButton.offsetTop + trackButton.getBoundingClientRect().height,
+      trackButton.offsetTop + trackButtonRect.height,
     ]
-
-    const viewport = [playerHeight, window.innerHeight].map(
+    const buttonInsideVideoBounds = buttonBounds.map((v) => v - video.offsetTop)
+    const viewportBounds = [playerHeight, window.innerHeight].map(
       (i) => i + scrollContainer.scrollTop
     )
+    const viewportHeight = viewportBounds[1] - viewportBounds[0]
 
-    if (buttonBounds[0] < viewport[0] || buttonBounds[1] > viewport[1]) {
-      scrollContainer.scrollTop = video.offsetTop - playerHeight + 2
+    if (
+      avg(buttonBounds) < viewportBounds[0] ||
+      avg(buttonBounds) > viewportBounds[1]
+    ) {
+      if (avg(buttonInsideVideoBounds) > viewportHeight) {
+        // Scroll so bottom of video is the bottom of the viewport
+        scrollContainer.scrollTop =
+          videoBounds[1] - playerHeight - viewportHeight
+      } else {
+        // Scroll so top of the video is top of the viewport
+        scrollContainer.scrollTop = videoBounds[0] - playerHeight + 2
+      }
     }
-  }, [selected, playerRef])
+  }, [selected, playerRef, scrollTo])
 
   return (
     <div class="overflow-hidden">

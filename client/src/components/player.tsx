@@ -26,6 +26,7 @@ const Player: FunctionalComponent<Props> = ({
     [send]
   )
 
+  const [scrollTo, setScrollTo] = useState(false)
   const [progress, setProgress] = useState<Progress>({ time: 0, percent: 0 })
   const onProgress = useCallback((p: Progress): void => setProgress(p), [
     setProgress,
@@ -79,6 +80,7 @@ const Player: FunctionalComponent<Props> = ({
             play={state.matches('playing') || state.matches('requesting')}
             shuffle={state.context.shuffle}
             send={send}
+            onTitleClick={(): void => setScrollTo((s) => !s)}
           />
         </div>
       </div>
@@ -88,6 +90,7 @@ const Player: FunctionalComponent<Props> = ({
           selected={selected}
           onSelect={onSelect}
           playerRef={playerContainer}
+          scrollTo={scrollTo}
         />
       </div>
     </Fragment>

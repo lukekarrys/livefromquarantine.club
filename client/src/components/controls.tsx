@@ -14,6 +14,7 @@ interface Props {
   shuffle?: boolean
   progress: Progress
   send: PlayerSend
+  onTitleClick: () => void
 }
 
 const Controls: FunctionalComponent<Props> = ({
@@ -22,6 +23,7 @@ const Controls: FunctionalComponent<Props> = ({
   progress,
   send,
   shuffle,
+  onTitleClick,
 }) => {
   const title = Array.isArray(selected?.title)
     ? selected?.title.join(' - ')
@@ -60,7 +62,9 @@ const Controls: FunctionalComponent<Props> = ({
         <Button class="ml-1" tight={false} onClick={(): void => send('NEXT')}>
           <NextIcon height={18} />
         </Button>
-        <span class="truncate ml-1">{title}</span>
+        <button class="truncate ml-1" onClick={onTitleClick}>
+          {title}
+        </button>
         {progress && (
           <span class="ml-auto tabular-nums text-sm italic">
             {`${hhmmss(progress.time)}${
