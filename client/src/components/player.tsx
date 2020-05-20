@@ -79,6 +79,7 @@ const Player: FunctionalComponent<Props> = ({
             progress={progress}
             play={state.matches('playing') || state.matches('requesting')}
             shuffle={state.context.shuffle}
+            repeat={state.context.repeat}
             send={send}
             onTitleClick={(): void => setScrollTo((s) => !s)}
           />
