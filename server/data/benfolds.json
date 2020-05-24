@@ -3,6 +3,107 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 4100
+        },
+        "id": "UExHNTA3Z3kyLUtwOFZqNjZqbnhuMUFBMFhGcjFMX1FYeS5DQUNERDQ2NkIzRUQxNTY1",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCpd6ZO-gWNdtCOJ0T2ui-Fg",
+          "channelTitle": "Luke Karrys",
+          "description": "",
+          "playlistId": "PLG507gy2-Kp8Vj66jnxn1AA0XFr1L_QXy",
+          "publishedAt": "2020-05-04T17:38:32.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "HjUhw_33wAk"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/HjUhw_33wAk/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/HjUhw_33wAk/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/HjUhw_33wAk/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/HjUhw_33wAk/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/HjUhw_33wAk/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "#9 Saturday Apartment Requests w Ben Folds"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "UgyEH3utrNGUG6bdc694AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgyEH3utrNGUG6bdc694AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCAEuWANn7TW0t7xVkObx3Uw"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCAEuWANn7TW0t7xVkObx3Uw",
+                    "authorDisplayName": "Bobby Styles",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJyG9txQJkzoaoZsBYMp3IWDvYStpA9L5naoxA=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-05-24T05:48:07.000Z",
+                    "textDisplay": "6:47 - Sleazy (Kesha cover) (on guitar)\n12:40 - Give Judy My Notice \n18:42 - Late\n23:45 - Julianne (original version)\n27:23 - Dr. Yang\n30:05 - Where’s Summer B?\n34:16 - [Piano Lesson]\n45:31 - Landed \n50:00 - Mess\n54:06 - So There\n59:06 - I Still Call Australia Home (Peter Allen cover)\n1:01:48 - One Angry Dwarf and 200 Solemn Faces\n\nThank you Ben for doing these shows every week. They are truly appreciated! I would absolutely love to hear you play “Fred Jones Pt. 2”. I don’t think you’ve played it yet in any of these quarantine shows. It’s such a beautiful song and one of my all-time favorites. Love you man!",
+                    "textOriginal": "6:47 - Sleazy (Kesha cover) (on guitar)\n12:40 - Give Judy My Notice \n18:42 - Late\n23:45 - Julianne (original version)\n27:23 - Dr. Yang\n30:05 - Where’s Summer B?\n34:16 - [Piano Lesson]\n45:31 - Landed \n50:00 - Mess\n54:06 - So There\n59:06 - I Still Call Australia Home (Peter Allen cover)\n1:01:48 - One Angry Dwarf and 200 Solemn Faces\n\nThank you Ben for doing these shows every week. They are truly appreciated! I would absolutely love to hear you play “Fred Jones Pt. 2”. I don’t think you’ve played it yet in any of these quarantine shows. It’s such a beautiful song and one of my all-time favorites. Love you man!",
+                    "updatedAt": "2020-05-24T13:59:48.000Z",
+                    "videoId": "HjUhw_33wAk",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "HjUhw_33wAk"
+              }
+            },
+            {
+              "id": "UgzBJFE06U9bR-ozNRx4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgzBJFE06U9bR-ozNRx4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCb3KMr2pU3SHzJEhwO1IzLA"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCb3KMr2pU3SHzJEhwO1IzLA",
+                    "authorDisplayName": "lifeonaplate",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJz9PkKz0a6H_32XX7riRUvZumuDLbKTcJFzJQ=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-05-24T05:48:58.000Z",
+                    "textDisplay": "SET LIST (Which does *not* include \"Red Is Blue,\" despite the fact that it's been requested 749 times now. Everyone needs to get on the bandwagon and request this tune next week.)\n1:32 - Theme Song\n6:47 - Sleazy (Kesha cover)\n12:38 - Give Judy My Notice\n18:40 - Late\n23:45 - Julianne\n27:22 - Dr. Yang\n30:04 - Where's Summer B.?\n33:31 - (Piano lesson for kids)\n45:31 - Landed\n50:00 - Mess\n54:06 - So There\n59:09 - I Still Call Australia Home (Peter Allen)\n1:01:48 - One Angry Dwarf And 200 Solemn Faces\n1:06:26 - Theme Song",
+                    "textOriginal": "SET LIST (Which does *not* include \"Red Is Blue,\" despite the fact that it's been requested 749 times now. Everyone needs to get on the bandwagon and request this tune next week.)\n1:32 - Theme Song\n6:47 - Sleazy (Kesha cover)\n12:38 - Give Judy My Notice\n18:40 - Late\n23:45 - Julianne\n27:22 - Dr. Yang\n30:04 - Where's Summer B.?\n33:31 - (Piano lesson for kids)\n45:31 - Landed\n50:00 - Mess\n54:06 - So There\n59:09 - I Still Call Australia Home (Peter Allen)\n1:01:48 - One Angry Dwarf And 200 Solemn Faces\n1:06:26 - Theme Song",
+                    "updatedAt": "2020-05-24T05:48:58.000Z",
+                    "videoId": "HjUhw_33wAk",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "HjUhw_33wAk"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 4360
         },
         "id": "UExHNTA3Z3kyLUtwOFZqNjZqbnhuMUFBMFhGcjFMX1FYeS4xMkVGQjNCMUM1N0RFNEUx",

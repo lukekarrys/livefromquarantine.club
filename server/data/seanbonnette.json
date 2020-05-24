@@ -3,6 +3,56 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1218
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5CMUM0NzY5NzdEQzlGRjAx",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set (mega medley):\n0:02 AJJ - Brave as a Noun\n1:14 AJJ - Heartilation\n3:25 AJJ - Love in Your Heart\n4:45 Kimya Dawson - Hadlock Padlock\n8:34 AJJ - A Poem\n13:50 AJJ - Linda Ronstadt\n17:18 The Mountain Goats - Alpha Rat's Nest\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-05-24T04:55:03.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "CtLHbq5r_is"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/CtLHbq5r_is/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/CtLHbq5r_is/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/CtLHbq5r_is/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/CtLHbq5r_is/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/CtLHbq5r_is/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - May 23"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1352
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5EMzJDRTUwQjBEOUVFQzAw",
