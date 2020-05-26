@@ -49,31 +49,6 @@
         "comments": {
           "items": [
             {
-              "id": "Ugzwo9uPLFWRc6z9TQl4AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "Ugzwo9uPLFWRc6z9TQl4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "authorChannelId": {
-                      "value": "UCwsD6JCYCqL4Sx9xoY2oJWQ"
-                    },
-                    "authorChannelUrl": "http://www.youtube.com/channel/UCwsD6JCYCqL4Sx9xoY2oJWQ",
-                    "authorDisplayName": "1mf10",
-                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJyGciNeNxwTW4AA69efmEwXHe1TTj9ziqqHag=s48-c-k-c0xffffffff-no-rj-mo",
-                    "publishedAt": "2020-05-22T03:07:33.000Z",
-                    "textDisplay": "00:21 Sleep Spent\n03:19 Teardrop Windows\n08:00 When the Sun Goes Down\n11:11 Title and Registration\n16:09 Photobooth\n19:40 Q&A\n27:40 A Lack of Color\n31:35 h/t to Community Lunch\n32:45 Don’t Stop Now [Guided by Voices cover]\n35:56 Brand New Colony [The Postal Service]\n41:45 It’s Never Too Late",
-                    "textOriginal": "00:21 Sleep Spent\n03:19 Teardrop Windows\n08:00 When the Sun Goes Down\n11:11 Title and Registration\n16:09 Photobooth\n19:40 Q&A\n27:40 A Lack of Color\n31:35 h/t to Community Lunch\n32:45 Don’t Stop Now [Guided by Voices cover]\n35:56 Brand New Colony [The Postal Service]\n41:45 It’s Never Too Late",
-                    "updatedAt": "2020-05-22T03:07:33.000Z",
-                    "videoId": "6oSWsxVg4GM",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "6oSWsxVg4GM"
-              }
-            },
-            {
               "id": "Ugy1IhgIfg61T_wbrlN4AaABAg",
               "kind": "youtube#commentThread",
               "snippet": {
@@ -91,6 +66,31 @@
                     "textDisplay": "00:18 | Death Cab For Cutie - Sleep Spent\n03:18 | Ben Gibbard - Teardrop Windows\n07:59 | Ben Gibbard - When the Sun Goes Down On Your Street\n11:26 | Death Cab For Cutie - Title & Registration\n16:11 | Death Cab For Cutie - Photobooth\n19:45 | Q&A\n27:39 | Death Cab For Cutie - Lack Of Color\n32:42 | Guided By Voices - Don't Stop Now\n35:53 | The Postal Service - Brand New Colony\n41:45 | Ben Gibbard - It's Never Too Late",
                     "textOriginal": "00:18 | Death Cab For Cutie - Sleep Spent\n03:18 | Ben Gibbard - Teardrop Windows\n07:59 | Ben Gibbard - When the Sun Goes Down On Your Street\n11:26 | Death Cab For Cutie - Title & Registration\n16:11 | Death Cab For Cutie - Photobooth\n19:45 | Q&A\n27:39 | Death Cab For Cutie - Lack Of Color\n32:42 | Guided By Voices - Don't Stop Now\n35:53 | The Postal Service - Brand New Colony\n41:45 | Ben Gibbard - It's Never Too Late",
                     "updatedAt": "2020-05-22T03:26:33.000Z",
+                    "videoId": "6oSWsxVg4GM",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "6oSWsxVg4GM"
+              }
+            },
+            {
+              "id": "Ugzwo9uPLFWRc6z9TQl4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "Ugzwo9uPLFWRc6z9TQl4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCwsD6JCYCqL4Sx9xoY2oJWQ"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCwsD6JCYCqL4Sx9xoY2oJWQ",
+                    "authorDisplayName": "1mf10",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJyGciNeNxwTW4AA69efmEwXHe1TTj9ziqqHag=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-05-22T03:07:33.000Z",
+                    "textDisplay": "00:21 Sleep Spent\n03:19 Teardrop Windows\n08:00 When the Sun Goes Down\n11:11 Title and Registration\n16:09 Photobooth\n19:40 Q&A\n27:40 A Lack of Color\n31:35 h/t to Community Lunch\n32:45 Don’t Stop Now [Guided by Voices cover]\n35:56 Brand New Colony [The Postal Service]\n41:45 It’s Never Too Late",
+                    "textOriginal": "00:21 Sleep Spent\n03:19 Teardrop Windows\n08:00 When the Sun Goes Down\n11:11 Title and Registration\n16:09 Photobooth\n19:40 Q&A\n27:40 A Lack of Color\n31:35 h/t to Community Lunch\n32:45 Don’t Stop Now [Guided by Voices cover]\n35:56 Brand New Colony [The Postal Service]\n41:45 It’s Never Too Late",
+                    "updatedAt": "2020-05-22T03:07:33.000Z",
                     "videoId": "6oSWsxVg4GM",
                     "viewerRating": "none"
                   }

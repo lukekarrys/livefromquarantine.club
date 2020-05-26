@@ -3,6 +3,56 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1153
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5DQjg2RDQyMEVGQkZFOEVF",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set (mega medley):\n0:14 Graham Parsons & Emmylou Harris - Return of the Grievous Angel\n3:25 AJJ - Golden Eagle\n5:30 AJJ - Your Voice, As I Remember It\n10:36 AJJ - Loudmouth\n13:26 AJJ - Best Friend\n15:30 Ween - I'll Be Your Johnny On The Spot\n17:43 Roger Miller - Oo-de-lally\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-05-26T05:46:57.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "tQ2xTW8H8FU"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/tQ2xTW8H8FU/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/tQ2xTW8H8FU/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/tQ2xTW8H8FU/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/tQ2xTW8H8FU/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/tQ2xTW8H8FU/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - May 25"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1559
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4wQUE0QzM4MkJGQ0YwQjUx",
