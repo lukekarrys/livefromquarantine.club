@@ -3,6 +3,56 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 995
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4yM0EyQ0U1M0I2RkIwNTQ0",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:37 AJJ - The Michael Jordan of Drunk Driving\n1:10 Willie Nelson - I Couldn't Believe It Was True\n2:35 AJJ - Normalization Blues\n5:32 Neil Young - Heart of Gold\n8:13 AJJ - Fucc the Devil\n11:25 Willie Nelson - Time of the Preacher\n13:50 Roger Miller - Reincarnation\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-05-27T16:54:16.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "MxAXVXxoAW8"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/MxAXVXxoAW8/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/MxAXVXxoAW8/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/MxAXVXxoAW8/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/MxAXVXxoAW8/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/MxAXVXxoAW8/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - May 26"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1153
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5DQjg2RDQyMEVGQkZFOEVF",
