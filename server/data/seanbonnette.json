@@ -3,6 +3,56 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1354
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS41RDUzRjJFQ0Y0MUI3NzU1",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n1:06 David Bowie - Quicksand\n5:54 AJJ - Hate, Rain on Me\n8:40 AJJ - Coffin Dance\n12:15 AJJ - Body Terror Song\n15:40 Mount Eerie - You Swan, Go On\n18:22 AJJ - Goodbye, Oh Goodbye\n21:21 Roger Miller - Oo-de-lally\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-05-29T05:55:37.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "SsdyHK6CZwY"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/SsdyHK6CZwY/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/SsdyHK6CZwY/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/SsdyHK6CZwY/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/SsdyHK6CZwY/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/SsdyHK6CZwY/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - May 28"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1398
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5ERENFNTk4Q0Q2MTZDMTA5",
