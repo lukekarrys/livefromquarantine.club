@@ -3,6 +3,56 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1698
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5FRjdGNDMzN0I2RTI3MDlG",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Check out our cover of Silver Jews' \"Candy Jail\"\nhttp://smarturl.it/CandyJail\n\nSean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:30 Silver Jews - Candy Jail\n5:00 AJJ - Hate Song for Brains\n9:43 Belle and Sebastian - Lord Anthony\n18:42 Smog (Bill Callahan) - Cold Blooded Old Times\n22:11 AJJ - My Brain is a Human Body\n\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-05-30T19:18:55.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "XsvLho2a66I"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/XsvLho2a66I/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/XsvLho2a66I/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/XsvLho2a66I/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/XsvLho2a66I/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/XsvLho2a66I/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - May 29"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1354
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS41RDUzRjJFQ0Y0MUI3NzU1",
@@ -4115,7 +4165,7 @@
                     },
                     "authorChannelUrl": "http://www.youtube.com/channel/UCzbGFC9oryM6c0XqLKUWaEw",
                     "authorDisplayName": "peachtime",
-                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxvt6l90O3Nk9P83GOBE1-z7Al5Ebjn4nHt3w=s48-c-k-c0xffffffff-no-rj-mo",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwFeJ-Tc1gZNwU--n3ciNH4p7T0xcHZUUyBxpUu=s48-c-k-c0xffffffff-no-rj-mo",
                     "publishedAt": "2020-03-20T21:11:10.000Z",
                     "textDisplay": "candy jail (silver jews) - 1:28 - 4:01\ncoffin dance - 4:14 -7:31\nhung up (dear nora) - 8:17 - 9:50\nyour voice, as i remember it -9:58 - 12:38\nif you have love in your heart 13:09 - 14:35\nmellow my mind (neil young) 15:10- 17:48\nmichael jordan of drunk driving :) - 18:20",
                     "textOriginal": "candy jail (silver jews) - 1:28 - 4:01\ncoffin dance - 4:14 -7:31\nhung up (dear nora) - 8:17 - 9:50\nyour voice, as i remember it -9:58 - 12:38\nif you have love in your heart 13:09 - 14:35\nmellow my mind (neil young) 15:10- 17:48\nmichael jordan of drunk driving :) - 18:20",
