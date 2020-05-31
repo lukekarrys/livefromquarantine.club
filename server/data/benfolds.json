@@ -3,6 +3,82 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 4555
+        },
+        "id": "UExHNTA3Z3kyLUtwOFZqNjZqbnhuMUFBMFhGcjFMX1FYeS41MzJCQjBCNDIyRkJDN0VD",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCpd6ZO-gWNdtCOJ0T2ui-Fg",
+          "channelTitle": "Luke Karrys",
+          "description": "",
+          "playlistId": "PLG507gy2-Kp8Vj66jnxn1AA0XFr1L_QXy",
+          "publishedAt": "2020-05-04T17:38:27.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "muojdoSxOkY"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/muojdoSxOkY/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/muojdoSxOkY/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/muojdoSxOkY/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/muojdoSxOkY/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/muojdoSxOkY/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "#10 Saturday Apartment Requests w Ben Folds"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "Ugy3FVg5y66s1-J7XlN4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "Ugy3FVg5y66s1-J7XlN4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UC0NzlcLTWpxyWRPghSeghPw"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UC0NzlcLTWpxyWRPghSeghPw",
+                    "authorDisplayName": "roseanne !!!",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxfZdIBNJgdwJRA3hOuzkI5MNxngRbMrdKfow=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-05-31T02:19:12.000Z",
+                    "textDisplay": "10:50 - Alice Childress\n16:10 - Fred Jones Pt. 2\n21:31 - Rich Girl (Hall & Oates cover)\n23:25 - Sentimental Guy\n27:53 - Uncle Walter\n31:52 - Piano lesson for kids \n58:33 - Barrytown (Steely Dan cover)",
+                    "textOriginal": "10:50 - Alice Childress\n16:10 - Fred Jones Pt. 2\n21:31 - Rich Girl (Hall & Oates cover)\n23:25 - Sentimental Guy\n27:53 - Uncle Walter\n31:52 - Piano lesson for kids \n58:33 - Barrytown (Steely Dan cover)",
+                    "updatedAt": "2020-05-31T02:19:12.000Z",
+                    "videoId": "muojdoSxOkY",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "muojdoSxOkY"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 4100
         },
         "id": "UExHNTA3Z3kyLUtwOFZqNjZqbnhuMUFBMFhGcjFMX1FYeS5DQUNERDQ2NkIzRUQxNTY1",
