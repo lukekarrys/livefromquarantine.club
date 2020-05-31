@@ -1,7 +1,7 @@
 const assert = require('assert')
 
 module.exports.parsers = {
-  title: (title) => title.replace(/Live from Quarantine\s+-?/i, '').trim(),
+  title: (title) => title.replace(/Live from Quarantine[\s-]+-?/i, '').trim(),
   data: (videos) => {
     assert.ok(
       videos.some((v) => v.songs.some((s) => s.time.end && s.time.end > 0)),
