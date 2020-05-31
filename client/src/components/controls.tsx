@@ -11,6 +11,7 @@ import NextIcon from '../icons/next'
 import RepeatIcon from '../icons/repeat'
 
 interface Props {
+  ready: boolean
   selected?: Track
   play: boolean
   shuffle: boolean
@@ -21,6 +22,7 @@ interface Props {
 }
 
 const Controls: FunctionalComponent<Props> = ({
+  ready,
   selected,
   play,
   progress,
@@ -47,6 +49,7 @@ const Controls: FunctionalComponent<Props> = ({
           onClick={(): void => send('SHUFFLE')}
           selected={shuffle}
           tight={false}
+          disabled={!ready}
         >
           <ShuffleIcon height={18} />
         </Button>
@@ -55,6 +58,7 @@ const Controls: FunctionalComponent<Props> = ({
           selected={isRepeat}
           tight={false}
           class="ml-1 flex items-center"
+          disabled={!ready}
         >
           <RepeatIcon height={18} />
           <span
@@ -74,18 +78,29 @@ const Controls: FunctionalComponent<Props> = ({
             tight={false}
             onClick={(): void => send('PAUSE')}
             selected
+            disabled={!ready}
           >
             <PauseIcon height={18} />
           </Button>
         ) : (
-          <Button class="ml-1" tight={false} onClick={(): void => send('PLAY')}>
+          <Button
+            class="ml-1"
+            tight={false}
+            onClick={(): void => send('PLAY')}
+            disabled={!ready}
+          >
             <PlayIcon height={18} />
           </Button>
         )}
-        <Button class="ml-1" tight={false} onClick={(): void => send('NEXT')}>
+        <Button
+          class="ml-1"
+          tight={false}
+          onClick={(): void => send('NEXT_TRACK')}
+          disabled={!ready}
+        >
           <NextIcon height={18} />
         </Button>
-        <button class="truncate ml-1" onClick={onTitleClick}>
+        <button class="truncate ml-1" onClick={onTitleClick} disabled={!ready}>
           {title}
         </button>
         {progress && (

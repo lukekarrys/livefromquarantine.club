@@ -1,5 +1,5 @@
 import { createMachine, assign } from '@xstate/fsm'
-import { Repeat, Track } from '../types'
+import { Repeat, SelectMode } from '../types'
 import * as Machine from './types'
 import * as selectors from './selectors'
 import * as trackOrder from './track-order'
@@ -9,28 +9,26 @@ export const ytToMachineEvent: {
   [key in YT.PlayerState]: Machine.YouTubeEvent['type'] | null
 } = {
   [-1]: null, // UNSTARTED, dont need to track this
-  [0]: 'END',
+  [0]: 'END_TRACK',
   [1]: 'YOUTUBE_PLAY',
   [2]: 'YOUTUBE_PAUSE',
   [3]: 'YOUTUBE_BUFFERING',
   [5]: 'YOUTUBE_CUED',
 }
 
-const shuffleTransition: Machine.PlayerTransition<Machine.ShuffleEvent> = {
+const readyTransitions = {
   SHUFFLE: {
     actions: 'setTrackOrder',
   },
-}
-
-const repeatTransition: Machine.PlayerTransition<Machine.RepeatEvent> = {
   REPEAT: {
     actions: 'setTrackOrder',
   },
-}
-
-const alwaysTransitions = {
-  ...shuffleTransition,
-  ...repeatTransition,
+  REMOVE_TRACK: {
+    actions: 'removeTrack',
+  },
+  REMOVE_ALL_TRACKS: {
+    actions: 'removeAllTracks',
+  },
 }
 
 const playerReadyTransition: Machine.PlayerTransition<Machine.PlayerReadyEvent> = {
@@ -46,14 +44,23 @@ const playerReadyTransition: Machine.PlayerTransition<Machine.PlayerReadyEvent> 
       cond: selectors.hasTracks,
     },
     {
-      target: 'ready',
-      actions: 'setPlayer',
-      cond: selectors.hasTracks,
-    },
-    {
       actions: 'setPlayer',
     },
   ],
+}
+
+const playerErrorTransition: Machine.PlayerTransition<Machine.PlayerErrorEvent> = {
+  PLAYER_ERROR: [
+    {
+      target: 'error',
+      actions: 'setError',
+    },
+  ],
+}
+
+const playerTransitions = {
+  ...playerReadyTransition,
+  ...playerErrorTransition,
 }
 
 const playerMachine = createMachine<
@@ -76,7 +83,13 @@ const playerMachine = createMachine<
         trackOrder: [],
       },
       videoSongOrder: {},
+      currentOrder: 'order',
       order: {
+        trackIndexes: {},
+        trackOrder: [],
+        selectedIndex: -1,
+      },
+      upNext: {
         trackIndexes: {},
         trackOrder: [],
         selectedIndex: -1,
@@ -85,14 +98,13 @@ const playerMachine = createMachine<
       player: undefined,
       shuffle: false,
       repeat: Repeat.None,
-      // TODO: implemetn up next with queueMode toggle
+      selectMode: SelectMode.UpNext,
     },
     states: {
       idle: {
         on: {
           FETCH_START: 'loading',
-          ...playerReadyTransition,
-          ...shuffleTransition,
+          ...playerTransitions,
         },
       },
       loading: {
@@ -117,15 +129,12 @@ const playerMachine = createMachine<
             actions: 'setError',
             cond: selectors.isPlayerReady,
           },
-          ...playerReadyTransition,
-          ...alwaysTransitions,
+          ...playerTransitions,
         },
       },
       error: {
         on: {
-          FETCH_START: 'loading',
-          ...playerReadyTransition,
-          ...alwaysTransitions,
+          ...playerTransitions,
         },
       },
       ready: {
@@ -141,11 +150,11 @@ const playerMachine = createMachine<
               actions: ['setInitialTrack', 'loadVideo'],
             },
           ],
-          NEXT: [
+          NEXT_TRACK: [
             {
               target: 'requesting',
-              actions: ['setNextTrack', 'loadVideo'],
               cond: selectors.hasSelected,
+              actions: ['setNextTrack', 'loadVideo'],
             },
             {
               // You can click the next button on initial state and it
@@ -154,26 +163,37 @@ const playerMachine = createMachine<
               actions: ['setInitialTrack', 'loadVideo'],
             },
           ],
-          SELECT_TRACK: {
-            target: 'requesting',
-            actions: ['setTrack', 'loadVideo'],
-          },
-          ...alwaysTransitions,
+          SELECT_TRACK: [
+            {
+              actions: ['addTrack'],
+              cond: selectors.eventIsUpNext,
+            },
+            {
+              target: 'requesting',
+              cond: selectors.isOrderChange,
+              actions: ['setTrackOrder', 'loadVideo'],
+            },
+            {
+              target: 'requesting',
+              actions: ['setTrack', 'loadVideo'],
+            },
+          ],
+          ...readyTransitions,
         },
       },
       requesting: {
         on: {
           YOUTUBE_BUFFERING: 'playing',
           YOUTUBE_CUED: 'playing',
-          // I think play/pause are necessary here because its
+          // I think youtube_play are necessary here because its
           // not perfect to tap into YouTube's event system
           // so this ensures its can't get stuck in the requesting state
           YOUTUBE_PLAY: 'playing',
-          // Having pause here causes the state to go into paused when
+          // Having youtube_pause here causes the state to go into paused when
           // switching between videos since loadVideo causes a temporary
           // pause state. removing for now to see how it works without it
           // YOUTUBE_PAUSE: "paused",
-          NEXT: [
+          NEXT_TRACK: [
             {
               actions: ['setNextTrack', 'seekTo', 'playVideo'],
               cond: selectors.isNextSeekable,
@@ -184,14 +204,23 @@ const playerMachine = createMachine<
           ],
           SELECT_TRACK: [
             {
+              actions: ['addTrack'],
+              cond: selectors.eventIsUpNext,
+            },
+            {
               actions: ['setTrack', 'seekTo', 'playVideo'],
               cond: selectors.isEventSeekable,
+            },
+            {
+              target: 'requesting',
+              actions: ['setTrackOrder', 'loadVideo'],
+              cond: selectors.isOrderChange,
             },
             {
               actions: ['setTrack', 'loadVideo'],
             },
           ],
-          ...alwaysTransitions,
+          ...readyTransitions,
         },
       },
       playing: {
@@ -201,7 +230,7 @@ const playerMachine = createMachine<
             actions: 'pauseVideo',
           },
           YOUTUBE_PAUSE: 'paused',
-          NEXT: [
+          NEXT_TRACK: [
             {
               target: 'requesting',
               actions: ['setNextTrack', 'seekTo'],
@@ -212,7 +241,7 @@ const playerMachine = createMachine<
               actions: ['setNextTrack', 'loadVideo'],
             },
           ],
-          END: [
+          END_TRACK: [
             // TODO: check if next track is last and reshuffle
             {
               // No other action here so that there is seamless
@@ -221,7 +250,7 @@ const playerMachine = createMachine<
               cond: selectors.isNextNext,
             },
             {
-              // The next track could also be in the same video for queues and shuffle
+              // The next track could also be in the same video for up next and shuffle
               target: 'requesting',
               actions: ['setNextTrack', 'seekTo'],
               cond: selectors.isNextSeekable,
@@ -235,16 +264,25 @@ const playerMachine = createMachine<
           ],
           SELECT_TRACK: [
             {
+              actions: ['addTrack'],
+              cond: selectors.eventIsUpNext,
+            },
+            {
               target: 'requesting',
               actions: ['setTrack', 'seekTo'],
               cond: selectors.isEventSeekable,
             },
             {
               target: 'requesting',
+              actions: ['setTrackOrder', 'loadVideo'],
+              cond: selectors.isOrderChange,
+            },
+            {
+              target: 'requesting',
               actions: ['setTrack', 'loadVideo'],
             },
           ],
-          ...alwaysTransitions,
+          ...readyTransitions,
         },
       },
       paused: {
@@ -254,7 +292,7 @@ const playerMachine = createMachine<
             actions: 'playVideo',
           },
           YOUTUBE_PLAY: 'playing',
-          NEXT: [
+          NEXT_TRACK: [
             {
               actions: ['setNextTrack', 'seekTo'],
               cond: selectors.isNextSeekable,
@@ -265,16 +303,25 @@ const playerMachine = createMachine<
           ],
           SELECT_TRACK: [
             {
+              actions: ['addTrack'],
+              cond: selectors.eventIsUpNext,
+            },
+            {
               target: 'requesting',
               actions: ['setTrack', 'seekTo', 'playVideo'],
               cond: selectors.isEventSeekable,
             },
             {
               target: 'requesting',
+              actions: ['setTrackOrder', 'loadVideo'],
+              cond: selectors.isOrderChange,
+            },
+            {
+              target: 'requesting',
               actions: ['setTrack', 'loadVideo'],
             },
           ],
-          ...alwaysTransitions,
+          ...readyTransitions,
         },
       },
     },
@@ -307,70 +354,145 @@ const playerMachine = createMachine<
           context.player?.seekTo(selected.start, true)
         }
       },
+      setError: assign<Machine.PlayerContext>({
+        error: (_, event) =>
+          (event as Machine.PlayerErrorEvent | Machine.FetchErrorEvent).error,
+      }),
       setPlayer: assign<Machine.PlayerContext>({
         player: (_, event) => (event as Machine.PlayerReadyEvent).player,
-      }),
-      setInitialTrack: assign<Machine.PlayerContext>({
-        order: (context) => ({
-          ...context.order,
-          selectedIndex: 0,
-        }),
-      }),
-      setNextTrack: assign<Machine.PlayerContext>({
-        order: (context) => {
-          const nextIndex = selectors.getNextIndex(context)
-
-          if (nextIndex === undefined) {
-            debug.error('NEXT TRACK NOT FOUND')
-          }
-
-          return {
-            ...context.order,
-            selectedIndex: nextIndex ?? context.order.selectedIndex,
-          }
-        },
-      }),
-      setTrack: assign<Machine.PlayerContext>({
-        order: (context, event) => {
-          const selectTrackEvent = event as Machine.SelectTrackEvent
-          const eventTrack = selectors.getEventTrack(context, selectTrackEvent)
-
-          if (!eventTrack) {
-            debug.error('SELECT TRACK NOT FOUND', event)
-            return context.order
-          }
-
-          return trackOrder.current({
-            shuffle: context.shuffle,
-            repeat: context.repeat,
-            selected: eventTrack,
-            songOrder: context.songOrder,
-            videoOrder: context.videoOrder,
-            videoSongOrder: context.videoSongOrder,
-          })
-        },
       }),
       setTracks: assign<Machine.PlayerContext>((context, _event) => {
         const event = _event as Machine.FetchSuccessEvent
 
         const shuffle = event.shuffle ?? context.shuffle
         const repeat = event.repeat ?? context.repeat
+        const selectMode = event.selectMode ?? context.selectMode
+        const trackIds = event.trackIds || []
 
         return {
           ...context,
           shuffle,
           repeat,
-          ...trackOrder.initial(event.tracks, {
-            selected: event.trackId
-              ? ({ id: event.trackId } as Track)
-              : selectors.getSelected(context),
+          selectMode,
+          ...trackOrder.setInitialOrder(event.tracks, {
             shuffle,
             repeat,
+            upNextIds: trackIds,
           }),
         }
       }),
+      setInitialTrack: assign<Machine.PlayerContext>((context) => ({
+        ...context,
+        [context.currentOrder]: {
+          ...context[context.currentOrder],
+          selectedIndex: 0,
+        },
+      })),
+      setTrack: assign<Machine.PlayerContext>((context, _event) => {
+        const event = _event as Machine.SelectTrackEvent
+        const eventTrack = selectors.getEventTrack(context, event)
+
+        if (!eventTrack) {
+          debug.error('SET TRACK NOT FOUND', event)
+          return context
+        }
+
+        const order = context[event.order]
+
+        return {
+          ...context,
+          currentOrder: event.order,
+          [event.order]: {
+            ...order,
+            selectedIndex: order.trackIndexes[event.id],
+          },
+        }
+      }),
+      setNextTrack: assign<Machine.PlayerContext>((context) => {
+        const nextTrack = selectors.getNextIndex(context)
+
+        // TODO: clear upnext when done with upnext
+
+        return {
+          ...context,
+          currentOrder: nextTrack.currentOrder,
+          [nextTrack.currentOrder]: {
+            ...context[nextTrack.currentOrder],
+            selectedIndex: nextTrack.selectedIndex,
+          },
+        }
+      }),
+      removeTrack: assign<Machine.PlayerContext>((context, _event) => {
+        const event = _event as Machine.RemoveTrackEvent
+        const order = context[event.order]
+        return {
+          ...context,
+          [event.order]: {
+            ...order,
+            ...trackOrder.removeTrack(order, event.id),
+          },
+        }
+      }),
+      removeAllTracks: assign<Machine.PlayerContext>((context, _event) => {
+        const event = _event as Machine.RemoveAllTracksEvent
+
+        const orderKey = event.order
+        const order = context[event.order]
+        const selected = selectors.getSelected(context)
+        const orderId = order.trackOrder[order.selectedIndex]?.orderId
+
+        return {
+          ...context,
+          [orderKey]:
+            selected && orderKey === context.currentOrder
+              ? {
+                  selectedIndex: 0,
+                  trackIndexes: { [orderId]: 0 },
+                  trackOrder: [{ trackId: selected.id, orderId }],
+                }
+              : {
+                  selectedIndex: -1,
+                  ...trackOrder.emptyTrackOrder(),
+                },
+        }
+      }),
+      addTrack: assign<Machine.PlayerContext>((context, _event) => {
+        const event = _event as Machine.SelectTrackEvent
+        const eventTrack = selectors.getEventTrack(context, event)
+
+        // TODO: currently upNext is the only editable order
+        // so we know its being put there, but the SELECT_TRACK
+        // event will either need a new property or be separated into
+        // a new event that can take target order key
+        const orderKey = 'upNext'
+
+        if (!eventTrack) {
+          debug.error('ADD TRACK NOT FOUND', event)
+          return context
+        }
+
+        return {
+          ...context,
+          [orderKey]: {
+            ...context[orderKey],
+            ...trackOrder.addTrack(
+              context[orderKey],
+              {
+                trackId: eventTrack.id,
+                orderId: trackOrder.generateOrderId(eventTrack.id),
+              },
+              'end'
+            ),
+          },
+        }
+      }),
       setTrackOrder: assign<Machine.PlayerContext>((context, _event) => {
-        const event = _event as Machine.ShuffleEvent | Machine.RepeatEvent
+        // TODO: separate this and trackOrder.current into specific
+        // parts that could only shuffle, set song/video order, repeat, etc
+        const event = _event as
+          | Machine.ShuffleEvent
+          | Machine.RepeatEvent
+          | Machine.SelectTrackEvent
         const selected = selectors.getSelected(context)
 
         const shuffle =
@@ -387,13 +509,14 @@ const playerMachine = createMachine<
           ...context,
           shuffle,
           repeat,
-          order: trackOrder.current({
+          order: trackOrder.setOrder({
             shuffle,
             repeat,
-            selected,
+            selectedId: selected?.id,
             songOrder: context.songOrder,
             videoOrder: context.videoOrder,
             videoSongOrder: context.videoSongOrder,
+            tracksById: context.tracksById,
           }),
         }
       }),

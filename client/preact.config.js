@@ -19,6 +19,9 @@ export default {
     })
 
     if (config.devServer) {
+      // YouTube player blocks some videos on 0.0.0.0
+      config.devServer.host = 'localhost'
+      // Hot reloading doesn't play well with the video player
       config.devServer.hot = false
       config.devServer.proxy = {
         '/api': {

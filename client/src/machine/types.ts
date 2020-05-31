@@ -1,23 +1,53 @@
 import { StateMachine, EventObject } from '@xstate/fsm'
-import { Tracks, Track, Repeat, TrackId, VideoId } from '../types'
+import {
+  Tracks,
+  Track,
+  Repeat,
+  TrackId,
+  VideoId,
+  SelectMode,
+  OrderId,
+} from '../types'
 
 export type FetchStartEvent = { type: 'FETCH_START' }
 export type FetchSuccessEvent = {
   type: 'FETCH_SUCCESS'
   tracks: Tracks
-  trackId?: TrackId
   shuffle?: boolean
   repeat?: Repeat
+  selectMode?: SelectMode
+  trackIds: TrackId[]
 }
 export type FetchErrorEvent = { type: 'FETCH_ERROR'; error: Error }
+
 export type PlayerReadyEvent = { type: 'PLAYER_READY'; player: YT.Player }
-export type SelectTrackEvent = { type: 'SELECT_TRACK'; trackId: TrackId }
+export type PlayerErrorEvent = { type: 'PLAYER_ERROR'; error: Error }
+
+export type SelectTrackEvent = {
+  type: 'SELECT_TRACK'
+  order: PlayerContext['currentOrder']
+  id: OrderId
+  forcePlay?: boolean
+}
+export type RemoveTrackEvent = {
+  type: 'REMOVE_TRACK'
+  order: PlayerContext['currentOrder']
+  id: OrderId
+}
+export type RemoveAllTracksEvent = {
+  type: 'REMOVE_ALL_TRACKS'
+  order: PlayerContext['currentOrder']
+}
+
+export type NextEvent = { type: 'NEXT_TRACK' }
+export type EndEvent = { type: 'END_TRACK' }
+
 export type PlayEvent = { type: 'PLAY' }
 export type PauseEvent = { type: 'PAUSE' }
-export type NextEvent = { type: 'NEXT' }
+
 export type ShuffleEvent = { type: 'SHUFFLE' }
 export type RepeatEvent = { type: 'REPEAT' }
-export type EndEvent = { type: 'END' }
+
 export type YouTubePlayEvent = { type: 'YOUTUBE_PLAY' }
 export type YouTubePauseEvent = { type: 'YOUTUBE_PAUSE' }
 export type YouTubeBufferingEvent = { type: 'YOUTUBE_BUFFERING' }
@@ -32,7 +62,10 @@ export type YouTubeEvent =
 
 export type PlayerEvent =
   | SelectTrackEvent
+  | RemoveTrackEvent
+  | RemoveAllTracksEvent
   | PlayerReadyEvent
+  | PlayerErrorEvent
   | PlayEvent
   | PauseEvent
   | NextEvent
@@ -45,8 +78,8 @@ export type PlayerEvent =
   | FetchStartEvent
 
 export type TrackOrder = {
-  trackIndexes: { [key in TrackId]?: number }
-  trackOrder: TrackId[]
+  trackIndexes: { [key in OrderId]?: number }
+  trackOrder: { trackId: TrackId; orderId: OrderId }[]
   selectedIndex: number
 }
 
@@ -55,7 +88,9 @@ export type TrackOrderUnselected = Omit<TrackOrder, 'selectedIndex'>
 export interface PlayerContext {
   tracks: Tracks
   tracksById: { [key in TrackId]?: Track }
+  currentOrder: 'order' | 'upNext'
   order: TrackOrder
+  upNext: TrackOrder
   songOrder: TrackOrderUnselected
   videoOrder: TrackOrderUnselected
   videoSongOrder: { [key in VideoId]?: TrackOrderUnselected }
@@ -63,6 +98,7 @@ export interface PlayerContext {
   error?: Error
   shuffle: boolean
   repeat: Repeat
+  selectMode: SelectMode
 }
 
 interface PlayerContextNotReady {

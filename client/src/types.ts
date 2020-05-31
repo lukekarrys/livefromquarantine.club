@@ -1,6 +1,7 @@
 export type TrackId = 'string'
 export type VideoId = 'string'
 export type ArtistId = 'string'
+export type OrderId = 'string'
 
 export type Track = {
   id: TrackId
@@ -38,4 +39,10 @@ export enum Repeat {
   None,
   Video,
   Song,
+}
+
+export enum SelectMode {
+  Ask,
+  UpNext,
+  Play,
 }

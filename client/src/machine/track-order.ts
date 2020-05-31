@@ -1,5 +1,6 @@
-import { Tracks, Track, Repeat, VideoId } from '../types'
+import { Tracks, Repeat, VideoId, TrackId, OrderId } from '../types'
 import * as Machine from './types'
+import * as selectors from './selectors'
 
 const shuffleOrder = (
   order: Machine.TrackOrderUnselected
@@ -20,10 +21,10 @@ const shuffleOrder = (
     const val2 = newOrder[randomIndex]
 
     newOrder[currentIndex] = val2
-    newIndexes[val2] = currentIndex
+    newIndexes[val2.orderId] = currentIndex
 
     newOrder[randomIndex] = val1
-    newIndexes[val1] = randomIndex
+    newIndexes[val1.orderId] = randomIndex
   }
 
   return {
@@ -32,52 +33,82 @@ const shuffleOrder = (
   }
 }
 
-const emptyTrackOrder = (): Machine.TrackOrderUnselected => ({
+export const emptyTrackOrder = (): Machine.TrackOrderUnselected => ({
   trackOrder: [],
   trackIndexes: {},
 })
 
 const setOrderAndIndex = (
   order: Machine.TrackOrderUnselected,
-  track: Track
+  { trackId, orderId }: { trackId: TrackId; orderId: OrderId }
 ): number => {
-  const position = order.trackOrder.push(track.id)
-  order.trackIndexes[track.id] = position - 1
+  const position = order.trackOrder.push({ trackId, orderId })
+  order.trackIndexes[orderId] = position - 1
   return position
 }
 
 const findIndexInOrder = (
   order: Machine.TrackOrderUnselected,
-  track?: Track
+  orderId?: OrderId
 ): number => {
-  return (track?.id && order.trackIndexes[track.id]) ?? -1
+  return (orderId && order.trackIndexes[orderId]) ?? -1
 }
 
-export const current = ({
+export const generateOrderId = (id: TrackId): OrderId =>
+  `${id}-${Math.random().toString().slice(2, 6)}` as OrderId
+
+export const addTrack = (
+  order: Machine.TrackOrder,
+  { trackId, orderId }: { trackId: TrackId; orderId: OrderId },
+  position: number | 'end' | 'start'
+): Machine.TrackOrder => {
+  if (position === 'end') position = order.trackOrder.length
+  else if (position === 'start') position = 0
+  order.trackOrder.splice(position, 0, { trackId, orderId })
+  order.trackIndexes[orderId] = position
+  return order
+}
+
+export const removeTrack = (
+  order: Machine.TrackOrder,
+  orderId: OrderId
+): Machine.TrackOrder => {
+  const position = order.trackIndexes[orderId]
+  if (position == null) return order
+  order.trackOrder.splice(position, 1)
+  delete order.trackIndexes[orderId]
+  return order
+}
+
+export const setOrder = ({
+  tracksById,
   shuffle,
   repeat,
-  selected,
+  selectedId,
   songOrder,
   videoOrder,
   videoSongOrder,
 }: Pick<
   Machine.PlayerContext,
-  'songOrder' | 'videoOrder' | 'videoSongOrder' | 'shuffle' | 'repeat'
-> & { selected?: Track }): Machine.TrackOrder => {
-  let currentOrder: Machine.TrackOrder = {} as Machine.TrackOrder
+  | 'songOrder'
+  | 'videoOrder'
+  | 'videoSongOrder'
+  | 'shuffle'
+  | 'repeat'
+  | 'tracksById'
+> & { selectedId?: TrackId }): Machine.TrackOrder => {
+  let currentOrder: Machine.TrackOrderUnselected = {} as Machine.TrackOrderUnselected
 
   // The current song mode is set by the selected song but the default
   // is song mode
-  const songMode = selected?.isSong ?? true
+  const selected =
+    selectedId && selectors.getTrackById({ tracksById }, selectedId)
+  const songMode = selectors.isSongMode({ tracksById }, selectedId)
 
   if (repeat === Repeat.None) {
     // No repeat, so the order is either the full song order
     // or video order depending on the current mode
-    const order = songMode ? songOrder : videoOrder
-    currentOrder = {
-      ...order,
-      selectedIndex: findIndexInOrder(order, selected),
-    }
+    currentOrder = songMode ? songOrder : videoOrder
   } else if (repeat === Repeat.Song || (repeat === Repeat.Video && !songMode)) {
     // We are repeating a single song or repeating a video but the current mode
     // is video mode, so that's the same thing as repeating a single song
@@ -86,59 +117,59 @@ export const current = ({
     // depending on the mode
     const trackId =
       selected?.id ??
-      (songMode ? songOrder.trackOrder[0] : videoOrder.trackOrder[0])
+      (songMode
+        ? songOrder.trackOrder[0].trackId
+        : videoOrder.trackOrder[0].trackId)
 
     // We can build a simple order here since there is only one song
     // but we still have to check if the selected is available since
     // if nothing is selected we want to keep the order but not select anything
     currentOrder = {
       trackIndexes: { [trackId]: 0 },
-      trackOrder: [trackId],
-      selectedIndex: selected ? 0 : -1,
+      trackOrder: [{ trackId, orderId: trackId }],
     }
   } else if (repeat === Repeat.Video) {
     // We are repeating an entire video, and song mode is always true here since we
     // check the inverse in the above conditional
 
     // The video comes from the selected track or the first video
-    const videoId = selected?.videoId ?? videoOrder.trackOrder[0]
+    const videoId = selected?.videoId ?? videoOrder.trackOrder[0].trackId
     // and the songs come from videoSongOrder which we calculated
     // when the tracks were initiall set
-    const order = videoSongOrder[videoId] as Machine.TrackOrderUnselected
-
-    currentOrder = {
-      ...order,
-      selectedIndex: findIndexInOrder(order, selected),
-    }
+    currentOrder = videoSongOrder[videoId] as Machine.TrackOrderUnselected
   }
 
   if (shuffle) {
     // Shuffle the order and indexes to match
-    const order = shuffleOrder({
-      trackOrder: currentOrder.trackOrder,
-      trackIndexes: currentOrder.trackIndexes,
-    })
+    const order = shuffleOrder(currentOrder)
     // If there is a currently selected song keep it at the beginning
     if (selected) {
+      // Remove selected from elsewhere in the shuffle
+      order.trackOrder.splice(findIndexInOrder(order, selected.id), 1)
+      // Then place it at the beginning
       order.trackIndexes[selected.id] = 0
-      order.trackOrder.unshift(selected.id)
+      order.trackOrder.unshift({ trackId: selected.id, orderId: selected.id })
     }
-    currentOrder = {
-      ...order,
-      selectedIndex: findIndexInOrder(order, selected),
-    }
+    currentOrder = order
   }
 
-  return currentOrder
+  return {
+    ...currentOrder,
+    selectedIndex: findIndexInOrder(currentOrder, selected?.id),
+  }
 }
 
-export const initial = (
+export const setInitialOrder = (
   tracks: Tracks,
   {
-    selected,
     shuffle,
     repeat,
-  }: { selected?: Track; shuffle: boolean; repeat: Repeat }
+    upNextIds,
+  }: {
+    shuffle: boolean
+    repeat: Repeat
+    upNextIds: TrackId[]
+  }
 ): Pick<
   Machine.PlayerContext,
   | 'tracks'
@@ -146,11 +177,14 @@ export const initial = (
   | 'songOrder'
   | 'videoOrder'
   | 'order'
+  | 'upNext'
   | 'videoSongOrder'
+  | 'currentOrder'
 > => {
   const tracksById = {} as Machine.PlayerContext['tracksById']
   const songOrder = emptyTrackOrder()
   const videoOrder = emptyTrackOrder()
+  const upNext = emptyTrackOrder()
   const videoSongOrder: {
     [key in VideoId]?: Machine.TrackOrderUnselected
   } = {}
@@ -160,16 +194,28 @@ export const initial = (
     tracksById[track.id] = track
 
     if (track.isSong) {
-      setOrderAndIndex(songOrder, track)
+      setOrderAndIndex(songOrder, { trackId: track.id, orderId: track.id })
       setOrderAndIndex(
         videoSongOrder[track.videoId] ??
           (videoSongOrder[track.videoId] = emptyTrackOrder()),
-        track
+        { trackId: track.id, orderId: track.id }
       )
     } else {
-      setOrderAndIndex(videoOrder, track)
+      setOrderAndIndex(videoOrder, { trackId: track.id, orderId: track.id })
     }
   }
+
+  for (let i = 0, m = upNextIds.length; i < m; i++) {
+    const id = upNextIds[i]
+    if (tracksById[id]) {
+      setOrderAndIndex(upNext, {
+        trackId: id,
+        orderId: generateOrderId(id),
+      })
+    }
+  }
+
+  const hasUpNext = upNext.trackOrder.length > 0
 
   return {
     tracks,
@@ -177,13 +223,18 @@ export const initial = (
     songOrder,
     videoOrder,
     videoSongOrder,
-    order: current({
+    currentOrder: hasUpNext ? 'upNext' : 'order',
+    upNext: {
+      ...upNext,
+      selectedIndex: hasUpNext ? 0 : -1,
+    },
+    order: setOrder({
+      tracksById,
       shuffle,
       repeat,
       songOrder,
       videoOrder,
       videoSongOrder,
-      selected,
     }),
   }
 }
