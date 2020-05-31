@@ -13,7 +13,7 @@ interface Props {
 }
 
 const hash = window.location.hash.slice(1)
-const initialTracks: TrackId[] = hash ? (hash.split(',') as TrackId[]) : []
+const upNext: TrackId[] = hash ? (hash.split(',') as TrackId[]) : []
 
 const Artist: FunctionalComponent<Props> = ({ artist }) => {
   const [videos, setVideos] = useState<Videos | undefined>(undefined)
@@ -31,8 +31,7 @@ const Artist: FunctionalComponent<Props> = ({ artist }) => {
         send({
           type: 'FETCH_SUCCESS',
           tracks: res.tracks,
-          trackId: initialTracks[0],
-          // TODO: add initial upnext
+          trackIds: upNext,
         })
       })
       .catch((error) => send({ type: 'FETCH_ERROR', error }))
@@ -45,7 +44,7 @@ const Artist: FunctionalComponent<Props> = ({ artist }) => {
   }, [meta, meta?.title])
 
   return (
-    <div class="max-w-screen-c c:border-l c:border-r border-r-0 border-l-0 mx-auto border-gray-600">
+    <div class="max-w-screen-c c:border-l c:border-r border-r-0 border-l-0 mx-auto border-gray-600 relative">
       <Player state={state} send={send} videos={videos}>
         {state.matches('idle') || state.matches('loading')
           ? 'Loading...'

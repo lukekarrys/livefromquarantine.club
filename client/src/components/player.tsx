@@ -1,10 +1,11 @@
 import { FunctionalComponent, h, Fragment, ComponentChild } from 'preact'
 import { useState, useCallback, useEffect, useRef } from 'preact/hooks'
 import cx from 'classnames'
-import { Videos as TVideos, Track, Progress } from '../types'
+import { Videos as TVideos, Progress } from '../types'
 import YouTube from './youtube'
 import Videos from './videos'
 import Controls from './controls'
+import UpNext from './upnext'
 import * as selectors from '../machine/selectors'
 import { PlayerSend, PlayerMachineState } from '../machine/types'
 
@@ -21,11 +22,6 @@ const Player: FunctionalComponent<Props> = ({
   children,
   videos = [],
 }) => {
-  const onSelect = useCallback(
-    (track: Track) => send({ type: 'SELECT_TRACK', trackId: track.id }),
-    [send]
-  )
-
   const [scrollTo, setScrollTo] = useState(false)
   const [progress, setProgress] = useState<Progress>({ time: 0, percent: 0 })
   const onProgress = useCallback((p: Progress): void => setProgress(p), [
@@ -35,6 +31,7 @@ const Player: FunctionalComponent<Props> = ({
   const selected = selectors.getSelected(state.context)
   const isPlaying = state.matches('playing')
   const isVisuallyPlaying = isPlaying || state.matches('requesting')
+  const isReady = selectors.isReady(state)
   const showPlayer = !!selected
 
   // TODO: share urls
@@ -42,7 +39,7 @@ const Player: FunctionalComponent<Props> = ({
   useEffect(() => {
     const listener = (e: KeyboardEvent): void => {
       if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return
-      else if (e.key === 'ArrowRight') send('NEXT')
+      else if (e.key === 'ArrowRight') send('NEXT_TRACK')
       else if (e.key === ' ')
         e.preventDefault(), send(isVisuallyPlaying ? 'PAUSE' : 'PLAY')
       else if (e.key === 's') send('SHUFFLE')
@@ -55,10 +52,8 @@ const Player: FunctionalComponent<Props> = ({
 
   return (
     <Fragment>
-      <div class="sticky top-0" ref={playerContainer}>
-        <div
-          class={cx('shadow-inner', showPlayer ? 'bg-black' : 'bg-gray-200')}
-        >
+      <div class="sticky top-0 z-10" ref={playerContainer}>
+        <div class={cx(showPlayer ? 'bg-black' : 'shadow-inner bg-gray-200')}>
           <div class="mx-auto max-w-0 sm-h:max-w-video-16/9-60vh md-h:max-w-screen-c">
             <YouTube
               show={showPlayer}
@@ -67,7 +62,7 @@ const Player: FunctionalComponent<Props> = ({
               send={send}
               onProgress={onProgress}
             >
-              <div class="bg-gray-200 w-full h-full flex justify-center items-center flex-col">
+              <div class="w-full h-full flex justify-center items-center flex-col">
                 {children}
               </div>
             </YouTube>
@@ -75,9 +70,10 @@ const Player: FunctionalComponent<Props> = ({
         </div>
         <div class="bg-white border-b border-t border-gray-600 shadow-sm">
           <Controls
+            ready={isReady}
             selected={selected}
             progress={progress}
-            play={state.matches('playing') || state.matches('requesting')}
+            play={isVisuallyPlaying}
             shuffle={state.context.shuffle}
             repeat={state.context.repeat}
             send={send}
@@ -87,13 +83,21 @@ const Player: FunctionalComponent<Props> = ({
       </div>
       <div>
         <Videos
+          ready={isReady}
           videos={videos}
           selected={selected}
-          onSelect={onSelect}
+          send={send}
           playerRef={playerContainer}
           scrollTo={scrollTo}
         />
       </div>
+      <UpNext
+        send={send}
+        selected={selected}
+        upNext={state.context.upNext}
+        order={state.context.order}
+        tracks={state.context.tracksById}
+      />
     </Fragment>
   )
 }

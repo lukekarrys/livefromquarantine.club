@@ -1,6 +1,7 @@
 /// <reference types="@types/youtube" />
 import { useEffect, useRef, useCallback, Ref } from 'preact/hooks'
-import * as debug from './debug'
+import { ytToMachineEvent } from '../machine'
+import * as Machine from '../machine/types'
 
 declare global {
   interface Window {
@@ -12,17 +13,20 @@ declare global {
   }
 }
 
-const addScript = (src: string): void => {
+const addScript = (src: string, onError: OnErrorEventHandler): void => {
   const script = document.createElement('script')
+  script.onerror = onError
   script.setAttribute('src', src)
   document.body.appendChild(script)
 }
 
-const useYouTube = (
-  domRef: Ref<HTMLDivElement>,
-  onReady: (p: YT.Player) => void,
-  onStateChange: (e: YT.OnStateChangeEvent) => void
-): YT.Player => {
+type Events = {
+  onReady: (p: YT.Player) => void
+  onStateChange: (state: Machine.YouTubeEvent['type']) => void
+  onError: (error: Error) => void
+}
+
+const useYouTube = (domRef: Ref<HTMLDivElement>, events: Events): YT.Player => {
   const playerRef = useRef<YT.Player>(null)
   const setPlayer = useCallback((): void => {
     if (domRef.current) {
@@ -37,22 +41,28 @@ const useYouTube = (
           modestbranding: 1,
         },
         events: {
-          onReady: (): void => onReady(playerRef.current),
-          onStateChange,
-          onError: (e: YT.OnErrorEvent): void => debug.error('PLAYER ERROR', e),
+          onReady: (): void => events.onReady(playerRef.current),
+          onStateChange: (e): void => {
+            const event = ytToMachineEvent[e.data]
+            event && events.onStateChange(event)
+          },
+          onError: (e): void =>
+            events.onError(new Error(`Player error: ${e.data}`)),
         },
       })
     }
-  }, [domRef, onReady, onStateChange])
+  }, [domRef, events])
 
   useEffect(() => {
     if (!window.YT) {
       window.onYouTubeIframeAPIReady = setPlayer
-      addScript('https://www.youtube.com/iframe_api')
+      addScript('https://www.youtube.com/iframe_api', (e) =>
+        events.onError(new Error(e instanceof Event ? 'Player load error' : e))
+      )
     } else {
       setPlayer()
     }
-  }, [setPlayer])
+  }, [setPlayer, events])
 
   return playerRef.current
 }

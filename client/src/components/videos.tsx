@@ -4,16 +4,18 @@ import { useEffect } from 'preact/hooks'
 import { Videos as TVideos, Track, VideoId, TrackId } from '../types'
 import Button from './button'
 import hhmmss from '../lib/hhmmss'
+import { PlayerSend } from '../machine/types'
 
 interface Props {
+  ready: boolean
   videos: TVideos
-  onSelect: (track: Track) => void
+  send: PlayerSend
   selected?: Track
   playerRef: RefObject<HTMLDivElement>
   scrollTo: boolean
 }
 
-type ButtonProps = Pick<Props, 'onSelect' | 'selected'> & {
+type ButtonProps = Pick<Props, 'send' | 'selected' | 'ready'> & {
   track: Track
   last: boolean
 }
@@ -24,9 +26,10 @@ const VIDEO_ID = (id: VideoId): string => `video-tracks-${id}`
 const avg = (nums: number[]): number => (nums[0] + nums[1]) / 2
 
 const TrackButton: FunctionalComponent<ButtonProps> = ({
+  ready,
   track,
   selected,
-  onSelect,
+  send,
   last,
 }) => {
   const title = Array.isArray(track.title) ? track.title[1] : 'Play All'
@@ -41,11 +44,14 @@ const TrackButton: FunctionalComponent<ButtonProps> = ({
     >
       <Button
         id={BUTTON_ID(track.id)}
-        onClick={(): void => onSelect(track)}
+        onClick={(): void =>
+          send({ type: 'SELECT_TRACK', order: 'order', id: track.id })
+        }
         selected={selected?.id === track.id}
         class={cx('w-full flex justify-between sm:justify-center items-center')}
         title={title}
         tight={false}
+        disabled={!ready}
       >
         <span class="truncate">{title}</span>
         <span class="ml-1 text-sm italic tabular-nums">
@@ -57,9 +63,10 @@ const TrackButton: FunctionalComponent<ButtonProps> = ({
 }
 
 const Videos: FunctionalComponent<Props> = ({
+  ready,
   videos,
   selected,
-  onSelect,
+  send,
   playerRef,
   scrollTo,
 }) => {
@@ -118,10 +125,11 @@ const Videos: FunctionalComponent<Props> = ({
           </h2>
           {video.tracks.map((track, index, list) => (
             <TrackButton
+              ready={ready}
               key={track.id}
               track={track}
               selected={selected}
-              onSelect={onSelect}
+              send={send}
               last={index === list.length - 1}
             />
           ))}
