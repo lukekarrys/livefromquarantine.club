@@ -3,6 +3,56 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1701
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS41ODIyMTgwQzA4NjJCQkZC",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Please donate to https://www.blackvisionsmn.org/\n\n\nSean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n4:54 AJJ - American Tune\n8:43 AJJ - Space and Time\n11:40 AJJ - Maggie\n14:56 AJJ - No Justice, No Peace, No Hope\n18:25 AJJ - Mega Guillotine 2020\n23:20 AJJ - A Big Day for Grimley\n26:57 Roger Miller - Oo-de-lally\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-05-31T05:32:18.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "nF_HwaGBBoA"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/nF_HwaGBBoA/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/nF_HwaGBBoA/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/nF_HwaGBBoA/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/nF_HwaGBBoA/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/nF_HwaGBBoA/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine- - May 30"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1698
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5FRjdGNDMzN0I2RTI3MDlG",
@@ -10,7 +60,7 @@
         "snippet": {
           "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
           "channelTitle": "AJJ the band",
-          "description": "Check out our cover of Silver Jews' \"Candy Jail\"\nhttp://smarturl.it/CandyJail\n\nSean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:30 Silver Jews - Candy Jail\n5:00 AJJ - Hate Song for Brains\n9:43 Belle and Sebastian - Lord Anthony\n18:42 Smog (Bill Callahan) - Cold Blooded Old Times\n22:11 AJJ - My Brain is a Human Body\n\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "description": "Check out our cover of Silver Jews' \"Candy Jail\"\nhttp://smarturl.it/CandyJail\n\nSean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:30 Silver Jews - Candy Jail\n5:00 AJJ - Hate Song for Brains\n9:43 Belle and Sebastian - Lord Anthony\n18:42 Smog (Bill Callahan) - Cold Blooded Old Times\n22:11 AJJ - My Brain is a Human Body\n24:21 AJJ - White Face, Black Eyes\n\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
           "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
           "publishedAt": "2020-05-30T19:18:55.000Z",
           "resourceId": {
