@@ -48,10 +48,9 @@ const UpNext: FunctionalComponent<Props> = ({
       <div
         ref={overlayRef}
         class={cx(
-          'fixed inset-0 flex items-start z-20 justify-end bg-opacity-50 bg-gray-600',
-          {
-            hidden: !visible,
-          }
+          'transition-opacity duration-200',
+          'fixed inset-0 flex items-start z-20 justify-end bg-gray-600',
+          visible ? 'opacity-50 visible' : 'invisible opacity-0'
         )}
         onClick={(e): void => {
           if (e.target === overlayRef.current) {
@@ -62,17 +61,20 @@ const UpNext: FunctionalComponent<Props> = ({
       <div
         class={cx(
           'transition-transform duration-200 fixed right-0 inset-y-0 h-screen max-w-sm w-full flex flex-col',
-          'shadow-lg bg-white border-l border-gray-600 pt-2 px-2 z-30'
+          'shadow-md bg-white border-l border-gray-600 pt-2 z-30'
         )}
         style={{ transform: `translate(${visible ? '0' : '100%'})` }}
       >
-        <div class="flex justify-between items-center mb-2" ref={closeRef}>
+        <div
+          class="flex justify-between items-center pb-2 border-b border-gray-600 px-2 shadow"
+          ref={closeRef}
+        >
           <h1>Up Next</h1>
           <Button onClick={(): void => setVisible(false)}>
             <CloseIcon height={18} />
           </Button>
         </div>
-        <div class="flex-1 overflow-y-scroll">
+        <div class="flex-1 overflow-y-scroll px-2 pt-2">
           {upNext.trackOrder.length > upNext.selectedIndex + 1 && (
             <div class="flex flex-col border-b border-gray-600 mb-2 pb-2">
               {upNextOrder.map((track) => (
@@ -84,7 +86,8 @@ const UpNext: FunctionalComponent<Props> = ({
                       send({
                         type: 'SELECT_TRACK',
                         order: 'upNext',
-                        id: track.orderId,
+                        orderId: track.orderId,
+                        trackId: track.trackId,
                         forcePlay: true,
                       })
                     }
@@ -144,7 +147,8 @@ const UpNext: FunctionalComponent<Props> = ({
                   send({
                     type: 'SELECT_TRACK',
                     order: 'order',
-                    id: track.orderId,
+                    orderId: track.orderId,
+                    trackId: track.trackId,
                     forcePlay: true,
                   })
                 }

@@ -26,7 +26,8 @@ export type PlayerErrorEvent = { type: 'PLAYER_ERROR'; error: Error }
 export type SelectTrackEvent = {
   type: 'SELECT_TRACK'
   order: PlayerContext['currentOrder']
-  id: OrderId
+  orderId: OrderId
+  trackId: TrackId
   forcePlay?: boolean
 }
 export type RemoveTrackEvent = {

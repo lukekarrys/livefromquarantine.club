@@ -45,7 +45,12 @@ const TrackButton: FunctionalComponent<ButtonProps> = ({
       <Button
         id={BUTTON_ID(track.id)}
         onClick={(): void =>
-          send({ type: 'SELECT_TRACK', order: 'order', id: track.id })
+          send({
+            type: 'SELECT_TRACK',
+            order: 'order',
+            orderId: track.id,
+            trackId: track.id,
+          })
         }
         selected={selected?.id === track.id}
         class={cx('w-full flex justify-between sm:justify-center items-center')}
