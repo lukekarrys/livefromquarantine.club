@@ -3,6 +3,56 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 2841
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5CNEYyNTVBNDdGMDI1MDNC",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "This show is a fundraiser for Black People's Justice Fund. Consider donating to help out http://bit.ly/blackbailfund\n\n\nSean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n1:25 AJJ - Love in the Time of HPV\n4:11 AJJ - Heartilation\n6:55 Silver Jews - Candy Jail\n11:15 AJJ - Junkie Church\n14:10 Simon and Garfunkel - I Am A Rock\n18:05 AJJ - American Tune\n20:37 AJJ - Psychic Warfare\n22:41 AJJ - Black Dog\n24:20 Foot Ox - New Boyfriend\n25:23 AJJ - Brave as a Noun/Survival Song\n30:10 Beck - Cyanide Breath Mint\n32:15 Elliott Smith - Waltz #2\n37:26 The Mountain Goats - No Children\n39:57 Roger Miller - Oo-de-lally\n42:30 AJJ - Big Bird\n46:20 The Beatles - Her Majesty\n\n \n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-06-01T07:04:13.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "Seifgy52chs"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/Seifgy52chs/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/Seifgy52chs/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/Seifgy52chs/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/Seifgy52chs/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/Seifgy52chs/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - May 31"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1701
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS41ODIyMTgwQzA4NjJCQkZC",
