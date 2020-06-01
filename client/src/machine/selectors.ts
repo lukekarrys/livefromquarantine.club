@@ -39,16 +39,6 @@ export const getTrackById = (
   return context.tracksById[trackId]
 }
 
-export const getEventTrack = (
-  context: Machine.PlayerContext,
-  event: Machine.SelectTrackEvent
-): Track | undefined => {
-  const trackIndex = context[event.order].trackIndexes[event.id]
-  if (trackIndex == null) return undefined
-  const trackId = context[event.order].trackOrder[trackIndex]?.trackId
-  return getTrackById(context, trackId)
-}
-
 // Selected track
 
 export const getSelected = (
@@ -119,7 +109,10 @@ export const isEventSeekable = (
   context: Machine.PlayerContext,
   event: Machine.SelectTrackEvent
 ): boolean => {
-  return isSeekableTrack(getSelected(context), getEventTrack(context, event))
+  return isSeekableTrack(
+    getSelected(context),
+    getTrackById(context, event.trackId)
+  )
 }
 
 export const isNextNext = (context: Machine.PlayerContext): boolean => {
@@ -134,6 +127,7 @@ export const isSongMode = (
   context: Pick<Machine.PlayerContext, 'tracksById'>,
   trackId?: TrackId
 ): boolean => {
+  // True is the default for song mode
   return trackId == null ? true : getTrackById(context, trackId)?.isSong ?? true
 }
 
@@ -141,9 +135,10 @@ export const isOrderChange = (
   context: Machine.PlayerContext,
   event: Machine.SelectTrackEvent
 ): boolean => {
-  const track = getEventTrack(context, event)
-  if (!track) return false
-  return track.isSong !== isSongMode(context, getSelected(context)?.id)
+  return (
+    isSongMode(context, event.trackId) !==
+    isSongMode(context, getSelected(context)?.id)
+  )
 }
 
 export const getNextShuffle = (context: Machine.PlayerContext): boolean => {

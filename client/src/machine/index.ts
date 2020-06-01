@@ -170,11 +170,6 @@ const playerMachine = createMachine<
             },
             {
               target: 'requesting',
-              cond: selectors.isOrderChange,
-              actions: ['setTrackOrder', 'loadVideo'],
-            },
-            {
-              target: 'requesting',
               actions: ['setTrack', 'loadVideo'],
             },
           ],
@@ -210,11 +205,6 @@ const playerMachine = createMachine<
             {
               actions: ['setTrack', 'seekTo', 'playVideo'],
               cond: selectors.isEventSeekable,
-            },
-            {
-              target: 'requesting',
-              actions: ['setTrackOrder', 'loadVideo'],
-              cond: selectors.isOrderChange,
             },
             {
               actions: ['setTrack', 'loadVideo'],
@@ -274,11 +264,6 @@ const playerMachine = createMachine<
             },
             {
               target: 'requesting',
-              actions: ['setTrackOrder', 'loadVideo'],
-              cond: selectors.isOrderChange,
-            },
-            {
-              target: 'requesting',
               actions: ['setTrack', 'loadVideo'],
             },
           ],
@@ -310,11 +295,6 @@ const playerMachine = createMachine<
               target: 'requesting',
               actions: ['setTrack', 'seekTo', 'playVideo'],
               cond: selectors.isEventSeekable,
-            },
-            {
-              target: 'requesting',
-              actions: ['setTrackOrder', 'loadVideo'],
-              cond: selectors.isOrderChange,
             },
             {
               target: 'requesting',
@@ -390,21 +370,36 @@ const playerMachine = createMachine<
       })),
       setTrack: assign<Machine.PlayerContext>((context, _event) => {
         const event = _event as Machine.SelectTrackEvent
-        const eventTrack = selectors.getEventTrack(context, event)
+        const eventTrack = selectors.getTrackById(context, event.trackId)
+        const changeOrder = selectors.isOrderChange(context, event)
 
         if (!eventTrack) {
           debug.error('SET TRACK NOT FOUND', event)
           return context
         }
 
-        const order = context[event.order]
+        if (changeOrder) {
+          return {
+            ...context,
+            currentOrder: event.order,
+            [event.order]: trackOrder.setOrder({
+              selectedId: event.trackId,
+              shuffle: context.shuffle,
+              repeat: context.repeat,
+              songOrder: context.songOrder,
+              videoOrder: context.videoOrder,
+              videoSongOrder: context.videoSongOrder,
+              tracksById: context.tracksById,
+            }),
+          }
+        }
 
         return {
           ...context,
           currentOrder: event.order,
           [event.order]: {
-            ...order,
-            selectedIndex: order.trackIndexes[event.id],
+            ...context[event.order],
+            selectedIndex: context[event.order].trackIndexes[event.orderId],
           },
         }
       }),
@@ -458,7 +453,7 @@ const playerMachine = createMachine<
       }),
       addTrack: assign<Machine.PlayerContext>((context, _event) => {
         const event = _event as Machine.SelectTrackEvent
-        const eventTrack = selectors.getEventTrack(context, event)
+        const eventTrack = selectors.getTrackById(context, event.trackId)
 
         // TODO: currently upNext is the only editable order
         // so we know its being put there, but the SELECT_TRACK
@@ -487,13 +482,7 @@ const playerMachine = createMachine<
         }
       }),
       setTrackOrder: assign<Machine.PlayerContext>((context, _event) => {
-        // TODO: separate this and trackOrder.current into specific
-        // parts that could only shuffle, set song/video order, repeat, etc
-        const event = _event as
-          | Machine.ShuffleEvent
-          | Machine.RepeatEvent
-          | Machine.SelectTrackEvent
-        const selected = selectors.getSelected(context)
+        const event = _event as Machine.ShuffleEvent | Machine.RepeatEvent
 
         const shuffle =
           event.type === 'SHUFFLE'
@@ -512,7 +501,7 @@ const playerMachine = createMachine<
           order: trackOrder.setOrder({
             shuffle,
             repeat,
-            selectedId: selected?.id,
+            selectedId: selectors.getSelected(context)?.id,
             songOrder: context.songOrder,
             videoOrder: context.videoOrder,
             videoSongOrder: context.videoSongOrder,

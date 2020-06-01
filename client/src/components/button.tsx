@@ -36,7 +36,7 @@ const Button: FunctionalComponent<Props> = ({
           ],
       tight ? 'p-1' : 'py-1 px-2',
       'border rounded focus:outline-none focus:shadow-outline',
-      disabled ? 'opacity-50 cursor-default' : 'hover:shadow-md cursor-pointer'
+      disabled ? 'opacity-50 cursor-default' : 'hover:shadow cursor-pointer'
     ),
     disabled,
     ...rest,

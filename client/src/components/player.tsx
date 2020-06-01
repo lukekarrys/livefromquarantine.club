@@ -68,7 +68,7 @@ const Player: FunctionalComponent<Props> = ({
             </YouTube>
           </div>
         </div>
-        <div class="bg-white border-b border-t border-gray-600 shadow-sm">
+        <div class="bg-white border-b border-t border-gray-600 shadow">
           <Controls
             ready={isReady}
             selected={selected}
