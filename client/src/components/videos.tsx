@@ -38,7 +38,7 @@ const TrackButton: FunctionalComponent<ButtonProps> = ({
     <div
       class={cx(
         'mb-2',
-        'w-full sm:w-1/2 md:w-auto',
+        'w-full sm:w-1/2 md:w-auto md:max-w-full',
         'px-1',
         last ? 'md:flex-grow-0' : 'md:flex-grow'
       )}

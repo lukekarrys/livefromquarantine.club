@@ -79,6 +79,7 @@ const Controls: FunctionalComponent<Props> = ({
           selected={selectMode === SelectMode.UpNext}
           tight={false}
           disabled={!ready}
+          title={`Up Next - ${selectMode === SelectMode.UpNext ? 'On' : 'Off'}`}
         >
           <ListIcon height={18} />
         </Button>
@@ -88,6 +89,7 @@ const Controls: FunctionalComponent<Props> = ({
           tight={false}
           disabled={!ready}
           class="ml-1"
+          title={`Shuffle - ${shuffle ? 'On' : 'Off'}`}
         >
           <ShuffleIcon height={18} />
         </Button>
@@ -97,6 +99,13 @@ const Controls: FunctionalComponent<Props> = ({
           tight={false}
           class="ml-1 relative"
           disabled={!ready}
+          title={`Repeat - ${
+            repeat === Repeat.Song
+              ? 'Song'
+              : repeat === Repeat.Video
+              ? 'Video'
+              : 'All'
+          }`}
         >
           <RepeatIcon height={18} />
           <span
@@ -116,6 +125,7 @@ const Controls: FunctionalComponent<Props> = ({
           onClick={(): void => (play ? send('PAUSE') : send('PLAY'))}
           selected={play}
           disabled={!ready}
+          title={play ? 'Pause' : 'Play'}
         >
           {play ? <PauseIcon height={18} /> : <PlayIcon height={18} />}
         </Button>
@@ -124,10 +134,16 @@ const Controls: FunctionalComponent<Props> = ({
           tight={false}
           onClick={(): void => send('NEXT_TRACK')}
           disabled={!ready}
+          title="Next Track"
         >
           <NextIcon height={18} />
         </Button>
-        <button class="truncate ml-1" onClick={onTitleClick} disabled={!ready}>
+        <button
+          class="truncate ml-1"
+          onClick={onTitleClick}
+          disabled={!ready}
+          title={toTitle(selected)}
+        >
           {toTitle(selected)}
         </button>
         {progress && (
