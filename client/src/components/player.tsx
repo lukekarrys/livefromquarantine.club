@@ -36,6 +36,8 @@ const Player: FunctionalComponent<Props> = ({
       else if (e.key === ' ')
         e.preventDefault(), send(isVisuallyPlaying ? 'PAUSE' : 'PLAY')
       else if (e.key === 's') send('SHUFFLE')
+      else if (e.key === 'r') send('REPEAT')
+      else if (e.key === 'u') send('SELECT_MODE')
     }
     document.addEventListener('keydown', listener)
     return (): void => document.removeEventListener('keydown', listener)
