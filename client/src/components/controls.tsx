@@ -1,5 +1,6 @@
 import { FunctionalComponent, h } from 'preact'
 import cx from 'classnames'
+import { useState, useEffect } from 'preact/hooks'
 import { PlayerSend } from '../machine/types'
 import { Track, Repeat, SelectMode } from '../types'
 import Button from './button'
@@ -11,7 +12,6 @@ import NextIcon from '../icons/next'
 import RepeatIcon from '../icons/repeat'
 import toTitle from '../lib/to-title'
 import ListIcon from '../icons/list'
-import { useState, useEffect } from 'preact/hooks/src'
 
 interface Props {
   ready: boolean
