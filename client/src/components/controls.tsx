@@ -1,7 +1,7 @@
 import { FunctionalComponent, h } from 'preact'
 import cx from 'classnames'
 import { PlayerSend } from '../machine/types'
-import { Progress, Track, Repeat } from '../types'
+import { Progress, Track, Repeat, SelectMode } from '../types'
 import Button from './button'
 import hhmmss from '../lib/hhmmss'
 import ShuffleIcon from '../icons/shuffle'
@@ -9,6 +9,8 @@ import PauseIcon from '../icons/pause'
 import PlayIcon from '../icons/play'
 import NextIcon from '../icons/next'
 import RepeatIcon from '../icons/repeat'
+import toTitle from '../lib/to-title'
+import ListIcon from '../icons/list'
 
 interface Props {
   ready: boolean
@@ -17,6 +19,7 @@ interface Props {
   shuffle: boolean
   repeat: Repeat
   progress: Progress
+  selectMode: SelectMode
   send: PlayerSend
   onTitleClick: () => void
 }
@@ -29,12 +32,10 @@ const Controls: FunctionalComponent<Props> = ({
   send,
   shuffle,
   repeat,
+  selectMode,
   onTitleClick,
 }) => {
   const isRepeat = repeat === Repeat.Song || repeat === Repeat.Video
-  const title = Array.isArray(selected?.title)
-    ? selected?.title.join(' - ')
-    : selected?.title
   return (
     <div class="px-2 py-1 relative overflow-hidden">
       <div
@@ -46,10 +47,19 @@ const Controls: FunctionalComponent<Props> = ({
       />
       <div class="relative flex items-center">
         <Button
+          onClick={(): void => send('SELECT_MODE')}
+          selected={selectMode === SelectMode.UpNext}
+          tight={false}
+          disabled={!ready}
+        >
+          <ListIcon height={18} />
+        </Button>
+        <Button
           onClick={(): void => send('SHUFFLE')}
           selected={shuffle}
           tight={false}
           disabled={!ready}
+          class="ml-1"
         >
           <ShuffleIcon height={18} />
         </Button>
@@ -101,7 +111,7 @@ const Controls: FunctionalComponent<Props> = ({
           <NextIcon height={18} />
         </Button>
         <button class="truncate ml-1" onClick={onTitleClick} disabled={!ready}>
-          {title}
+          {toTitle(selected)}
         </button>
         {progress && (
           <span class="ml-auto tabular-nums text-sm italic">

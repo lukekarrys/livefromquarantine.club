@@ -4,6 +4,7 @@ import * as Machine from './types'
 import * as selectors from './selectors'
 import * as trackOrder from './track-order'
 import * as debug from '../lib/debug'
+import { pick } from '../lib/utils'
 
 export const ytToMachineEvent: {
   [key in YT.PlayerState]: Machine.YouTubeEvent['type'] | null
@@ -28,6 +29,9 @@ const readyTransitions = {
   },
   REMOVE_ALL_TRACKS: {
     actions: 'removeAllTracks',
+  },
+  SELECT_MODE: {
+    actions: 'setSelectMode',
   },
 }
 
@@ -98,7 +102,7 @@ const playerMachine = createMachine<
       player: undefined,
       shuffle: false,
       repeat: Repeat.None,
-      selectMode: SelectMode.UpNext,
+      selectMode: SelectMode.Play,
     },
     states: {
       idle: {
@@ -311,7 +315,7 @@ const playerMachine = createMachine<
       playVideo: (context): void => context.player?.playVideo(),
       pauseVideo: (context): void => context.player?.pauseVideo(),
       cueVideo: (context): void => {
-        const selected = selectors.getSelected(context)
+        const selected = selectors.getSelectedTrack(context)
         if (selected) {
           context.player?.cueVideoById({
             videoId: selected.videoId,
@@ -320,7 +324,7 @@ const playerMachine = createMachine<
         }
       },
       loadVideo: (context): void => {
-        const selected = selectors.getSelected(context)
+        const selected = selectors.getSelectedTrack(context)
         if (selected) {
           context.player?.loadVideoById({
             videoId: selected.videoId,
@@ -329,7 +333,7 @@ const playerMachine = createMachine<
         }
       },
       seekTo: (context): void => {
-        const selected = selectors.getSelected(context)
+        const selected = selectors.getSelectedTrack(context)
         if (selected) {
           context.player?.seekTo(selected.start, true)
         }
@@ -347,7 +351,7 @@ const playerMachine = createMachine<
         const shuffle = event.shuffle ?? context.shuffle
         const repeat = event.repeat ?? context.repeat
         const selectMode = event.selectMode ?? context.selectMode
-        const trackIds = event.trackIds || []
+        const upNextIds = event.trackIds || []
 
         return {
           ...context,
@@ -357,7 +361,7 @@ const playerMachine = createMachine<
           ...trackOrder.setInitialOrder(event.tracks, {
             shuffle,
             repeat,
-            upNextIds: trackIds,
+            upNextIds,
           }),
         }
       }),
@@ -384,12 +388,15 @@ const playerMachine = createMachine<
             currentOrder: event.order,
             [event.order]: trackOrder.setOrder({
               selectedId: event.trackId,
-              shuffle: context.shuffle,
-              repeat: context.repeat,
-              songOrder: context.songOrder,
-              videoOrder: context.videoOrder,
-              videoSongOrder: context.videoSongOrder,
-              tracksById: context.tracksById,
+              ...pick(
+                context,
+                'shuffle',
+                'repeat',
+                'songOrder',
+                'videoOrder',
+                'videoSongOrder',
+                'tracksById'
+              ),
             }),
           }
         }
@@ -406,11 +413,17 @@ const playerMachine = createMachine<
       setNextTrack: assign<Machine.PlayerContext>((context) => {
         const nextTrack = selectors.getNextIndex(context)
 
-        // TODO: clear upnext when done with upnext
-
         return {
           ...context,
           currentOrder: nextTrack.currentOrder,
+          // Reset upnext once finished
+          upNext:
+            nextTrack.currentOrder === 'order'
+              ? {
+                  selectedIndex: -1,
+                  ...trackOrder.emptyTrackOrder(),
+                }
+              : context.upNext,
           [nextTrack.currentOrder]: {
             ...context[nextTrack.currentOrder],
             selectedIndex: nextTrack.selectedIndex,
@@ -432,9 +445,7 @@ const playerMachine = createMachine<
         const event = _event as Machine.RemoveAllTracksEvent
 
         const orderKey = event.order
-        const order = context[event.order]
         const selected = selectors.getSelected(context)
-        const orderId = order.trackOrder[order.selectedIndex]?.orderId
 
         return {
           ...context,
@@ -442,8 +453,8 @@ const playerMachine = createMachine<
             selected && orderKey === context.currentOrder
               ? {
                   selectedIndex: 0,
-                  trackIndexes: { [orderId]: 0 },
-                  trackOrder: [{ trackId: selected.id, orderId }],
+                  trackIndexes: { [selected.orderId]: 0 },
+                  trackOrder: [selected],
                 }
               : {
                   selectedIndex: -1,
@@ -454,24 +465,24 @@ const playerMachine = createMachine<
       addTrack: assign<Machine.PlayerContext>((context, _event) => {
         const event = _event as Machine.SelectTrackEvent
         const eventTrack = selectors.getTrackById(context, event.trackId)
-
-        // TODO: currently upNext is the only editable order
-        // so we know its being put there, but the SELECT_TRACK
-        // event will either need a new property or be separated into
-        // a new event that can take target order key
-        const orderKey = 'upNext'
+        const changeOrder = selectors.isOrderChange(context, event)
 
         if (!eventTrack) {
           debug.error('ADD TRACK NOT FOUND', event)
           return context
         }
 
+        // TODO: currently upNext is the only editable order
+        // so we know its being put there, but the SELECT_TRACK
+        // event will either need a new property or be separated into
+        // a new event that can take target order key
+
         return {
           ...context,
-          [orderKey]: {
-            ...context[orderKey],
+          upNext: {
+            ...context.upNext,
             ...trackOrder.addTrack(
-              context[orderKey],
+              context.upNext,
               {
                 trackId: eventTrack.id,
                 orderId: trackOrder.generateOrderId(eventTrack.id),
@@ -479,6 +490,24 @@ const playerMachine = createMachine<
               'end'
             ),
           },
+          // If adding this track to upnext would change the order
+          // then set the main order to whatever the first track from
+          // upnext is. This isn't perfect but without it, you arent
+          // able to ever change between song orders is up next mode
+          order: changeOrder
+            ? trackOrder.setOrder({
+                selectedId: context.upNext.trackOrder[0].trackId,
+                ...pick(
+                  context,
+                  'shuffle',
+                  'repeat',
+                  'songOrder',
+                  'videoOrder',
+                  'videoSongOrder',
+                  'tracksById'
+                ),
+              })
+            : context.order,
         }
       }),
       setTrackOrder: assign<Machine.PlayerContext>((context, _event) => {
@@ -501,13 +530,28 @@ const playerMachine = createMachine<
           order: trackOrder.setOrder({
             shuffle,
             repeat,
-            selectedId: selectors.getSelected(context)?.id,
-            songOrder: context.songOrder,
-            videoOrder: context.videoOrder,
-            videoSongOrder: context.videoSongOrder,
-            tracksById: context.tracksById,
+            selectedId: selectors.getSelectedTrack(context)?.id,
+            ...pick(
+              context,
+              'songOrder',
+              'videoOrder',
+              'videoSongOrder',
+              'tracksById'
+            ),
           }),
         }
+      }),
+      setSelectMode: assign<Machine.PlayerContext>({
+        selectMode: (context) => {
+          const next =
+            context.selectMode === SelectMode.Play
+              ? SelectMode.UpNext
+              : context.selectMode === SelectMode.UpNext
+              ? SelectMode.Play
+              : context.selectMode
+          localStorage.setItem('selectMode', next.toString())
+          return next
+        },
       }),
     },
   }

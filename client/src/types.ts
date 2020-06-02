@@ -42,7 +42,6 @@ export enum Repeat {
 }
 
 export enum SelectMode {
-  Ask,
   UpNext,
   Play,
 }

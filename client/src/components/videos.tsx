@@ -5,6 +5,7 @@ import { Videos as TVideos, Track, VideoId, TrackId } from '../types'
 import Button from './button'
 import hhmmss from '../lib/hhmmss'
 import { PlayerSend } from '../machine/types'
+import { toSongTitle } from '../lib/to-title'
 
 interface Props {
   ready: boolean
@@ -32,7 +33,7 @@ const TrackButton: FunctionalComponent<ButtonProps> = ({
   send,
   last,
 }) => {
-  const title = Array.isArray(track.title) ? track.title[1] : 'Play All'
+  const title = toSongTitle(track)
   return (
     <div
       class={cx(

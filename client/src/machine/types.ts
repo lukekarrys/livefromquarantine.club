@@ -48,6 +48,7 @@ export type PauseEvent = { type: 'PAUSE' }
 
 export type ShuffleEvent = { type: 'SHUFFLE' }
 export type RepeatEvent = { type: 'REPEAT' }
+export type SelectModeEvent = { type: 'SELECT_MODE' }
 
 export type YouTubePlayEvent = { type: 'YOUTUBE_PLAY' }
 export type YouTubePauseEvent = { type: 'YOUTUBE_PAUSE' }
@@ -74,6 +75,7 @@ export type PlayerEvent =
   | YouTubeEvent
   | ShuffleEvent
   | RepeatEvent
+  | SelectModeEvent
   | FetchSuccessEvent
   | FetchErrorEvent
   | FetchStartEvent

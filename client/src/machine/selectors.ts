@@ -1,4 +1,4 @@
-import { Track, Repeat, SelectMode, TrackId } from '../types'
+import { Track, Repeat, SelectMode, TrackId, OrderId } from '../types'
 import * as Machine from './types'
 
 // Utils
@@ -43,14 +43,21 @@ export const getTrackById = (
 
 export const getSelected = (
   context: Machine.PlayerContext
-): Track | undefined => {
+): { trackId: TrackId; orderId: OrderId } | undefined => {
   const index = context[context.currentOrder].selectedIndex
-  const trackId = context[context.currentOrder].trackOrder[index]?.trackId
+  return context[context.currentOrder].trackOrder[index]
+}
+
+export const getSelectedTrack = (
+  context: Machine.PlayerContext
+): Track | undefined => {
+  const trackId = getSelected(context)?.trackId
+  if (trackId == null) return undefined
   return getTrackById(context, trackId)
 }
 
 export const hasSelected = (context: Machine.PlayerContext): boolean => {
-  return getSelected(context) !== undefined
+  return getSelectedTrack(context) !== undefined
 }
 
 // Next track
@@ -100,7 +107,7 @@ const isNextTrack = (track?: Track, nextTrack?: Track): boolean =>
   track.end === nextTrack.start
 
 export const isNextSeekable = (context: Machine.PlayerContext): boolean => {
-  const current = getSelected(context)
+  const current = getSelectedTrack(context)
   const next = getNextTrack(context)
   return isSeekableTrack(current, next)
 }
@@ -110,13 +117,13 @@ export const isEventSeekable = (
   event: Machine.SelectTrackEvent
 ): boolean => {
   return isSeekableTrack(
-    getSelected(context),
+    getSelectedTrack(context),
     getTrackById(context, event.trackId)
   )
 }
 
 export const isNextNext = (context: Machine.PlayerContext): boolean => {
-  const current = getSelected(context)
+  const current = getSelectedTrack(context)
   const next = getNextTrack(context)
   return isNextTrack(current, next)
 }
@@ -137,7 +144,7 @@ export const isOrderChange = (
 ): boolean => {
   return (
     isSongMode(context, event.trackId) !==
-    isSongMode(context, getSelected(context)?.id)
+    isSongMode(context, getSelectedTrack(context)?.id)
   )
 }
 

@@ -32,7 +32,7 @@ const Button: FunctionalComponent<Props> = ({
             'border-gray-600',
             selected
               ? 'bg-gray-900 text-white'
-              : ['bg-white text-black', !disabled && 'hover:bg-gray-100'],
+              : ['bg-white text-black', !disabled && 'hover:bg-gray-300'],
           ],
       tight ? 'p-1' : 'py-1 px-2',
       'border rounded focus:outline-none focus:shadow-outline',

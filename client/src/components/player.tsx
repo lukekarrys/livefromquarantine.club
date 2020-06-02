@@ -28,7 +28,7 @@ const Player: FunctionalComponent<Props> = ({
     setProgress,
   ])
 
-  const selected = selectors.getSelected(state.context)
+  const selected = selectors.getSelectedTrack(state.context)
   const isPlaying = state.matches('playing')
   const isVisuallyPlaying = isPlaying || state.matches('requesting')
   const isReady = selectors.isReady(state)
@@ -76,6 +76,7 @@ const Player: FunctionalComponent<Props> = ({
             play={isVisuallyPlaying}
             shuffle={state.context.shuffle}
             repeat={state.context.repeat}
+            selectMode={state.context.selectMode}
             send={send}
             onTitleClick={(): void => setScrollTo((s) => !s)}
           />

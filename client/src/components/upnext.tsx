@@ -39,11 +39,19 @@ const UpNext: FunctionalComponent<Props> = ({
   return (
     <Fragment>
       <Button
-        class="transition-transform duration-200 fixed right-0 mr-2 mt-2 top-0 z-20"
+        class="flex transition-transform duration-200 fixed right-0 mr-2 mt-2 top-0 z-20"
         onClick={(): void => setVisible(true)}
         style={{ transform: `translate(${visible ? '100%' : '0'})` }}
       >
         <ListIcon height={18} />
+        {upNextOrder.length > 0 && (
+          <span
+            class="ml-1 tabular-nums"
+            style={{ height: '18px', lineHeight: '18px' }}
+          >
+            {upNextOrder.length}
+          </span>
+        )}
       </Button>
       <div
         ref={overlayRef}
@@ -69,13 +77,13 @@ const UpNext: FunctionalComponent<Props> = ({
           class="flex justify-between items-center pb-2 border-b border-gray-600 px-2 shadow"
           ref={closeRef}
         >
-          <h1>Up Next</h1>
+          <h1>Up Next {upNextOrder.length > 0 && upNextOrder.length}</h1>
           <Button onClick={(): void => setVisible(false)}>
             <CloseIcon height={18} />
           </Button>
         </div>
         <div class="flex-1 overflow-y-scroll px-2 pt-2">
-          {upNext.trackOrder.length > upNext.selectedIndex + 1 && (
+          {upNextOrder.length > 0 && (
             <div class="flex flex-col border-b border-gray-600 mb-2 pb-2">
               {upNextOrder.map((track) => (
                 <div class="flex mb-1" key={track.orderId}>
