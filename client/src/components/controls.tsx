@@ -110,26 +110,15 @@ const Controls: FunctionalComponent<Props> = ({
               : null}
           </span>
         </Button>
-        {play ? (
-          <Button
-            class="ml-1"
-            tight={false}
-            onClick={(): void => send('PAUSE')}
-            selected
-            disabled={!ready}
-          >
-            <PauseIcon height={18} />
-          </Button>
-        ) : (
-          <Button
-            class="ml-1"
-            tight={false}
-            onClick={(): void => send('PLAY')}
-            disabled={!ready}
-          >
-            <PlayIcon height={18} />
-          </Button>
-        )}
+        <Button
+          class="ml-1"
+          tight={false}
+          onClick={(): void => (play ? send('PAUSE') : send('PLAY'))}
+          selected={play}
+          disabled={!ready}
+        >
+          {play ? <PauseIcon height={18} /> : <PlayIcon height={18} />}
+        </Button>
         <Button
           class="ml-1"
           tight={false}
