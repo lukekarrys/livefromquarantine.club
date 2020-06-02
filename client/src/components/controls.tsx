@@ -95,13 +95,13 @@ const Controls: FunctionalComponent<Props> = ({
           onClick={(): void => send('REPEAT')}
           selected={isRepeat}
           tight={false}
-          class="ml-1 flex items-center"
+          class="ml-1 relative"
           disabled={!ready}
         >
           <RepeatIcon height={18} />
           <span
-            style={{ height: '18px', lineHeight: '18px' }}
-            class={cx('text-xl font-bold', isRepeat && 'ml-1')}
+            style={{ height: '12px', lineHeight: '12px', right: 2, bottom: 2 }}
+            class={cx('text-sm font-bold absolute')}
           >
             {repeat === Repeat.Song
               ? 'S'
