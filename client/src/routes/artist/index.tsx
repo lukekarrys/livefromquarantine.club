@@ -6,7 +6,14 @@ import * as selectors from '../../machine/selectors'
 import Player from '../../components/player'
 import fetchData from '../../lib/api'
 import useDebugService from '../../lib/useDebugService'
-import { ArtistId, Videos, ArtistMeta, TrackId, SelectMode } from '../../types'
+import {
+  ArtistId,
+  Videos,
+  ArtistMeta,
+  TrackId,
+  SelectMode,
+  Repeat,
+} from '../../types'
 
 interface Props {
   artist: ArtistId
@@ -14,7 +21,10 @@ interface Props {
 
 const hash = window.location.hash.slice(1)
 const upNext: TrackId[] = hash ? (hash.split(',') as TrackId[]) : []
-const selectMode = (localStorage.getItem('selectMode') as unknown) as SelectMode
+
+const selectMode = localStorage.getItem('selectMode')
+const shuffle = localStorage.getItem('shuffle')
+const repeat = localStorage.getItem('repeat')
 
 const Artist: FunctionalComponent<Props> = ({ artist }) => {
   const [videos, setVideos] = useState<Videos | undefined>(undefined)
@@ -33,7 +43,13 @@ const Artist: FunctionalComponent<Props> = ({ artist }) => {
           type: 'FETCH_SUCCESS',
           tracks: res.tracks,
           trackIds: upNext,
-          selectMode: selectMode && +selectMode,
+          shuffle:
+            shuffle === 'true' || shuffle === 'false'
+              ? shuffle === 'true'
+              : undefined,
+          repeat: repeat != null ? (+repeat as Repeat) : undefined,
+          selectMode:
+            selectMode != null ? (+selectMode as SelectMode) : undefined,
         })
       })
       .catch((error) => send({ type: 'FETCH_ERROR', error }))

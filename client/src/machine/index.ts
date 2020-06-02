@@ -236,7 +236,6 @@ const playerMachine = createMachine<
             },
           ],
           END_TRACK: [
-            // TODO: check if next track is last and reshuffle
             {
               // No other action here so that there is seamless
               // playback when going directly from one song to another
@@ -372,6 +371,10 @@ const playerMachine = createMachine<
           selectedIndex: 0,
         },
       })),
+      // TODO: check if next track is last and reshuffle needs to happen
+      // in set track and set next track
+      // TODO: selecting a non-next song from up next should move it to now
+      // but not remove the other songs before it
       setTrack: assign<Machine.PlayerContext>((context, _event) => {
         const event = _event as Machine.SelectTrackEvent
         const eventTrack = selectors.getTrackById(context, event.trackId)
@@ -523,6 +526,9 @@ const playerMachine = createMachine<
             ? selectors.getNextRepeat(context)
             : context.repeat
 
+        localStorage.setItem('repeat', repeat.toString())
+        localStorage.setItem('shuffle', shuffle.toString())
+
         return {
           ...context,
           shuffle,
@@ -549,7 +555,9 @@ const playerMachine = createMachine<
               : context.selectMode === SelectMode.UpNext
               ? SelectMode.Play
               : context.selectMode
+
           localStorage.setItem('selectMode', next.toString())
+
           return next
         },
       }),
