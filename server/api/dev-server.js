@@ -2,7 +2,7 @@ const http = require('http')
 const path = require('path')
 const buildArtist = require('./build')
 
-const port = 8081
+const port = 3001
 
 http
   .createServer((req, res) => {

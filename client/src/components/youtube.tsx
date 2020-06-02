@@ -3,14 +3,13 @@ import { FunctionalComponent, h, ComponentChild } from 'preact'
 import { useEffect, useRef, useMemo, useLayoutEffect } from 'preact/hooks'
 import cx from 'classnames'
 import { PlayerSend } from '../machine/types'
-import { Track, Progress } from '../types'
+import { Track } from '../types'
 import useYouTube from '../lib/useYouTube'
 
 interface Props {
   selected?: Track
   play?: boolean
   send: PlayerSend
-  onProgress?: ({ time, percent }: Progress) => void
   children?: ComponentChild
   show?: boolean
 }
@@ -19,7 +18,6 @@ const YouTube: FunctionalComponent<Props> = ({
   selected,
   play,
   send,
-  onProgress,
   children,
   show,
 }) => {
@@ -35,31 +33,6 @@ const YouTube: FunctionalComponent<Props> = ({
       [send]
     )
   )
-
-  useEffect(() => {
-    if (!player || !selected || !play || !onProgress) return
-
-    const interval: NodeJS.Timeout = setInterval(() => {
-      if (!player || !selected || !play || !onProgress) {
-        return clearInterval(interval)
-      }
-
-      const { start, end } = selected
-      const current = player.getCurrentTime()
-      const time = current - start
-
-      if (!time || time <= 0) {
-        onProgress({ time: 0, percent: 0 })
-      } else {
-        onProgress({
-          time,
-          percent: (time / (end - start)) * 100,
-        })
-      }
-    }, 1000 / 60)
-
-    return (): void => clearInterval(interval)
-  }, [player, selected, play, onProgress])
 
   useEffect(() => {
     if (!player || !selected || !play) return

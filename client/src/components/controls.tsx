@@ -1,7 +1,7 @@
 import { FunctionalComponent, h } from 'preact'
 import cx from 'classnames'
 import { PlayerSend } from '../machine/types'
-import { Progress, Track, Repeat, SelectMode } from '../types'
+import { Track, Repeat, SelectMode } from '../types'
 import Button from './button'
 import hhmmss from '../lib/hhmmss'
 import ShuffleIcon from '../icons/shuffle'
@@ -11,6 +11,7 @@ import NextIcon from '../icons/next'
 import RepeatIcon from '../icons/repeat'
 import toTitle from '../lib/to-title'
 import ListIcon from '../icons/list'
+import { useState, useEffect } from 'preact/hooks/src'
 
 interface Props {
   ready: boolean
@@ -18,7 +19,7 @@ interface Props {
   play: boolean
   shuffle: boolean
   repeat: Repeat
-  progress: Progress
+  player?: YT.Player
   selectMode: SelectMode
   send: PlayerSend
   onTitleClick: () => void
@@ -28,13 +29,40 @@ const Controls: FunctionalComponent<Props> = ({
   ready,
   selected,
   play,
-  progress,
+  player,
   send,
   shuffle,
   repeat,
   selectMode,
   onTitleClick,
 }) => {
+  const [progress, setProgress] = useState({ time: 0, percent: 0 })
+
+  useEffect(() => {
+    if (!player || !selected || !play) return
+
+    const interval: NodeJS.Timeout = setInterval(() => {
+      if (!player || !selected || !play) {
+        return clearInterval(interval)
+      }
+
+      const { start, end } = selected
+      const current = player.getCurrentTime()
+      const time = current - start
+
+      if (!time || time <= 0) {
+        setProgress({ time: 0, percent: 0 })
+      } else {
+        setProgress({
+          time,
+          percent: (time / (end - start)) * 100,
+        })
+      }
+    }, 1000 / 60)
+
+    return (): void => clearInterval(interval)
+  }, [player, selected, play])
+
   const isRepeat = repeat === Repeat.Song || repeat === Repeat.Video
   return (
     <div class="px-2 py-1 relative overflow-hidden">

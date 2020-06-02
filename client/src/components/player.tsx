@@ -1,7 +1,7 @@
 import { FunctionalComponent, h, Fragment, ComponentChild } from 'preact'
-import { useState, useCallback, useEffect, useRef } from 'preact/hooks'
+import { useState, useEffect, useRef } from 'preact/hooks'
 import cx from 'classnames'
-import { Videos as TVideos, Progress } from '../types'
+import { Videos as TVideos } from '../types'
 import YouTube from './youtube'
 import Videos from './videos'
 import Controls from './controls'
@@ -23,18 +23,11 @@ const Player: FunctionalComponent<Props> = ({
   videos = [],
 }) => {
   const [scrollTo, setScrollTo] = useState(false)
-  const [progress, setProgress] = useState<Progress>({ time: 0, percent: 0 })
-  const onProgress = useCallback((p: Progress): void => setProgress(p), [
-    setProgress,
-  ])
-
   const selected = selectors.getSelectedTrack(state.context)
   const isPlaying = state.matches('playing')
   const isVisuallyPlaying = isPlaying || state.matches('requesting')
   const isReady = selectors.isReady(state)
   const showPlayer = !!selected
-
-  // TODO: share urls
 
   useEffect(() => {
     const listener = (e: KeyboardEvent): void => {
@@ -60,7 +53,6 @@ const Player: FunctionalComponent<Props> = ({
               selected={selected}
               play={state.matches('playing')}
               send={send}
-              onProgress={onProgress}
             >
               <div class="w-full h-full flex justify-center items-center flex-col">
                 {children}
@@ -72,7 +64,7 @@ const Player: FunctionalComponent<Props> = ({
           <Controls
             ready={isReady}
             selected={selected}
-            progress={progress}
+            player={state.context.player}
             play={isVisuallyPlaying}
             shuffle={state.context.shuffle}
             repeat={state.context.repeat}

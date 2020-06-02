@@ -30,11 +30,6 @@ export interface ArtistMeta {
   main?: string
 }
 
-export type Progress = {
-  time: number
-  percent: number
-}
-
 export enum Repeat {
   None,
   Video,

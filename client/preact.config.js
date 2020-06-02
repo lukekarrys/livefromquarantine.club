@@ -26,7 +26,7 @@ export default {
       config.devServer.hot = false
       config.devServer.proxy = {
         '/api': {
-          target: 'http://localhost:8081',
+          target: 'http://localhost:3001',
           pathRewrite: { [`^/api`]: '' },
         },
       }
