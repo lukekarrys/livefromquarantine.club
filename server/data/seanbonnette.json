@@ -3,6 +3,56 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 968
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS44QjNCNkRENjNFQTBEMUND",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "This show was a fundraiser for the Black People’s Justice Fund of Metro Phoenix. Please donate at http://bit.ly/blackbailfund if you can.\n\nSean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n1:43 AJJ - No More Tears\n2:40 Kimya Dawson - Hadlock Padlock\n7:25 AJJ - Body Terror Song\n11:08 AJJ - Mega Guillotine 2020\n14:38 Roger Miller - Oo-de-lally\n\n\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-06-03T06:50:48.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "eMyEXxZeuQU"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/eMyEXxZeuQU/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/eMyEXxZeuQU/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/eMyEXxZeuQU/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/eMyEXxZeuQU/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/eMyEXxZeuQU/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - June 2"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1309
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5EMUJFNzRCNDRFQjE5RjM4",
