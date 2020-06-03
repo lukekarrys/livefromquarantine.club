@@ -505,56 +505,6 @@
         "contentDetails": {
           "duration": 1352
         },
-        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5EMzJDRTUwQjBEOUVFQzAw",
-        "kind": "youtube#playlistItem",
-        "snippet": {
-          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
-          "channelTitle": "AJJ the band",
-          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:57 AJJ - Children of God\n5:05 Neil Young - Mellow My Mind\n7:45 AJJ - Truckers Are The Blood\n14:45 Sufjan Stevens - John Wayne Gacy, Jr.\n18:25 Roger Miller - Oo-de-lally\n19:47 AJJ - Your Voice, as I Remember It\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
-          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-          "publishedAt": "2020-05-23T06:11:31.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "JVsjXd4h5-Y"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/JVsjXd4h5-Y/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/JVsjXd4h5-Y/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/JVsjXd4h5-Y/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/JVsjXd4h5-Y/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/JVsjXd4h5-Y/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Live from Quarantine - May 22"
-        },
-        "comments": {
-          "items": [],
-          "kind": "youtube#commentThreadListResponse"
-        }
-      },
-      {
-        "contentDetails": {
-          "duration": 1352
-        },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS40NzE2MTY1QTM3RUI3QkU3",
         "kind": "youtube#playlistItem",
         "snippet": {
@@ -3565,7 +3515,7 @@
                     },
                     "authorChannelUrl": "http://www.youtube.com/channel/UCwlY3DIaaCuCiz5TvOyxuDw",
                     "authorDisplayName": "Łania",
-                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwBc7Foxa0QtDtMcaFKRye6eyCti5-eQw1I8w=s48-c-k-c0xffffffff-no-rj-mo",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJyesvh_POIu7n6bAFcaILQmeBbDJb11c1IWBElp=s48-c-k-c0xffffffff-no-rj-mo",
                     "publishedAt": "2020-03-30T20:40:26.000Z",
                     "textDisplay": "01:54 Self Eseetem - AJJ\n04:45 Lucky Strike - Foot Ox\n07:20 Return of the Grievous Angel - Gram Parsons and EmmyLou Harris\n11:17 Children of God - AJJ\n14:07 If You Have Love in Your Heart - AJJ\n15:23 Reason To Believe - Tim Hardin\n18:53 Small Red Boy - AJJ",
                     "textOriginal": "01:54 Self Eseetem - AJJ\n04:45 Lucky Strike - Foot Ox\n07:20 Return of the Grievous Angel - Gram Parsons and EmmyLou Harris\n11:17 Children of God - AJJ\n14:07 If You Have Love in Your Heart - AJJ\n15:23 Reason To Believe - Tim Hardin\n18:53 Small Red Boy - AJJ",
