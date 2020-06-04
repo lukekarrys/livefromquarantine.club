@@ -3,6 +3,56 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 959
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5GNzk2RTlDQTNCQzJCQzJG",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "This show was a fundraiser for the Black People’s Justice Fund of Metro Phoenix. Please donate at http://bit.ly/blackbailfund if you can.\n\nSean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n1:16 AJJ - People\n3:05 AJJ - Children of God\n5:39 Jeff Rosenstock - Nausea\n10:40 AJJ - Free Bird\n14:20 AJJ - Love in Your Heart\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-06-04T04:39:59.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "GRyaro9COwY"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/GRyaro9COwY/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/GRyaro9COwY/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/GRyaro9COwY/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/GRyaro9COwY/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/GRyaro9COwY/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - June 3"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 968
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS44QjNCNkRENjNFQTBEMUND",
