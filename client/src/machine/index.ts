@@ -375,6 +375,8 @@ const playerMachine = createMachine<
       // in set track and set next track
       // TODO: selecting a non-next song from up next should move it to now
       // but not remove the other songs before it
+      // TODO: playing a song with up-next songs playing should move that
+      // song to the selected up next spot which should not change the current order
       setTrack: assign<Machine.PlayerContext>((context, _event) => {
         const event = _event as Machine.SelectTrackEvent
         const eventTrack = selectors.getTrackById(context, event.trackId)
