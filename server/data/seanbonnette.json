@@ -3,6 +3,156 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 959
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5GNzk2RTlDQTNCQzJCQzJG",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "This show was a fundraiser for the Black People’s Justice Fund of Metro Phoenix. Please donate at http://bit.ly/blackbailfund if you can.\n\nSean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n1:16 AJJ - People\n3:05 AJJ - Children of God\n5:39 Jeff Rosenstock - Nausea\n10:40 AJJ - Free Bird\n14:20 AJJ - Love in Your Heart\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-06-04T04:39:59.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "GRyaro9COwY"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/GRyaro9COwY/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/GRyaro9COwY/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/GRyaro9COwY/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/GRyaro9COwY/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/GRyaro9COwY/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - June 3"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
+          "duration": 968
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS44QjNCNkRENjNFQTBEMUND",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "This show was a fundraiser for the Black People’s Justice Fund of Metro Phoenix. Please donate at http://bit.ly/blackbailfund if you can.\n\nSean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n1:43 AJJ - No More Tears\n2:40 Kimya Dawson - Hadlock Padlock\n7:25 AJJ - Body Terror Song\n11:08 AJJ - Mega Guillotine 2020\n14:38 Roger Miller - Oo-de-lally\n\n\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-06-03T06:50:48.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "eMyEXxZeuQU"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/eMyEXxZeuQU/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/eMyEXxZeuQU/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/eMyEXxZeuQU/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/eMyEXxZeuQU/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/eMyEXxZeuQU/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - June 2"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
+          "duration": 1309
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5EMUJFNzRCNDRFQjE5RjM4",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:42 Neil Young - Tell Me Why\n3:11 AJJ - Normalization Blues\n7:18 AJJ - Your Voice, as I Remember It\n9:57 Roger Miller - Oo-de-lally\n14:30 Tim Hardin - Black Sheep Boy\n16:06 AJJ - Small Red Boy\n\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-06-02T05:51:08.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "zBYWqh9Rj9s"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/zBYWqh9Rj9s/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/zBYWqh9Rj9s/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/zBYWqh9Rj9s/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/zBYWqh9Rj9s/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/zBYWqh9Rj9s/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - June 1"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 2841
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5CNEYyNTVBNDdGMDI1MDNC",
@@ -445,56 +595,6 @@
             }
           },
           "title": "Live from Quarantine - May 23"
-        },
-        "comments": {
-          "items": [],
-          "kind": "youtube#commentThreadListResponse"
-        }
-      },
-      {
-        "contentDetails": {
-          "duration": 1352
-        },
-        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5EMzJDRTUwQjBEOUVFQzAw",
-        "kind": "youtube#playlistItem",
-        "snippet": {
-          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
-          "channelTitle": "AJJ the band",
-          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:57 AJJ - Children of God\n5:05 Neil Young - Mellow My Mind\n7:45 AJJ - Truckers Are The Blood\n14:45 Sufjan Stevens - John Wayne Gacy, Jr.\n18:25 Roger Miller - Oo-de-lally\n19:47 AJJ - Your Voice, as I Remember It\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
-          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-          "publishedAt": "2020-05-23T06:11:31.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "JVsjXd4h5-Y"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/JVsjXd4h5-Y/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/JVsjXd4h5-Y/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/JVsjXd4h5-Y/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/JVsjXd4h5-Y/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/JVsjXd4h5-Y/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Live from Quarantine - May 22"
         },
         "comments": {
           "items": [],
@@ -4265,7 +4365,7 @@
                     },
                     "authorChannelUrl": "http://www.youtube.com/channel/UCzbGFC9oryM6c0XqLKUWaEw",
                     "authorDisplayName": "peachtime",
-                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwFeJ-Tc1gZNwU--n3ciNH4p7T0xcHZUUyBxpUu=s48-c-k-c0xffffffff-no-rj-mo",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxvt6l90O3Nk9P83GOBE1-z7Al5Ebjn4nHt3w=s48-c-k-c0xffffffff-no-rj-mo",
                     "publishedAt": "2020-03-20T21:11:10.000Z",
                     "textDisplay": "candy jail (silver jews) - 1:28 - 4:01\ncoffin dance - 4:14 -7:31\nhung up (dear nora) - 8:17 - 9:50\nyour voice, as i remember it -9:58 - 12:38\nif you have love in your heart 13:09 - 14:35\nmellow my mind (neil young) 15:10- 17:48\nmichael jordan of drunk driving :) - 18:20",
                     "textOriginal": "candy jail (silver jews) - 1:28 - 4:01\ncoffin dance - 4:14 -7:31\nhung up (dear nora) - 8:17 - 9:50\nyour voice, as i remember it -9:58 - 12:38\nif you have love in your heart 13:09 - 14:35\nmellow my mind (neil young) 15:10- 17:48\nmichael jordan of drunk driving :) - 18:20",

@@ -468,7 +468,6 @@ const playerMachine = createMachine<
       addTrack: assign<Machine.PlayerContext>((context, _event) => {
         const event = _event as Machine.SelectTrackEvent
         const eventTrack = selectors.getTrackById(context, event.trackId)
-        const changeOrder = selectors.isOrderChange(context, event)
 
         if (!eventTrack) {
           debug.error('ADD TRACK NOT FOUND', event)
@@ -493,24 +492,6 @@ const playerMachine = createMachine<
               'end'
             ),
           },
-          // If adding this track to upnext would change the order
-          // then set the main order to whatever the first track from
-          // upnext is. This isn't perfect but without it, you arent
-          // able to ever change between song orders is up next mode
-          order: changeOrder
-            ? trackOrder.setOrder({
-                selectedId: context.upNext.trackOrder[0].trackId,
-                ...pick(
-                  context,
-                  'shuffle',
-                  'repeat',
-                  'songOrder',
-                  'videoOrder',
-                  'videoSongOrder',
-                  'tracksById'
-                ),
-              })
-            : context.order,
         }
       }),
       setTrackOrder: assign<Machine.PlayerContext>((context, _event) => {
