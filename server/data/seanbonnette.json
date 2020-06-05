@@ -3,6 +3,56 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1308
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS43ODA2MDVCQzY5QzZDMjUw",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "If you enjoyed the show, please take a moment to sign these petitions:\n\nJustice for Breonna Taylor\n\nhttp://chng.it/VGcPQTJVHW\n\nJustice for Tony McDade\n\nhttp://chng.it/byLCCXMRQ6\n\nJustice for George Floyd\n\nhttp://chng.it/5RQn246chy\n\nJustice for Dion Johnson\n\nhttp://chng.it/5RbWptbZvV\n\nSean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n1:12 AJJ - Black Dog\n4:45 Magnetic Fields - All My Little Words\n7:27 AJJ - My Brain is a Human Body\n9:57 Silver Jews - Candy Jail\n12:45 AJJ - Fucc The Devil\n16:15 AJJ - Rejoice\n19:20 AJJ - Mega Guillotine 2020\n20:38 AJJ - American Body Rentals\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-06-05T06:36:34.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "2g-mQHbluH4"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/2g-mQHbluH4/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/2g-mQHbluH4/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/2g-mQHbluH4/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/2g-mQHbluH4/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/2g-mQHbluH4/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - June 4"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 959
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5GNzk2RTlDQTNCQzJCQzJG",
