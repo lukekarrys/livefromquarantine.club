@@ -3,6 +3,106 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1061
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4yOTZGRTNEQ0ZGNUM5RDgw",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "An evil wizard cursed the higher quality video, so this one is the instagram angle. \n\nSean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n2:05 Jay Reatard - Fading All Away\n3:55 AJJ - A Poem\n8:40 David Bowie - Ziggy Stardust\n13:42 AJJ - Do, Re, Me\n16:05 Roger Miller - Oo-de-lally\n\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-06-07T06:14:47.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "UWKI-eBtMsk"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/UWKI-eBtMsk/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/UWKI-eBtMsk/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/UWKI-eBtMsk/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/UWKI-eBtMsk/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/UWKI-eBtMsk/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - June 6"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
+          "duration": 1061
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5CQzUwREI3MzkxQjdBM0E0",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "An evil wizard cursed the higher quality video, so this one is the instagram angle. \n\nSean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n2:05 Jay Reatard - Fading All Away\n3:55 AJJ - A Poem\n8:40 David Bowie - Ziggy Stardust\n13:42 AJJ - Do, Re, Me\n16:05 Roger Miller - Oo-de-lally\n\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-06-07T06:14:40.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "UWKI-eBtMsk"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/UWKI-eBtMsk/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/UWKI-eBtMsk/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/UWKI-eBtMsk/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/UWKI-eBtMsk/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/UWKI-eBtMsk/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - June 6"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1212
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS40OTQ5QjlEMDgzN0FBNUIw",
