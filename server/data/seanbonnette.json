@@ -3,48 +3,48 @@
     "items": [
       {
         "contentDetails": {
-          "duration": 1061
+          "duration": 1216
         },
-        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4yOTZGRTNEQ0ZGNUM5RDgw",
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4zNDIxRUJGQThFRTg1QzAy",
         "kind": "youtube#playlistItem",
         "snippet": {
           "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
           "channelTitle": "AJJ the band",
-          "description": "An evil wizard cursed the higher quality video, so this one is the instagram angle. \n\nSean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n2:05 Jay Reatard - Fading All Away\n3:55 AJJ - A Poem\n8:40 David Bowie - Ziggy Stardust\n13:42 AJJ - Do, Re, Me\n16:05 Roger Miller - Oo-de-lally\n\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n1:47 David Bowie - Ziggy Stardust\n5:43 AJJ - Oldey Timey\n8:10 Silver Jews - Strange Victory, Strange Defeat\n12:40 AJJ - Love in the Time of HPV\n15:38 Amy Lee and Baby Billy - No More Misbehavin'\n18:11 AJJ - Little Prince\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
           "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-          "publishedAt": "2020-06-07T06:14:47.000Z",
+          "publishedAt": "2020-06-08T17:22:54.000Z",
           "resourceId": {
             "kind": "youtube#video",
-            "videoId": "UWKI-eBtMsk"
+            "videoId": "mmij9Y6Tj0c"
           },
           "thumbnails": {
             "default": {
               "height": 90,
-              "url": "https://i.ytimg.com/vi/UWKI-eBtMsk/default.jpg",
+              "url": "https://i.ytimg.com/vi/mmij9Y6Tj0c/default.jpg",
               "width": 120
             },
             "high": {
               "height": 360,
-              "url": "https://i.ytimg.com/vi/UWKI-eBtMsk/hqdefault.jpg",
+              "url": "https://i.ytimg.com/vi/mmij9Y6Tj0c/hqdefault.jpg",
               "width": 480
             },
             "maxres": {
               "height": 720,
-              "url": "https://i.ytimg.com/vi/UWKI-eBtMsk/maxresdefault.jpg",
+              "url": "https://i.ytimg.com/vi/mmij9Y6Tj0c/maxresdefault.jpg",
               "width": 1280
             },
             "medium": {
               "height": 180,
-              "url": "https://i.ytimg.com/vi/UWKI-eBtMsk/mqdefault.jpg",
+              "url": "https://i.ytimg.com/vi/mmij9Y6Tj0c/mqdefault.jpg",
               "width": 320
             },
             "standard": {
               "height": 480,
-              "url": "https://i.ytimg.com/vi/UWKI-eBtMsk/sddefault.jpg",
+              "url": "https://i.ytimg.com/vi/mmij9Y6Tj0c/sddefault.jpg",
               "width": 640
             }
           },
-          "title": "Live from Quarantine - June 6"
+          "title": "Live from Quarantine - June 7"
         },
         "comments": {
           "items": [],
@@ -55,14 +55,14 @@
         "contentDetails": {
           "duration": 1061
         },
-        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5CQzUwREI3MzkxQjdBM0E0",
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4yOTZGRTNEQ0ZGNUM5RDgw",
         "kind": "youtube#playlistItem",
         "snippet": {
           "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
           "channelTitle": "AJJ the band",
           "description": "An evil wizard cursed the higher quality video, so this one is the instagram angle. \n\nSean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n2:05 Jay Reatard - Fading All Away\n3:55 AJJ - A Poem\n8:40 David Bowie - Ziggy Stardust\n13:42 AJJ - Do, Re, Me\n16:05 Roger Miller - Oo-de-lally\n\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
           "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-          "publishedAt": "2020-06-07T06:14:40.000Z",
+          "publishedAt": "2020-06-07T06:14:47.000Z",
           "resourceId": {
             "kind": "youtube#video",
             "videoId": "UWKI-eBtMsk"
