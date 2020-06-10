@@ -3,6 +3,56 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1324
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5BNzdEQzY0REQzQTEyN0U3",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n1:46 AJJ - Love in Your Heart\n3:05 AJJ - Self Esteem\n4:45 AJJ - Kokopelli Face Tattoo\n8:45 AJJ - When I'm a Dead Boy\n10:50 Blaze Foley - Clay Pigeons\n15:30 Neil Young - Mellow My Mind\n18:30 AJJ - I Wanna Rock Out in My Dreams\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-06-10T05:19:46.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "zwg2xX0nLTU"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/zwg2xX0nLTU/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/zwg2xX0nLTU/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/zwg2xX0nLTU/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/zwg2xX0nLTU/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/zwg2xX0nLTU/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - June 9"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1387
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5EODgyNjY4MzA3QzY5RTkx",
