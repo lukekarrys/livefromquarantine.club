@@ -3,6 +3,56 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1030
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS44NjIxNjc5OUQwQkJBODQ5",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Text SIGN SEUDKP to 50409 to help end qualified immunity.\n\nSean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n1:50 Roger Miller - Reincarnation\n3:46 AJJ - Deathlessness\n8:15 AJJ - Skipping Stone\n11:00 Wiccan Babysitter - Brainframe\n14:55 AJJ - People\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-06-12T04:38:56.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "IgY5bxBxCYY"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/IgY5bxBxCYY/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/IgY5bxBxCYY/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/IgY5bxBxCYY/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/IgY5bxBxCYY/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/IgY5bxBxCYY/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - June 11"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1028
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS43RDg3MzJDMTRFMTZFOTAw",
