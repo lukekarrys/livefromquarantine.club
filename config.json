@@ -2,6 +2,7 @@
   "artists": [
     { "id": "seanbonnette", "name": "Sean Bonnette" },
     { "id": "bengibbard", "name": "Ben Gibbard" },
-    { "id": "benfolds", "name": "Ben Folds" }
+    { "id": "benfolds", "name": "Ben Folds" },
+    { "id": "tmoe", "name": "The Tallest Man on Earth" },
   ]
 }
