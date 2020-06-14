@@ -3,6 +3,82 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 4110
+        },
+        "id": "UExHNTA3Z3kyLUtwOFZqNjZqbnhuMUFBMFhGcjFMX1FYeS5GNjNDRDREMDQxOThCMDQ2",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCpd6ZO-gWNdtCOJ0T2ui-Fg",
+          "channelTitle": "Luke Karrys",
+          "description": "",
+          "playlistId": "PLG507gy2-Kp8Vj66jnxn1AA0XFr1L_QXy",
+          "publishedAt": "2020-05-04T17:38:40.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "BpM4EYDyyGk"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/BpM4EYDyyGk/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/BpM4EYDyyGk/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/BpM4EYDyyGk/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/BpM4EYDyyGk/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/BpM4EYDyyGk/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "#12 Saturday Apartment Requests w Ben Folds"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "UgzQmh8Jd2mUjMnbSdp4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgzQmh8Jd2mUjMnbSdp4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UC-FnbMQZt8ZdBd8H7lI7JCQ"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UC-FnbMQZt8ZdBd8H7lI7JCQ",
+                    "authorDisplayName": "Spd Rezizzt",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxHKoCGE-vv1kWyv_cIqksYPkkbpB9KWqp2xw=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-06-14T01:03:00.000Z",
+                    "textDisplay": "Setlist\n\n2:49 Webcast Theme\n4:15 banter\n8:50 How Many Years?\n13:25 Last Polka\n17:26 Rawhide Theme\n18:50 Jackson Browne's Doctor My Eyes\n23:40 Micheal Praytor, Five Years Later (attempt)\n24:49 Carrying Cathy\n28:41 Free Coffee (attempt)\n31:00 Free Coffee \n34:04 Ten Years Old\n34:38 Don't Change Your Plans\n40:20 Piano Lesson\n52:02 Song For The Dumped\n55:37 Kylie From Connecticut\n59:14 You To Thank\n1:02:52 Elliott Smith's Say Yes\n1:07:05 Webcast Theme",
+                    "textOriginal": "Setlist\n\n2:49 Webcast Theme\n4:15 banter\n8:50 How Many Years?\n13:25 Last Polka\n17:26 Rawhide Theme\n18:50 Jackson Browne's Doctor My Eyes\n23:40 Micheal Praytor, Five Years Later (attempt)\n24:49 Carrying Cathy\n28:41 Free Coffee (attempt)\n31:00 Free Coffee \n34:04 Ten Years Old\n34:38 Don't Change Your Plans\n40:20 Piano Lesson\n52:02 Song For The Dumped\n55:37 Kylie From Connecticut\n59:14 You To Thank\n1:02:52 Elliott Smith's Say Yes\n1:07:05 Webcast Theme",
+                    "updatedAt": "2020-06-14T01:03:00.000Z",
+                    "videoId": "BpM4EYDyyGk",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "BpM4EYDyyGk"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 3915
         },
         "id": "UExHNTA3Z3kyLUtwOFZqNjZqbnhuMUFBMFhGcjFMX1FYeS45NDk1REZENzhEMzU5MDQz",
