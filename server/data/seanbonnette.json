@@ -5,6 +5,56 @@
         "contentDetails": {
           "duration": 1275
         },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS42NEZDNTU0RTRENDUzRjMz",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n00:00 hello\n00:22 AJJ - Now That I'm At The Top Of My Game\n03:24 Wiccan Babysitter - Brainframe\n07:11 Sparklehorse - It's a Wonderful Life\n11:20 Silver Jews - Candy Jail\n13:50 AJJ - Jesus Saves\n18:00 AJJ - Linda Ronstadt\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-06-15T06:51:37.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "1-vt5xly29o"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/1-vt5xly29o/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/1-vt5xly29o/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/1-vt5xly29o/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/1-vt5xly29o/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/1-vt5xly29o/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - June 14"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
+          "duration": 1275
+        },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5ENEEyOTIwNkY4NzFGMkQ2",
         "kind": "youtube#playlistItem",
         "snippet": {
