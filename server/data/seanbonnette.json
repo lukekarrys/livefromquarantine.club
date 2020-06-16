@@ -3,6 +3,106 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1334
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5ERkRDQjY0N0Y0Q0VFOTdC",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sign the petition: https://www.change.org/p/andy-beshear-justice-for-breonna-taylor\n\nSean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n00:00 The Mountain Goats \"This Year\"\n03:30 AJJ \"Heartilation\"\n08:02 AJJ \"Temple Grandin, Too\"\n11:53 Arthur Russell \"Time Away\"\n15:24 AJJ \"Your Voice, As I Remember It\"\n18:12 Breonna Taylor Song\n20:52 Roger Miller \"Oo-de-lally\"\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-06-16T05:59:13.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "8-_CD4BGfBs"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/8-_CD4BGfBs/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/8-_CD4BGfBs/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/8-_CD4BGfBs/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/8-_CD4BGfBs/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/8-_CD4BGfBs/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - June 15"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
+          "duration": 1334
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5BRDg1NUY1OTY2QzgzOEM0",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sign the petition: https://www.change.org/p/andy-beshear-justice-for-breonna-taylor\n\nSean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n00:00 The Mountain Goats \"This Year\"\n03:30 AJJ \"Heartilation\"\n08:02 AJJ \"Temple Grandin, Too\"\n11:53 Arthur Russell \"Time Away\"\n15:24 AJJ \"Your Voice, As I Remember It\"\n18:12 Breonna Taylor Song\n20:52 Roger Miller \"Oo-de-lally\"\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-06-16T05:59:05.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "8-_CD4BGfBs"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/8-_CD4BGfBs/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/8-_CD4BGfBs/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/8-_CD4BGfBs/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/8-_CD4BGfBs/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/8-_CD4BGfBs/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - June 15"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1275
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS42NEZDNTU0RTRENDUzRjMz",
