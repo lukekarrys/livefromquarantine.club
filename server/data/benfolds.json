@@ -3,6 +3,183 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 4110
+        },
+        "id": "UExHNTA3Z3kyLUtwOFZqNjZqbnhuMUFBMFhGcjFMX1FYeS5GNjNDRDREMDQxOThCMDQ2",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCpd6ZO-gWNdtCOJ0T2ui-Fg",
+          "channelTitle": "Luke Karrys",
+          "description": "",
+          "playlistId": "PLG507gy2-Kp8Vj66jnxn1AA0XFr1L_QXy",
+          "publishedAt": "2020-05-04T17:38:40.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "BpM4EYDyyGk"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/BpM4EYDyyGk/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/BpM4EYDyyGk/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/BpM4EYDyyGk/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/BpM4EYDyyGk/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/BpM4EYDyyGk/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "#12 Saturday Apartment Requests w Ben Folds"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "UgzQmh8Jd2mUjMnbSdp4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgzQmh8Jd2mUjMnbSdp4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UC-FnbMQZt8ZdBd8H7lI7JCQ"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UC-FnbMQZt8ZdBd8H7lI7JCQ",
+                    "authorDisplayName": "Spd Rezizzt",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxHKoCGE-vv1kWyv_cIqksYPkkbpB9KWqp2xw=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-06-14T01:03:00.000Z",
+                    "textDisplay": "Setlist\n\n2:49 Webcast Theme\n4:15 banter\n8:50 How Many Years?\n13:25 Last Polka\n17:26 Rawhide Theme\n18:50 Jackson Browne's Doctor My Eyes\n23:40 Micheal Praytor, Five Years Later (attempt)\n24:49 Carrying Cathy\n28:41 Free Coffee (attempt)\n31:00 Free Coffee \n34:04 Ten Years Old\n34:38 Don't Change Your Plans\n40:20 Piano Lesson\n52:02 Song For The Dumped\n55:37 Kylie From Connecticut\n59:14 You To Thank\n1:02:52 Elliott Smith's Say Yes\n1:07:05 Webcast Theme",
+                    "textOriginal": "Setlist\n\n2:49 Webcast Theme\n4:15 banter\n8:50 How Many Years?\n13:25 Last Polka\n17:26 Rawhide Theme\n18:50 Jackson Browne's Doctor My Eyes\n23:40 Micheal Praytor, Five Years Later (attempt)\n24:49 Carrying Cathy\n28:41 Free Coffee (attempt)\n31:00 Free Coffee \n34:04 Ten Years Old\n34:38 Don't Change Your Plans\n40:20 Piano Lesson\n52:02 Song For The Dumped\n55:37 Kylie From Connecticut\n59:14 You To Thank\n1:02:52 Elliott Smith's Say Yes\n1:07:05 Webcast Theme",
+                    "updatedAt": "2020-06-14T01:03:00.000Z",
+                    "videoId": "BpM4EYDyyGk",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "BpM4EYDyyGk"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
+          "duration": 3915
+        },
+        "id": "UExHNTA3Z3kyLUtwOFZqNjZqbnhuMUFBMFhGcjFMX1FYeS45NDk1REZENzhEMzU5MDQz",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCpd6ZO-gWNdtCOJ0T2ui-Fg",
+          "channelTitle": "Luke Karrys",
+          "description": "",
+          "playlistId": "PLG507gy2-Kp8Vj66jnxn1AA0XFr1L_QXy",
+          "publishedAt": "2020-05-04T17:38:36.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "N3iNFtpiFvg"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/N3iNFtpiFvg/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/N3iNFtpiFvg/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/N3iNFtpiFvg/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/N3iNFtpiFvg/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/N3iNFtpiFvg/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "#11 Saturday Apartment Requests w Ben Folds"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "Ugw5MHUNCxxiMRHsFJR4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "Ugw5MHUNCxxiMRHsFJR4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCKPmvmqpJBLjq8T14jRv1RA"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCKPmvmqpJBLjq8T14jRv1RA",
+                    "authorDisplayName": "BeccaAndDan",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwPELhe9x8YpJ3L1KRhnVkJo10H29XUKZpXKg=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-06-07T02:56:04.000Z",
+                    "textDisplay": "3:25 - a beautiful and important talk\n13:30 - Philosophy / Scenes From an Italian Restaurant\n20:30 - Not the Man\n25:32 - Champagne Supernova\n27:33 - Doc Pomus\n31:00 - Poor Poor Pitiful Me \n35:06 - This Song Has No Title / Mess\n40:25 - Dog\n45:06 - Hiroshima \n48:32 - Heaven Help Us All / Learn to Live With What You Are \n52:46 - lesson for the kiddies\n58:58 - Jesusland",
+                    "textOriginal": "3:25 - a beautiful and important talk\n13:30 - Philosophy / Scenes From an Italian Restaurant\n20:30 - Not the Man\n25:32 - Champagne Supernova\n27:33 - Doc Pomus\n31:00 - Poor Poor Pitiful Me \n35:06 - This Song Has No Title / Mess\n40:25 - Dog\n45:06 - Hiroshima \n48:32 - Heaven Help Us All / Learn to Live With What You Are \n52:46 - lesson for the kiddies\n58:58 - Jesusland",
+                    "updatedAt": "2020-06-07T02:56:04.000Z",
+                    "videoId": "N3iNFtpiFvg",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "N3iNFtpiFvg"
+              }
+            },
+            {
+              "id": "Ugzi-KJiUBH8jFwMIzV4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "Ugzi-KJiUBH8jFwMIzV4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UC0NzlcLTWpxyWRPghSeghPw"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UC0NzlcLTWpxyWRPghSeghPw",
+                    "authorDisplayName": "roseanne !!!",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxfZdIBNJgdwJRA3hOuzkI5MNxngRbMrdKfow=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-06-07T02:40:34.000Z",
+                    "textDisplay": "13:32 - Philosophy / Scenes from an Italian Restaurant (mini mashup)\n20:31 - I’m Not the Man\n25:33 - Champagne Supernova\n27:33 - Doc Pomus\n31:02 - Poor Poor Pitiful Me (Warren Zevon cover)\n35:08 - This Song Has No Title (Elton John cover)\n36:22 - Mess\n40:26 - Dog\n45:07 - Hiroshima\n48:33 - Heaven Help Us All (Stevie Wonder cover)\n49:51 - Learn to Live with What You Are\n52:47 - Piano lesson for kids \n58:59 - Jesusland",
+                    "textOriginal": "13:32 - Philosophy / Scenes from an Italian Restaurant (mini mashup)\n20:31 - I’m Not the Man\n25:33 - Champagne Supernova\n27:33 - Doc Pomus\n31:02 - Poor Poor Pitiful Me (Warren Zevon cover)\n35:08 - This Song Has No Title (Elton John cover)\n36:22 - Mess\n40:26 - Dog\n45:07 - Hiroshima\n48:33 - Heaven Help Us All (Stevie Wonder cover)\n49:51 - Learn to Live with What You Are\n52:47 - Piano lesson for kids \n58:59 - Jesusland",
+                    "updatedAt": "2020-06-07T02:40:34.000Z",
+                    "videoId": "N3iNFtpiFvg",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "N3iNFtpiFvg"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 4555
         },
         "id": "UExHNTA3Z3kyLUtwOFZqNjZqbnhuMUFBMFhGcjFMX1FYeS41MzJCQjBCNDIyRkJDN0VD",
