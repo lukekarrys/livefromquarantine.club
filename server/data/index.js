@@ -227,7 +227,12 @@ const main = async (...artists) => {
     artists.map((id) =>
       getArtist(id)
         .then(() => ({ id, ok: true }))
-        .catch((error) => ({ id, ok: false, error }))
+        .catch((error) => ({
+          id,
+          ok: false,
+          error,
+          response: error.response.data,
+        }))
     )
   )
 }
