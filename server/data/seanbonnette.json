@@ -3,6 +3,56 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1598
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS41NUMwNTVERDNBRDc4REM0",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Today's show is raising money for the Equal Justice Initiative.\nhttps://eji.org/\n\nSean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n00:00 hello\n01:14 Neil Young - Don't Cry No Tears\n03:56 Neil Young - Tell Me Why\n06:58 Neil Young - Heart of Gold\n12:00 Neil Young - Roll Another Number\n15:00 Neil Young - Mellow My Mind\n18:35 Neil Young - Lookin' for a Love\n22:36 Neil Young - Hey Hey, My My\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-06-19T06:05:44.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "jOOLEVbG3RA"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/jOOLEVbG3RA/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/jOOLEVbG3RA/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/jOOLEVbG3RA/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/jOOLEVbG3RA/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/jOOLEVbG3RA/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - June 18"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1470
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4wQTI4OEZFRUE0Q0Q3ODQw",
@@ -5215,7 +5265,7 @@
                     },
                     "authorChannelUrl": "http://www.youtube.com/channel/UCzbGFC9oryM6c0XqLKUWaEw",
                     "authorDisplayName": "peachtime",
-                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxvt6l90O3Nk9P83GOBE1-z7Al5Ebjn4nHt3w=s48-c-k-c0xffffffff-no-rj-mo",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwFeJ-Tc1gZNwU--n3ciNH4p7T0xcHZUUyBxpUu=s48-c-k-c0xffffffff-no-rj-mo",
                     "publishedAt": "2020-03-20T21:11:10.000Z",
                     "textDisplay": "candy jail (silver jews) - 1:28 - 4:01\ncoffin dance - 4:14 -7:31\nhung up (dear nora) - 8:17 - 9:50\nyour voice, as i remember it -9:58 - 12:38\nif you have love in your heart 13:09 - 14:35\nmellow my mind (neil young) 15:10- 17:48\nmichael jordan of drunk driving :) - 18:20",
                     "textOriginal": "candy jail (silver jews) - 1:28 - 4:01\ncoffin dance - 4:14 -7:31\nhung up (dear nora) - 8:17 - 9:50\nyour voice, as i remember it -9:58 - 12:38\nif you have love in your heart 13:09 - 14:35\nmellow my mind (neil young) 15:10- 17:48\nmichael jordan of drunk driving :) - 18:20",
