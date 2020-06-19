@@ -4,7 +4,6 @@ require('dotenv').config({ path: path.resolve(__dirname, '..', '..', '.env') })
 const axios = require('axios')
 
 const main = async (...artists) => {
-  if (!artists.length) throw new Error('No artists')
   return axios.post(
     'https://api.github.com/repos/lukekarrys/livefromquarantine.club/dispatches',
     {
