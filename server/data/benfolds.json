@@ -3,6 +3,82 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 4531
+        },
+        "id": "UExHNTA3Z3kyLUtwOFZqNjZqbnhuMUFBMFhGcjFMX1FYeS40NzZCMERDMjVEN0RFRThB",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCpd6ZO-gWNdtCOJ0T2ui-Fg",
+          "channelTitle": "Luke Karrys",
+          "description": "patreon.com/benfolds",
+          "playlistId": "PLG507gy2-Kp8Vj66jnxn1AA0XFr1L_QXy",
+          "publishedAt": "2020-05-04T17:38:47.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "Riu1A6PPW0M"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/Riu1A6PPW0M/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/Riu1A6PPW0M/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/Riu1A6PPW0M/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/Riu1A6PPW0M/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/Riu1A6PPW0M/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "#13 Saturday Apartment Requests w Ben Folds"
+        },
+        "comments": {
+          "items": [
+            {
+              "id": "Ugx3jiCnrKquNxKDSEN4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "Ugx3jiCnrKquNxKDSEN4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UC-FnbMQZt8ZdBd8H7lI7JCQ"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UC-FnbMQZt8ZdBd8H7lI7JCQ",
+                    "authorDisplayName": "Spd Rezizzt",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxHKoCGE-vv1kWyv_cIqksYPkkbpB9KWqp2xw=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-06-21T00:48:41.000Z",
+                    "textDisplay": "Setlist\n\n6:11 (Vacuuming)\n7:09 How Many Years?\n9:35 banter: abridged versions today\n13:15 Jethro Tull's Thick As A Brick, Part 1\n18:23 From Above\n20:55 Rent A Cop\n23:06 Jane\n26:27 Elton John's Mona Lisas and Mad Hatters\n28:25 Adelaide\n31:52 Battle of Who Could Care Less\n35:24 Piano Lessons\n36:00 -Mad Scrollers Theme Video\n37:55 -Student Video\n41:30 -Major & Minor Chords\n50:41 Fired\n53:00 Password\n54:38 Thank You For Breaking My Heart\n59:29 Amelia Bright\n1:01:38 Zak & Sara\n1:03:09 Gone\n1:06:15 The Luckiest\n1:11:45 Webcast Theme",
+                    "textOriginal": "Setlist\n\n6:11 (Vacuuming)\n7:09 How Many Years?\n9:35 banter: abridged versions today\n13:15 Jethro Tull's Thick As A Brick, Part 1\n18:23 From Above\n20:55 Rent A Cop\n23:06 Jane\n26:27 Elton John's Mona Lisas and Mad Hatters\n28:25 Adelaide\n31:52 Battle of Who Could Care Less\n35:24 Piano Lessons\n36:00 -Mad Scrollers Theme Video\n37:55 -Student Video\n41:30 -Major & Minor Chords\n50:41 Fired\n53:00 Password\n54:38 Thank You For Breaking My Heart\n59:29 Amelia Bright\n1:01:38 Zak & Sara\n1:03:09 Gone\n1:06:15 The Luckiest\n1:11:45 Webcast Theme",
+                    "updatedAt": "2020-06-21T00:53:54.000Z",
+                    "videoId": "Riu1A6PPW0M",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "Riu1A6PPW0M"
+              }
+            }
+          ],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 4110
         },
         "id": "UExHNTA3Z3kyLUtwOFZqNjZqbnhuMUFBMFhGcjFMX1FYeS5GNjNDRDREMDQxOThCMDQ2",
