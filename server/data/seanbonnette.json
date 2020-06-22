@@ -3,6 +3,106 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1109
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS45MEI3NjgzMTVFQkZGODYx",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n00:00 Live from Quarantine\n00:40 AJJ - Kokopelli Face Tattoo\n04:25 AJJ - Feedbag\n08:30 AJJ - My Brain is a Human Body\n11:10 AJJ - Truckers are the Blood\n14:27 AJJ - I Miss You\n17:19 Roger Miller - Oo-de-lally\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-06-22T05:31:48.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "MTHcAFhtBzM"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/MTHcAFhtBzM/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/MTHcAFhtBzM/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/MTHcAFhtBzM/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/MTHcAFhtBzM/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/MTHcAFhtBzM/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - June 21"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
+          "duration": 1109
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5ENjg3MEUyQ0IzODMzQThB",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n00:00 Live from Quarantine\n00:40 AJJ - Kokopelli Face Tattoo\n04:25 AJJ - Feedbag\n08:30 AJJ - My Brain is a Human Body\n11:10 AJJ - Truckers are the Blood\n14:27 AJJ - I Miss You\n17:19 Roger Miller - Oo-de-lally\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-06-22T05:31:41.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "MTHcAFhtBzM"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/MTHcAFhtBzM/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/MTHcAFhtBzM/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/MTHcAFhtBzM/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/MTHcAFhtBzM/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/MTHcAFhtBzM/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - June 21"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1359
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS41MzJFNEYxODEyNzA0QUUx",
