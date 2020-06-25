@@ -70,7 +70,7 @@ const parseVideo = (video, parsers) => {
     contentDetails: { duration },
   } = video
 
-  let songs = []
+  let songs = null
 
   if (TIMESTAMP.test(description)) {
     songs = getSongsFromText(
