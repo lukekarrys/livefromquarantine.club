@@ -70,7 +70,7 @@ const parseVideo = (video, parsers) => {
     contentDetails: { duration },
   } = video
 
-  let songs = null
+  let songs = []
 
   if (TIMESTAMP.test(description)) {
     songs = getSongsFromText(
@@ -79,7 +79,7 @@ const parseVideo = (video, parsers) => {
     )
   }
 
-  if (!songs) {
+  if (songs === null) {
     for (let i = 0; i < comments.length; i++) {
       const comment = comments[i].snippet.topLevelComment.snippet.textDisplay
       // Get timestamps from top rated comments by finding the first one with
@@ -101,7 +101,8 @@ const parseVideo = (video, parsers) => {
     title: callParser(parsers.title, title),
     id: videoId,
     duration,
-    songs,
+    // Videos with no songs will just have a "Play All" button
+    songs: songs || [],
   }
 }
 

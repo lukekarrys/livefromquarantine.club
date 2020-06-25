@@ -16,7 +16,7 @@ const validate = (data) => {
       'number',
       `Duration is a number - ${v.title}`
     )
-    assert.ok(v.songs, `Has songs - ${v.title}`)
+    assert.ok(Array.isArray(v.songs), `Has songs - ${v.title}`)
     v.songs.forEach((s) => {
       assert.ok(s.name, `Every song has a name - ${v.title}`)
       assert.ok(
@@ -35,20 +35,12 @@ const publicPath = (...parts) =>
   path.join(__dirname, '..', '..', 'public', 'api', ...parts)
 
 const buildData = (parser, data) => {
-  const parsedData = mainParser(data.videos, parser.parsers)
-    .filter((video, index, videos) => {
+  const parsedData = mainParser(data.videos, parser.parsers).filter(
+    (video, index, videos) => {
       // The same video could be included multiple times in a playlist so remove dupes
       return videos.findIndex((v) => v.id === video.id) === index
-    })
-    // TODO: just remove videos that somehow have no songs but there
-    // should be an option to error instead via the validate call belowg
-    .filter((v) => {
-      if (!v.songs) {
-        console.warn(`${parser.meta.id} ${v.title} - No songs`)
-        return false
-      }
-      return true
-    })
+    }
+  )
 
   validate(parsedData)
 

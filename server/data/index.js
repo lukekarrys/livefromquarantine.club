@@ -85,6 +85,10 @@ const normalizeData = (d) =>
             'licensedContent',
             'projection',
             'regionRestriction',
+            'authorChannelId',
+            'authorChannelUrl',
+            'authorDisplayName',
+            'authorProfileImageUrl',
           ].includes(key)
         ) {
           return undefined
