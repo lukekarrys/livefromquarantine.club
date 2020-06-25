@@ -3,6 +3,46 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 2545
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4zNEMzQ0FDREY1MkE1RkQ1",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Sean's streaming every Monday, Wednesday, and Friday around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\nA big surprise\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-06-23T07:42:49.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "t6VzNxHX8c0"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/t6VzNxHX8c0/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/t6VzNxHX8c0/hqdefault.jpg",
+              "width": 480
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/t6VzNxHX8c0/mqdefault.jpg",
+              "width": 320
+            }
+          },
+          "title": "Live from Quarantine - June 22"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1109
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS45MEI3NjgzMTVFQkZGODYx",
@@ -3911,7 +3951,7 @@
                     },
                     "authorChannelUrl": "http://www.youtube.com/channel/UCauPILEtw_JUBFVJQF5VD4Q",
                     "authorDisplayName": "Macaroni and Jesus",
-                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJzdRwUO9HINE3F8PgIgtf5u_rDVyB06dS63dA=s48-c-k-c0xffffffff-no-rj-mo",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJy2uDEqOETI8Jjrfr_hX9jTJUelXko-PykVOjhrBA=s48-c-k-c0xffffffff-no-rj-mo",
                     "publishedAt": "2020-04-08T23:35:45.000Z",
                     "textDisplay": "Setlist: \nI Think of Demons - Roky Erickson (cover) 1:30\nMaggie - AJJ 6:11\nFeedbag - AJJ 8:32\nSouth of Heaven - Slayer  (partial cover) 11:29\nDistance - AJJ 12:56\nMotor Away - Guided by Voices (cover) 14:41\nCandy Jail - Silver Jews (cover) 17:55\nLove Will Fuck Us Up - AJJ 20:32",
                     "textOriginal": "Setlist: \nI Think of Demons - Roky Erickson (cover) 1:30\nMaggie - AJJ 6:11\nFeedbag - AJJ 8:32\nSouth of Heaven - Slayer  (partial cover) 11:29\nDistance - AJJ 12:56\nMotor Away - Guided by Voices (cover) 14:41\nCandy Jail - Silver Jews (cover) 17:55\nLove Will Fuck Us Up - AJJ 20:32",
@@ -4058,7 +4098,7 @@
                     },
                     "authorChannelUrl": "http://www.youtube.com/channel/UCauPILEtw_JUBFVJQF5VD4Q",
                     "authorDisplayName": "Macaroni and Jesus",
-                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJzdRwUO9HINE3F8PgIgtf5u_rDVyB06dS63dA=s48-c-k-c0xffffffff-no-rj-mo",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJy2uDEqOETI8Jjrfr_hX9jTJUelXko-PykVOjhrBA=s48-c-k-c0xffffffff-no-rj-mo",
                     "publishedAt": "2020-04-06T22:36:02.000Z",
                     "textDisplay": "Setlist:\nNo Children (The Mountain Goats cover) 1:06\nYou Don't Deserve Yourself 4:44 \nA Song Dedicated to the Memory of Stormy the Rabbit 12:53\nYou May Be Right (Billy Joel cover) 16:41\nGetting Naked and Playing with Guns 20:50\nReincarnation (Roger Miller cover) 24:11",
                     "textOriginal": "Setlist:\nNo Children (The Mountain Goats cover) 1:06\nYou Don't Deserve Yourself 4:44 \nA Song Dedicated to the Memory of Stormy the Rabbit 12:53\nYou May Be Right (Billy Joel cover) 16:41\nGetting Naked and Playing with Guns 20:50\nReincarnation (Roger Miller cover) 24:11",
@@ -4291,6 +4331,31 @@
                     "textDisplay": "So many thanks, Sean, especially for the beautiful rendition of FTD!\n\n02:37 Angel of Death\n05:20 Jesus Saves\n08:40 Black Sheep Boy (Tim Hardin cover)\n10:34 Love Will Fuck Us Apart\n12:23 Alpha Rats Nest (The Mountain Goats cover)\n14:33 Fucc The Devil\n16:57 Body Terror Song (with brief American Body Rentals interlude)\n19:36 You Swan, Go On (Mount Eerie with Julie Doiron and Fred Squire cover)",
                     "textOriginal": "So many thanks, Sean, especially for the beautiful rendition of FTD!\n\n02:37 Angel of Death\n05:20 Jesus Saves\n08:40 Black Sheep Boy (Tim Hardin cover)\n10:34 Love Will Fuck Us Apart\n12:23 Alpha Rats Nest (The Mountain Goats cover)\n14:33 Fucc The Devil\n16:57 Body Terror Song (with brief American Body Rentals interlude)\n19:36 You Swan, Go On (Mount Eerie with Julie Doiron and Fred Squire cover)",
                     "updatedAt": "2020-04-04T01:49:02.000Z",
+                    "videoId": "dkUIfRFo3cE",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "dkUIfRFo3cE"
+              }
+            },
+            {
+              "id": "UgzJFZTFlI_oZmDcSFd4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgzJFZTFlI_oZmDcSFd4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCi7v6eB0S6cT7nVxNCSLgMA"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCi7v6eB0S6cT7nVxNCSLgMA",
+                    "authorDisplayName": "Hmw",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJxOoEH8EJ7UdZnk8pI-ZHjUnyvE0FP5rxuKvg=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-04-03T21:21:18.000Z",
+                    "textDisplay": "(SONG LIST) \nAngel of death - 2:38\r\nJesus saves - 5:21\r\nBlack sheep boy (Tim Hardin ) - 8:40\r\nLove will Fuck us apart - 10:24\r\nAlpha Rats Nest (The Mountain Goats) - 12:24\r\nFucc the Devil - 14:33\r\nBody Terror Song - 16:57\r\nYou Swan, Go On (Mount Eerie) - 19:36",
+                    "textOriginal": "(SONG LIST) \nAngel of death - 2:38\r\nJesus saves - 5:21\r\nBlack sheep boy (Tim Hardin ) - 8:40\r\nLove will Fuck us apart - 10:24\r\nAlpha Rats Nest (The Mountain Goats) - 12:24\r\nFucc the Devil - 14:33\r\nBody Terror Song - 16:57\r\nYou Swan, Go On (Mount Eerie) - 19:36",
+                    "updatedAt": "2020-04-03T21:21:18.000Z",
                     "videoId": "dkUIfRFo3cE",
                     "viewerRating": "none"
                   }
@@ -5072,6 +5137,81 @@
                 },
                 "videoId": "-ir2Yh8UL30"
               }
+            },
+            {
+              "id": "UgxmAhvHXfIqLMCfoQF4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgxmAhvHXfIqLMCfoQF4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCSeas1W-eVZ50x0EPuQ4AHg"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCSeas1W-eVZ50x0EPuQ4AHg",
+                    "authorDisplayName": "Logoscyth",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwbRa5oWzd8CsKHRYLEKu9tXDpxeT4ez2gGjQ=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-03-25T05:36:20.000Z",
+                    "textDisplay": "02:08 - Loudmouth\n05:58 - Rocky Raccoon (The Beatles)\n11:25 - Just Like Old Times (Todd Snider)\n16:53 - Fuckboy\n19:53 - I Think Of Demons (Roky Erickson)\n23:30 - White Face, Black Eyes",
+                    "textOriginal": "02:08 - Loudmouth\n05:58 - Rocky Raccoon (The Beatles)\n11:25 - Just Like Old Times (Todd Snider)\n16:53 - Fuckboy\n19:53 - I Think Of Demons (Roky Erickson)\n23:30 - White Face, Black Eyes",
+                    "updatedAt": "2020-03-25T05:36:28.000Z",
+                    "videoId": "-ir2Yh8UL30",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "-ir2Yh8UL30"
+              }
+            },
+            {
+              "id": "UgwhOtsAMFUzIKpZPd94AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgwhOtsAMFUzIKpZPd94AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UCDLMccSwTPom2ysYnh8lqLg"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UCDLMccSwTPom2ysYnh8lqLg",
+                    "authorDisplayName": "taako y'know? from tv?",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJw_aw-zM3kpitwVS7wT2IR5X2wwubgikNhTpovJCw=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-03-24T19:51:41.000Z",
+                    "textDisplay": "Start- \"Loud Mouth\"\n5:55 - \"Rocky racoon\" Beatles cover\n11:15 \"Just like old times\" rod snyder cover\n16:50 \"Fuck boy\" cover \n(Side note: its kaay-po miss me with ka-po)\n19:58 \"I think of demons\" Rocky Erikson cover\n23:32 \"White face black eyes\"",
+                    "textOriginal": "Start- \"Loud Mouth\"\n5:55 - \"Rocky racoon\" Beatles cover\n11:15 \"Just like old times\" rod snyder cover\n16:50 \"Fuck boy\" cover \n(Side note: its kaay-po miss me with ka-po)\n19:58 \"I think of demons\" Rocky Erikson cover\n23:32 \"White face black eyes\"",
+                    "updatedAt": "2020-03-24T20:10:12.000Z",
+                    "videoId": "-ir2Yh8UL30",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "-ir2Yh8UL30"
+              }
+            },
+            {
+              "id": "UgxZoW0MhJwaMaQGclZ4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgxZoW0MhJwaMaQGclZ4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "authorChannelId": {
+                      "value": "UC18Kps8ZsGs-Ypfi3gMkffg"
+                    },
+                    "authorChannelUrl": "http://www.youtube.com/channel/UC18Kps8ZsGs-Ypfi3gMkffg",
+                    "authorDisplayName": "Cole Brendel",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJwiwHP0WN9kHvZPX9cLXxboHOTfIWVzBdw41w=s48-c-k-c0xffffffff-no-rj-mo",
+                    "publishedAt": "2020-03-24T21:55:07.000Z",
+                    "textDisplay": "1:41 Loudmouth\n5:25 Rock Raccoon (The Beatles)\n10:40 Just Like Old Times (Todd Snider)\n16:25 - Fuckboi \n19:07 I Think of Demons (Roky Erikson)\n23:28 White Face, Black Eyes\n\n\nI have a playlist going on Spotify of all the songs Sean has been playing in these! It's just title 'AJJ - Live From Quarantine' for those interested.",
+                    "textOriginal": "1:41 Loudmouth\n5:25 Rock Raccoon (The Beatles)\n10:40 Just Like Old Times (Todd Snider)\n16:25 - Fuckboi \n19:07 I Think of Demons (Roky Erikson)\n23:28 White Face, Black Eyes\n\n\nI have a playlist going on Spotify of all the songs Sean has been playing in these! It's just title 'AJJ - Live From Quarantine' for those interested.",
+                    "updatedAt": "2020-03-24T21:57:06.000Z",
+                    "videoId": "-ir2Yh8UL30",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "-ir2Yh8UL30"
+              }
             }
           ],
           "kind": "youtube#commentThreadListResponse"
@@ -5137,7 +5277,7 @@
                     },
                     "authorChannelUrl": "http://www.youtube.com/channel/UCauPILEtw_JUBFVJQF5VD4Q",
                     "authorDisplayName": "Macaroni and Jesus",
-                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJzdRwUO9HINE3F8PgIgtf5u_rDVyB06dS63dA=s48-c-k-c0xffffffff-no-rj-mo",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJy2uDEqOETI8Jjrfr_hX9jTJUelXko-PykVOjhrBA=s48-c-k-c0xffffffff-no-rj-mo",
                     "publishedAt": "2020-03-23T17:14:30.000Z",
                     "textDisplay": "Tell Me Why (Neil Young cover) 2:48 \nKokopelli Face Tattoo 5:24\nEverybody's Talking (Harry Nilsson cover) 10:07\nJunkie Church 14:05\nThis Year (The Mountain Goats cover) 18:05\nDipping Things in Stuff 22:24\nSmall Red Boy 24:15",
                     "textOriginal": "Tell Me Why (Neil Young cover) 2:48 \nKokopelli Face Tattoo 5:24\nEverybody's Talking (Harry Nilsson cover) 10:07\nJunkie Church 14:05\nThis Year (The Mountain Goats cover) 18:05\nDipping Things in Stuff 22:24\nSmall Red Boy 24:15",
@@ -5289,7 +5429,7 @@
                     },
                     "authorChannelUrl": "http://www.youtube.com/channel/UCauPILEtw_JUBFVJQF5VD4Q",
                     "authorDisplayName": "Macaroni and Jesus",
-                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJzdRwUO9HINE3F8PgIgtf5u_rDVyB06dS63dA=s48-c-k-c0xffffffff-no-rj-mo",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJy2uDEqOETI8Jjrfr_hX9jTJUelXko-PykVOjhrBA=s48-c-k-c0xffffffff-no-rj-mo",
                     "publishedAt": "2020-03-21T06:46:00.000Z",
                     "textDisplay": "Body Terror Song 1:15\nStrange Victory, Strange Defeat (Silver Jews cover) 4:10\nSkipping Stone 7:18\nI Felt Your Shape (The Microphones cover) 10:45\nDistance 13:20",
                     "textOriginal": "Body Terror Song 1:15\nStrange Victory, Strange Defeat (Silver Jews cover) 4:10\nSkipping Stone 7:18\nI Felt Your Shape (The Microphones cover) 10:45\nDistance 13:20",
@@ -5542,7 +5682,7 @@
                     },
                     "authorChannelUrl": "http://www.youtube.com/channel/UC3sirXFGwh-zg4FGcC3vx2g",
                     "authorDisplayName": "103drs",
-                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJzg9u_3F-GD16lauYvoHt1MKAFFCHamb2u4Iw=s48-c-k-c0xffffffff-no-rj-mo",
+                    "authorProfileImageUrl": "https://yt3.ggpht.com/a/AATXAJzpcrDGfJz0NVnpTn6t2ULJ1epGHfBy4WMehshZ=s48-c-k-c0xffffffff-no-rj-mo",
                     "publishedAt": "2020-03-21T04:19:29.000Z",
                     "textDisplay": "6:11 Heartilation\n9:30 Comedown\n11:30 A Poem\n15:33 No more misbehaving\n18:45 I'm gonna love my children",
                     "textOriginal": "6:11 Heartilation\n9:30 Comedown\n11:30 A Poem\n15:33 No more misbehaving\n18:45 I'm gonna love my children",
