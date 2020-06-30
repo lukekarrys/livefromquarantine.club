@@ -3,6 +3,56 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1105
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS5BQzRBQzNEOTgzNTU2QkZB",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Welcome to season 2!\n\nSean's streaming every Monday, Wednesday, and Friday around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n00:00 Season 2\n00:43 AJJ - Normalization Blues\n03:44 Willie Nelson - I Couldn't Believe It Was True\n05:38 AJJ - Black Dog\n07:26 Oo-de-lally\n10:29 Sleeping in the Aviary - Pop Song\n12:55 AJJ - Now That I'm At The Top Of My Game\n15:40 AJJ - Skipping Stone\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-06-30T05:23:58.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "V_wQ1Y_lXbM"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/V_wQ1Y_lXbM/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/V_wQ1Y_lXbM/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/V_wQ1Y_lXbM/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/V_wQ1Y_lXbM/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/V_wQ1Y_lXbM/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - June 29"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 2545
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS4zNEMzQ0FDREY1MkE1RkQ1",
