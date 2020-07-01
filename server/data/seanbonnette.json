@@ -5081,25 +5081,6 @@
               }
             },
             {
-              "id": "UgxmAhvHXfIqLMCfoQF4AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "UgxmAhvHXfIqLMCfoQF4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-25T05:36:20.000Z",
-                    "textDisplay": "02:08 - Loudmouth\n05:58 - Rocky Raccoon (The Beatles)\n11:25 - Just Like Old Times (Todd Snider)\n16:53 - Fuckboy\n19:53 - I Think Of Demons (Roky Erickson)\n23:30 - White Face, Black Eyes",
-                    "textOriginal": "02:08 - Loudmouth\n05:58 - Rocky Raccoon (The Beatles)\n11:25 - Just Like Old Times (Todd Snider)\n16:53 - Fuckboy\n19:53 - I Think Of Demons (Roky Erickson)\n23:30 - White Face, Black Eyes",
-                    "updatedAt": "2020-03-25T05:36:28.000Z",
-                    "videoId": "-ir2Yh8UL30",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "-ir2Yh8UL30"
-              }
-            },
-            {
               "id": "UgwhOtsAMFUzIKpZPd94AaABAg",
               "kind": "youtube#commentThread",
               "snippet": {
@@ -5111,6 +5092,25 @@
                     "textDisplay": "Start- \"Loud Mouth\"\n5:55 - \"Rocky racoon\" Beatles cover\n11:15 \"Just like old times\" rod snyder cover\n16:50 \"Fuck boy\" cover \n(Side note: its kaay-po miss me with ka-po)\n19:58 \"I think of demons\" Rocky Erikson cover\n23:32 \"White face black eyes\"",
                     "textOriginal": "Start- \"Loud Mouth\"\n5:55 - \"Rocky racoon\" Beatles cover\n11:15 \"Just like old times\" rod snyder cover\n16:50 \"Fuck boy\" cover \n(Side note: its kaay-po miss me with ka-po)\n19:58 \"I think of demons\" Rocky Erikson cover\n23:32 \"White face black eyes\"",
                     "updatedAt": "2020-03-24T20:10:12.000Z",
+                    "videoId": "-ir2Yh8UL30",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "-ir2Yh8UL30"
+              }
+            },
+            {
+              "id": "UgxmAhvHXfIqLMCfoQF4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgxmAhvHXfIqLMCfoQF4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "publishedAt": "2020-03-25T05:36:20.000Z",
+                    "textDisplay": "02:08 - Loudmouth\n05:58 - Rocky Raccoon (The Beatles)\n11:25 - Just Like Old Times (Todd Snider)\n16:53 - Fuckboy\n19:53 - I Think Of Demons (Roky Erickson)\n23:30 - White Face, Black Eyes",
+                    "textOriginal": "02:08 - Loudmouth\n05:58 - Rocky Raccoon (The Beatles)\n11:25 - Just Like Old Times (Todd Snider)\n16:53 - Fuckboy\n19:53 - I Think Of Demons (Roky Erickson)\n23:30 - White Face, Black Eyes",
+                    "updatedAt": "2020-03-25T05:36:28.000Z",
                     "videoId": "-ir2Yh8UL30",
                     "viewerRating": "none"
                   }
