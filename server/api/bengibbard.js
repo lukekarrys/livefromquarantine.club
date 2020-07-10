@@ -9,5 +9,5 @@ module.exports.meta = {
   id: 'bengibbard',
   playlistId: 'PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv',
   main:
-    '<a href="https://venmo.com/BenGibbardLiveFromHome" target="_blank">Venmo: @BenGibbardLiveFromHome</a>',
+    '<a href="https://venmo.com/BenGibbardLiveFromHome" target="_blank">Venmo</a>',
 }
