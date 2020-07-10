@@ -18,6 +18,7 @@ module.exports.meta = {
   id: 'seanbonnette',
   playlistId: 'PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1',
   main: [
+    '<a href="http://www.patreon.com/ajjtheband" target="_blank">Venmo: Patreon</a>',
     '<a href="https://venmo.com/bonnseanette" target="_blank">Venmo: @bonnseanette</a>',
     '<a href="https://paypal.me/bonnseanette" target="_blank">Paypal: paypal.me/bonnseanette</a>',
     '<a href="https://cash.app/$bonnseanette" target="_blank">Cash App: $bonnseanette</a>',
