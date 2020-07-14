@@ -3,6 +3,56 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1571
+        },
+        "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS42RDgxQ0M2OUIwREZCNjZF",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean's streaming every Monday, Wednesday, and Friday around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n0:39 AJJ - #armageddon\n5:29 AJJ - Maggie\n7:49 AJJ - So Mad At You\n12:58 AJJ - All The Dead Kids / Unicron\n16:20 Daniel Johnston - True Love Will You Find You in the End\n19:30 AJJ - Psychic Warfare\n22:09 Sleeping in the Aviary - Pop Song\n25:00 oo-de-lally!!!!\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-07-14T07:07:45.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "t4_j8JsG8vM"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/t4_j8JsG8vM/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/t4_j8JsG8vM/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/t4_j8JsG8vM/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/t4_j8JsG8vM/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/t4_j8JsG8vM/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - July 13"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1408
         },
         "id": "UExSU0lfUU54R1oybFpQMTQxcG85dExHcExxTTZjaXVQMS40ODU2MTBGM0M5MkIwQzU0",
