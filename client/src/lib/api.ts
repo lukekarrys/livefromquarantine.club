@@ -7,6 +7,7 @@ import {
   ArtistMeta,
   ArtistId,
 } from '../types'
+import { artists } from '../../../config.json'
 
 interface NormalizedData {
   videos: Videos
@@ -90,8 +91,20 @@ const normalizeData = ({ meta, data: videos }: ApiData): NormalizedData => {
   return resp
 }
 
+const preloadedArtistIds = artists.map((artist) => artist.id)
+
+const fetchUrl = (id: ArtistId): string => {
+  if (process.env.NODE_ENV === 'production') {
+    return preloadedArtistIds.includes(id)
+      ? `/api/${id}.json`
+      : `/.netlify/functions/playlist?id=${id}`
+  } else {
+    return `/api/${id}.json`
+  }
+}
+
 const fetchData = (id: ArtistId): Promise<NormalizedData> =>
-  fetch(`/api/${id}.json`).then(async (resp) => {
+  fetch(fetchUrl(id)).then(async (resp) => {
     if (resp.ok) {
       const videos = await resp.json()
       return normalizeData(videos)

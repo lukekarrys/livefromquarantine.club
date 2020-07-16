@@ -1,5 +1,5 @@
 .env
 node_modules/
-client/node_modules/
 client/size-plugin.json
 public/
+functions-build/
