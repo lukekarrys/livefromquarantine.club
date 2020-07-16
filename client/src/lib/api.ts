@@ -94,10 +94,15 @@ const normalizeData = ({ meta, data: videos }: ApiData): NormalizedData => {
 const preloadedArtistIds = artists.map((artist) => artist.id)
 
 const fetchUrl = (id: ArtistId): string => {
-  if (process.env.NODE_ENV === 'production') {
-    return preloadedArtistIds.includes(id)
-      ? `/api/${id}.json`
-      : `/.netlify/functions/playlist?id=${id}`
+  // In dev mode everything gets loaded through the local API.
+  // In production, non-preloaded artists get loaded on demand
+  // a netlify function call. Preloaded artists are moved to
+  // /public/api/id.json during build and are fetched from there.
+  if (
+    process.env.NODE_ENV === 'production' &&
+    !preloadedArtistIds.includes(id)
+  ) {
+    return `/.netlify/functions/playlist?id=${id}`
   } else {
     return `/api/${id}.json`
   }
