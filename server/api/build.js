@@ -34,8 +34,8 @@ const validate = (data) => {
 const publicPath = (...parts) =>
   path.join(__dirname, '..', '..', 'public', 'api', ...parts)
 
-const buildData = (parser, data) => {
-  const parsedData = mainParser(data.videos, parser.parsers).filter(
+const buildData = (parsers, videos) => {
+  const parsedData = mainParser(videos, parsers).filter(
     (video, index, videos) => {
       // The same video could be included multiple times in a playlist so remove dupes
       return videos.findIndex((v) => v.id === video.id) === index
@@ -47,31 +47,37 @@ const buildData = (parser, data) => {
   return parsedData
 }
 
-const buildArtist = (artistKey) => {
-  const artistData = require(`../data/${artistKey}.json`)
-  const artistParser = require(`./${artistKey}`)
+const buildArtistFromId = (artistId) => {
+  let artist = null
+  let artistData = null
 
-  if (!artistData || !artistParser) {
-    throw new Error(`Invalid artistKey: ${artistKey}`)
+  try {
+    artist = require(`./${artistId}`)
+    artistData = require(`../data/${artistId}.json`)
+  } catch (e) {
+    throw new Error(`Invalid artistId: ${artistId}`)
+  }
+
+  if (!artistData || !artist) {
+    throw new Error(`Invalid artistId: ${artistId}`)
   }
 
   return {
-    meta: artistParser.meta,
-    data: buildData(artistParser, artistData),
+    meta: artist.meta,
+    data: buildData(artist.parsers, artistData.videos),
   }
 }
 
-const writeFile = async (data) => {
-  const { id } = data.meta
+const writeFile = async (id, data) => {
   await mkdirp(publicPath())
   await fs.writeFile(publicPath(`${id}.json`), JSON.stringify(data))
 }
 
-const buildAndSave = async (...artists) => {
+const buildAndSaveArtists = async (...artists) => {
   if (!artists.length) throw new Error('No artists')
   return Promise.all(
     artists.map((id) =>
-      writeFile(buildArtist(id))
+      writeFile(id, buildArtistFromId(id))
         .then(() => ({ id, ok: true }))
         .catch((error) => ({ id, ok: false, error }))
     )
@@ -80,7 +86,7 @@ const buildAndSave = async (...artists) => {
 
 if (require.main === module) {
   const cliArtists = process.argv.slice(2).flatMap((v) => v.split(','))
-  buildAndSave(
+  buildAndSaveArtists(
     ...(cliArtists.length ? cliArtists : config.artists.map((a) => a.id))
   )
     .then((res) => {
@@ -94,5 +100,11 @@ if (require.main === module) {
       process.exit(1)
     })
 } else {
-  module.exports = buildArtist
+  module.exports = {
+    buildArtist: buildArtistFromId,
+    processData: (meta, videos) => ({
+      meta,
+      data: buildData({}, videos),
+    }),
+  }
 }

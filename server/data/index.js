@@ -34,13 +34,22 @@ const commentUrl = (id, key) => {
   return url.toString()
 }
 
-const playlistUrl = (id, key, pageToken) => {
+const playlistItemsUrl = (id, key, pageToken) => {
   const url = new URL(`${apiUrl}/playlistItems`, apiUrl)
   url.searchParams.set('part', 'snippet')
   url.searchParams.set('maxResults', '50')
   url.searchParams.set('playlistId', id)
   url.searchParams.set('key', key)
   if (pageToken) url.searchParams.set('pageToken', pageToken)
+  return url.toString()
+}
+
+const playlistUrl = (id, key) => {
+  const url = new URL(`${apiUrl}/playlists`, apiUrl)
+  url.searchParams.set('part', 'snippet')
+  url.searchParams.set('maxResults', '1')
+  url.searchParams.set('id', id)
+  url.searchParams.set('key', key)
   return url.toString()
 }
 
@@ -110,7 +119,7 @@ const normalizeData = (d) =>
   )
 
 const getPaginatedVideos = async (id, key, pageToken, previousItems = []) => {
-  const url = playlistUrl(id, key, pageToken)
+  const url = playlistItemsUrl(id, key, pageToken)
 
   const resp = await get(url)
   const { items, nextPageToken } = resp.data
@@ -167,8 +176,25 @@ const getPaginatedVideos = async (id, key, pageToken, previousItems = []) => {
   }
 }
 
-const getVideosAndComments = async (artist, key) => {
-  const videosResp = await getPaginatedVideos(artist.meta.playlistId, key)
+const getPlaylistData = async (id, key) => {
+  const playlistResp = await get(playlistUrl(id, key))
+  const playlist = playlistResp.data.items[0]
+
+  if (!playlist) {
+    throw new Error('Playlist could not be found')
+  }
+
+  const { title, description } = playlist.snippet
+
+  return {
+    title,
+    description,
+  }
+}
+
+const getFullPlaylistData = async (playlistId, key) => {
+  const playlistMeta = await getPlaylistData(playlistId, key)
+  const videosResp = await getPaginatedVideos(playlistId, key)
   const videos = normalizeData(videosResp.data)
 
   await Promise.all(
@@ -199,14 +225,15 @@ const getVideosAndComments = async (artist, key) => {
   )
 
   return {
+    meta: playlistMeta,
     videos,
   }
 }
 
-const writeFile = async (artist, resp) => {
+const writeFile = async (fileId, resp) => {
   const prettierOptions = await prettier.resolveConfig(__dirname)
   await fs.writeFile(
-    path.join(__dirname, `${artist.meta.id}.json`),
+    path.join(__dirname, `${fileId}.json`),
     prettier.format(JSON.stringify(resp, null, 2), {
       parser: 'json',
       ...prettierOptions,
@@ -221,8 +248,8 @@ const getArtist = async (artistKey) => {
     throw new Error(`Invalid artistKey: ${artistKey}`)
   }
 
-  const resp = await getVideosAndComments(artist, API_KEY)
-  await writeFile(artist, resp)
+  const resp = await getFullPlaylistData(artist.playlistId, API_KEY)
+  await writeFile(artist.id, resp)
 }
 
 const main = async (...artists) => {
@@ -235,21 +262,27 @@ const main = async (...artists) => {
           id,
           ok: false,
           error,
-          response: error.response.data,
+          response: error.response && error.response.data,
         }))
     )
   )
 }
 
-const cliArtists = process.argv.slice(2).flatMap((v) => v.split(','))
-main(...(cliArtists.length ? cliArtists : config.artists.map((a) => a.id)))
-  .then((res) => {
-    console.log(hideKey(JSON.stringify(res, null, 2)))
-    if (res.some((r) => !r.ok)) {
-      throw new Error('Data error')
-    }
-  })
-  .catch((err) => {
-    console.error(err)
-    process.exit(1)
-  })
+if (require.main === module) {
+  const cliArtists = process.argv.slice(2).flatMap((v) => v.split(','))
+  main(...(cliArtists.length ? cliArtists : config.artists.map((a) => a.id)))
+    .then((res) => {
+      console.log(hideKey(JSON.stringify(res, null, 2)))
+      if (res.some((r) => !r.ok)) {
+        throw new Error('Data error')
+      }
+    })
+    .catch((err) => {
+      console.error(err)
+      process.exit(1)
+    })
+} else {
+  module.exports = {
+    fetchPlaylist: getFullPlaylistData,
+  }
+}
