@@ -106,7 +106,7 @@ const parseVideo = (video, parsers) => {
   }
 }
 
-module.exports.main = (videos, parsers) => {
+module.exports.main = (videos, parsers = {}) => {
   const data = videos.items.map((video) => parseVideo(video, parsers))
   return callParser(parsers.data, data)
 }

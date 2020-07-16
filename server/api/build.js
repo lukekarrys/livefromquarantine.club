@@ -34,7 +34,7 @@ const validate = (data) => {
 const publicPath = (...parts) =>
   path.join(__dirname, '..', '..', 'public', 'api', ...parts)
 
-const buildData = (parsers, videos) => {
+const buildData = (videos, parsers) => {
   const parsedData = mainParser(videos, parsers).filter(
     (video, index, videos) => {
       // The same video could be included multiple times in a playlist so remove dupes
@@ -64,7 +64,7 @@ const buildArtistFromId = (artistId) => {
 
   return {
     meta: artist.meta,
-    data: buildData(artist.parsers, artistData.videos),
+    data: buildData(artistData.videos, artist.parsers),
   }
 }
 
