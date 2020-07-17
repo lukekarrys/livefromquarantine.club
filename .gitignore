@@ -2,3 +2,4 @@
 node_modules/
 client/size-plugin.json
 public/
+server/functions/*.zip

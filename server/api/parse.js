@@ -1,3 +1,5 @@
+const assert = require('assert')
+
 const TIMESTAMP = /(?:\d+:)?\d+:\d+/
 
 const startWithTimestamp = new RegExp(`^[(]?${TIMESTAMP.source}`)
@@ -106,9 +108,43 @@ const parseVideo = (video, parsers) => {
   }
 }
 
-module.exports.main = (videos, parsers = {}) => {
+const validate = (data) => {
+  data.forEach((v) => {
+    assert.ok(v.title, `Every video has a title`)
+    assert.ok(v.id, `Has an id - ${v.title}`)
+    assert.equal(
+      typeof v.duration,
+      'number',
+      `Duration is a number - ${v.title}`
+    )
+    assert.ok(Array.isArray(v.songs), `Has songs - ${v.title}`)
+    v.songs.forEach((s) => {
+      assert.ok(s.name, `Every song has a name - ${v.title}`)
+      assert.ok(
+        typeof s.time.start === 'number',
+        `Every song has a start time - ${v.title} / ${s.name}`
+      )
+      assert.ok(
+        s.time.start >= 0,
+        `Every song has a valid timestamp - ${v.title} / ${s.name}`
+      )
+    })
+  })
+}
+
+module.exports.parseData = (videos, parsers = {}) => {
   const data = videos.items.map((video) => parseVideo(video, parsers))
-  return callParser(parsers.data, data)
+
+  const parsedData = callParser(parsers.data, data).filter(
+    (video, index, videos) => {
+      // The same video could be included multiple times in a playlist so remove dupes
+      return videos.findIndex((v) => v.id === video.id) === index
+    }
+  )
+
+  validate(parsedData)
+
+  return parsedData
 }
 
 module.exports.isCommentMaybeSetlist = isCommentMaybeSetlist
