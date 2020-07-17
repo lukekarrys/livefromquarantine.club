@@ -8,7 +8,7 @@ const buildArtistFromId = (artistId) => {
 
   try {
     artist = require(`../artists/${artistId}`)
-    artistData = require(`../functions/${artistId}.json`)
+    artistData = require(`../cache/${artistId}.json`)
   } catch (e) {
     throw new Error(`Invalid artistId: ${artistId}`)
   }

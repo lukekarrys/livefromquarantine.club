@@ -3,6 +3,7 @@ require('dotenv').config({ path: path.resolve(__dirname, '..', '..', '.env') })
 
 const fs = require('fs').promises
 const prettier = require('prettier')
+const mkdirp = require('mkdirp')
 const { cli } = require('../artists')
 const getFullPlaylistData = require('./fetch-playlist')
 
@@ -10,10 +11,11 @@ const { API_KEY } = process.env
 
 const hideKey = (str) => str.replace(API_KEY, 'X'.repeat(3))
 
-const dataPath = (...parts) => path.join(__dirname, '..', 'functions', ...parts)
+const dataPath = (...parts) => path.join(__dirname, '..', 'cache', ...parts)
 
 const writeFile = async (fileId, resp) => {
   const prettierOptions = await prettier.resolveConfig(__dirname)
+  await mkdirp(dataPath())
   await fs.writeFile(
     dataPath(`${fileId}.json`),
     prettier.format(JSON.stringify(resp, null, 2), {
