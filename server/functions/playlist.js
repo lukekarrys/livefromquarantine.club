@@ -21,6 +21,7 @@ exports.handler = async (event) => {
 
     return {
       statusCode: 200,
+      headers: { 'Cache-Control': 'public, max-age=3600' },
       body: JSON.stringify({
         meta,
         data: parseData(videos),
