@@ -21,10 +21,9 @@ const Home: FunctionalComponent = () => {
         </label>
         <Input
           id="playlistId"
-          class="z-10 relative w-full block text-center text-xl p-1 border rounded-t"
+          class="z-10 relative w-full block text-center text-xl p-1 border rounded-t rounded-b-none"
           placeholder="PLG507gy2-Kp-SV2YxVUxndVgnRuoNrEJ5"
           border={false}
-          rounded={false}
           onInput={(e): void =>
             setPlalistId((e.target as HTMLInputElement).value)
           }
@@ -32,9 +31,8 @@ const Home: FunctionalComponent = () => {
         <Button
           as="input"
           type="submit"
-          rounded={false}
           border={false}
-          class="w-full block text-center mb-4 text-xl rounded-b border-l border-r border-b"
+          class="w-full block text-center mb-4 text-xl rounded-t-none rounded-b border-l border-r border-b"
           disabled={!playlistId}
           value="Go to playlist"
         />
