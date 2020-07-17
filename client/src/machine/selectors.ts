@@ -23,7 +23,7 @@ export const isReady = (state: Machine.PlayerMachineState): boolean => {
 }
 
 export const hasTracks = (context: Machine.PlayerContext): boolean => {
-  return !!context.tracks
+  return context.tracks.length > 0
 }
 
 export const isPlayerReady = (context: Machine.PlayerContext): boolean => {
