@@ -83,40 +83,40 @@ const UpNext: FunctionalComponent<Props> = ({
           </Button>
         </div>
         <div class="flex-1 overflow-y-scroll px-2 pt-2">
-          {upNextOrder.length > 0 && (
-            <div class="flex flex-col border-b border-gray-600 mb-2 pb-2">
-              {upNextOrder.map((track) => (
-                <div class="flex mb-1" key={track.orderId}>
-                  <Button
-                    class="flex-grow mr-1 truncate"
-                    tight
-                    onClick={(): void =>
-                      send({
-                        type: 'SELECT_TRACK',
-                        order: 'upNext',
-                        orderId: track.orderId,
-                        trackId: track.trackId,
-                        forcePlay: true,
-                      })
-                    }
-                  >
-                    {toTitle(tracks[track.trackId])}
-                  </Button>
-                  <Button
-                    buttonType={ButtonType.Danger}
-                    onClick={(): void =>
-                      send({
-                        type: 'REMOVE_TRACK',
-                        order: 'upNext',
-                        id: track.orderId,
-                      })
-                    }
-                  >
-                    <CloseIcon height={18} />
-                  </Button>
-                </div>
-              ))}
-              <div class="flex -mx-1">
+          <div class="flex flex-col border-b border-gray-600 mb-2 pb-2">
+            {upNextOrder.map((track) => (
+              <div class="flex mb-1" key={track.orderId}>
+                <Button
+                  class="flex-grow mr-1 truncate"
+                  tight
+                  onClick={(): void =>
+                    send({
+                      type: 'SELECT_TRACK',
+                      order: 'upNext',
+                      orderId: track.orderId,
+                      trackId: track.trackId,
+                      forcePlay: true,
+                    })
+                  }
+                >
+                  {toTitle(tracks[track.trackId])}
+                </Button>
+                <Button
+                  buttonType={ButtonType.Danger}
+                  onClick={(): void =>
+                    send({
+                      type: 'REMOVE_TRACK',
+                      order: 'upNext',
+                      id: track.orderId,
+                    })
+                  }
+                >
+                  <CloseIcon height={18} />
+                </Button>
+              </div>
+            ))}
+            <div class="flex -mx-1">
+              {upNextOrder.length > 0 && (
                 <Button
                   class="mx-1 flex-1"
                   buttonType={ButtonType.Danger}
@@ -126,25 +126,26 @@ const UpNext: FunctionalComponent<Props> = ({
                 >
                   Clear Up Next
                 </Button>
-                <Button
-                  class="mr-1 flex-1"
-                  onClick={(): void =>
-                    void window.prompt(
-                      'Share this url',
-                      `${window.location.origin}${window.location.pathname}#${[
-                        selected?.id,
-                        ...upNextOrder.map((t) => t.trackId),
-                      ]
-                        .filter(Boolean)
-                        .join(',')}`
-                    )
-                  }
-                >
-                  Share
-                </Button>
-              </div>
+              )}
+              <Button
+                class="mr-1 flex-1"
+                onClick={(): void =>
+                  void window.prompt(
+                    'Share this url',
+                    `${window.location.origin}${window.location.pathname}#${[
+                      selected?.id,
+                      ...upNextOrder.map((t) => t.trackId),
+                    ]
+                      .filter(Boolean)
+                      .join(',')}`
+                  )
+                }
+              >
+                Share
+              </Button>
             </div>
-          )}
+          </div>
+
           <div class="flex flex-col">
             {order.trackOrder.slice(order.selectedIndex + 1).map((track) => (
               <Button
