@@ -49,7 +49,7 @@ const Player: FunctionalComponent<Props> = ({
     <Fragment>
       <div class="sticky top-0 z-10" ref={playerContainer}>
         <div class={cx(showPlayer ? 'bg-black' : 'shadow-inner bg-gray-200')}>
-          <div class="mx-auto max-w-0 sm-h:max-w-video-16/9-60vh md-h:max-w-screen-c">
+          <div class="mx-auto max-w-video-16/9-40vh sm-h:max-w-video-16/9-50vh md-h:max-w-screen-c">
             <YouTube
               show={showPlayer}
               selected={selected}
@@ -57,7 +57,7 @@ const Player: FunctionalComponent<Props> = ({
               send={send}
             >
               <div class="w-full h-full flex justify-center items-center flex-col">
-                {children}
+                <div class="overflow-y-scroll">{children}</div>
               </div>
             </YouTube>
           </div>
