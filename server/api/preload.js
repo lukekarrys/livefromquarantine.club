@@ -11,7 +11,7 @@ const { API_KEY } = process.env
 
 const hideKey = (str) => str.replace(API_KEY, 'X'.repeat(3))
 
-const dataPath = (...parts) => path.join(__dirname, '..', 'cache', ...parts)
+const dataPath = (...parts) => path.join(__dirname, '..', 'preload', ...parts)
 
 const writeFile = async (fileId, resp) => {
   const prettierOptions = await prettier.resolveConfig(__dirname)

@@ -2,10 +2,10 @@ const path = require('path')
 const fs = require('fs').promises
 const mkdirp = require('mkdirp')
 const { cli } = require('../artists')
-const parseCache = require('./parse-cache')
+const parsePreload = require('./parse-preload')
 
 const publicPath = (...parts) =>
-  path.join(__dirname, '..', '..', 'public', 'api', ...parts)
+  path.join(__dirname, '..', '..', 'public', 'preloaded', ...parts)
 
 const writeFile = async (id, data) => {
   await mkdirp(publicPath())
@@ -16,7 +16,7 @@ const buildAndSaveArtists = async (artists = []) => {
   if (!artists.length) throw new Error('No artists')
   return Promise.all(
     artists.map((id) =>
-      writeFile(id, parseCache(id))
+      writeFile(id, parsePreload(id))
         .then(() => ({ id, ok: true }))
         .catch((error) => ({ id, ok: false, error }))
     )

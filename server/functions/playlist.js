@@ -9,7 +9,7 @@ exports.handler = async (event) => {
   if (httpMethod !== 'GET') {
     return {
       statusCode: 405,
-      body: JSON.stringify({ ok: false, error: `${httpMethod} not supported` }),
+      body: JSON.stringify({ error: `${httpMethod} not supported` }),
     }
   }
 
@@ -29,7 +29,9 @@ exports.handler = async (event) => {
   } catch (err) {
     return {
       statusCode: 500,
-      body: 'Error fetching playlist',
+      body: JSON.stringify({
+        error: 'Error fetching playlist',
+      }),
     }
   }
 }

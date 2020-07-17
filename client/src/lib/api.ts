@@ -104,17 +104,19 @@ const fetchUrl = (id: ArtistId): string => {
   ) {
     return `/.netlify/functions/playlist?id=${id}`
   } else {
-    return `/api/${id}.json`
+    return `/preloaded/${id}.json`
   }
 }
 
 const fetchData = (id: ArtistId): Promise<NormalizedData> =>
   fetch(fetchUrl(id)).then(async (resp) => {
+    const data = await resp.json()
     if (resp.ok) {
-      const videos = await resp.json()
-      return normalizeData(videos)
+      return normalizeData(data)
     } else {
-      throw new Error(`${resp.status}: ${resp.statusText ?? 'Not Ok'}`)
+      throw new Error(
+        data.error || resp.statusText || 'An unknown error occurred'
+      )
     }
   })
 

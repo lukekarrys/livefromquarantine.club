@@ -25,9 +25,9 @@ export default {
       // Hot reloading doesn't play well with the video player
       config.devServer.hot = false
       config.devServer.proxy = {
-        '/api': {
+        '/preloaded': {
           target: 'http://localhost:3001',
-          pathRewrite: { [`^/api`]: '' },
+          pathRewrite: { [`^/preloaded`]: '' },
         },
       }
     }

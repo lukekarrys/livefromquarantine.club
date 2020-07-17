@@ -43,8 +43,8 @@
   },
   "private": true,
   "scripts": {
-    "build": "node api/build.js",
-    "data": "node api/save-cache.js",
+    "build": "node api/build-preload.js",
+    "data": "node api/preload.js",
     "dev": "NODE_ENV=development node api/dev-server.js",
     "eslint": "eslint '**/*.{js,jsx,ts,tsx}'  --fix",
     "lint": "npm run prettier && npm run eslint",

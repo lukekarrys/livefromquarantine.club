@@ -8,7 +8,7 @@ const buildArtistFromId = (artistId) => {
 
   try {
     artist = require(`../artists/${artistId}`)
-    artistData = require(`../cache/${artistId}.json`)
+    artistData = require(`../preload/${artistId}.json`)
   } catch (e) {
     throw new Error(`Invalid artistId: ${artistId}`)
   }

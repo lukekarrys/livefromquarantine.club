@@ -131,7 +131,6 @@ const playerMachine = createMachine<
           FETCH_ERROR: {
             target: 'error',
             actions: 'setError',
-            cond: selectors.isPlayerReady,
           },
           ...playerTransitions,
         },

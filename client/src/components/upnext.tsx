@@ -103,7 +103,7 @@ const UpNext: FunctionalComponent<Props> = ({
                     {toTitle(tracks[track.trackId])}
                   </Button>
                   <Button
-                    type={ButtonType.Danger}
+                    buttonType={ButtonType.Danger}
                     onClick={(): void =>
                       send({
                         type: 'REMOVE_TRACK',
@@ -119,7 +119,7 @@ const UpNext: FunctionalComponent<Props> = ({
               <div class="flex -mx-1">
                 <Button
                   class="mx-1 flex-1"
-                  type={ButtonType.Danger}
+                  buttonType={ButtonType.Danger}
                   onClick={(): void =>
                     send({ type: 'REMOVE_ALL_TRACKS', order: 'upNext' })
                   }
