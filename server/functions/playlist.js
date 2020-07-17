@@ -1,5 +1,5 @@
 const { parseData } = require('../api/parse')
-const fetchPlaylist = require('../data/fetch')
+const fetchPlaylist = require('../api/fetch-playlist')
 
 const { API_KEY } = process.env
 

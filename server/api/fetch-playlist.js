@@ -1,6 +1,6 @@
 const axios = require('axios')
 const duration = require('iso8601-duration')
-const { isCommentMaybeSetlist } = require('../api/parse')
+const { isCommentMaybeSetlist } = require('./parse')
 
 const apiUrl = `https://www.googleapis.com/youtube/v3`
 

@@ -2,8 +2,9 @@ const path = require('path')
 require('dotenv').config({ path: path.resolve(__dirname, '..', '..', '.env') })
 
 const axios = require('axios')
+const { cli } = require('../artists')
 
-const main = async (...artists) => {
+const main = async (artists = []) => {
   return axios.post(
     'https://api.github.com/repos/lukekarrys/livefromquarantine.club/dispatches',
     {
@@ -18,7 +19,7 @@ const main = async (...artists) => {
   )
 }
 
-main(...process.argv.slice(2).flatMap((v) => v.split(',')))
+main(cli())
   .then((res) => {
     console.log('Success')
     console.log(res.status)

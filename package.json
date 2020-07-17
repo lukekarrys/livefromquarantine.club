@@ -42,6 +42,6 @@
     "precommit:server": "cd server && npm run precommit",
     "test": "run-s lint:**",
     "test:client": "cd client && npm test",
-    "trigger": "cd server && node data/trigger.js"
+    "trigger": "cd server && node api/trigger.js"
   }
 }

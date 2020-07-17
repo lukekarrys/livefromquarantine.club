@@ -2,14 +2,11 @@ const path = require('path')
 require('dotenv').config({ path: path.resolve(__dirname, '..', '..', '.env') })
 
 const http = require('http')
-const buildArtist = require('./parse-preloaded')
+const parseCache = require('./parse-cache')
 const fetchPlaylist = require('../functions/playlist').handler
-const config = require('../../config')
-
-const validIds = config.artists.map((a) => a.id)
+const { artists } = require('../artists')
 
 const port = 3001
-
 const server = http.createServer()
 
 server
@@ -21,8 +18,8 @@ server
       if (!id) throw new Error('Missing ID')
 
       let data
-      if (validIds.includes(id)) {
-        data = buildArtist(path.basename(req.url, '.json'))
+      if (artists.includes(id)) {
+        data = parseCache(path.basename(req.url, '.json'))
       } else {
         const resp = await fetchPlaylist({
           queryStringParameters: { id },

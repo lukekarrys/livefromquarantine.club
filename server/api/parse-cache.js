@@ -7,8 +7,8 @@ const buildArtistFromId = (artistId) => {
   let artistData = null
 
   try {
-    artist = require(`./${artistId}`)
-    artistData = require(`../data/${artistId}.json`)
+    artist = require(`../artists/${artistId}`)
+    artistData = require(`../functions/${artistId}.json`)
   } catch (e) {
     throw new Error(`Invalid artistId: ${artistId}`)
   }

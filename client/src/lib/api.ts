@@ -7,7 +7,7 @@ import {
   ArtistMeta,
   ArtistId,
 } from '../types'
-import { artists } from '../../../config.json'
+import artists from '../../artists.json'
 
 interface NormalizedData {
   videos: Videos

@@ -3,17 +3,19 @@ require('dotenv').config({ path: path.resolve(__dirname, '..', '..', '.env') })
 
 const fs = require('fs').promises
 const prettier = require('prettier')
-const config = require('../../config')
-const getFullPlaylistData = require('./fetch')
+const { cli } = require('../artists')
+const getFullPlaylistData = require('./fetch-playlist')
 
 const { API_KEY } = process.env
 
 const hideKey = (str) => str.replace(API_KEY, 'X'.repeat(3))
 
+const dataPath = (...parts) => path.join(__dirname, '..', 'functions', ...parts)
+
 const writeFile = async (fileId, resp) => {
   const prettierOptions = await prettier.resolveConfig(__dirname)
   await fs.writeFile(
-    path.join(__dirname, `${fileId}.json`),
+    dataPath(`${fileId}.json`),
     prettier.format(JSON.stringify(resp, null, 2), {
       parser: 'json',
       ...prettierOptions,
@@ -24,7 +26,7 @@ const writeFile = async (fileId, resp) => {
 const getArtist = async (artistKey) => {
   let artist = null
   try {
-    artist = require(`../api/${artistKey}`)
+    artist = require(`../artists/${artistKey}`)
   } catch (e) {
     throw new Error(`Invalid artistKey: ${artistKey}`)
   }
@@ -37,7 +39,7 @@ const getArtist = async (artistKey) => {
   await writeFile(artist.id, resp)
 }
 
-const main = async (...artists) => {
+const main = async (artists = []) => {
   if (!artists.length) throw new Error('No artists')
   return Promise.all(
     artists.map((id) =>
@@ -53,8 +55,7 @@ const main = async (...artists) => {
   )
 }
 
-const cliArtists = process.argv.slice(2).flatMap((v) => v.split(','))
-main(...(cliArtists.length ? cliArtists : config.artists.map((a) => a.id)))
+main(cli())
   .then((res) => {
     console.log(hideKey(JSON.stringify(res, null, 2)))
     if (res.some((r) => !r.ok)) {
