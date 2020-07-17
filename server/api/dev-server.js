@@ -2,7 +2,7 @@ const path = require('path')
 require('dotenv').config({ path: path.resolve(__dirname, '..', '..', '.env') })
 
 const http = require('http')
-const { buildArtist } = require('./build')
+const buildArtist = require('./parse-preloaded')
 const fetchPlaylist = require('../functions/playlist').handler
 const config = require('../../config')
 

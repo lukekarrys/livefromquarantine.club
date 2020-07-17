@@ -1,5 +1,5 @@
-const { processData } = require('../api/build')
-const { fetchPlaylist } = require('../data/index')
+const { parseData } = require('../api/parse')
+const fetchPlaylist = require('../data/fetch')
 
 const { API_KEY } = process.env
 
@@ -19,11 +19,12 @@ exports.handler = async (event) => {
       API_KEY
     )
 
-    const data = processData(meta, videos)
-
     return {
       statusCode: 200,
-      body: JSON.stringify(data),
+      body: JSON.stringify({
+        meta,
+        data: parseData(videos),
+      }),
     }
   } catch (err) {
     return {
