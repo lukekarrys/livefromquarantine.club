@@ -4,19 +4,22 @@ const path = require('path')
 const root = process.env.LAMBDA_TASK_ROOT
 const fnName = 'test'
 
-exports.handler = async () => {
+const tryIt = async (fn) => {
   try {
-    const dir = await fs.readdir(path.join(root))
-    const dir2 = await fs.readdir(path.join(root, fnName))
-
-    return {
-      statusCode: 200,
-      body: JSON.stringify({ dir, dir2 }, null, 2),
-    }
+    return await fn()
   } catch (e) {
-    return {
-      statusCode: 500,
-      body: e.message,
-    }
+    return e.message
+  }
+}
+
+exports.handler = async () => {
+  let body = {}
+
+  body.dir = await tryIt(() => fs.readdir(path.join(root)))
+  body.dir2 = await tryIt(() => fs.readdir(path.join(root, fnName)))
+
+  return {
+    statusCode: 200,
+    body: JSON.stringify(body),
   }
 }
