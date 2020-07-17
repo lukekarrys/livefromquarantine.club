@@ -1,12 +1,13 @@
 const fs = require('fs').promises
+const path = require('path')
 
 const root = process.env.LAMBDA_TASK_ROOT
 const fnName = 'test'
 
 exports.handler = async () => {
   try {
-    const dir = await fs.readdir(root)
-    const dir2 = await fs.readdir(root, fnName)
+    const dir = await fs.readdir(path.join(root))
+    const dir2 = await fs.readdir(path.join(root, fnName))
 
     return {
       statusCode: 200,
