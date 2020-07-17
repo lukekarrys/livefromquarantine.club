@@ -2,7 +2,6 @@ const fs = require('fs').promises
 const path = require('path')
 
 const root = process.env.LAMBDA_TASK_ROOT
-const fnName = 'test'
 
 const tryIt = async (fn) => {
   try {
@@ -15,11 +14,11 @@ const tryIt = async (fn) => {
 exports.handler = async () => {
   let body = {}
 
-  body.dir = await tryIt(() => fs.readdir(path.join(root)))
-  body.dir2 = await tryIt(() => fs.readdir(path.join(root, fnName)))
+  body.root = await tryIt(() => fs.readdir(path.join(root)))
+  body.src = await tryIt(() => fs.readdir(path.join(root, 'src')))
 
   return {
     statusCode: 200,
-    body: JSON.stringify(body),
+    body: JSON.stringify(body, null, 2),
   }
 }
