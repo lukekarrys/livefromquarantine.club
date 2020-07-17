@@ -29,7 +29,7 @@ exports.handler = async (event) => {
   } catch (err) {
     return {
       statusCode: 500,
-      body: err,
+      body: 'Error fetching playlist',
     }
   }
 }
