@@ -1,4 +1,4 @@
-const maxWidthContent = 1194
+const maxWidthContent = 890
 const aspectRatio = 16 / 9
 const maxVideoHeight = maxWidthContent * (1 / aspectRatio)
 
