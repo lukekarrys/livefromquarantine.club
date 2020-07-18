@@ -12,10 +12,9 @@ server
   .on('request', async (req, res) => {
     try {
       const resp = await functionHandler({
-        queryStringParameters: { id: qs.parse(req.url.split('?')[1]) },
+        queryStringParameters: { id: qs.parse(req.url.split('?')[1]).id },
         httpMethod: req.method,
       })
-
       res.writeHead(resp.statusCode)
       res.end(resp.body)
     } catch (e) {

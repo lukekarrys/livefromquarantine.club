@@ -6,8 +6,9 @@ const parsePlaylist = require('../../api/parse-playlist')
 const fetchPlaylist = require('../../api/fetch-playlist')
 
 const { API_KEY, LAMBDA_TASK_ROOT } = process.env
-const resolveSrcFile = (file) =>
-  path.resolve(LAMBDA_TASK_ROOT || __dirname, `./playlist/${file}`)
+const ROOT = LAMBDA_TASK_ROOT
+  ? path.join(LAMBDA_TASK_ROOT, 'src', 'functions', 'playlist')
+  : __dirname
 
 exports.handler = async (event) => {
   const { queryStringParameters, httpMethod } = event
@@ -29,15 +30,22 @@ exports.handler = async (event) => {
   }
 
   try {
-    console.log(klaw(LAMBDA_TASK_ROOT))
+    console.log(
+      JSON.stringify(
+        klaw(ROOT, {
+          filter: ({ path: p }) => !p.split(path.sep).includes('node_modules'),
+        }).map(({ path: p }) => p),
+        null,
+        2
+      )
+    )
 
     const [preloadedData, artist] = await Promise.all([
-      /*fs
-        .readFile(resolveSrcFile(`${id}.json`), 'utf-8')
-        .then((str) => JSON.parse(str)),*/
-      Promise.resolve({}),
       fs
-        .readFile(resolveSrcFile(`${id}.js`), 'utf-8')
+        .readFile(path.join(ROOT, `${id}.json`), 'utf-8')
+        .then((str) => JSON.parse(str)),
+      fs
+        .readFile(path.join(ROOT, `${id}.js`), 'utf-8')
         .then((str) => nodeEval(str, true)),
     ])
 
