@@ -1247,25 +1247,6 @@
                 },
                 "videoId": "1eEcVCyKMb8"
               }
-            },
-            {
-              "id": "UgyA0JzCcn4gxF1ktmZ4AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "UgyA0JzCcn4gxF1ktmZ4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-23T00:37:38.000Z",
-                    "textDisplay": "0:48: Isolation\n5:43: Silver Lining\n10:05: Thirteen \n14:11: Waltz #2 (XO)\n19:19: Motion Sickness\n24:36: If Not For You\n33:52: New Slang (When You Notice The Stripes)\n39:38: Hysteria\n44:33: The Bones Are The Skeletons’ Money\n46:39: Do You Realize?",
-                    "textOriginal": "0:48: Isolation\n5:43: Silver Lining\n10:05: Thirteen \n14:11: Waltz #2 (XO)\n19:19: Motion Sickness\n24:36: If Not For You\n33:52: New Slang (When You Notice The Stripes)\n39:38: Hysteria\n44:33: The Bones Are The Skeletons’ Money\n46:39: Do You Realize?",
-                    "updatedAt": "2020-03-23T00:37:38.000Z",
-                    "videoId": "1eEcVCyKMb8",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "1eEcVCyKMb8"
-              }
             }
           ],
           "kind": "youtube#commentThreadListResponse"
