@@ -1,12 +1,13 @@
 const fs = require('fs').promises
 const path = require('path')
+const klaw = require('klaw-sync')
 const nodeEval = require('eval')
 const parsePlaylist = require('../../api/parse-playlist')
 const fetchPlaylist = require('../../api/fetch-playlist')
 
 const { API_KEY, LAMBDA_TASK_ROOT } = process.env
-const resolveSrcFile = (file) => path.resolve(LAMBDA_TASK_ROOT || __dirname, `./playlist/${file}`)
-    
+const resolveSrcFile = (file) =>
+  path.resolve(LAMBDA_TASK_ROOT || __dirname, `./playlist/${file}`)
 
 exports.handler = async (event) => {
   const { queryStringParameters, httpMethod } = event
@@ -28,7 +29,8 @@ exports.handler = async (event) => {
   }
 
   try {
-    console.log(resolveSrcFile(id))
+    console.log(klaw(LAMBDA_TASK_ROOT))
+
     const [preloadedData, artist] = await Promise.all([
       /*fs
         .readFile(resolveSrcFile(`${id}.json`), 'utf-8')

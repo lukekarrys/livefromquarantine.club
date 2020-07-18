@@ -6,6 +6,7 @@
     "dotenv": "^8.2.0",
     "eval": "^0.1.4",
     "iso8601-duration": "^1.2.0",
+    "klaw-sync": "^6.0.0",
     "mkdirp": "^1.0.4"
   },
   "devDependencies": {
