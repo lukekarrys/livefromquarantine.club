@@ -11,22 +11,7 @@ const getLinesWithTimestamp = (text) =>
     .map((l) => l.trim())
     .filter((l) => startWithTimestamp.test(l) || endWithTimestamp.test(l))
 
-const isCommentMaybeSetlist = (commentText) => {
-  return getLinesWithTimestamp(commentText).length >= 3
-}
-
-const parseSeconds = (str) => {
-  const seconds = str
-    .split(':')
-    .reverse()
-    .map((v, i) => parseInt(v, 10) * Math.pow(60, i))
-    .reduce((sum, v) => sum + v, 0)
-  return seconds
-}
-
-const callParser = (p, v) => (typeof p === 'function' ? p(v) : v)
-
-const getSongsFromText = (text, parsers) => {
+const getSongsFromText = (text, parsers = {}) => {
   const songs = getLinesWithTimestamp(text)
     .map((line) => {
       const startEndTimestamps = new RegExp(
@@ -61,7 +46,22 @@ const getSongsFromText = (text, parsers) => {
   return songs.length ? songs : null
 }
 
-const parseVideo = (video, parsers) => {
+const findSetlist = (text) => {
+  return getLinesWithTimestamp(text).length >= 3 && getSongsFromText(text)
+}
+
+const parseSeconds = (str) => {
+  const seconds = str
+    .split(':')
+    .reverse()
+    .map((v, i) => parseInt(v, 10) * Math.pow(60, i))
+    .reduce((sum, v) => sum + v, 0)
+  return seconds
+}
+
+const callParser = (p, v) => (typeof p === 'function' ? p(v) : v)
+
+const parseVideo = (video, parsers = {}) => {
   const {
     snippet: {
       title,
@@ -84,17 +84,12 @@ const parseVideo = (video, parsers) => {
   if (songs === null) {
     for (let i = 0; i < comments.length; i++) {
       const comment = comments[i].snippet.topLevelComment.snippet.textDisplay
+      const setlist = findSetlist(comment)
       // Get timestamps from top rated comments by finding the first one with
       // at least 3 timestamps
-      if (isCommentMaybeSetlist(comment)) {
-        const songsFromComment = getSongsFromText(
-          callParser(parsers.comment, comment),
-          parsers
-        )
-        if (songsFromComment) {
-          songs = songsFromComment
-          break
-        }
+      if (setlist) {
+        songs = setlist
+        break
       }
     }
   }
@@ -147,4 +142,4 @@ module.exports.parseData = (videos, parsers = {}) => {
   return parsedData
 }
 
-module.exports.isCommentMaybeSetlist = isCommentMaybeSetlist
+module.exports.findSetlist = findSetlist

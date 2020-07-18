@@ -1,15 +1,16 @@
 const axios = require('axios')
 const duration = require('iso8601-duration')
-const { isCommentMaybeSetlist } = require('./parse')
+const { findSetlist } = require('./parse')
 
 const apiUrl = `https://www.googleapis.com/youtube/v3`
 
 const omitCommentIds = [
-  'UgyA0JzCcn4gxF1ktmZ4AaABAg',
-  'UgzY1loB0NOTUSY_jgR4AaABAg',
+  'UgyA0JzCcn4gxF1ktmZ4AaABAg', // Ben Gibbard: Live From Home (3/22/20)
 ]
 
-const blessCommentIds = ['UgzyR6a6B-Czl4pI5ZN4AaABAg']
+const blessCommentIds = [
+  'UgzyR6a6B-Czl4pI5ZN4AaABAg', // Ben Gibbard: Live From Home (3/22/20)
+]
 
 const get = (url) => {
   return axios.get(url)
@@ -191,14 +192,20 @@ const getFullPlaylistData = async (playlistId, key) => {
 
   await Promise.all(
     videos.items.map(async (video) => {
-      const url = commentUrl(video.snippet.resourceId.videoId, key)
-      video.comments = await get(url)
+      const { description, resourceId } = video.snippet
+
+      if (findSetlist(description)) {
+        video.comments = { items: [] }
+        return
+      }
+
+      video.comments = await get(commentUrl(resourceId.videoId, key))
         .then((resp) => {
           return Object.assign(resp.data, {
             items: resp.data.items
               .filter(
                 (comment) =>
-                  isCommentMaybeSetlist(
+                  findSetlist(
                     comment.snippet.topLevelComment.snippet.textDisplay
                   ) && !omitCommentIds.includes(comment.id)
               )
