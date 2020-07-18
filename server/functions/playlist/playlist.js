@@ -30,9 +30,10 @@ exports.handler = async (event) => {
   try {
     console.log(resolveSrcFile(id))
     const [preloadedData, artist] = await Promise.all([
-      fs
+      /*fs
         .readFile(resolveSrcFile(`${id}.json`), 'utf-8')
-        .then((str) => JSON.parse(str)),
+        .then((str) => JSON.parse(str)),*/
+      Promise.resolve({}),
       fs
         .readFile(resolveSrcFile(`${id}.js`), 'utf-8')
         .then((str) => nodeEval(str, true)),
