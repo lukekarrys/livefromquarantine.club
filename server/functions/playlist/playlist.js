@@ -1,6 +1,5 @@
 const fs = require('fs').promises
 const path = require('path')
-const klaw = require('klaw-sync')
 const nodeEval = require('eval')
 const parsePlaylist = require('../../api/parse-playlist')
 const fetchPlaylist = require('../../api/fetch-playlist')
@@ -11,7 +10,10 @@ const ROOT = LAMBDA_TASK_ROOT
   : __dirname
 
 exports.handler = async (event) => {
-  const { queryStringParameters, httpMethod } = event
+  const {
+    queryStringParameters: { id },
+    httpMethod,
+  } = event
 
   if (httpMethod !== 'GET') {
     return {
@@ -19,8 +21,6 @@ exports.handler = async (event) => {
       body: JSON.stringify({ error: `${httpMethod} not supported` }),
     }
   }
-
-  const { id } = queryStringParameters
 
   if (!id) {
     return {
@@ -30,16 +30,6 @@ exports.handler = async (event) => {
   }
 
   try {
-    console.log(
-      JSON.stringify(
-        klaw(ROOT, {
-          filter: ({ path: p }) => !p.split(path.sep).includes('node_modules'),
-        }).map(({ path: p }) => p),
-        null,
-        2
-      )
-    )
-
     const [preloadedData, artist] = await Promise.all([
       fs
         .readFile(path.join(ROOT, `${id}.json`), 'utf-8')
@@ -51,7 +41,6 @@ exports.handler = async (event) => {
 
     return {
       statusCode: 200,
-      headers: { 'Cache-Control': 'public, max-age=3600' },
       body: JSON.stringify({
         meta: {
           ...preloadedData.meta,
@@ -66,14 +55,10 @@ exports.handler = async (event) => {
   }
 
   try {
-    const { videos, meta } = await fetchPlaylist(
-      queryStringParameters.id,
-      API_KEY
-    )
+    const { videos, meta } = await fetchPlaylist(id, API_KEY)
 
     return {
       statusCode: 200,
-      headers: { 'Cache-Control': 'public, max-age=3600' },
       body: JSON.stringify({
         meta,
         data: parsePlaylist(videos),
