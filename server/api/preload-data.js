@@ -4,14 +4,15 @@ require('dotenv').config({ path: path.resolve(__dirname, '..', '..', '.env') })
 const fs = require('fs').promises
 const prettier = require('prettier')
 const mkdirp = require('mkdirp')
-const { cli } = require('../artists')
+const { cli } = require('./artists')
 const getFullPlaylistData = require('./fetch-playlist')
 
 const { API_KEY } = process.env
 
 const hideKey = (str) => str.replace(API_KEY, 'X'.repeat(3))
 
-const dataPath = (...parts) => path.join(__dirname, '..', 'preload', ...parts)
+const dataPath = (...parts) =>
+  path.join(__dirname, '..', 'functions', 'playlist', ...parts)
 
 const writeFile = async (fileId, resp) => {
   const prettierOptions = await prettier.resolveConfig(__dirname)
@@ -28,7 +29,7 @@ const writeFile = async (fileId, resp) => {
 const getArtist = async (artistKey) => {
   let artist = null
   try {
-    artist = require(`../artists/${artistKey}`)
+    artist = require(`../functions/playlist/${artistKey}.js`)
   } catch (e) {
     throw new Error(`Invalid artistKey: ${artistKey}`)
   }

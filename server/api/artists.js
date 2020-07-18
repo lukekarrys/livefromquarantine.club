@@ -2,9 +2,9 @@ const fs = require('fs')
 const path = require('path')
 
 const artists = fs
-  .readdirSync(path.join(__dirname))
-  .map((f) => path.basename(f, '.js'))
-  .filter((a) => a !== 'index')
+  .readdirSync(path.join(__dirname, '..', 'functions', 'playlist'))
+  .filter((f) => path.extname(f) === '.json')
+  .map((f) => path.basename(f, '.json'))
 
 module.exports = {
   artists,

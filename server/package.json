@@ -4,6 +4,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "dotenv": "^8.2.0",
+    "eval": "^0.1.4",
     "iso8601-duration": "^1.2.0",
     "mkdirp": "^1.0.4"
   },
@@ -43,13 +44,12 @@
   },
   "private": true,
   "scripts": {
-    "build": "node api/build-preload.js",
-    "data": "node api/preload.js",
+    "data": "node api/preload-data.js",
     "dev": "NODE_ENV=development node api/dev-server.js",
     "eslint": "eslint '**/*.{js,jsx,ts,tsx}'  --fix",
     "lint": "npm run prettier && npm run eslint",
     "precommit": "lint-staged",
     "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,css,md,json}'",
-    "trigger": "node api/trigger.js"
+    "trigger": "node api/trigger-gh-preload.js"
   }
 }

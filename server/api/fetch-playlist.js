@@ -1,6 +1,6 @@
 const axios = require('axios')
 const duration = require('iso8601-duration')
-const { findSetlist } = require('./parse')
+const findSetlist = require('./find-setlist')
 
 const apiUrl = `https://www.googleapis.com/youtube/v3`
 
