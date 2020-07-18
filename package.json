@@ -24,9 +24,8 @@
     "url": "git+https://github.com/lukekarrys/livefromquarantine.club.git"
   },
   "scripts": {
-    "build": "run-s build:client build:server",
+    "build": "run-s build:client",
     "build:client": "cd client && npm run build",
-    "build:server": "cd server && npm run build",
     "data": "cd server && npm run data",
     "dev": "run-p dev:**",
     "dev:client": "cd client && npm run dev",
@@ -42,6 +41,6 @@
     "precommit:server": "cd server && npm run precommit",
     "test": "run-s lint:**",
     "test:client": "cd client && npm test",
-    "trigger": "cd server && node api/trigger.js"
+    "trigger": "cd server && node api/trigger-gh-preload.js"
   }
 }
