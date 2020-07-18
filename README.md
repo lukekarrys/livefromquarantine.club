@@ -18,9 +18,9 @@ Preloaded playlists are fetched and preloaded with the built site via GitHub act
 
 ## Adding a Preloaded Playlist
 
-1. Add a file to `server/artists/ARTIST_ID.json` with at least `playlistId`, `id`, and `meta.title`
+1. Add a file to `server/functions/playlist/ARTIST_ID.js` with at least `playlistId`, `id`, and `meta.title`
 2. Add an entry to `client/artists.json` with a matching `id` and the `name` which will populate the button on the index page
-3. Run `npm run data` to save the data to `server/preload`
+3. Run `npm run data ID` to save the data to `server/functions/playlist/ARTIST_ID.json`
 4. This playlist will now be updated and built with the site each time
 
 ## Building the site

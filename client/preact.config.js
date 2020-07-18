@@ -25,9 +25,9 @@ export default {
       // Hot reloading doesn't play well with the video player
       config.devServer.hot = false
       config.devServer.proxy = {
-        '/preloaded': {
+        '/.netlify/functions/playlist': {
           target: 'http://localhost:3001',
-          pathRewrite: { [`^/preloaded`]: '' },
+          pathRewrite: { [`^/.netlify/functions/playlist`]: '/' },
         },
       }
     }
