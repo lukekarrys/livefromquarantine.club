@@ -5,10 +5,8 @@ const parsePlaylist = require('../../api/parse-playlist')
 const fetchPlaylist = require('../../api/fetch-playlist')
 
 const { API_KEY, LAMBDA_TASK_ROOT } = process.env
-const resolveSrcFile = (...parts) =>
-  LAMBDA_TASK_ROOT
-    ? path.join(LAMBDA_TASK_ROOT, 'src', ...parts)
-    : path.join(__dirname, ...parts)
+const resolveSrcFile = (file) => path.resolve(LAMBDA_TASK_ROOT || __dirname, `./playlist/${file}`)
+    
 
 exports.handler = async (event) => {
   const { queryStringParameters, httpMethod } = event
@@ -30,12 +28,7 @@ exports.handler = async (event) => {
   }
 
   try {
-    const dir = await fs.readdir(LAMBDA_TASK_ROOT)
-    const dir2 = await fs.readdir(resolveSrcFile())
-
-    console.log(dir)
-    console.log(dir2)
-
+    console.log(resolveSrcFile(id))
     const [preloadedData, artist] = await Promise.all([
       fs
         .readFile(resolveSrcFile(`${id}.json`), 'utf-8')
@@ -57,6 +50,7 @@ exports.handler = async (event) => {
       }),
     }
   } catch (e) {
+    console.log('Fetch preloaded file error', e)
     // Most playlists wont be preloaded so move on to fetching from youtube
   }
 
