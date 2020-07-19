@@ -16,18 +16,21 @@ const parseVideo = (video, parsers = {}) => {
 
   let songs = []
 
-  const descriptionSetlist = findSetlist(
-    callParser(parsers.description, description),
-    parsers
-  )
+  const descriptionSetlist = findSetlist(description)
 
   if (descriptionSetlist) {
     songs = descriptionSetlist
   } else {
     for (let i = 0; i < comments.length; i++) {
+      const comment = comments[i]
       const commentSetlist = findSetlist(
-        comments[i].snippet.topLevelComment.snippet.textDisplay,
-        parsers
+        callParser(
+          parsers.comment,
+          callParser(
+            parsers[comment.id],
+            comment.snippet.topLevelComment.snippet.textDisplay
+          )
+        )
       )
       // Get timestamps from top rated comments by finding the first one with
       // at least 3 timestamps
@@ -39,7 +42,7 @@ const parseVideo = (video, parsers = {}) => {
   }
 
   return {
-    title: callParser(parsers.title, title),
+    title: callParser(parsers.title, callParser(parsers[videoId], title)),
     id: videoId,
     duration,
     // Videos with no songs will just have a "Play All" button
@@ -72,16 +75,14 @@ const validate = (data) => {
 }
 
 module.exports = (videos, parsers = {}) => {
-  const data = videos.items.map((video) => parseVideo(video, parsers))
-
-  const parsedData = callParser(parsers.data, data).filter(
-    (video, index, videos) => {
+  const data = videos.items
+    .map((video) => parseVideo(video, parsers))
+    .filter((video, index, videos) => {
       // The same video could be included multiple times in a playlist so remove dupes
       return videos.findIndex((v) => v.id === video.id) === index
-    }
-  )
+    })
 
-  validate(parsedData)
+  validate(data)
 
-  return parsedData
+  return data
 }

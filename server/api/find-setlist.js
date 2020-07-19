@@ -1,5 +1,3 @@
-const callParser = (p, v) => (typeof p === 'function' ? p(v) : v)
-
 const TIMESTAMP = /(?:\d+:)?\d+:\d+/
 const startWithTimestamp = new RegExp(`^[(]?${TIMESTAMP.source}`)
 const endWithTimestamp = new RegExp(`${TIMESTAMP.source}[)]?$`)
@@ -19,7 +17,7 @@ const parseSeconds = (str) => {
   return seconds
 }
 
-const getSongsFromText = (text, parsers = {}) => {
+const getSongsFromText = (text) => {
   const songs = getLinesWithTimestamp(text)
     .map((line) => {
       const [start] = line.match(TIMESTAMP) || []
@@ -27,17 +25,14 @@ const getSongsFromText = (text, parsers = {}) => {
       if (!start) return null
 
       return {
-        name: callParser(
-          parsers.songName,
-          line
-            .trim()
-            .replace(new RegExp(TIMESTAMP.source, 'g'), '')
-            .replace(/^(\()?[\s-—:]+/, (match, p1) => p1 || '')
-            .replace(/[\s-—:]+(\))?$/, (match, p1) => p1 || '')
-            .replace(/[\n\r\t]/g, ' ')
-            .replace(/\s+/g, ' ')
-            .trim()
-        ),
+        name: line
+          .trim()
+          .replace(new RegExp(TIMESTAMP.source, 'g'), '')
+          .replace(/^(\()?[\s-—:|]+/, (match, p1) => p1 || '')
+          .replace(/[\s-—:|]+(\))?$/, (match, p1) => p1 || '')
+          .replace(/[\n\r\t]/g, ' ')
+          .replace(/\s+/g, ' ')
+          .trim(),
         start: parseSeconds(start),
       }
     })
@@ -46,7 +41,7 @@ const getSongsFromText = (text, parsers = {}) => {
   return songs.length ? songs : null
 }
 
-const findSetlist = (text, parsers = {}) =>
-  getLinesWithTimestamp(text).length >= 3 && getSongsFromText(text, parsers)
+const findSetlist = (text) =>
+  getLinesWithTimestamp(text).length >= 3 && getSongsFromText(text)
 
 module.exports = findSetlist
