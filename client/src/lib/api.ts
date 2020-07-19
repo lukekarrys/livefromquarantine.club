@@ -16,10 +16,7 @@ interface NormalizedData {
 
 interface ApiSong {
   name: string
-  time: {
-    start: number
-    end?: number
-  }
+  start: number
 }
 
 interface ApiVideo {
@@ -53,11 +50,10 @@ const videoSongToTrack = ({
   song: ApiSong
   index: number
 }): Track => {
-  const start = song.time.start
-  const end =
-    song.time.end ?? video.songs[index + 1]?.time.start ?? video.duration
+  const start = song.start
+  const end = video.songs[index + 1]?.start ?? video.duration
   return {
-    id: `${video.id}-${song.time.start}` as TrackId,
+    id: `${video.id}-${start}` as TrackId,
     videoId: video.id,
     title: [video.title, song.name],
     start,
