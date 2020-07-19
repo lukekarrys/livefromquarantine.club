@@ -29,7 +29,7 @@ const getSongsFromText = (text, parsers = {}) => {
       return {
         name: callParser(
           parsers.songName,
-          name
+          line
             .trim()
             .replace(new RegExp(TIMESTAMP.source, 'g'), '')
             .replace(/^(\()?[\s-—:]+/, (match, p1) => p1 || '')
