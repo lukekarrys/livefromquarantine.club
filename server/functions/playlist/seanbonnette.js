@@ -1,5 +1,3 @@
-const assert = require('assert')
-
 module.exports = {
   parsers: {
     title: (title) => title.replace(/Live from Quarantine[\s-]+-?/i, '').trim(),
