@@ -1,6 +1,6 @@
 [build]
   publish = "public/"
-  command = "npm run postinstall && npm run lint && NODE_ENV=production npm run build"
+  command = "npm run postinstall && npm run test && npm run lint && NODE_ENV=production npm run build"
   functions = "server/functions/"
 
 [[redirects]]

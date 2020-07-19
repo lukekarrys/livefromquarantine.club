@@ -9,6 +9,7 @@
     "mkdirp": "^1.0.4"
   },
   "devDependencies": {
+    "ava": "^3.10.1",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",
@@ -45,11 +46,13 @@
   "private": true,
   "scripts": {
     "data": "node api/preload-data.js",
+    "data:fixtures": "node test/fixtures.js",
     "dev": "NODE_ENV=development node api/dev-server.js",
     "eslint": "eslint '**/*.{js,jsx,ts,tsx}'  --fix",
     "lint": "npm run prettier && npm run eslint",
     "precommit": "lint-staged",
     "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,css,md,json}'",
+    "test": "ava test/test.js",
     "trigger": "node api/trigger-gh-preload.js"
   }
 }

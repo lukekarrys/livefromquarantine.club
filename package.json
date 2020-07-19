@@ -27,6 +27,7 @@
     "build": "run-s build:client",
     "build:client": "cd client && npm run build",
     "data": "cd server && npm run data",
+    "data:fixtures": "cd server && npm run data:fixtures",
     "dev": "run-p dev:**",
     "dev:client": "cd client && npm run dev",
     "dev:server": "cd server && npm run dev",
@@ -39,8 +40,9 @@
     "precommit": "npm-run-all precommit:*",
     "precommit:client": "cd client && npm run precommit",
     "precommit:server": "cd server && npm run precommit",
-    "test": "run-s lint:**",
+    "test": "run-s test:**",
     "test:client": "cd client && npm test",
+    "test:server": "cd server && npm test",
     "trigger": "cd server && node api/trigger-gh-preload.js"
   }
 }
