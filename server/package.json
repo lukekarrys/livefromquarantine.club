@@ -50,7 +50,7 @@
     "dev": "NODE_ENV=development node api/dev-server.js",
     "eslint": "eslint '**/*.{js,jsx,ts,tsx}'  --fix",
     "lint": "npm run prettier && npm run eslint",
-    "precommit": "lint-staged",
+    "precommit": "lint-staged && npm test",
     "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,css,md,json}'",
     "test": "ava test/test.js",
     "trigger": "node api/trigger-gh-preload.js"

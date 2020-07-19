@@ -12,9 +12,7 @@ const buildFixture = async (id) => {
     .data.map(
       (video) =>
         `${video.title}\n${video.id}\n` +
-        video.songs
-          .map((song) => `${song.time.start} | ${song.name}`)
-          .join('\n')
+        video.songs.map((song) => `${song.start} | ${song.name}`).join('\n')
     )
     .join(`\n${'-'.repeat(80)}\n`)
 }
