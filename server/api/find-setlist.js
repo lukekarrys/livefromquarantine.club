@@ -22,31 +22,23 @@ const parseSeconds = (str) => {
 const getSongsFromText = (text, parsers = {}) => {
   const songs = getLinesWithTimestamp(text)
     .map((line) => {
-      const startEndTimestamps = new RegExp(
-        `(${TIMESTAMP.source})(?: ?- ?(${TIMESTAMP.source}))?`
-      )
+      const [start] = line.match(TIMESTAMP) || []
 
-      const [match, start, end] = line.match(startEndTimestamps) || []
-
-      if (!match || !start) return null
-
-      const name = line.replace(match, '')
+      if (!start) return null
 
       return {
         name: callParser(
           parsers.songName,
           name
             .trim()
+            .replace(new RegExp(TIMESTAMP.source, 'g'), '')
             .replace(/^(\()?[\s-—:]+/, (match, p1) => p1 || '')
             .replace(/[\s-—:]+(\))?$/, (match, p1) => p1 || '')
             .replace(/[\n\r\t]/g, ' ')
             .replace(/\s+/g, ' ')
             .trim()
         ),
-        time: {
-          start: parseSeconds(start),
-          end: end && parseSeconds(end),
-        },
+        start: parseSeconds(start),
       }
     })
     .filter(Boolean)

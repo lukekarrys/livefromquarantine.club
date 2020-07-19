@@ -60,11 +60,11 @@ const validate = (data) => {
     v.songs.forEach((s) => {
       assert.ok(s.name, `Every song has a name - ${v.title}`)
       assert.ok(
-        typeof s.time.start === 'number',
+        typeof s.start === 'number',
         `Every song has a start time - ${v.title} / ${s.name}`
       )
       assert.ok(
-        s.time.start >= 0,
+        s.start >= 0,
         `Every song has a valid timestamp - ${v.title} / ${s.name}`
       )
     })
