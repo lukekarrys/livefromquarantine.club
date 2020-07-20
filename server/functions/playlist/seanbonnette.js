@@ -1,6 +1,6 @@
 module.exports = {
   parsers: {
-    title: (title) => title.replace(/Live from Quarantine[\s-]+-?/i, '').trim(),
+    title: (title) => title.replace(/Live from Quarantine[\s-]+-?/i, ''),
   },
   playlistId: 'PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1',
   id: 'seanbonnette',
