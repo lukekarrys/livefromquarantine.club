@@ -42,7 +42,7 @@ const parseVideo = (video, parsers = {}) => {
   }
 
   return {
-    title: callParser(parsers.title, callParser(parsers[videoId], title)),
+    title: callParser(parsers.title, callParser(parsers[videoId], title)).trim(),
     id: videoId,
     duration,
     // Videos with no songs will just have a "Play All" button
