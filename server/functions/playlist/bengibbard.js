@@ -2,6 +2,7 @@ module.exports = {
   parsers: {
     title: (title) =>
       title.replace(/Ben Gibbard: Live From Home \((.*)\)/i, '$1').trim(),
+    'Ei9xuVkbQuU': () => '3/17/20'
   },
   playlistId: 'PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv',
   id: 'bengibbard',
