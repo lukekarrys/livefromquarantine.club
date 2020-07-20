@@ -38,7 +38,9 @@ const getSongsFromText = (text) => {
     })
     .filter(Boolean)
 
-  return songs.length ? songs : null
+  if (!songs.length) return null
+
+  return songs[0].start > 0 ? [{ name: 'Intro', start: 0 }, ...songs] : songs
 }
 
 const findSetlist = (text) =>

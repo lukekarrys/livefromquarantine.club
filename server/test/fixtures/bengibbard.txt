@@ -1,5 +1,6 @@
 5/28/20
 gc2DILv7U00
+0 | Intro
 14 | St Peter's Cathedral
 246 | Expo '86
 585 | Brothers on a Hotel Bed
@@ -15,6 +16,7 @@ gc2DILv7U00
 --------------------------------------------------------------------------------
 5/21/20
 6oSWsxVg4GM
+0 | Intro
 18 | Death Cab For Cutie - Sleep Spent
 198 | Ben Gibbard - Teardrop Windows
 479 | Ben Gibbard - When the Sun Goes Down On Your Street
@@ -28,6 +30,7 @@ gc2DILv7U00
 --------------------------------------------------------------------------------
 5/14/20
 luI-P_uit14
+0 | Intro
 38 | Blue Bloods
 265 | Little Bribes
 501 | Bend to Squares
@@ -43,6 +46,7 @@ luI-P_uit14
 --------------------------------------------------------------------------------
 5/7/20
 hfLEvRY1kcA
+0 | Intro
 16 | I'm So Tired [The Beatles cover]
 170 | For No One [The Beatles cover]
 372 | I'm Happy Just to Dance with You [The Beatles cover]
@@ -57,6 +61,7 @@ hfLEvRY1kcA
 --------------------------------------------------------------------------------
 4/30/20
 QQ15BaDEo0Q
+0 | Intro
 27 | Monday Morning
 308 | The District Sleeps Alone Tonight
 606 | Your Hurricane
@@ -70,6 +75,7 @@ QQ15BaDEo0Q
 --------------------------------------------------------------------------------
 4/23/20
 T58oySghwLk
+0 | Intro
 21 | Unobstructed Views
 317 | Passenger Seat
 625 | The Ice Is Getting Thinner
@@ -85,6 +91,7 @@ T58oySghwLk
 --------------------------------------------------------------------------------
 4/16/20
 Z3BiBB0W1Eo
+0 | Intro
 33 | Your Heart is an Empty Room
 253 | Autumn Love
 523 | Styrofoam Plates
@@ -98,6 +105,7 @@ Z3BiBB0W1Eo
 --------------------------------------------------------------------------------
 4/9/20
 SrmFQa_iByw
+0 | Intro
 26 | Title Track
 314 | Employment Pages
 591 | For What Reason
@@ -113,6 +121,7 @@ SrmFQa_iByw
 --------------------------------------------------------------------------------
 4/2/20
 s6oJjUvB9TA
+0 | Intro
 24 | Lightness
 250 | Everything's A Ceiling
 542 | The Ghosts of Beverly Drive
@@ -127,6 +136,7 @@ s6oJjUvB9TA
 --------------------------------------------------------------------------------
 3/29/20
 5pgVzSMqjWA
+0 | Intro
 58 | "Half A World Away” by R.E.M.
 326 | "Just Like Heaven” by The Cure
 587 | "Everyday Is Like Sunday” by Morrissey
@@ -139,6 +149,7 @@ s6oJjUvB9TA
 --------------------------------------------------------------------------------
 3/28/20
 Hk-xqMKLyRo
+0 | Intro
 51 | Me and Magdalena
 352 | Underwater
 536 | El Dorado
@@ -151,6 +162,7 @@ Hk-xqMKLyRo
 --------------------------------------------------------------------------------
 3/27/20
 2TiCThAAcNM
+0 | Intro
 41 | Title and Registration
 325 | A Lack of Color
 585 | Tiny Vessels
@@ -166,6 +178,7 @@ Hk-xqMKLyRo
 --------------------------------------------------------------------------------
 3/26/20
 IFXCGJs8nOY
+0 | Intro
 22 | Ingénue
 246 | Autumn Love
 513 | Hold No Guns
@@ -181,6 +194,7 @@ IFXCGJs8nOY
 --------------------------------------------------------------------------------
 3/25/20
 tBhqwnL8Zck
+0 | Intro
 23 | You Can Do Better Than Me
 167 | Unobstructed Views
 454 | Little Bribes
@@ -194,6 +208,7 @@ tBhqwnL8Zck
 --------------------------------------------------------------------------------
 3/24/20
 25OCP0qBD_A
+0 | Intro
 2 | Transatlanticism
 337 | Someday You Will Be Loved
 584 | Farmer Chords
@@ -210,6 +225,7 @@ tBhqwnL8Zck
 --------------------------------------------------------------------------------
 3/23/20
 QHTXnGLb4I0
+0 | Intro
 31 | Champagne from a Paper Cup
 248 | Debate Exposes Doubt
 474 | Scientist Studies
@@ -226,6 +242,7 @@ QHTXnGLb4I0
 --------------------------------------------------------------------------------
 3/22/20
 1eEcVCyKMb8
+0 | Intro
 48 | “Isolation" by John Lennon
 343 | "Silver Lining" by Rilo Kiley
 605 | “Thirteen” by Big Star
@@ -239,6 +256,7 @@ QHTXnGLb4I0
 --------------------------------------------------------------------------------
 3/21/20
 dLWmIJV4GMg
+0 | Intro
 35 | Lady Adelaide
 262 | Recycled Air
 514 | Your New Twin Sized Bed
@@ -253,6 +271,7 @@ dLWmIJV4GMg
 --------------------------------------------------------------------------------
 3/20/20
 PX7A8tQNp8g
+0 | Intro
 70 | Steadier Footing
 200 | You Remind Me of Home
 393 | Why You'd Want To Live Here
@@ -268,6 +287,7 @@ PX7A8tQNp8g
 --------------------------------------------------------------------------------
 3/19/20
 jhgssMW8L0U
+0 | Intro
 10 | St. Peter's Cathedral
 244 | Photobooth
 510 | 405
@@ -284,6 +304,7 @@ jhgssMW8L0U
 --------------------------------------------------------------------------------
 3/18/20
 o0EpwT9fg1I
+0 | Intro
 11 | No Room In Frame
 251 | Teardrop Windows
 557 | Title and Registration
@@ -297,6 +318,7 @@ o0EpwT9fg1I
 --------------------------------------------------------------------------------
 3/17/20
 Ei9xuVkbQuU
+0 | Intro
 19 | We Will Become Silhouettes
 218 | A Lack of Color
 466 | Title Track
