@@ -14,7 +14,7 @@ const buildFixture = async (id) => {
         `${video.title}\n${video.id}\n` +
         video.songs.map((song) => `${song.start} | ${song.name}`).join('\n')
     )
-    .join(`\n${'-'.repeat(80)}\n`)
+    .join(`\n${'-'.repeat(10)}\n`)
 }
 
 const fixturePath = (id) => path.join(__dirname, 'fixtures', `${id}.txt`)
