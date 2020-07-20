@@ -5,6 +5,14 @@ import Button from '../../components/button'
 import Input from '../../components/input'
 import { useState } from 'preact/hooks'
 
+const parsePlaylistUrl = (str: string): string => {
+  try {
+    return new URL(str).searchParams.get('list') ?? ''
+  } catch (e) {
+    return str
+  }
+}
+
 const Home: FunctionalComponent = () => {
   const [playlistId, setPlalistId] = useState('')
   return (
@@ -13,16 +21,16 @@ const Home: FunctionalComponent = () => {
         class="mt-4 max-w-screen-sm mx-auto px-2"
         onSubmit={(e): void => {
           e.preventDefault()
-          route(`/${playlistId}`)
+          route(`/${parsePlaylistUrl(playlistId)}`)
         }}
       >
         <label class="mb-4 block text-xl text-center" htmlFor="playlistId">
-          Enter a YouTube Playlist ID
+          Enter a YouTube Playlist URL or ID
         </label>
         <Input
           id="playlistId"
           class="z-10 relative w-full block text-center text-xl p-1 border rounded-t rounded-b-none"
-          placeholder="PLG507gy2-Kp-SV2YxVUxndVgnRuoNrEJ5"
+          placeholder="youtube.com/playlist?list=PL&hellip;"
           border={false}
           onInput={(e): void =>
             setPlalistId((e.target as HTMLInputElement).value)

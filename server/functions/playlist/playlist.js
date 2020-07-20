@@ -50,7 +50,6 @@ exports.handler = async (event) => {
       }),
     }
   } catch (e) {
-    console.log('Fetch preloaded file error', e)
     // Most playlists wont be preloaded so move on to fetching from youtube
   }
 
