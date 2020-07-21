@@ -9,11 +9,18 @@ const ROOT = LAMBDA_TASK_ROOT
   ? path.join(LAMBDA_TASK_ROOT, 'src', 'functions', 'videos')
   : __dirname
 
-const getVideos = async (id, key) => {
+const runtimeRequire = (f) =>
+  fs
+    .readFile(path.join(ROOT, f), 'utf-8')
+    .then((str) =>
+      path.extname(f) === '.json' ? JSON.parse(str) : nodeEval(str, true)
+    )
+
+const getVideos = async (id) => {
   const errors = []
   for (const req of [getPlaylist, getVideo]) {
     try {
-      return await req(id, key)
+      return await req(id, API_KEY)
     } catch (e) {
       errors.push(e)
     }
@@ -45,15 +52,15 @@ exports.handler = async (event) => {
     return res({ error: 'Missing required id parameter' }, 400)
   }
 
+  const log = (...parts) => console.log(id, '-', ...parts)
+
   try {
     const [{ meta, videos }, artist] = await Promise.all([
-      fs
-        .readFile(path.join(ROOT, `${id}.json`), 'utf-8')
-        .then((str) => JSON.parse(str)),
-      fs
-        .readFile(path.join(ROOT, `${id}.js`), 'utf-8')
-        .then((str) => nodeEval(str, true)),
+      runtimeRequire(`${id}.json`),
+      runtimeRequire(`${id}.js`),
     ])
+
+    log('Found preloaded')
 
     return res({
       meta: {
@@ -66,11 +73,10 @@ exports.handler = async (event) => {
     // Most playlists wont be preloaded so move on to fetching from youtube
   }
 
-  const log = (...parts) => console.log(id, ...parts)
-
   try {
-    log('Fetching')
-    const { videos, meta } = await getVideos(id, API_KEY)
+    const { videos, meta } = await getVideos(id)
+
+    log('Found YT API')
 
     return res({
       meta,
