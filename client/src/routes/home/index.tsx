@@ -23,17 +23,17 @@ const Home: FunctionalComponent = () => {
         class="mt-4 max-w-screen-sm mx-auto px-2"
         onSubmit={(e): void => {
           e.preventDefault()
-          route(`/${parsed}`)
+          parsed && route(`/${parsed}`)
         }}
       >
         <label class="mb-4 block text-xl text-center" htmlFor="playlistInput">
-          Enter a YouTube Playlist
+          Enter a YouTube playlist:
         </label>
         <Input
           id="playlistInput"
-          class="z-10 relative w-full block text-center text-xl p-1 border rounded-t rounded-b-none"
+          class="z-10 relative w-full block text-center text-xl p-1 rounded-t"
           placeholder="youtube.com/playlist?list=PL&hellip;"
-          border={false}
+          rounded={false}
           onInput={(e): void =>
             setPlaylist((e.target as HTMLInputElement).value)
           }
@@ -42,7 +42,8 @@ const Home: FunctionalComponent = () => {
           as="input"
           type="submit"
           border={false}
-          class="w-full block text-center mb-4 text-xl rounded-t-none rounded-b border-l border-r border-b"
+          rounded={false}
+          class="w-full block text-center mb-4 text-xl rounded-b border-l border-r border-b"
           disabled={!parsed}
           value="Go to playlist"
         />
