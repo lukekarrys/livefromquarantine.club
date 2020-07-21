@@ -1,13 +1,39 @@
 const fs = require('fs').promises
 const path = require('path')
 const nodeEval = require('eval')
-const parsePlaylist = require('../../api/parse-playlist')
-const fetchPlaylist = require('../../api/fetch-playlist')
+const parseVideos = require('../../api/parse-videos')
+const { getPlaylist, getVideo } = require('../../api/fetch-youtube')
 
 const { API_KEY, LAMBDA_TASK_ROOT } = process.env
 const ROOT = LAMBDA_TASK_ROOT
   ? path.join(LAMBDA_TASK_ROOT, 'src', 'functions', 'playlist')
   : __dirname
+
+const getPlaylistOrVideo = async (id, key) => {
+  let res
+  let error
+
+  try {
+    res = await getPlaylist(id, key)
+  } catch (err) {
+    error = err
+  }
+
+  if (error) {
+    try {
+      error = null
+      res = await getVideo(id, key)
+    } catch (err) {
+      error = err
+    }
+  }
+
+  if (error) {
+    throw error
+  }
+
+  return res
+}
 
 exports.handler = async (event) => {
   const {
@@ -46,7 +72,7 @@ exports.handler = async (event) => {
           ...preloadedData.meta,
           ...artist.meta,
         },
-        data: parsePlaylist(preloadedData.videos, artist.parsers),
+        data: parseVideos(preloadedData.videos, artist.parsers),
       }),
     }
   } catch (e) {
@@ -54,17 +80,17 @@ exports.handler = async (event) => {
   }
 
   try {
-    const { videos, meta } = await fetchPlaylist(id, API_KEY)
+    const { videos, meta } = await getPlaylistOrVideo(id, API_KEY)
 
     return {
       statusCode: 200,
       body: JSON.stringify({
         meta,
-        data: parsePlaylist(videos),
+        data: parseVideos(videos),
       }),
     }
   } catch (err) {
-    console.error(err)
+    console.error('errrrrrrr', err)
     return {
       statusCode: 500,
       body: JSON.stringify({

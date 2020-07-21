@@ -75,7 +75,7 @@ const Artist: FunctionalComponent<Props> = ({ artist }) => {
                 <div
                   class="flex flex-col items-center text-center main"
                   dangerouslySetInnerHTML={{
-                    __html: meta.main || '',
+                    __html: meta.main || meta.description || '',
                   }}
                 />
               </Fragment>

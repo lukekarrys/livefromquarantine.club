@@ -26,7 +26,7 @@ export type Videos = Video[]
 
 export interface ArtistMeta {
   title: string
-  description: string
+  description?: string
   main?: string
 }
 

@@ -5,7 +5,7 @@ const fs = require('fs').promises
 const prettier = require('prettier')
 const mkdirp = require('mkdirp')
 const { cli } = require('./artists')
-const getFullPlaylistData = require('./fetch-playlist')
+const { getPlaylist } = require('./fetch-youtube')
 
 const { API_KEY } = process.env
 
@@ -38,7 +38,7 @@ const getArtist = async (artistKey) => {
     throw new Error(`Invalid artistKey: ${artistKey}`)
   }
 
-  const resp = await getFullPlaylistData(artist.playlistId, API_KEY)
+  const resp = await getPlaylist(artist.playlistId, API_KEY)
   await writeFile(artist.id, resp)
 }
 
