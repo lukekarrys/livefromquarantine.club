@@ -6,7 +6,7 @@ module.exports = {
   id: 'seanbonnette',
   meta: {
     title: 'Sean Bonnette – Live From Quarantine',
-    main: [
+    description: [
       '<a href="http://www.patreon.com/ajjtheband" target="_blank">Patreon</a>',
       '<a href="https://venmo.com/bonnseanette" target="_blank">Venmo</a>',
       '<a href="https://paypal.me/bonnseanette" target="_blank">Paypal</a>',

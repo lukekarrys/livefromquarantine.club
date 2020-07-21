@@ -8,7 +8,7 @@ module.exports = {
   id: 'bengibbard',
   meta: {
     title: 'Ben Gibbard – Live From Home',
-    main:
+    description:
       '<a href="https://venmo.com/BenGibbardLiveFromHome" target="_blank">Venmo</a>',
   },
 }
