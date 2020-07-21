@@ -131,11 +131,14 @@ export const isNextNext = (context: Machine.PlayerContext): boolean => {
 // Player modes
 
 export const isSongMode = (
-  context: Pick<Machine.PlayerContext, 'tracksById'>,
+  context: Pick<Machine.PlayerContext, 'tracksById' | 'tracks'>,
   trackId?: TrackId
 ): boolean => {
-  // True is the default for song mode
-  return trackId == null ? true : getTrackById(context, trackId)?.isSong ?? true
+  // If there is at least one song, then the default is true, otherwise it is false
+  const atLeastOneSong = context.tracks.some((t: Track) => t.isSong)
+  return trackId == null
+    ? atLeastOneSong
+    : getTrackById(context, trackId)?.isSong ?? atLeastOneSong
 }
 
 export const isOrderChange = (

@@ -3,7 +3,7 @@ import { useRef, useState, useEffect } from 'preact/hooks'
 import cx from 'classnames'
 import * as Machine from '../machine/types'
 import Button, { ButtonType } from './button'
-import toTitle from '../lib/to-title'
+import { toSongAndVideoTitle } from '../lib/to-title'
 import ListIcon from '../icons/list'
 import CloseIcon from '../icons/close'
 import { Track } from '../types'
@@ -114,7 +114,7 @@ const UpNext: FunctionalComponent<Props> = ({
                     })
                   }
                 >
-                  {toTitle(tracks[track.trackId])}
+                  {toSongAndVideoTitle(tracks[track.trackId])}
                 </Button>
                 <Button
                   buttonType={ButtonType.Danger}
@@ -177,7 +177,7 @@ const UpNext: FunctionalComponent<Props> = ({
                   })
                 }
               >
-                {toTitle(tracks[track.trackId])}
+                {toSongAndVideoTitle(tracks[track.trackId])}
               </Button>
             ))}
           </div>

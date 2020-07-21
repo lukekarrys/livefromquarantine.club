@@ -19,6 +19,7 @@ interface Props {
 type ButtonProps = Pick<Props, 'send' | 'selected' | 'ready'> & {
   track: Track
   last: boolean
+  title: string
 }
 
 const BUTTON_ID = (id: TrackId): string => `video-track-${id}`
@@ -32,8 +33,8 @@ const TrackButton: FunctionalComponent<ButtonProps> = ({
   selected,
   send,
   last,
+  title,
 }) => {
-  const title = toSongTitle(track)
   return (
     <div
       class={cx(
@@ -136,6 +137,9 @@ const Videos: FunctionalComponent<Props> = ({
               track={track}
               selected={selected}
               send={send}
+              title={
+                toSongTitle(track) ?? (list.length === 1 ? 'Play' : 'Play All')
+              }
               last={index === list.length - 1}
             />
           ))}

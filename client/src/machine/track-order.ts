@@ -81,6 +81,7 @@ export const removeTrack = (
 }
 
 export const setOrder = ({
+  tracks,
   tracksById,
   shuffle,
   repeat,
@@ -96,6 +97,7 @@ export const setOrder = ({
   | 'shuffle'
   | 'repeat'
   | 'tracksById'
+  | 'tracks'
 > & { selectedId?: TrackId }): Machine.TrackOrder => {
   let currentOrder: Machine.TrackOrderUnselected = {} as Machine.TrackOrderUnselected
 
@@ -103,7 +105,7 @@ export const setOrder = ({
   // is song mode
   const selected =
     selectedId && selectors.getTrackById({ tracksById }, selectedId)
-  const songMode = selectors.isSongMode({ tracksById }, selectedId)
+  const songMode = selectors.isSongMode({ tracksById, tracks }, selectedId)
 
   if (repeat === Repeat.None) {
     // No repeat, so the order is either the full song order
@@ -230,6 +232,7 @@ export const setInitialOrder = (
     },
     order: setOrder({
       tracksById,
+      tracks,
       shuffle,
       repeat,
       songOrder,

@@ -10,7 +10,7 @@ import PauseIcon from '../icons/pause'
 import PlayIcon from '../icons/play'
 import NextIcon from '../icons/next'
 import RepeatIcon from '../icons/repeat'
-import toTitle from '../lib/to-title'
+import { toSongAndVideoTitle } from '../lib/to-title'
 import ListIcon from '../icons/list'
 
 interface Props {
@@ -64,6 +64,8 @@ const Controls: FunctionalComponent<Props> = ({
   }, [player, selected, play])
 
   const isRepeat = repeat === Repeat.Song || repeat === Repeat.Video
+  const title = toSongAndVideoTitle(selected)
+
   return (
     <div class="px-2 py-1 relative overflow-hidden">
       <div
@@ -142,9 +144,9 @@ const Controls: FunctionalComponent<Props> = ({
           class="truncate ml-1"
           onClick={onTitleClick}
           disabled={!ready}
-          title={toTitle(selected)}
+          title={title}
         >
-          {toTitle(selected)}
+          {title}
         </button>
         {progress && (
           <span class="ml-auto tabular-nums text-sm italic">

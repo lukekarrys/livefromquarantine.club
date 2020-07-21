@@ -399,7 +399,8 @@ const playerMachine = createMachine<
                 'songOrder',
                 'videoOrder',
                 'videoSongOrder',
-                'tracksById'
+                'tracksById',
+                'tracks'
               ),
             }),
           }
@@ -524,7 +525,8 @@ const playerMachine = createMachine<
               'songOrder',
               'videoOrder',
               'videoSongOrder',
-              'tracksById'
+              'tracksById',
+              'tracks'
             ),
           }),
         }
