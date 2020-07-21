@@ -39,7 +39,7 @@ const Button: FunctionalComponent<Props> = ({
               : ['bg-white text-black', !disabled && 'hover:bg-gray-300'],
           ],
       tight ? 'p-1' : 'py-1 px-2',
-      rounded && 'rounded',
+      rounded ? 'rounded' : 'rounded-none',
       border && 'border',
       'transition duration-150 appearance-none focus:outline-none focus:shadow-outline',
       disabled ? 'opacity-50 cursor-default' : 'hover:shadow cursor-pointer'

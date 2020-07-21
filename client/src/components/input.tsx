@@ -32,7 +32,7 @@ const Button: FunctionalComponent<Props> = ({
         ? ['border-red-600']
         : ['border-gray-600', 'text-black'],
       tight ? 'p-1' : 'py-1 px-2',
-      rounded && 'rounded',
+      rounded ? 'rounded' : 'rounded-none',
       border && 'border',
       'transition duration-150 appearance-none focus:outline-none focus:shadow-outline',
       disabled && 'opacity-50'
