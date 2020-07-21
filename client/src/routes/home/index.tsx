@@ -7,41 +7,44 @@ import { useState } from 'preact/hooks'
 
 const parsePlaylistUrl = (str: string): string => {
   try {
-    return new URL(str).searchParams.get('list') ?? ''
+    const url = new URL(str)
+    return url.searchParams.get('list') ?? url.searchParams.get('v') ?? ''
   } catch (e) {
     return str
   }
 }
 
 const Home: FunctionalComponent = () => {
-  const [playlistId, setPlalistId] = useState('')
+  const [playlist, setPlaylist] = useState('')
+  const parsed = parsePlaylistUrl(playlist)
   return (
     <Fragment>
       <form
         class="mt-4 max-w-screen-sm mx-auto px-2"
         onSubmit={(e): void => {
           e.preventDefault()
-          route(`/${parsePlaylistUrl(playlistId)}`)
+          parsed && route(`/${parsed}`)
         }}
       >
-        <label class="mb-4 block text-xl text-center" htmlFor="playlistId">
-          Enter a YouTube Playlist URL or ID
+        <label class="mb-4 block text-xl text-center" htmlFor="playlistInput">
+          Enter a YouTube playlist:
         </label>
         <Input
-          id="playlistId"
-          class="z-10 relative w-full block text-center text-xl p-1 border rounded-t rounded-b-none"
+          id="playlistInput"
+          class="z-10 relative w-full block text-center text-xl p-1 rounded-t"
           placeholder="youtube.com/playlist?list=PL&hellip;"
-          border={false}
+          rounded={false}
           onInput={(e): void =>
-            setPlalistId((e.target as HTMLInputElement).value)
+            setPlaylist((e.target as HTMLInputElement).value)
           }
         />
         <Button
           as="input"
           type="submit"
           border={false}
-          class="w-full block text-center mb-4 text-xl rounded-t-none rounded-b border-l border-r border-b"
-          disabled={!playlistId}
+          rounded={false}
+          class="w-full block text-center mb-4 text-xl rounded-b border-l border-r border-b"
+          disabled={!parsed}
           value="Go to playlist"
         />
       </form>

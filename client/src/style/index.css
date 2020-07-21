@@ -22,6 +22,6 @@
   @apply h-full;
 }
 
-.main a {
+.dangerouslysetinnerhtml a {
   @apply underline;
 }

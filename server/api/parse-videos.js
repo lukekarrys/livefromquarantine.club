@@ -5,11 +5,8 @@ const callParser = (p, v) => (typeof p === 'function' ? p(v) : v)
 
 const parseVideo = (video, parsers = {}) => {
   const {
-    snippet: {
-      title,
-      description,
-      resourceId: { videoId },
-    },
+    id: videoId,
+    snippet: { title, description },
     comments: { items: comments },
     contentDetails: { duration },
   } = video

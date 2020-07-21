@@ -1,5 +1,5 @@
 import { FunctionalComponent, h, Fragment } from 'preact'
-import { useRef, useState, useLayoutEffect } from 'preact/hooks'
+import { useRef, useState, useEffect } from 'preact/hooks'
 import cx from 'classnames'
 import * as Machine from '../machine/types'
 import Button, { ButtonType } from './button'
@@ -25,14 +25,24 @@ const UpNext: FunctionalComponent<Props> = ({
 }) => {
   const overlayRef = useRef<HTMLDivElement>()
   const closeRef = useRef<HTMLDivElement>()
+  const panelRef = useRef<HTMLDivElement>()
   const [visible, setVisible] = useState(false)
+  const [panelTransitionEnd, setPanelTransitionEnd] = useState(!visible)
   const upNextOrder = upNext.trackOrder.slice(upNext.selectedIndex + 1)
+  const hasUpNext = upNextOrder.length > 0
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (visible) {
+      setPanelTransitionEnd(false)
       closeRef.current?.querySelector('button')?.focus()
       document.body.style.overflow = 'hidden'
       return (): void => void (document.body.style.overflow = 'visible')
+    } else {
+      const panelRefNode = panelRef.current
+      const listener = (): void => setPanelTransitionEnd(true)
+      panelRefNode?.addEventListener('transitionend', listener)
+      return (): void =>
+        panelRefNode?.removeEventListener('transitionend', listener)
     }
   }, [visible])
 
@@ -57,8 +67,9 @@ const UpNext: FunctionalComponent<Props> = ({
         ref={overlayRef}
         class={cx(
           'transition-opacity duration-200',
-          'fixed inset-0 flex items-start z-20 justify-end bg-gray-600',
-          visible ? 'opacity-50 visible' : 'invisible opacity-0'
+          'fixed inset-0 flex items-start z-20 justify-end bg-white',
+          visible ? 'opacity-50' : 'opacity-0',
+          panelTransitionEnd ? 'invisible' : 'visible'
         )}
         onClick={(e): void => {
           if (e.target === overlayRef.current) {
@@ -67,11 +78,15 @@ const UpNext: FunctionalComponent<Props> = ({
         }}
       />
       <div
+        ref={panelRef}
         class={cx(
           'transition-transform duration-200 fixed right-0 inset-y-0 h-screen max-w-sm w-full flex flex-col',
-          'shadow-md bg-white border-l border-gray-600 pt-2 z-30'
+          'bg-white border-l border-gray-600 pt-2 z-30',
+          !panelTransitionEnd && 'shadow-xl'
         )}
-        style={{ transform: `translate(${visible ? '0' : '100%'})` }}
+        style={{
+          transform: `translate(${visible ? '0' : '100%'})`,
+        }}
       >
         <div
           class="flex justify-between items-center pb-2 border-b border-gray-600 px-2 shadow"
@@ -116,7 +131,7 @@ const UpNext: FunctionalComponent<Props> = ({
               </div>
             ))}
             <div class="flex -mx-1">
-              {upNextOrder.length > 0 && (
+              {hasUpNext && (
                 <Button
                   class="mx-1 flex-1"
                   buttonType={ButtonType.Danger}
@@ -128,7 +143,7 @@ const UpNext: FunctionalComponent<Props> = ({
                 </Button>
               )}
               <Button
-                class="mr-1 flex-1"
+                class={cx(hasUpNext ? 'mr-1' : 'mx-1', 'flex-1')}
                 onClick={(): void =>
                   void window.prompt(
                     'Share this url',

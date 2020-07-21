@@ -26,8 +26,7 @@ export type Videos = Video[]
 
 export interface ArtistMeta {
   title: string
-  description: string
-  main?: string
+  description?: string
 }
 
 export enum Repeat {

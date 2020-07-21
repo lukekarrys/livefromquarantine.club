@@ -48,7 +48,7 @@ const playlistUrl = (id, key) => {
 
 const videosUrl = (id, parts, key) => {
   const url = new URL(`${apiUrl}/videos`, apiUrl)
-  url.searchParams.set('part', `liveStreamingDetails,${parts.join(',')}`)
+  url.searchParams.set('part', parts.join(','))
   url.searchParams.set('id', id)
   url.searchParams.set('key', key)
   return url.toString()
@@ -91,6 +91,7 @@ const normalizeData = (d) =>
             'authorChannelUrl',
             'authorDisplayName',
             'authorProfileImageUrl',
+            'liveStreamingDetails',
           ].includes(key)
         ) {
           return undefined
@@ -111,53 +112,51 @@ const normalizeData = (d) =>
     )
   )
 
-const getPaginatedVideos = async (id, key, pageToken, previousItems = []) => {
-  const url = playlistItemsUrl(id, key, pageToken)
+const isVideoPrivate = (video) =>
+  video.snippet.title === 'Private video' &&
+  video.snippet.description === 'This video is private.'
 
-  const resp = await get(url)
+const isVideoFuture = (video) =>
+  video.liveStreamingDetails ? !video.liveStreamingDetails.actualEndTime : false
+
+const getPaginatedVideosFromPlaylist = async (
+  id,
+  key,
+  pageToken,
+  previousItems = []
+) => {
+  const resp = await get(playlistItemsUrl(id, key, pageToken))
+
   const { items, nextPageToken } = resp.data
+  const publicVideos = items.filter((v) => !isVideoPrivate(v))
 
-  const nonPrivateItems = items.filter((v) => {
-    return (
-      v.snippet.title !== 'Private video' &&
-      v.snippet.description !== 'This video is private.'
-    )
-  })
-
-  const detailParts = ['contentDetails']
+  // Playlist can't include content or livestream details so we need to
+  // fetch those separately
   const videosDetailsResp = await get(
     videosUrl(
-      nonPrivateItems.map((v) => v.snippet.resourceId.videoId).join(','),
-      detailParts,
+      publicVideos.map((v) => v.snippet.resourceId.videoId).join(','),
+      ['contentDetails', 'liveStreamingDetails'],
       key
     )
   )
-  const { items: videoItems } = videosDetailsResp.data
-  const findVideoDetails = (video) =>
-    videoItems.find((v) => v.id === video.snippet.resourceId.videoId)
 
-  const filteredItems = nonPrivateItems
-    .filter((video) => {
-      const videoDetails = findVideoDetails(video)
-      if (videoDetails.liveStreamingDetails) {
-        return videoDetails.liveStreamingDetails.actualEndTime
-      }
-      return true
-    })
-    .map((video) => {
-      const videoDetails = findVideoDetails(video)
-      detailParts.forEach((detailPart) => {
-        Object.assign(video, {
-          [detailPart]: videoDetails[detailPart],
-        })
-      })
+  const filteredItems = videosDetailsResp.data.items
+    .filter((video) => !isVideoFuture(video))
+    .map((video, index) => {
+      // We save some API quota by reusing the snippet from the playlist call
+      video.snippet = publicVideos[index].snippet
       return video
     })
 
   const newItems = [...previousItems, ...filteredItems]
 
   if (nextPageToken) {
-    return await getPaginatedVideos(id, key, nextPageToken, newItems)
+    return await getPaginatedVideosFromPlaylist(
+      id,
+      key,
+      nextPageToken,
+      newItems
+    )
   }
 
   return {
@@ -185,43 +184,73 @@ const getPlaylistData = async (id, key) => {
   }
 }
 
-const getFullPlaylistData = async (playlistId, key) => {
-  const playlistMeta = await getPlaylistData(playlistId, key)
-  const videosResp = await getPaginatedVideos(playlistId, key)
-  const videos = normalizeData(videosResp.data)
+const getVideoSetlist = async (video, key) => {
+  const {
+    id: videoId,
+    snippet: { description },
+  } = video
 
-  await Promise.all(
-    videos.items.map(async (video) => {
-      const { description, resourceId } = video.snippet
+  if (findSetlist(description)) {
+    video.comments = { items: [] }
+    return
+  }
 
-      if (findSetlist(description)) {
-        video.comments = { items: [] }
-        return
-      }
-
-      video.comments = await get(commentUrl(resourceId.videoId, key))
-        .then((resp) => {
-          return Object.assign(resp.data, {
-            items: resp.data.items
-              .filter(
-                (comment) =>
-                  findSetlist(
-                    comment.snippet.topLevelComment.snippet.textDisplay
-                  ) && !omitCommentIds.includes(comment.id)
-              )
-              // Sort by likeCount before removing it. YouTube returns comments
-              // by "relevance" but likeCount is a better indicator of timestamps I think
-              .sort((a, b) => {
-                const aIsBlessed = blessCommentIds.includes(a.id)
-                const bIsBlessed = blessCommentIds.includes(b.id)
-                if (aIsBlessed || bIsBlessed) return aIsBlessed ? -1 : 1
-                return a.snippet.likeCount - b.snippet.likeCount
-              }),
-          })
-        })
-        .then((r) => normalizeData(r))
+  video.comments = await get(commentUrl(videoId, key))
+    .then((resp) => {
+      return Object.assign(resp.data, {
+        items: resp.data.items
+          .filter(
+            (comment) =>
+              findSetlist(
+                comment.snippet.topLevelComment.snippet.textDisplay
+              ) && !omitCommentIds.includes(comment.id)
+          )
+          // Sort by likeCount before removing it. YouTube returns comments
+          // by "relevance" but likeCount is a better indicator of timestamps I think
+          .sort((a, b) => {
+            const aIsBlessed = blessCommentIds.includes(a.id)
+            const bIsBlessed = blessCommentIds.includes(b.id)
+            if (aIsBlessed || bIsBlessed) return aIsBlessed ? -1 : 1
+            return a.snippet.likeCount - b.snippet.likeCount
+          }),
+      })
     })
+    .then((r) => normalizeData(r))
+}
+
+const getFullVideoData = async (videoId, key) => {
+  const videoResp = await get(
+    videosUrl(
+      videoId,
+      ['contentDetails', 'snippet', 'liveStreamingDetails'],
+      key
+    )
   )
+
+  const video = videoResp.data.items[0]
+  if (!video || isVideoPrivate(video) || isVideoFuture(video)) {
+    throw new Error('Video could not be found')
+  }
+
+  const videos = normalizeData(videoResp.data)
+  await Promise.all(videos.items.map((video) => getVideoSetlist(video, key)))
+
+  return {
+    meta: {
+      title: videos.items[0].snippet.title,
+    },
+    videos,
+  }
+}
+
+const getFullPlaylistData = async (playlistId, key) => {
+  const [playlistMeta, videosResp] = await Promise.all([
+    getPlaylistData(playlistId, key),
+    getPaginatedVideosFromPlaylist(playlistId, key),
+  ])
+
+  const videos = normalizeData(videosResp.data)
+  await Promise.all(videos.items.map((video) => getVideoSetlist(video, key)))
 
   return {
     meta: playlistMeta,
@@ -229,4 +258,5 @@ const getFullPlaylistData = async (playlistId, key) => {
   }
 }
 
-module.exports = getFullPlaylistData
+module.exports.getVideo = getFullVideoData
+module.exports.getPlaylist = getFullPlaylistData
