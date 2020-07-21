@@ -28,8 +28,8 @@ const getSongsFromText = (text) => {
         name: line
           .trim()
           .replace(new RegExp(TIMESTAMP.source, 'g'), '')
-          .replace(/^(\()?[\s-—:|]+/, (match, p1) => p1 || '')
-          .replace(/[\s-—:|]+(\))?$/, (match, p1) => p1 || '')
+          .replace(/^(\()?[\s-—–:|]+/, (match, p1) => p1 || '')
+          .replace(/[\s-—–:|]+(\))?$/, (match, p1) => p1 || '')
           .replace(/[\n\r\t]/g, ' ')
           .replace(/\s+/g, ' ')
           .trim(),

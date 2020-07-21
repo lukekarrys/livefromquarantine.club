@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 
 const artists = fs
-  .readdirSync(path.join(__dirname, '..', 'functions', 'playlist'))
+  .readdirSync(path.join(__dirname, '..', 'functions', 'videos'))
   .filter((f) => path.extname(f) === '.json')
   .map((f) => path.basename(f, '.json'))
 

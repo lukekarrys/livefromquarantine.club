@@ -12,7 +12,7 @@ const { API_KEY } = process.env
 const hideKey = (str) => str.replace(API_KEY, 'X'.repeat(3))
 
 const dataPath = (...parts) =>
-  path.join(__dirname, '..', 'functions', 'playlist', ...parts)
+  path.join(__dirname, '..', 'functions', 'videos', ...parts)
 
 const writeFile = async (fileId, resp) => {
   const prettierOptions = await prettier.resolveConfig(__dirname)
@@ -29,7 +29,7 @@ const writeFile = async (fileId, resp) => {
 const getArtist = async (artistKey) => {
   let artist = null
   try {
-    artist = require(`../functions/playlist/${artistKey}.js`)
+    artist = require(`../functions/videos/${artistKey}.js`)
   } catch (e) {
     throw new Error(`Invalid artistKey: ${artistKey}`)
   }
