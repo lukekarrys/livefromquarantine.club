@@ -1,9 +1,10 @@
 import { FunctionalComponent, h, Fragment } from 'preact'
+import { useState, useEffect } from 'preact/hooks'
 import { route } from 'preact-router'
 import artists from '../../../artists.json'
 import Button from '../../components/button'
 import Input from '../../components/input'
-import { useState } from 'preact/hooks'
+import manifest from '../../manifest.json'
 
 const parseUrl = (str: string): string => {
   try {
@@ -17,6 +18,11 @@ const parseUrl = (str: string): string => {
 const Home: FunctionalComponent = () => {
   const [videosId, setVideosId] = useState('')
   const parsedId = parseUrl(videosId)
+
+  useEffect(() => {
+    document.title = manifest.name
+  }, [])
+
   return (
     <Fragment>
       <form
