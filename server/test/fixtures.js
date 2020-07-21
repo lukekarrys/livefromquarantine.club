@@ -1,6 +1,6 @@
 const path = require('path')
 const fs = require('fs').promises
-const functionHandler = require('../functions/playlist/playlist').handler
+const functionHandler = require('../functions/videos/videos').handler
 const { cli } = require('../api/artists')
 
 const buildFixture = async (id) => {

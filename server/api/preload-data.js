@@ -29,7 +29,7 @@ const writeFile = async (fileId, resp) => {
 const getArtist = async (artistKey) => {
   let artist = null
   try {
-    artist = require(`../functions/playlist/${artistKey}.js`)
+    artist = require(`../functions/videos/${artistKey}.js`)
   } catch (e) {
     throw new Error(`Invalid artistKey: ${artistKey}`)
   }

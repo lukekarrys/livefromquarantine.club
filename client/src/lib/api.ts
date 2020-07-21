@@ -87,7 +87,7 @@ const normalizeData = ({ meta, data: videos }: ApiData): NormalizedData => {
 }
 
 const fetchData = (id: ArtistId): Promise<NormalizedData> =>
-  fetch(`/.netlify/functions/playlist?id=${id}`).then(async (resp) => {
+  fetch(`/.netlify/functions/videos?id=${id}`).then(async (resp) => {
     const data = await resp.json()
     if (resp.ok) {
       return normalizeData(data)

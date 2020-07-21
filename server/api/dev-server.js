@@ -3,7 +3,7 @@ const qs = require('querystring')
 require('dotenv').config({ path: path.resolve(__dirname, '..', '..', '.env') })
 
 const http = require('http')
-const functionHandler = require('../functions/playlist/playlist').handler
+const functionHandler = require('../functions/videos/videos').handler
 
 const port = 3001
 const server = http.createServer()
