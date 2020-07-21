@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1244
+        },
+        "id": "jJf2-aS1fR8",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean's streaming every Monday, Wednesday, and Friday around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n1:05 Roger Miller - Annihilation\n2:58 AJJ - Normalization Blues\n6:22 AJJ - Truckers Are The Blood\n10:50 AJJ - Your Voice, As I Remember It\n13:36 Why? - These Few Presidents\n16:40 AJJ - Temple Grandin\n19:05 Roger Miller - Reannihilation\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-07-21T06:12:22.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "jJf2-aS1fR8"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/jJf2-aS1fR8/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/jJf2-aS1fR8/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/jJf2-aS1fR8/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/jJf2-aS1fR8/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/jJf2-aS1fR8/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - July 20"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1480
         },
         "id": "xFYWS89ImTA",
