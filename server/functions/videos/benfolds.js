@@ -11,5 +11,7 @@ module.exports = {
   id: 'benfolds',
   meta: {
     title: 'Ben Folds – Apartment Requests',
+    description:
+      '<a href="https://www.patreon.com/BenFolds" target="_blank">Patreon</a>',
   },
 }
