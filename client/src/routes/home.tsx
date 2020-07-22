@@ -63,9 +63,9 @@ const Home: FunctionalComponent<Props> = ({ accessToken }) => {
           </form>
         ) : (
           <Fragment>
-            <label class="mb-4 block text-xl text-center" htmlFor="videosInput">
+            <h2 class="mb-4 block text-xl text-center">
               Authenticate with YouTube to load any playlist:
-            </label>
+            </h2>
             <Button
               as="a"
               class="mb-4 text-xl text-center block"
@@ -88,9 +88,9 @@ const Home: FunctionalComponent<Props> = ({ accessToken }) => {
         )}
       </div>
       <div class="mt-4 max-w-screen-sm mx-auto px-2">
-        <h1 class="mb-4 text-xl text-center">
+        <h2 class="mb-4 text-xl text-center">
           Or choose from one of these playlists:
-        </h1>
+        </h2>
         {artists.map((artist) => (
           <Button
             as="a"
