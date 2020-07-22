@@ -34,34 +34,46 @@ const Home: FunctionalComponent<Props> = ({ accessToken, requireAuth }) => {
     <Fragment>
       <div class="mt-4 max-w-screen-sm mx-auto px-2">
         {accessToken || !requireAuth ? (
-          <form
-            onSubmit={(e): void => {
-              e.preventDefault()
-              parsedId && route(`/${parsedId}`)
-            }}
-          >
-            <label class="mb-4 block text-xl text-center" htmlFor="videosInput">
-              Enter a YouTube playlist or video:
-            </label>
-            <Input
-              id="videosInput"
-              class="z-10 relative w-full block text-center text-xl p-1 rounded-t"
-              placeholder="youtube.com/playlist?list=PL&hellip;"
-              rounded={false}
-              onInput={(e): void =>
-                setVideosId((e.target as HTMLInputElement).value)
-              }
-            />
+          <Fragment>
+            <form
+              onSubmit={(e): void => {
+                e.preventDefault()
+                parsedId && route(`/${parsedId}`)
+              }}
+            >
+              <label
+                class="mb-4 block text-xl text-center"
+                htmlFor="videosInput"
+              >
+                Enter a YouTube playlist or video:
+              </label>
+              <Input
+                id="videosInput"
+                class="z-10 relative w-full block text-center text-xl p-1 rounded-t"
+                placeholder="youtube.com/playlist?list=PL&hellip;"
+                rounded={false}
+                onInput={(e): void =>
+                  setVideosId((e.target as HTMLInputElement).value)
+                }
+              />
+              <Button
+                as="input"
+                type="submit"
+                border={false}
+                rounded={false}
+                class="w-full block text-center mb-4 text-xl rounded-b border-l border-r border-b"
+                disabled={!parsedId}
+                value="Submit"
+              />
+            </form>
             <Button
-              as="input"
-              type="submit"
-              border={false}
-              rounded={false}
-              class="w-full block text-center mb-4 text-xl rounded-b border-l border-r border-b"
-              disabled={!parsedId}
-              value="Submit"
-            />
-          </form>
+              as="a"
+              class="w-full block text-center mt-4 text-xl"
+              href="/logout"
+            >
+              Logout
+            </Button>
+          </Fragment>
         ) : (
           <Fragment>
             <h2 class="mb-4 block text-xl text-center">

@@ -18,9 +18,9 @@ if ((module as any).hot) {
 
 const getAccessToken = (): LSAccessToken => {
   const params = qs.parse(location.hash.substring(1))
+  location.hash = ''
 
   if (params.access_token) {
-    location.hash = ''
     const accessToken = params.access_token as AccessToken
     localStorage.setItem('accessToken', accessToken)
     return accessToken
