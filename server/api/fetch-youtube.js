@@ -2,8 +2,6 @@ const axios = require('axios')
 const duration = require('iso8601-duration')
 const findSetlist = require('./find-setlist')
 
-const apiUrl = `https://www.googleapis.com/youtube/v3`
-
 const omitCommentIds = [
   'UgyA0JzCcn4gxF1ktmZ4AaABAg', // Ben Gibbard: Live From Home (3/22/20)
 ]
@@ -12,47 +10,66 @@ const blessCommentIds = [
   'UgzyR6a6B-Czl4pI5ZN4AaABAg', // Ben Gibbard: Live From Home (3/22/20)
 ]
 
-const get = (url) => {
-  return axios.get(url)
+const get = ({ url, params = {}, headers = {}, token }) => {
+  const axiosRequest = {
+    baseURL: `https://www.googleapis.com/youtube/v3`,
+    url,
+    params,
+    headers,
+  }
+
+  if (token.key) {
+    axiosRequest.params.key = token.key
+  } else if (token.accessToken) {
+    axiosRequest.headers.Authorization = `Bearer ${token.accessToken}`
+  }
+
+  return axios.request(axiosRequest)
 }
 
-const commentUrl = (id, key) => {
-  const url = new URL(`${apiUrl}/commentThreads`, apiUrl)
-  url.searchParams.set('part', 'snippet')
-  url.searchParams.set('order', 'relevance')
-  url.searchParams.set('textFormat', 'plainText')
-  url.searchParams.set('maxResults', '50')
-  url.searchParams.set('videoId', id)
-  url.searchParams.set('key', key)
-  return url.toString()
-}
+const commentUrl = (id, token) => ({
+  url: '/commentThreads',
+  params: {
+    part: 'snippet',
+    order: 'relevance',
+    textFormat: 'plainText',
+    maxResults: '50',
+    videoId: id,
+  },
+  token,
+})
 
-const playlistItemsUrl = (id, key, pageToken) => {
-  const url = new URL(`${apiUrl}/playlistItems`, apiUrl)
-  url.searchParams.set('part', 'snippet')
-  url.searchParams.set('maxResults', '50')
-  url.searchParams.set('playlistId', id)
-  url.searchParams.set('key', key)
-  if (pageToken) url.searchParams.set('pageToken', pageToken)
-  return url.toString()
-}
+const playlistItemsUrl = (id, token, pageToken) => ({
+  url: '/playlistItems',
+  params: Object.assign(
+    {
+      part: 'snippet',
+      maxResults: '50',
+      playlistId: id,
+    },
+    pageToken ? { pageToken } : {}
+  ),
+  token,
+})
 
-const playlistUrl = (id, key) => {
-  const url = new URL(`${apiUrl}/playlists`, apiUrl)
-  url.searchParams.set('part', 'snippet')
-  url.searchParams.set('maxResults', '1')
-  url.searchParams.set('id', id)
-  url.searchParams.set('key', key)
-  return url.toString()
-}
+const playlistUrl = (id, token) => ({
+  url: '/playlists',
+  params: {
+    part: 'snippet',
+    maxResults: '1',
+    id: id,
+  },
+  token,
+})
 
-const videosUrl = (id, parts, key) => {
-  const url = new URL(`${apiUrl}/videos`, apiUrl)
-  url.searchParams.set('part', parts.join(','))
-  url.searchParams.set('id', id)
-  url.searchParams.set('key', key)
-  return url.toString()
-}
+const videosUrl = (id, parts, token) => ({
+  url: '/videos',
+  params: {
+    part: parts.join(','),
+    id: id,
+  },
+  token,
+})
 
 const sortKeys = (obj) => {
   const keys = Object.keys(obj)
@@ -121,11 +138,11 @@ const isVideoFuture = (video) =>
 
 const getPaginatedVideosFromPlaylist = async (
   id,
-  key,
+  token,
   pageToken,
   previousItems = []
 ) => {
-  const resp = await get(playlistItemsUrl(id, key, pageToken))
+  const resp = await get(playlistItemsUrl(id, token, pageToken))
 
   const { items, nextPageToken } = resp.data
   const publicVideos = items.filter((v) => !isVideoPrivate(v))
@@ -136,7 +153,7 @@ const getPaginatedVideosFromPlaylist = async (
     videosUrl(
       publicVideos.map((v) => v.snippet.resourceId.videoId).join(','),
       ['contentDetails', 'liveStreamingDetails'],
-      key
+      token
     )
   )
 
@@ -153,7 +170,7 @@ const getPaginatedVideosFromPlaylist = async (
   if (nextPageToken) {
     return await getPaginatedVideosFromPlaylist(
       id,
-      key,
+      token,
       nextPageToken,
       newItems
     )
@@ -168,8 +185,8 @@ const getPaginatedVideosFromPlaylist = async (
   }
 }
 
-const getPlaylistData = async (id, key) => {
-  const playlistResp = await get(playlistUrl(id, key))
+const getPlaylistData = async (id, token) => {
+  const playlistResp = await get(playlistUrl(id, token))
   const playlist = playlistResp.data.items[0]
 
   if (!playlist) {
@@ -184,7 +201,7 @@ const getPlaylistData = async (id, key) => {
   }
 }
 
-const getVideoSetlist = async (video, key) => {
+const getVideoSetlist = async (video, token) => {
   const {
     id: videoId,
     snippet: { description },
@@ -195,7 +212,7 @@ const getVideoSetlist = async (video, key) => {
     return
   }
 
-  video.comments = await get(commentUrl(videoId, key))
+  video.comments = await get(commentUrl(videoId, token))
     .then((resp) => {
       return Object.assign(resp.data, {
         items: resp.data.items
@@ -218,12 +235,12 @@ const getVideoSetlist = async (video, key) => {
     .then((r) => normalizeData(r))
 }
 
-const getFullVideoData = async (videoId, key) => {
+const getFullVideoData = async (videoId, token) => {
   const videoResp = await get(
     videosUrl(
       videoId,
       ['contentDetails', 'snippet', 'liveStreamingDetails'],
-      key
+      token
     )
   )
 
@@ -233,7 +250,7 @@ const getFullVideoData = async (videoId, key) => {
   }
 
   const videos = normalizeData(videoResp.data)
-  await Promise.all(videos.items.map((video) => getVideoSetlist(video, key)))
+  await Promise.all(videos.items.map((video) => getVideoSetlist(video, token)))
 
   return {
     meta: {
@@ -243,14 +260,14 @@ const getFullVideoData = async (videoId, key) => {
   }
 }
 
-const getFullPlaylistData = async (playlistId, key) => {
+const getFullPlaylistData = async (playlistId, token) => {
   const [playlistMeta, videosResp] = await Promise.all([
-    getPlaylistData(playlistId, key),
-    getPaginatedVideosFromPlaylist(playlistId, key),
+    getPlaylistData(playlistId, token),
+    getPaginatedVideosFromPlaylist(playlistId, token),
   ])
 
   const videos = normalizeData(videosResp.data)
-  await Promise.all(videos.items.map((video) => getVideoSetlist(video, key)))
+  await Promise.all(videos.items.map((video) => getVideoSetlist(video, token)))
 
   return {
     meta: playlistMeta,

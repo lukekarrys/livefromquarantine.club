@@ -1,5 +1,4 @@
 const path = require('path')
-const qs = require('querystring')
 require('dotenv').config({ path: path.resolve(__dirname, '..', '..', '.env') })
 
 const http = require('http')
@@ -11,8 +10,12 @@ const server = http.createServer()
 server
   .on('request', async (req, res) => {
     try {
+      const reqUrl = new URL(req.url, 'http://localhost:3000')
       const { body, statusCode } = await functionHandler({
-        queryStringParameters: { id: qs.parse(req.url.split('?')[1]).id },
+        queryStringParameters: {
+          id: reqUrl.searchParams.get('id'),
+          accessToken: reqUrl.searchParams.get('accessToken'),
+        },
         httpMethod: req.method,
       })
       res.writeHead(statusCode)

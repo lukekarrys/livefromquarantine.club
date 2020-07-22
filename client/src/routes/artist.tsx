@@ -1,11 +1,11 @@
 import { FunctionalComponent, h, Fragment } from 'preact'
 import { useEffect, useState } from 'preact/hooks'
 import { useMachine } from '@xstate/react/lib/fsm'
-import playerMachine from '../../machine'
-import * as selectors from '../../machine/selectors'
-import Player from '../../components/player'
-import fetchData from '../../lib/api'
-import useDebugService from '../../lib/useDebugService'
+import playerMachine from '../machine'
+import * as selectors from '../machine/selectors'
+import Player from '../components/player'
+import fetchData from '../lib/api'
+import useDebugService from '../lib/useDebugService'
 import {
   ArtistId,
   Videos,
@@ -13,10 +13,12 @@ import {
   TrackId,
   SelectMode,
   Repeat,
-} from '../../types'
+  AccessToken,
+} from '../types'
 
 interface Props {
   artist: ArtistId
+  accessToken: AccessToken
 }
 
 const hash = window.location.hash.slice(1)
@@ -26,7 +28,7 @@ const selectMode = localStorage.getItem('selectMode')
 const shuffle = localStorage.getItem('shuffle')
 const repeat = localStorage.getItem('repeat')
 
-const Artist: FunctionalComponent<Props> = ({ artist }) => {
+const Artist: FunctionalComponent<Props> = ({ artist, accessToken }) => {
   const [videos, setVideos] = useState<Videos | undefined>(undefined)
   const [meta, setMeta] = useState<ArtistMeta | undefined>(undefined)
   const [state, send, service] = useMachine(playerMachine)
@@ -35,7 +37,7 @@ const Artist: FunctionalComponent<Props> = ({ artist }) => {
 
   useEffect(() => {
     send('FETCH_START')
-    fetchData(artist)
+    fetchData(artist, accessToken)
       .then((res) => {
         setVideos(res.videos)
         setMeta(res.meta)
@@ -53,7 +55,7 @@ const Artist: FunctionalComponent<Props> = ({ artist }) => {
         })
       })
       .catch((error) => send({ type: 'FETCH_ERROR', error }))
-  }, [artist, send])
+  }, [artist, send, accessToken])
 
   useEffect(() => {
     if (meta?.title) {

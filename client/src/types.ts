@@ -2,6 +2,7 @@ export type TrackId = 'string'
 export type VideoId = 'string'
 export type ArtistId = 'string'
 export type OrderId = 'string'
+export type AccessToken = 'string'
 
 export type Track = {
   id: TrackId

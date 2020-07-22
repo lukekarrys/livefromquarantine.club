@@ -38,7 +38,7 @@ const getArtist = async (artistKey) => {
     throw new Error(`Invalid artistKey: ${artistKey}`)
   }
 
-  const resp = await getPlaylist(artist.playlistId, API_KEY)
+  const resp = await getPlaylist(artist.playlistId, { key: API_KEY })
   await writeFile(artist.id, resp)
 }
 

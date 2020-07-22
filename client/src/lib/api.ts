@@ -1,3 +1,5 @@
+import * as qs from './searchParams'
+
 import {
   Track,
   Videos,
@@ -6,6 +8,7 @@ import {
   TrackId,
   ArtistMeta,
   ArtistId,
+  AccessToken,
 } from '../types'
 
 interface NormalizedData {
@@ -86,16 +89,21 @@ const normalizeData = ({ meta, data: videos }: ApiData): NormalizedData => {
   return resp
 }
 
-const fetchData = (id: ArtistId): Promise<NormalizedData> =>
-  fetch(`/.netlify/functions/videos?id=${id}`).then(async (resp) => {
-    const data = await resp.json()
-    if (resp.ok) {
-      return normalizeData(data)
-    } else {
-      throw new Error(
-        data.error || resp.statusText || 'An unknown error occurred'
-      )
+const fetchData = (
+  id: ArtistId,
+  accessToken?: AccessToken
+): Promise<NormalizedData> =>
+  fetch(`/.netlify/functions/videos?${qs.stringify({ id, accessToken })}`).then(
+    async (resp) => {
+      const data = await resp.json()
+      if (resp.ok) {
+        return normalizeData(data)
+      } else {
+        throw new Error(
+          data.error || resp.statusText || 'An unknown error occurred'
+        )
+      }
     }
-  })
+  )
 
 export default fetchData

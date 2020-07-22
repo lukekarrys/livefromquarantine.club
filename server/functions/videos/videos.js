@@ -4,7 +4,7 @@ const nodeEval = require('eval')
 const parseVideos = require('../../api/parse-videos')
 const { getPlaylist, getVideo } = require('../../api/fetch-youtube')
 
-const { API_KEY, LAMBDA_TASK_ROOT } = process.env
+const { LAMBDA_TASK_ROOT } = process.env
 const ROOT = LAMBDA_TASK_ROOT
   ? path.join(LAMBDA_TASK_ROOT, 'src', 'functions', 'videos')
   : __dirname
@@ -16,11 +16,11 @@ const runtimeRequire = (f) =>
       path.extname(f) === '.json' ? JSON.parse(str) : nodeEval(str, true)
     )
 
-const getVideos = async (id) => {
+const getVideos = async (id, accessToken) => {
   const errors = []
   for (const req of [getPlaylist, getVideo]) {
     try {
-      return await req(id, API_KEY)
+      return await req(id, { accessToken })
     } catch (e) {
       errors.push(e)
     }
@@ -40,7 +40,7 @@ const res = (body, statusCode = 200) => ({
 
 exports.handler = async (event) => {
   const {
-    queryStringParameters: { id },
+    queryStringParameters: { id, accessToken },
     httpMethod,
   } = event
 
@@ -73,8 +73,12 @@ exports.handler = async (event) => {
     // Most playlists wont be preloaded so move on to fetching from youtube
   }
 
+  if (!accessToken) {
+    return res({ error: 'Missing required accessToken parameter' }, 400)
+  }
+
   try {
-    const { videos, meta } = await getVideos(id)
+    const { videos, meta } = await getVideos(id, accessToken)
 
     log('Found YT API')
 
