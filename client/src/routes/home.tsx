@@ -10,6 +10,7 @@ import { AccessToken } from '../types'
 
 interface Props {
   accessToken?: AccessToken
+  requireAuth?: boolean
 }
 
 const parseRouteId = (str: string): string => {
@@ -21,7 +22,7 @@ const parseRouteId = (str: string): string => {
   }
 }
 
-const Home: FunctionalComponent<Props> = ({ accessToken }) => {
+const Home: FunctionalComponent<Props> = ({ accessToken, requireAuth }) => {
   const [videosId, setVideosId] = useState('')
   const parsedId = parseRouteId(videosId)
 
@@ -32,7 +33,7 @@ const Home: FunctionalComponent<Props> = ({ accessToken }) => {
   return (
     <Fragment>
       <div class="mt-4 max-w-screen-sm mx-auto px-2">
-        {accessToken ? (
+        {accessToken || !requireAuth ? (
           <form
             onSubmit={(e): void => {
               e.preventDefault()

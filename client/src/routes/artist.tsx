@@ -18,7 +18,7 @@ import {
 
 interface Props {
   artist: ArtistId
-  accessToken: AccessToken
+  accessToken?: AccessToken
 }
 
 const hash = window.location.hash.slice(1)

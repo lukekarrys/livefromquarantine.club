@@ -8,13 +8,15 @@ import artists from '../../artists.json'
 import * as qs from '../lib/searchParams'
 import { AccessToken } from '../types'
 
+type LSAccessToken = AccessToken | undefined
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 if ((module as any).hot) {
   // tslint:disable-next-line:no-var-requires
   require('preact/debug')
 }
 
-const getAccessToken = (): AccessToken | undefined => {
+const getAccessToken = (): LSAccessToken => {
   const params = qs.parse(location.hash.substring(1))
 
   if (params.access_token) {
@@ -24,11 +26,12 @@ const getAccessToken = (): AccessToken | undefined => {
     return accessToken
   }
 
-  const lsAccessToken = localStorage.getItem('accessToken') as AccessToken
+  const lsAccessToken = localStorage.getItem('accessToken') as LSAccessToken
 
   return lsAccessToken || undefined
 }
 
+const requireAuth = false
 const accessToken = getAccessToken()
 const unauthedUrls = [
   '/',
@@ -38,7 +41,7 @@ const unauthedUrls = [
 ]
 
 const handleRoute = (e: RouterOnChangeArgs): void => {
-  if (!unauthedUrls.includes(e.url) && !accessToken) {
+  if (!unauthedUrls.includes(e.url) && !accessToken && requireAuth) {
     route('/', true)
   }
 }
@@ -47,7 +50,12 @@ const App: FunctionalComponent = () => {
   return (
     <div id="app">
       <Router onChange={handleRoute}>
-        <Route path="/" component={Home} accessToken={accessToken} />
+        <Route
+          path="/"
+          component={Home}
+          accessToken={accessToken}
+          requireAuth={requireAuth}
+        />
         <Route path="/privacy" component={Privacy} />
         <Route path="/logout" component={Logout} />
         <Route path="/:artist" component={Artist} accessToken={accessToken} />

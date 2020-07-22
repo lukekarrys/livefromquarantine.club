@@ -27,6 +27,15 @@ const get = ({ url, params = {}, headers = {}, token }) => {
   return axios.request(axiosRequest)
 }
 
+const createAxiosError = (response, message, status, statusText) => {
+  const error = new Error(message)
+  response.status = status
+  response.statusText = statusText
+  response.data.error = { message: error.message }
+  error.response = response
+  return error
+}
+
 const commentUrl = (id, token) => ({
   url: '/commentThreads',
   params: {
@@ -186,14 +195,18 @@ const getPaginatedVideosFromPlaylist = async (
 }
 
 const getPlaylistData = async (id, token) => {
-  const playlistResp = await get(playlistUrl(id, token))
-  const playlist = playlistResp.data.items[0]
+  const response = await get(playlistUrl(id, token))
 
-  if (!playlist) {
-    throw new Error('Playlist could not be found')
+  if (!response.data.pageInfo.totalResults) {
+    throw createAxiosError(
+      response,
+      'Playlist could not be found',
+      404,
+      'Not Found'
+    )
   }
 
-  const { title, description } = playlist.snippet
+  const { title, description } = response.data.items[0].snippet
 
   return {
     title,
@@ -236,7 +249,7 @@ const getVideoSetlist = async (video, token) => {
 }
 
 const getFullVideoData = async (videoId, token) => {
-  const videoResp = await get(
+  const response = await get(
     videosUrl(
       videoId,
       ['contentDetails', 'snippet', 'liveStreamingDetails'],
@@ -244,12 +257,18 @@ const getFullVideoData = async (videoId, token) => {
     )
   )
 
-  const video = videoResp.data.items[0]
+  const video = response.data.items[0]
+
   if (!video || isVideoPrivate(video) || isVideoFuture(video)) {
-    throw new Error('Video could not be found')
+    throw createAxiosError(
+      response,
+      'VIdeo could not be found',
+      404,
+      'Not Found'
+    )
   }
 
-  const videos = normalizeData(videoResp.data)
+  const videos = normalizeData(response.data)
   await Promise.all(videos.items.map((video) => getVideoSetlist(video, token)))
 
   return {

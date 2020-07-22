@@ -1,10 +1,13 @@
 const fs = require('fs').promises
+const dlv = require('dlv')
 const path = require('path')
 const nodeEval = require('eval')
 const parseVideos = require('../../api/parse-videos')
 const { getPlaylist, getVideo } = require('../../api/fetch-youtube')
 
-const { LAMBDA_TASK_ROOT } = process.env
+// Keeping the server side API_KEY around for awhile
+// in case oauth on the client isn't ideal with 1hr tokens
+const { API_KEY, LAMBDA_TASK_ROOT } = process.env
 const ROOT = LAMBDA_TASK_ROOT
   ? path.join(LAMBDA_TASK_ROOT, 'src', 'functions', 'videos')
   : __dirname
@@ -17,20 +20,19 @@ const runtimeRequire = (f) =>
     )
 
 const getVideos = async (id, accessToken) => {
-  const errors = []
-  for (const req of [getPlaylist, getVideo]) {
+  let i = 0
+  const reqs = [getPlaylist, getVideo]
+
+  for (const req of reqs) {
+    i++
     try {
-      return await req(id, { accessToken })
-    } catch (e) {
-      errors.push(e)
+      return await req(id, accessToken ? { accessToken } : { key: API_KEY })
+    } catch (err) {
+      if (!err.response || err.response.status !== 404 || i === reqs.length) {
+        throw err
+      }
     }
   }
-
-  throw new Error(
-    `fetching either playlist or video:\n${errors
-      .map((e) => e.stack)
-      .join('\n')}`
-  )
 }
 
 const res = (body, statusCode = 200) => ({
@@ -73,7 +75,7 @@ exports.handler = async (event) => {
     // Most playlists wont be preloaded so move on to fetching from youtube
   }
 
-  if (!accessToken) {
+  if (!accessToken && !API_KEY) {
     return res({ error: 'Missing required accessToken parameter' }, 400)
   }
 
@@ -88,6 +90,9 @@ exports.handler = async (event) => {
     })
   } catch (err) {
     log(err)
-    return res({ error: 'Error fetching videos' }, 500)
+    const status = err.response ? err.response.status : 500
+    const message =
+      dlv(err, 'response.data.error.message') || 'An error occurred'
+    return res({ error: message }, status)
   }
 }
