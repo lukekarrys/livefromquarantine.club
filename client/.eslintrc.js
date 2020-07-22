@@ -28,7 +28,6 @@ module.exports = {
     'react/no-unknown-property': ['error', { ignore: ['class'] }],
     'react/prop-types': 0,
     'no-console': 2,
-    '@typescript-eslint/camelcase': 0,
   },
   settings: {
     react: {
