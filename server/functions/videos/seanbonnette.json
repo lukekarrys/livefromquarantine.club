@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1091
+        },
+        "id": "2vhRxWuQgz4",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean's streaming every Monday, Wednesday, and Friday around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n0:20 AJJ - Rejoice\n3:32 AJJ - Body Terror Song\n5:45 Ween - Johnny On The Spot\n8:00 AJJ - Mega Guillotine 2020\n10:37 The Beatles - Eleanor Rigby\n12:46 AJJ - Do, Re, Me\n15:56 AJJ - If You Have Love In Your Heart\n17:24 The Beatles - Her Majesty\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-07-23T05:38:05.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "2vhRxWuQgz4"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/2vhRxWuQgz4/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/2vhRxWuQgz4/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/2vhRxWuQgz4/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/2vhRxWuQgz4/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/2vhRxWuQgz4/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - July 22"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1244
         },
         "id": "jJf2-aS1fR8",
