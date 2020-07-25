@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1598
+        },
+        "id": "gV9U4L--EoA",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean's streaming every Monday, Wednesday, and Friday around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n2:05 Roger Miller - Oo-de-lally\n3:40 Shellshag - Come Down\n6:08 Guided By Voices - Game of Pricks\n7:45 AJJ - American Garbage\n10:12 AJJ - A Poem\n12:10 AJJ - Junkie Church\n14:45 AJJ - Horsehair Vase\n17:35 Silver Jews - Candy Jail\n20:10 Southwest of Heaven\n21:24 AJJ - Distance\n23:46 Guided By Voices - Motor Away\n\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-07-25T06:50:17.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "gV9U4L--EoA"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/gV9U4L--EoA/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/gV9U4L--EoA/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/gV9U4L--EoA/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/gV9U4L--EoA/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/gV9U4L--EoA/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - July 24"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1091
         },
         "id": "2vhRxWuQgz4",
