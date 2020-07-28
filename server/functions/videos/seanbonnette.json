@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1162
+        },
+        "id": "T4ma8qQpoM4",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean's streaming every Monday, Wednesday, and Friday around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n1:50 AJJ - Loudmouth\n4:08 AJJ - Fucc The Devil\n6:39 AJJ - My Brain Is a Human Body\n9:38 Against Me! - Sink, Florida, Sink\n12:45 AJJ - Feedbag\n15:28 AJJ - Big Bird\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-07-28T04:49:15.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "T4ma8qQpoM4"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/T4ma8qQpoM4/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/T4ma8qQpoM4/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/T4ma8qQpoM4/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/T4ma8qQpoM4/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/T4ma8qQpoM4/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - July 27"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1598
         },
         "id": "gV9U4L--EoA",
@@ -294,55 +343,6 @@
             }
           },
           "title": "Live from Quarantine - July 13"
-        },
-        "comments": {
-          "items": []
-        }
-      },
-      {
-        "contentDetails": {
-          "duration": 1408
-        },
-        "id": "DnCGwpfHiqo",
-        "kind": "youtube#video",
-        "snippet": {
-          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
-          "channelTitle": "AJJ the band",
-          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean's streaming every Monday, Wednesday, and Friday around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 intro\n0:59 AJJ - Space and Time\n4:46 Kimya Dawson - Hadlock Padlock\n8:45 a new one\n11:47 AJJ - No More Shame, No More Fear, No More Dread\n15:56 The Mountain Goats - No Children\n19:10 AJJ - Big Bird\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
-          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-          "publishedAt": "2020-07-11T05:50:10.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "DnCGwpfHiqo"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/DnCGwpfHiqo/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/DnCGwpfHiqo/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/DnCGwpfHiqo/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/DnCGwpfHiqo/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/DnCGwpfHiqo/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Live from Quarantine - July 10"
         },
         "comments": {
           "items": []
@@ -688,55 +688,6 @@
           "channelTitle": "AJJ the band",
           "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n00:00 Live from Quarantine\n00:40 AJJ - Kokopelli Face Tattoo\n04:25 AJJ - Feedbag\n08:30 AJJ - My Brain is a Human Body\n11:10 AJJ - Truckers are the Blood\n14:27 AJJ - I Miss You\n17:19 Roger Miller - Oo-de-lally\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
           "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-          "publishedAt": "2020-06-22T05:31:48.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "MTHcAFhtBzM"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/MTHcAFhtBzM/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/MTHcAFhtBzM/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/MTHcAFhtBzM/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/MTHcAFhtBzM/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/MTHcAFhtBzM/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Live from Quarantine - June 21"
-        },
-        "comments": {
-          "items": []
-        }
-      },
-      {
-        "contentDetails": {
-          "duration": 1109
-        },
-        "id": "MTHcAFhtBzM",
-        "kind": "youtube#video",
-        "snippet": {
-          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
-          "channelTitle": "AJJ the band",
-          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n00:00 Live from Quarantine\n00:40 AJJ - Kokopelli Face Tattoo\n04:25 AJJ - Feedbag\n08:30 AJJ - My Brain is a Human Body\n11:10 AJJ - Truckers are the Blood\n14:27 AJJ - I Miss You\n17:19 Roger Miller - Oo-de-lally\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
-          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
           "publishedAt": "2020-06-22T05:31:41.000Z",
           "resourceId": {
             "kind": "youtube#video",
@@ -770,55 +721,6 @@
             }
           },
           "title": "Live from Quarantine - June 21"
-        },
-        "comments": {
-          "items": []
-        }
-      },
-      {
-        "contentDetails": {
-          "duration": 1359
-        },
-        "id": "Uk7bzbP-A_c",
-        "kind": "youtube#video",
-        "snippet": {
-          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
-          "channelTitle": "AJJ the band",
-          "description": "Sean's streaming every night around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n00:00 Live from Quarantine\n00:40 Belle and Sebastian - Lord Anthony\n05:12 AJJ - Junkie Church\n07:57 AJJ - Love Will Fuck Us Apart\n11:02 The Thermals - Pillar of Salt\n17:40 AJJ - Mega Guillotine 2020\n19:40 AJJ - Love in the Time of HPV\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
-          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
-          "publishedAt": "2020-06-21T05:37:33.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "Uk7bzbP-A_c"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/Uk7bzbP-A_c/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/Uk7bzbP-A_c/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/Uk7bzbP-A_c/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/Uk7bzbP-A_c/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/Uk7bzbP-A_c/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Live from Quarantine - June 20"
         },
         "comments": {
           "items": []
