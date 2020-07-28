@@ -1,15 +1,14 @@
 # livefromquarantine.club
 
-## Playlists
+## Preloaded Playlist Links
 
-- [Sean Bonnette](https://www.youtube.com/playlist?list=PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1)
-- [Ben Gibbard](https://www.youtube.com/playlist?list=PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv)
-- [Ben Folds](https://www.youtube.com/playlist?list=PLG507gy2-Kp8Vj66jnxn1AA0XFr1L_QXy)
-- [TMOE](https://www.youtube.com/playlist?list=PLsqIAvvqdduhw1f7RVxdcCmaCm5Zy7Osc)
+- Ben Folds – Apartment Requests - [LFQ](https://livefromquarantine.club/benfolds) [YouTube](https://www.youtube.com/playlist?list=PLG507gy2-Kp8Vj66jnxn1AA0XFr1L_QXy)
+- Ben Gibbard – Live From Home - [LFQ](https://livefromquarantine.club/bengibbard) [YouTube](https://www.youtube.com/playlist?list=PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv)
+- Sean Bonnette – Live From Quarantine - [LFQ](https://livefromquarantine.club/seanbonnette) [YouTube](https://www.youtube.com/playlist?list=PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1)
+- The Tallest Man on Earth – #StayHome #WithMe - [LFQ](https://livefromquarantine.club/tmoe) [YouTube](https://www.youtube.com/playlist?list=PLsqIAvvqdduhw1f7RVxdcCmaCm5Zy7Osc)
 
 ## Links
 
-- [Docs to get youtube playlist videos](https://developers.google.com/youtube/v3/docs/playlistItems/list)
 - [Google API Dashboard](https://console.developers.google.com/apis/credentials?project=livefromquarantine)
 
 ## Preloaded Playlists

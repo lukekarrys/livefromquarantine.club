@@ -46,6 +46,7 @@
   },
   "private": true,
   "scripts": {
+    "build": "node build.js",
     "data": "node api/preload-data.js",
     "data:fixtures": "node test/fixtures.js",
     "dev": "NODE_ENV=development node api/dev-server.js",

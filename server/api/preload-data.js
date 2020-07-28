@@ -26,39 +26,22 @@ const writeFile = async (fileId, resp) => {
   )
 }
 
-const getArtist = async (artistKey) => {
-  let artist = null
-  try {
-    artist = require(`../functions/videos/${artistKey}.js`)
-  } catch (e) {
-    throw new Error(`Invalid artistKey: ${artistKey}`)
-  }
-
-  if (!artist) {
-    throw new Error(`Invalid artistKey: ${artistKey}`)
-  }
-
-  const resp = await getPlaylist(artist.playlistId, { key: API_KEY })
-  await writeFile(artist.id, resp)
-}
-
-const main = async (artists = []) => {
-  if (!artists.length) throw new Error('No artists')
-  return Promise.all(
-    artists.map((id) =>
-      getArtist(id)
-        .then(() => ({ id, ok: true }))
+const main = async (artists = []) =>
+  Promise.all(
+    artists.map((artist) =>
+      getPlaylist(artist.playlistId, { key: API_KEY })
+        .then((resp) => writeFile(artist.id, resp))
+        .then(() => ({ id: artist.id, ok: true }))
         .catch((error) => ({
-          id,
+          id: artist.id,
           ok: false,
           error,
           response: error.response && error.response.data,
         }))
     )
   )
-}
 
-main(cli())
+main(cli(true))
   .then((res) => {
     console.log(hideKey(JSON.stringify(res, null, 2)))
     if (res.some((r) => !r.ok)) {
