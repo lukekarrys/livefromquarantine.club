@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 685
+        },
+        "id": "vd_UyiZYuio",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean's streaming every Monday, Wednesday, and Friday around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n0:51 The Microphones - I Felt Your Shape\n3:06 AJJ - I Wanna Be Your Dog, Too\n6:23 AJJ - Now That I'm At The Top Of My Game\n9:05 Daniel Johnston - True Love Will Find You In The End\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-08-01T04:41:22.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "vd_UyiZYuio"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/vd_UyiZYuio/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/vd_UyiZYuio/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/vd_UyiZYuio/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/vd_UyiZYuio/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/vd_UyiZYuio/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - July 31"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1270
         },
         "id": "NghGJi4ovVY",
