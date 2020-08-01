@@ -369,6 +369,25 @@
                 },
                 "videoId": "HjUhw_33wAk"
               }
+            },
+            {
+              "id": "UgzBJFE06U9bR-ozNRx4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgzBJFE06U9bR-ozNRx4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "publishedAt": "2020-05-24T05:48:58.000Z",
+                    "textDisplay": "SET LIST (Which does *not* include \"Red Is Blue,\" despite the fact that it's been requested 749 times now. Everyone needs to get on the bandwagon and request this tune next week.)\n1:32 - Theme Song\n6:47 - Sleazy (Kesha cover)\n12:38 - Give Judy My Notice\n18:40 - Late\n23:45 - Julianne\n27:22 - Dr. Yang\n30:04 - Where's Summer B.?\n33:31 - (Piano lesson for kids)\n45:31 - Landed\n50:00 - Mess\n54:06 - So There\n59:09 - I Still Call Australia Home (Peter Allen)\n1:01:48 - One Angry Dwarf And 200 Solemn Faces\n1:06:26 - Theme Song",
+                    "textOriginal": "SET LIST (Which does *not* include \"Red Is Blue,\" despite the fact that it's been requested 749 times now. Everyone needs to get on the bandwagon and request this tune next week.)\n1:32 - Theme Song\n6:47 - Sleazy (Kesha cover)\n12:38 - Give Judy My Notice\n18:40 - Late\n23:45 - Julianne\n27:22 - Dr. Yang\n30:04 - Where's Summer B.?\n33:31 - (Piano lesson for kids)\n45:31 - Landed\n50:00 - Mess\n54:06 - So There\n59:09 - I Still Call Australia Home (Peter Allen)\n1:01:48 - One Angry Dwarf And 200 Solemn Faces\n1:06:26 - Theme Song",
+                    "updatedAt": "2020-05-24T05:48:58.000Z",
+                    "videoId": "HjUhw_33wAk",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "HjUhw_33wAk"
+              }
             }
           ],
           "kind": "youtube#commentThreadListResponse"
@@ -421,6 +440,25 @@
         },
         "comments": {
           "items": [
+            {
+              "id": "UgwNl49jqqTfFrixUg14AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgwNl49jqqTfFrixUg14AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "publishedAt": "2020-05-17T03:34:31.000Z",
+                    "textDisplay": "00:00:00 - Introduction\n00:03:45 - Story behind \"All U Can Eat\"\n00:04:27 - \"All U Can Eat\"\n00:08:25 - Story behind \"There's Always Someone Cooler That You\"\n00:09:56 - \"There's Always Someone Cooler Than You\"\n00:14:08 - Story behind \"Belinda\"\n00:16:16 - \"Belinda\"\n00:20:55 - Story behind \"Emaline\"\n00:22:16 - \"Emaline\"\n00:26:32 - Story behind \"Kate\"\n00:27:57 - \"Kate\"\n00:31:15 - Piano Lesson for the Kiddies\n00:41:31 - Story behind \"Capable of Anything\"\n00:42:28 - \"Capable of Anything\"\n00:47:21 - \"Leather Jacket\"\n00:49:07 - Story behind \"Heist\"\n00:50:31 - \"Heist\"\n00:52:24 - \"Dr. Yang\" Snippet\n00:54:01 - Story behind \"On Being Frank\"\n00:56:04 - \"On Being Frank\"\n01:01:33 - \"Losing Lisa\"\n01:05:45 - \"The Luckiest\"",
+                    "textOriginal": "00:00:00 - Introduction\n00:03:45 - Story behind \"All U Can Eat\"\n00:04:27 - \"All U Can Eat\"\n00:08:25 - Story behind \"There's Always Someone Cooler That You\"\n00:09:56 - \"There's Always Someone Cooler Than You\"\n00:14:08 - Story behind \"Belinda\"\n00:16:16 - \"Belinda\"\n00:20:55 - Story behind \"Emaline\"\n00:22:16 - \"Emaline\"\n00:26:32 - Story behind \"Kate\"\n00:27:57 - \"Kate\"\n00:31:15 - Piano Lesson for the Kiddies\n00:41:31 - Story behind \"Capable of Anything\"\n00:42:28 - \"Capable of Anything\"\n00:47:21 - \"Leather Jacket\"\n00:49:07 - Story behind \"Heist\"\n00:50:31 - \"Heist\"\n00:52:24 - \"Dr. Yang\" Snippet\n00:54:01 - Story behind \"On Being Frank\"\n00:56:04 - \"On Being Frank\"\n01:01:33 - \"Losing Lisa\"\n01:05:45 - \"The Luckiest\"",
+                    "updatedAt": "2020-05-17T03:34:31.000Z",
+                    "videoId": "wgrDmUWmvh0",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "wgrDmUWmvh0"
+              }
+            },
             {
               "id": "UgwV_jin3-OD81Ong-R4AaABAg",
               "kind": "youtube#commentThread",
