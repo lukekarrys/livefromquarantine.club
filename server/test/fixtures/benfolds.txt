@@ -92,28 +92,21 @@ HjUhw_33wAk
 ----------
 #8 Saturday Apartment Requests
 wgrDmUWmvh0
-0 | Introduction
-225 | Story behind "All U Can Eat"
-267 | "All U Can Eat"
-505 | Story behind "There's Always Someone Cooler That You"
-596 | "There's Always Someone Cooler Than You"
-848 | Story behind "Belinda"
-976 | "Belinda"
-1255 | Story behind "Emaline"
-1336 | "Emaline"
-1592 | Story behind "Kate"
-1677 | "Kate"
-1875 | Piano Lesson for the Kiddies
-2491 | Story behind "Capable of Anything"
-2548 | "Capable of Anything"
-2841 | "Leather Jacket"
-2947 | Story behind "Heist"
-3031 | "Heist"
-3144 | "Dr. Yang" Snippet
-3241 | Story behind "On Being Frank"
-3364 | "On Being Frank"
-3693 | "Losing Lisa"
-3945 | "The Luckiest"
+0 | Intro
+18 | New theme song
+267 | All U Can Eat
+595 | There's Always Someone Cooler Than You
+996 | Belinda
+1338 | Emaline
+1644 | Kate
+1866 | (Piano lesson for kids)
+2549 | Capable Of Anything
+2845 | Leather Jacket
+3032 | Heist
+3147 | Dr. Yang (partial)
+3365 | On Being Frank
+3695 | Losing Lisa
+3947 | The Luckiest
 ----------
 #7 Saturday Apartment Requests
 UjF7JnisK6U
