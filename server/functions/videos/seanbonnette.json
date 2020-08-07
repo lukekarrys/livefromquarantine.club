@@ -7,6 +7,153 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 896
+        },
+        "id": "yz9iN79i3TM",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean's streaming every Monday, Wednesday, and Friday around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n0:15 AJJ - I Miss You\n2:30 Kepi Ghoulie - Fortune Teller\n5:27 Blaze Foley - Clay Pigeons\n9:33 AJJ - Sense, Sensibility\n12:26 AJJ - Maggie\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-08-04T06:14:35.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "yz9iN79i3TM"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/yz9iN79i3TM/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/yz9iN79i3TM/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/yz9iN79i3TM/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/yz9iN79i3TM/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/yz9iN79i3TM/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - August 3"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
+          "duration": 685
+        },
+        "id": "vd_UyiZYuio",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean's streaming every Monday, Wednesday, and Friday around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n0:51 The Microphones - I Felt Your Shape\n3:06 AJJ - I Wanna Be Your Dog, Too\n6:23 AJJ - Now That I'm At The Top Of My Game\n9:05 Daniel Johnston - True Love Will Find You In The End\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-08-01T04:41:22.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "vd_UyiZYuio"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/vd_UyiZYuio/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/vd_UyiZYuio/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/vd_UyiZYuio/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/vd_UyiZYuio/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/vd_UyiZYuio/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - July 31"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
+          "duration": 1270
+        },
+        "id": "NghGJi4ovVY",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean's streaming every Monday, Wednesday, and Friday around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n0:16 AJJ - Gift of the Magi II: Return of the Magi\n2:10 AJJ - Border Patrol (Yuma)\n7:46 Roger Miller - Annihilation\n10:23 AJJ - Kokopelli Face Tattoo\n13:40 AJJ - Inner City Basehead History Teacher\n14:56 AJJ - I Wanna Rock Out In My Dreams\n18:24 AJJ - Love In Your Heart\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-07-30T05:31:09.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "NghGJi4ovVY"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/NghGJi4ovVY/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/NghGJi4ovVY/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/NghGJi4ovVY/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/NghGJi4ovVY/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/NghGJi4ovVY/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - July 29"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1162
         },
         "id": "T4ma8qQpoM4",
