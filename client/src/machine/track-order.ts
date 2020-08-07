@@ -3,10 +3,11 @@ import * as Machine from './types'
 import * as selectors from './selectors'
 
 const shuffleOrder = (
-  order: Machine.TrackOrderUnselected
+  order: Machine.TrackOrderUnselected['trackOrder'],
+  startingIndex = 0
 ): Machine.TrackOrderUnselected => {
   const newOrder = ([] as Machine.TrackOrderUnselected['trackOrder']).concat(
-    order.trackOrder
+    order
   )
   const newIndexes = {} as Machine.TrackOrderUnselected['trackIndexes']
 
@@ -21,10 +22,10 @@ const shuffleOrder = (
     const val2 = newOrder[randomIndex]
 
     newOrder[currentIndex] = val2
-    newIndexes[val2.orderId] = currentIndex
+    newIndexes[val2.orderId] = currentIndex + startingIndex
 
     newOrder[randomIndex] = val1
-    newIndexes[val1.orderId] = randomIndex
+    newIndexes[val1.orderId] = randomIndex + startingIndex
   }
 
   return {
@@ -142,17 +143,32 @@ export const setOrder = ({
   }
 
   if (shuffle) {
-    // Shuffle the order and indexes to match
-    const order = shuffleOrder(currentOrder)
-    // If there is a currently selected song keep it at the beginning
     if (selected) {
-      // Remove selected from elsewhere in the shuffle
-      order.trackOrder.splice(findIndexInOrder(order, selected.id), 1)
-      // Then place it at the beginning
+      // If there is a selected track, it should be kept at the beginning of
+      // the shuffled order but removed from anywhere else in the order
+      const selectedIndex = findIndexInOrder(currentOrder, selected.id)
+
+      const order = shuffleOrder(
+        // Remove the selected index
+        currentOrder.trackOrder
+          .slice(0, selectedIndex)
+          .concat(currentOrder.trackOrder.slice(selectedIndex + 1)),
+        // Add 1 to all the shuffled indices so that when we reassign 0
+        // there isnt already a track set to 0
+        1
+      )
+
       order.trackIndexes[selected.id] = 0
-      order.trackOrder.unshift({ trackId: selected.id, orderId: selected.id })
+      order.trackOrder.unshift({
+        trackId: selected.id,
+        orderId: selected.id,
+      })
+
+      currentOrder = order
+    } else {
+      // Shuffle the order and indexes to match
+      currentOrder = shuffleOrder(currentOrder.trackOrder)
     }
-    currentOrder = order
   }
 
   return {

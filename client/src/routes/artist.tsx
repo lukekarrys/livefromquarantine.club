@@ -5,7 +5,7 @@ import playerMachine from '../machine'
 import * as selectors from '../machine/selectors'
 import Player from '../components/player'
 import fetchData from '../lib/api'
-import useDebugService from '../lib/useDebugService'
+import * as debugService from '../lib/useDebugService'
 import {
   ArtistId,
   Videos,
@@ -33,7 +33,7 @@ const Artist: FunctionalComponent<Props> = ({ artist, accessToken }) => {
   const [meta, setMeta] = useState<ArtistMeta | undefined>(undefined)
   const [state, send, service] = useMachine(playerMachine)
 
-  useDebugService(service)
+  debugService.useService(service)
 
   useEffect(() => {
     send('FETCH_START')
