@@ -379,14 +379,31 @@ const playerMachine = createMachine<
       setTrack: assign<Machine.PlayerContext>((context, _event) => {
         const event = _event as Machine.SelectTrackEvent
         const eventTrack = selectors.getTrackById(context, event.trackId)
-        const changeOrder = selectors.isOrderChange(context, event)
 
         if (!eventTrack) {
           debug.error('SET TRACK NOT FOUND', event)
           return context
         }
 
-        if (changeOrder) {
+        const selectedTrack = selectors.getSelectedTrack(context)
+
+        // If the song order is changing between song mode and video mode
+        // like when playing an individual song and then selecting "Play All"
+        // we need to reset the whole play order
+        const changeSongOrder =
+          selectors.isSongMode(context, event.trackId) !==
+          selectors.isSongMode(context, selectedTrack?.id)
+
+        // Same if we are changing the repeat mode. If we are repeating a single
+        // song then any changing of the track will reset the order because the order
+        // only contains the current track. We do the same when in video mode and we
+        // select a different video
+        const changeRepeatOrder =
+          context.repeat === Repeat.Song ||
+          (context.repeat === Repeat.Video &&
+            eventTrack?.videoId !== selectedTrack?.videoId)
+
+        if (changeSongOrder || changeRepeatOrder) {
           return {
             ...context,
             currentOrder: event.order,

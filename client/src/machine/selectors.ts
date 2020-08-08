@@ -141,16 +141,6 @@ export const isSongMode = (
     : getTrackById(context, trackId)?.isSong ?? atLeastOneSong
 }
 
-export const isOrderChange = (
-  context: Machine.PlayerContext,
-  event: Machine.SelectTrackEvent
-): boolean => {
-  return (
-    isSongMode(context, event.trackId) !==
-    isSongMode(context, getSelectedTrack(context)?.id)
-  )
-}
-
 export const getNextShuffle = (context: Machine.PlayerContext): boolean => {
   return !context.shuffle
 }
