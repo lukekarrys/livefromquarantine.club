@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1274
+        },
+        "id": "z8-BfyqC0r0",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean's streaming every Monday, Wednesday, and Friday around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n1:25 AJJ - Sad Songs\n5:25 Blaze Foley - Clay Pigeons\n9:32 George Jones - A Good year for the Roses\n12:37 Willie Nelson - The Time of the Preacher\n14:32 AJJ - Love My Children\n16:39 Gram Parsons - Return of the Grievous Angel\n20:07 Roger Miller - Oo-de-lally\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-08-15T06:54:15.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "z8-BfyqC0r0"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/z8-BfyqC0r0/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/z8-BfyqC0r0/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/z8-BfyqC0r0/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/z8-BfyqC0r0/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/z8-BfyqC0r0/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - August 14"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1211
         },
         "id": "rm_3737-u10",
