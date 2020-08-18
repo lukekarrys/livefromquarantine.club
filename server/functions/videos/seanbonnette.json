@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1154
+        },
+        "id": "B973VbCAjrg",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean's streaming every Monday, Wednesday, and Friday around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n0:32 AJJ - Maggie\n2:50 Frankie Cosmos - My I Love You\n4:27 AJJ - A Big Day for Grimley\n8:03 Kimya Dawson - Hadlock Padlock\n12:50 AJJ - I Wanna Be Your Dog 2\n15:29 AJJ - No More Shame, No More Fear, No More Dread\n\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-08-18T05:39:14.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "B973VbCAjrg"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/B973VbCAjrg/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/B973VbCAjrg/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/B973VbCAjrg/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/B973VbCAjrg/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/B973VbCAjrg/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - August 17"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1274
         },
         "id": "z8-BfyqC0r0",
