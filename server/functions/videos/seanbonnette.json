@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1418
+        },
+        "id": "FbBcTqofqqk",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean's streaming every Monday, Wednesday, and Friday around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n0:38 David Bowie - Quicksand\n5:36 AJJ - White Worms\n9:50 Joe Jack Talcum - Photograph\n13:06 AJJ - No More Tears\n14:02 AJJ - Bells and Whistles\n16:46 Dear Nora - Hung Up\n18:46 AJJ - People II: The Reckoning\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-08-22T05:43:12.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "FbBcTqofqqk"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/FbBcTqofqqk/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/FbBcTqofqqk/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/FbBcTqofqqk/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/FbBcTqofqqk/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/FbBcTqofqqk/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - August 21"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1940
         },
         "id": "LFdzf7nNLhU",
