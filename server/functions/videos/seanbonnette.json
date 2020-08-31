@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1252
+        },
+        "id": "ksoK_uNEY8g",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean's streaming every Monday, Wednesday, and Friday around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 \"olleH\"\n3:39 Dreaming of you, Tomorrow\n6:54 Sleeping in the Aviary - Pop Song\n9:23 AJJ - Space and Time\n12:25 AJJ - Sensitive \n14:24 No more forever war, no more war forever more\n17:27 Xiu Xiu - Helsabot\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-08-29T05:47:34.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "ksoK_uNEY8g"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/ksoK_uNEY8g/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/ksoK_uNEY8g/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/ksoK_uNEY8g/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/ksoK_uNEY8g/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/ksoK_uNEY8g/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - August 28"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1418
         },
         "id": "FbBcTqofqqk",
