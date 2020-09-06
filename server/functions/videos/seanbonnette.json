@@ -7,6 +7,104 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1264
+        },
+        "id": "nXhUge2oDs0",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean's streaming every Monday, Wednesday, and Friday around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n1:14 Neil Young - Don't Cry No Tears\n4:21 AJJ - Love In Your Heart\n7:30 improvisation\n13:10 AJJ - My Brain Is A Human Body\n16:17 AJJ - Rejoice\n19:33 The \"Beatles\"??? - Her Majesty\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-09-05T05:25:59.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "nXhUge2oDs0"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/nXhUge2oDs0/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/nXhUge2oDs0/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/nXhUge2oDs0/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/nXhUge2oDs0/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/nXhUge2oDs0/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - September 4"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
+          "duration": 2545
+        },
+        "id": "BHf59nBrXas",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean's streaming every Monday, Wednesday, and Friday around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n0:48 AJJ - A Poem\n10:57 Laura Stevenson - Dermatillomania\n22:05 Laura Stevenson - Time Bandits\n30:44 Billy Joel - You May Be Right\n38:40 Joe Jack Talcum - Photograph\n41:13 Roger Miller - Oo-de-lally\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-09-03T18:25:15.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "BHf59nBrXas"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/BHf59nBrXas/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/BHf59nBrXas/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/BHf59nBrXas/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/BHf59nBrXas/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/BHf59nBrXas/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - September 2"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 899
         },
         "id": "we8qLa714ls",
