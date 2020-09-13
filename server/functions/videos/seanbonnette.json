@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 3153
+        },
+        "id": "C4P9FieF-ck",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean's streaming every Monday, Wednesday, and Friday around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n1:34 Daniel Johnston - True Love Will Find You In The End\n5:38 Kimya Dawson - Hadlock Padlock\n10:11 AJJ - Linda Ronstadt\n21:34 Tim Hardin - The Lady from Baltimore\n23:45 Kimya Dawson - I Like Giants\n27:39 Roger Miller - Oo-de-lally\n29:55 AJJ - Mega Guillotine 2020\n42:40 Kimya Dawson - Loose Lips\n50:14 AJJ - If You Have Love In Your Heart\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-09-12T06:19:02.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "C4P9FieF-ck"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/C4P9FieF-ck/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/C4P9FieF-ck/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/C4P9FieF-ck/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/C4P9FieF-ck/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/C4P9FieF-ck/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - September 11"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1157
         },
         "id": "AdmlHuwi8bs",
