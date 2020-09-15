@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1401
+        },
+        "id": "7XGWjKScsjU",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean's streaming every Monday, Wednesday, and Friday around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n0:33 AJJ - Cody's Theme\n2:46 The Baetles - Rocky Raccoon\n7:40 AJJ - Your Voice, As I Remember It\n11:11 Silver Jews - Strange Victory, Strange Defeat\n13:48 AJJ - Bad Bad Things\n17:08 AJJ - Body Terror Song\n19:55 Tim Hardin - Black Sheep Boy\n22:08 Roger Miller - Oo-de-lally\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-09-15T05:43:16.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "7XGWjKScsjU"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/7XGWjKScsjU/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/7XGWjKScsjU/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/7XGWjKScsjU/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/7XGWjKScsjU/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/7XGWjKScsjU/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - September 14"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 3153
         },
         "id": "C4P9FieF-ck",
