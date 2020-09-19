@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1166
+        },
+        "id": "DObxmmzWgTs",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean's streaming every Monday, Wednesday, and Friday around 7:30 Pacific on the @ajjtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n1:26 AJJ - El Principito\n3:27 AJJ - Fucc the Devil\n5:24 AJJ - Love Will Fuck Us Apart\n7:08 Jay Reatard - Fading All Away\n9:36 AJJ - Horsehair Vase\n13:13 AJJ - We Shall All Die Alone Someday\n14:42 AJJ - Forest Fire\n16:29 AJJ - Sense, Sensibility\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-09-19T05:11:20.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "DObxmmzWgTs"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/DObxmmzWgTs/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/DObxmmzWgTs/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/DObxmmzWgTs/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/DObxmmzWgTs/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/DObxmmzWgTs/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - September 18"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1401
         },
         "id": "7XGWjKScsjU",
