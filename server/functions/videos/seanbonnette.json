@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1418
+        },
+        "id": "aEwjr3Muc00",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on @ajjtheband Monday (7:30) Wednesday (noon) and Thursday (7:30 instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n0:34 AJJ - Hate Song for Brains\n4:15 AJJ - Sad Songs\n8:38 John Prine - Sam Stone\n13:20 AJJ - Space and Time\n16:04 Roger Miller - Reincarnation\n20:27 AJJ - Maggie\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-09-22T06:32:26.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "aEwjr3Muc00"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/aEwjr3Muc00/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/aEwjr3Muc00/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/aEwjr3Muc00/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/aEwjr3Muc00/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/aEwjr3Muc00/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - September 21"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1166
         },
         "id": "DObxmmzWgTs",
