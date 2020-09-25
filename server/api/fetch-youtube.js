@@ -3,7 +3,8 @@ const duration = require('iso8601-duration')
 const findSetlist = require('./find-setlist')
 
 const omitCommentIds = [
-  'UgyA0JzCcn4gxF1ktmZ4AaABAg', // Ben Gibbard: Live From Home (3/22/20)
+  'UgyA0JzCcn4gxF1ktmZ4AaABAg', // Ben Gibbard: Live From Home (3/22/20),
+  'UgzBJFE06U9bR-ozNRx4AaABAg', // #9 Saturday Apartment Requests w Ben Folds
 ]
 
 const blessCommentIds = [

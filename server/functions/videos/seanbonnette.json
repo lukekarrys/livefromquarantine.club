@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1430
+        },
+        "id": "-IdB_dEmXVE",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday (7:30) Wednesday (noon) and Thursday (7:30) on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n1:00 AJJ - When I'm A Dead Boy\n2:41 AJJ - Heartilation\n4:50 AJJ - Self Esteem\n6:56 Willie Nelson - Time of the Preacher\n9:30 Pink Floyd - The Final Cut\n14:27 AJJ - Normalization Blues\n18:09 AJJ - When I'm A Dead Boy\n19:38 Silver Jews - Candy Jail\n22:36 OODELALLY\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-09-25T04:43:12.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "-IdB_dEmXVE"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/-IdB_dEmXVE/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/-IdB_dEmXVE/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/-IdB_dEmXVE/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/-IdB_dEmXVE/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/-IdB_dEmXVE/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - September 24"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1144
         },
         "id": "g5A6o3n2mUs",
