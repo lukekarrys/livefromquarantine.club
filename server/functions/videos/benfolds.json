@@ -369,6 +369,25 @@
                 },
                 "videoId": "HjUhw_33wAk"
               }
+            },
+            {
+              "id": "UgzBJFE06U9bR-ozNRx4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgzBJFE06U9bR-ozNRx4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "publishedAt": "2020-05-24T05:48:58.000Z",
+                    "textDisplay": "SET LIST (Which does *not* include \"Red Is Blue,\" despite the fact that it's been requested 749 times now. Everyone needs to get on the bandwagon and request this tune next week.)\n1:32 - Theme Song\n6:47 - Sleazy (Kesha cover)\n12:38 - Give Judy My Notice\n18:40 - Late\n23:45 - Julianne\n27:22 - Dr. Yang\n30:04 - Where's Summer B.?\n33:31 - (Piano lesson for kids)\n45:31 - Landed\n50:00 - Mess\n54:06 - So There\n59:09 - I Still Call Australia Home (Peter Allen)\n1:01:48 - One Angry Dwarf And 200 Solemn Faces\n1:06:26 - Theme Song",
+                    "textOriginal": "SET LIST (Which does *not* include \"Red Is Blue,\" despite the fact that it's been requested 749 times now. Everyone needs to get on the bandwagon and request this tune next week.)\n1:32 - Theme Song\n6:47 - Sleazy (Kesha cover)\n12:38 - Give Judy My Notice\n18:40 - Late\n23:45 - Julianne\n27:22 - Dr. Yang\n30:04 - Where's Summer B.?\n33:31 - (Piano lesson for kids)\n45:31 - Landed\n50:00 - Mess\n54:06 - So There\n59:09 - I Still Call Australia Home (Peter Allen)\n1:01:48 - One Angry Dwarf And 200 Solemn Faces\n1:06:26 - Theme Song",
+                    "updatedAt": "2020-05-24T05:48:58.000Z",
+                    "videoId": "HjUhw_33wAk",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "HjUhw_33wAk"
+              }
             }
           ],
           "kind": "youtube#commentThreadListResponse"
