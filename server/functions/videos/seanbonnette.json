@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 853
+        },
+        "id": "6MpdYIVJBiA",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday (7:30) Wednesday (noon) and Thursday (7:30) on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n0:30 Neil Young - Tell Me Why\n2:58 AJJ - Fucc the Devil\n5:10 AJJ - I Wanna Be Your Dog Part Two\n8:48 AJJ - Psychic Warfare\n11:05 AJJ - Junkie Church\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-09-29T05:19:41.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "6MpdYIVJBiA"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/6MpdYIVJBiA/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/6MpdYIVJBiA/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/6MpdYIVJBiA/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/6MpdYIVJBiA/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/6MpdYIVJBiA/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - September 28"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1430
         },
         "id": "-IdB_dEmXVE",
