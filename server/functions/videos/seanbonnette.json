@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1272
+        },
+        "id": "NorsGm2_H8s",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday (7:30) Wednesday (noon) and Thursday (7:30) on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n0:51 AJJ - The Michael Jordan of Drunk Driving\n1:10 AJJ - Normalization Blues\n4:40 AJJ - Who Are You?\n6:59 AJJ - Loudmouth\n10:37 Foot Ox - Lucky Strike\n12:55 Todd Snider - Just Like Old Times\n18:45 AJJ - Body Terror Song\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-10-02T05:35:20.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "NorsGm2_H8s"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/NorsGm2_H8s/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/NorsGm2_H8s/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/NorsGm2_H8s/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/NorsGm2_H8s/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/NorsGm2_H8s/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - October 1"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 955
         },
         "id": "IUXkEnJDb8Y",
