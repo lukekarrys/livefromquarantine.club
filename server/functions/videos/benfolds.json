@@ -439,6 +439,25 @@
                 },
                 "videoId": "wgrDmUWmvh0"
               }
+            },
+            {
+              "id": "UgwNl49jqqTfFrixUg14AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgwNl49jqqTfFrixUg14AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "publishedAt": "2020-05-17T03:34:31.000Z",
+                    "textDisplay": "00:00:00 - Introduction\n00:03:45 - Story behind \"All U Can Eat\"\n00:04:27 - \"All U Can Eat\"\n00:08:25 - Story behind \"There's Always Someone Cooler That You\"\n00:09:56 - \"There's Always Someone Cooler Than You\"\n00:14:08 - Story behind \"Belinda\"\n00:16:16 - \"Belinda\"\n00:20:55 - Story behind \"Emaline\"\n00:22:16 - \"Emaline\"\n00:26:32 - Story behind \"Kate\"\n00:27:57 - \"Kate\"\n00:31:15 - Piano Lesson for the Kiddies\n00:41:31 - Story behind \"Capable of Anything\"\n00:42:28 - \"Capable of Anything\"\n00:47:21 - \"Leather Jacket\"\n00:49:07 - Story behind \"Heist\"\n00:50:31 - \"Heist\"\n00:52:24 - \"Dr. Yang\" Snippet\n00:54:01 - Story behind \"On Being Frank\"\n00:56:04 - \"On Being Frank\"\n01:01:33 - \"Losing Lisa\"\n01:05:45 - \"The Luckiest\"",
+                    "textOriginal": "00:00:00 - Introduction\n00:03:45 - Story behind \"All U Can Eat\"\n00:04:27 - \"All U Can Eat\"\n00:08:25 - Story behind \"There's Always Someone Cooler That You\"\n00:09:56 - \"There's Always Someone Cooler Than You\"\n00:14:08 - Story behind \"Belinda\"\n00:16:16 - \"Belinda\"\n00:20:55 - Story behind \"Emaline\"\n00:22:16 - \"Emaline\"\n00:26:32 - Story behind \"Kate\"\n00:27:57 - \"Kate\"\n00:31:15 - Piano Lesson for the Kiddies\n00:41:31 - Story behind \"Capable of Anything\"\n00:42:28 - \"Capable of Anything\"\n00:47:21 - \"Leather Jacket\"\n00:49:07 - Story behind \"Heist\"\n00:50:31 - \"Heist\"\n00:52:24 - \"Dr. Yang\" Snippet\n00:54:01 - Story behind \"On Being Frank\"\n00:56:04 - \"On Being Frank\"\n01:01:33 - \"Losing Lisa\"\n01:05:45 - \"The Luckiest\"",
+                    "updatedAt": "2020-05-17T03:34:31.000Z",
+                    "videoId": "wgrDmUWmvh0",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "wgrDmUWmvh0"
+              }
             }
           ],
           "kind": "youtube#commentThreadListResponse"
