@@ -7,9 +7,7 @@ const omitCommentIds = [
   'UgzBJFE06U9bR-ozNRx4AaABAg', // #9 Saturday Apartment Requests w Ben Folds
 ]
 
-const blessCommentIds = [
-  'UgzyR6a6B-Czl4pI5ZN4AaABAg', // Ben Gibbard: Live From Home (3/22/20)
-]
+const blessCommentIds = []
 
 const get = ({ url, params = {}, headers = {}, token }) => {
   const axiosRequest = {
@@ -242,7 +240,10 @@ const getVideoSetlist = async (video, token) => {
             const aIsBlessed = blessCommentIds.includes(a.id)
             const bIsBlessed = blessCommentIds.includes(b.id)
             if (aIsBlessed || bIsBlessed) return aIsBlessed ? -1 : 1
-            return a.snippet.likeCount - b.snippet.likeCount
+            return (
+              b.snippet.topLevelComment.snippet.likeCount -
+              a.snippet.topLevelComment.snippet.likeCount
+            )
           }),
       })
     })
