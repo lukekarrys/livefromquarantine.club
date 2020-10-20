@@ -69,9 +69,10 @@ exports.handler = async (event) => {
         ...meta,
         ...artist.meta,
       },
-      data: parseVideos(videos, artist.parsers),
+      data: parseVideos(videos, artist.parsers, artist.comments),
     })
   } catch (e) {
+    console.log(e)
     // Most playlists wont be preloaded so move on to fetching from youtube
   }
 
