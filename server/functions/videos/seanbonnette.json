@@ -7,6 +7,153 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1011
+        },
+        "id": "4tOQRChKdgQ",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday (7:30) Wednesday (noon) and Thursday (7:30) on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n0:37 AJJ - Temple Grandin\n3:04 AJJ - Cody's Theme\n7:48 AJJ - Maggie\n10:13 Blaze Foley - Clay Pigeons\n14:28 AJJ - I Wanna Be Your Dog 2\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-10-20T05:01:25.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "4tOQRChKdgQ"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/4tOQRChKdgQ/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/4tOQRChKdgQ/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/4tOQRChKdgQ/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/4tOQRChKdgQ/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/4tOQRChKdgQ/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - October 19"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
+          "duration": 1723
+        },
+        "id": "DVTTszv9Cvs",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday (7:30) Wednesday (noon) and Thursday (7:30) on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n1:12 Neil Young - Tell Me Why\n3:38 AJJ - #armageddon\n8:20 AJJ - Schadenfreude Song\n12:35 AJJ  - Do, Re, Me\n15:41 AJJ - Free Bird\n19:40 Roger Miller - Reincarnation\n21:45 AJJ - Small Red Boy\n27:26 Roger Miller - Oo-de-lally\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-10-16T05:27:01.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "DVTTszv9Cvs"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/DVTTszv9Cvs/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/DVTTszv9Cvs/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/DVTTszv9Cvs/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/DVTTszv9Cvs/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/DVTTszv9Cvs/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - October 15"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
+          "duration": 676
+        },
+        "id": "dUYr2ZQfKtA",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday (7:30) Wednesday (noon) and Thursday (7:30) on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n1:50 AJJ - A Poem\n3:35 Mt. Eerie - You Swan, Go On\n6:00 AJJ - Jesus Saves\n7:48 AJJ - Linda Ronstadt\n\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-10-15T04:14:17.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "dUYr2ZQfKtA"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/dUYr2ZQfKtA/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/dUYr2ZQfKtA/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/dUYr2ZQfKtA/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/dUYr2ZQfKtA/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/dUYr2ZQfKtA/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - October 14"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1093
         },
         "id": "yHhJGerWhNs",
