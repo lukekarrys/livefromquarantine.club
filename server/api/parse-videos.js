@@ -3,15 +3,16 @@ const findSetlist = require('./find-setlist')
 
 const callParser = (p, v) => (typeof p === 'function' ? p(v) : v)
 
-const parseVideo = (video, parsers = {}) => {
+const parseVideo = (video, parsers = {}, extraComments = {}) => {
   const {
     id: videoId,
     snippet: { title, description },
-    comments: { items: comments },
+    comments: { items: _comments },
     contentDetails: { duration },
   } = video
 
   let songs = []
+  const comments = [..._comments, ...(extraComments[videoId] || [])]
 
   const descriptionSetlist = findSetlist(description)
 
@@ -53,7 +54,7 @@ const validate = (data) => {
   data.forEach((v) => {
     assert.ok(v.title, `Every video has a title`)
     assert.ok(v.id, `Has an id - ${v.title}`)
-    assert.equal(
+    assert.strictEqual(
       typeof v.duration,
       'number',
       `Duration is a number - ${v.title}`
@@ -73,9 +74,9 @@ const validate = (data) => {
   })
 }
 
-module.exports = (videos, parsers = {}) => {
+module.exports = (videos, parsers = {}, extraComments = {}) => {
   const data = videos.items
-    .map((video) => parseVideo(video, parsers))
+    .map((video) => parseVideo(video, parsers, extraComments))
     .filter((video, index, videos) => {
       // The same video could be included multiple times in a playlist so remove dupes
       return videos.findIndex((v) => v.id === video.id) === index

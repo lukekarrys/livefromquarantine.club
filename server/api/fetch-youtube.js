@@ -264,7 +264,7 @@ const getFullVideoData = async (videoId, token) => {
   if (!video || isVideoPrivate(video) || isVideoFuture(video)) {
     throw createAxiosError(
       response,
-      'VIdeo could not be found',
+      'Video could not be found',
       404,
       'Not Found'
     )
