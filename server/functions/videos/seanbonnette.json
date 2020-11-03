@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 2045
+        },
+        "id": "K9hMKBOKdkk",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday (7:30) Wednesday (noon) and Thursday (7:30) on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n1:34 AJJ - A Poem\n3:18 AJJ - Normalization Blues\n6:42 AJJ - Body Terror Song\n9:14 AJJ - Feedbag\n12:05 AJJ - No Justice, No Peace, No Hope\n15:08 AJJ - Mega Guillotine 2020\n17:15 AJJ - Loudmouth\n20:00 AJJ - Maggie\n22:23 AJJ - Psychic Warfare\n24:55 AJJ - Your Voice, As I Remember It\n29:00 AJJ - A Big Day for Grimley\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-11-03T04:51:46.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "K9hMKBOKdkk"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/K9hMKBOKdkk/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/K9hMKBOKdkk/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/K9hMKBOKdkk/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/K9hMKBOKdkk/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/K9hMKBOKdkk/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - November 2"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1113
         },
         "id": "I6T2FF_7Vis",
