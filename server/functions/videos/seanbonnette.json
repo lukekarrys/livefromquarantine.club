@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 492
+        },
+        "id": "YAtAfTVvrpg",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday (7:30) Wednesday (noon) and Thursday (7:30) on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n1:06 AJJ - No Justice, No Peace, No Hope\n4:38 noise jam\n5:51 AJJ - Body Terror Song\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-11-05T00:53:55.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "YAtAfTVvrpg"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/YAtAfTVvrpg/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/YAtAfTVvrpg/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/YAtAfTVvrpg/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/YAtAfTVvrpg/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/YAtAfTVvrpg/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - November 4"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 2045
         },
         "id": "K9hMKBOKdkk",
