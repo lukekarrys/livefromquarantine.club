@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 852
+        },
+        "id": "IY-EVBrfwNE",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday (7:30) Wednesday (noon) and Thursday (7:30) on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n0:35 AJJ - Evil\n4:47 Guided By Voices - Motor Away\n6:57 Silver Jews - Strange Victory, Strange Defeat\n9:57 AJJ - White Worms\n12:53 Daniel Johnston - Devil Town\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nWe have a bunch of tour merch and aren't able to tour, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-11-10T05:40:43.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "IY-EVBrfwNE"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/IY-EVBrfwNE/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/IY-EVBrfwNE/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/IY-EVBrfwNE/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/IY-EVBrfwNE/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/IY-EVBrfwNE/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine   November 9"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1002
         },
         "id": "aKUdrdNxi20",
