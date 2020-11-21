@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 864
+        },
+        "id": "uer1zLuWIvw",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday (7:30) Wednesday (noon) and Thursday (7:30) on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n1:25 AJJ - Kokopelli Face Tattoo\n4:34 Elliott Smith - Waltz #2\n8:56 AJJ - Getting Naked, Playing with Guns\n11:38 AJJ - Brave as a Noun\n13:00 Roger Miller - Oo-de-lally\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nCheck out our digital merch table, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-11-20T21:17:15.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "uer1zLuWIvw"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/uer1zLuWIvw/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/uer1zLuWIvw/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/uer1zLuWIvw/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/uer1zLuWIvw/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/uer1zLuWIvw/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live from Quarantine - November 19"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 911
         },
         "id": "vFJpm4GsRT8",
