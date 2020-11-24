@@ -4,6 +4,7 @@
 
 - Ben Folds – Apartment Requests - [LFQ](https://livefromquarantine.club/benfolds) [YouTube](https://www.youtube.com/playlist?list=PLG507gy2-Kp8Vj66jnxn1AA0XFr1L_QXy)
 - Ben Gibbard – Live From Home - [LFQ](https://livefromquarantine.club/bengibbard) [YouTube](https://www.youtube.com/playlist?list=PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv)
+- The Hood Internet - [LFQ](https://livefromquarantine.club/hoodinternet) [YouTube](https://www.youtube.com/playlist?list=PLqrkwSi3LHneR8zHLgCnuFLCE76Qwm2iE)
 - Sean Bonnette – Live From Quarantine - [LFQ](https://livefromquarantine.club/seanbonnette) [YouTube](https://www.youtube.com/playlist?list=PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1)
 - The Tallest Man on Earth – #StayHome #WithMe - [LFQ](https://livefromquarantine.club/tmoe) [YouTube](https://www.youtube.com/playlist?list=PLsqIAvvqdduhw1f7RVxdcCmaCm5Zy7Osc)
 
@@ -19,9 +20,9 @@ Preloaded playlists are fetched and preloaded with the built site via GitHub act
 
 1. Add a file to `server/functions/playlist/ARTIST_ID.js` with at least `playlistId`, `id` (`parsers` and `meta` are optional)
 1. Create an empty file at `server/functions/playlist/ARTIST_ID.json`
-2. Add an entry to `client/artists.json` with a matching `id` and the `name` which will populate the button on the index page
-3. Run `npm run data ID` to save the data to `server/functions/playlist/ARTIST_ID.json`
-4. This playlist will now be updated and built with the site each time
+1. Add an entry to `client/artists.json` with a matching `id` and the `name` which will populate the button on the index page
+1. Run `npm run data ID` to save the data to `server/functions/playlist/ARTIST_ID.json`
+1. This playlist will now be updated and built with the site each time
 
 ## Building the site
 
