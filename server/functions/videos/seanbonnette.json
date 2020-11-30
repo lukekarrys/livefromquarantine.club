@@ -7,6 +7,104 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 957
+        },
+        "id": "m2dram9aI_A",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday (7:30) Wednesday (noon) and Thursday (7:30) on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n0:17 AJJ - I Wanna Rock Out In My Dreams\n3:59 The Beatles - Rocky Raccoon\n9:23 The Mountain Goats - Alpha Rats Nest\n12:03 AJJ - A Big Day for Grimley\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nCheck out our digital merch table, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-11-27T03:53:56.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "m2dram9aI_A"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/m2dram9aI_A/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/m2dram9aI_A/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/m2dram9aI_A/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/m2dram9aI_A/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/m2dram9aI_A/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - November 26"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
+          "duration": 1048
+        },
+        "id": "A_DSktGdhi0",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday (7:30) Wednesday (noon) and Thursday (7:30) on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n0:58 Pixies - Where Is My Mind? (Chris Farren cover)\n3:43 AJJ - Distance\n6:40 AJJ - Angel of Death\n9:35 AJJ - Love in Your Heart\n13:03 AJJ - Border Patrol (Yuma)\n15:20 Roger Miller - Reincarnation\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nCheck out our digital merch table, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-11-25T20:33:36.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "A_DSktGdhi0"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/A_DSktGdhi0/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/A_DSktGdhi0/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/A_DSktGdhi0/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/A_DSktGdhi0/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/A_DSktGdhi0/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - November 25"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 904
         },
         "id": "3c8WO_n_LUI",
