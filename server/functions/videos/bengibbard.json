@@ -521,27 +521,7 @@
           "title": "Ben Gibbard: Live From Home (4/9/20)"
         },
         "comments": {
-          "items": [
-            {
-              "id": "UgxQuS9Btr2wpO4cN0R4AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "UgxQuS9Btr2wpO4cN0R4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-04-10T00:07:45.000Z",
-                    "textDisplay": "00:26 Title Track\r\n05:14 Employment Pages\r\n09:51 For What Reason\r\n13:53 Lowell, MA\r\n17:09 (Q & A #1)\r\n23:48 405\r\n28:15 Little Fury Bugs\r\n32:46 Company Calls\r\n37:54 Company Calls Epilogue\r\n43:16 (Q & A #2)\r\n51:03 No Joy in Mudville\r\n57:34 Scientist Studies",
-                    "textOriginal": "00:26 Title Track\r\n05:14 Employment Pages\r\n09:51 For What Reason\r\n13:53 Lowell, MA\r\n17:09 (Q & A #1)\r\n23:48 405\r\n28:15 Little Fury Bugs\r\n32:46 Company Calls\r\n37:54 Company Calls Epilogue\r\n43:16 (Q & A #2)\r\n51:03 No Joy in Mudville\r\n57:34 Scientist Studies",
-                    "updatedAt": "2020-04-10T00:07:45.000Z",
-                    "videoId": "SrmFQa_iByw",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "SrmFQa_iByw"
-              }
-            }
-          ],
+          "items": [],
           "kind": "youtube#commentThreadListResponse"
         }
       },
@@ -591,27 +571,7 @@
           "title": "Ben Gibbard: Live From Home (4/2/20)"
         },
         "comments": {
-          "items": [
-            {
-              "id": "UgxF1EDv5ScoKhHXXQx4AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "UgxF1EDv5ScoKhHXXQx4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-04-03T02:20:51.000Z",
-                    "textDisplay": "0:24 - Lightness\n4:10 - Everything's A Ceiling\n9:02 - The Ghosts of Beverly Drive\n14:08 - A Hard One to Know\n16:15 - (Q&A)\n25:49 - When We Drive\n30:25 - Passenger Seat\n34:09 - (s/o to MusiCares)\n37:40 - Pictures in an Exhibition\n42:49 - Barbara H. (by Fountains of Wayne, tribute to Adam Schlesinger)\n47:20 - Song for Kelly Huckaby\n\nThanks Ben!",
-                    "textOriginal": "0:24 - Lightness\n4:10 - Everything's A Ceiling\n9:02 - The Ghosts of Beverly Drive\n14:08 - A Hard One to Know\n16:15 - (Q&A)\n25:49 - When We Drive\n30:25 - Passenger Seat\n34:09 - (s/o to MusiCares)\n37:40 - Pictures in an Exhibition\n42:49 - Barbara H. (by Fountains of Wayne, tribute to Adam Schlesinger)\n47:20 - Song for Kelly Huckaby\n\nThanks Ben!",
-                    "updatedAt": "2020-04-03T02:33:54.000Z",
-                    "videoId": "s6oJjUvB9TA",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "s6oJjUvB9TA"
-              }
-            }
-          ],
+          "items": [],
           "kind": "youtube#commentThreadListResponse"
         }
       },
@@ -921,46 +881,7 @@
           "title": "Ben Gibbard: Live From Home (3/25/20)"
         },
         "comments": {
-          "items": [
-            {
-              "id": "UgzCyKx_L9OGPX7fZvh4AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "UgzCyKx_L9OGPX7fZvh4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-26T00:05:46.000Z",
-                    "textDisplay": "0:23: You Can Do Better Than Me\n2:47: Unobstructed Views\n7:34: Little Bribes\n11:34: A Diamond and a Tether\n18:07: Where Our Destination Lies\n20:49: Cath...\n34:44: One Fast Move or I'm Gone\n39:32: Grapevine Fires\n43:44: Bixby Canyon Bridge\n50:42: Stay Young, Go Dancing",
-                    "textOriginal": "0:23: You Can Do Better Than Me\n2:47: Unobstructed Views\n7:34: Little Bribes\n11:34: A Diamond and a Tether\n18:07: Where Our Destination Lies\n20:49: Cath...\n34:44: One Fast Move or I'm Gone\n39:32: Grapevine Fires\n43:44: Bixby Canyon Bridge\n50:42: Stay Young, Go Dancing",
-                    "updatedAt": "2020-03-26T00:05:46.000Z",
-                    "videoId": "tBhqwnL8Zck",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "tBhqwnL8Zck"
-              }
-            },
-            {
-              "id": "UgwDOMQ9Udp6sWV9pPd4AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "UgwDOMQ9Udp6sWV9pPd4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-26T00:00:13.000Z",
-                    "textDisplay": "00:23 You Can Do Better Than Me\r\n02:46 Unobstructed Views \r\n07:34 Little Bribes\r\n11:34 A Diamond and a Tether\r\n18:06 Where Our Destination Lies\r\n20:48 Cath...\r\n25:06 (Q & A)\r\n34:44 One Fast Move or I'm Gone\r\n38:36 (\"We Have the Facts and We're Voting\" mention)\r\n39:32 Grapevine Fires\r\n43:44 Bixby Canyon Bridge\r\n49:07 (Seattle Foundation’s COVID-19 Response Fund mention)\r\n50:41 Stay Young, Go Dancing",
-                    "textOriginal": "00:23 You Can Do Better Than Me\r\n02:46 Unobstructed Views \r\n07:34 Little Bribes\r\n11:34 A Diamond and a Tether\r\n18:06 Where Our Destination Lies\r\n20:48 Cath...\r\n25:06 (Q & A)\r\n34:44 One Fast Move or I'm Gone\r\n38:36 (\"We Have the Facts and We're Voting\" mention)\r\n39:32 Grapevine Fires\r\n43:44 Bixby Canyon Bridge\r\n49:07 (Seattle Foundation’s COVID-19 Response Fund mention)\r\n50:41 Stay Young, Go Dancing",
-                    "updatedAt": "2020-03-26T00:05:38.000Z",
-                    "videoId": "tBhqwnL8Zck",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "tBhqwnL8Zck"
-              }
-            }
-          ],
+          "items": [],
           "kind": "youtube#commentThreadListResponse"
         }
       },
@@ -1029,25 +950,6 @@
                 },
                 "videoId": "25OCP0qBD_A"
               }
-            },
-            {
-              "id": "UgwMX_eb-T8TpDyCWbp4AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "UgwMX_eb-T8TpDyCWbp4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-25T00:09:53.000Z",
-                    "textDisplay": "SONGS FROM 2002-2005 SETLIST\n\n0:02 - Transatlanticism\n5:37 - Someday You Will Be Loved\n9:44 - Farmer Chords\n13:01 - This Place Is A Prison\n17:58 - Couches In Alleys\n(20:33 - Q&A)\n27:09 - Sleeping In\n30:02 - Summer Skin\n32:25 - What Sarah Said\n38:11 - Title And Registration\n(41:53 - The London Plane GoFundMe)\n44:41 - Marching Bands Of Manhattan\n49:39 - I Will Follow You Into The Dark",
-                    "textOriginal": "SONGS FROM 2002-2005 SETLIST\n\n0:02 - Transatlanticism\n5:37 - Someday You Will Be Loved\n9:44 - Farmer Chords\n13:01 - This Place Is A Prison\n17:58 - Couches In Alleys\n(20:33 - Q&A)\n27:09 - Sleeping In\n30:02 - Summer Skin\n32:25 - What Sarah Said\n38:11 - Title And Registration\n(41:53 - The London Plane GoFundMe)\n44:41 - Marching Bands Of Manhattan\n49:39 - I Will Follow You Into The Dark",
-                    "updatedAt": "2020-03-25T00:10:49.000Z",
-                    "videoId": "25OCP0qBD_A",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "25OCP0qBD_A"
-              }
             }
           ],
           "kind": "youtube#commentThreadListResponse"
@@ -1099,27 +1001,7 @@
           "title": "Ben Gibbard: Live From Home (3/23/20)"
         },
         "comments": {
-          "items": [
-            {
-              "id": "UgzMtwDHMKaTMXMg0BJ4AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "UgzMtwDHMKaTMXMg0BJ4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-24T00:05:16.000Z",
-                    "textDisplay": "00:31 Champagne from a Paper Cup\r\n04:08 Debate Exposes Doubt\r\n07:54 Scientist Studies\r\n13:28 Wait [Secret Stars cover] \r\n17:27 Company Calls Epilogue\r\n22:47 (Q & A)\r\n28:17 Cleveland [¡All-Time Quarterback!]\r\n31:05 (This Is) The Dream of Evan and Chan [Dntel]\r\n34:51 Blacking Out the Friction\r\n37:40 Line of Best Fit \r\n44:18 I Was a Kaleidoscope\r\n49:24 No Joy in Mudville\r\n55:21 The Face That Launched 1000 Shits [The Revolutionary Hydra cover]",
-                    "textOriginal": "00:31 Champagne from a Paper Cup\r\n04:08 Debate Exposes Doubt\r\n07:54 Scientist Studies\r\n13:28 Wait [Secret Stars cover] \r\n17:27 Company Calls Epilogue\r\n22:47 (Q & A)\r\n28:17 Cleveland [¡All-Time Quarterback!]\r\n31:05 (This Is) The Dream of Evan and Chan [Dntel]\r\n34:51 Blacking Out the Friction\r\n37:40 Line of Best Fit \r\n44:18 I Was a Kaleidoscope\r\n49:24 No Joy in Mudville\r\n55:21 The Face That Launched 1000 Shits [The Revolutionary Hydra cover]",
-                    "updatedAt": "2020-03-24T00:23:28.000Z",
-                    "videoId": "QHTXnGLb4I0",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "QHTXnGLb4I0"
-              }
-            }
-          ],
+          "items": [],
           "kind": "youtube#commentThreadListResponse"
         }
       },
@@ -1239,27 +1121,7 @@
           "title": "Ben Gibbard: Live From Home (3/21/20)"
         },
         "comments": {
-          "items": [
-            {
-              "id": "UgxL6OqwiC45hl2UEmx4AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "UgxL6OqwiC45hl2UEmx4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-22T00:12:50.000Z",
-                    "textDisplay": "0:35 Lady Adelaide\r\n4:22 Recycled Air\r\n8:34 Your New Twin Sized Bed\r\n13:35 Willamine\r\n17:29 Q&A\n24:24 A Movie Script Ending\r\n29:44 Your Hurricane\r\n33:14 Your Heart Is An Empty Room\r\n39:38 Carolina\r\n42:07 PSA\r\n44:30 I Will Follow You Into The Dark\r\n\r\n\r\n\r\n\r\nI think that's all of them, hopefully.",
-                    "textOriginal": "0:35 Lady Adelaide\r\n4:22 Recycled Air\r\n8:34 Your New Twin Sized Bed\r\n13:35 Willamine\r\n17:29 Q&A\n24:24 A Movie Script Ending\r\n29:44 Your Hurricane\r\n33:14 Your Heart Is An Empty Room\r\n39:38 Carolina\r\n42:07 PSA\r\n44:30 I Will Follow You Into The Dark\r\n\r\n\r\n\r\n\r\nI think that's all of them, hopefully.",
-                    "updatedAt": "2020-03-22T00:13:57.000Z",
-                    "videoId": "dLWmIJV4GMg",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "dLWmIJV4GMg"
-              }
-            }
-          ],
+          "items": [],
           "kind": "youtube#commentThreadListResponse"
         }
       },
