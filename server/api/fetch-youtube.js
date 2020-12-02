@@ -35,15 +35,18 @@ const createAxiosError = (response, message, status, statusText) => {
   return error
 }
 
-const commentUrl = (id, token) => ({
+const commentUrl = (id, token, pageToken) => ({
   url: '/commentThreads',
-  params: {
-    part: 'snippet',
-    order: 'relevance',
-    textFormat: 'plainText',
-    maxResults: '50',
-    videoId: id,
-  },
+  params: Object.assign(
+    {
+      part: 'snippet',
+      order: 'relevance',
+      textFormat: 'plainText',
+      maxResults: '100',
+      videoId: id,
+    },
+    pageToken ? { pageToken } : {}
+  ),
   token,
 })
 
@@ -193,6 +196,31 @@ const getPaginatedVideosFromPlaylist = async (
   }
 }
 
+const getPaginatedComments = async (
+  id,
+  token,
+  pageToken,
+  previousItems = []
+) => {
+  const resp = await get(commentUrl(id, token, pageToken))
+
+  const { items, nextPageToken } = resp.data
+
+  const newItems = [...previousItems, ...items]
+
+  if (nextPageToken && newItems.length < 300) {
+    return await getPaginatedComments(id, token, nextPageToken, newItems)
+  }
+
+  return {
+    ...resp,
+    data: {
+      ...resp.data,
+      items: newItems,
+    },
+  }
+}
+
 const getPlaylistData = async (id, token) => {
   const response = await get(playlistUrl(id, token))
 
@@ -224,7 +252,11 @@ const getVideoSetlist = async (video, token) => {
     return
   }
 
-  video.comments = await get(commentUrl(videoId, token))
+  // Get paginated comments because sometimes the YouTube API doesn't return comments
+  // that are top on the website even when asking it to sort them by relevance. This is not
+  // an idea solution and could break on videos with many thousands of comments but none of
+  // the preloaded videos are there yet.
+  video.comments = await getPaginatedComments(videoId, token)
     .then((resp) => {
       return Object.assign(resp.data, {
         items: resp.data.items

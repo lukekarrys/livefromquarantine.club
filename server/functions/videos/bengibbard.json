@@ -140,6 +140,25 @@
                 },
                 "videoId": "6oSWsxVg4GM"
               }
+            },
+            {
+              "id": "Ugzwo9uPLFWRc6z9TQl4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "Ugzwo9uPLFWRc6z9TQl4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "publishedAt": "2020-05-22T03:07:33.000Z",
+                    "textDisplay": "00:21 Sleep Spent\n03:19 Teardrop Windows\n08:00 When the Sun Goes Down\n11:11 Title and Registration\n16:09 Photobooth\n19:40 Q&A\n27:40 A Lack of Color\n31:35 h/t to Community Lunch\n32:45 Don’t Stop Now [Guided by Voices cover]\n35:56 Brand New Colony [The Postal Service]\n41:45 It’s Never Too Late",
+                    "textOriginal": "00:21 Sleep Spent\n03:19 Teardrop Windows\n08:00 When the Sun Goes Down\n11:11 Title and Registration\n16:09 Photobooth\n19:40 Q&A\n27:40 A Lack of Color\n31:35 h/t to Community Lunch\n32:45 Don’t Stop Now [Guided by Voices cover]\n35:56 Brand New Colony [The Postal Service]\n41:45 It’s Never Too Late",
+                    "updatedAt": "2020-05-22T03:07:33.000Z",
+                    "videoId": "6oSWsxVg4GM",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "6oSWsxVg4GM"
+              }
             }
           ],
           "kind": "youtube#commentThreadListResponse"
@@ -471,7 +490,27 @@
           "title": "Ben Gibbard: Live From Home (4/16/20)"
         },
         "comments": {
-          "items": [],
+          "items": [
+            {
+              "id": "UgxNYU6vFCjeZEG2q2V4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgxNYU6vFCjeZEG2q2V4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "publishedAt": "2020-04-16T23:54:36.000Z",
+                    "textDisplay": "00:33 Your Heart is an Empty Room\r\n04:13 Autumn Love\r\n08:43 Styrofoam Plates\r\n13:49 Willamine \r\n18:21 (Q & A)\r\n25:40 Man In Blue\r\n30:28 Grapevine Fires\r\n37:23 Photobooth\r\n42:27 A Movie Script Ending\r\n46:23 Don't Cry No Tears [Neil Young cover]",
+                    "textOriginal": "00:33 Your Heart is an Empty Room\r\n04:13 Autumn Love\r\n08:43 Styrofoam Plates\r\n13:49 Willamine \r\n18:21 (Q & A)\r\n25:40 Man In Blue\r\n30:28 Grapevine Fires\r\n37:23 Photobooth\r\n42:27 A Movie Script Ending\r\n46:23 Don't Cry No Tears [Neil Young cover]",
+                    "updatedAt": "2020-04-16T23:56:10.000Z",
+                    "videoId": "Z3BiBB0W1Eo",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "Z3BiBB0W1Eo"
+              }
+            }
+          ],
           "kind": "youtube#commentThreadListResponse"
         }
       },
@@ -731,7 +770,27 @@
           "title": "Ben Gibbard: Live From Home (3/28/20)"
         },
         "comments": {
-          "items": [],
+          "items": [
+            {
+              "id": "Ugy0lRQEKiRUoRpOenN4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "Ugy0lRQEKiRUoRpOenN4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "publishedAt": "2020-03-29T00:17:15.000Z",
+                    "textDisplay": "00:51 Me and Magdalena\n05:52 Underwater\n08:56 El Dorado\n13:25 Duncan where have you gone?\n21:39 Stable Song\n25:00 Summer Years\n38:20 Life in Quarantine\n42:47 St Swithin's Day\n47:36 I'm Building a Fire",
+                    "textOriginal": "00:51 Me and Magdalena\n05:52 Underwater\n08:56 El Dorado\n13:25 Duncan where have you gone?\n21:39 Stable Song\n25:00 Summer Years\n38:20 Life in Quarantine\n42:47 St Swithin's Day\n47:36 I'm Building a Fire",
+                    "updatedAt": "2020-03-29T00:17:15.000Z",
+                    "videoId": "Hk-xqMKLyRo",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "Hk-xqMKLyRo"
+              }
+            }
+          ],
           "kind": "youtube#commentThreadListResponse"
         }
       },
@@ -1112,6 +1171,44 @@
                     "textDisplay": "00:31 Champagne from a Paper Cup\r\n04:08 Debate Exposes Doubt\r\n07:54 Scientist Studies\r\n13:28 Wait [Secret Stars cover] \r\n17:27 Company Calls Epilogue\r\n22:47 (Q & A)\r\n28:17 Cleveland [¡All-Time Quarterback!]\r\n31:05 (This Is) The Dream of Evan and Chan [Dntel]\r\n34:51 Blacking Out the Friction\r\n37:40 Line of Best Fit \r\n44:18 I Was a Kaleidoscope\r\n49:24 No Joy in Mudville\r\n55:21 The Face That Launched 1000 Shits [The Revolutionary Hydra cover]",
                     "textOriginal": "00:31 Champagne from a Paper Cup\r\n04:08 Debate Exposes Doubt\r\n07:54 Scientist Studies\r\n13:28 Wait [Secret Stars cover] \r\n17:27 Company Calls Epilogue\r\n22:47 (Q & A)\r\n28:17 Cleveland [¡All-Time Quarterback!]\r\n31:05 (This Is) The Dream of Evan and Chan [Dntel]\r\n34:51 Blacking Out the Friction\r\n37:40 Line of Best Fit \r\n44:18 I Was a Kaleidoscope\r\n49:24 No Joy in Mudville\r\n55:21 The Face That Launched 1000 Shits [The Revolutionary Hydra cover]",
                     "updatedAt": "2020-03-24T00:23:28.000Z",
+                    "videoId": "QHTXnGLb4I0",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "QHTXnGLb4I0"
+              }
+            },
+            {
+              "id": "UgxGw6jHzet9UGwWqyZ4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "UgxGw6jHzet9UGwWqyZ4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "publishedAt": "2020-03-24T00:36:10.000Z",
+                    "textDisplay": "0:32 Champagne from a Paper Cup\n4:09 Debate Exposes Doubt\n7:55 Scientist Studies \n13:28 Wait (cover)\n17:27 Company Calls Epilogue \n28:17 Cleveland \n31:05 The Dream of Evan And Chan\n34:50 Blacking out the Friction \n37:40 Line of Best Fit\n44:17 I was a Kaleidoscope \n49:24 No Joy in Mudville \n55:20 The Face that Launched 1000 Shits (cover)",
+                    "textOriginal": "0:32 Champagne from a Paper Cup\n4:09 Debate Exposes Doubt\n7:55 Scientist Studies \n13:28 Wait (cover)\n17:27 Company Calls Epilogue \n28:17 Cleveland \n31:05 The Dream of Evan And Chan\n34:50 Blacking out the Friction \n37:40 Line of Best Fit\n44:17 I was a Kaleidoscope \n49:24 No Joy in Mudville \n55:20 The Face that Launched 1000 Shits (cover)",
+                    "updatedAt": "2020-03-24T00:36:10.000Z",
+                    "videoId": "QHTXnGLb4I0",
+                    "viewerRating": "none"
+                  }
+                },
+                "videoId": "QHTXnGLb4I0"
+              }
+            },
+            {
+              "id": "Ugyy97bpcqZIYf1oudp4AaABAg",
+              "kind": "youtube#commentThread",
+              "snippet": {
+                "topLevelComment": {
+                  "id": "Ugyy97bpcqZIYf1oudp4AaABAg",
+                  "kind": "youtube#comment",
+                  "snippet": {
+                    "publishedAt": "2020-03-24T00:28:24.000Z",
+                    "textDisplay": "SONGS FROM 1997-2001 SETLIST\n\n0:34 - Champagne From A Paper Cup\n3:28 (4:06 for the restart) - Debate Exposes Doubt\n7:53 - Scientist Studies\n13:28 - Wait\n17:17 - Company Calls Epilogue\n(22:04 - Q&A)\n28:17 - Cleveland\n31:05 - This Is The Dream Of Evan And Chan\n34:50 - Blacking Out The Friction\n39:37 - Line of Best Fit\n44:17 - I Was A Kaleidoscope\n(47:30 - Shout out to Dr. John Halpern)\n49:24 - No Joy In Mudville\n55:20 - The Face That Launched 1,000 Sh*ts\n\n(Not sure if I'm supposed to censor profanity even if it's a song title?)",
+                    "textOriginal": "SONGS FROM 1997-2001 SETLIST\n\n0:34 - Champagne From A Paper Cup\n3:28 (4:06 for the restart) - Debate Exposes Doubt\n7:53 - Scientist Studies\n13:28 - Wait\n17:17 - Company Calls Epilogue\n(22:04 - Q&A)\n28:17 - Cleveland\n31:05 - This Is The Dream Of Evan And Chan\n34:50 - Blacking Out The Friction\n39:37 - Line of Best Fit\n44:17 - I Was A Kaleidoscope\n(47:30 - Shout out to Dr. John Halpern)\n49:24 - No Joy In Mudville\n55:20 - The Face That Launched 1,000 Sh*ts\n\n(Not sure if I'm supposed to censor profanity even if it's a song title?)",
+                    "updatedAt": "2020-03-24T00:28:38.000Z",
                     "videoId": "QHTXnGLb4I0",
                     "viewerRating": "none"
                   }
