@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 973
+        },
+        "id": "8-BvvBYqMWs",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday (7:30) Wednesday (noon) and Thursday (7:30) on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n1:56 The Mountain Goats - No Children\n5:50 AJJ - Horsehair Vase\n8:03 Mount Eerie- You Swan, Go On\n10:30 Dear Nora - Hung Up\n13:13 AJJ - Body Terror Song\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nCheck out our digital merch table, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-12-04T03:51:01.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "8-BvvBYqMWs"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/8-BvvBYqMWs/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/8-BvvBYqMWs/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/8-BvvBYqMWs/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/8-BvvBYqMWs/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/8-BvvBYqMWs/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - December 3"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 528
         },
         "id": "56sfikJSKYA",
