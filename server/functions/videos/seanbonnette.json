@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 810
+        },
+        "id": "9ej13fXwOUQ",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday (7:30) Wednesday (noon) and Thursday (7:30) on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n0:40 AJJ - I Wanna Be Your Dog or I Also Wanna Be Your Dog, or something like that\n3:13 AJJ - Little Prince\n5:10 AJJ - Hate Song For Brains\n8:15 AJJ - I Wanna Rock Out In My Dreams\n\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nCheck out our digital merch table, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-12-09T21:13:12.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "9ej13fXwOUQ"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/9ej13fXwOUQ/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/9ej13fXwOUQ/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/9ej13fXwOUQ/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/9ej13fXwOUQ/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/9ej13fXwOUQ/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine   December 9"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 828
         },
         "id": "nIlXLHrDvSc",
