@@ -7,6 +7,104 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1444
+        },
+        "id": "uvvwEH6IdKw",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday (7:30) Wednesday (noon) and Thursday (7:30) on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 noise 1\n4:13 Ween - It's Gonna Be (Alright)\n7:10 AJJ - Rejoice\n10:25 Tim Hardin - Black Sheep Boy\n12:35 noise 2\n20:11 Novi Split - You Got Served\n22:45 Roger Miller - Oo-de-lally\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nCheck out our digital merch table, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-12-29T04:42:38.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "uvvwEH6IdKw"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/uvvwEH6IdKw/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/uvvwEH6IdKw/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/uvvwEH6IdKw/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/uvvwEH6IdKw/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/uvvwEH6IdKw/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - December 28"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
+          "duration": 960
+        },
+        "id": "LPAGzGi6zNs",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday (7:30) Wednesday (noon) and Thursday (7:30) on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n1:04 Guided By Voices - Game of Pricks\n2:50 AJJ - Junkie Church\n6:27 Gram Parsons and Emmylou Harris - Return of the Grievous Angel\n10:06 AJJ - Maggie\n12:35 The Less We Get Together\n13:24 AJJ - Fucc The Devil\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nCheck out our digital merch table, if you're so inclined: http://shop.ajjtheband.com",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2020-12-24T04:19:10.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "LPAGzGi6zNs"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/LPAGzGi6zNs/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/LPAGzGi6zNs/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/LPAGzGi6zNs/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/LPAGzGi6zNs/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/LPAGzGi6zNs/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - March 15"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 870
         },
         "id": "DO2kMdt7Ico",
