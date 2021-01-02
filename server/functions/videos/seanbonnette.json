@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1226
+        },
+        "id": "h6I2zx7Pju8",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday (7:30) Wednesday (noon) and Thursday (7:30) on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n3:03 The Mountain Goats - This Year\n6:48 AJJ - Body Terror\n9:11 AJJ - Small Red Boy\n14:30 Neil Young - Roll Another Number\n18:20 AJJ - Distance\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nCheck out our digital merch table, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2021-01-01T05:51:06.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "h6I2zx7Pju8"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/h6I2zx7Pju8/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/h6I2zx7Pju8/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/h6I2zx7Pju8/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/h6I2zx7Pju8/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/h6I2zx7Pju8/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - December 31"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1444
         },
         "id": "uvvwEH6IdKw",
