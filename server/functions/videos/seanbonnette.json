@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1087
+        },
+        "id": "IqHcvl22WmQ",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday (7:30) Wednesday (noon) and Thursday (7:30) on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 AJJ - Heartilation\n2:02 Roky Erickson - I Think of Demons\n5:26 Dear Nora - Hung Up\n7:20 AJJ - Terrifyer\n12:00 Silver Jews - Candy Jail\n15:00 Guided By Voices - Candy Jail \n16:25 guitar!!!!!!\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nCheck out our digital merch table, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2021-01-05T05:14:09.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "IqHcvl22WmQ"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/IqHcvl22WmQ/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/IqHcvl22WmQ/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/IqHcvl22WmQ/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/IqHcvl22WmQ/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/IqHcvl22WmQ/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - January 4"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1226
         },
         "id": "h6I2zx7Pju8",
