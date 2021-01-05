@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .tabular-nums {
-  font-variant-numeric: 'tabular-nums';
+  font-variant-numeric: tabular-nums;
 }
 
 .video-16\/9-container {
