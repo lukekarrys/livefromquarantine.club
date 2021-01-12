@@ -3,11 +3,15 @@ const duration = require('iso8601-duration')
 const findSetlist = require('./find-setlist')
 
 const omitCommentIds = [
-  'UgyA0JzCcn4gxF1ktmZ4AaABAg', // Ben Gibbard: Live From Home (3/22/20),
+  'UgyA0JzCcn4gxF1ktmZ4AaABAg', // Ben Gibbard: Live From Home (3/22/20)
   'UgzBJFE06U9bR-ozNRx4AaABAg', // #9 Saturday Apartment Requests w Ben Folds
 ]
 
 const blessCommentIds = []
+
+const omitVideoIds = [
+  'odXvJJcoo9w', // A non music video (mistakenly?) added to the TMOE playlist
+]
 
 const get = ({ url, params = {}, headers = {}, token }) => {
   const axiosRequest = {
@@ -156,7 +160,9 @@ const getPaginatedVideosFromPlaylist = async (
   const resp = await get(playlistItemsUrl(id, token, pageToken))
 
   const { items, nextPageToken } = resp.data
-  const publicVideos = items.filter((v) => !isVideoPrivate(v))
+  const publicVideos = items
+    .filter((v) => !isVideoPrivate(v))
+    .filter((v) => !omitVideoIds.includes(v.snippet.resourceId.videoId))
 
   // Playlist can't include content or livestream details so we need to
   // fetch those separately
