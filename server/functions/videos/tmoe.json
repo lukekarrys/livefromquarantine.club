@@ -531,6 +531,56 @@
           ],
           "kind": "youtube#commentThreadListResponse"
         }
+      },
+      {
+        "contentDetails": {
+          "duration": 332
+        },
+        "id": "odXvJJcoo9w",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UC9EHP9xTtUHNAkgaAraAPWA",
+          "channelTitle": "The Tallest Man on Earth",
+          "description": "Bennet spoke on the Senate floor Wednesday evening and compared the riots to what happened before Rome fell, saying that is what the Constitution hoped to avoid. He urged his colleagues to learn from what happened and confirm the democratic presidential result.",
+          "playlistId": "PLsqIAvvqdduhw1f7RVxdcCmaCm5Zy7Osc",
+          "publishedAt": "2021-01-11T00:00:26.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "odXvJJcoo9w"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/odXvJJcoo9w/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/odXvJJcoo9w/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/odXvJJcoo9w/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/odXvJJcoo9w/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/odXvJJcoo9w/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Sen. Bennet urges colleagues to cocnfirm electoral count in floor speech following mayhem"
+        },
+        "comments": {
+          "items": [],
+          "kind": "youtube#commentThreadListResponse"
+        }
       }
     ],
     "kind": "youtube#playlistItemListResponse"
