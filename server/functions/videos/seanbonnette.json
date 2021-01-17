@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 697
+        },
+        "id": "gyejW82Lj7w",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday (7:30) Wednesday (noon) and Thursday (7:30) on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n0:38 Welcome to songs\n1:07 AJJ - Cody's Theme\n2:59 AJJ - We Didn't Come Here to Rock\n4:22 AJJ - Guilt: The Song\n8:13 AJJ - Fucc The Devil\n\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nCheck out our digital merch table, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2021-01-15T04:05:47.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "gyejW82Lj7w"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/gyejW82Lj7w/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/gyejW82Lj7w/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/gyejW82Lj7w/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/gyejW82Lj7w/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/gyejW82Lj7w/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - January 14"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 460
         },
         "id": "2otiGE2xW9s",
