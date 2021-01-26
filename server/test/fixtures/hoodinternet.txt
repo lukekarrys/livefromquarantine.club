@@ -76,7 +76,7 @@ g_nToRZOqVo
 10 | B-52s "Private Idaho" (Single note electric guitar, harmony)
 11 | Orchestral Manoeuvres in the Dark "Enola Gay" (Weak electric drum sound)
 14 | The Jam "That's Entertainment" (Strummed Acoustic Guitar)
-20 | ? ? (Drum fill, accompanying The Romantics shouting "Hey")
+20 | Elvis Costello "I Can't Stand Up For Falling Down" (Drum fill, accompanying The Romantics shouting "Hey", from their appearance on the Kenny Everett show) [Amazing find, Southpaw Frizzell!]
 21 | Devo "Whip It" (Hi-hats. Video of drummer wearing a red jelly mold on his head)
 26 | Pete Townshend "Let My Love Open The Door" (Keyboard riff)
 26 | The Ramones "Do you remember rock and roll radio" (Muddy drum sound, and the lyric 'Let's Go!')
@@ -112,7 +112,7 @@ g_nToRZOqVo
 110 | Lakeside "Fantastic Voyage" (People dressed as pirates elbow the imaginary people standing next to them.)
 113 | Ultravox "Vienna" (Formal gathering stares at camera. Note: They do NOT say "woo hoo ooo", even though it looks like they do. The Hood Internet can mix!)
 116 | Hall & Oates "You make my dreams" (Electric piano riff)
-121 | Yarbrough & Peoples "Don't stop the music" (Synthy bass sound)
+121 | Yarbrough & Peoples "Don't stop the music" (Synthy bass sound, later used by Vulfpeck on their song "Beastly")
 125 | Pat Benatar "Hit me with your best shot" (Ms Benatar formally requests the pleasure of you hitting her with your best shot)
 132 | Joy Division "Atmosphere" (Black and white video, and occasional high synth sound)
 145 | Frankie Smith "Double Dutch Bus" (Right panel: people dancing in front of a bus. Killer fact: Frankie didn't get paid royalties for this song, as his record company were laundering money for a dentist.)
@@ -126,11 +126,11 @@ THE HOOD INTERNET presents 1981
 8BdfGD5ZiiA
 0 | ? ? (Pad sound and piano riff and bass drum)
 0 | Stevie Nicks “Edge of Seventeen” (Audio: Rhythm guitar + Video: Woman in a flowing white dress)
+4 | Yoko Ono "Walking On Thin Ice" (Crescendo-ing electric guitar riff from the original version of this song) [Thanks Southpaw Frizzell!]
 5 | Phil Collins “In The Air Tonight” (Lyric: “I can feel it coming in the air tonight …”)
 10 | Afrika Bambaataa and the Jazzy Five "Jazzy Sensation" (Lyric: “Can you feel it? Can you feel it?”) [Well spotted DatHott Gamer!]
 10 | ? ? (Electric snare sound)
 12 | Duran Duran "Girls On Film" (Audio: Faint rattle sound, which comes from the extended version https://youtu.be/pRbBDXcnt1k?t=22)
-15 | ? ? (Video: two guitarists, one with a blue vest, long curly hair and glasses. Is that Rush?)
 17 | ? ? (Video: Man sits alone at a restaurant with rain outside)
 19 | Queen and David Bowie “Under Pressure” (Bass player plays the riff from “Ice Ice Baby” by Vanilla Ice)
 23 | Hall and Oates “I Can’t Go For That” (Lyric: “I can’t go for that, no, no …”)
@@ -160,7 +160,7 @@ THE HOOD INTERNET presents 1981
 88 | Soft Cell “Tainted Love” (Roman emperor gives the thumbs down + Audio: Electric cymbal sounds)
 91 | Rush “Tom Sawyer” (Audio: Keyboard riff in 7/4 time + Video: Keyboardist with drums in the background)
 94 | Juice Newton “Angel of the Morning” (Video: Lady wearing pink opens a window)
-95 | ? ? (Keyboardist with a receding hairline and a leather jacket) (Note: This is the optimum combination of hairlines and jackets.)
+95 | Kim Wilde "Kids in America" (Keyboardist with a receding hairline and a leather jacket) (Note: This is the optimum combination of hairlines and jackets.) [Thanks Geecy Project!]
 95 | Rick Springfield “Jessie’s Girl” (Lyric: "You know I wish that I had Jessie’s girl”)
 95 | The Police "Spirits In The Material World" (Audio: Drum roll) [Well spotted Jakob Mueller!]
 99 | Rick James “Superfreak” (Lyric: “She’s a very kinky girl”)
@@ -291,7 +291,7 @@ rCaBfx872PA
 80 | Journey "Separate Ways (Worlds Apart)" (Synth riff + video: Band playing imaginary instruments on a wharf / Legs of a woman who means business)
 83 | Quiet Riot "Cum On Feel the Noise" (Heavy metal drummer) [Thanks Jakob Mueller!]
 87 | Huey Lewis and the News "Heart and Soul" (Woman does the eye dance thing)
-87 | Def Leppard "Rock of Ages (Video: Drummer wearing Union Jack underpants / Black angular electric guitar, for this is 1983)
+87 | Def Leppard "Rock of Ages" (Video: Drummer wearing Union Jack underpants / Black angular electric guitar, for this is 1983)
 93 | Run DMC "It's Like That" (Lyric: "One thing I know it's that life is short ..." + Video: Rappers)
 93 | Van Halen "Jump" (Audio: Synth brass riff + Video: Hair metal band doing hair metal band things around a stage)
 106 | The Tubes "She's a Beauty" (Audio: Synth rhythm riff + Video: Women in gold swimsuits)
@@ -301,8 +301,8 @@ rCaBfx872PA
 111 | Night Ranger "Sister Christian" (Audio: Light piano + Video: Keyboardist at who looks like he's playing "Jump", but he's not. The Hood Internet know how to mix video!) [Well spotted Jakob Mueller!]
 120 | The Smiths "This Charming Man" (Lyric: "Naa na naa" + Video: Man in grey twirls a bunch of flowers)
 121 | Quiet Riot "Metal Health" (Lyric: "Bang! Your! Head!")
-128 | Madonna "Holiday" (Synth chords & riff + video: Madonna + two dancers @)
 127 | Styx "Mr Roboto" (Lyric: "Domo arigato Mr Roboto ..." + Video: Robot)
+128 | Madonna "Holiday" (Synth chords & riff + video: Madonna + two dancers @)
 132 | The Romantics "Talking in Your Sleep" (Robot-sounding Lyric: "When you're talking in your sleep / the secrets that you keep")
 140 | Cyndi Lauper "Girls Just Wanna Have Fun" (Lyric: "Oh girls just wanna have fun")
 143 | Billy Joel "Uptown Girl" (Lyric: "Argh argh argh argh argh argh argh" + Video: Mechanics dancing with a supermodel)
@@ -311,7 +311,7 @@ rCaBfx872PA
 151 | Spandau Ballet "True" (Video: Drummer and singer silhouetted by fog machine)
 157 | Cyndi Lauper "Girls Just Wanna Have Fun" reprise (Video: Cyndi Lauper puts wrestler Captain Lou Albano, playing her Dad, in an arm-lock)
 160 | Nena "99 Red Balloons" (Bass synth brass riff + Video: Keyboardist wearing leather jacket and red scarf)
-162 | ? ? (Blonde woman, possibly Madonna, being held by a big man in a trench coat)
+162 | Def Leppard "Photograph" (Blonde woman being held by a big man in a trench coat)
 170 | The Police "Every Breath You Take" (Video: Double bass player)
 175 | Madonna "Lucky Star" (Audio: high shimmering bell sounds + Video: Madonna fiddles with her sunglasses) [Thanks WDP Music!]
 175 | Billy Joel "Uptown Girl" reprise
@@ -348,7 +348,7 @@ zMg2FF59CMw
 71 | Billy Ocean "No more love on the run" (Electronic drum transition) [via Jakob Mueller, who is clearly a genius to recognise a whole song from a few drum beats!]
 72 | Depeche Mode "People are People" (Lyric: "People are people so why should it be ...")
 72 | Tears for Fears "Shout" reprise (Lyric: "Come on")
-74 | ? ? (Video: Man in front of flamingoes + Audio: One synth note)
+74 | Talk Talk "It's My Life" (Video: Man in front of flamingoes + Audio: One synth note)
 77 | Thompson Twins "Doctor Doctor" (Video: Hands + Audio: Repeated three-note synth) [Thanks Geoff Bartlett!]
 82 | Art of Noise "Close to the edit" ("Hey" lyric, later sampled on Firestarter by the Prodigy)
 87 | Deneice Williams "Let's hear it for the boy" (electronic drums) [via Jakob Mueller]
@@ -356,6 +356,7 @@ zMg2FF59CMw
 88 | Tears for Fears "Shout" reprise (Lyric: "Come on. I'm talking to you. Come on...")
 91 | Deneice Williams "Let's hear it for the boy" (Video: Football player)
 93 | Wham "Everything She Wants" (Black and white Andrew Ridgely saying "la" a few times.)
+94 | Ollie & Jerry "Breakin' ... There's No Stopping Us" (Audio: Electric high hats)
 96 | ? ? (Multi-coloured animated drawing on a black background)
 102 | Run DMC (Song unknown - turntable guy) [Thanks K-Dog!]
 102 | Harold Faltemeyer "Axel F" (The most important synth record of the late 20th century.)
@@ -383,12 +384,13 @@ zMg2FF59CMw
 152 | Bryan Adams "Summer of 69" ("Oh yeah!" lyric)
 153 | Scandal ft Patty Smyth "The Warrior" (ballet dancers) [Thanks James Hagearty!]
 155 | Bruce Springstein "Born in the USA" (The drummer is Max Weinberg) [Thanks Denise!]
+161 | The Minutemen "History Lesson Part II" (Video: Bearded bass player in jacket and tie)
 164 | Bryan Adams "Summer of 69" reprise (Lyric: "It was the summer of 69 ... Me and my baby in 69 ...")
 165 | Twisted Sister "We're Not Gonna Take It" reprise (Video: Man lies on concrete while bits of tile fall on him) [Thanks Julio Diaz!]
 165 | Paul Hardcastle "19" (Audio: Complex drums and clapping) [Thanks Casey Plain!]
 165 | Madonna "Like a Virgin" reprise (Lyric: "Touched for the very first time")
 166 | Sheila E "Glamorous Life" [Thanks Denise!]
-171 | ? ? (Guitarists dressed in white play white guitars)
+171 | The Replacements "I Will Dare" (Guitarists dressed in white play white guitars)
 175 | ? ? (Band play in front of a sign that might say "Whistle Test")
 176 | New Edition "Cool It Now" (basketball game) [Thanks Liquid Light!]
 ----------
@@ -473,38 +475,25 @@ GklP0ATsEtw
 54 | Midnight Star "Midas Touch" (Lyric "Touch. Touch" + Video: Drummer wearing a blue camouflaged suit plays in front of a building site) [via RW]
 54 | Human League "Human" (Audio: Deep piano note followed by drum beat + Video: A drop of water hits a still pond)
 61 | Peter Gabriel “Sledgehammer” reprise (Audio: Chiff-flute riff, played on a synth + Video: Black screen with green-y white dots. Note: This is what it would sound like if an alien attempted to play Abba’s “Gimme gimme gimme a man after midnight")
-62 | Europe “The Final Countdown” (Audio: Synth brass riff)
+62 | Europe “The Final Countdown” (Audio: Synth brass riff + Video: Clock, concert at ) [Thanks Southpaw Frizzell!]
 62 | Cutting Crew "(I Just) Died In Your Arms" (Audio: Cello melody in the background + Video: Black and white video of a woman pretending to play a cello)
-62 | ? ? (Video: A clock. We later find its next to a sign that says “Rokning Forbjuden” indicating how forbjuden it is to do rokning.)
 66 | Cyndi Lauper "True Colors" (Audio: Bass drum beat + Video: Woman with wild blonde hair hits a hand drum)
 69 | Metallica "Master of Puppets" (Audio: 2 lead guitars harmonising each other + Video: Metallica guitarists in front of their Marshall stack at the Roskilde Festival)
 70 | Beastie Boys "Brass Monkey" reprise (Audio: Distorted synth sax) [Thanks Jakob Mueller!]
-70 | ? ? (A stage explodes with blue light)
-70 | ? ? (Black and white video of a man escaping to a room containing a TV and a security guard)
-70 | ? ? (Another stage explodes with light as an audience member raises his fist)
-71 | ? ? (Quick cut to a keyboardist)
-72 | ? ? (A different stage explodes with light. More raised fists)
-73 | ? ? (Two hair band members bang their heads to a faint distorted synth riff)
-75 | ? ? (Yet another metallurgist - a bass player)
-76 | ? ? (Audience fists silhouetted in blue)
 77 | Peter Gabriel “Sledgehammer” reprise (Audio: Horn riff + Video of man’s eye)
 79 | Madonna "Papa Don't Preach" (Madonna walks in front of New York Harbour)
 79 | Genesis “Land of Confusion” (Lyric: “I must have dreamed a thousand dreams …”)
 79 | Genesis "Tonight Tonight Tonight" (Lyric: "Oh Ho. I'm gonna make it right...")
-79 | ? ? (Quiet synth riff in my left ear under “must have dreamed a”)
+79 | Fingers Inc "Mystery of Love" (Quiet synth riff under “must have dreamed a”)
 79 | ? ? (Electric hi hats)
 88 | Madonna "Papa Don't Preach" reprise (Madonna wears black and dances backwards across the stage)
-92 | ? ? (A black leg swivels in a red background)
-92 | Duran Duran “Notorious” (Lyric “No no. Notorious”)
+92 | Duran Duran “Notorious” (Lyric “No no. Notorious” + Video: A black leg swivels in a red background and dancers at ) [Thanks Southpaw Frizzell!]
 93 | Peter Gabriel “Sledgehammer” reprise (Two stop-motion roast chickens dance with each other. Because this is the 80s.)
 94 | Janet Jackson “Control" (Lyric: “When I was 17 I did what people told me”)
 94 | The Smithereens "Blood and Roses" (Audio: Bass riff + Video: quick cut of a 3 piece band in a purple video)
 94 | Janet Jackson “What Have You Done For Me Lately?” (Audio: Synth riff at + Video: Dancers at)
 94 | Boogie Down Productions "South Bronx" (Audio: High synth horns) [Thanks Jakob Mueller!]
-95 | ? ? (Video: quick cut of a man in a black suit, white shirt and no tie with a light behind him)
 99 | Bon Jovi “Livin’ on a Prayer” reprise (Guitar vocoder lyric: “oo wah oo wah … WAAAAOW" + Black and white video of hair metal band)
-99 | ? ? (Black and white video of 3 brunette dancers)
-100 | ? ? (Black suited guitarist in red light)
 101 | Run DMC "Peter Piper" (Audio: Record scratch, followed by complex bell-like drum beat) [Thanks Jakob Mueller!]
 111 | Janet Jackson “When I Think of You” (Lyric: “Ooooh”)
 112 | Eric B and Rakim "Make em Clap To This" (Lyric: “May may may make em clap to this”)
@@ -531,7 +520,6 @@ GklP0ATsEtw
 155 | Berlin “Take My Breath Away” (Audio: Bass riff + Video: A woman standing on Tom Cruise’s F16 from the movie “Top Gun”)
 157 | The Bangles “Manic Monday” (Audio: High synth riff + Video: Woman in a green dress walking down the street looks back)
 157 | Eric B and Rakim "Make em Clap To This" (Lyric "May may may make em clap to this”)
-159 | Janet Jackson “Nasty” reprise (Lyric: “Gimme a beat”)
 164 | Berlin “Take My Breath Away” reprise (Woman silhouetted against the late afternoon sky)
 165 | Beastie Boys “You Gotta Fight For Your Right To Party” (Lyric: “You gotta fight for your right to party”)
 166 | The Bangles "Manic Monday" reprise (A calendar flips through 1986) [Thanks Julio Diaz!]
