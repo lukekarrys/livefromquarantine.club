@@ -7,6 +7,104 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 1121
+        },
+        "id": "Z-eOJT45Ii4",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday (7:30) Wednesday (noon) and Thursday (7:30) on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n1:15 AJJ - Do, Re, Me\n3:53 AJJ - Distance\n6:00 Leonard Cohen - Bird On The Wire\n9:35 Jay Reatard - Fading All Away\n11:18 AJJ - I Wanna Be Your Dog 2\n13:45 WHY? - These Few Presidents\n17:30 oo de lally\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nCheck out our digital merch table, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2021-01-26T04:53:20.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "Z-eOJT45Ii4"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/Z-eOJT45Ii4/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/Z-eOJT45Ii4/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/Z-eOJT45Ii4/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/Z-eOJT45Ii4/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/Z-eOJT45Ii4/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - January 25"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
+          "duration": 1054
+        },
+        "id": "YVZDjvbAWEY",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday (7:30) Wednesday (noon) and Thursday (7:30) on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n0:41 Fred Neil (Harry Nilsson) - Everybody's Talkin\n5:00 AJJ - Schadenfreude\n8:58 AJJ - Mega Guillotine 2020\n10:59 AJJ - Love Will Fuck Us Apart\n13:08 AJJ - Big Bird\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nCheck out our digital merch table, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2021-01-22T04:21:09.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "YVZDjvbAWEY"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/YVZDjvbAWEY/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/YVZDjvbAWEY/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/YVZDjvbAWEY/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/YVZDjvbAWEY/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/YVZDjvbAWEY/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - January 21"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 827
         },
         "id": "KbDs5xRKpRw",
