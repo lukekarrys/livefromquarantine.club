@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 994
+        },
+        "id": "dd-IGkRK498",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday (7:30) Wednesday (noon) and Thursday (7:30) on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n1:24 AJJ - Your Voice, As I Remember It\n4:06 AJJ - Love In Your Heart\n5:32 Neil Young - Tell Me Why\n8:11 AJJ - Little Prince\n10:26 Jackson Browne - These Days \n12:20 AJJ - Back Pack\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nCheck out our digital merch table, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2021-02-02T06:38:07.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "dd-IGkRK498"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/dd-IGkRK498/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/dd-IGkRK498/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/dd-IGkRK498/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/dd-IGkRK498/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/dd-IGkRK498/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - February 1"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 440
         },
         "id": "Pvx2jcvtd2g",
