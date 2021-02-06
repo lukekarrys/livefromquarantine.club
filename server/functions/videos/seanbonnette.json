@@ -7,6 +7,55 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 697
+        },
+        "id": "XPFO-kqmfHg",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday (7:30) Wednesday (noon) and Thursday (7:30) on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:36 Ween - It's Gonna Be (Alright)\n3:41 AJJ - Linda Ronstadt\n6:49 AJJ - Body Terror Song\n9:00 Neil Young - Roll Another Number\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nCheck out our digital merch table, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2021-02-05T03:46:40.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "XPFO-kqmfHg"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/XPFO-kqmfHg/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/XPFO-kqmfHg/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/XPFO-kqmfHg/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/XPFO-kqmfHg/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/XPFO-kqmfHg/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - February 4"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 532
         },
         "id": "t4qpVaI-EnY",
