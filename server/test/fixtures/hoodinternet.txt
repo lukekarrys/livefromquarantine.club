@@ -460,6 +460,7 @@ GklP0ATsEtw
 6 | Paul Simon “You Can Call Me Al” (Audio: Horn section + Video: Paul Simon and Chevy Chase play horns)
 9 | Book of Love "Boy" (Audio: One note played on a synth + Video: Lady in black and white plays one note on a synth)
 10 | ? ? (Man plays the bongos)
+14 | Billy Bragg "Greetings to the New Brunette" (Subtle acoustic guitar strum) [Thanks Geecy Project!]
 15 | Peter Gabriel “Sledgehammer” (Lyric: “Yeah” + Video: Stop-motion Peter Gabriel)
 18 | Billy Joel "A Matter of Trust" (Lyric: “One. Two. One two three…”)
 21 | Run DMC “It’s Tricky" (Lyric: “Here we go. It’s tricky to rock a rhyme to rock a rhyme that’s right on time it’s tricky …” + Audio: Drumbeat)
@@ -480,6 +481,7 @@ GklP0ATsEtw
 66 | Cyndi Lauper "True Colors" (Audio: Bass drum beat + Video: Woman with wild blonde hair hits a hand drum)
 69 | Metallica "Master of Puppets" (Audio: 2 lead guitars harmonising each other + Video: Metallica guitarists in front of their Marshall stack at the Roskilde Festival)
 70 | Beastie Boys "Brass Monkey" reprise (Audio: Distorted synth sax) [Thanks Jakob Mueller!]
+75 | Slayer "Raining Blood" (guitarist dressed in black) [Thanks Geecy!]
 77 | Peter Gabriel “Sledgehammer” reprise (Audio: Horn riff + Video of man’s eye)
 79 | Madonna "Papa Don't Preach" (Madonna walks in front of New York Harbour)
 79 | Genesis “Land of Confusion” (Lyric: “I must have dreamed a thousand dreams …”)
