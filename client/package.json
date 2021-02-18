@@ -4,17 +4,17 @@
   "dependencies": {
     "@types/classnames": "^2.2.11",
     "@types/youtube": "0.0.41",
-    "@xstate/fsm": "^1.4.0",
-    "@xstate/react": "^1.0.0-rc.4",
+    "@xstate/fsm": "^1.6.0",
+    "@xstate/react": "^1.2.2",
     "classnames": "^2.2.6",
-    "preact": "^10.4.1",
-    "preact-render-to-string": "^5.1.8",
+    "preact": "^10.5.12",
+    "preact-render-to-string": "^5.1.12",
     "preact-router": "^3.2.1",
     "tailwindcss": "^1.4.6"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.7.0",
-    "@testing-library/preact": "^1.0.2",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/preact": "^2.0.1",
     "@types/jest": "^26.0.20",
     "@types/webpack-env": "^1.16.0",
     "@typescript-eslint/eslint-plugin": "^4.15.1",
@@ -27,9 +27,9 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-testing-library": "^3.10.1",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^25.5.4",
+    "jest": "^26.6.3",
     "lint-staged": "^10.2.4",
-    "preact-cli": "^3.0.0-rc.10",
+    "preact-cli": "^3.0.5",
     "prettier": "^2.0.5",
     "sirv-cli": "^1.0.0-next.3",
     "ts-jest": "^26.5.1",
@@ -54,13 +54,13 @@
   "private": true,
   "scripts": {
     "build": "preact build --sw false --no-prerender --inline-css false --esm false --preload --dest ../public",
+    "check": "tsc --project tsconfig.json --noEmit",
     "dev": "preact watch",
     "eslint": "eslint './**/*.{js,jsx,ts,tsx}' --fix",
     "lint": "npm run prettier && npm run eslint",
     "precommit": "lint-staged",
     "prettier": "prettier '**/*.{js,jsx,ts,tsx,css,md,json}' --write",
     "serve": "sirv build --port 3000 --cors --single",
-    "test": "jest ./tests",
-    "ts": "tsc --project tsconfig.json --noEmit"
+    "test": "jest ./tests"
   }
 }
