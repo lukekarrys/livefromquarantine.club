@@ -1,15 +1,15 @@
 import { useEffect, useRef } from 'preact/hooks'
 import {
-  PlayerMachineState,
   PlayerService,
   PlayerContext,
+  PlayerServiceState,
 } from '../machine/types'
 import * as debug from './debug'
 
 // Log all events through the service
 export const useService = (
   service: PlayerService,
-  shape?: (state: PlayerMachineState) => unknown
+  shape?: (state: PlayerServiceState) => unknown
 ): void => {
   useEffect(() => {
     const subscription = service.subscribe((s) =>

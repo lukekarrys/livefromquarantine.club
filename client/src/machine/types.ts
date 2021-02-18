@@ -146,10 +146,18 @@ export type PlayerTransition<TEvent extends EventObject> = {
 
 export type PlayerSend = (event: PlayerEvent | PlayerEvent['type']) => void
 
-export type PlayerService = StateMachine.Service<
+export type PlayerService = StateMachine.Service<PlayerContext, PlayerEvent>
+
+// This is a less strict typing of the machine's state for use with the above
+// PlayerService type which doesn't include State when returned from useMachine
+export type PlayerServiceState = StateMachine.State<
   PlayerContext,
   PlayerEvent,
-  PlayerState
+  {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    value: any
+    context: PlayerContext
+  }
 >
 
 export type PlayerMachineState = StateMachine.State<
