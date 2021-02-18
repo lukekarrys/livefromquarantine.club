@@ -1,20 +1,24 @@
 const DEBUG =
   localStorage.getItem('debug') || process.env.NODE_ENV === 'development'
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any, no-console
-export const log = (...args: any): void => void (DEBUG && console.log(...args))
+export const log = (...args: unknown[]): void => {
+  // eslint-disable-next-line  no-console
+  if (DEBUG) console.log(...args)
+}
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const error = (...args: any): void =>
+export const error = (...args: unknown[]): void => {
   // eslint-disable-next-line no-console
-  void (DEBUG && console.error(...args))
+  if (DEBUG) console.error(...args)
+}
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const group = (...args: any): void =>
+export const group = (...args: unknown[]): void => {
   // eslint-disable-next-line no-console
-  void (DEBUG && console.group(...args))
+  if (DEBUG) console.group(...args)
+}
 
-// eslint-disable-next-line no-console
-export const groupEnd = (): void => void (DEBUG && console.groupEnd())
+export const groupEnd = (): void => {
+  // eslint-disable-next-line no-console
+  if (DEBUG) console.groupEnd()
+}
 
 export default log

@@ -10,9 +10,8 @@ import { AccessToken } from '../types'
 
 type LSAccessToken = AccessToken | undefined
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+// eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-member-access
 if ((module as any).hot) {
-  // tslint:disable-next-line:no-var-requires
   require('preact/debug')
 }
 

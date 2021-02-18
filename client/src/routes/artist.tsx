@@ -54,7 +54,7 @@ const Artist: FunctionalComponent<Props> = ({ artist, accessToken }) => {
             selectMode != null ? (+selectMode as SelectMode) : undefined,
         })
       })
-      .catch((error) => send({ type: 'FETCH_ERROR', error }))
+      .catch((error: Error) => send({ type: 'FETCH_ERROR', error }))
   }, [artist, send, accessToken])
 
   useEffect(() => {
