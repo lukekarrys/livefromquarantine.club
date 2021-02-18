@@ -30,11 +30,13 @@ export type SelectTrackEvent = {
   trackId: TrackId
   forcePlay?: boolean
 }
+
 export type RemoveTrackEvent = {
   type: 'REMOVE_TRACK'
   order: PlayerContext['currentOrder']
   id: OrderId
 }
+
 export type RemoveAllTracksEvent = {
   type: 'REMOVE_ALL_TRACKS'
   order: PlayerContext['currentOrder']
@@ -141,6 +143,7 @@ export type PlayerTransition<TEvent extends EventObject> = {
     StateMachine.Transition<PlayerContext, TEvent>
   >
 }
+
 export type PlayerSend = (event: PlayerEvent | PlayerEvent['type']) => void
 
 export type PlayerService = StateMachine.Service<

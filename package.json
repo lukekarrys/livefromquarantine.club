@@ -24,6 +24,9 @@
     "url": "git+https://github.com/lukekarrys/livefromquarantine.club.git"
   },
   "scripts": {
+    "check": "run-s check:client check:server",
+    "check:client": "cd client && npm run check",
+    "check:server": "cd server && exit 0",
     "build": "run-s build:client build:server",
     "build:client": "cd client && npm run build",
     "build:server": "cd server && npm run build",
