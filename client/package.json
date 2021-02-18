@@ -2,8 +2,8 @@
   "name": "client",
   "version": "0.0.0",
   "dependencies": {
-    "@types/classnames": "^2.2.10",
-    "@types/youtube": "0.0.38",
+    "@types/classnames": "^2.2.11",
+    "@types/youtube": "0.0.41",
     "@xstate/fsm": "^1.4.0",
     "@xstate/react": "^1.0.0-rc.4",
     "classnames": "^2.2.6",
@@ -15,8 +15,8 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.7.0",
     "@testing-library/preact": "^1.0.2",
-    "@types/jest": "^25.2.1",
-    "@types/webpack-env": "^1.15.2",
+    "@types/jest": "^26.0.20",
+    "@types/webpack-env": "^1.16.0",
     "@typescript-eslint/eslint-plugin": "^4.15.1",
     "@typescript-eslint/parser": "^4.15.1",
     "eslint": "^7.20.0",
@@ -32,9 +32,9 @@
     "preact-cli": "^3.0.0-rc.10",
     "prettier": "^2.0.5",
     "sirv-cli": "^1.0.0-next.3",
-    "ts-jest": "^25.5.1",
-    "ts-loader": "^7.0.4",
-    "typescript": "^3.8.3"
+    "ts-jest": "^26.5.1",
+    "ts-loader": "^8.0.17",
+    "typescript": "^4.1.5"
   },
   "license": "MIT",
   "lint-staged": {
@@ -60,6 +60,7 @@
     "precommit": "lint-staged",
     "prettier": "prettier '**/*.{js,jsx,ts,tsx,css,md,json}' --write",
     "serve": "sirv build --port 3000 --cors --single",
-    "test": "jest ./tests"
+    "test": "jest ./tests",
+    "ts": "tsc --project tsconfig.json --noEmit"
   }
 }
