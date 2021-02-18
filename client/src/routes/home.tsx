@@ -72,12 +72,9 @@ const Home: FunctionalComponent<Props> = ({ accessToken, requireAuth }) => {
               class="mb-4 text-xl text-center block"
               href={`https://accounts.google.com/o/oauth2/v2/auth?${qs.stringify(
                 {
-                  // eslint-disable-next-line @typescript-eslint/camelcase
                   client_id:
                     '873120465885-3194c6caoq5243ehirku1aefcoh039if.apps.googleusercontent.com',
-                  // eslint-disable-next-line @typescript-eslint/camelcase
                   redirect_uri: window.location.origin,
-                  // eslint-disable-next-line @typescript-eslint/camelcase
                   response_type: 'token',
                   scope: 'https://www.googleapis.com/auth/youtube.readonly',
                 }

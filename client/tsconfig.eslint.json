@@ -7,5 +7,9 @@
     "src/**/*.js",
     "src/**/*.jsx",
     "./*.js"
-  ]
+  ],
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true
+  }
 }

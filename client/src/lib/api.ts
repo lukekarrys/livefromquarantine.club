@@ -32,6 +32,7 @@ interface ApiVideo {
 interface ApiData {
   meta: ArtistMeta
   data: ApiVideo[]
+  error?: string
 }
 
 const videoToTrack = (video: ApiVideo): Track => ({
@@ -95,7 +96,7 @@ const fetchData = (
 ): Promise<NormalizedData> =>
   fetch(`/.netlify/functions/videos?${qs.stringify({ id, accessToken })}`).then(
     async (resp) => {
-      const data = await resp.json()
+      const data = (await resp.json()) as ApiData
       if (resp.ok) {
         return normalizeData(data)
       } else {
