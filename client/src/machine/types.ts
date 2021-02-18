@@ -165,3 +165,24 @@ export type PlayerMachineState = StateMachine.State<
   PlayerEvent,
   PlayerState
 >
+
+// https://github.com/davidkpiano/xstate/discussions/1591#discussioncomment-111941
+export function assertEventType<
+  TE extends EventObject,
+  TType extends TE['type']
+>(
+  event: TE,
+  eventType: TType | TType[]
+): asserts event is TE & { type: TType } {
+  if (
+    Array.isArray(eventType)
+      ? !eventType.includes(event.type as TType)
+      : event.type !== eventType
+  ) {
+    throw new Error(
+      `Invalid event: expected "${
+        Array.isArray(eventType) ? eventType.join(',') : eventType
+      }", got "${event.type}"`
+    )
+  }
+}

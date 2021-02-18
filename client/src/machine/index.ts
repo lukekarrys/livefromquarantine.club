@@ -57,7 +57,7 @@ const playerErrorTransition: Machine.PlayerTransition<Machine.PlayerErrorEvent> 
   PLAYER_ERROR: [
     {
       target: 'error',
-      actions: 'setError',
+      actions: 'setPlayerError',
     },
   ],
 }
@@ -130,7 +130,7 @@ const playerMachine = createMachine<
           ],
           FETCH_ERROR: {
             target: 'error',
-            actions: 'setError',
+            actions: 'setFetchError',
           },
           ...playerTransitions,
         },
@@ -336,15 +336,26 @@ const playerMachine = createMachine<
           context.player?.seekTo(selected.start, true)
         }
       },
-      setError: assign<Machine.PlayerContext>({
-        error: (_, event) =>
-          (event as Machine.PlayerErrorEvent | Machine.FetchErrorEvent).error,
+      setFetchError: assign({
+        error: (_, event) => {
+          Machine.assertEventType(event, 'FETCH_ERROR')
+          return event.error
+        },
       }),
-      setPlayer: assign<Machine.PlayerContext>({
-        player: (_, event) => (event as Machine.PlayerReadyEvent).player,
+      setPlayerError: assign({
+        error: (_, event) => {
+          Machine.assertEventType(event, 'PLAYER_ERROR')
+          return event.error
+        },
       }),
-      setTracks: assign<Machine.PlayerContext>((context, _event) => {
-        const event = _event as Machine.FetchSuccessEvent
+      setPlayer: assign({
+        player: (_, event) => {
+          Machine.assertEventType(event, 'PLAYER_READY')
+          return event.player
+        },
+      }),
+      setTracks: assign((context, event) => {
+        Machine.assertEventType(event, 'FETCH_SUCCESS')
 
         const shuffle = event.shuffle ?? context.shuffle
         const repeat = event.repeat ?? context.repeat
@@ -363,7 +374,7 @@ const playerMachine = createMachine<
           }),
         }
       }),
-      setInitialTrack: assign<Machine.PlayerContext>((context) => ({
+      setInitialTrack: assign((context) => ({
         ...context,
         [context.currentOrder]: {
           ...context[context.currentOrder],
@@ -376,8 +387,9 @@ const playerMachine = createMachine<
       // but not remove the other songs before it
       // TODO: playing a song with up-next songs playing should move that
       // song to the selected up next spot which should not change the current order
-      setTrack: assign<Machine.PlayerContext>((context, _event) => {
-        const event = _event as Machine.SelectTrackEvent
+      setTrack: assign((context, event) => {
+        Machine.assertEventType(event, 'SELECT_TRACK')
+
         const eventTrack = selectors.getTrackById(context, event.trackId)
 
         if (!eventTrack) {
@@ -432,7 +444,7 @@ const playerMachine = createMachine<
           },
         }
       }),
-      setNextTrack: assign<Machine.PlayerContext>((context) => {
+      setNextTrack: assign((context) => {
         const nextTrack = selectors.getNextIndex(context)
 
         return {
@@ -452,8 +464,9 @@ const playerMachine = createMachine<
           },
         }
       }),
-      removeTrack: assign<Machine.PlayerContext>((context, _event) => {
-        const event = _event as Machine.RemoveTrackEvent
+      removeTrack: assign((context, event) => {
+        Machine.assertEventType(event, 'REMOVE_TRACK')
+
         const order = context[event.order]
         return {
           ...context,
@@ -463,8 +476,8 @@ const playerMachine = createMachine<
           },
         }
       }),
-      removeAllTracks: assign<Machine.PlayerContext>((context, _event) => {
-        const event = _event as Machine.RemoveAllTracksEvent
+      removeAllTracks: assign((context, event) => {
+        Machine.assertEventType(event, 'REMOVE_ALL_TRACKS')
 
         const orderKey = event.order
         const selected = selectors.getSelected(context)
@@ -484,8 +497,9 @@ const playerMachine = createMachine<
                 },
         }
       }),
-      addTrack: assign<Machine.PlayerContext>((context, _event) => {
-        const event = _event as Machine.SelectTrackEvent
+      addTrack: assign((context, event) => {
+        Machine.assertEventType(event, 'SELECT_TRACK')
+
         const eventTrack = selectors.getTrackById(context, event.trackId)
 
         if (!eventTrack) {
@@ -513,8 +527,8 @@ const playerMachine = createMachine<
           },
         }
       }),
-      setTrackOrder: assign<Machine.PlayerContext>((context, _event) => {
-        const event = _event as Machine.ShuffleEvent | Machine.RepeatEvent
+      setTrackOrder: assign((context, event) => {
+        Machine.assertEventType(event, ['SHUFFLE', 'REPEAT'])
 
         const shuffle =
           event.type === 'SHUFFLE'
@@ -548,7 +562,7 @@ const playerMachine = createMachine<
           }),
         }
       }),
-      setSelectMode: assign<Machine.PlayerContext>({
+      setSelectMode: assign({
         selectMode: (context) => {
           const next =
             context.selectMode === SelectMode.Play
