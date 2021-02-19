@@ -11,7 +11,7 @@ import {
   AccessToken,
 } from '../types'
 
-interface NormalizedData {
+export interface NormalizedData {
   videos: Videos
   tracks: Tracks
   meta: ArtistMeta
@@ -67,7 +67,10 @@ const videoSongToTrack = ({
   }
 }
 
-const normalizeData = ({ meta, data: videos }: ApiData): NormalizedData => {
+export const normalizeData = ({
+  meta,
+  data: videos,
+}: ApiData): NormalizedData => {
   const resp: NormalizedData = { videos: [], tracks: [], meta }
 
   videos.forEach((video) => {

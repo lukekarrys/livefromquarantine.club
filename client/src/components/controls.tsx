@@ -12,6 +12,7 @@ import NextIcon from '../icons/next'
 import RepeatIcon from '../icons/repeat'
 import { toSongAndVideoTitle } from '../lib/to-title'
 import ListIcon from '../icons/list'
+import MediaPlayer from '../lib/MediaPlayer'
 
 interface Props {
   ready: boolean
@@ -19,7 +20,7 @@ interface Props {
   play: boolean
   shuffle: boolean
   repeat: Repeat
-  player?: YT.Player
+  player?: MediaPlayer
   selectMode: SelectMode
   send: PlayerSend
   onTitleClick: () => void

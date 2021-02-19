@@ -1,7 +1,6 @@
 import { h } from 'preact'
-import '@testing-library/jest-dom/extend-expect'
 import { render } from '@testing-library/preact'
-import Button from '../components/button'
+import Button from './button'
 
 describe('Button', () => {
   test('Selected', () => {

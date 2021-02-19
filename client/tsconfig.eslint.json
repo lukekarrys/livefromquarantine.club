@@ -6,10 +6,7 @@
     "src/**/*.tsx",
     "src/**/*.js",
     "src/**/*.jsx",
-    "./*.js"
-  ],
-  "compilerOptions": {
-    "allowJs": true,
-    "checkJs": true
-  }
+    "./*.js",
+    "./*.ts"
+  ]
 }

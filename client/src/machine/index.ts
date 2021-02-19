@@ -6,17 +6,6 @@ import * as trackOrder from './track-order'
 import * as debug from '../lib/debug'
 import { pick } from '../lib/utils'
 
-export const ytToMachineEvent: {
-  [key in YT.PlayerState]: Machine.YouTubeEvent['type'] | null
-} = {
-  [-1]: null, // UNSTARTED, dont need to track this
-  [0]: 'END_TRACK',
-  [1]: 'YOUTUBE_PLAY',
-  [2]: 'YOUTUBE_PAUSE',
-  [3]: 'YOUTUBE_BUFFERING',
-  [5]: 'YOUTUBE_CUED',
-}
-
 const readyTransitions = {
   SHUFFLE: {
     actions: 'setTrackOrder',
@@ -181,16 +170,12 @@ const playerMachine = createMachine<
       },
       requesting: {
         on: {
-          YOUTUBE_BUFFERING: 'playing',
-          YOUTUBE_CUED: 'playing',
-          // I think youtube_play are necessary here because its
+          MEDIA_BUFFERING: 'playing',
+          MEDIA_CUED: 'playing',
+          // I think MEDIA_PLAY is necessary here because its
           // not perfect to tap into YouTube's event system
           // so this ensures its can't get stuck in the requesting state
-          YOUTUBE_PLAY: 'playing',
-          // Having youtube_pause here causes the state to go into paused when
-          // switching between videos since loadVideo causes a temporary
-          // pause state. removing for now to see how it works without it
-          // YOUTUBE_PAUSE: "paused",
+          MEDIA_PLAY: 'playing',
           NEXT_TRACK: [
             {
               actions: ['setNextTrack', 'seekTo', 'playVideo'],
@@ -222,7 +207,7 @@ const playerMachine = createMachine<
             target: 'paused',
             actions: 'pauseVideo',
           },
-          YOUTUBE_PAUSE: 'paused',
+          MEDIA_PAUSE: 'paused',
           NEXT_TRACK: [
             {
               target: 'requesting',
@@ -234,7 +219,7 @@ const playerMachine = createMachine<
               actions: ['setNextTrack', 'loadVideo'],
             },
           ],
-          END_TRACK: [
+          MEDIA_END_TRACK: [
             {
               // No other action here so that there is seamless
               // playback when going directly from one song to another
@@ -278,7 +263,7 @@ const playerMachine = createMachine<
             target: 'requesting',
             actions: 'playVideo',
           },
-          YOUTUBE_PLAY: 'playing',
+          MEDIA_PLAY: 'playing',
           NEXT_TRACK: [
             {
               actions: ['setNextTrack', 'seekTo'],
@@ -315,19 +300,13 @@ const playerMachine = createMachine<
       cueVideo: (context): void => {
         const selected = selectors.getSelectedTrack(context)
         if (selected) {
-          context.player?.cueVideoById({
-            videoId: selected.videoId,
-            startSeconds: selected.start,
-          })
+          context.player?.cueById(selected.videoId, selected.start)
         }
       },
       loadVideo: (context): void => {
         const selected = selectors.getSelectedTrack(context)
         if (selected) {
-          context.player?.loadVideoById({
-            videoId: selected.videoId,
-            startSeconds: selected.start,
-          })
+          context.player?.loadById(selected.videoId, selected.start)
         }
       },
       seekTo: (context): void => {

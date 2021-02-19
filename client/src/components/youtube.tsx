@@ -1,10 +1,10 @@
-/// <reference types="@types/youtube" />
 import { FunctionalComponent, h, ComponentChild } from 'preact'
 import { useEffect, useRef, useMemo, useLayoutEffect } from 'preact/hooks'
 import cx from 'classnames'
 import { PlayerSend } from '../machine/types'
 import { Track } from '../types'
-import useYouTube from '../lib/useYouTube'
+import useYouTube from '../lib/useYoutube'
+import MediaPlayer from '../lib/MediaPlayer'
 
 interface Props {
   selected?: Track
@@ -26,7 +26,8 @@ const YouTube: FunctionalComponent<Props> = ({
     domRef,
     useMemo(
       () => ({
-        onReady: (player): void => send({ type: 'PLAYER_READY', player }),
+        onReady: (player): void =>
+          send({ type: 'PLAYER_READY', player: new MediaPlayer(player) }),
         onError: (error): void => send({ type: 'PLAYER_ERROR', error }),
         onStateChange: (event): void => send({ type: event }),
       }),
@@ -44,7 +45,7 @@ const YouTube: FunctionalComponent<Props> = ({
 
       if (player.getCurrentTime() >= selected.end) {
         clearInterval(interval)
-        send('END_TRACK')
+        send('MEDIA_END_TRACK')
       }
     }, 1000)
 

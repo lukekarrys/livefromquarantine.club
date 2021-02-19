@@ -54,7 +54,8 @@ exports.handler = async (event) => {
     return res({ error: 'Missing required id parameter' }, 400)
   }
 
-  const log = (...parts) => console.log(id, '-', ...parts)
+  const log = (...parts) =>
+    process.env.NODE_ENV !== 'test' && console.log(id, '-', ...parts)
 
   try {
     const [{ meta, videos }, artist] = await Promise.all([
@@ -72,7 +73,7 @@ exports.handler = async (event) => {
       data: parseVideos(videos, artist.parsers, artist.comments),
     })
   } catch (e) {
-    console.log(e)
+    log(e)
     // Most playlists wont be preloaded so move on to fetching from youtube
   }
 

@@ -4,6 +4,7 @@ module.exports = {
   },
   verbose: true,
   setupFiles: ['<rootDir>/src/tests/__mocks__/browserMocks.ts'],
+  setupFilesAfterEnv: ['<rootDir>/jest-setup.ts'],
   testURL: 'http://localhost:8080',
   moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
   moduleDirectories: ['node_modules'],
@@ -16,5 +17,14 @@ module.exports = {
     '^preact$': '<rootDir>/node_modules/preact/dist/preact.min.js',
     '^react$': 'preact/compat',
     '^react-dom$': 'preact/compat',
+  },
+  collectCoverage: true,
+  coverageThreshold: {
+    './src/machine/*.ts': {
+      branches: 0,
+      functions: 0,
+      lines: 0,
+      statements: 0,
+    },
   },
 }

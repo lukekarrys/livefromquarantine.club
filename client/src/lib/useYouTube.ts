@@ -1,7 +1,18 @@
 /// <reference types="@types/youtube" />
+
 import { useEffect, useRef, useCallback, Ref } from 'preact/hooks'
-import { ytToMachineEvent } from '../machine'
 import * as Machine from '../machine/types'
+
+const ytToMachineEvent: {
+  [key in YT.PlayerState]: Machine.MediaEvent['type'] | null
+} = {
+  [-1]: null, // UNSTARTED, dont need to track this
+  [0]: 'MEDIA_END_TRACK',
+  [1]: 'MEDIA_PLAY',
+  [2]: 'MEDIA_PAUSE',
+  [3]: 'MEDIA_BUFFERING',
+  [5]: 'MEDIA_CUED',
+}
 
 declare global {
   interface Window {
@@ -22,7 +33,7 @@ const addScript = (src: string, onError: OnErrorEventHandler): void => {
 
 type Events = {
   onReady: (p: YT.Player) => void
-  onStateChange: (state: Machine.YouTubeEvent['type']) => void
+  onStateChange: (state: Machine.MediaEvent['type']) => void
   onError: (error: Error) => void
 }
 
@@ -44,7 +55,9 @@ const useYouTube = (domRef: Ref<HTMLDivElement>, events: Events): YT.Player => {
           onReady: (): void => events.onReady(playerRef.current),
           onStateChange: (e): void => {
             const event = ytToMachineEvent[e.data]
-            event && events.onStateChange(event)
+            if (event) {
+              events.onStateChange(event)
+            }
           },
           onError: (e): void =>
             events.onError(new Error(`Player error: ${e.data}`)),
