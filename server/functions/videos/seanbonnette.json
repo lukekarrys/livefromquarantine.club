@@ -7,6 +7,57 @@
     "items": [
       {
         "contentDetails": {
+          "duration": 590
+        },
+        "id": "0VI0U7cBi1k",
+        "kind": "youtube#video",
+        "snippet": {
+          "channelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "channelTitle": "AJJ the band",
+          "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday & Thursday at 7:30 PM AZ time, and sometimes on Wednesday afternoons, on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n1:01 AJJ - Space and Time\n3:32 Tim Hardin - Black Sheep Boy\n6:00 AJJ - Sad Songs\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nCheck out our digital merch table, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+          "playlistId": "PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1",
+          "publishedAt": "2021-02-26T05:42:21.000Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "0VI0U7cBi1k"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/0VI0U7cBi1k/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/0VI0U7cBi1k/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/0VI0U7cBi1k/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/0VI0U7cBi1k/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/0VI0U7cBi1k/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Live From Quarantine - February 25",
+          "videoOwnerChannelId": "UCjB487qrDlV3wkE_FeI4gHA",
+          "videoOwnerChannelTitle": "AJJ the band"
+        },
+        "comments": {
+          "items": []
+        }
+      },
+      {
+        "contentDetails": {
           "duration": 1068
         },
         "id": "7TWdh8gPQBs",
