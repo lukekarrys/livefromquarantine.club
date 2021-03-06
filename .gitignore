@@ -4,3 +4,4 @@ client/size-plugin.json
 client/coverage/
 public/
 server/functions/*.zip
+.mp3/

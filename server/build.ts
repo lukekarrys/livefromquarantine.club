@@ -1,12 +1,13 @@
-const path = require('path')
-const fs = require('fs').promises
-const prettier = require('prettier')
-const { fullArtists } = require('./api/artists')
+import path from 'path'
+import { promises as fs } from 'fs'
+import prettier from 'prettier'
+import { getFullArtists } from './api/artists'
 
 const readmePath = () => path.join(__dirname, '..', 'README.md')
 
 const main = async () => {
   const readme = await fs.readFile(readmePath(), 'utf-8')
+
   const readmePlaylists = readme
     .split('\n')
     .filter((l) => l.includes('https://www.youtube.com/playlist?list='))
@@ -16,17 +17,20 @@ const main = async () => {
     throw new Error('Could not find playlist section of readme')
   }
 
+  const fullArtists = await getFullArtists()
+
   const newReadme = readme.replace(
     readmePlaylists.trim(),
     fullArtists
-      .map(
-        (a) =>
-          `- ${a.meta.title} - [LFQ](https://livefromquarantine.club/${a.id}) [YouTube](https://www.youtube.com/playlist?list=${a.playlistId})`
-      )
+      .map((artist) => {
+        const lfqLink = `[LFQ](https://livefromquarantine.club/${artist.id})`
+        const ytLink = `[YouTube](https://www.youtube.com/playlist?list=${artist.playlistId})`
+        return `- ${artist.meta.title} - ${lfqLink} ${ytLink}`
+      })
       .join('\n')
   )
 
-  fs.writeFile(
+  await fs.writeFile(
     readmePath(),
     prettier.format(newReadme, {
       parser: 'markdown',

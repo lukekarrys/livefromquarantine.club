@@ -1,10 +1,14 @@
-const path = require('path')
-require('dotenv').config({ path: path.resolve(__dirname, '..', '..', '.env') })
+import './dotenv'
+import axios from 'axios'
+import { cli } from './artists'
 
-const axios = require('axios')
-const { cli } = require('./artists')
+const main = async (artists: string[] = []) => {
+  const { GITHUB_TOKEN } = process.env
 
-const main = async (artists = []) => {
+  if (!GITHUB_TOKEN) {
+    throw new Error('GITHUB_TOKEN is required env var')
+  }
+
   return axios.post(
     'https://api.github.com/repos/lukekarrys/livefromquarantine.club/dispatches',
     {
@@ -13,7 +17,7 @@ const main = async (artists = []) => {
     },
     {
       headers: {
-        Authorization: `token ${process.env.GITHUB_TOKEN}`,
+        Authorization: `token ${GITHUB_TOKEN}`,
       },
     }
   )

@@ -1,17 +1,24 @@
-const assert = require('assert')
-const findSetlist = require('./find-setlist')
+import { Artist } from '../types'
+import assert from 'assert'
+import findSetlist from './find-setlist'
+import { VideoWithComments, ParsedVideo, ParsedSong } from '../types'
 
-const callParser = (p, v) => (typeof p === 'function' ? p(v) : v)
+const callParser = (
+  parser: ((s: string) => string) | undefined,
+  value: string
+): string => (typeof parser === 'function' ? parser(value) : value)
 
-const parseVideo = (video, parsers = {}, extraComments = {}) => {
+const parseVideo = (video: VideoWithComments, artist?: Artist) => {
+  const { parsers = {}, comments: extraComments = {} } = artist || {}
+
   const {
     id: videoId,
     snippet: { title, description },
-    comments: { items: _comments },
+    comments: _comments,
     contentDetails: { duration },
   } = video
 
-  let songs = []
+  let songs: ParsedSong[] = []
   const comments = [..._comments, ...(extraComments[videoId] || [])]
 
   const descriptionSetlist = findSetlist(description)
@@ -50,7 +57,7 @@ const parseVideo = (video, parsers = {}, extraComments = {}) => {
   }
 }
 
-const validate = (data) => {
+const validate = (data: ParsedVideo[]) => {
   data.forEach((v) => {
     assert.ok(v.title, `Every video has a title`)
     assert.ok(v.id, `Has an id - ${v.title}`)
@@ -74,9 +81,12 @@ const validate = (data) => {
   })
 }
 
-module.exports = (videos, parsers = {}, extraComments = {}) => {
-  const data = videos.items
-    .map((video) => parseVideo(video, parsers, extraComments))
+export default (
+  videos: VideoWithComments[],
+  artist?: Artist
+): ParsedVideo[] => {
+  const data = videos
+    .map((video) => parseVideo(video, artist))
     .filter((video, index, videos) => {
       // The same video could be included multiple times in a playlist so remove dupes
       return videos.findIndex((v) => v.id === video.id) === index

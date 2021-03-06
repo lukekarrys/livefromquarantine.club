@@ -1,4 +1,6 @@
-module.exports = {
+import { Artist } from '../../types'
+
+const artist: Artist = {
   parsers: {
     title: (title) => title.replace(/Live from Quarantine[\s-]+-?/i, ''),
   },
@@ -15,3 +17,5 @@ module.exports = {
     ].join(''),
   },
 }
+
+export default artist

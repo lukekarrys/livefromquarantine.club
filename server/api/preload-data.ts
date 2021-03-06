@@ -1,20 +1,20 @@
-const path = require('path')
-require('dotenv').config({ path: path.resolve(__dirname, '..', '..', '.env') })
+import './dotenv'
+import path from 'path'
+import { promises as fs } from 'fs'
+import prettier from 'prettier'
+import mkdirp from 'mkdirp'
+import { cliFull } from './artists'
+import { getPlaylist } from './fetch-youtube'
+import { Artist } from '../types'
 
-const fs = require('fs').promises
-const prettier = require('prettier')
-const mkdirp = require('mkdirp')
-const { cli } = require('./artists')
-const { getPlaylist } = require('./fetch-youtube')
+const { API_KEY = '' } = process.env
 
-const { API_KEY } = process.env
+const hideKey = (str: string) => str.replace(API_KEY, 'X'.repeat(3))
 
-const hideKey = (str) => str.replace(API_KEY, 'X'.repeat(3))
-
-const dataPath = (...parts) =>
+const dataPath = (...parts: string[]) =>
   path.join(__dirname, '..', 'functions', 'videos', ...parts)
 
-const writeFile = async (fileId, resp) => {
+const writeFile = async (fileId: string, resp: Record<string, unknown>) => {
   const prettierOptions = await prettier.resolveConfig(__dirname)
   await mkdirp(dataPath())
   await fs.writeFile(
@@ -26,22 +26,22 @@ const writeFile = async (fileId, resp) => {
   )
 }
 
-const main = async (artists = []) =>
+const main = async (artists: Artist[] = []) =>
   Promise.all(
     artists.map((artist) =>
-      getPlaylist(artist.playlistId, { key: API_KEY })
+      getPlaylist(artist.playlistId, { key: API_KEY }, artist)
         .then((resp) => writeFile(artist.id, resp))
         .then(() => ({ id: artist.id, ok: true }))
-        .catch((error) => ({
+        .catch((error: unknown) => ({
           id: artist.id,
           ok: false,
           error,
-          response: error.response && error.response.data,
         }))
     )
   )
 
-main(cli(true))
+cliFull()
+  .then(main)
   .then((res) => {
     console.log(hideKey(JSON.stringify(res, null, 2)))
     if (res.some((r) => !r.ok)) {
