@@ -1,6 +1,5 @@
 import fs from 'fs'
 import path from 'path'
-//import { tsImport } from 'ts-import'
 import { Artist } from '../types'
 
 const artistPath = path.resolve(__dirname, '..', 'functions', 'videos')

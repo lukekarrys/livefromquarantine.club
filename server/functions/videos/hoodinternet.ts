@@ -1,8 +1,8 @@
 import { Artist } from '../../types'
 
 const artist: Artist = {
-  playlistId: 'PLqrkwSi3LHneR8zHLgCnuFLCE76Qwm2iE',
   id: 'hoodinternet',
+  playlistId: 'PLqrkwSi3LHneR8zHLgCnuFLCE76Qwm2iE',
   meta: {
     title: 'The Hood Internet',
   },

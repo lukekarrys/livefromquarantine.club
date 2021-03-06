@@ -1,11 +1,8 @@
 import { Artist } from '../../types'
 
 const artist: Artist = {
-  parsers: {
-    title: (title) => title.replace(/Live from Quarantine[\s-]+-?/i, ''),
-  },
-  playlistId: 'PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1',
   id: 'seanbonnette',
+  playlistId: 'PLRSI_QNxGZ2lZP141po9tLGpLqM6ciuP1',
   meta: {
     title: 'Sean Bonnette – Live From Quarantine',
     description: [
@@ -15,6 +12,12 @@ const artist: Artist = {
       '<a href="https://cash.app/$bonnseanette" target="_blank">Cash App</a>',
       '<a href="http://shop.ajjtheband.com" target="_blank">Merch</a>',
     ].join(''),
+  },
+  titleParser: (title) => title.replace(/Live from Quarantine[\s-]+-?/i, ''),
+  videoParsers: {
+    PmJa6qlob0Q: {
+      comments: `0:42 A Big Day for Grimley\n4:23 Oo-de-lally`,
+    },
   },
 }
 

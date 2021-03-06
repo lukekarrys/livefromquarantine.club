@@ -1,19 +1,26 @@
+type Meta = {
+  title: string
+  description?: string
+}
+
 export interface Artist {
-  parsers?: {
-    [key: string]: ((str: string) => string) | undefined
+  id: string
+  playlistId: string
+  meta: Meta
+  titleParser?: (str: string) => string
+  videoParsers?: {
+    [key: string]:
+      | {
+          title?: (title: string) => string
+          comments?: string
+        }
+      | undefined
+  }
+  commentParsers?: {
+    [key: string]: ((comment: string) => string) | undefined
   }
   omitVideoIds?: string[]
   omitCommentIds?: string[]
-  pickCommentIds?: string[]
-  playlistId: string
-  id: string
-  meta: {
-    title: string
-    description?: string
-  }
-  comments?: {
-    [key: string]: string[]
-  }
 }
 
 export type Token = { key?: string; accessToken?: string }
@@ -23,10 +30,7 @@ export type VideoWithComments = YouTube.Video & {
 }
 
 export type PreloadedData = {
-  meta: {
-    title: string
-    description?: string
-  }
+  meta: Meta
   videos: VideoWithComments[]
 }
 
@@ -43,10 +47,7 @@ export type ParsedVideo = {
 }
 
 export type ResponseSuccess = {
-  meta: {
-    title: string
-    description?: string
-  }
+  meta: Meta
   data: ParsedVideo[]
 }
 

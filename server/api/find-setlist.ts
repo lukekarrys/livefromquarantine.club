@@ -50,7 +50,9 @@ const getSongsFromText = (text: string) => {
   return songs[0].start > 0 ? [{ name: 'Intro', start: 0 }, ...songs] : songs
 }
 
-const findSetlist = (text: string): ParsedSong[] | null =>
-  getLinesWithTimestamp(text).length < 3 ? null : getSongsFromText(text)
+const findSetlist = (text?: string): ParsedSong[] | null =>
+  text == null || getLinesWithTimestamp(text).length < 3
+    ? null
+    : getSongsFromText(text)
 
 export default findSetlist

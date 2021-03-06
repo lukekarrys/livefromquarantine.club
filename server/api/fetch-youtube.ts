@@ -1,7 +1,6 @@
 import findSetlist from './find-setlist'
 import * as youtube from './youtube'
-import { Token, PreloadedData, Artist } from '../types'
-import normalizeData from './normalize-youtube-data'
+import { Token, PreloadedData } from '../types'
 import YouTubeError from './error'
 
 const isVideoPrivate = (video: YouTube.PlaylistItem | YouTube.Video) =>
@@ -14,7 +13,6 @@ const isVideoFuture = (video: YouTube.Video) =>
 const getPaginatedVideosFromPlaylist = async (
   id: string,
   token: Token,
-  artist?: Artist,
   pageToken?: string,
   previousItems: YouTube.Video[] = []
 ): Promise<YouTube.Video[]> => {
@@ -24,11 +22,7 @@ const getPaginatedVideosFromPlaylist = async (
     pageToken
   )
 
-  const { omitVideoIds = [] } = artist || {}
-
-  const publicPlaylistVideos = items
-    .filter((v) => !isVideoPrivate(v))
-    .filter((v) => !omitVideoIds.includes(v.snippet.resourceId.videoId))
+  const publicPlaylistVideos = items.filter((v) => !isVideoPrivate(v))
 
   const publicVideoIds = publicPlaylistVideos
     .map((v) => v.snippet.resourceId.videoId)
@@ -51,7 +45,6 @@ const getPaginatedVideosFromPlaylist = async (
     return await getPaginatedVideosFromPlaylist(
       id,
       token,
-      artist,
       nextPageToken,
       newItems
     )
@@ -63,7 +56,6 @@ const getPaginatedVideosFromPlaylist = async (
 const getPaginatedComments = async (
   id: string,
   token: Token,
-  artist?: Artist,
   pageToken?: string,
   previousItems: YouTube.CommentThread[] = []
 ): Promise<YouTube.CommentThread[]> => {
@@ -73,20 +65,13 @@ const getPaginatedComments = async (
     pageToken
   )
 
-  const { omitCommentIds = [], pickCommentIds = [] } = artist || {}
-
   const setlistComments = items
-    .filter(
-      (comment) =>
-        findSetlist(comment.snippet.topLevelComment.snippet.textDisplay) &&
-        !omitCommentIds.includes(comment.id)
+    .filter((comment) =>
+      findSetlist(comment.snippet.topLevelComment.snippet.textDisplay)
     )
     // Sort by likeCount before removing it. YouTube returns comments
     // by "relevance" but likeCount is a better indicator of timestamps I think
     .sort((a, b) => {
-      const aIsPicked = pickCommentIds.includes(a.id)
-      const bIsPicked = pickCommentIds.includes(b.id)
-      if (aIsPicked || bIsPicked) return aIsPicked ? -1 : 1
       return (
         b.snippet.topLevelComment.snippet.likeCount -
         a.snippet.topLevelComment.snippet.likeCount
@@ -100,13 +85,7 @@ const getPaginatedComments = async (
   // an ideal solution and could sill return nothing on videos with many thousands of comments
   // but none of the preloaded videos are there yet.
   if (nextPageToken && newItems.length < 300) {
-    return await getPaginatedComments(
-      id,
-      token,
-      artist,
-      nextPageToken,
-      newItems
-    )
+    return await getPaginatedComments(id, token, nextPageToken, newItems)
   }
 
   return newItems
@@ -129,8 +108,7 @@ const getPlaylistData = async (
 
 const getFullVideoData = async (
   videoId: string,
-  token: Token,
-  artist?: Artist
+  token: Token
 ): Promise<PreloadedData> => {
   const {
     items: [video],
@@ -156,7 +134,7 @@ const getFullVideoData = async (
     )
   }
 
-  const comments = await getPaginatedComments(video.id, token, artist)
+  const comments = await getPaginatedComments(video.id, token)
 
   return {
     meta: {
@@ -173,16 +151,15 @@ const getFullVideoData = async (
 
 const getFullPlaylistData = async (
   playlistId: string,
-  token: Token,
-  artist?: Artist
+  token: Token
 ): Promise<PreloadedData> => {
   const [playlist, videos] = await Promise.all([
     getPlaylistData(playlistId, token),
-    getPaginatedVideosFromPlaylist(playlistId, token, artist),
+    getPaginatedVideosFromPlaylist(playlistId, token),
   ])
 
   const comments = await Promise.all(
-    videos.map((video) => getPaginatedComments(video.id, token, artist))
+    videos.map((video) => getPaginatedComments(video.id, token))
   )
 
   return {
