@@ -1,3 +1,7 @@
+import * as YouTube from './youtube'
+
+export { YouTube }
+
 type Meta = {
   title: string
   description?: string
@@ -25,8 +29,30 @@ export interface Artist {
 
 export type Token = { key?: string; accessToken?: string }
 
-export type VideoWithComments = YouTube.Video & {
-  comments: YouTube.CommentThread[]
+export type VideoWithComments = Omit<
+  Pick<YouTube.Video, 'id'>,
+  'snippet' | 'contentDetails'
+> & {
+  contentDetails: {
+    duration: number
+  }
+  snippet: Pick<
+    YouTube.VideoSnippet,
+    'title' | 'description' | 'publishedAt' | 'thumbnails'
+  >
+  comments: (Omit<Pick<YouTube.CommentThread, 'id'>, 'snippet'> & {
+    snippet: Omit<
+      Pick<YouTube.CommentThreadSnippet, 'videoId'>,
+      'topLevelComment'
+    > & {
+      topLevelComment: {
+        snippet: Pick<
+          YouTube.CommentSnippet,
+          'publishedAt' | 'textDisplay' | 'updatedAt'
+        >
+      }
+    }
+  })[]
 }
 
 export type PreloadedData = {

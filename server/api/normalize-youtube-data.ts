@@ -1,90 +1,42 @@
 import duration from 'iso8601-duration'
+import { VideoWithComments, YouTube } from '../types'
 
-const sortKeys = <T extends { [key: string]: unknown }>(obj: T): T => {
-  const ks = Object.keys(obj) as (keyof T)[]
-  ks.sort()
-  return ks.reduce((acc, k) => {
-    acc[k] = obj[k]
-    return acc
-  }, {} as T)
+const normalizeVideo = (
+  video: YouTube.Video & {
+    comments: YouTube.CommentThread[]
+  }
+): VideoWithComments => {
+  return {
+    contentDetails: {
+      duration: duration.toSeconds(
+        duration.parse(video.contentDetails.duration)
+      ),
+    },
+    id: video.id,
+    snippet: {
+      title: video.snippet.title,
+      description: video.snippet.description,
+      publishedAt: video.snippet.publishedAt,
+      thumbnails: video.snippet.thumbnails,
+    },
+    comments: video.comments.map((comment) => ({
+      id: comment.id,
+      snippet: {
+        videoId: comment.snippet.videoId,
+        topLevelComment: {
+          snippet: {
+            textDisplay: comment.snippet.topLevelComment.snippet.textDisplay,
+            publishedAt: new Date(
+              comment.snippet.topLevelComment.snippet.publishedAt
+            ).toJSON(),
+            updatedAt: new Date(
+              comment.snippet.topLevelComment.snippet.updatedAt
+            ).toJSON(),
+          },
+        },
+      },
+    })),
+  }
 }
 
-export type NormalizedData<T> = Omit<
-  T,
-  | 'etag'
-  | 'nextPageToken'
-  | 'likeCount'
-  | 'totalReplyCount'
-  | 'position'
-  | 'canReply'
-  | 'isPublic'
-  | 'canRate'
-  | 'pageInfo'
-  | 'nextPageToken'
-  | 'prevPageToken'
-  | 'caption'
-  | 'contentRating'
-  | 'definition'
-  | 'dimension'
-  | 'licensedContent'
-  | 'projection'
-  | 'regionRestriction'
-  | 'authorChannelId'
-  | 'authorChannelUrl'
-  | 'authorDisplayName'
-  | 'authorProfileImageUrl'
-  | 'liveStreamingDetails'
->
-
-const normalizeData = <T extends { [key: string]: unknown }>(
-  d: T
-): NormalizedData<T> =>
-  sortKeys<NormalizedData<T>>(
-    JSON.parse(
-      JSON.stringify(d, (key, value) => {
-        if (
-          [
-            'etag',
-            'nextPageToken',
-            'likeCount',
-            'totalReplyCount',
-            'position',
-            'canReply',
-            'isPublic',
-            'canRate',
-            'pageInfo',
-            'nextPageToken',
-            'prevPageToken',
-            'caption',
-            'contentRating',
-            'definition',
-            'dimension',
-            'licensedContent',
-            'projection',
-            'regionRestriction',
-            'authorChannelId',
-            'authorChannelUrl',
-            'authorDisplayName',
-            'authorProfileImageUrl',
-            'liveStreamingDetails',
-          ].includes(key)
-        ) {
-          return undefined
-        }
-        if (value && !Array.isArray(value) && typeof value === 'object') {
-          return sortKeys<T>(value)
-        }
-        if (key === 'updatedAt' || key === 'publishedAt') {
-          return new Date(value).toJSON()
-        }
-        if (key === 'duration') {
-          // 0 length durations seem to change between seconds (0S) and days (0D)
-          // sometimes so in order to reduce data churn in diffs just store as seconds
-          return duration.toSeconds(duration.parse(value))
-        }
-        return value as unknown
-      })
-    )
-  )
-
-export default normalizeData
+export default normalizeVideo

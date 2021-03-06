@@ -1,7 +1,7 @@
 import findSetlist from './find-setlist'
 import * as youtube from './youtube'
-import { Token, PreloadedData } from '../types'
-import YouTubeError from './error'
+import { Token, PreloadedData, YouTube } from '../types'
+import normalizeVideo from './normalize-youtube-data'
 
 const isVideoPrivate = (video: YouTube.PlaylistItem | YouTube.Video) =>
   video.snippet?.title === 'Private video' &&
@@ -100,7 +100,7 @@ const getPlaylistData = async (
   } = await youtube.playlist(id, token)
 
   if (!playlist) {
-    throw new YouTubeError('Playlist could not be found', 404)
+    throw new youtube.YouTubeError('Playlist could not be found', 404)
   }
 
   return playlist
@@ -123,7 +123,7 @@ const getFullVideoData = async (
   const isFuture = isVideoFuture(video)
 
   if (!video || isPrivate || isFuture) {
-    throw new YouTubeError(
+    throw new youtube.YouTubeError(
       'Video could not be found',
       404,
       `Video could not be found due to the following: ${JSON.stringify({
@@ -141,10 +141,10 @@ const getFullVideoData = async (
       title: video.snippet.title,
     },
     videos: [
-      {
+      normalizeVideo({
         ...video,
         comments,
-      },
+      }),
     ],
   }
 }
@@ -167,10 +167,12 @@ const getFullPlaylistData = async (
       title: playlist.snippet.title,
       description: playlist.snippet.description,
     },
-    videos: videos.map((video, index) => ({
-      ...video,
-      comments: comments[index],
-    })),
+    videos: videos.map((video, index) =>
+      normalizeVideo({
+        ...video,
+        comments: comments[index],
+      })
+    ),
   }
 }
 

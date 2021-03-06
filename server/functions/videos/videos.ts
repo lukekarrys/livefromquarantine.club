@@ -2,7 +2,7 @@ import { APIGatewayEvent, APIGatewayProxyResult } from 'aws-lambda'
 import path from 'path'
 import parseVideos from '../../api/parse-videos'
 import { getPlaylist, getVideo } from '../../api/fetch-youtube'
-import { getErrorStatusAndMessage } from '../../api/error'
+import { getErrorStatusAndMessage } from '../../api/youtube'
 import {
   Artist,
   PreloadedData,
