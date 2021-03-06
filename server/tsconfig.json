@@ -2,23 +2,17 @@
   "compilerOptions": {
     "target": "es2019",
     "module": "commonjs",
-    "allowJs": true,
-    "checkJs": true,
+    "allowJs": false,
     "strict": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "typeRoots": ["./node_modules/@types"]
+    "allowSyntheticDefaultImports": true
   },
   "include": [
     "./api/**/*.ts",
-    "./api/**/*.js",
     "./functions/**/*.ts",
-    "./functions/**/*.js",
     "./test/**/*.ts",
-    "./test/**/*.js",
-    "./*.ts",
-    "./*.js"
+    "./*.ts"
   ]
 }
