@@ -38,8 +38,6 @@ const Audio: FunctionalComponent<Props> = ({ selected, play, send }) => {
       onEnded={() => send('MEDIA_END_TRACK')}
       onPlay={() => send('MEDIA_PLAY')}
       onPause={() => send('MEDIA_PAUSE')}
-      onSeeking={() => send('MEDIA_BUFFERING')}
-      onSeeked={() => send('MEDIA_CUED')}
       ref={player}
     ></audio>
   )

@@ -19,6 +19,9 @@ const artist: Artist = {
       comments: `0:42 A Big Day for Grimley\n4:23 Oo-de-lally`,
     },
   },
+  omitCommentIds: [
+    'UgzHFsG1E5peX5zKYCJ4AaABAg', // June 22. No setlist but this comment has some timestamps
+  ],
 }
 
 export default artist

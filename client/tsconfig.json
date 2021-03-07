@@ -1,10 +1,12 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "target": "ES5",
     "module": "ESNext",
     "jsx": "react",
     "jsxFactory": "h",
     "strict": true,
+    "allowJs": true,
+    "checkJs": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
     "resolveJsonModule": true,

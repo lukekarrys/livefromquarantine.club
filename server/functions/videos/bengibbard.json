@@ -573,6 +573,19 @@
       },
       "comments": [
         {
+          "id": "UgwjOz4wOLdKAl1vQrR4AaABAg",
+          "snippet": {
+            "videoId": "Hk-xqMKLyRo",
+            "topLevelComment": {
+              "snippet": {
+                "textDisplay": "16:55 special guest Rachel Demy (his wife)\n28:40 Q&A",
+                "publishedAt": "2020-03-29T00:35:54.000Z",
+                "updatedAt": "2020-03-29T00:36:34.000Z"
+              }
+            }
+          }
+        },
+        {
           "id": "Ugy0lRQEKiRUoRpOenN4AaABAg",
           "snippet": {
             "videoId": "Hk-xqMKLyRo",
@@ -1017,6 +1030,32 @@
                 "textDisplay": "0:35 Lady Adelaide\r\n4:22 Recycled Air\r\n8:34 Your New Twin Sized Bed\r\n13:35 Willamine\r\n17:29 Q&A\n24:24 A Movie Script Ending\r\n29:44 Your Hurricane\r\n33:14 Your Heart Is An Empty Room\r\n39:38 Carolina\r\n42:07 PSA\r\n44:30 I Will Follow You Into The Dark\r\n\r\n\r\n\r\n\r\nI think that's all of them, hopefully.",
                 "publishedAt": "2020-03-22T00:12:50.000Z",
                 "updatedAt": "2020-03-22T00:13:57.000Z"
+              }
+            }
+          }
+        },
+        {
+          "id": "Ugwvw34H4WPb3AU9L1t4AaABAg",
+          "snippet": {
+            "videoId": "dLWmIJV4GMg",
+            "topLevelComment": {
+              "snippet": {
+                "textDisplay": "42:07 Important PSA\n44:30 I Will Follow You Into The Dark",
+                "publishedAt": "2020-03-21T23:55:55.000Z",
+                "updatedAt": "2020-03-21T23:57:40.000Z"
+              }
+            }
+          }
+        },
+        {
+          "id": "Ugwk_pbFUTPAjUwk3oN4AaABAg",
+          "snippet": {
+            "videoId": "dLWmIJV4GMg",
+            "topLevelComment": {
+              "snippet": {
+                "textDisplay": "8:30 Twin sized bed ❤\n24:20 Movie script ending 🔥",
+                "publishedAt": "2020-03-22T05:08:01.000Z",
+                "updatedAt": "2020-03-22T05:08:01.000Z"
               }
             }
           }

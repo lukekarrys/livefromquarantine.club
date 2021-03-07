@@ -1225,7 +1225,21 @@
           }
         }
       },
-      "comments": []
+      "comments": [
+        {
+          "id": "UgxcsUeBFmU30fx7dUp4AaABAg",
+          "snippet": {
+            "videoId": "9ej13fXwOUQ",
+            "topLevelComment": {
+              "snippet": {
+                "textDisplay": "7:48 sean\n8:10 the cooler sean",
+                "publishedAt": "2020-12-10T21:00:37.000Z",
+                "updatedAt": "2020-12-10T21:00:37.000Z"
+              }
+            }
+          }
+        }
+      ]
     },
     {
       "contentDetails": {
@@ -3745,7 +3759,21 @@
           }
         }
       },
-      "comments": []
+      "comments": [
+        {
+          "id": "UgzHFsG1E5peX5zKYCJ4AaABAg",
+          "snippet": {
+            "videoId": "t6VzNxHX8c0",
+            "topLevelComment": {
+              "snippet": {
+                "textDisplay": "Sean. This is so fucking awesome!!!!  Yes! 7:06\n30:38",
+                "publishedAt": "2020-06-23T14:05:53.000Z",
+                "updatedAt": "2020-06-23T14:22:59.000Z"
+              }
+            }
+          }
+        }
+      ]
     },
     {
       "contentDetails": {
@@ -6710,6 +6738,19 @@
         }
       },
       "comments": [
+        {
+          "id": "UgzHnSKIA4RrQDJbLpJ4AaABAg",
+          "snippet": {
+            "videoId": "dubJxTm0tOM",
+            "topLevelComment": {
+              "snippet": {
+                "textDisplay": "SETLIST \n\n\n0:00 - a bunch of good songs\n\n\n23:17 - the end of the good songs",
+                "publishedAt": "2020-04-08T23:33:46.000Z",
+                "updatedAt": "2020-04-08T23:33:46.000Z"
+              }
+            }
+          }
+        },
         {
           "id": "Ugzys0f6Dt1pTm0UjcR4AaABAg",
           "snippet": {

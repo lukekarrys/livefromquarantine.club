@@ -51,19 +51,18 @@ export default {
     }
 
     // Where we're going, we don't need compat
-    // (remember to check here if adding any future react libraries)
-    config.resolve.alias.react = resolve(
-      process.cwd(),
-      'src',
-      'lib',
-      'preact.js'
-    )
-    ;[
+    // (remember to check here this file if adding any future react libraries)
+    config.resolve.alias.react = resolve(process.cwd(), 'src', 'lib', 'preact')
+
+    // No external libraries use any of these so they dont need to be
+    // aliased
+    const removeAliases = [
       'react-dom',
       'react-addons-css-transition-group',
       'preact-compat',
       'preact/compat',
-    ].forEach((k) => delete config.resolve.alias[k])
+    ]
+    removeAliases.forEach((k) => delete config.resolve.alias[k])
 
     // Use any `index` file, not just index.js
     config.resolve.alias['preact-cli-entrypoint'] = resolve(

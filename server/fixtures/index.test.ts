@@ -1,5 +1,5 @@
 import test from 'ava'
-import { get, build } from './build-fixture'
+import { get, build } from './build'
 import { artists } from '../api/artists'
 
 for (const artist of artists) {
