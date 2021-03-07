@@ -2,6 +2,7 @@
 node_modules/
 client/size-plugin.json
 client/coverage/
+client/build/
 public/
 server/functions/*.zip
 .mp3/
