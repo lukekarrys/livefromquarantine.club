@@ -1,6 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import { Artist } from '../types'
+import importEnv from './import'
 
 const artistPath = path.resolve(__dirname, '..', 'functions', 'videos')
 
@@ -9,12 +10,8 @@ export const artists: string[] = fs
   .filter((f: string) => path.extname(f) === '.json')
   .map((f: string) => path.basename(f, '.json'))
 
-const importArtist = async (id: string): Promise<Artist> => {
-  const m = (await import(path.join(artistPath, `${id}.ts`))) as {
-    default: Artist
-  }
-  return m.default
-}
+const importArtist = async (id: string): Promise<Artist> =>
+  importEnv<Artist>(path.join(artistPath, id))
 
 const getFull = async (id: string): Promise<Artist> => {
   try {

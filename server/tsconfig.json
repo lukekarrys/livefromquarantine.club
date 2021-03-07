@@ -3,8 +3,6 @@
     "module": "commonjs",
     "target": "es2020",
     "strict": true,
-    "allowJs": true,
-    "checkJs": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "typeRoots": ["./typeRoots", "node_modules/@types"]

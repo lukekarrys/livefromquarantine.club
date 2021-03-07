@@ -1,4 +1,3 @@
-package-lock.json
 api/**/*.js
 fixtures/**/*.js
 functions/**/*.js

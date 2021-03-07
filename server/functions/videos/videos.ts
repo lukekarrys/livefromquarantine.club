@@ -3,6 +3,7 @@ import path from 'path'
 import parseVideos from '../../api/parse-videos'
 import { getPlaylist, getVideo } from '../../api/fetch-youtube'
 import { getErrorStatusAndMessage } from '../../api/youtube'
+import importEnv from '../../api/import'
 import {
   Artist,
   PreloadedData,
@@ -61,13 +62,11 @@ export const handler = async (
 
   try {
     const [{ meta, videos }, artist] = await Promise.all([
-      import(path.join(ROOT, `${id}.json`)).then(
-        (r: { default: PreloadedData }) => r.default
-      ),
-      import(path.join(ROOT, `${id}.ts`)).then(
-        (r: { default: Artist }) => r.default
-      ),
+      importEnv<PreloadedData>(path.join(ROOT, `${id}.json`)),
+      importEnv<Artist>(path.join(ROOT, id)),
     ])
+
+    console.log(meta)
 
     log('Found preloaded')
 
