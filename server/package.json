@@ -44,6 +44,7 @@
     "build": "tsc --project tsconfig.json",
     "build:watch": "nodemon --exec 'npm run build && node api/dev-server.js' --ext ts",
     "check": "tsc --project tsconfig.json --noEmit",
+    "cleanup": "if-env CI && rm -rf {api,fixtures,functions,}/**/*.ts || 'only cleanup server on CI'",
     "data": "ts-node api/preload-data.ts && ts-node build.ts",
     "data:fixtures": "ts-node fixtures/write.ts",
     "dev": "nodemon --exec 'NODE_ENV=development ts-node api/dev-server.ts' --ext js,json",
