@@ -1,5 +1,6 @@
 import './dotenv'
 import http, { IncomingMessage, ServerResponse } from 'http'
+import { URLSearchParams } from 'url'
 import ms from 'mediaserver'
 import path from 'path'
 import { handler as getVideos } from '../functions/videos/videos'
