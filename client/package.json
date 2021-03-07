@@ -45,7 +45,7 @@
   },
   "private": true,
   "scripts": {
-    "build": "preact build --no-sw --no-prerender --no-inline-css --no-esm --no-preload ../public",
+    "build": "preact build --no-sw --no-prerender --no-inline-css --no-esm --no-preload --dest ../public",
     "check": "tsc --project tsconfig.json --noEmit",
     "dev": "preact watch",
     "eslint": "eslint './**/*.{js,jsx,ts,tsx}' --fix",
