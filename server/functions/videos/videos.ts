@@ -58,7 +58,8 @@ export const handler = async (
   const { id, accessToken } = queryStringParameters
 
   const log = (...parts: unknown[]) =>
-    process.env.NODE_ENV !== 'test' && console.log(id, '-', ...parts)
+    (process.env.NODE_ENV !== 'test' || process.env.CI) &&
+    console.log(id, '-', ...parts)
 
   try {
     log(`Looking for files in ${ROOT}`)
