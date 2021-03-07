@@ -46,7 +46,7 @@
     "dev": "nodemon --exec 'NODE_ENV=development ts-node api/dev-server.ts' --ext js,json",
     "eslint": "eslint '**/*.{js,ts}'  --fix",
     "lint": "npm run prettier && npm run eslint",
-    "precommit": "lint-staged && npm test",
+    "precommit": "lint-staged",
     "prettier": "prettier --write '**/*.{js,ts,css,md,json}'",
     "test": "ava",
     "trigger": "ts-node api/trigger-gh-preload.ts"
