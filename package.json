@@ -30,7 +30,7 @@
     "check": "run-s check:client check:server",
     "check:client": "cd client && npm run check",
     "check:server": "cd server && npm run check",
-    "cleanup": "run-s build:client build:server",
+    "cleanup": "run-s cleanup:client cleanup:server",
     "cleanup:client": "cd client && npm run cleanup",
     "cleanup:server": "cd server && npm run cleanup",
     "data": "cd server && npm run data",
