@@ -1,8 +1,11 @@
-export const parseQs = (str: string): { [key: string]: string } => {
-  return [...new URLSearchParams(str).entries()].reduce((acc, [k, v]) => {
-    acc[k] = v
-    return acc
-  }, {} as { [key: string]: string })
+export const parseQs = (str: string): Record<string, string> => {
+  const obj: Record<string, string> = {}
+
+  for (const [key, value] of new URLSearchParams(str)) {
+    obj[key] = value
+  }
+
+  return obj
 }
 
 export const url = (
