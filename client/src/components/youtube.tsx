@@ -3,7 +3,7 @@ import { useEffect, useRef, useMemo, useLayoutEffect } from 'preact/hooks'
 import cx from 'classnames'
 import { PlayerSend } from '../machine/types'
 import { Track } from '../types'
-import useYouTube from '../lib/useYoutube'
+import useYouTube from '../lib/useYouTube'
 
 interface Props {
   selected?: Track

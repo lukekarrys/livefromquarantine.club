@@ -1,5 +1,3 @@
-/// <reference types="@types/youtube" />
-
 import { useEffect, useRef, useCallback, Ref } from 'preact/hooks'
 import * as Machine from '../machine/types'
 

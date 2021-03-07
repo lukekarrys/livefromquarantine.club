@@ -11,7 +11,8 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "lib": ["es2017", "dom.iterable"],
-    "downlevelIteration": true
+    "downlevelIteration": true,
+    "forceConsistentCasingInFileNames": true
   },
   "include": ["./src/**/*.tsx", "./src/**/*.ts"]
 }
