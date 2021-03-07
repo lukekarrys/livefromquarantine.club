@@ -18,7 +18,14 @@ const artist: Artist = {
     PmJa6qlob0Q: {
       comments: `0:42 A Big Day for Grimley\n4:23 Oo-de-lally`,
     },
+    JBFJwxSCtwk: {
+      title: (title) =>
+        title.replace('(Maggie audio fixed v1.2 final final)', ''),
+    },
   },
+  omitVideoIds: [
+    '4tOQRChKdgQ', // October 19 duplicate with bad audio
+  ],
   omitCommentIds: [
     'UgzHFsG1E5peX5zKYCJ4AaABAg', // June 22. No setlist but this comment has some timestamps
   ],

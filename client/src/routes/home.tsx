@@ -4,7 +4,7 @@ import { route } from 'preact-router'
 import artists from '../../artists.json'
 import Button from '../components/button'
 import Input from '../components/input'
-import { url } from '../lib/url'
+import { url, parseQs } from '../lib/url'
 import manifest from '../manifest.json'
 import { AccessToken } from '../types'
 
@@ -15,8 +15,8 @@ interface Props {
 
 const parseRouteId = (str: string): string => {
   try {
-    const url = new URL(str)
-    return url.searchParams.get('list') ?? url.searchParams.get('v') ?? ''
+    const { list, v } = parseQs(str)
+    return list ?? v ?? ''
   } catch (e) {
     return str
   }

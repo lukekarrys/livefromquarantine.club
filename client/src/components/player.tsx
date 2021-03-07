@@ -9,29 +9,26 @@ import Controls from './controls'
 import UpNext from './upnext'
 import * as selectors from '../machine/selectors'
 import { PlayerSend, PlayerMachineState } from '../machine/types'
+import * as url from '../lib/url'
 
 interface Props {
   state: PlayerMachineState
   send: PlayerSend
   children: ComponentChild
+  media?: string
   videos?: TVideos
 }
+
+type KeyMod = 'ctrlKey' | 'metaKey' | 'shiftKey' | 'altKey'
+const mods: KeyMod[] = ['ctrlKey', 'metaKey', 'shiftKey', 'altKey']
 
 const Player: FunctionalComponent<Props> = ({
   state,
   send,
   children,
+  media = 'youtube',
   videos = [],
 }) => {
-  // This can't currently get changed during runtime because there isn't
-  // any concept in the state machine of setting a player once its already set.
-  // To achieve this I think the SET_PLAYER event should get accepted during any
-  // playing mode and a new event like changePlayer should be called that would
-  // change the underlying player. Something super fancy would know which method
-  // to call based on state of the other player to pickup where it left off but I
-  // doubt that will ever get implemented.
-  const [media] = useState('audio')
-
   const [scrollTo, setScrollTo] = useState(false)
   const selected = selectors.getSelectedTrack(state.context)
   const isPlaying = state.matches('playing')
@@ -41,17 +38,28 @@ const Player: FunctionalComponent<Props> = ({
 
   useEffect(() => {
     const listener = (e: KeyboardEvent): void => {
-      if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return
-      else if (e.key === 'ArrowRight') send('NEXT_TRACK')
-      else if (e.key === ' ')
+      const noMod = mods.every((mod) => e[mod] === false)
+      const onlyMod = (mod: KeyMod) =>
+        mods.every((m) => {
+          const shouldBe = mod === m ? true : false
+          return e[m] === shouldBe
+        })
+
+      if (noMod && e.key === 'ArrowRight') send('NEXT_TRACK')
+      else if (noMod && e.key === ' ')
         e.preventDefault(), send(isVisuallyPlaying ? 'PAUSE' : 'PLAY')
-      else if (e.key === 's') send('SHUFFLE')
-      else if (e.key === 'r') send('REPEAT')
-      else if (e.key === 'u') send('SELECT_MODE')
+      else if (noMod && e.key === 's') send('SHUFFLE')
+      else if (noMod && e.key === 'r') send('REPEAT')
+      else if (noMod && e.key === 'u') send('SELECT_MODE')
+      else if (onlyMod('ctrlKey') && e.key === 'm') {
+        window.location.href = url.url(window.location.href, {
+          media: media === 'youtube' ? 'audio' : 'youtube',
+        })
+      }
     }
     document.addEventListener('keydown', listener)
     return (): void => document.removeEventListener('keydown', listener)
-  }, [send, isVisuallyPlaying])
+  }, [send, isVisuallyPlaying, media])
 
   const playerContainer = useRef<HTMLDivElement>()
 

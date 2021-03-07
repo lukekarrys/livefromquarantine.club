@@ -28,7 +28,7 @@ const fns: {
     const id = params.get('id')
 
     if (!id) {
-      throw new Error()
+      throw new Error('Needs id param')
     }
 
     await ms.pipe(

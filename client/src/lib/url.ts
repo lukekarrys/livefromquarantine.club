@@ -1,21 +1,44 @@
-export const parseQs = (str: string): { [key: string]: string } => {
-  return [...new URLSearchParams(str).entries()].reduce((acc, [k, v]) => {
+export const parseQs = (
+  toParse?:
+    | string
+    | Record<string, string | undefined>
+    | undefined
+    | URLSearchParams
+): Record<string, string> => {
+  let params: URLSearchParams | null = null
+
+  if (toParse instanceof URLSearchParams) {
+    params = toParse
+  } else if (typeof toParse === 'object') {
+    const removeUndefinedValues: Record<string, string> = {}
+    for (const [key, val] of Object.entries(toParse)) {
+      if (val != null) {
+        removeUndefinedValues[key] = val
+      }
+    }
+    params = new URLSearchParams(removeUndefinedValues)
+  } else {
+    params = new URLSearchParams(toParse)
+  }
+
+  return Array.from(params.entries()).reduce((acc, [k, v]) => {
     acc[k] = v
     return acc
-  }, {} as { [key: string]: string })
+  }, {} as Record<string, string>)
+}
+
+const relativeUrl = (u: string): URL => {
+  return new URL(u, `${window.location.protocol}//${window.location.host}`)
 }
 
 export const url = (
   path: string,
-  search: { [key: string]: string | undefined }
+  search?: Record<string, string | undefined>
 ): string => {
-  if (search) path += '?'
-
-  Object.entries(search).forEach((parts) => {
-    if (parts[1] != null) {
-      path += parts.join('=')
-    }
-  })
-
-  return new URL(path, window.location.host).toString()
+  const url = relativeUrl(path)
+  url.search = new URLSearchParams({
+    ...parseQs(url.search),
+    ...parseQs(search),
+  }).toString()
+  return url.toString()
 }
