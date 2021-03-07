@@ -61,12 +61,12 @@ export const handler = async (
     process.env.NODE_ENV !== 'test' && console.log(id, '-', ...parts)
 
   try {
+    log(`Looking for files in ${ROOT}`)
+
     const [{ meta, videos }, artist] = await Promise.all([
       importEnv<PreloadedData>(path.join(ROOT, `${id}.json`)),
       importEnv<Artist>(path.join(ROOT, id)),
     ])
-
-    console.log(meta)
 
     log('Found preloaded')
 

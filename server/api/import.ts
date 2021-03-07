@@ -1,7 +1,7 @@
 import path from 'path'
+import detectTSNode from 'detect-ts-node'
 
-const { LAMBDA_TASK_ROOT } = process.env
-const ext = LAMBDA_TASK_ROOT ? 'js' : 'ts'
+const ext = detectTSNode ? 'ts' : 'js'
 
 // import files normally and return default export
 // if no ext is provided lookup ts or js based on env

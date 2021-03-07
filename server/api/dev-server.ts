@@ -1,4 +1,4 @@
-import 'dotenv'
+import './dotenv'
 import http, { IncomingMessage, ServerResponse } from 'http'
 import ms from 'mediaserver'
 import path from 'path'
@@ -44,13 +44,21 @@ http
     const [url, search] = (req.url || '').split('?')
     const params = new URLSearchParams(search)
 
-    fns[url](req, res, params).catch((e) => {
+    const error = (e: Error) => {
       res.writeHead(500)
       res.end(
         JSON.stringify({
           error: e instanceof Error ? e.message : 'An unknown error occurred',
         })
       )
-    })
+    }
+
+    const fn = fns[url]
+
+    if (typeof fn !== 'function') {
+      return error(new Error(`No handler for url: ${req.url || ''}`))
+    }
+
+    fn(req, res, params).catch(error)
   })
   .listen(port, () => console.log(`Listening on ${port}`))
