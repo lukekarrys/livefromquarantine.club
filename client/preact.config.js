@@ -1,10 +1,15 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
+// @ts-nocheck
 
 import { resolve } from 'path'
 import tailwind from 'tailwindcss'
+import { DefinePlugin } from 'webpack'
+
+const PRODUCTION = process.env.NODE_ENV === 'production'
 
 export default {
   /**
@@ -23,6 +28,14 @@ export default {
       plugins.unshift(tailwind)
     })
 
+    config.plugins.push(
+      new DefinePlugin({
+        'process.env.MEDIA_SERVER': JSON.stringify(
+          PRODUCTION ? 'https://TODO_MAKE_A_SERVER' : 'http://localhost:3001'
+        ),
+      })
+    )
+
     if (config.devServer) {
       // YouTube player blocks some videos on 0.0.0.0
       config.devServer.host = 'localhost'
@@ -30,9 +43,9 @@ export default {
       // Hot reloading doesn't play well with the video player
       config.devServer.hot = false
       config.devServer.proxy = {
-        '/.netlify/functions/videos': {
+        '/.netlify/functions': {
           target: 'http://localhost:3001',
-          pathRewrite: { [`^/.netlify/functions/videos`]: '/' },
+          pathRewrite: { [`^/.netlify/functions`]: '/' },
         },
       }
     }

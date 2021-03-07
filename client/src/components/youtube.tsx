@@ -4,7 +4,6 @@ import cx from 'classnames'
 import { PlayerSend } from '../machine/types'
 import { Track } from '../types'
 import useYouTube from '../lib/useYoutube'
-import MediaPlayer from '../lib/MediaPlayer'
 
 interface Props {
   selected?: Track
@@ -26,8 +25,7 @@ const YouTube: FunctionalComponent<Props> = ({
     domRef,
     useMemo(
       () => ({
-        onReady: (player): void =>
-          send({ type: 'PLAYER_READY', player: new MediaPlayer(player) }),
+        onReady: (player): void => send({ type: 'PLAYER_READY', player }),
         onError: (error): void => send({ type: 'PLAYER_ERROR', error }),
         onStateChange: (event): void => send({ type: event }),
       }),

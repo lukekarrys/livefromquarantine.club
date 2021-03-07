@@ -1,6 +1,5 @@
 import { FunctionalComponent, h } from 'preact'
 import { useEffect, useRef } from 'preact/hooks'
-import MediaPlayer from '../lib/MediaPlayer'
 import { PlayerSend } from '../machine/types'
 import { Track } from '../types'
 
@@ -14,7 +13,7 @@ const Audio: FunctionalComponent<Props> = ({ selected, play, send }) => {
   const player = useRef<HTMLAudioElement>(null)
 
   useEffect(() => {
-    send({ type: 'PLAYER_READY', player: new MediaPlayer(player.current) })
+    send({ type: 'PLAYER_READY', player: player.current })
   }, [send, player])
 
   useEffect(() => {

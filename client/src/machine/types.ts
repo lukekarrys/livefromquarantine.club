@@ -21,7 +21,10 @@ export type FetchSuccessEvent = {
 }
 export type FetchErrorEvent = { type: 'FETCH_ERROR'; error: Error }
 
-export type PlayerReadyEvent = { type: 'PLAYER_READY'; player: MediaPlayer }
+export type PlayerReadyEvent = {
+  type: 'PLAYER_READY'
+  player: YT.Player | HTMLAudioElement
+}
 export type PlayerErrorEvent = { type: 'PLAYER_ERROR'; error: Error }
 
 export type SelectTrackEvent = {

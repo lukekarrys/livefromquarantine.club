@@ -33,7 +33,9 @@ const Artist: FunctionalComponent<Props> = ({ artist, accessToken }) => {
   const [meta, setMeta] = useState<ArtistMeta | undefined>(undefined)
   const [state, send, service] = useMachine(playerMachine)
 
-  debugService.useService(service)
+  debugService.useService(service, (s) =>
+    `${s.value} ${s.actions.map(({ type }) => type).join(',')}`.trim()
+  )
 
   useEffect(() => {
     send('FETCH_START')

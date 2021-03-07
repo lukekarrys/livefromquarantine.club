@@ -1,4 +1,4 @@
-import * as qs from './searchParams'
+import { url } from './url'
 
 import {
   Track,
@@ -97,7 +97,7 @@ const fetchData = (
   id: ArtistId,
   accessToken?: AccessToken
 ): Promise<NormalizedData> =>
-  fetch(`/.netlify/functions/videos?${qs.stringify({ id, accessToken })}`).then(
+  fetch(url('/.netlify/functions/videos', { id, accessToken })).then(
     async (resp) => {
       const data = (await resp.json()) as ApiData
       if (resp.ok) {

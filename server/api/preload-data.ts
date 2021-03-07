@@ -29,7 +29,7 @@ const writeFile = async (fileId: string, resp: Record<string, unknown>) => {
 const main = async (artists: Artist[] = []) =>
   Promise.all(
     artists.map((artist) =>
-      getPlaylist(artist.playlistId, { key: API_KEY })
+      getPlaylist(artist.playlistId, { key: API_KEY }, artist)
         .then((resp) => writeFile(artist.id, resp))
         .then(() => ({ id: artist.id, ok: true }))
         .catch((error: unknown) => ({

@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from 'preact/hooks'
 import cx from 'classnames'
 import { Videos as TVideos } from '../types'
 import YouTube from './youtube'
+import Audio from './audio'
 import Videos from './videos'
 import Controls from './controls'
 import UpNext from './upnext'
@@ -22,6 +23,15 @@ const Player: FunctionalComponent<Props> = ({
   children,
   videos = [],
 }) => {
+  // This can't currently get changed during runtime because there isn't
+  // any concept in the state machine of setting a player once its already set.
+  // To achieve this I think the SET_PLAYER event should get accepted during any
+  // playing mode and a new event like changePlayer should be called that would
+  // change the underlying player. Something super fancy would know which method
+  // to call based on state of the other player to pickup where it left off but I
+  // doubt that will ever get implemented.
+  const [media] = useState('audio')
+
   const [scrollTo, setScrollTo] = useState(false)
   const selected = selectors.getSelectedTrack(state.context)
   const isPlaying = state.matches('playing')
@@ -48,20 +58,24 @@ const Player: FunctionalComponent<Props> = ({
   return (
     <Fragment>
       <div class="sticky top-0 z-10" ref={playerContainer}>
-        <div class={cx(showPlayer ? 'bg-black' : 'shadow-inner bg-gray-200')}>
-          <div class="mx-auto max-w-video-16/9-40vh sm-h:max-w-video-16/9-50vh md-h:max-w-screen-c">
-            <YouTube
-              show={showPlayer}
-              selected={selected}
-              play={state.matches('playing')}
-              send={send}
-            >
-              <div class="w-full h-full flex justify-center items-center flex-col">
-                <div class="overflow-y-scroll">{children}</div>
-              </div>
-            </YouTube>
+        {media === 'youtube' ? (
+          <div class={cx(showPlayer ? 'bg-black' : 'shadow-inner bg-gray-200')}>
+            <div class="mx-auto max-w-video-16/9-40vh sm-h:max-w-video-16/9-50vh md-h:max-w-screen-c">
+              <YouTube
+                show={showPlayer}
+                selected={selected}
+                play={isPlaying}
+                send={send}
+              >
+                <div class="w-full h-full flex justify-center items-center flex-col">
+                  <div class="overflow-y-scroll">{children}</div>
+                </div>
+              </YouTube>
+            </div>
           </div>
-        </div>
+        ) : media === 'audio' ? (
+          <Audio send={send} selected={selected} play={isPlaying} />
+        ) : null}
         <div class="bg-white border-b border-t border-gray-600 shadow">
           <Controls
             ready={isReady}

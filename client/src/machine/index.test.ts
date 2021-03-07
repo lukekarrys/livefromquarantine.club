@@ -3,7 +3,6 @@ import playerMachine from './index'
 import { handler } from '../../../server/functions/videos/videos'
 import { normalizeData, NormalizedData } from '../lib/api'
 import { PlayerService } from './types'
-import MediaPlayer from '../lib/MediaPlayer'
 
 jest.mock('../lib/MediaPlayer')
 
@@ -43,7 +42,7 @@ describe('Player machine', () => {
 
     expect(service.state.value).toBe('idle')
 
-    service.send({ type: 'PLAYER_READY', player: new MediaPlayer() })
+    service.send({ type: 'PLAYER_READY', player: new Audio() })
 
     expect(service.state.value).toBe('idle')
 
@@ -69,7 +68,7 @@ describe('Player machine', () => {
 
     expect(service.state.value).toBe('loading')
 
-    service.send({ type: 'PLAYER_READY', player: new MediaPlayer() })
+    service.send({ type: 'PLAYER_READY', player: new Audio() })
 
     expect(service.state.value).toBe('ready')
   })
@@ -79,7 +78,7 @@ describe('Player machine', () => {
 
     expect(service.state.value).toBe('idle')
 
-    service.send({ type: 'PLAYER_READY', player: new MediaPlayer() })
+    service.send({ type: 'PLAYER_READY', player: new Audio() })
     service.send('FETCH_START')
     service.send({ type: 'FETCH_SUCCESS', tracks: data.tracks })
 
