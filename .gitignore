@@ -10,4 +10,3 @@ server/fixtures/**/*.js
 server/functions/**/*.js
 server/types/**/*.js
 server/build.js
-!server/functions/test/*
