@@ -91,7 +91,7 @@ const Home: FunctionalComponent<Props> = ({ accessToken, requireAuth }) => {
           <Button
             as="a"
             key={artist.id}
-            href={`/${artist.id}`}
+            href={`/${artist.id}${window.location.search}${window.location.hash}`}
             class="w-full block text-center mb-4 text-xl"
           >
             {artist.name}
