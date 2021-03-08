@@ -4,7 +4,7 @@ client/size-plugin.json
 client/coverage/
 public/
 server/functions/*.zip
-.mp3/
+mp3/
 server/api/**/*.js
 server/fixtures/**/*.js
 server/functions/**/*.js

@@ -31,7 +31,7 @@ export default {
     config.plugins.push(
       new DefinePlugin({
         'process.env.MEDIA_SERVER': JSON.stringify(
-          PRODUCTION ? 'https://TODO_MAKE_A_SERVER' : 'http://localhost:3001'
+          PRODUCTION ? 'http://143.198.54.155' : 'http://localhost:3002'
         ),
       })
     )

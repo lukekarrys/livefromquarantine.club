@@ -35,7 +35,7 @@ const fns: {
     await ms.pipe(
       req,
       res,
-      path.resolve(__dirname, '..', '..', '.mp3', `${id}.mp3`)
+      path.resolve(__dirname, '..', '..', 'mp3', `${id}.mp3`)
     )
   },
 }
