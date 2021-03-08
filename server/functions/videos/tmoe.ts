@@ -13,7 +13,8 @@ const artist: Artist = {
       .replace(/#WithMe/i, ''),
   videoParsers: {
     '37uYSek4r-0': {
-      comments: `3:33 The Bluest Eyes in Texas - Restless Heart
+      comments: `
+        3:33 The Bluest Eyes in Texas - Restless Heart
         9:13 I Waited for You - Daniel Norgren
         15:51 Blues Run The Game - Jackson C. Frank
         22:19 Fade Into You - Mazzy Star
@@ -24,7 +25,8 @@ const artist: Artist = {
         56:16 Re:Stacks - Bon Iver
         1:06:00 Secret Heart - Ron Sexsmith
         1:15:40 These Days - Jackson Browne
-        1:24:09 When We Were Young - Adele`,
+        1:24:09 When We Were Young - Adele
+      `,
     },
   },
   omitVideoIds: [
