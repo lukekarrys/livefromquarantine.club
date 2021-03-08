@@ -1,0 +1,5 @@
+api/**/*.js
+fixtures/**/*.js
+functions/**/*.js
+types/**/*.js
+build.js

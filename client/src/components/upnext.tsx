@@ -49,7 +49,7 @@ const UpNext: FunctionalComponent<Props> = ({
   return (
     <Fragment>
       <Button
-        class="flex transition-transform duration-200 fixed right-0 mr-2 mt-2 top-0 z-20"
+        class="flex transition-transform duration-200 fixed right-0 mr-2 c:mt-2 c:mb-0 c:top-0 c:bottom-auto bottom-0 mb-2 z-20"
         onClick={(): void => setVisible(true)}
         style={{ transform: `translate(${visible ? '100%' : '0'})` }}
       >

@@ -5,6 +5,9 @@
 
 import { resolve } from 'path'
 import tailwind from 'tailwindcss'
+import { DefinePlugin } from 'webpack'
+
+const PRODUCTION = process.env.NODE_ENV === 'production'
 
 export default {
   /**
@@ -23,6 +26,16 @@ export default {
       plugins.unshift(tailwind)
     })
 
+    config.plugins.push(
+      new DefinePlugin({
+        'process.env.MEDIA_SERVER': JSON.stringify(
+          PRODUCTION
+            ? 'https://mp3.livefromquarantine.club'
+            : 'http://localhost:3002'
+        ),
+      })
+    )
+
     if (config.devServer) {
       // YouTube player blocks some videos on 0.0.0.0
       config.devServer.host = 'localhost'
@@ -30,27 +43,26 @@ export default {
       // Hot reloading doesn't play well with the video player
       config.devServer.hot = false
       config.devServer.proxy = {
-        '/.netlify/functions/videos': {
+        '/.netlify/functions': {
           target: 'http://localhost:3001',
-          pathRewrite: { [`^/.netlify/functions/videos`]: '/' },
+          pathRewrite: { [`^/.netlify/functions`]: '/' },
         },
       }
     }
 
     // Where we're going, we don't need compat
-    // (remember to check here if adding any future react libraries)
-    config.resolve.alias.react = resolve(
-      process.cwd(),
-      'src',
-      'lib',
-      'preact.js'
-    )
-    ;[
+    // (remember to check here this file if adding any future react libraries)
+    config.resolve.alias.react = resolve(process.cwd(), 'src', 'lib', 'preact')
+
+    // No external libraries use any of these so they dont need to be
+    // aliased
+    const removeAliases = [
       'react-dom',
       'react-addons-css-transition-group',
       'preact-compat',
       'preact/compat',
-    ].forEach((k) => delete config.resolve.alias[k])
+    ]
+    removeAliases.forEach((k) => delete config.resolve.alias[k])
 
     // Use any `index` file, not just index.js
     config.resolve.alias['preact-cli-entrypoint'] = resolve(

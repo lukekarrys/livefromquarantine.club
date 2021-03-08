@@ -2,14 +2,14 @@
   "compilerOptions": {
     "target": "ES5",
     "module": "ESNext",
-    "allowJs": true,
-    "checkJs": true,
     "jsx": "react",
     "jsxFactory": "h",
     "strict": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "lib": ["es2017", "dom.iterable"],
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*.tsx", "src/**/*.ts"]
+  "include": ["./src/**/*.tsx", "./src/**/*.ts"]
 }

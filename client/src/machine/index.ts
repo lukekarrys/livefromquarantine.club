@@ -5,17 +5,7 @@ import * as selectors from './selectors'
 import * as trackOrder from './track-order'
 import * as debug from '../lib/debug'
 import { pick } from '../lib/utils'
-
-export const ytToMachineEvent: {
-  [key in YT.PlayerState]: Machine.YouTubeEvent['type'] | null
-} = {
-  [-1]: null, // UNSTARTED, dont need to track this
-  [0]: 'END_TRACK',
-  [1]: 'YOUTUBE_PLAY',
-  [2]: 'YOUTUBE_PAUSE',
-  [3]: 'YOUTUBE_BUFFERING',
-  [5]: 'YOUTUBE_CUED',
-}
+import MediaPlayer from '../lib/MediaPlayer'
 
 const readyTransitions = {
   SHUFFLE: {
@@ -39,7 +29,7 @@ const playerReadyTransition: Machine.PlayerTransition<Machine.PlayerReadyEvent> 
   PLAYER_READY: [
     {
       target: 'requesting',
-      actions: ['setPlayer', 'loadVideo'],
+      actions: ['setPlayer', 'loadMedia'],
       cond: selectors.hasSelected,
     },
     {
@@ -116,7 +106,7 @@ const playerMachine = createMachine<
           FETCH_SUCCESS: [
             {
               target: 'requesting',
-              actions: ['setTracks', 'loadVideo'],
+              actions: ['setTracks', 'loadMedia'],
               cond: selectors.hasSelected,
             },
             {
@@ -146,24 +136,24 @@ const playerMachine = createMachine<
             {
               target: 'requesting',
               cond: selectors.hasSelected,
-              actions: 'loadVideo',
+              actions: 'loadMedia',
             },
             {
               target: 'requesting',
-              actions: ['setInitialTrack', 'loadVideo'],
+              actions: ['setInitialTrack', 'loadMedia'],
             },
           ],
           NEXT_TRACK: [
             {
               target: 'requesting',
               cond: selectors.hasSelected,
-              actions: ['setNextTrack', 'loadVideo'],
+              actions: ['setNextTrack', 'loadMedia'],
             },
             {
               // You can click the next button on initial state and it
               // acts the same as the play button because why not
               target: 'requesting',
-              actions: ['setInitialTrack', 'loadVideo'],
+              actions: ['setInitialTrack', 'loadMedia'],
             },
           ],
           SELECT_TRACK: [
@@ -173,7 +163,7 @@ const playerMachine = createMachine<
             },
             {
               target: 'requesting',
-              actions: ['setTrack', 'loadVideo'],
+              actions: ['setTrack', 'loadMedia'],
             },
           ],
           ...readyTransitions,
@@ -181,23 +171,21 @@ const playerMachine = createMachine<
       },
       requesting: {
         on: {
-          YOUTUBE_BUFFERING: 'playing',
-          YOUTUBE_CUED: 'playing',
-          // I think youtube_play are necessary here because its
+          // Commenting out these because while in requesting mode these shouldn't be the events
+          // responsible for seting playing mode
+          // MEDIA_BUFFERING: 'playing',
+          // MEDIA_CUED: 'playing',
+          // I think MEDIA_PLAY is necessary here because its
           // not perfect to tap into YouTube's event system
           // so this ensures its can't get stuck in the requesting state
-          YOUTUBE_PLAY: 'playing',
-          // Having youtube_pause here causes the state to go into paused when
-          // switching between videos since loadVideo causes a temporary
-          // pause state. removing for now to see how it works without it
-          // YOUTUBE_PAUSE: "paused",
+          MEDIA_PLAY: 'playing',
           NEXT_TRACK: [
             {
-              actions: ['setNextTrack', 'seekTo', 'playVideo'],
+              actions: ['setNextTrack', 'seekTo', 'loadMedia'],
               cond: selectors.isNextSeekable,
             },
             {
-              actions: ['setNextTrack', 'loadVideo'],
+              actions: ['setNextTrack', 'loadMedia'],
             },
           ],
           SELECT_TRACK: [
@@ -206,11 +194,11 @@ const playerMachine = createMachine<
               cond: selectors.eventIsUpNext,
             },
             {
-              actions: ['setTrack', 'seekTo', 'playVideo'],
+              actions: ['setTrack', 'seekTo', 'playMedia'],
               cond: selectors.isEventSeekable,
             },
             {
-              actions: ['setTrack', 'loadVideo'],
+              actions: ['setTrack', 'loadMedia'],
             },
           ],
           ...readyTransitions,
@@ -220,9 +208,9 @@ const playerMachine = createMachine<
         on: {
           PAUSE: {
             target: 'paused',
-            actions: 'pauseVideo',
+            actions: 'pauseMedia',
           },
-          YOUTUBE_PAUSE: 'paused',
+          MEDIA_PAUSE: 'paused',
           NEXT_TRACK: [
             {
               target: 'requesting',
@@ -231,10 +219,10 @@ const playerMachine = createMachine<
             },
             {
               target: 'requesting',
-              actions: ['setNextTrack', 'loadVideo'],
+              actions: ['setNextTrack', 'loadMedia'],
             },
           ],
-          END_TRACK: [
+          MEDIA_END_TRACK: [
             {
               // No other action here so that there is seamless
               // playback when going directly from one song to another
@@ -251,7 +239,7 @@ const playerMachine = createMachine<
               // Any other end event means it is the end of a video
               // so use loadVideo for the next one
               target: 'requesting',
-              actions: ['setNextTrack', 'loadVideo'],
+              actions: ['setNextTrack', 'loadMedia'],
             },
           ],
           SELECT_TRACK: [
@@ -266,7 +254,7 @@ const playerMachine = createMachine<
             },
             {
               target: 'requesting',
-              actions: ['setTrack', 'loadVideo'],
+              actions: ['setTrack', 'loadMedia'],
             },
           ],
           ...readyTransitions,
@@ -276,16 +264,16 @@ const playerMachine = createMachine<
         on: {
           PLAY: {
             target: 'requesting',
-            actions: 'playVideo',
+            actions: 'playMedia',
           },
-          YOUTUBE_PLAY: 'playing',
+          MEDIA_PLAY: 'playing',
           NEXT_TRACK: [
             {
               actions: ['setNextTrack', 'seekTo'],
               cond: selectors.isNextSeekable,
             },
             {
-              actions: ['setNextTrack', 'cueVideo'],
+              actions: ['setNextTrack', 'cueMedia'],
             },
           ],
           SELECT_TRACK: [
@@ -295,12 +283,12 @@ const playerMachine = createMachine<
             },
             {
               target: 'requesting',
-              actions: ['setTrack', 'seekTo', 'playVideo'],
+              actions: ['setTrack', 'seekTo', 'playMedia'],
               cond: selectors.isEventSeekable,
             },
             {
               target: 'requesting',
-              actions: ['setTrack', 'loadVideo'],
+              actions: ['setTrack', 'loadMedia'],
             },
           ],
           ...readyTransitions,
@@ -310,24 +298,18 @@ const playerMachine = createMachine<
   },
   {
     actions: {
-      playVideo: (context): void => context.player?.playVideo(),
-      pauseVideo: (context): void => context.player?.pauseVideo(),
-      cueVideo: (context): void => {
+      playMedia: (context): void => context.player?.play(),
+      pauseMedia: (context): void => context.player?.pause(),
+      cueMedia: (context): void => {
         const selected = selectors.getSelectedTrack(context)
         if (selected) {
-          context.player?.cueVideoById({
-            videoId: selected.videoId,
-            startSeconds: selected.start,
-          })
+          context.player?.cueById(selected.videoId, selected.start)
         }
       },
-      loadVideo: (context): void => {
+      loadMedia: (context): void => {
         const selected = selectors.getSelectedTrack(context)
         if (selected) {
-          context.player?.loadVideoById({
-            videoId: selected.videoId,
-            startSeconds: selected.start,
-          })
+          context.player?.loadById(selected.videoId, selected.start)
         }
       },
       seekTo: (context): void => {
@@ -351,7 +333,7 @@ const playerMachine = createMachine<
       setPlayer: assign({
         player: (_, event) => {
           Machine.assertEventType(event, 'PLAYER_READY')
-          return event.player
+          return new MediaPlayer(event.player)
         },
       }),
       setTracks: assign((context, event) => {

@@ -1,4 +1,3 @@
-/// <reference types="@types/youtube" />
 import { FunctionalComponent, h, ComponentChild } from 'preact'
 import { useEffect, useRef, useMemo, useLayoutEffect } from 'preact/hooks'
 import cx from 'classnames'
@@ -44,7 +43,7 @@ const YouTube: FunctionalComponent<Props> = ({
 
       if (player.getCurrentTime() >= selected.end) {
         clearInterval(interval)
-        send('END_TRACK')
+        send('MEDIA_END_TRACK')
       }
     }, 1000)
 

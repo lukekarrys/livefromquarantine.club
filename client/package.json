@@ -5,7 +5,7 @@
     "@types/classnames": "^2.2.11",
     "@types/youtube": "0.0.41",
     "@xstate/fsm": "^1.6.0",
-    "@xstate/react": "^1.2.2",
+    "@xstate/react": "^1.3.1",
     "classnames": "^2.2.6",
     "preact": "^10.5.12",
     "preact-render-to-string": "^5.1.12",
@@ -37,30 +37,21 @@
     "typescript": "^4.1.5"
   },
   "license": "MIT",
-  "lint-staged": {
-    "*.{css,md,json}": [
-      "prettier --write"
-    ],
-    "*.{js,jsx,ts,tsx}": [
-      "prettier --write",
-      "eslint --fix",
-      "jest --bail --findRelatedTests"
-    ]
-  },
   "prettier": {
     "semi": false,
     "singleQuote": true
   },
   "private": true,
   "scripts": {
-    "build": "preact build --sw false --no-prerender --inline-css false --esm false --preload --dest ../public",
+    "build": "preact build --no-sw --no-prerender --no-inline-css --no-esm --no-preload --dest ../public",
     "check": "tsc --project tsconfig.json --noEmit",
+    "cleanup": "echo 'client cleanup'",
     "dev": "preact watch",
     "eslint": "eslint './**/*.{js,jsx,ts,tsx}' --fix",
     "lint": "npm run prettier && npm run eslint",
     "precommit": "lint-staged",
     "prettier": "prettier '**/*.{js,jsx,ts,tsx,css,md,json}' --write",
     "serve": "sirv build --port 3000 --cors --single",
-    "test": "jest ./tests"
+    "test": "jest"
   }
 }

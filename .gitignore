@@ -1,5 +1,11 @@
 .env
 node_modules/
 client/size-plugin.json
+client/coverage/
 public/
 server/functions/*.zip
+server/api/**/*.js
+server/fixtures/**/*.js
+server/functions/**/*.js
+server/types/**/*.js
+server/build.js

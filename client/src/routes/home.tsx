@@ -4,7 +4,7 @@ import { route } from 'preact-router'
 import artists from '../../artists.json'
 import Button from '../components/button'
 import Input from '../components/input'
-import * as qs from '../lib/searchParams'
+import { url, parseQs } from '../lib/url'
 import manifest from '../manifest.json'
 import { AccessToken } from '../types'
 
@@ -15,8 +15,8 @@ interface Props {
 
 const parseRouteId = (str: string): string => {
   try {
-    const url = new URL(str)
-    return url.searchParams.get('list') ?? url.searchParams.get('v') ?? ''
+    const { list, v } = parseQs(str)
+    return list ?? v ?? ''
   } catch (e) {
     return str
   }
@@ -70,15 +70,13 @@ const Home: FunctionalComponent<Props> = ({ accessToken, requireAuth }) => {
             <Button
               as="a"
               class="mb-4 text-xl text-center block"
-              href={`https://accounts.google.com/o/oauth2/v2/auth?${qs.stringify(
-                {
-                  client_id:
-                    '873120465885-3194c6caoq5243ehirku1aefcoh039if.apps.googleusercontent.com',
-                  redirect_uri: window.location.origin,
-                  response_type: 'token',
-                  scope: 'https://www.googleapis.com/auth/youtube.readonly',
-                }
-              )}`}
+              href={url('https://accounts.google.com/o/oauth2/v2/auth', {
+                client_id:
+                  '873120465885-3194c6caoq5243ehirku1aefcoh039if.apps.googleusercontent.com',
+                redirect_uri: window.location.origin,
+                response_type: 'token',
+                scope: 'https://www.googleapis.com/auth/youtube.readonly',
+              })}
             >
               Login with YouTube
             </Button>
@@ -93,7 +91,7 @@ const Home: FunctionalComponent<Props> = ({ accessToken, requireAuth }) => {
           <Button
             as="a"
             key={artist.id}
-            href={`/${artist.id}`}
+            href={`/${artist.id}${window.location.search}${window.location.hash}`}
             class="w-full block text-center mb-4 text-xl"
           >
             {artist.name}

@@ -6,6 +6,7 @@ import * as selectors from '../machine/selectors'
 import Player from '../components/player'
 import fetchData from '../lib/api'
 import * as debugService from '../lib/useDebugService'
+import { parseQs } from '../lib/url'
 import {
   ArtistId,
   Videos,
@@ -21,6 +22,7 @@ interface Props {
   accessToken?: AccessToken
 }
 
+const { media } = parseQs(window.location.search)
 const hash = window.location.hash.slice(1)
 const upNext: TrackId[] = hash ? (hash.split(',') as TrackId[]) : []
 
@@ -33,7 +35,9 @@ const Artist: FunctionalComponent<Props> = ({ artist, accessToken }) => {
   const [meta, setMeta] = useState<ArtistMeta | undefined>(undefined)
   const [state, send, service] = useMachine(playerMachine)
 
-  debugService.useService(service)
+  debugService.useService(service, (s) =>
+    `${s.value} ${s.actions.map(({ type }) => type).join(',')}`.trim()
+  )
 
   useEffect(() => {
     send('FETCH_START')
@@ -65,7 +69,7 @@ const Artist: FunctionalComponent<Props> = ({ artist, accessToken }) => {
 
   return (
     <div class="max-w-screen-c c:border-l c:border-r border-r-0 border-l-0 mx-auto border-gray-600 relative">
-      <Player state={state} send={send} videos={videos}>
+      <Player state={state} send={send} videos={videos} media={media}>
         {state.matches('idle') || state.matches('loading')
           ? 'Loading...'
           : state.matches('error')

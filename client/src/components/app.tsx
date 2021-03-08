@@ -5,7 +5,7 @@ import Home from '../routes/home'
 import Privacy from '../routes/privacy'
 import Logout from '../routes/logout'
 import artists from '../../artists.json'
-import * as qs from '../lib/searchParams'
+import { parseQs } from '../lib/url'
 import { AccessToken } from '../types'
 
 type LSAccessToken = AccessToken | undefined
@@ -16,7 +16,7 @@ if ((module as any).hot) {
 }
 
 const getAccessToken = (): LSAccessToken => {
-  const params = qs.parse(location.hash.substring(1))
+  const params = parseQs(location.hash.substring(1))
 
   if (params.access_token) {
     location.hash = ''

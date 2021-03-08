@@ -1,0 +1,9 @@
+// see https://github.com/typescript-eslint/typescript-eslint/issues/890
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true
+  },
+  "include": ["**/*.ts", "**/*.js", "./.*.js"]
+}

@@ -3,1726 +3,1315 @@
     "title": "Ben Gibbard: Live From Home",
     "description": ""
   },
-  "videos": {
-    "items": [
-      {
-        "contentDetails": {
-          "duration": 3311
-        },
-        "id": "gc2DILv7U00",
-        "kind": "youtube#video",
-        "snippet": {
-          "channelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "channelTitle": "Death Cab for Cutie",
-          "description": "Hey all, \n\nTomorrow’s Live From Home will be my last weekly show, tune in at 4pm PT!\n\nThe livestream is in benefit of Northwest Film Forum (https://nwfilmforum.org), a Seattle non-profit that offers educational workshops + artist services for media makers of all skill levels as well as presents hundreds of films, community events, performances, and public discussions each year. If you’re able, please donate via our Venmo @BenGibbardLiveFromHome this week as all the Venmo donations will be matched and increased 3 to 1 by an anonymous donor – all donations will go to Northwest Film Forum.⁣\n\nDon’t miss it. \n\nxo\nBen\n\n#StayAtHome #WithMe",
-          "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "publishedAt": "2020-05-28T00:50:06.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "gc2DILv7U00"
+  "videos": [
+    {
+      "contentDetails": {
+        "duration": 3311
+      },
+      "id": "gc2DILv7U00",
+      "snippet": {
+        "title": "Ben Gibbard: Live From Home (5/28/20)",
+        "description": "Hey all, \n\nTomorrow’s Live From Home will be my last weekly show, tune in at 4pm PT!\n\nThe livestream is in benefit of Northwest Film Forum (https://nwfilmforum.org), a Seattle non-profit that offers educational workshops + artist services for media makers of all skill levels as well as presents hundreds of films, community events, performances, and public discussions each year. If you’re able, please donate via our Venmo @BenGibbardLiveFromHome this week as all the Venmo donations will be matched and increased 3 to 1 by an anonymous donor – all donations will go to Northwest Film Forum.⁣\n\nDon’t miss it. \n\nxo\nBen\n\n#StayAtHome #WithMe",
+        "publishedAt": "2020-05-29T00:02:14Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/gc2DILv7U00/default.jpg",
+            "width": 120,
+            "height": 90
           },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/gc2DILv7U00/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/gc2DILv7U00/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/gc2DILv7U00/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/gc2DILv7U00/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/gc2DILv7U00/sddefault.jpg",
-              "width": 640
-            }
+          "medium": {
+            "url": "https://i.ytimg.com/vi/gc2DILv7U00/mqdefault.jpg",
+            "width": 320,
+            "height": 180
           },
-          "title": "Ben Gibbard: Live From Home (5/28/20)",
-          "videoOwnerChannelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "videoOwnerChannelTitle": "Death Cab for Cutie"
-        },
-        "comments": {
-          "items": [
-            {
-              "id": "UgzVDGRAnTS78hbau-14AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "UgzVDGRAnTS78hbau-14AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-05-29T00:01:07.000Z",
-                    "textDisplay": "00:14 St Peter's Cathedral\r\n04:06 Expo '86\r\n09:45 Brothers on a Hotel Bed\r\n15:03 Your Bruise\r\n19:51 No Room in Frame\r\n23:11 (Q & A)\r\n31:32 This Place is a Prison [The Postal Service]\r\n34:50 Champagne from a Paper Cup\r\n39:01 Proxima B\r\n43:28 (NW Film Forum charity shout out)\r\n46:39 405\r\n51:55 All is Full of Love [Bjork cover]",
-                    "textOriginal": "00:14 St Peter's Cathedral\r\n04:06 Expo '86\r\n09:45 Brothers on a Hotel Bed\r\n15:03 Your Bruise\r\n19:51 No Room in Frame\r\n23:11 (Q & A)\r\n31:32 This Place is a Prison [The Postal Service]\r\n34:50 Champagne from a Paper Cup\r\n39:01 Proxima B\r\n43:28 (NW Film Forum charity shout out)\r\n46:39 405\r\n51:55 All is Full of Love [Bjork cover]",
-                    "updatedAt": "2020-05-29T00:01:07.000Z",
-                    "videoId": "gc2DILv7U00",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "gc2DILv7U00"
-              }
-            }
-          ],
-          "kind": "youtube#commentThreadListResponse"
+          "high": {
+            "url": "https://i.ytimg.com/vi/gc2DILv7U00/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/gc2DILv7U00/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/gc2DILv7U00/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
         }
       },
-      {
-        "contentDetails": {
-          "duration": 2725
-        },
-        "id": "6oSWsxVg4GM",
-        "kind": "youtube#video",
-        "snippet": {
-          "channelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "channelTitle": "Death Cab for Cutie",
-          "description": "Hey everyone, \n\nLooking forward to playing this Thursday’s Live From Home show at 4pm PT! Let me know any song requests ASAP.\n\nThis week’s livestream is in benefit of Community Lunch, a non-profit that provides hot, nutritious meals and survival services to those experiencing homelessness and low-income people in Seattle. If you’re able, please donate via https://www.communitylunch.org or our Venmo @BenGibbardLiveFromHome – all donations will go to Community Lunch.\n\nThis will be my second to last weekly show before we move to something a little less frequent after the month of May. \n\nxo\nBen\n\n#StayAtHome #WithMe",
-          "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "publishedAt": "2020-05-21T23:49:44.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "6oSWsxVg4GM"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/6oSWsxVg4GM/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/6oSWsxVg4GM/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/6oSWsxVg4GM/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/6oSWsxVg4GM/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/6oSWsxVg4GM/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Ben Gibbard: Live From Home (5/21/20)",
-          "videoOwnerChannelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "videoOwnerChannelTitle": "Death Cab for Cutie"
-        },
-        "comments": {
-          "items": [
-            {
-              "id": "Ugzwo9uPLFWRc6z9TQl4AaABAg",
-              "kind": "youtube#commentThread",
+      "comments": [
+        {
+          "id": "UgzVDGRAnTS78hbau-14AaABAg",
+          "snippet": {
+            "videoId": "gc2DILv7U00",
+            "topLevelComment": {
               "snippet": {
-                "topLevelComment": {
-                  "id": "Ugzwo9uPLFWRc6z9TQl4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-05-22T03:07:33.000Z",
-                    "textDisplay": "00:21 Sleep Spent\n03:19 Teardrop Windows\n08:00 When the Sun Goes Down\n11:11 Title and Registration\n16:09 Photobooth\n19:40 Q&A\n27:40 A Lack of Color\n31:35 h/t to Community Lunch\n32:45 Don’t Stop Now [Guided by Voices cover]\n35:56 Brand New Colony [The Postal Service]\n41:45 It’s Never Too Late",
-                    "textOriginal": "00:21 Sleep Spent\n03:19 Teardrop Windows\n08:00 When the Sun Goes Down\n11:11 Title and Registration\n16:09 Photobooth\n19:40 Q&A\n27:40 A Lack of Color\n31:35 h/t to Community Lunch\n32:45 Don’t Stop Now [Guided by Voices cover]\n35:56 Brand New Colony [The Postal Service]\n41:45 It’s Never Too Late",
-                    "updatedAt": "2020-05-22T03:07:33.000Z",
-                    "videoId": "6oSWsxVg4GM",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "6oSWsxVg4GM"
+                "textDisplay": "00:14 St Peter's Cathedral\r\n04:06 Expo '86\r\n09:45 Brothers on a Hotel Bed\r\n15:03 Your Bruise\r\n19:51 No Room in Frame\r\n23:11 (Q & A)\r\n31:32 This Place is a Prison [The Postal Service]\r\n34:50 Champagne from a Paper Cup\r\n39:01 Proxima B\r\n43:28 (NW Film Forum charity shout out)\r\n46:39 405\r\n51:55 All is Full of Love [Bjork cover]",
+                "publishedAt": "2020-05-29T00:01:07.000Z",
+                "updatedAt": "2020-05-29T00:01:07.000Z"
               }
             }
-          ],
-          "kind": "youtube#commentThreadListResponse"
+          }
+        }
+      ]
+    },
+    {
+      "contentDetails": {
+        "duration": 2725
+      },
+      "id": "6oSWsxVg4GM",
+      "snippet": {
+        "title": "Ben Gibbard: Live From Home (5/21/20)",
+        "description": "Hey everyone, \n\nLooking forward to playing this Thursday’s Live From Home show at 4pm PT! Let me know any song requests ASAP.\n\nThis week’s livestream is in benefit of Community Lunch, a non-profit that provides hot, nutritious meals and survival services to those experiencing homelessness and low-income people in Seattle. If you’re able, please donate via https://www.communitylunch.org or our Venmo @BenGibbardLiveFromHome – all donations will go to Community Lunch.\n\nThis will be my second to last weekly show before we move to something a little less frequent after the month of May. \n\nxo\nBen\n\n#StayAtHome #WithMe",
+        "publishedAt": "2020-05-21T23:50:47Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/6oSWsxVg4GM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/6oSWsxVg4GM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/6oSWsxVg4GM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/6oSWsxVg4GM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/6oSWsxVg4GM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
         }
       },
-      {
-        "contentDetails": {
-          "duration": 2958
-        },
-        "id": "luI-P_uit14",
-        "kind": "youtube#video",
-        "snippet": {
-          "channelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "channelTitle": "Death Cab for Cutie",
-          "description": "What’s up y’all,\n\nTomorrow’s Live From Home will be a First / Last show; all tunes that are either the first or last on any album I’ve ever made.\n\nGet those requests in!\n\n4pm PDT\n\nThis week’s livestream is in benefit of ArtsFund, a Seattle-based non-profit providing relief grants to arts organizations to help them maintain essential functions and retain core staff throughout the current public health crisis. If you’re able, please donate via http://artsfund.org or our Venmo @BenGibbardLiveFromHome – all donations go to ArtsFund.\n\nSee you then!\n\nxo\nBen\n\n#StayAtHome #WithMe",
-          "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "publishedAt": "2020-05-15T00:06:45.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "luI-P_uit14"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/luI-P_uit14/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/luI-P_uit14/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/luI-P_uit14/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/luI-P_uit14/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/luI-P_uit14/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Ben Gibbard: Live From Home (5/14/20)",
-          "videoOwnerChannelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "videoOwnerChannelTitle": "Death Cab for Cutie"
-        },
-        "comments": {
-          "items": [
-            {
-              "id": "UgwKLXMkvUcVCTpwewp4AaABAg",
-              "kind": "youtube#commentThread",
+      "comments": [
+        {
+          "id": "Ugzwo9uPLFWRc6z9TQl4AaABAg",
+          "snippet": {
+            "videoId": "6oSWsxVg4GM",
+            "topLevelComment": {
               "snippet": {
-                "topLevelComment": {
-                  "id": "UgwKLXMkvUcVCTpwewp4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-05-15T00:05:08.000Z",
-                    "textDisplay": "00:38 Blue Bloods\r\n04:25 Little Bribes\r\n08:21 Bend to Squares\r\n13:50 Natural Anthem [The Postal Service]\r\n16:48 Send Packing [¡All-Time Quarterback!]\r\n20:49 No Room in Frame\r\n24:31 (Q & A)\r\n31:05 California Zephyr\r\n33:23 Title Track\r\n37:13 (ArtsFund charity shout out)\r\n40:10 60 & Punk\r\n45:59 Marching Bands of Manhattan",
-                    "textOriginal": "00:38 Blue Bloods\r\n04:25 Little Bribes\r\n08:21 Bend to Squares\r\n13:50 Natural Anthem [The Postal Service]\r\n16:48 Send Packing [¡All-Time Quarterback!]\r\n20:49 No Room in Frame\r\n24:31 (Q & A)\r\n31:05 California Zephyr\r\n33:23 Title Track\r\n37:13 (ArtsFund charity shout out)\r\n40:10 60 & Punk\r\n45:59 Marching Bands of Manhattan",
-                    "updatedAt": "2020-05-15T00:05:08.000Z",
-                    "videoId": "luI-P_uit14",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "luI-P_uit14"
+                "textDisplay": "00:21 Sleep Spent\n03:19 Teardrop Windows\n08:00 When the Sun Goes Down\n11:11 Title and Registration\n16:09 Photobooth\n19:40 Q&A\n27:40 A Lack of Color\n31:35 h/t to Community Lunch\n32:45 Don’t Stop Now [Guided by Voices cover]\n35:56 Brand New Colony [The Postal Service]\n41:45 It’s Never Too Late",
+                "publishedAt": "2020-05-22T03:07:33.000Z",
+                "updatedAt": "2020-05-22T03:07:33.000Z"
               }
             }
-          ],
-          "kind": "youtube#commentThreadListResponse"
+          }
+        }
+      ]
+    },
+    {
+      "contentDetails": {
+        "duration": 2958
+      },
+      "id": "luI-P_uit14",
+      "snippet": {
+        "title": "Ben Gibbard: Live From Home (5/14/20)",
+        "description": "What’s up y’all,\n\nTomorrow’s Live From Home will be a First / Last show; all tunes that are either the first or last on any album I’ve ever made.\n\nGet those requests in!\n\n4pm PDT\n\nThis week’s livestream is in benefit of ArtsFund, a Seattle-based non-profit providing relief grants to arts organizations to help them maintain essential functions and retain core staff throughout the current public health crisis. If you’re able, please donate via http://artsfund.org or our Venmo @BenGibbardLiveFromHome – all donations go to ArtsFund.\n\nSee you then!\n\nxo\nBen\n\n#StayAtHome #WithMe",
+        "publishedAt": "2020-05-14T23:54:35Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/luI-P_uit14/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/luI-P_uit14/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/luI-P_uit14/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/luI-P_uit14/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/luI-P_uit14/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
         }
       },
-      {
-        "contentDetails": {
-          "duration": 2401
-        },
-        "id": "hfLEvRY1kcA",
-        "kind": "youtube#video",
-        "snippet": {
-          "channelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "channelTitle": "Death Cab for Cutie",
-          "description": "Hey everyone, \n\nFor this Thursday’s 4pm PT Live From Home show, I'll be playing an all-Beatles cover set! \n\nThis week’s livestream is in benefit of Seattle-based non-profit Amara, who help serve children in foster care and the families who care for them. If you’re able, please donate via https://amaraputskidsfirst.org or our Venmo @BenGibbardLiveFromHome – all donations will go to Amara.\n\nxo\nBen\n\n#StayAtHome #WithMe",
-          "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "publishedAt": "2020-05-07T23:46:01.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "hfLEvRY1kcA"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/hfLEvRY1kcA/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/hfLEvRY1kcA/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/hfLEvRY1kcA/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/hfLEvRY1kcA/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/hfLEvRY1kcA/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Ben Gibbard: Live From Home (5/7/20)",
-          "videoOwnerChannelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "videoOwnerChannelTitle": "Death Cab for Cutie"
-        },
-        "comments": {
-          "items": [
-            {
-              "id": "Ugza_OvlzgqIl47Ig5R4AaABAg",
-              "kind": "youtube#commentThread",
+      "comments": [
+        {
+          "id": "UgwKLXMkvUcVCTpwewp4AaABAg",
+          "snippet": {
+            "videoId": "luI-P_uit14",
+            "topLevelComment": {
               "snippet": {
-                "topLevelComment": {
-                  "id": "Ugza_OvlzgqIl47Ig5R4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-05-07T23:52:02.000Z",
-                    "textDisplay": "00:16 I'm So Tired [The Beatles cover]\r\n02:50 For No One [The Beatles cover]\r\n06:12 I'm Happy Just to Dance with You [The Beatles cover]\r\n10:14 Here, There, and Everywhere [The Beatles cover]\r\n13:50 I'm Only Sleeping [The Beatles cover]\r\n16:59 (Q & A)\r\n23:19 You Won't See Me [The Beatles cover]\r\n27:58 I Will [The Beatles cover]\r\n31:48 (Amara charity shout out)\r\n33:01 I'm Looking Through You [The Beatles cover]\r\n37:14 In My Life [The Beatles cover]",
-                    "textOriginal": "00:16 I'm So Tired [The Beatles cover]\r\n02:50 For No One [The Beatles cover]\r\n06:12 I'm Happy Just to Dance with You [The Beatles cover]\r\n10:14 Here, There, and Everywhere [The Beatles cover]\r\n13:50 I'm Only Sleeping [The Beatles cover]\r\n16:59 (Q & A)\r\n23:19 You Won't See Me [The Beatles cover]\r\n27:58 I Will [The Beatles cover]\r\n31:48 (Amara charity shout out)\r\n33:01 I'm Looking Through You [The Beatles cover]\r\n37:14 In My Life [The Beatles cover]",
-                    "updatedAt": "2020-05-07T23:58:26.000Z",
-                    "videoId": "hfLEvRY1kcA",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "hfLEvRY1kcA"
+                "textDisplay": "00:38 Blue Bloods\r\n04:25 Little Bribes\r\n08:21 Bend to Squares\r\n13:50 Natural Anthem [The Postal Service]\r\n16:48 Send Packing [¡All-Time Quarterback!]\r\n20:49 No Room in Frame\r\n24:31 (Q & A)\r\n31:05 California Zephyr\r\n33:23 Title Track\r\n37:13 (ArtsFund charity shout out)\r\n40:10 60 & Punk\r\n45:59 Marching Bands of Manhattan",
+                "publishedAt": "2020-05-15T00:05:08.000Z",
+                "updatedAt": "2020-05-15T00:05:08.000Z"
               }
             }
-          ],
-          "kind": "youtube#commentThreadListResponse"
+          }
+        }
+      ]
+    },
+    {
+      "contentDetails": {
+        "duration": 2401
+      },
+      "id": "hfLEvRY1kcA",
+      "snippet": {
+        "title": "Ben Gibbard: Live From Home (5/7/20)",
+        "description": "Hey everyone, \n\nFor this Thursday’s 4pm PT Live From Home show, I'll be playing an all-Beatles cover set! \n\nThis week’s livestream is in benefit of Seattle-based non-profit Amara, who help serve children in foster care and the families who care for them. If you’re able, please donate via https://amaraputskidsfirst.org or our Venmo @BenGibbardLiveFromHome – all donations will go to Amara.\n\nxo\nBen\n\n#StayAtHome #WithMe",
+        "publishedAt": "2020-05-07T23:44:15Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/hfLEvRY1kcA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/hfLEvRY1kcA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/hfLEvRY1kcA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/hfLEvRY1kcA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/hfLEvRY1kcA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
         }
       },
-      {
-        "contentDetails": {
-          "duration": 2952
-        },
-        "id": "QQ15BaDEo0Q",
-        "kind": "youtube#video",
-        "snippet": {
-          "channelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "channelTitle": "Death Cab for Cutie",
-          "description": "Hey y’all, \n\nMy next Live From Home show is this Thursday at 4pm PT.\n\nThis week’s livestream will be in benefit of Seattle's Hunger Intervention Program, a non-profit that is helping make sure food gets on the table for people in need during this time. If you’re able, please donate via http://hungerintervention.org or our Venmo @BenGibbardLiveFromHome – all donations will go to the Hunger Intervention Program.\n⁣⁣\nLet me know what songs you want to hear. \n\nSee you then!\n\nxo\nBen\n\n#StayAtHome #WithMe",
-          "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "publishedAt": "2020-05-01T00:18:26.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "QQ15BaDEo0Q"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/QQ15BaDEo0Q/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/QQ15BaDEo0Q/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/QQ15BaDEo0Q/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/QQ15BaDEo0Q/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/QQ15BaDEo0Q/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Ben Gibbard: Live From Home (4/30/20)",
-          "videoOwnerChannelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "videoOwnerChannelTitle": "Death Cab for Cutie"
-        },
-        "comments": {
-          "items": [
-            {
-              "id": "Ugz9MqOhywdpaqXkF4B4AaABAg",
-              "kind": "youtube#commentThread",
+      "comments": [
+        {
+          "id": "Ugza_OvlzgqIl47Ig5R4AaABAg",
+          "snippet": {
+            "videoId": "hfLEvRY1kcA",
+            "topLevelComment": {
               "snippet": {
-                "topLevelComment": {
-                  "id": "Ugz9MqOhywdpaqXkF4B4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-05-01T00:05:34.000Z",
-                    "textDisplay": "00:27 Monday Morning \r\n05:08 The District Sleeps Alone Tonight\r\n10:06 Your Hurricane\r\n14:51 Jealousy Rides With Me\r\n17:26 (Q & A)\r\n25:33 Life in Quarantine\r\n29:34 You've Haunted Me All My Life\r\n34:50 Someday You Will Be Loved \r\n39:39 The Things You Said [Depeche Mode cover]\r\n44:50 I Will Follow You into the Dark",
-                    "textOriginal": "00:27 Monday Morning \r\n05:08 The District Sleeps Alone Tonight\r\n10:06 Your Hurricane\r\n14:51 Jealousy Rides With Me\r\n17:26 (Q & A)\r\n25:33 Life in Quarantine\r\n29:34 You've Haunted Me All My Life\r\n34:50 Someday You Will Be Loved \r\n39:39 The Things You Said [Depeche Mode cover]\r\n44:50 I Will Follow You into the Dark",
-                    "updatedAt": "2020-05-01T03:10:21.000Z",
-                    "videoId": "QQ15BaDEo0Q",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "QQ15BaDEo0Q"
+                "textDisplay": "00:16 I'm So Tired [The Beatles cover]\r\n02:50 For No One [The Beatles cover]\r\n06:12 I'm Happy Just to Dance with You [The Beatles cover]\r\n10:14 Here, There, and Everywhere [The Beatles cover]\r\n13:50 I'm Only Sleeping [The Beatles cover]\r\n16:59 (Q & A)\r\n23:19 You Won't See Me [The Beatles cover]\r\n27:58 I Will [The Beatles cover]\r\n31:48 (Amara charity shout out)\r\n33:01 I'm Looking Through You [The Beatles cover]\r\n37:14 In My Life [The Beatles cover]",
+                "publishedAt": "2020-05-07T23:52:02.000Z",
+                "updatedAt": "2020-05-07T23:58:26.000Z"
               }
             }
-          ],
-          "kind": "youtube#commentThreadListResponse"
+          }
+        }
+      ]
+    },
+    {
+      "contentDetails": {
+        "duration": 2952
+      },
+      "id": "QQ15BaDEo0Q",
+      "snippet": {
+        "title": "Ben Gibbard: Live From Home (4/30/20)",
+        "description": "Hey y’all, \n\nMy next Live From Home show is this Thursday at 4pm PT.\n\nThis week’s livestream will be in benefit of Seattle's Hunger Intervention Program, a non-profit that is helping make sure food gets on the table for people in need during this time. If you’re able, please donate via http://hungerintervention.org or our Venmo @BenGibbardLiveFromHome – all donations will go to the Hunger Intervention Program.\n⁣⁣\nLet me know what songs you want to hear. \n\nSee you then!\n\nxo\nBen\n\n#StayAtHome #WithMe",
+        "publishedAt": "2020-04-30T23:54:57Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/QQ15BaDEo0Q/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/QQ15BaDEo0Q/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/QQ15BaDEo0Q/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/QQ15BaDEo0Q/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/QQ15BaDEo0Q/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
         }
       },
-      {
-        "contentDetails": {
-          "duration": 3069
-        },
-        "id": "T58oySghwLk",
-        "kind": "youtube#video",
-        "snippet": {
-          "channelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "channelTitle": "Death Cab for Cutie",
-          "description": "Hey everyone, \n\nTune into my next Live From Home show tomorrow 4/23 at 4pm PT. It will be an all-piano set.\n\nThis week’s livestream is in benefit of Seattle-based non-profit LANGSTON’s GoFundMe for the Seattle Artist Relief Fund Amid COVID-19 which will help creatives in need during this time. If you’re able, please donate via https://www.gofundme.com/f/for-artists or our Venmo @BenGibbardLiveFromHome – all donations will go to the Seattle Artist Relief Fund Amid COVID-19. \n\nSend in any song requests ASAP!\n\nSee you tomorrow. \n\nxo\nBen\n\n#StayAtHome #WithMe",
-          "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "publishedAt": "2020-04-23T23:54:53.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "T58oySghwLk"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/T58oySghwLk/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/T58oySghwLk/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/T58oySghwLk/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/T58oySghwLk/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/T58oySghwLk/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Ben Gibbard: Live From Home (4/23/20)",
-          "videoOwnerChannelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "videoOwnerChannelTitle": "Death Cab for Cutie"
-        },
-        "comments": {
-          "items": [
-            {
-              "id": "UgxqBZ7gR-19kWQ2PXV4AaABAg",
-              "kind": "youtube#commentThread",
+      "comments": [
+        {
+          "id": "Ugz9MqOhywdpaqXkF4B4AaABAg",
+          "snippet": {
+            "videoId": "QQ15BaDEo0Q",
+            "topLevelComment": {
               "snippet": {
-                "topLevelComment": {
-                  "id": "UgxqBZ7gR-19kWQ2PXV4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-04-24T00:10:59.000Z",
-                    "textDisplay": "00:21 Unobstructed Views\r\n05:17 Passenger Seat\r\n10:25 The Ice Is Getting Thinner\r\n15:07 Tulsa Telephone Book\r [Tom T. Hall cover]\n18:21 (Q & A)\r\n24:26 Binary Sea\r\n28:22 What Sarah Said\r\n33:57 Proxima B\r\n39:03 All Apologies [Nirvana cover]\r\n42:34 (Seattle Artist Relief Fund Amid COVID-19 charity shout out)\r\n44:08 Blacking Out the Friction\r\n47:32 Soul Meets Body",
-                    "textOriginal": "00:21 Unobstructed Views\r\n05:17 Passenger Seat\r\n10:25 The Ice Is Getting Thinner\r\n15:07 Tulsa Telephone Book\r [Tom T. Hall cover]\n18:21 (Q & A)\r\n24:26 Binary Sea\r\n28:22 What Sarah Said\r\n33:57 Proxima B\r\n39:03 All Apologies [Nirvana cover]\r\n42:34 (Seattle Artist Relief Fund Amid COVID-19 charity shout out)\r\n44:08 Blacking Out the Friction\r\n47:32 Soul Meets Body",
-                    "updatedAt": "2020-04-24T00:23:19.000Z",
-                    "videoId": "T58oySghwLk",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "T58oySghwLk"
+                "textDisplay": "00:27 Monday Morning \r\n05:08 The District Sleeps Alone Tonight\r\n10:06 Your Hurricane\r\n14:51 Jealousy Rides With Me\r\n17:26 (Q & A)\r\n25:33 Life in Quarantine\r\n29:34 You've Haunted Me All My Life\r\n34:50 Someday You Will Be Loved \r\n39:39 The Things You Said [Depeche Mode cover]\r\n44:50 I Will Follow You into the Dark",
+                "publishedAt": "2020-05-01T00:05:34.000Z",
+                "updatedAt": "2020-05-01T03:10:21.000Z"
               }
             }
-          ],
-          "kind": "youtube#commentThreadListResponse"
+          }
+        }
+      ]
+    },
+    {
+      "contentDetails": {
+        "duration": 3069
+      },
+      "id": "T58oySghwLk",
+      "snippet": {
+        "title": "Ben Gibbard: Live From Home (4/23/20)",
+        "description": "Hey everyone, \n\nTune into my next Live From Home show tomorrow 4/23 at 4pm PT. It will be an all-piano set.\n\nThis week’s livestream is in benefit of Seattle-based non-profit LANGSTON’s GoFundMe for the Seattle Artist Relief Fund Amid COVID-19 which will help creatives in need during this time. If you’re able, please donate via https://www.gofundme.com/f/for-artists or our Venmo @BenGibbardLiveFromHome – all donations will go to the Seattle Artist Relief Fund Amid COVID-19. \n\nSend in any song requests ASAP!\n\nSee you tomorrow. \n\nxo\nBen\n\n#StayAtHome #WithMe",
+        "publishedAt": "2020-04-24T11:55:34Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/T58oySghwLk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/T58oySghwLk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/T58oySghwLk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/T58oySghwLk/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/T58oySghwLk/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
         }
       },
-      {
-        "contentDetails": {
-          "duration": 2933
-        },
-        "id": "Z3BiBB0W1Eo",
-        "kind": "youtube#video",
-        "snippet": {
-          "channelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "channelTitle": "Death Cab for Cutie",
-          "description": "Hey y’all, \n\nI’m baaaaaaaack for another installment of Live From Home, tomorrow (Thursday) at 4pm PT. Get those requests in ASAP!\n\nTomorrow’s show will be a benefit for one of my fav’s, Teen Feed who are helping support homeless and at-risk youth during these difficult times. If you’re able, please donate via http://www.teenfeed.org or our Venmo @BenGibbardLiveFromHome – all donations will go directly to Teen Feed. \n\nxo\nBen\n\n#StayAtHome #WithMe",
-          "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "publishedAt": "2020-04-17T01:20:06.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "Z3BiBB0W1Eo"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/Z3BiBB0W1Eo/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/Z3BiBB0W1Eo/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/Z3BiBB0W1Eo/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/Z3BiBB0W1Eo/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/Z3BiBB0W1Eo/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Ben Gibbard: Live From Home (4/16/20)",
-          "videoOwnerChannelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "videoOwnerChannelTitle": "Death Cab for Cutie"
-        },
-        "comments": {
-          "items": [
-            {
-              "id": "UgxNYU6vFCjeZEG2q2V4AaABAg",
-              "kind": "youtube#commentThread",
+      "comments": [
+        {
+          "id": "UgxqBZ7gR-19kWQ2PXV4AaABAg",
+          "snippet": {
+            "videoId": "T58oySghwLk",
+            "topLevelComment": {
               "snippet": {
-                "topLevelComment": {
-                  "id": "UgxNYU6vFCjeZEG2q2V4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-04-16T23:54:36.000Z",
-                    "textDisplay": "00:33 Your Heart is an Empty Room\r\n04:13 Autumn Love\r\n08:43 Styrofoam Plates\r\n13:49 Willamine \r\n18:21 (Q & A)\r\n25:40 Man In Blue\r\n30:28 Grapevine Fires\r\n37:23 Photobooth\r\n42:27 A Movie Script Ending\r\n46:23 Don't Cry No Tears [Neil Young cover]",
-                    "textOriginal": "00:33 Your Heart is an Empty Room\r\n04:13 Autumn Love\r\n08:43 Styrofoam Plates\r\n13:49 Willamine \r\n18:21 (Q & A)\r\n25:40 Man In Blue\r\n30:28 Grapevine Fires\r\n37:23 Photobooth\r\n42:27 A Movie Script Ending\r\n46:23 Don't Cry No Tears [Neil Young cover]",
-                    "updatedAt": "2020-04-16T23:56:10.000Z",
-                    "videoId": "Z3BiBB0W1Eo",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "Z3BiBB0W1Eo"
+                "textDisplay": "00:21 Unobstructed Views\r\n05:17 Passenger Seat\r\n10:25 The Ice Is Getting Thinner\r\n15:07 Tulsa Telephone Book\r [Tom T. Hall cover]\n18:21 (Q & A)\r\n24:26 Binary Sea\r\n28:22 What Sarah Said\r\n33:57 Proxima B\r\n39:03 All Apologies [Nirvana cover]\r\n42:34 (Seattle Artist Relief Fund Amid COVID-19 charity shout out)\r\n44:08 Blacking Out the Friction\r\n47:32 Soul Meets Body",
+                "publishedAt": "2020-04-24T00:10:59.000Z",
+                "updatedAt": "2020-04-24T00:23:19.000Z"
               }
             }
-          ],
-          "kind": "youtube#commentThreadListResponse"
+          }
+        }
+      ]
+    },
+    {
+      "contentDetails": {
+        "duration": 2933
+      },
+      "id": "Z3BiBB0W1Eo",
+      "snippet": {
+        "title": "Ben Gibbard: Live From Home (4/16/20)",
+        "description": "Hey y’all, \n\nI’m baaaaaaaack for another installment of Live From Home, tomorrow (Thursday) at 4pm PT. Get those requests in ASAP!\n\nTomorrow’s show will be a benefit for one of my fav’s, Teen Feed who are helping support homeless and at-risk youth during these difficult times. If you’re able, please donate via http://www.teenfeed.org or our Venmo @BenGibbardLiveFromHome – all donations will go directly to Teen Feed. \n\nxo\nBen\n\n#StayAtHome #WithMe",
+        "publishedAt": "2020-04-17T11:53:45Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Z3BiBB0W1Eo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Z3BiBB0W1Eo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Z3BiBB0W1Eo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/Z3BiBB0W1Eo/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/Z3BiBB0W1Eo/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
         }
       },
-      {
-        "contentDetails": {
-          "duration": 3679
-        },
-        "id": "SrmFQa_iByw",
-        "kind": "youtube#video",
-        "snippet": {
-          "channelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "channelTitle": "Death Cab for Cutie",
-          "description": "Hey y'all, \n\nIn recognition of the 20th anniversary, tomorrow’s Live From Home will be a deep dive on 'We Have the Facts and We’re Voting Yes'. I’ll be giving the background and playing songs from this album exclusively. \n\nGet your questions ready!\n\nAlso, we’re moving back to 4pm PT. \n\nThe show will be a benefit for SMASH, a wonderful organization here in Seattle that helps local musicians access health care. If you’re able, please donate via https://smashseattle.org or our Venmo @BenGibbardLiveFromHome – all donations will go directly to SMASH. \n\nSee you guys tomorrow!\n\nxo\n\nBen\n\n#StayAtHome #WithMe",
-          "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "publishedAt": "2020-04-10T00:05:15.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "SrmFQa_iByw"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/SrmFQa_iByw/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/SrmFQa_iByw/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/SrmFQa_iByw/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/SrmFQa_iByw/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/SrmFQa_iByw/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Ben Gibbard: Live From Home (4/9/20)",
-          "videoOwnerChannelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "videoOwnerChannelTitle": "Death Cab for Cutie"
-        },
-        "comments": {
-          "items": [
-            {
-              "id": "UgxQuS9Btr2wpO4cN0R4AaABAg",
-              "kind": "youtube#commentThread",
+      "comments": [
+        {
+          "id": "UgxNYU6vFCjeZEG2q2V4AaABAg",
+          "snippet": {
+            "videoId": "Z3BiBB0W1Eo",
+            "topLevelComment": {
               "snippet": {
-                "topLevelComment": {
-                  "id": "UgxQuS9Btr2wpO4cN0R4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-04-10T00:07:45.000Z",
-                    "textDisplay": "00:26 Title Track\r\n05:14 Employment Pages\r\n09:51 For What Reason\r\n13:53 Lowell, MA\r\n17:09 (Q & A #1)\r\n23:48 405\r\n28:15 Little Fury Bugs\r\n32:46 Company Calls\r\n37:54 Company Calls Epilogue\r\n43:16 (Q & A #2)\r\n51:03 No Joy in Mudville\r\n57:34 Scientist Studies",
-                    "textOriginal": "00:26 Title Track\r\n05:14 Employment Pages\r\n09:51 For What Reason\r\n13:53 Lowell, MA\r\n17:09 (Q & A #1)\r\n23:48 405\r\n28:15 Little Fury Bugs\r\n32:46 Company Calls\r\n37:54 Company Calls Epilogue\r\n43:16 (Q & A #2)\r\n51:03 No Joy in Mudville\r\n57:34 Scientist Studies",
-                    "updatedAt": "2020-04-10T00:07:45.000Z",
-                    "videoId": "SrmFQa_iByw",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "SrmFQa_iByw"
+                "textDisplay": "00:33 Your Heart is an Empty Room\r\n04:13 Autumn Love\r\n08:43 Styrofoam Plates\r\n13:49 Willamine \r\n18:21 (Q & A)\r\n25:40 Man In Blue\r\n30:28 Grapevine Fires\r\n37:23 Photobooth\r\n42:27 A Movie Script Ending\r\n46:23 Don't Cry No Tears [Neil Young cover]",
+                "publishedAt": "2020-04-16T23:54:36.000Z",
+                "updatedAt": "2020-04-16T23:56:10.000Z"
               }
             }
-          ],
-          "kind": "youtube#commentThreadListResponse"
+          }
+        }
+      ]
+    },
+    {
+      "contentDetails": {
+        "duration": 3679
+      },
+      "id": "SrmFQa_iByw",
+      "snippet": {
+        "title": "Ben Gibbard: Live From Home (4/9/20)",
+        "description": "Hey y'all, \n\nIn recognition of the 20th anniversary, tomorrow’s Live From Home will be a deep dive on 'We Have the Facts and We’re Voting Yes'. I’ll be giving the background and playing songs from this album exclusively. \n\nGet your questions ready!\n\nAlso, we’re moving back to 4pm PT. \n\nThe show will be a benefit for SMASH, a wonderful organization here in Seattle that helps local musicians access health care. If you’re able, please donate via https://smashseattle.org or our Venmo @BenGibbardLiveFromHome – all donations will go directly to SMASH. \n\nSee you guys tomorrow!\n\nxo\n\nBen\n\n#StayAtHome #WithMe",
+        "publishedAt": "2020-04-10T12:07:32Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/SrmFQa_iByw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/SrmFQa_iByw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/SrmFQa_iByw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/SrmFQa_iByw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/SrmFQa_iByw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
         }
       },
-      {
-        "contentDetails": {
-          "duration": 3052
-        },
-        "id": "s6oJjUvB9TA",
-        "kind": "youtube#video",
-        "snippet": {
-          "channelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "channelTitle": "Death Cab for Cutie",
-          "description": "The weekly Live From Home shows begin today at 6pm PT. Get your requests in! \n\nToday’s show will be a benefit for MusiCares, a non-profit that provides critical assistance for the music community in times of need. If you’re able, please donate via https://www.grammy.com/musicares or our Venmo @BenGibbardLiveFromHome – all donations will go directly to MusiCares. \n\nSee you soon!\n\nxo \n\nBen\n\n#StayAtHome #WithMe",
-          "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "publishedAt": "2020-04-03T02:13:01.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "s6oJjUvB9TA"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/s6oJjUvB9TA/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/s6oJjUvB9TA/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/s6oJjUvB9TA/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/s6oJjUvB9TA/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/s6oJjUvB9TA/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Ben Gibbard: Live From Home (4/2/20)",
-          "videoOwnerChannelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "videoOwnerChannelTitle": "Death Cab for Cutie"
-        },
-        "comments": {
-          "items": [
-            {
-              "id": "UgxF1EDv5ScoKhHXXQx4AaABAg",
-              "kind": "youtube#commentThread",
+      "comments": [
+        {
+          "id": "UgxQuS9Btr2wpO4cN0R4AaABAg",
+          "snippet": {
+            "videoId": "SrmFQa_iByw",
+            "topLevelComment": {
               "snippet": {
-                "topLevelComment": {
-                  "id": "UgxF1EDv5ScoKhHXXQx4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-04-03T02:20:51.000Z",
-                    "textDisplay": "0:24 - Lightness\n4:10 - Everything's A Ceiling\n9:02 - The Ghosts of Beverly Drive\n14:08 - A Hard One to Know\n16:15 - (Q&A)\n25:49 - When We Drive\n30:25 - Passenger Seat\n34:09 - (s/o to MusiCares)\n37:40 - Pictures in an Exhibition\n42:49 - Barbara H. (by Fountains of Wayne, tribute to Adam Schlesinger)\n47:20 - Song for Kelly Huckaby\n\nThanks Ben!",
-                    "textOriginal": "0:24 - Lightness\n4:10 - Everything's A Ceiling\n9:02 - The Ghosts of Beverly Drive\n14:08 - A Hard One to Know\n16:15 - (Q&A)\n25:49 - When We Drive\n30:25 - Passenger Seat\n34:09 - (s/o to MusiCares)\n37:40 - Pictures in an Exhibition\n42:49 - Barbara H. (by Fountains of Wayne, tribute to Adam Schlesinger)\n47:20 - Song for Kelly Huckaby\n\nThanks Ben!",
-                    "updatedAt": "2020-04-03T02:33:54.000Z",
-                    "videoId": "s6oJjUvB9TA",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "s6oJjUvB9TA"
+                "textDisplay": "00:26 Title Track\r\n05:14 Employment Pages\r\n09:51 For What Reason\r\n13:53 Lowell, MA\r\n17:09 (Q & A #1)\r\n23:48 405\r\n28:15 Little Fury Bugs\r\n32:46 Company Calls\r\n37:54 Company Calls Epilogue\r\n43:16 (Q & A #2)\r\n51:03 No Joy in Mudville\r\n57:34 Scientist Studies",
+                "publishedAt": "2020-04-10T00:07:45.000Z",
+                "updatedAt": "2020-04-10T00:07:45.000Z"
               }
             }
-          ],
-          "kind": "youtube#commentThreadListResponse"
+          }
+        }
+      ]
+    },
+    {
+      "contentDetails": {
+        "duration": 3052
+      },
+      "id": "s6oJjUvB9TA",
+      "snippet": {
+        "title": "Ben Gibbard: Live From Home (4/2/20)",
+        "description": "The weekly Live From Home shows begin today at 6pm PT. Get your requests in! \n\nToday’s show will be a benefit for MusiCares, a non-profit that provides critical assistance for the music community in times of need. If you’re able, please donate via https://www.grammy.com/musicares or our Venmo @BenGibbardLiveFromHome – all donations will go directly to MusiCares. \n\nSee you soon!\n\nxo \n\nBen\n\n#StayAtHome #WithMe",
+        "publishedAt": "2020-04-03T01:57:04Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/s6oJjUvB9TA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/s6oJjUvB9TA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/s6oJjUvB9TA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/s6oJjUvB9TA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/s6oJjUvB9TA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
         }
       },
-      {
-        "contentDetails": {
-          "duration": 3016
-        },
-        "id": "5pgVzSMqjWA",
-        "kind": "youtube#video",
-        "snippet": {
-          "channelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "channelTitle": "Death Cab for Cutie",
-          "description": "Tomorrow’s covers only show will be the last of the daily livestreams! Thank you all for submitting your requests, can’t wait to play them for you.\n\nTomorrow’s show will be in benefit of Aurora Commons, a Seattle-based non-profit that provides a safe space for people temporarily experiencing homelessness. If you have enjoyed the livestream shows for the last couple weeks and are able, please donate to these incredible folks via their Venmo @Aurora-Commons or website https://www.auroracommons.org – consider it the tip jar! \n\nSee you tomorrow at 4pm PT!\n\n#StayAtHome #WithMe",
-          "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "publishedAt": "2020-03-30T00:07:29.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "5pgVzSMqjWA"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/5pgVzSMqjWA/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/5pgVzSMqjWA/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/5pgVzSMqjWA/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/5pgVzSMqjWA/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/5pgVzSMqjWA/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Ben Gibbard: Live From Home (3/29/20)",
-          "videoOwnerChannelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "videoOwnerChannelTitle": "Death Cab for Cutie"
-        },
-        "comments": {
-          "items": [
-            {
-              "id": "UgzRAHVkYJMPgFMeUeR4AaABAg",
-              "kind": "youtube#commentThread",
+      "comments": [
+        {
+          "id": "UgxF1EDv5ScoKhHXXQx4AaABAg",
+          "snippet": {
+            "videoId": "s6oJjUvB9TA",
+            "topLevelComment": {
               "snippet": {
-                "topLevelComment": {
-                  "id": "UgzRAHVkYJMPgFMeUeR4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-30T01:17:23.000Z",
-                    "textDisplay": "Here is the setlist of all the covers Ben played today:\n\n00:58 \"Half A World Away” by R.E.M.\n05:26 \"Just Like Heaven” by The Cure\n09:47 \"Everyday Is Like Sunday” by Morrissey\n15:12 \"Out of Touch” by Hall & Oates\n20:13 \"Strange Powers” by The Magnetic Fields\n31:21 \"Harvest Moon” by Neil Young\n35:20 \"Please Don't Tell Me How the Story Ends” by Kris Kristofferson\n40:44 \"The Only Living Boy in New York” by Simon & Garfunkel\n47:08 \"Hold On” by Spiritualized\n\nSpotify playlist of these songs here: https://found.ee/BG-Mar29-Covers\n\nToday was the last of the daily shows, but Ben will be back streaming on a weekly basis! Tune in on Thursday, April 2 at 6pm PT for the next show.",
-                    "textOriginal": "Here is the setlist of all the covers Ben played today:\n\n00:58 \"Half A World Away” by R.E.M.\n05:26 \"Just Like Heaven” by The Cure\n09:47 \"Everyday Is Like Sunday” by Morrissey\n15:12 \"Out of Touch” by Hall & Oates\n20:13 \"Strange Powers” by The Magnetic Fields\n31:21 \"Harvest Moon” by Neil Young\n35:20 \"Please Don't Tell Me How the Story Ends” by Kris Kristofferson\n40:44 \"The Only Living Boy in New York” by Simon & Garfunkel\n47:08 \"Hold On” by Spiritualized\n\nSpotify playlist of these songs here: https://found.ee/BG-Mar29-Covers\n\nToday was the last of the daily shows, but Ben will be back streaming on a weekly basis! Tune in on Thursday, April 2 at 6pm PT for the next show.",
-                    "updatedAt": "2020-03-30T01:17:23.000Z",
-                    "videoId": "5pgVzSMqjWA",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "5pgVzSMqjWA"
+                "textDisplay": "0:24 - Lightness\n4:10 - Everything's A Ceiling\n9:02 - The Ghosts of Beverly Drive\n14:08 - A Hard One to Know\n16:15 - (Q&A)\n25:49 - When We Drive\n30:25 - Passenger Seat\n34:09 - (s/o to MusiCares)\n37:40 - Pictures in an Exhibition\n42:49 - Barbara H. (by Fountains of Wayne, tribute to Adam Schlesinger)\n47:20 - Song for Kelly Huckaby\n\nThanks Ben!",
+                "publishedAt": "2020-04-03T02:20:51.000Z",
+                "updatedAt": "2020-04-03T02:33:54.000Z"
               }
             }
-          ],
-          "kind": "youtube#commentThreadListResponse"
+          }
+        }
+      ]
+    },
+    {
+      "contentDetails": {
+        "duration": 3016
+      },
+      "id": "5pgVzSMqjWA",
+      "snippet": {
+        "title": "Ben Gibbard: Live From Home (3/29/20)",
+        "description": "Tomorrow’s covers only show will be the last of the daily livestreams! Thank you all for submitting your requests, can’t wait to play them for you.\n\nTomorrow’s show will be in benefit of Aurora Commons, a Seattle-based non-profit that provides a safe space for people temporarily experiencing homelessness. If you have enjoyed the livestream shows for the last couple weeks and are able, please donate to these incredible folks via their Venmo @Aurora-Commons or website https://www.auroracommons.org – consider it the tip jar! \n\nSee you tomorrow at 4pm PT!\n\n#StayAtHome #WithMe",
+        "publishedAt": "2020-03-29T23:57:07Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/5pgVzSMqjWA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/5pgVzSMqjWA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/5pgVzSMqjWA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/5pgVzSMqjWA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/5pgVzSMqjWA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
         }
       },
-      {
-        "contentDetails": {
-          "duration": 3019
-        },
-        "id": "Hk-xqMKLyRo",
-        "kind": "youtube#video",
-        "snippet": {
-          "channelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "channelTitle": "Death Cab for Cutie",
-          "description": "See you at 4pm PT for the Dealer’s Choice show – I've picked out some songs to play for you all today. Sunday’s cover show will be the last of the daily livestreams, please get in any requests asap!\n\nToday’s show is in benefit of Washington Low Income Housing Alliance (https://www.wliha.org), an organization leading the movement to ensure that all Washington State residents thrive in safe, healthy, affordable homes. Please donate if you are able!\n\n#StayAtHome #WithMe",
-          "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "publishedAt": "2020-03-29T02:03:07.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "Hk-xqMKLyRo"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/Hk-xqMKLyRo/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/Hk-xqMKLyRo/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/Hk-xqMKLyRo/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/Hk-xqMKLyRo/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/Hk-xqMKLyRo/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Ben Gibbard: Live From Home (3/28/20)",
-          "videoOwnerChannelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "videoOwnerChannelTitle": "Death Cab for Cutie"
-        },
-        "comments": {
-          "items": [
-            {
-              "id": "Ugy0lRQEKiRUoRpOenN4AaABAg",
-              "kind": "youtube#commentThread",
+      "comments": [
+        {
+          "id": "UgzRAHVkYJMPgFMeUeR4AaABAg",
+          "snippet": {
+            "videoId": "5pgVzSMqjWA",
+            "topLevelComment": {
               "snippet": {
-                "topLevelComment": {
-                  "id": "Ugy0lRQEKiRUoRpOenN4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-29T00:17:15.000Z",
-                    "textDisplay": "00:51 Me and Magdalena\n05:52 Underwater\n08:56 El Dorado\n13:25 Duncan where have you gone?\n21:39 Stable Song\n25:00 Summer Years\n38:20 Life in Quarantine\n42:47 St Swithin's Day\n47:36 I'm Building a Fire",
-                    "textOriginal": "00:51 Me and Magdalena\n05:52 Underwater\n08:56 El Dorado\n13:25 Duncan where have you gone?\n21:39 Stable Song\n25:00 Summer Years\n38:20 Life in Quarantine\n42:47 St Swithin's Day\n47:36 I'm Building a Fire",
-                    "updatedAt": "2020-03-29T00:17:15.000Z",
-                    "videoId": "Hk-xqMKLyRo",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "Hk-xqMKLyRo"
+                "textDisplay": "Here is the setlist of all the covers Ben played today:\n\n00:58 \"Half A World Away” by R.E.M.\n05:26 \"Just Like Heaven” by The Cure\n09:47 \"Everyday Is Like Sunday” by Morrissey\n15:12 \"Out of Touch” by Hall & Oates\n20:13 \"Strange Powers” by The Magnetic Fields\n31:21 \"Harvest Moon” by Neil Young\n35:20 \"Please Don't Tell Me How the Story Ends” by Kris Kristofferson\n40:44 \"The Only Living Boy in New York” by Simon & Garfunkel\n47:08 \"Hold On” by Spiritualized\n\nSpotify playlist of these songs here: https://found.ee/BG-Mar29-Covers\n\nToday was the last of the daily shows, but Ben will be back streaming on a weekly basis! Tune in on Thursday, April 2 at 6pm PT for the next show.",
+                "publishedAt": "2020-03-30T01:17:23.000Z",
+                "updatedAt": "2020-03-30T01:17:23.000Z"
               }
             }
-          ],
-          "kind": "youtube#commentThreadListResponse"
+          }
+        }
+      ]
+    },
+    {
+      "contentDetails": {
+        "duration": 3019
+      },
+      "id": "Hk-xqMKLyRo",
+      "snippet": {
+        "title": "Ben Gibbard: Live From Home (3/28/20)",
+        "description": "See you at 4pm PT for the Dealer’s Choice show – I've picked out some songs to play for you all today. Sunday’s cover show will be the last of the daily livestreams, please get in any requests asap!\n\nToday’s show is in benefit of Washington Low Income Housing Alliance (https://www.wliha.org), an organization leading the movement to ensure that all Washington State residents thrive in safe, healthy, affordable homes. Please donate if you are able!\n\n#StayAtHome #WithMe",
+        "publishedAt": "2020-03-28T23:57:27Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Hk-xqMKLyRo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Hk-xqMKLyRo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Hk-xqMKLyRo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/Hk-xqMKLyRo/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/Hk-xqMKLyRo/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
         }
       },
-      {
-        "contentDetails": {
-          "duration": 3405
-        },
-        "id": "2TiCThAAcNM",
-        "kind": "youtube#video",
-        "snippet": {
-          "channelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "channelTitle": "Death Cab for Cutie",
-          "description": "Thank you all so much for voting for the top-10 songs you want me to play! Voting is now closed and all your votes have been counted… Tune in at 4pm PT for tomorrow’s livestream where I’ll be performing the resulting top-10, countdown style!\n\nTomorrow’s show is in benefit of Americans for Immigrant Justice (http://aijustice.org). AI Justice is a non-profit law firm that protects and promotes the basic human rights of immigrants through legal / advocacy services, policy reform, and public education at local, state, and national levels. Please donate if you are able!\n\n#StayAtHome #WithMe",
-          "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "publishedAt": "2020-03-28T01:13:54.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "2TiCThAAcNM"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/2TiCThAAcNM/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/2TiCThAAcNM/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/2TiCThAAcNM/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/2TiCThAAcNM/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/2TiCThAAcNM/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Ben Gibbard: Live From Home (3/27/20)",
-          "videoOwnerChannelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "videoOwnerChannelTitle": "Death Cab for Cutie"
-        },
-        "comments": {
-          "items": [
-            {
-              "id": "UgwvCic7D4tgMsv6fHJ4AaABAg",
-              "kind": "youtube#commentThread",
+      "comments": [
+        {
+          "id": "UgwjOz4wOLdKAl1vQrR4AaABAg",
+          "snippet": {
+            "videoId": "Hk-xqMKLyRo",
+            "topLevelComment": {
               "snippet": {
-                "topLevelComment": {
-                  "id": "UgwvCic7D4tgMsv6fHJ4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-28T00:02:07.000Z",
-                    "textDisplay": "00:41 Title and Registration\r\n05:25 A Lack of Color\r\n09:45 Tiny Vessels\r\n14:59 We Looked Like Giants\r\n19:43 The District Sleeps Alone Tonight [The Postal Service]\r\n23:20 (Q & A)\r\n30:32 I Will Possess Your Heart\r\n33:26 Soul Meets Body\r\n37:11 (Americans for Immigrant Justice mention)\r\n40:35 I Will Follow You into the Dark\r\n44:56 Transatlanticism\r\n53:20 Such Greats Heights [The Postal Service]",
-                    "textOriginal": "00:41 Title and Registration\r\n05:25 A Lack of Color\r\n09:45 Tiny Vessels\r\n14:59 We Looked Like Giants\r\n19:43 The District Sleeps Alone Tonight [The Postal Service]\r\n23:20 (Q & A)\r\n30:32 I Will Possess Your Heart\r\n33:26 Soul Meets Body\r\n37:11 (Americans for Immigrant Justice mention)\r\n40:35 I Will Follow You into the Dark\r\n44:56 Transatlanticism\r\n53:20 Such Greats Heights [The Postal Service]",
-                    "updatedAt": "2020-03-28T00:02:07.000Z",
-                    "videoId": "2TiCThAAcNM",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "2TiCThAAcNM"
+                "textDisplay": "16:55 special guest Rachel Demy (his wife)\n28:40 Q&A",
+                "publishedAt": "2020-03-29T00:35:54.000Z",
+                "updatedAt": "2020-03-29T00:36:34.000Z"
               }
             }
-          ],
-          "kind": "youtube#commentThreadListResponse"
+          }
+        },
+        {
+          "id": "Ugy0lRQEKiRUoRpOenN4AaABAg",
+          "snippet": {
+            "videoId": "Hk-xqMKLyRo",
+            "topLevelComment": {
+              "snippet": {
+                "textDisplay": "00:51 Me and Magdalena\n05:52 Underwater\n08:56 El Dorado\n13:25 Duncan where have you gone?\n21:39 Stable Song\n25:00 Summer Years\n38:20 Life in Quarantine\n42:47 St Swithin's Day\n47:36 I'm Building a Fire",
+                "publishedAt": "2020-03-29T00:17:15.000Z",
+                "updatedAt": "2020-03-29T00:17:15.000Z"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "contentDetails": {
+        "duration": 3405
+      },
+      "id": "2TiCThAAcNM",
+      "snippet": {
+        "title": "Ben Gibbard: Live From Home (3/27/20)",
+        "description": "Thank you all so much for voting for the top-10 songs you want me to play! Voting is now closed and all your votes have been counted… Tune in at 4pm PT for tomorrow’s livestream where I’ll be performing the resulting top-10, countdown style!\n\nTomorrow’s show is in benefit of Americans for Immigrant Justice (http://aijustice.org). AI Justice is a non-profit law firm that protects and promotes the basic human rights of immigrants through legal / advocacy services, policy reform, and public education at local, state, and national levels. Please donate if you are able!\n\n#StayAtHome #WithMe",
+        "publishedAt": "2020-03-28T00:03:18Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/2TiCThAAcNM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/2TiCThAAcNM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/2TiCThAAcNM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/2TiCThAAcNM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/2TiCThAAcNM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
         }
       },
-      {
-        "contentDetails": {
-          "duration": 3199
-        },
-        "id": "IFXCGJs8nOY",
-        "kind": "youtube#video",
-        "snippet": {
-          "channelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "channelTitle": "Death Cab for Cutie",
-          "description": "Hello everyone, \n\nWe’re heading into the home stretch of the daily shows! Thank you to everyone who’s watched, asked great questions and made requests. This has been a blast for me. \n\nI wanted to give you guys a heads up for the rest of the week. The schedule is as follows;\n\nTHURSDAY (TODAY)\n\nAn all request set culled from the years 2012-present. Get your requests in for songs from such albums as;\n\n- Former Lives \n- Kintsugi\n- Bandwagonesque\n- Thank You For Today\n\nPlus soundtrack cuts, singles, etc. \n\nToday’s show is in benefit of Your Supplies Save Lives (https://www.suppliessaveliveswa.org). Washington State health care workers are running out of safety equipment to protect themselves on the front lines of the COVID-19 outbreak. If you have any, please donate your unopened boxes of masks (N95 preferred), gowns, eye protection, and gloves to keep front-line health care workers healthy so they can save lives! All supplies will be allocated to Washington State hospitals and first responders treating COVID-19 patients. \n\nFRIDAY\n\nA Top-10, all request show voted on by YOU! Vote here: https://found.ee/BenGibbard-LiveFromHome-Vote\n\nI’ll play the resulting top-10, countdown style! \n\nVoting closes tonight 3/26 at 9pm PT.\n\nSATURDAY\n\nDealer’s Choice. \n\nSUNDAY\n\nThe last of the daily shows. This will be an all-request cover show. \n\nSee you guys soon! \n\nxo \n\nBen\n\n#StayAtHome #WithMe",
-          "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "publishedAt": "2020-03-27T00:38:33.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "IFXCGJs8nOY"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/IFXCGJs8nOY/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/IFXCGJs8nOY/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/IFXCGJs8nOY/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/IFXCGJs8nOY/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/IFXCGJs8nOY/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Ben Gibbard: Live From Home (3/26/20)",
-          "videoOwnerChannelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "videoOwnerChannelTitle": "Death Cab for Cutie"
-        },
-        "comments": {
-          "items": [
-            {
-              "id": "Ugxuq7DKOYvk5nYSkYZ4AaABAg",
-              "kind": "youtube#commentThread",
+      "comments": [
+        {
+          "id": "UgwvCic7D4tgMsv6fHJ4AaABAg",
+          "snippet": {
+            "videoId": "2TiCThAAcNM",
+            "topLevelComment": {
               "snippet": {
-                "topLevelComment": {
-                  "id": "Ugxuq7DKOYvk5nYSkYZ4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-27T00:00:30.000Z",
-                    "textDisplay": "00:22 Ingénue\r\n04:06 Autumn Love\r\n08:33 Hold No Guns\r\n13:19 Lily\r\n16:15 It's Never Too Late (End Credits)\r\n19:19 (Q & A)\r\n29:44 Binary Sea\r\n33:58 December\r\n37:57 Man In Blue\r\n41:16 (Supplies Save Lives WA mention)\r\n43:08 Northern Lights\r\n48:19 Black Sun",
-                    "textOriginal": "00:22 Ingénue\r\n04:06 Autumn Love\r\n08:33 Hold No Guns\r\n13:19 Lily\r\n16:15 It's Never Too Late (End Credits)\r\n19:19 (Q & A)\r\n29:44 Binary Sea\r\n33:58 December\r\n37:57 Man In Blue\r\n41:16 (Supplies Save Lives WA mention)\r\n43:08 Northern Lights\r\n48:19 Black Sun",
-                    "updatedAt": "2020-03-27T00:00:30.000Z",
-                    "videoId": "IFXCGJs8nOY",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "IFXCGJs8nOY"
+                "textDisplay": "00:41 Title and Registration\r\n05:25 A Lack of Color\r\n09:45 Tiny Vessels\r\n14:59 We Looked Like Giants\r\n19:43 The District Sleeps Alone Tonight [The Postal Service]\r\n23:20 (Q & A)\r\n30:32 I Will Possess Your Heart\r\n33:26 Soul Meets Body\r\n37:11 (Americans for Immigrant Justice mention)\r\n40:35 I Will Follow You into the Dark\r\n44:56 Transatlanticism\r\n53:20 Such Greats Heights [The Postal Service]",
+                "publishedAt": "2020-03-28T00:02:07.000Z",
+                "updatedAt": "2020-03-28T00:02:07.000Z"
               }
             }
-          ],
-          "kind": "youtube#commentThreadListResponse"
+          }
+        }
+      ]
+    },
+    {
+      "contentDetails": {
+        "duration": 3199
+      },
+      "id": "IFXCGJs8nOY",
+      "snippet": {
+        "title": "Ben Gibbard: Live From Home (3/26/20)",
+        "description": "Hello everyone, \n\nWe’re heading into the home stretch of the daily shows! Thank you to everyone who’s watched, asked great questions and made requests. This has been a blast for me. \n\nI wanted to give you guys a heads up for the rest of the week. The schedule is as follows;\n\nTHURSDAY (TODAY)\n\nAn all request set culled from the years 2012-present. Get your requests in for songs from such albums as;\n\n- Former Lives \n- Kintsugi\n- Bandwagonesque\n- Thank You For Today\n\nPlus soundtrack cuts, singles, etc. \n\nToday’s show is in benefit of Your Supplies Save Lives (https://www.suppliessaveliveswa.org). Washington State health care workers are running out of safety equipment to protect themselves on the front lines of the COVID-19 outbreak. If you have any, please donate your unopened boxes of masks (N95 preferred), gowns, eye protection, and gloves to keep front-line health care workers healthy so they can save lives! All supplies will be allocated to Washington State hospitals and first responders treating COVID-19 patients. \n\nFRIDAY\n\nA Top-10, all request show voted on by YOU! Vote here: https://found.ee/BenGibbard-LiveFromHome-Vote\n\nI’ll play the resulting top-10, countdown style! \n\nVoting closes tonight 3/26 at 9pm PT.\n\nSATURDAY\n\nDealer’s Choice. \n\nSUNDAY\n\nThe last of the daily shows. This will be an all-request cover show. \n\nSee you guys soon! \n\nxo \n\nBen\n\n#StayAtHome #WithMe",
+        "publishedAt": "2020-03-27T00:08:14Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/IFXCGJs8nOY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/IFXCGJs8nOY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/IFXCGJs8nOY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/IFXCGJs8nOY/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/IFXCGJs8nOY/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
         }
       },
-      {
-        "contentDetails": {
-          "duration": 3239
-        },
-        "id": "tBhqwnL8Zck",
-        "kind": "youtube#video",
-        "snippet": {
-          "channelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "channelTitle": "Death Cab for Cutie",
-          "description": "For tomorrow’s livestream;\n\nGet your requests in for songs from 2007-2011. The following albums are in play;\n\n- Narrow Stairs\n- The Open Door e.p.\n- One Fast Move or I’m Gone\n- Codes and Keys\n\nPlus any and all obscuro's you might think of!\n\nTomorrow’s show will be in benefit of the Seattle Foundation’s COVID-19 Response Fund. The Fund makes grants to nonprofits that are working on the frontlines to provide the Seattle region’s most vulnerable communities with emergency assistance, such as financial support, healthcare, and childcare. Please donate here if you are able: https://www.seattlefoundation.org/communityimpact/civic-leadership/covid-19-response-fund\n\nAlso, I'm going to play the top 10 songs as voted on by YOU for the livestream this Friday, March 27! The winning songs will be revealed live as a countdown during the show. Place your vote now through Thursday at 9pm PT here: https://found.ee/BenGibbard-LiveFromHome-Vote\n\nxo\n\nBen\n\n#StayAtHome #WithMe",
-          "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "publishedAt": "2020-03-26T01:43:31.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "tBhqwnL8Zck"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/tBhqwnL8Zck/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/tBhqwnL8Zck/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/tBhqwnL8Zck/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/tBhqwnL8Zck/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/tBhqwnL8Zck/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Ben Gibbard: Live From Home (3/25/20)",
-          "videoOwnerChannelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "videoOwnerChannelTitle": "Death Cab for Cutie"
-        },
-        "comments": {
-          "items": [
-            {
-              "id": "UgzCyKx_L9OGPX7fZvh4AaABAg",
-              "kind": "youtube#commentThread",
+      "comments": [
+        {
+          "id": "Ugxuq7DKOYvk5nYSkYZ4AaABAg",
+          "snippet": {
+            "videoId": "IFXCGJs8nOY",
+            "topLevelComment": {
               "snippet": {
-                "topLevelComment": {
-                  "id": "UgzCyKx_L9OGPX7fZvh4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-26T00:05:46.000Z",
-                    "textDisplay": "0:23: You Can Do Better Than Me\n2:47: Unobstructed Views\n7:34: Little Bribes\n11:34: A Diamond and a Tether\n18:07: Where Our Destination Lies\n20:49: Cath...\n34:44: One Fast Move or I'm Gone\n39:32: Grapevine Fires\n43:44: Bixby Canyon Bridge\n50:42: Stay Young, Go Dancing",
-                    "textOriginal": "0:23: You Can Do Better Than Me\n2:47: Unobstructed Views\n7:34: Little Bribes\n11:34: A Diamond and a Tether\n18:07: Where Our Destination Lies\n20:49: Cath...\n34:44: One Fast Move or I'm Gone\n39:32: Grapevine Fires\n43:44: Bixby Canyon Bridge\n50:42: Stay Young, Go Dancing",
-                    "updatedAt": "2020-03-26T00:05:46.000Z",
-                    "videoId": "tBhqwnL8Zck",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "tBhqwnL8Zck"
-              }
-            },
-            {
-              "id": "UgwDOMQ9Udp6sWV9pPd4AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "UgwDOMQ9Udp6sWV9pPd4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-26T00:00:13.000Z",
-                    "textDisplay": "00:23 You Can Do Better Than Me\r\n02:46 Unobstructed Views \r\n07:34 Little Bribes\r\n11:34 A Diamond and a Tether\r\n18:06 Where Our Destination Lies\r\n20:48 Cath...\r\n25:06 (Q & A)\r\n34:44 One Fast Move or I'm Gone\r\n38:36 (\"We Have the Facts and We're Voting\" mention)\r\n39:32 Grapevine Fires\r\n43:44 Bixby Canyon Bridge\r\n49:07 (Seattle Foundation’s COVID-19 Response Fund mention)\r\n50:41 Stay Young, Go Dancing",
-                    "textOriginal": "00:23 You Can Do Better Than Me\r\n02:46 Unobstructed Views \r\n07:34 Little Bribes\r\n11:34 A Diamond and a Tether\r\n18:06 Where Our Destination Lies\r\n20:48 Cath...\r\n25:06 (Q & A)\r\n34:44 One Fast Move or I'm Gone\r\n38:36 (\"We Have the Facts and We're Voting\" mention)\r\n39:32 Grapevine Fires\r\n43:44 Bixby Canyon Bridge\r\n49:07 (Seattle Foundation’s COVID-19 Response Fund mention)\r\n50:41 Stay Young, Go Dancing",
-                    "updatedAt": "2020-03-26T00:05:38.000Z",
-                    "videoId": "tBhqwnL8Zck",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "tBhqwnL8Zck"
+                "textDisplay": "00:22 Ingénue\r\n04:06 Autumn Love\r\n08:33 Hold No Guns\r\n13:19 Lily\r\n16:15 It's Never Too Late (End Credits)\r\n19:19 (Q & A)\r\n29:44 Binary Sea\r\n33:58 December\r\n37:57 Man In Blue\r\n41:16 (Supplies Save Lives WA mention)\r\n43:08 Northern Lights\r\n48:19 Black Sun",
+                "publishedAt": "2020-03-27T00:00:30.000Z",
+                "updatedAt": "2020-03-27T00:00:30.000Z"
               }
             }
-          ],
-          "kind": "youtube#commentThreadListResponse"
+          }
+        }
+      ]
+    },
+    {
+      "contentDetails": {
+        "duration": 3239
+      },
+      "id": "tBhqwnL8Zck",
+      "snippet": {
+        "title": "Ben Gibbard: Live From Home (3/25/20)",
+        "description": "For tomorrow’s livestream;\n\nGet your requests in for songs from 2007-2011. The following albums are in play;\n\n- Narrow Stairs\n- The Open Door e.p.\n- One Fast Move or I’m Gone\n- Codes and Keys\n\nPlus any and all obscuro's you might think of!\n\nTomorrow’s show will be in benefit of the Seattle Foundation’s COVID-19 Response Fund. The Fund makes grants to nonprofits that are working on the frontlines to provide the Seattle region’s most vulnerable communities with emergency assistance, such as financial support, healthcare, and childcare. Please donate here if you are able: https://www.seattlefoundation.org/communityimpact/civic-leadership/covid-19-response-fund\n\nAlso, I'm going to play the top 10 songs as voted on by YOU for the livestream this Friday, March 27! The winning songs will be revealed live as a countdown during the show. Place your vote now through Thursday at 9pm PT here: https://found.ee/BenGibbard-LiveFromHome-Vote\n\nxo\n\nBen\n\n#StayAtHome #WithMe",
+        "publishedAt": "2020-03-26T00:00:09Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/tBhqwnL8Zck/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/tBhqwnL8Zck/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/tBhqwnL8Zck/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/tBhqwnL8Zck/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/tBhqwnL8Zck/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
         }
       },
-      {
-        "contentDetails": {
-          "duration": 3204
-        },
-        "id": "25OCP0qBD_A",
-        "kind": "youtube#video",
-        "snippet": {
-          "channelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "channelTitle": "Death Cab for Cutie",
-          "description": "Thanks for tuning in today, everyone! \n\nTomorrow’s set (4pm PT) will be created from the years 2002-2005. Please send in your requests from the following;\n\n- Give Up\n- Transatlanticism\n- The Home e.p.\n- Plans\n\nAs well as any and all obscure collabs, singles, etc.\n\nTomorrow’s show will be in benefit of the University of Washington hospital staff. The folks at The London Plane have a GoFundMe set up to help feed the hospital staff who are working on the front lines to contain this pandemic and treat the sick. Please donate here if you are able: https://www.gofundme.com/f/feeding-uw-hospital-staff\n\nSee ya!\n\nxo\n\nBen\n\n#StayAtHome #WithMe",
-          "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "publishedAt": "2020-03-25T01:08:18.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "25OCP0qBD_A"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/25OCP0qBD_A/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/25OCP0qBD_A/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/25OCP0qBD_A/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/25OCP0qBD_A/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/25OCP0qBD_A/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Ben Gibbard: Live From Home (3/24/20)",
-          "videoOwnerChannelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "videoOwnerChannelTitle": "Death Cab for Cutie"
-        },
-        "comments": {
-          "items": [
-            {
-              "id": "UgxOFkjslsYiGtQ8d4J4AaABAg",
-              "kind": "youtube#commentThread",
+      "comments": [
+        {
+          "id": "UgzCyKx_L9OGPX7fZvh4AaABAg",
+          "snippet": {
+            "videoId": "tBhqwnL8Zck",
+            "topLevelComment": {
               "snippet": {
-                "topLevelComment": {
-                  "id": "UgxOFkjslsYiGtQ8d4J4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-25T00:00:10.000Z",
-                    "textDisplay": "00:02 Transatlanticism\r\n5:37 Someday You Will Be Loved\r\n9:44 Farmer Chords\r\n13:02 This Place Is a Prison [The Postal Service]\r\n17:58 Couches In Alleys [Styrofoam]\r\n20:42 (Q & A)\r\n27:09 Sleeping In [The Postal Service]\r\n30:02 Summer Skin\r\n32:25 What Sarah Said\r\n38:11 Title and Registration\r\n42:47 (Feeding UW Hospital Staff GoFundMe)\r\n44:42 Marching Bands of Manhattan\r\n49:39 I Will Follow You into the Dark",
-                    "textOriginal": "00:02 Transatlanticism\r\n5:37 Someday You Will Be Loved\r\n9:44 Farmer Chords\r\n13:02 This Place Is a Prison [The Postal Service]\r\n17:58 Couches In Alleys [Styrofoam]\r\n20:42 (Q & A)\r\n27:09 Sleeping In [The Postal Service]\r\n30:02 Summer Skin\r\n32:25 What Sarah Said\r\n38:11 Title and Registration\r\n42:47 (Feeding UW Hospital Staff GoFundMe)\r\n44:42 Marching Bands of Manhattan\r\n49:39 I Will Follow You into the Dark",
-                    "updatedAt": "2020-03-25T00:05:52.000Z",
-                    "videoId": "25OCP0qBD_A",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "25OCP0qBD_A"
-              }
-            },
-            {
-              "id": "UgwMX_eb-T8TpDyCWbp4AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "UgwMX_eb-T8TpDyCWbp4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-25T00:09:53.000Z",
-                    "textDisplay": "SONGS FROM 2002-2005 SETLIST\n\n0:02 - Transatlanticism\n5:37 - Someday You Will Be Loved\n9:44 - Farmer Chords\n13:01 - This Place Is A Prison\n17:58 - Couches In Alleys\n(20:33 - Q&A)\n27:09 - Sleeping In\n30:02 - Summer Skin\n32:25 - What Sarah Said\n38:11 - Title And Registration\n(41:53 - The London Plane GoFundMe)\n44:41 - Marching Bands Of Manhattan\n49:39 - I Will Follow You Into The Dark",
-                    "textOriginal": "SONGS FROM 2002-2005 SETLIST\n\n0:02 - Transatlanticism\n5:37 - Someday You Will Be Loved\n9:44 - Farmer Chords\n13:01 - This Place Is A Prison\n17:58 - Couches In Alleys\n(20:33 - Q&A)\n27:09 - Sleeping In\n30:02 - Summer Skin\n32:25 - What Sarah Said\n38:11 - Title And Registration\n(41:53 - The London Plane GoFundMe)\n44:41 - Marching Bands Of Manhattan\n49:39 - I Will Follow You Into The Dark",
-                    "updatedAt": "2020-03-25T00:10:49.000Z",
-                    "videoId": "25OCP0qBD_A",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "25OCP0qBD_A"
+                "textDisplay": "0:23: You Can Do Better Than Me\n2:47: Unobstructed Views\n7:34: Little Bribes\n11:34: A Diamond and a Tether\n18:07: Where Our Destination Lies\n20:49: Cath...\n34:44: One Fast Move or I'm Gone\n39:32: Grapevine Fires\n43:44: Bixby Canyon Bridge\n50:42: Stay Young, Go Dancing",
+                "publishedAt": "2020-03-26T00:05:46.000Z",
+                "updatedAt": "2020-03-26T00:05:46.000Z"
               }
             }
-          ],
-          "kind": "youtube#commentThreadListResponse"
+          }
+        },
+        {
+          "id": "UgwDOMQ9Udp6sWV9pPd4AaABAg",
+          "snippet": {
+            "videoId": "tBhqwnL8Zck",
+            "topLevelComment": {
+              "snippet": {
+                "textDisplay": "00:23 You Can Do Better Than Me\r\n02:46 Unobstructed Views \r\n07:34 Little Bribes\r\n11:34 A Diamond and a Tether\r\n18:06 Where Our Destination Lies\r\n20:48 Cath...\r\n25:06 (Q & A)\r\n34:44 One Fast Move or I'm Gone\r\n38:36 (\"We Have the Facts and We're Voting\" mention)\r\n39:32 Grapevine Fires\r\n43:44 Bixby Canyon Bridge\r\n49:07 (Seattle Foundation’s COVID-19 Response Fund mention)\r\n50:41 Stay Young, Go Dancing",
+                "publishedAt": "2020-03-26T00:00:13.000Z",
+                "updatedAt": "2020-03-26T00:05:38.000Z"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "contentDetails": {
+        "duration": 3204
+      },
+      "id": "25OCP0qBD_A",
+      "snippet": {
+        "title": "Ben Gibbard: Live From Home (3/24/20)",
+        "description": "Thanks for tuning in today, everyone! \n\nTomorrow’s set (4pm PT) will be created from the years 2002-2005. Please send in your requests from the following;\n\n- Give Up\n- Transatlanticism\n- The Home e.p.\n- Plans\n\nAs well as any and all obscure collabs, singles, etc.\n\nTomorrow’s show will be in benefit of the University of Washington hospital staff. The folks at The London Plane have a GoFundMe set up to help feed the hospital staff who are working on the front lines to contain this pandemic and treat the sick. Please donate here if you are able: https://www.gofundme.com/f/feeding-uw-hospital-staff\n\nSee ya!\n\nxo\n\nBen\n\n#StayAtHome #WithMe",
+        "publishedAt": "2020-03-25T00:00:30Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/25OCP0qBD_A/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/25OCP0qBD_A/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/25OCP0qBD_A/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/25OCP0qBD_A/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/25OCP0qBD_A/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
         }
       },
-      {
-        "contentDetails": {
-          "duration": 3499
-        },
-        "id": "QHTXnGLb4I0",
-        "kind": "youtube#video",
-        "snippet": {
-          "channelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "channelTitle": "Death Cab for Cutie",
-          "description": "Hey everyone, \n\nTomorrow’s set (Monday) will be culled exclusively from 1997-2001. Please send in any and all requests from;\n\n- You Can Play These Songs With Chords\n- Something About Airplanes\n- All Time Quarterback\n- We Have the Facts…\n- The Forbidden Love e.p.\n- The Photo Album\n\nPlus any obscure singles from that era. \n\nSee you tomorrow! Tomorrow’s show will be in benefit of White Center Food Bank (https://www.whitecenterfoodbank.org) in Seattle. They are in need of non-expired unopened food (such as canned goods, rice noodles, spices, peanut butter, coffee and more), diapers, baby wipes, Similac formula, hand sanitizer, clean supplies and toilet paper. Monetary donations are also welcome to help ensure that they can continue to serve the 1,600 families per month they see regularly plus any new families that come to them during this time. Please donate if you are able!\n\nxo\n\nBen\n\n#StayAtHome #WithMe",
-          "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "publishedAt": "2020-03-24T00:56:32.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "QHTXnGLb4I0"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/QHTXnGLb4I0/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/QHTXnGLb4I0/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/QHTXnGLb4I0/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/QHTXnGLb4I0/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/QHTXnGLb4I0/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Ben Gibbard: Live From Home (3/23/20)",
-          "videoOwnerChannelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "videoOwnerChannelTitle": "Death Cab for Cutie"
-        },
-        "comments": {
-          "items": [
-            {
-              "id": "UgzMtwDHMKaTMXMg0BJ4AaABAg",
-              "kind": "youtube#commentThread",
+      "comments": [
+        {
+          "id": "UgxOFkjslsYiGtQ8d4J4AaABAg",
+          "snippet": {
+            "videoId": "25OCP0qBD_A",
+            "topLevelComment": {
               "snippet": {
-                "topLevelComment": {
-                  "id": "UgzMtwDHMKaTMXMg0BJ4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-24T00:05:16.000Z",
-                    "textDisplay": "00:31 Champagne from a Paper Cup\r\n04:08 Debate Exposes Doubt\r\n07:54 Scientist Studies\r\n13:28 Wait [Secret Stars cover] \r\n17:27 Company Calls Epilogue\r\n22:47 (Q & A)\r\n28:17 Cleveland [¡All-Time Quarterback!]\r\n31:05 (This Is) The Dream of Evan and Chan [Dntel]\r\n34:51 Blacking Out the Friction\r\n37:40 Line of Best Fit \r\n44:18 I Was a Kaleidoscope\r\n49:24 No Joy in Mudville\r\n55:21 The Face That Launched 1000 Shits [The Revolutionary Hydra cover]",
-                    "textOriginal": "00:31 Champagne from a Paper Cup\r\n04:08 Debate Exposes Doubt\r\n07:54 Scientist Studies\r\n13:28 Wait [Secret Stars cover] \r\n17:27 Company Calls Epilogue\r\n22:47 (Q & A)\r\n28:17 Cleveland [¡All-Time Quarterback!]\r\n31:05 (This Is) The Dream of Evan and Chan [Dntel]\r\n34:51 Blacking Out the Friction\r\n37:40 Line of Best Fit \r\n44:18 I Was a Kaleidoscope\r\n49:24 No Joy in Mudville\r\n55:21 The Face That Launched 1000 Shits [The Revolutionary Hydra cover]",
-                    "updatedAt": "2020-03-24T00:23:28.000Z",
-                    "videoId": "QHTXnGLb4I0",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "QHTXnGLb4I0"
-              }
-            },
-            {
-              "id": "UgxGw6jHzet9UGwWqyZ4AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "UgxGw6jHzet9UGwWqyZ4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-24T00:36:10.000Z",
-                    "textDisplay": "0:32 Champagne from a Paper Cup\n4:09 Debate Exposes Doubt\n7:55 Scientist Studies \n13:28 Wait (cover)\n17:27 Company Calls Epilogue \n28:17 Cleveland \n31:05 The Dream of Evan And Chan\n34:50 Blacking out the Friction \n37:40 Line of Best Fit\n44:17 I was a Kaleidoscope \n49:24 No Joy in Mudville \n55:20 The Face that Launched 1000 Shits (cover)",
-                    "textOriginal": "0:32 Champagne from a Paper Cup\n4:09 Debate Exposes Doubt\n7:55 Scientist Studies \n13:28 Wait (cover)\n17:27 Company Calls Epilogue \n28:17 Cleveland \n31:05 The Dream of Evan And Chan\n34:50 Blacking out the Friction \n37:40 Line of Best Fit\n44:17 I was a Kaleidoscope \n49:24 No Joy in Mudville \n55:20 The Face that Launched 1000 Shits (cover)",
-                    "updatedAt": "2020-03-24T00:36:10.000Z",
-                    "videoId": "QHTXnGLb4I0",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "QHTXnGLb4I0"
-              }
-            },
-            {
-              "id": "Ugyy97bpcqZIYf1oudp4AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "Ugyy97bpcqZIYf1oudp4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-24T00:28:24.000Z",
-                    "textDisplay": "SONGS FROM 1997-2001 SETLIST\n\n0:34 - Champagne From A Paper Cup\n3:28 (4:06 for the restart) - Debate Exposes Doubt\n7:53 - Scientist Studies\n13:28 - Wait\n17:17 - Company Calls Epilogue\n(22:04 - Q&A)\n28:17 - Cleveland\n31:05 - This Is The Dream Of Evan And Chan\n34:50 - Blacking Out The Friction\n39:37 - Line of Best Fit\n44:17 - I Was A Kaleidoscope\n(47:30 - Shout out to Dr. John Halpern)\n49:24 - No Joy In Mudville\n55:20 - The Face That Launched 1,000 Sh*ts\n\n(Not sure if I'm supposed to censor profanity even if it's a song title?)",
-                    "textOriginal": "SONGS FROM 1997-2001 SETLIST\n\n0:34 - Champagne From A Paper Cup\n3:28 (4:06 for the restart) - Debate Exposes Doubt\n7:53 - Scientist Studies\n13:28 - Wait\n17:17 - Company Calls Epilogue\n(22:04 - Q&A)\n28:17 - Cleveland\n31:05 - This Is The Dream Of Evan And Chan\n34:50 - Blacking Out The Friction\n39:37 - Line of Best Fit\n44:17 - I Was A Kaleidoscope\n(47:30 - Shout out to Dr. John Halpern)\n49:24 - No Joy In Mudville\n55:20 - The Face That Launched 1,000 Sh*ts\n\n(Not sure if I'm supposed to censor profanity even if it's a song title?)",
-                    "updatedAt": "2020-03-24T00:28:38.000Z",
-                    "videoId": "QHTXnGLb4I0",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "QHTXnGLb4I0"
+                "textDisplay": "00:02 Transatlanticism\r\n5:37 Someday You Will Be Loved\r\n9:44 Farmer Chords\r\n13:02 This Place Is a Prison [The Postal Service]\r\n17:58 Couches In Alleys [Styrofoam]\r\n20:42 (Q & A)\r\n27:09 Sleeping In [The Postal Service]\r\n30:02 Summer Skin\r\n32:25 What Sarah Said\r\n38:11 Title and Registration\r\n42:47 (Feeding UW Hospital Staff GoFundMe)\r\n44:42 Marching Bands of Manhattan\r\n49:39 I Will Follow You into the Dark",
+                "publishedAt": "2020-03-25T00:00:10.000Z",
+                "updatedAt": "2020-03-25T00:05:52.000Z"
               }
             }
-          ],
-          "kind": "youtube#commentThreadListResponse"
+          }
+        },
+        {
+          "id": "UgwMX_eb-T8TpDyCWbp4AaABAg",
+          "snippet": {
+            "videoId": "25OCP0qBD_A",
+            "topLevelComment": {
+              "snippet": {
+                "textDisplay": "SONGS FROM 2002-2005 SETLIST\n\n0:02 - Transatlanticism\n5:37 - Someday You Will Be Loved\n9:44 - Farmer Chords\n13:01 - This Place Is A Prison\n17:58 - Couches In Alleys\n(20:33 - Q&A)\n27:09 - Sleeping In\n30:02 - Summer Skin\n32:25 - What Sarah Said\n38:11 - Title And Registration\n(41:53 - The London Plane GoFundMe)\n44:41 - Marching Bands Of Manhattan\n49:39 - I Will Follow You Into The Dark",
+                "publishedAt": "2020-03-25T00:09:53.000Z",
+                "updatedAt": "2020-03-25T00:10:49.000Z"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "contentDetails": {
+        "duration": 3499
+      },
+      "id": "QHTXnGLb4I0",
+      "snippet": {
+        "title": "Ben Gibbard: Live From Home (3/23/20)",
+        "description": "Hey everyone, \n\nTomorrow’s set (Monday) will be culled exclusively from 1997-2001. Please send in any and all requests from;\n\n- You Can Play These Songs With Chords\n- Something About Airplanes\n- All Time Quarterback\n- We Have the Facts…\n- The Forbidden Love e.p.\n- The Photo Album\n\nPlus any obscure singles from that era. \n\nSee you tomorrow! Tomorrow’s show will be in benefit of White Center Food Bank (https://www.whitecenterfoodbank.org) in Seattle. They are in need of non-expired unopened food (such as canned goods, rice noodles, spices, peanut butter, coffee and more), diapers, baby wipes, Similac formula, hand sanitizer, clean supplies and toilet paper. Monetary donations are also welcome to help ensure that they can continue to serve the 1,600 families per month they see regularly plus any new families that come to them during this time. Please donate if you are able!\n\nxo\n\nBen\n\n#StayAtHome #WithMe",
+        "publishedAt": "2020-03-24T00:06:54Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/QHTXnGLb4I0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/QHTXnGLb4I0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/QHTXnGLb4I0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/QHTXnGLb4I0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/QHTXnGLb4I0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
         }
       },
-      {
-        "contentDetails": {
-          "duration": 3027
-        },
-        "id": "1eEcVCyKMb8",
-        "kind": "youtube#video",
-        "snippet": {
-          "channelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "channelTitle": "Death Cab for Cutie",
-          "description": "Ben is really excited for today’s covers only show! Make sure to get your requests in asap. Tune in at 4pm PT.\n\nToday's show is in benefit of Country Doctor Community Health Centers (https://countrydoctor.org) based in Seattle. They are a nonprofit organization that provides high quality, comprehensive health care to their patients. Community health centers are an indispensable resource for Seattle amid the COVID-19 outbreak, please donate to help support them during this time if you can!\n\n#StayAtHome #WithMe",
-          "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "publishedAt": "2020-03-23T00:06:09.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "1eEcVCyKMb8"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/1eEcVCyKMb8/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/1eEcVCyKMb8/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/1eEcVCyKMb8/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/1eEcVCyKMb8/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/1eEcVCyKMb8/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Ben Gibbard: Live From Home (3/22/20)",
-          "videoOwnerChannelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "videoOwnerChannelTitle": "Death Cab for Cutie"
-        },
-        "comments": {
-          "items": [
-            {
-              "id": "UgzyR6a6B-Czl4pI5ZN4AaABAg",
-              "kind": "youtube#commentThread",
+      "comments": [
+        {
+          "id": "UgzMtwDHMKaTMXMg0BJ4AaABAg",
+          "snippet": {
+            "videoId": "QHTXnGLb4I0",
+            "topLevelComment": {
               "snippet": {
-                "topLevelComment": {
-                  "id": "UgzyR6a6B-Czl4pI5ZN4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-23T05:02:12.000Z",
-                    "textDisplay": "Here is the setlist of all the covers Ben played today:\n\n0:48: “Isolation\" by John Lennon\n5:43: \"Silver Lining\" by Rilo Kiley\n10:05: “Thirteen” by Big Star\n14:11: “Waltz #2 (XO)” by Elliott Smith\n19:19: “Motion Sickness” by Phoebe Bridgers\n24:36: “If Not for You” by Bob Dylan\n33:52: “New Slang” by The Shins\n39:38: “Hysteria” by Def Leppard\n44:33: \"The Bones Are Their Money\" from Tim Robinson's show 'I Think You Should Leave' [ original here: http://youtu.be/Z3fTRk2yEgU ]\n46:39: “Do You Realize??” by The Flaming Lips\n\nSpotify playlist of these songs here: http://found.ee/BG-Mar22-Covers",
-                    "textOriginal": "Here is the setlist of all the covers Ben played today:\n\n0:48: “Isolation\" by John Lennon\n5:43: \"Silver Lining\" by Rilo Kiley\n10:05: “Thirteen” by Big Star\n14:11: “Waltz #2 (XO)” by Elliott Smith\n19:19: “Motion Sickness” by Phoebe Bridgers\n24:36: “If Not for You” by Bob Dylan\n33:52: “New Slang” by The Shins\n39:38: “Hysteria” by Def Leppard\n44:33: \"The Bones Are Their Money\" from Tim Robinson's show 'I Think You Should Leave' [ original here: http://youtu.be/Z3fTRk2yEgU ]\n46:39: “Do You Realize??” by The Flaming Lips\n\nSpotify playlist of these songs here: http://found.ee/BG-Mar22-Covers",
-                    "updatedAt": "2020-03-23T05:03:56.000Z",
-                    "videoId": "1eEcVCyKMb8",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "1eEcVCyKMb8"
+                "textDisplay": "00:31 Champagne from a Paper Cup\r\n04:08 Debate Exposes Doubt\r\n07:54 Scientist Studies\r\n13:28 Wait [Secret Stars cover] \r\n17:27 Company Calls Epilogue\r\n22:47 (Q & A)\r\n28:17 Cleveland [¡All-Time Quarterback!]\r\n31:05 (This Is) The Dream of Evan and Chan [Dntel]\r\n34:51 Blacking Out the Friction\r\n37:40 Line of Best Fit \r\n44:18 I Was a Kaleidoscope\r\n49:24 No Joy in Mudville\r\n55:21 The Face That Launched 1000 Shits [The Revolutionary Hydra cover]",
+                "publishedAt": "2020-03-24T00:05:16.000Z",
+                "updatedAt": "2020-03-24T00:23:28.000Z"
               }
             }
-          ],
-          "kind": "youtube#commentThreadListResponse"
+          }
+        },
+        {
+          "id": "UgxGw6jHzet9UGwWqyZ4AaABAg",
+          "snippet": {
+            "videoId": "QHTXnGLb4I0",
+            "topLevelComment": {
+              "snippet": {
+                "textDisplay": "0:32 Champagne from a Paper Cup\n4:09 Debate Exposes Doubt\n7:55 Scientist Studies \n13:28 Wait (cover)\n17:27 Company Calls Epilogue \n28:17 Cleveland \n31:05 The Dream of Evan And Chan\n34:50 Blacking out the Friction \n37:40 Line of Best Fit\n44:17 I was a Kaleidoscope \n49:24 No Joy in Mudville \n55:20 The Face that Launched 1000 Shits (cover)",
+                "publishedAt": "2020-03-24T00:36:10.000Z",
+                "updatedAt": "2020-03-24T00:36:10.000Z"
+              }
+            }
+          }
+        },
+        {
+          "id": "Ugyy97bpcqZIYf1oudp4AaABAg",
+          "snippet": {
+            "videoId": "QHTXnGLb4I0",
+            "topLevelComment": {
+              "snippet": {
+                "textDisplay": "SONGS FROM 1997-2001 SETLIST\n\n0:34 - Champagne From A Paper Cup\n3:28 (4:06 for the restart) - Debate Exposes Doubt\n7:53 - Scientist Studies\n13:28 - Wait\n17:17 - Company Calls Epilogue\n(22:04 - Q&A)\n28:17 - Cleveland\n31:05 - This Is The Dream Of Evan And Chan\n34:50 - Blacking Out The Friction\n39:37 - Line of Best Fit\n44:17 - I Was A Kaleidoscope\n(47:30 - Shout out to Dr. John Halpern)\n49:24 - No Joy In Mudville\n55:20 - The Face That Launched 1,000 Sh*ts\n\n(Not sure if I'm supposed to censor profanity even if it's a song title?)",
+                "publishedAt": "2020-03-24T00:28:24.000Z",
+                "updatedAt": "2020-03-24T00:28:38.000Z"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "contentDetails": {
+        "duration": 3027
+      },
+      "id": "1eEcVCyKMb8",
+      "snippet": {
+        "title": "Ben Gibbard: Live From Home (3/22/20)",
+        "description": "Ben is really excited for today’s covers only show! Make sure to get your requests in asap. Tune in at 4pm PT.\n\nToday's show is in benefit of Country Doctor Community Health Centers (https://countrydoctor.org) based in Seattle. They are a nonprofit organization that provides high quality, comprehensive health care to their patients. Community health centers are an indispensable resource for Seattle amid the COVID-19 outbreak, please donate to help support them during this time if you can!\n\n#StayAtHome #WithMe",
+        "publishedAt": "2020-03-22T23:55:11Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/1eEcVCyKMb8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/1eEcVCyKMb8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/1eEcVCyKMb8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/1eEcVCyKMb8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/1eEcVCyKMb8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
         }
       },
-      {
-        "contentDetails": {
-          "duration": 2886
-        },
-        "id": "dLWmIJV4GMg",
-        "kind": "youtube#video",
-        "snippet": {
-          "channelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "channelTitle": "Death Cab for Cutie",
-          "description": "Ben will be livestreaming daily over the weekend too! Tune in at 4pm PT for tomorrow’s show which will be in benefit of Bloodworks Northwest (https://www.bloodworksnw.org), a community-based nonprofit organization harnessing donor gifts to provide a safe, lifesaving blood supply to more than 90 Northwest hospitals. Their centers and drives are currently operating by appointment only to adhere to social distancing recommendations in addition to ensuring a safe and reliable blood supply throughout this time. If you’re able, financial contributions are also welcome to help support patient services and blood research.\n\n#StayAtHome #WithMe",
-          "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "publishedAt": "2020-03-21T23:52:57.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "dLWmIJV4GMg"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/dLWmIJV4GMg/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/dLWmIJV4GMg/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/dLWmIJV4GMg/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/dLWmIJV4GMg/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/dLWmIJV4GMg/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Ben Gibbard: Live From Home (3/21/20)",
-          "videoOwnerChannelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "videoOwnerChannelTitle": "Death Cab for Cutie"
-        },
-        "comments": {
-          "items": [
-            {
-              "id": "UgxL6OqwiC45hl2UEmx4AaABAg",
-              "kind": "youtube#commentThread",
+      "comments": [
+        {
+          "id": "UgzyR6a6B-Czl4pI5ZN4AaABAg",
+          "snippet": {
+            "videoId": "1eEcVCyKMb8",
+            "topLevelComment": {
               "snippet": {
-                "topLevelComment": {
-                  "id": "UgxL6OqwiC45hl2UEmx4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-22T00:12:50.000Z",
-                    "textDisplay": "0:35 Lady Adelaide\r\n4:22 Recycled Air\r\n8:34 Your New Twin Sized Bed\r\n13:35 Willamine\r\n17:29 Q&A\n24:24 A Movie Script Ending\r\n29:44 Your Hurricane\r\n33:14 Your Heart Is An Empty Room\r\n39:38 Carolina\r\n42:07 PSA\r\n44:30 I Will Follow You Into The Dark\r\n\r\n\r\n\r\n\r\nI think that's all of them, hopefully.",
-                    "textOriginal": "0:35 Lady Adelaide\r\n4:22 Recycled Air\r\n8:34 Your New Twin Sized Bed\r\n13:35 Willamine\r\n17:29 Q&A\n24:24 A Movie Script Ending\r\n29:44 Your Hurricane\r\n33:14 Your Heart Is An Empty Room\r\n39:38 Carolina\r\n42:07 PSA\r\n44:30 I Will Follow You Into The Dark\r\n\r\n\r\n\r\n\r\nI think that's all of them, hopefully.",
-                    "updatedAt": "2020-03-22T00:13:57.000Z",
-                    "videoId": "dLWmIJV4GMg",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "dLWmIJV4GMg"
+                "textDisplay": "Here is the setlist of all the covers Ben played today:\n\n0:48: “Isolation\" by John Lennon\n5:43: \"Silver Lining\" by Rilo Kiley\n10:05: “Thirteen” by Big Star\n14:11: “Waltz #2 (XO)” by Elliott Smith\n19:19: “Motion Sickness” by Phoebe Bridgers\n24:36: “If Not for You” by Bob Dylan\n33:52: “New Slang” by The Shins\n39:38: “Hysteria” by Def Leppard\n44:33: \"The Bones Are Their Money\" from Tim Robinson's show 'I Think You Should Leave' [ original here: http://youtu.be/Z3fTRk2yEgU ]\n46:39: “Do You Realize??” by The Flaming Lips\n\nSpotify playlist of these songs here: http://found.ee/BG-Mar22-Covers",
+                "publishedAt": "2020-03-23T05:02:12.000Z",
+                "updatedAt": "2020-03-23T05:03:56.000Z"
               }
             }
-          ],
-          "kind": "youtube#commentThreadListResponse"
+          }
+        },
+        {
+          "id": "UgyA0JzCcn4gxF1ktmZ4AaABAg",
+          "snippet": {
+            "videoId": "1eEcVCyKMb8",
+            "topLevelComment": {
+              "snippet": {
+                "textDisplay": "0:48: Isolation\n5:43: Silver Lining\n10:05: Thirteen \n14:11: Waltz #2 (XO)\n19:19: Motion Sickness\n24:36: If Not For You\n33:52: New Slang (When You Notice The Stripes)\n39:38: Hysteria\n44:33: The Bones Are The Skeletons’ Money\n46:39: Do You Realize?",
+                "publishedAt": "2020-03-23T00:37:38.000Z",
+                "updatedAt": "2020-03-23T00:37:38.000Z"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "contentDetails": {
+        "duration": 2886
+      },
+      "id": "dLWmIJV4GMg",
+      "snippet": {
+        "title": "Ben Gibbard: Live From Home (3/21/20)",
+        "description": "Ben will be livestreaming daily over the weekend too! Tune in at 4pm PT for tomorrow’s show which will be in benefit of Bloodworks Northwest (https://www.bloodworksnw.org), a community-based nonprofit organization harnessing donor gifts to provide a safe, lifesaving blood supply to more than 90 Northwest hospitals. Their centers and drives are currently operating by appointment only to adhere to social distancing recommendations in addition to ensuring a safe and reliable blood supply throughout this time. If you’re able, financial contributions are also welcome to help support patient services and blood research.\n\n#StayAtHome #WithMe",
+        "publishedAt": "2020-03-21T23:58:35Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/dLWmIJV4GMg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/dLWmIJV4GMg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/dLWmIJV4GMg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/dLWmIJV4GMg/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/dLWmIJV4GMg/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
         }
       },
-      {
-        "contentDetails": {
-          "duration": 2813
-        },
-        "id": "PX7A8tQNp8g",
-        "kind": "youtube#video",
-        "snippet": {
-          "channelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "channelTitle": "Death Cab for Cutie",
-          "description": "I had a good time answering your questions and playing some tunes today. More fun tomorrow at 4pm PT!\n\nTomorrow’s show will be in benefit of New Horizons Ministries (https://nhmin.org), an organization that helps provide resources for youth experiencing homelessness in the Seattle area.\n\n#StayAtHome #WithMe",
-          "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "publishedAt": "2020-03-20T23:54:15.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "PX7A8tQNp8g"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/PX7A8tQNp8g/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/PX7A8tQNp8g/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/PX7A8tQNp8g/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/PX7A8tQNp8g/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/PX7A8tQNp8g/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Ben Gibbard: Live From Home (3/20/20)",
-          "videoOwnerChannelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "videoOwnerChannelTitle": "Death Cab for Cutie"
-        },
-        "comments": {
-          "items": [
-            {
-              "id": "UgzFrsRd3EU5rpVMfU94AaABAg",
-              "kind": "youtube#commentThread",
+      "comments": [
+        {
+          "id": "Ugwvw34H4WPb3AU9L1t4AaABAg",
+          "snippet": {
+            "videoId": "dLWmIJV4GMg",
+            "topLevelComment": {
               "snippet": {
-                "topLevelComment": {
-                  "id": "UgzFrsRd3EU5rpVMfU94AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-21T01:26:45.000Z",
-                    "textDisplay": "1:10 - Steadier Footing\n3:20 - You Remind Me of Home\n6:33 - Why You'd Want To Live Here\n(11:15 - Q&A)\n17:14 - When The Sun Goes Down On Your Street\n20:37 - These Roads Don't Move\n24:03 - Coney Island\n26:54 - Keep Yourself Warm (Frightened Rabbit cover)\n(31:00 - New Horizon Ministries)\n34:14 - Life In Quarantine\n38:35 - Something's Rattling\n43:07 - Brand New Colony\n\n\nWow a couple songs on this set that I had to look up to get the names! Ben's got so many hidden gems!",
-                    "textOriginal": "1:10 - Steadier Footing\n3:20 - You Remind Me of Home\n6:33 - Why You'd Want To Live Here\n(11:15 - Q&A)\n17:14 - When The Sun Goes Down On Your Street\n20:37 - These Roads Don't Move\n24:03 - Coney Island\n26:54 - Keep Yourself Warm (Frightened Rabbit cover)\n(31:00 - New Horizon Ministries)\n34:14 - Life In Quarantine\n38:35 - Something's Rattling\n43:07 - Brand New Colony\n\n\nWow a couple songs on this set that I had to look up to get the names! Ben's got so many hidden gems!",
-                    "updatedAt": "2020-03-21T01:26:45.000Z",
-                    "videoId": "PX7A8tQNp8g",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "PX7A8tQNp8g"
-              }
-            },
-            {
-              "id": "UgyQN0bZ9dNoaOkuzhl4AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "UgyQN0bZ9dNoaOkuzhl4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-21T01:29:42.000Z",
-                    "textDisplay": "01:11 Steadier Footing\n3:20 You Remind Me of Home\n6:32 Why You'd Want to Live Here\n11:27 (Q & A)\n17:14 When the Sun Goes Down on Your Street\n20:37 These Roads Don't Move\n24:03 Coney Island\n26:55 Keep Yourself Warm (Frightened Rabbit cover)\n31:03 (New Horizons Ministries Charity)\n34:25 Life in Quarantine [NEW SONG]\n38:35 Something's Rattling (Cowpoke)\n43:07 Brand New Colony",
-                    "textOriginal": "01:11 Steadier Footing\n3:20 You Remind Me of Home\n6:32 Why You'd Want to Live Here\n11:27 (Q & A)\n17:14 When the Sun Goes Down on Your Street\n20:37 These Roads Don't Move\n24:03 Coney Island\n26:55 Keep Yourself Warm (Frightened Rabbit cover)\n31:03 (New Horizons Ministries Charity)\n34:25 Life in Quarantine [NEW SONG]\n38:35 Something's Rattling (Cowpoke)\n43:07 Brand New Colony",
-                    "updatedAt": "2020-03-21T02:46:12.000Z",
-                    "videoId": "PX7A8tQNp8g",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "PX7A8tQNp8g"
+                "textDisplay": "42:07 Important PSA\n44:30 I Will Follow You Into The Dark",
+                "publishedAt": "2020-03-21T23:55:55.000Z",
+                "updatedAt": "2020-03-21T23:57:40.000Z"
               }
             }
-          ],
-          "kind": "youtube#commentThreadListResponse"
+          }
+        },
+        {
+          "id": "UgxL6OqwiC45hl2UEmx4AaABAg",
+          "snippet": {
+            "videoId": "dLWmIJV4GMg",
+            "topLevelComment": {
+              "snippet": {
+                "textDisplay": "0:35 Lady Adelaide\r\n4:22 Recycled Air\r\n8:34 Your New Twin Sized Bed\r\n13:35 Willamine\r\n17:29 Q&A\n24:24 A Movie Script Ending\r\n29:44 Your Hurricane\r\n33:14 Your Heart Is An Empty Room\r\n39:38 Carolina\r\n42:07 PSA\r\n44:30 I Will Follow You Into The Dark\r\n\r\n\r\n\r\n\r\nI think that's all of them, hopefully.",
+                "publishedAt": "2020-03-22T00:12:50.000Z",
+                "updatedAt": "2020-03-22T00:13:57.000Z"
+              }
+            }
+          }
+        },
+        {
+          "id": "Ugwk_pbFUTPAjUwk3oN4AaABAg",
+          "snippet": {
+            "videoId": "dLWmIJV4GMg",
+            "topLevelComment": {
+              "snippet": {
+                "textDisplay": "8:30 Twin sized bed ❤\n24:20 Movie script ending 🔥",
+                "publishedAt": "2020-03-22T05:08:01.000Z",
+                "updatedAt": "2020-03-22T05:08:01.000Z"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "contentDetails": {
+        "duration": 2813
+      },
+      "id": "PX7A8tQNp8g",
+      "snippet": {
+        "title": "Ben Gibbard: Live From Home (3/20/20)",
+        "description": "I had a good time answering your questions and playing some tunes today. More fun tomorrow at 4pm PT!\n\nTomorrow’s show will be in benefit of New Horizons Ministries (https://nhmin.org), an organization that helps provide resources for youth experiencing homelessness in the Seattle area.\n\n#StayAtHome #WithMe",
+        "publishedAt": "2020-03-20T23:52:45Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/PX7A8tQNp8g/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/PX7A8tQNp8g/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/PX7A8tQNp8g/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/PX7A8tQNp8g/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/PX7A8tQNp8g/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
         }
       },
-      {
-        "contentDetails": {
-          "duration": 3101
-        },
-        "id": "jhgssMW8L0U",
-        "kind": "youtube#video",
-        "snippet": {
-          "channelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "channelTitle": "Death Cab for Cutie",
-          "description": "Had a lot of fun playing songs for you again today! I'll be back online livestreaming at 4pm PT tomorrow. Keep those requests and questions coming! \n\nTomorrow’s show will be in benefit of University District Food Bank (https://www.udistrictfoodbank.org) based in Seattle. In addition to food, they are looking for folks to donate toiletries, diapers, baby formula and more. If you're able, please consider donating some of these items to help those in need!\n\n#StayAtHome #WithMe",
-          "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "publishedAt": "2020-03-20T01:03:44.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "jhgssMW8L0U"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/jhgssMW8L0U/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/jhgssMW8L0U/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/jhgssMW8L0U/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/jhgssMW8L0U/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/jhgssMW8L0U/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Ben Gibbard: Live From Home (3/19/20)",
-          "videoOwnerChannelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "videoOwnerChannelTitle": "Death Cab for Cutie"
-        },
-        "comments": {
-          "items": [
-            {
-              "id": "Ugw2pd9N-sxBBhapeG94AaABAg",
-              "kind": "youtube#commentThread",
+      "comments": [
+        {
+          "id": "UgzFrsRd3EU5rpVMfU94AaABAg",
+          "snippet": {
+            "videoId": "PX7A8tQNp8g",
+            "topLevelComment": {
               "snippet": {
-                "topLevelComment": {
-                  "id": "Ugw2pd9N-sxBBhapeG94AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-20T00:15:20.000Z",
-                    "textDisplay": "0:10 - St. Peter's Cathedral\n4:04 - Photobooth\n8:30 -  405\n12:41 - Little Wanderer\n(17:15 - Q&A)\n20:55 - Brother's on a Hotel Bed\n24:24 - Soul Meets Body\n28:13 - Talking Bird\n(32:00 - University District Food Bank)\n33:56 - 60 & Punk\n38:47 - Grace Cathedral Hill (The Decemberists cover!!!)\n44:07 - Broken Yolk in Western Sky\n48:54 - The Sound of Settling",
-                    "textOriginal": "0:10 - St. Peter's Cathedral\n4:04 - Photobooth\n8:30 -  405\n12:41 - Little Wanderer\n(17:15 - Q&A)\n20:55 - Brother's on a Hotel Bed\n24:24 - Soul Meets Body\n28:13 - Talking Bird\n(32:00 - University District Food Bank)\n33:56 - 60 & Punk\n38:47 - Grace Cathedral Hill (The Decemberists cover!!!)\n44:07 - Broken Yolk in Western Sky\n48:54 - The Sound of Settling",
-                    "updatedAt": "2020-03-20T00:15:20.000Z",
-                    "videoId": "jhgssMW8L0U",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "jhgssMW8L0U"
-              }
-            },
-            {
-              "id": "UgzfNOpl8FJgtuk4mAh4AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "UgzfNOpl8FJgtuk4mAh4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-20T00:28:46.000Z",
-                    "textDisplay": "0:11: St. Peter’s Cathedral\n4:06: Photobooth\n8:14: 405\n12:42: Little Wanderer\n20:55: Brothers On A Hotel Bed\n24:25: Soul Meets Body\n28:14: Talking Bird\n33:57: 60 & Punk\n38:48: Grace Cathedral Hill\n44:08: Broken Yolk in Western Sky\n48:55: The Sound of Settling",
-                    "textOriginal": "0:11: St. Peter’s Cathedral\n4:06: Photobooth\n8:14: 405\n12:42: Little Wanderer\n20:55: Brothers On A Hotel Bed\n24:25: Soul Meets Body\n28:14: Talking Bird\n33:57: 60 & Punk\n38:48: Grace Cathedral Hill\n44:08: Broken Yolk in Western Sky\n48:55: The Sound of Settling",
-                    "updatedAt": "2020-03-20T00:28:46.000Z",
-                    "videoId": "jhgssMW8L0U",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "jhgssMW8L0U"
+                "textDisplay": "1:10 - Steadier Footing\n3:20 - You Remind Me of Home\n6:33 - Why You'd Want To Live Here\n(11:15 - Q&A)\n17:14 - When The Sun Goes Down On Your Street\n20:37 - These Roads Don't Move\n24:03 - Coney Island\n26:54 - Keep Yourself Warm (Frightened Rabbit cover)\n(31:00 - New Horizon Ministries)\n34:14 - Life In Quarantine\n38:35 - Something's Rattling\n43:07 - Brand New Colony\n\n\nWow a couple songs on this set that I had to look up to get the names! Ben's got so many hidden gems!",
+                "publishedAt": "2020-03-21T01:26:45.000Z",
+                "updatedAt": "2020-03-21T01:26:45.000Z"
               }
             }
-          ],
-          "kind": "youtube#commentThreadListResponse"
+          }
+        },
+        {
+          "id": "UgyQN0bZ9dNoaOkuzhl4AaABAg",
+          "snippet": {
+            "videoId": "PX7A8tQNp8g",
+            "topLevelComment": {
+              "snippet": {
+                "textDisplay": "01:11 Steadier Footing\n3:20 You Remind Me of Home\n6:32 Why You'd Want to Live Here\n11:27 (Q & A)\n17:14 When the Sun Goes Down on Your Street\n20:37 These Roads Don't Move\n24:03 Coney Island\n26:55 Keep Yourself Warm (Frightened Rabbit cover)\n31:03 (New Horizons Ministries Charity)\n34:25 Life in Quarantine [NEW SONG]\n38:35 Something's Rattling (Cowpoke)\n43:07 Brand New Colony",
+                "publishedAt": "2020-03-21T01:29:42.000Z",
+                "updatedAt": "2020-03-21T02:46:12.000Z"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "contentDetails": {
+        "duration": 3101
+      },
+      "id": "jhgssMW8L0U",
+      "snippet": {
+        "title": "Ben Gibbard: Live From Home (3/19/20)",
+        "description": "Had a lot of fun playing songs for you again today! I'll be back online livestreaming at 4pm PT tomorrow. Keep those requests and questions coming! \n\nTomorrow’s show will be in benefit of University District Food Bank (https://www.udistrictfoodbank.org) based in Seattle. In addition to food, they are looking for folks to donate toiletries, diapers, baby formula and more. If you're able, please consider donating some of these items to help those in need!\n\n#StayAtHome #WithMe",
+        "publishedAt": "2020-03-19T23:55:54Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/jhgssMW8L0U/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/jhgssMW8L0U/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/jhgssMW8L0U/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/jhgssMW8L0U/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/jhgssMW8L0U/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
         }
       },
-      {
-        "contentDetails": {
-          "duration": 3011
-        },
-        "id": "o0EpwT9fg1I",
-        "kind": "youtube#video",
-        "snippet": {
-          "channelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "channelTitle": "Death Cab for Cutie",
-          "description": "Hey there everyone,\n\nThanks so much for tuning in yesterday. I hope it was as cathartic for you as is was for me. Please keep those requests and questions coming, I’ll be back on the virtual air at 4pm PST.\n\nI do have a request for those who might be able to help...\n\nToday’s show will be in benefit of the Aurora Commons (https://www.auroracommons.org). For those who are not familiar, they are a wonderful organization that provides a safe space for people temporarily experiencing homelessness on Aurora Avenue here in Seattle. \n\nAt this point, there are no shelters available in North Seattle near The AC and only a few number of beds in neighboring hotels. The AC currently is pushing the city to allow for organized homeless encampments so that housed people don’t become afraid of folks setting up camp on their front lawns. So here’s what I’d like to ask of you...\n\nIf you are in the Seattle area OR have access to an open and safe post office/shipping location, please drop off or send any and all tents/sleeping bags (used is fine) to the following address;\n\nThe Aurora Commons c/o\nLisa Etter-Carson\n927 N 89th St\nSeattle, WA 98013\n\nIf you do drop off, please knock, leave your donations on the front porch, and walk away to maintain appreciate social distancing. \n\nThank you,\n\nBen\n\n#StayAtHome #WithMe",
-          "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "publishedAt": "2020-03-19T03:42:01.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "o0EpwT9fg1I"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/o0EpwT9fg1I/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/o0EpwT9fg1I/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/o0EpwT9fg1I/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/o0EpwT9fg1I/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/o0EpwT9fg1I/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Ben Gibbard: Live From Home (3/18/20)",
-          "videoOwnerChannelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "videoOwnerChannelTitle": "Death Cab for Cutie"
-        },
-        "comments": {
-          "items": [
-            {
-              "id": "Ugy-lywIEk4_-n2JiGB4AaABAg",
-              "kind": "youtube#commentThread",
+      "comments": [
+        {
+          "id": "Ugw2pd9N-sxBBhapeG94AaABAg",
+          "snippet": {
+            "videoId": "jhgssMW8L0U",
+            "topLevelComment": {
               "snippet": {
-                "topLevelComment": {
-                  "id": "Ugy-lywIEk4_-n2JiGB4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-19T00:30:08.000Z",
-                    "textDisplay": "0:11: No Room In Frame\n4:11: Teardrop Windows\n9:17: Title and Registration\n15:54: Technicolor Girls\n19:44: Codes and keys\n23:37: Passenger Seat\n27:48: When We Drive\n36:23: Me and Magdalena\n41:35: Ceremony\n46:07: Such Great Heights",
-                    "textOriginal": "0:11: No Room In Frame\n4:11: Teardrop Windows\n9:17: Title and Registration\n15:54: Technicolor Girls\n19:44: Codes and keys\n23:37: Passenger Seat\n27:48: When We Drive\n36:23: Me and Magdalena\n41:35: Ceremony\n46:07: Such Great Heights",
-                    "updatedAt": "2020-03-19T02:24:26.000Z",
-                    "videoId": "o0EpwT9fg1I",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "o0EpwT9fg1I"
-              }
-            },
-            {
-              "id": "UgxPO2PgCV2bK8aLndJ4AaABAg",
-              "kind": "youtube#commentThread",
-              "snippet": {
-                "topLevelComment": {
-                  "id": "UgxPO2PgCV2bK8aLndJ4AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-19T01:32:30.000Z",
-                    "textDisplay": "0:00 No Room in Frame \n4:08 Teardrop Windows\n9:18 Title and Registration \n15:55 Technicolor Girls\n19:44 Codes & Keys\n23:37 Passenger Seat\n27:47 When We Drive\n36:23 Me and Magdalena (Monkees Cover)\n41:35 Ceremony (New Order Cover)\n46:07 Such Great Heights",
-                    "textOriginal": "0:00 No Room in Frame \n4:08 Teardrop Windows\n9:18 Title and Registration \n15:55 Technicolor Girls\n19:44 Codes & Keys\n23:37 Passenger Seat\n27:47 When We Drive\n36:23 Me and Magdalena (Monkees Cover)\n41:35 Ceremony (New Order Cover)\n46:07 Such Great Heights",
-                    "updatedAt": "2020-03-19T01:32:30.000Z",
-                    "videoId": "o0EpwT9fg1I",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "o0EpwT9fg1I"
+                "textDisplay": "0:10 - St. Peter's Cathedral\n4:04 - Photobooth\n8:30 -  405\n12:41 - Little Wanderer\n(17:15 - Q&A)\n20:55 - Brother's on a Hotel Bed\n24:24 - Soul Meets Body\n28:13 - Talking Bird\n(32:00 - University District Food Bank)\n33:56 - 60 & Punk\n38:47 - Grace Cathedral Hill (The Decemberists cover!!!)\n44:07 - Broken Yolk in Western Sky\n48:54 - The Sound of Settling",
+                "publishedAt": "2020-03-20T00:15:20.000Z",
+                "updatedAt": "2020-03-20T00:15:20.000Z"
               }
             }
-          ],
-          "kind": "youtube#commentThreadListResponse"
+          }
+        },
+        {
+          "id": "UgzfNOpl8FJgtuk4mAh4AaABAg",
+          "snippet": {
+            "videoId": "jhgssMW8L0U",
+            "topLevelComment": {
+              "snippet": {
+                "textDisplay": "0:11: St. Peter’s Cathedral\n4:06: Photobooth\n8:14: 405\n12:42: Little Wanderer\n20:55: Brothers On A Hotel Bed\n24:25: Soul Meets Body\n28:14: Talking Bird\n33:57: 60 & Punk\n38:48: Grace Cathedral Hill\n44:08: Broken Yolk in Western Sky\n48:55: The Sound of Settling",
+                "publishedAt": "2020-03-20T00:28:46.000Z",
+                "updatedAt": "2020-03-20T00:28:46.000Z"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "contentDetails": {
+        "duration": 3011
+      },
+      "id": "o0EpwT9fg1I",
+      "snippet": {
+        "title": "Ben Gibbard: Live From Home (3/18/20)",
+        "description": "Hey there everyone,\n\nThanks so much for tuning in yesterday. I hope it was as cathartic for you as is was for me. Please keep those requests and questions coming, I’ll be back on the virtual air at 4pm PST.\n\nI do have a request for those who might be able to help...\n\nToday’s show will be in benefit of the Aurora Commons (https://www.auroracommons.org). For those who are not familiar, they are a wonderful organization that provides a safe space for people temporarily experiencing homelessness on Aurora Avenue here in Seattle. \n\nAt this point, there are no shelters available in North Seattle near The AC and only a few number of beds in neighboring hotels. The AC currently is pushing the city to allow for organized homeless encampments so that housed people don’t become afraid of folks setting up camp on their front lawns. So here’s what I’d like to ask of you...\n\nIf you are in the Seattle area OR have access to an open and safe post office/shipping location, please drop off or send any and all tents/sleeping bags (used is fine) to the following address;\n\nThe Aurora Commons c/o\nLisa Etter-Carson\n927 N 89th St\nSeattle, WA 98013\n\nIf you do drop off, please knock, leave your donations on the front porch, and walk away to maintain appreciate social distancing. \n\nThank you,\n\nBen\n\n#StayAtHome #WithMe",
+        "publishedAt": "2020-03-18T23:59:20Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/o0EpwT9fg1I/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/o0EpwT9fg1I/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/o0EpwT9fg1I/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/o0EpwT9fg1I/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/o0EpwT9fg1I/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
         }
       },
-      {
-        "contentDetails": {
-          "duration": 2875
-        },
-        "id": "Ei9xuVkbQuU",
-        "kind": "youtube#video",
-        "snippet": {
-          "channelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "channelTitle": "Death Cab for Cutie",
-          "description": "Hey Everyone,\n\nI know you are all really freaked out right now.  I am too.  And while I’m proud that we’re all doing the necessary things at the moment to help flatten the curve, I know it has left us all incredibly isolated.  \n\nBut because we’re all going through this nightmare together we are quite literally NOT alone. Our lives and stories are all linked, maybe more now than they have ever been.  \n\nBe it with DCFC, Postal Service, or solo I have always been grateful for the honor you have bestowed upon us by choosing to congregate en masse around our music.  Some of you have traveled great distances and/or shelled out large sums of money to see us play and that has never been lost on me.  So in this crazy and unprecedented time, I’d like to return the favor by coming to YOU.\n\nFor the next few weeks I will be playing songs everyday from my home studio.  We will be streaming on YouTube at 4pm PST daily.  We’re still working out the details but I’m hoping to take some requests and maybe even have a guest or two stop by digitally.  The first show will be tomorrow.  It will assuredly be a little wonky and glitchy but we’re gonna do our best.\n\nSee You Tomorrow.\n\nxo\n\nBen\n\n#StayAtHome #WithMe",
-          "playlistId": "PLVuKHi9v2Rn6WytY_26KfgO2F2yp4Gqgv",
-          "publishedAt": "2020-03-19T03:41:47.000Z",
-          "resourceId": {
-            "kind": "youtube#video",
-            "videoId": "Ei9xuVkbQuU"
-          },
-          "thumbnails": {
-            "default": {
-              "height": 90,
-              "url": "https://i.ytimg.com/vi/Ei9xuVkbQuU/default.jpg",
-              "width": 120
-            },
-            "high": {
-              "height": 360,
-              "url": "https://i.ytimg.com/vi/Ei9xuVkbQuU/hqdefault.jpg",
-              "width": 480
-            },
-            "maxres": {
-              "height": 720,
-              "url": "https://i.ytimg.com/vi/Ei9xuVkbQuU/maxresdefault.jpg",
-              "width": 1280
-            },
-            "medium": {
-              "height": 180,
-              "url": "https://i.ytimg.com/vi/Ei9xuVkbQuU/mqdefault.jpg",
-              "width": 320
-            },
-            "standard": {
-              "height": 480,
-              "url": "https://i.ytimg.com/vi/Ei9xuVkbQuU/sddefault.jpg",
-              "width": 640
-            }
-          },
-          "title": "Ben Gibbard: Live From Home",
-          "videoOwnerChannelId": "UCOtn115fCfFKIxG7_Quv9ZA",
-          "videoOwnerChannelTitle": "Death Cab for Cutie"
-        },
-        "comments": {
-          "items": [
-            {
-              "id": "UgwYJ-InesYsfLgNCZ14AaABAg",
-              "kind": "youtube#commentThread",
+      "comments": [
+        {
+          "id": "Ugy-lywIEk4_-n2JiGB4AaABAg",
+          "snippet": {
+            "videoId": "o0EpwT9fg1I",
+            "topLevelComment": {
               "snippet": {
-                "topLevelComment": {
-                  "id": "UgwYJ-InesYsfLgNCZ14AaABAg",
-                  "kind": "youtube#comment",
-                  "snippet": {
-                    "publishedAt": "2020-03-18T04:02:53.000Z",
-                    "textDisplay": "0:19: We Will Become Silhouettes\n3:38: A Lack of Color\n7:46: Title Track\n12:22: Northern Lights\n18:30: Crooked Teeth\n22:34: Cath...\n28:39: Grapevine Fires\n33:54: Fake Plastic Trees\n40:01: California Zephyr\n44:06: The District Sleeps Alone Tonight",
-                    "textOriginal": "0:19: We Will Become Silhouettes\n3:38: A Lack of Color\n7:46: Title Track\n12:22: Northern Lights\n18:30: Crooked Teeth\n22:34: Cath...\n28:39: Grapevine Fires\n33:54: Fake Plastic Trees\n40:01: California Zephyr\n44:06: The District Sleeps Alone Tonight",
-                    "updatedAt": "2020-03-18T04:06:24.000Z",
-                    "videoId": "Ei9xuVkbQuU",
-                    "viewerRating": "none"
-                  }
-                },
-                "videoId": "Ei9xuVkbQuU"
+                "textDisplay": "0:11: No Room In Frame\n4:11: Teardrop Windows\n9:17: Title and Registration\n15:54: Technicolor Girls\n19:44: Codes and keys\n23:37: Passenger Seat\n27:48: When We Drive\n36:23: Me and Magdalena\n41:35: Ceremony\n46:07: Such Great Heights",
+                "publishedAt": "2020-03-19T00:30:08.000Z",
+                "updatedAt": "2020-03-19T02:24:26.000Z"
               }
             }
-          ],
-          "kind": "youtube#commentThreadListResponse"
+          }
+        },
+        {
+          "id": "UgxPO2PgCV2bK8aLndJ4AaABAg",
+          "snippet": {
+            "videoId": "o0EpwT9fg1I",
+            "topLevelComment": {
+              "snippet": {
+                "textDisplay": "0:00 No Room in Frame \n4:08 Teardrop Windows\n9:18 Title and Registration \n15:55 Technicolor Girls\n19:44 Codes & Keys\n23:37 Passenger Seat\n27:47 When We Drive\n36:23 Me and Magdalena (Monkees Cover)\n41:35 Ceremony (New Order Cover)\n46:07 Such Great Heights",
+                "publishedAt": "2020-03-19T01:32:30.000Z",
+                "updatedAt": "2020-03-19T01:32:30.000Z"
+              }
+            }
+          }
         }
-      }
-    ],
-    "kind": "youtube#playlistItemListResponse"
-  }
+      ]
+    },
+    {
+      "contentDetails": {
+        "duration": 2875
+      },
+      "id": "Ei9xuVkbQuU",
+      "snippet": {
+        "title": "Ben Gibbard: Live From Home",
+        "description": "Hey Everyone,\n\nI know you are all really freaked out right now.  I am too.  And while I’m proud that we’re all doing the necessary things at the moment to help flatten the curve, I know it has left us all incredibly isolated.  \n\nBut because we’re all going through this nightmare together we are quite literally NOT alone. Our lives and stories are all linked, maybe more now than they have ever been.  \n\nBe it with DCFC, Postal Service, or solo I have always been grateful for the honor you have bestowed upon us by choosing to congregate en masse around our music.  Some of you have traveled great distances and/or shelled out large sums of money to see us play and that has never been lost on me.  So in this crazy and unprecedented time, I’d like to return the favor by coming to YOU.\n\nFor the next few weeks I will be playing songs everyday from my home studio.  We will be streaming on YouTube at 4pm PST daily.  We’re still working out the details but I’m hoping to take some requests and maybe even have a guest or two stop by digitally.  The first show will be tomorrow.  It will assuredly be a little wonky and glitchy but we’re gonna do our best.\n\nSee You Tomorrow.\n\nxo\n\nBen\n\n#StayAtHome #WithMe",
+        "publishedAt": "2020-03-17T23:53:34Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Ei9xuVkbQuU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Ei9xuVkbQuU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Ei9xuVkbQuU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/Ei9xuVkbQuU/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/Ei9xuVkbQuU/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        }
+      },
+      "comments": [
+        {
+          "id": "UgwYJ-InesYsfLgNCZ14AaABAg",
+          "snippet": {
+            "videoId": "Ei9xuVkbQuU",
+            "topLevelComment": {
+              "snippet": {
+                "textDisplay": "0:19: We Will Become Silhouettes\n3:38: A Lack of Color\n7:46: Title Track\n12:22: Northern Lights\n18:30: Crooked Teeth\n22:34: Cath...\n28:39: Grapevine Fires\n33:54: Fake Plastic Trees\n40:01: California Zephyr\n44:06: The District Sleeps Alone Tonight",
+                "publishedAt": "2020-03-18T04:02:53.000Z",
+                "updatedAt": "2020-03-18T04:06:24.000Z"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
 }

@@ -1,4 +1,4 @@
-import * as qs from './searchParams'
+import { url } from './url'
 
 import {
   Track,
@@ -11,7 +11,7 @@ import {
   AccessToken,
 } from '../types'
 
-interface NormalizedData {
+export interface NormalizedData {
   videos: Videos
   tracks: Tracks
   meta: ArtistMeta
@@ -67,7 +67,10 @@ const videoSongToTrack = ({
   }
 }
 
-const normalizeData = ({ meta, data: videos }: ApiData): NormalizedData => {
+export const normalizeData = ({
+  meta,
+  data: videos,
+}: ApiData): NormalizedData => {
   const resp: NormalizedData = { videos: [], tracks: [], meta }
 
   videos.forEach((video) => {
@@ -94,7 +97,7 @@ const fetchData = (
   id: ArtistId,
   accessToken?: AccessToken
 ): Promise<NormalizedData> =>
-  fetch(`/.netlify/functions/videos?${qs.stringify({ id, accessToken })}`).then(
+  fetch(url('/.netlify/functions/videos', { id, accessToken })).then(
     async (resp) => {
       const data = (await resp.json()) as ApiData
       if (resp.ok) {

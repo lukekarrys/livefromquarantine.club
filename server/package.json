@@ -1,60 +1,56 @@
 {
   "name": "server",
   "version": "1.0.0",
+  "ava": {
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  },
   "dependencies": {
     "axios": "^0.21.1",
-    "dlv": "^1.1.3",
     "dotenv": "^8.2.0",
-    "eval": "^0.1.4",
     "iso8601-duration": "^1.3.0",
     "mkdirp": "^1.0.4"
   },
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.72",
+    "@types/mkdirp": "^1.0.1",
+    "@types/node": "^14.14.32",
+    "@types/prettier": "^2.2.2",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
     "ava": "^3.15.0",
-    "eslint": "^7.20.0",
+    "eslint": "^7.21.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-prettier": "^3.3.1",
+    "if-env": "^1.0.4",
     "lint-staged": "^10.5.4",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^2.2.1"
-  },
-  "eslintConfig": {
-    "root": true,
-    "extends": [
-      "eslint:recommended",
-      "plugin:prettier/recommended"
-    ],
-    "env": {
-      "es2020": true,
-      "browser": true,
-      "node": true
-    }
+    "prettier": "^2.2.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
   },
   "license": "MIT",
-  "lint-staged": {
-    "*.{css,md,json}": [
-      "prettier --write"
-    ],
-    "*.{js,jsx,ts,tsx}": [
-      "prettier --write",
-      "eslint --fix"
-    ]
-  },
   "prettier": {
     "semi": false,
     "singleQuote": true
   },
   "private": true,
   "scripts": {
-    "build": "node build.js",
-    "data": "node api/preload-data.js",
-    "data:fixtures": "node test/fixtures.js",
-    "dev": "NODE_ENV=development node api/dev-server.js",
-    "eslint": "eslint '**/*.{js,jsx,ts,tsx}'  --fix",
+    "build": "if-env CI=true && tsc --project tsconfig.json || echo 'Only build in CI'",
+    "build:watch": "nodemon --exec 'CI=true npm run build && node api/dev-server.js' --ext ts",
+    "check": "tsc --project tsconfig.json --noEmit",
+    "cleanup": "if-env CI=true && find . -type d -name 'node_modules' -prune -o -iname '*.ts' -exec rm -rf {} \\; || echo 'Only cleanup in CI'",
+    "data": "ts-node api/preload-data.ts && ts-node build.ts",
+    "data:fixtures": "ts-node fixtures/write.ts",
+    "dev": "nodemon --exec 'NODE_ENV=development ts-node api/dev-server.ts' --ext ts",
+    "eslint": "eslint '**/*.{js,ts}'  --fix",
     "lint": "npm run prettier && npm run eslint",
-    "precommit": "lint-staged && npm test",
-    "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,css,md,json}'",
-    "test": "ava test/test.js",
-    "trigger": "node api/trigger-gh-preload.js"
+    "precommit": "lint-staged",
+    "prettier": "prettier --write '**/*.{js,ts,css,md,json}'",
+    "test": "ava",
+    "trigger": "ts-node api/trigger-gh-preload.ts"
   }
 }

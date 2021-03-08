@@ -8,6 +8,7 @@ import {
   SelectMode,
   OrderId,
 } from '../types'
+import MediaPlayer from '../lib/MediaPlayer'
 
 export type FetchStartEvent = { type: 'FETCH_START' }
 export type FetchSuccessEvent = {
@@ -16,11 +17,14 @@ export type FetchSuccessEvent = {
   shuffle?: boolean
   repeat?: Repeat
   selectMode?: SelectMode
-  trackIds: TrackId[]
+  trackIds?: TrackId[]
 }
 export type FetchErrorEvent = { type: 'FETCH_ERROR'; error: Error }
 
-export type PlayerReadyEvent = { type: 'PLAYER_READY'; player: YT.Player }
+export type PlayerReadyEvent = {
+  type: 'PLAYER_READY'
+  player: YT.Player | HTMLAudioElement
+}
 export type PlayerErrorEvent = { type: 'PLAYER_ERROR'; error: Error }
 
 export type SelectTrackEvent = {
@@ -43,7 +47,7 @@ export type RemoveAllTracksEvent = {
 }
 
 export type NextEvent = { type: 'NEXT_TRACK' }
-export type EndEvent = { type: 'END_TRACK' }
+export type EndEvent = { type: 'MEDIA_END_TRACK' }
 
 export type PlayEvent = { type: 'PLAY' }
 export type PauseEvent = { type: 'PAUSE' }
@@ -52,16 +56,16 @@ export type ShuffleEvent = { type: 'SHUFFLE' }
 export type RepeatEvent = { type: 'REPEAT' }
 export type SelectModeEvent = { type: 'SELECT_MODE' }
 
-export type YouTubePlayEvent = { type: 'YOUTUBE_PLAY' }
-export type YouTubePauseEvent = { type: 'YOUTUBE_PAUSE' }
-export type YouTubeBufferingEvent = { type: 'YOUTUBE_BUFFERING' }
-export type YouTubeCuedEvent = { type: 'YOUTUBE_CUED' }
+export type MediaPlayEvent = { type: 'MEDIA_PLAY' }
+export type MediaPauseEvent = { type: 'MEDIA_PAUSE' }
+export type MediaBufferingEvent = { type: 'MEDIA_BUFFERING' }
+export type MediaCuedEvent = { type: 'MEDIA_CUED' }
 
-export type YouTubeEvent =
-  | YouTubePlayEvent
-  | YouTubePauseEvent
-  | YouTubeBufferingEvent
-  | YouTubeCuedEvent
+export type MediaEvent =
+  | MediaPlayEvent
+  | MediaPauseEvent
+  | MediaBufferingEvent
+  | MediaCuedEvent
   | EndEvent
 
 export type PlayerEvent =
@@ -74,7 +78,7 @@ export type PlayerEvent =
   | PauseEvent
   | NextEvent
   | EndEvent
-  | YouTubeEvent
+  | MediaEvent
   | ShuffleEvent
   | RepeatEvent
   | SelectModeEvent
@@ -99,7 +103,7 @@ export interface PlayerContext {
   songOrder: TrackOrderUnselected
   videoOrder: TrackOrderUnselected
   videoSongOrder: { [key in VideoId]?: TrackOrderUnselected }
-  player?: YT.Player
+  player?: MediaPlayer
   error?: Error
   shuffle: boolean
   repeat: Repeat
@@ -111,7 +115,7 @@ interface PlayerContextNotReady {
 }
 
 interface PlayerContextReady {
-  player: YT.Player
+  player: MediaPlayer
   error: undefined
 }
 
@@ -146,18 +150,10 @@ export type PlayerTransition<TEvent extends EventObject> = {
 
 export type PlayerSend = (event: PlayerEvent | PlayerEvent['type']) => void
 
-export type PlayerService = StateMachine.Service<PlayerContext, PlayerEvent>
-
-// This is a less strict typing of the machine's state for use with the above
-// PlayerService type which doesn't include State when returned from useMachine
-export type PlayerServiceState = StateMachine.State<
+export type PlayerService = StateMachine.Service<
   PlayerContext,
   PlayerEvent,
-  {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    value: any
-    context: PlayerContext
-  }
+  PlayerState
 >
 
 export type PlayerMachineState = StateMachine.State<
