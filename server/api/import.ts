@@ -15,7 +15,7 @@ const importEnv = async <T>(p: string): Promise<T> => {
   }
 
   try {
-    return getDefault<T>(`${p}.${tryExts[0]}`)
+    return await getDefault<T>(`${p}.${tryExts[0]}`)
   } catch (e) {
     return await getDefault<T>(`${p}.${tryExts[1]}`)
   }
