@@ -19,5 +19,12 @@ module.exports = {
     '^react-dom$': 'preact/compat',
   },
   collectCoverage: true,
-  coverageThreshold: {},
+  coverageThreshold: {
+    './src/machine/*.ts': {
+      branches: 20,
+      functions: 20,
+      lines: 20,
+      statements: 20,
+    },
+  },
 }
