@@ -31,7 +31,9 @@ export default {
     config.plugins.push(
       new DefinePlugin({
         'process.env.MEDIA_SERVER': JSON.stringify(
-          PRODUCTION ? 'https://143.198.54.155' : 'http://localhost:3002'
+          PRODUCTION
+            ? 'https://mp3.livefromquarantine.club'
+            : 'http://localhost:3002'
         ),
       })
     )
