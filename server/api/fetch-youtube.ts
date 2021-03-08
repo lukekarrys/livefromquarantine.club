@@ -1,11 +1,10 @@
 import findSetlist from './find-setlist'
 import * as youtube from './youtube'
 import { Token, PreloadedData, YouTube } from '../types'
-import normalizeVideo from './normalize-youtube-data'
 
 const isVideoPrivate = (video: YouTube.PlaylistItem | YouTube.Video) =>
-  video.snippet?.title === 'Private video' &&
-  video.snippet?.description === 'This video is private.'
+  video.snippet.title === 'Private video' &&
+  video.snippet.description === 'This video is private.'
 
 const isVideoFuture = (video: YouTube.Video) =>
   video.liveStreamingDetails ? !video.liveStreamingDetails.actualEndTime : false
@@ -141,7 +140,7 @@ const getFullVideoData = async (
       title: video.snippet.title,
     },
     videos: [
-      normalizeVideo({
+      youtube.normalizeVideo({
         ...video,
         comments,
       }),
@@ -168,7 +167,7 @@ const getFullPlaylistData = async (
       description: playlist.snippet.description,
     },
     videos: videos.map((video, index) =>
-      normalizeVideo({
+      youtube.normalizeVideo({
         ...video,
         comments: comments[index],
       })
