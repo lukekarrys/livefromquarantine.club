@@ -6,6 +6,7 @@ import {
   TrackId,
   VideoId,
   SelectMode,
+  MediaMode,
   OrderId,
 } from '../types'
 import MediaPlayer from '../lib/MediaPlayer'
@@ -13,13 +14,18 @@ import MediaPlayer from '../lib/MediaPlayer'
 export type FetchStartEvent = { type: 'FETCH_START' }
 export type FetchSuccessEvent = {
   type: 'FETCH_SUCCESS'
+  trackIds?: TrackId[]
   tracks: Tracks
+}
+export type FetchErrorEvent = { type: 'FETCH_ERROR'; error: Error }
+
+export type SetModes = {
+  type: 'SET_MODES'
   shuffle?: boolean
   repeat?: Repeat
   selectMode?: SelectMode
-  trackIds?: TrackId[]
+  mediaMode?: MediaMode
 }
-export type FetchErrorEvent = { type: 'FETCH_ERROR'; error: Error }
 
 export type PlayerReadyEvent = {
   type: 'PLAYER_READY'
@@ -55,6 +61,7 @@ export type PauseEvent = { type: 'PAUSE' }
 export type ShuffleEvent = { type: 'SHUFFLE' }
 export type RepeatEvent = { type: 'REPEAT' }
 export type SelectModeEvent = { type: 'SELECT_MODE' }
+export type SelectMediaEvent = { type: 'SELECT_MEDIA_MODE' }
 
 export type MediaPlayEvent = { type: 'MEDIA_PLAY' }
 export type MediaPauseEvent = { type: 'MEDIA_PAUSE' }
@@ -82,6 +89,8 @@ export type PlayerEvent =
   | ShuffleEvent
   | RepeatEvent
   | SelectModeEvent
+  | SelectMediaEvent
+  | SetModes
   | FetchSuccessEvent
   | FetchErrorEvent
   | FetchStartEvent
@@ -108,6 +117,7 @@ export interface PlayerContext {
   shuffle: boolean
   repeat: Repeat
   selectMode: SelectMode
+  mediaMode: MediaMode
 }
 
 interface PlayerContextNotReady {

@@ -6,7 +6,7 @@ import * as selectors from '../machine/selectors'
 import Player from '../components/player'
 import fetchData from '../lib/api'
 import * as debugService from '../lib/useDebugService'
-import { parseQs } from '../lib/url'
+import { artistsById } from '../artists'
 import {
   ArtistId,
   Videos,
@@ -15,6 +15,7 @@ import {
   SelectMode,
   Repeat,
   AccessToken,
+  MediaMode,
 } from '../types'
 
 interface Props {
@@ -22,10 +23,10 @@ interface Props {
   accessToken?: AccessToken
 }
 
-const { media } = parseQs(window.location.search)
 const hash = window.location.hash.slice(1)
 const upNext: TrackId[] = hash ? (hash.split(',') as TrackId[]) : []
 
+const mediaMode = localStorage.getItem('mediaMode')
 const selectMode = localStorage.getItem('selectMode')
 const shuffle = localStorage.getItem('shuffle')
 const repeat = localStorage.getItem('repeat')
@@ -34,13 +35,28 @@ const Artist: FunctionalComponent<Props> = ({ artist, accessToken }) => {
   const [videos, setVideos] = useState<Videos | undefined>(undefined)
   const [meta, setMeta] = useState<ArtistMeta | undefined>(undefined)
   const [state, send, service] = useMachine(playerMachine)
+  const { audio: artistHasAudio } = artistsById[artist]
 
-  debugService.useService(service, (s) =>
-    `${s.value} ${s.actions.map(({ type }) => type).join(',')}`.trim()
-  )
+  debugService.useService(service)
 
   useEffect(() => {
     send('FETCH_START')
+
+    send({
+      type: 'SET_MODES',
+      shuffle:
+        shuffle === 'true' || shuffle === 'false'
+          ? shuffle === 'true'
+          : undefined,
+      repeat: repeat != null ? (+repeat as Repeat) : undefined,
+      selectMode: selectMode != null ? (+selectMode as SelectMode) : undefined,
+      mediaMode: artistHasAudio
+        ? mediaMode != null
+          ? (+mediaMode as MediaMode)
+          : MediaMode.YouTube
+        : MediaMode.YouTubeOnly,
+    })
+
     fetchData(artist, accessToken)
       .then((res) => {
         setVideos(res.videos)
@@ -49,17 +65,10 @@ const Artist: FunctionalComponent<Props> = ({ artist, accessToken }) => {
           type: 'FETCH_SUCCESS',
           tracks: res.tracks,
           trackIds: upNext,
-          shuffle:
-            shuffle === 'true' || shuffle === 'false'
-              ? shuffle === 'true'
-              : undefined,
-          repeat: repeat != null ? (+repeat as Repeat) : undefined,
-          selectMode:
-            selectMode != null ? (+selectMode as SelectMode) : undefined,
         })
       })
       .catch((error: Error) => send({ type: 'FETCH_ERROR', error }))
-  }, [artist, send, accessToken])
+  }, [artist, send, accessToken, artistHasAudio])
 
   useEffect(() => {
     if (meta?.title) {
@@ -69,12 +78,7 @@ const Artist: FunctionalComponent<Props> = ({ artist, accessToken }) => {
 
   return (
     <div class="max-w-screen-c c:border-l c:border-r border-r-0 border-l-0 mx-auto border-gray-600 relative">
-      <Player
-        state={state}
-        send={send}
-        videos={videos}
-        media={media || 'youtube'}
-      >
+      <Player state={state} send={send} videos={videos}>
         {state.matches('idle') || state.matches('loading')
           ? 'Loading...'
           : state.matches('error')

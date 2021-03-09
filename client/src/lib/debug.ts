@@ -1,8 +1,8 @@
-const DEBUG =
+export const DEBUG =
   localStorage.getItem('debug') || process.env.NODE_ENV === 'development'
 
 export const log = (...args: unknown[]): void => {
-  // eslint-disable-next-line  no-console
+  // eslint-disable-next-line no-console
   if (DEBUG) console.log(...args)
 }
 

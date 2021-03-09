@@ -1,5 +1,5 @@
 import { createMachine, assign } from '@xstate/fsm'
-import { Repeat, SelectMode } from '../types'
+import { MediaMode, Repeat, SelectMode } from '../types'
 import * as Machine from './types'
 import * as selectors from './selectors'
 import * as trackOrder from './track-order'
@@ -22,6 +22,9 @@ const readyTransitions = {
   },
   SELECT_MODE: {
     actions: 'setSelectMode',
+  },
+  SELECT_MEDIA_MODE: {
+    actions: 'setMediaMode',
   },
 }
 
@@ -55,6 +58,7 @@ const playerErrorTransition: Machine.PlayerTransition<Machine.PlayerErrorEvent> 
 const playerTransitions = {
   ...playerReadyTransition,
   ...playerErrorTransition,
+  SET_MODES: { actions: 'setModes' },
 }
 
 const playerMachine = createMachine<
@@ -93,6 +97,7 @@ const playerMachine = createMachine<
       shuffle: false,
       repeat: Repeat.None,
       selectMode: SelectMode.Play,
+      mediaMode: MediaMode.YouTube,
     },
     states: {
       idle: {
@@ -336,23 +341,31 @@ const playerMachine = createMachine<
           return new MediaPlayer(event.player)
         },
       }),
-      setTracks: assign((context, event) => {
-        Machine.assertEventType(event, 'FETCH_SUCCESS')
+      setModes: assign((context, event) => {
+        Machine.assertEventType(event, 'SET_MODES')
 
         const shuffle = event.shuffle ?? context.shuffle
         const repeat = event.repeat ?? context.repeat
         const selectMode = event.selectMode ?? context.selectMode
-        const upNextIds = event.trackIds || []
+        const mediaMode = event.mediaMode ?? context.mediaMode
 
         return {
           ...context,
           shuffle,
           repeat,
           selectMode,
+          mediaMode,
+        }
+      }),
+      setTracks: assign((context, event) => {
+        Machine.assertEventType(event, 'FETCH_SUCCESS')
+
+        return {
+          ...context,
           ...trackOrder.setInitialOrder(event.tracks, {
-            shuffle,
-            repeat,
-            upNextIds,
+            shuffle: context.shuffle,
+            repeat: context.repeat,
+            upNextIds: event.trackIds || [],
           }),
         }
       }),
@@ -556,6 +569,30 @@ const playerMachine = createMachine<
           localStorage.setItem('selectMode', next.toString())
 
           return next
+        },
+      }),
+      setMediaMode: assign({
+        mediaMode: (context) => {
+          const current = context.mediaMode
+
+          if (current === MediaMode.YouTubeOnly) {
+            return current
+          }
+
+          const next =
+            context.mediaMode === MediaMode.Audio
+              ? MediaMode.YouTube
+              : context.mediaMode === MediaMode.YouTube
+              ? MediaMode.Audio
+              : context.mediaMode
+
+          localStorage.setItem('mediaMode', next.toString())
+          window.location.reload()
+
+          // This requires a page reload so return the same value so the UI
+          // doesnt shift. TODO: make this possible to happen dynamically
+          // even if the player has to reset
+          return current
         },
       }),
     },

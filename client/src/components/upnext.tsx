@@ -6,7 +6,8 @@ import Button, { ButtonType } from './button'
 import { toSongAndVideoTitle } from '../lib/to-title'
 import ListIcon from '../icons/list'
 import CloseIcon from '../icons/close'
-import { Track } from '../types'
+import { Track, Repeat, SelectMode, MediaMode } from '../types'
+import ModeControls from './mode-controls'
 
 interface Props {
   selected?: Track
@@ -14,6 +15,11 @@ interface Props {
   upNext: Machine.TrackOrder
   order: Machine.TrackOrder
   tracks: Machine.PlayerContext['tracksById']
+  ready: boolean
+  shuffle: boolean
+  repeat: Repeat
+  selectMode: SelectMode
+  mediaMode: MediaMode
 }
 
 const UpNext: FunctionalComponent<Props> = ({
@@ -22,6 +28,11 @@ const UpNext: FunctionalComponent<Props> = ({
   tracks,
   send,
   selected,
+  shuffle,
+  repeat,
+  selectMode,
+  mediaMode,
+  ready,
 }) => {
   const overlayRef = useRef<HTMLDivElement>()
   const closeRef = useRef<HTMLDivElement>()
@@ -81,7 +92,7 @@ const UpNext: FunctionalComponent<Props> = ({
         ref={panelRef}
         class={cx(
           'transition-transform duration-200 fixed right-0 inset-y-0 h-screen max-w-sm w-full flex flex-col',
-          'bg-white border-l border-gray-600 pt-2 z-30',
+          'bg-white border-l border-gray-600  z-30',
           !panelTransitionEnd && 'shadow-xl'
         )}
         style={{
@@ -89,7 +100,7 @@ const UpNext: FunctionalComponent<Props> = ({
         }}
       >
         <div
-          class="flex justify-between items-center pb-2 border-b border-gray-600 px-2 shadow"
+          class="flex justify-between items-center p-2 border-b border-gray-600 shadow"
           ref={closeRef}
         >
           <h1>Up Next {upNextOrder.length > 0 && upNextOrder.length}</h1>
@@ -181,6 +192,17 @@ const UpNext: FunctionalComponent<Props> = ({
               </Button>
             ))}
           </div>
+        </div>
+
+        <div class="flex items-center p-2 border-t border-gray-600 shadow">
+          <ModeControls
+            ready={ready}
+            send={send}
+            shuffle={shuffle}
+            selectMode={selectMode}
+            mediaMode={mediaMode}
+            repeat={repeat}
+          />
         </div>
       </div>
     </Fragment>

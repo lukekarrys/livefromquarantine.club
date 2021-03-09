@@ -17,6 +17,9 @@ export const parseQs = (
       }
     }
     params = new URLSearchParams(removeUndefinedValues)
+  } else if (typeof toParse === 'string') {
+    const parts = toParse.split('?')
+    params = new URLSearchParams(parts[1] || parts[0])
   } else {
     params = new URLSearchParams(toParse)
   }
