@@ -75,7 +75,7 @@ const Controls: FunctionalComponent<Props> = ({
         }}
       />
       <div class="relative flex items-center">
-        <div class="hidden sm:block">
+        <div class="hidden sm:block sm:mr-1">
           <ModeControls
             ready={ready}
             send={send}

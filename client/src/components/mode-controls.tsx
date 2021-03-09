@@ -27,7 +27,7 @@ const Controls: FunctionalComponent<Props> = ({
   mediaMode,
 }) => {
   const isRepeat = repeat === Repeat.Song || repeat === Repeat.Video
-  const classes = 'ml-1 first:ml-0 last:mr-1'
+  const classes = 'ml-1 first:ml-0'
 
   return (
     <Fragment>
