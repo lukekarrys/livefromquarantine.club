@@ -12,10 +12,12 @@ export const useService = (
   shape?: (state: PlayerMachineState) => unknown
 ): void => {
   useEffect(() => {
-    const subscription = service.subscribe((s) =>
-      debug.log('PLAYER MACHINE', shape ? shape(s) : s)
-    )
-    return (): void => subscription.unsubscribe()
+    if (debug.DEBUG) {
+      const subscription = service.subscribe((s) =>
+        debug.log('PLAYER MACHINE', shape ? shape(s) : s)
+      )
+      return (): void => subscription.unsubscribe()
+    }
   }, [service, shape])
 }
 
@@ -26,14 +28,17 @@ export const useContext = (
 ): void => {
   const lastContext = useRef('')
   useEffect(() => {
-    const subscription = service.subscribe((s) => {
-      const context = shape ? shape(s.context) : s.context
-      const contextKey = JSON.stringify(context)
-      if (contextKey !== lastContext.current) {
-        debug.log(context)
-      }
-      lastContext.current = contextKey
-    })
-    return (): void => subscription.unsubscribe()
+    if (debug.DEBUG) {
+      const subscription = service.subscribe((s) => {
+        const context = shape ? shape(s.context) : s.context
+        const contextKey = JSON.stringify(context)
+        if (contextKey !== lastContext.current) {
+          debug.log(context)
+        }
+
+        lastContext.current = contextKey
+      })
+      return (): void => subscription.unsubscribe()
+    }
   }, [service, shape])
 }

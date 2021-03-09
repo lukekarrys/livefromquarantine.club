@@ -1,7 +1,7 @@
 import { FunctionalComponent, h, Fragment } from 'preact'
 import { useState, useEffect } from 'preact/hooks'
 import { route } from 'preact-router'
-import artists from '../../artists.json'
+import { artists } from '../artists'
 import Button from '../components/button'
 import Input from '../components/input'
 import { url, parseQs } from '../lib/url'

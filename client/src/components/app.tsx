@@ -4,7 +4,7 @@ import Artist from '../routes/artist'
 import Home from '../routes/home'
 import Privacy from '../routes/privacy'
 import Logout from '../routes/logout'
-import artists from '../../artists.json'
+import { artists } from '../artists'
 import { parseQs } from '../lib/url'
 import { AccessToken } from '../types'
 

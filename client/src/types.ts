@@ -40,3 +40,9 @@ export enum SelectMode {
   UpNext,
   Play,
 }
+
+export enum MediaMode {
+  Audio,
+  YouTube,
+  YouTubeOnly,
+}
