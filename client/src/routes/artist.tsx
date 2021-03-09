@@ -1,5 +1,5 @@
 import { FunctionalComponent, h, Fragment } from 'preact'
-import { useEffect, useState } from 'preact/hooks'
+import { useEffect, useMemo, useState } from 'preact/hooks'
 import { useMachine } from '@xstate/react/lib/fsm'
 import playerMachine from '../machine'
 import * as selectors from '../machine/selectors'
@@ -26,16 +26,38 @@ interface Props {
 const hash = window.location.hash.slice(1)
 const upNext: TrackId[] = hash ? (hash.split(',') as TrackId[]) : []
 
-const mediaMode = localStorage.getItem('mediaMode')
-const selectMode = localStorage.getItem('selectMode')
-const shuffle = localStorage.getItem('shuffle')
-const repeat = localStorage.getItem('repeat')
+const getLocalStorageValues = (artist: ArtistId) => {
+  const { audio: artistHasAudio } = artistsById[artist]
+
+  const lsMediaMode = localStorage.getItem('mediaMode')
+  const lsSelectMode = localStorage.getItem('selectMode')
+  const lsSshuffle = localStorage.getItem('shuffle')
+  const lsRepeat = localStorage.getItem('repeat')
+
+  const shuffle =
+    lsSshuffle === 'true' || lsSshuffle === 'false'
+      ? lsSshuffle === 'true'
+      : undefined
+
+  const repeat = lsRepeat != null ? (+lsRepeat as Repeat) : undefined
+
+  const selectMode =
+    lsSelectMode != null ? (+lsSelectMode as SelectMode) : undefined
+
+  const mediaMode = artistHasAudio
+    ? lsMediaMode != null
+      ? (+lsMediaMode as MediaMode)
+      : MediaMode.YouTube
+    : MediaMode.YouTubeOnly
+
+  return { mediaMode, selectMode, shuffle, repeat }
+}
 
 const Artist: FunctionalComponent<Props> = ({ artist, accessToken }) => {
   const [videos, setVideos] = useState<Videos | undefined>(undefined)
   const [meta, setMeta] = useState<ArtistMeta | undefined>(undefined)
   const [state, send, service] = useMachine(playerMachine)
-  const { audio: artistHasAudio } = artistsById[artist]
+  const modeValues = useMemo(() => getLocalStorageValues(artist), [artist])
 
   debugService.useService(service)
 
@@ -44,17 +66,7 @@ const Artist: FunctionalComponent<Props> = ({ artist, accessToken }) => {
 
     send({
       type: 'SET_MODES',
-      shuffle:
-        shuffle === 'true' || shuffle === 'false'
-          ? shuffle === 'true'
-          : undefined,
-      repeat: repeat != null ? (+repeat as Repeat) : undefined,
-      selectMode: selectMode != null ? (+selectMode as SelectMode) : undefined,
-      mediaMode: artistHasAudio
-        ? mediaMode != null
-          ? (+mediaMode as MediaMode)
-          : MediaMode.YouTube
-        : MediaMode.YouTubeOnly,
+      ...modeValues,
     })
 
     fetchData(artist, accessToken)
@@ -68,7 +80,7 @@ const Artist: FunctionalComponent<Props> = ({ artist, accessToken }) => {
         })
       })
       .catch((error: Error) => send({ type: 'FETCH_ERROR', error }))
-  }, [artist, send, accessToken, artistHasAudio])
+  }, [artist, send, accessToken, modeValues])
 
   useEffect(() => {
     if (meta?.title) {
