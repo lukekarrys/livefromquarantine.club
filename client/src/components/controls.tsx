@@ -75,34 +75,37 @@ const Controls: FunctionalComponent<Props> = ({
         }}
       />
       <div class="relative flex items-center">
-        <ModeControls
-          ready={ready}
-          send={send}
-          shuffle={shuffle}
-          selectMode={selectMode}
-          mediaMode={mediaMode}
-          repeat={repeat}
-          class="hidden sm:block"
-        />
-        <Button
-          class="ml-1"
-          tight={false}
-          onClick={(): void => (play ? send('PAUSE') : send('PLAY'))}
-          selected={play}
-          disabled={!ready}
-          title={play ? 'Pause' : 'Play'}
-        >
-          {play ? <PauseIcon height={18} /> : <PlayIcon height={18} />}
-        </Button>
-        <Button
-          class="ml-1"
-          tight={false}
-          onClick={(): void => send('NEXT_TRACK')}
-          disabled={!ready}
-          title="Next Track"
-        >
-          <NextIcon height={18} />
-        </Button>
+        <div class="hidden sm:block">
+          <ModeControls
+            ready={ready}
+            send={send}
+            shuffle={shuffle}
+            selectMode={selectMode}
+            mediaMode={mediaMode}
+            repeat={repeat}
+          />
+        </div>
+        <div>
+          <Button
+            class="ml-1 first:ml-0"
+            tight={false}
+            onClick={(): void => (play ? send('PAUSE') : send('PLAY'))}
+            selected={play}
+            disabled={!ready}
+            title={play ? 'Pause' : 'Play'}
+          >
+            {play ? <PauseIcon height={18} /> : <PlayIcon height={18} />}
+          </Button>
+          <Button
+            class="ml-1 first:ml-0"
+            tight={false}
+            onClick={(): void => send('NEXT_TRACK')}
+            disabled={!ready}
+            title="Next Track"
+          >
+            <NextIcon height={18} />
+          </Button>
+        </div>
         <button
           class="truncate pl-1 pr-1 rounded focus:outline-none focus:shadow-outline"
           onClick={onTitleClick}

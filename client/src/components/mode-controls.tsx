@@ -10,7 +10,6 @@ import AudioIcon from '../icons/audio'
 import VideoIcon from '../icons/video'
 
 interface Props {
-  class?: string
   ready: boolean
   shuffle: boolean
   repeat: Repeat
@@ -26,22 +25,12 @@ const Controls: FunctionalComponent<Props> = ({
   repeat,
   selectMode,
   mediaMode,
-  class: klass,
 }) => {
   const isRepeat = repeat === Repeat.Song || repeat === Repeat.Video
+  const classes = 'ml-1 first:ml-0 last:mr-1'
 
   return (
     <Fragment>
-      <Button
-        onClick={(): void => send('SELECT_MODE')}
-        selected={selectMode === SelectMode.UpNext}
-        tight={false}
-        disabled={!ready}
-        class={klass}
-        title={`Up Next - ${selectMode === SelectMode.UpNext ? 'On' : 'Off'}`}
-      >
-        <ListIcon height={18} />
-      </Button>
       {mediaMode !== MediaMode.YouTubeOnly && (
         <Button
           onClick={(): void => send('SELECT_MEDIA_MODE')}
@@ -50,7 +39,7 @@ const Controls: FunctionalComponent<Props> = ({
           title={`Media - ${
             mediaMode === MediaMode.Audio ? 'Audio' : 'YouTube'
           }`}
-          class={cx('ml-1', klass)}
+          class={classes}
         >
           {mediaMode === MediaMode.Audio ? (
             <VideoIcon height={18} />
@@ -60,11 +49,21 @@ const Controls: FunctionalComponent<Props> = ({
         </Button>
       )}
       <Button
+        onClick={(): void => send('SELECT_MODE')}
+        selected={selectMode === SelectMode.UpNext}
+        tight={false}
+        disabled={!ready}
+        class={classes}
+        title={`Up Next - ${selectMode === SelectMode.UpNext ? 'On' : 'Off'}`}
+      >
+        <ListIcon height={18} />
+      </Button>
+      <Button
         onClick={(): void => send('SHUFFLE')}
         selected={shuffle}
         tight={false}
         disabled={!ready}
-        class={cx('ml-1', klass)}
+        class={classes}
         title={`Shuffle - ${shuffle ? 'On' : 'Off'}`}
       >
         <ShuffleIcon height={18} />
@@ -73,7 +72,7 @@ const Controls: FunctionalComponent<Props> = ({
         onClick={(): void => send('REPEAT')}
         selected={isRepeat}
         tight={false}
-        class={cx('ml-1 relative', klass)}
+        class={cx(classes, 'relative')}
         disabled={!ready}
         title={`Repeat - ${
           repeat === Repeat.Song
