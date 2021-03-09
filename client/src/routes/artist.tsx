@@ -69,7 +69,12 @@ const Artist: FunctionalComponent<Props> = ({ artist, accessToken }) => {
 
   return (
     <div class="max-w-screen-c c:border-l c:border-r border-r-0 border-l-0 mx-auto border-gray-600 relative">
-      <Player state={state} send={send} videos={videos} media={media}>
+      <Player
+        state={state}
+        send={send}
+        videos={videos}
+        media={media || 'youtube'}
+      >
         {state.matches('idle') || state.matches('loading')
           ? 'Loading...'
           : state.matches('error')

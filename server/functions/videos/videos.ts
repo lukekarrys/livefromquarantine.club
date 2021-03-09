@@ -62,8 +62,6 @@ export const handler = async (
     console.log(id, '-', ...parts)
 
   try {
-    log(`Looking for files in ${ROOT}`)
-
     const [{ meta, videos }, artist] = await Promise.all([
       importEnv<PreloadedData>(path.join(ROOT, `${id}.json`)),
       importEnv<Artist>(path.join(ROOT, id)),
@@ -79,7 +77,7 @@ export const handler = async (
       data: parseVideos(videos, artist),
     })
   } catch (e) {
-    log(e)
+    log('preload error', e)
     // Most playlists wont be preloaded so move on to fetching from youtube
   }
 
@@ -97,7 +95,7 @@ export const handler = async (
       data: parseVideos(videos),
     })
   } catch (err) {
-    log(err)
+    log('YouTube API error', err)
     const {
       message = 'An unknown error occurred',
       status = 500,

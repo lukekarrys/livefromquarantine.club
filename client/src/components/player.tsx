@@ -15,7 +15,7 @@ interface Props {
   state: PlayerMachineState
   send: PlayerSend
   children: ComponentChild
-  media?: string
+  media: string
   videos?: TVideos
 }
 
@@ -26,7 +26,7 @@ const Player: FunctionalComponent<Props> = ({
   state,
   send,
   children,
-  media = 'youtube',
+  media,
   videos = [],
 }) => {
   const [scrollTo, setScrollTo] = useState(false)
