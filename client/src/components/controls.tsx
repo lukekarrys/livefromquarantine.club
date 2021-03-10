@@ -10,6 +10,7 @@ import NextIcon from '../icons/next'
 import { toSongAndVideoTitle } from '../lib/to-title'
 import MediaPlayer from '../lib/MediaPlayer'
 import ModeControls from './mode-controls'
+import cx from 'classnames'
 
 interface Props {
   ready: boolean
@@ -65,6 +66,8 @@ const Controls: FunctionalComponent<Props> = ({
 
   const title = toSongAndVideoTitle(selected)
 
+  const buttonClasses = 'ml-1 first:ml-0'
+
   return (
     <div class="px-2 py-1 relative overflow-hidden">
       <div
@@ -75,37 +78,34 @@ const Controls: FunctionalComponent<Props> = ({
         }}
       />
       <div class="relative flex items-center">
-        <div class="hidden sm:block sm:mr-1">
-          <ModeControls
-            ready={ready}
-            send={send}
-            shuffle={shuffle}
-            selectMode={selectMode}
-            mediaMode={mediaMode}
-            repeat={repeat}
-          />
-        </div>
-        <div>
-          <Button
-            class="ml-1 first:ml-0"
-            tight={false}
-            onClick={(): void => (play ? send('PAUSE') : send('PLAY'))}
-            selected={play}
-            disabled={!ready}
-            title={play ? 'Pause' : 'Play'}
-          >
-            {play ? <PauseIcon height={18} /> : <PlayIcon height={18} />}
-          </Button>
-          <Button
-            class="ml-1 first:ml-0"
-            tight={false}
-            onClick={(): void => send('NEXT_TRACK')}
-            disabled={!ready}
-            title="Next Track"
-          >
-            <NextIcon height={18} />
-          </Button>
-        </div>
+        <ModeControls
+          ready={ready}
+          send={send}
+          shuffle={shuffle}
+          selectMode={selectMode}
+          mediaMode={mediaMode}
+          repeat={repeat}
+          class={cx('hidden sm:block', buttonClasses)}
+        />
+        <Button
+          class={cx('ml-0 sm:ml-1')}
+          tight={false}
+          onClick={(): void => (play ? send('PAUSE') : send('PLAY'))}
+          selected={play}
+          disabled={!ready}
+          title={play ? 'Pause' : 'Play'}
+        >
+          {play ? <PauseIcon height={18} /> : <PlayIcon height={18} />}
+        </Button>
+        <Button
+          class={buttonClasses}
+          tight={false}
+          onClick={(): void => send('NEXT_TRACK')}
+          disabled={!ready}
+          title="Next Track"
+        >
+          <NextIcon height={18} />
+        </Button>
         <button
           class="truncate pl-1 pr-1 rounded focus:outline-none focus:shadow-outline"
           onClick={onTitleClick}

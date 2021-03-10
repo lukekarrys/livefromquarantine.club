@@ -202,6 +202,7 @@ const UpNext: FunctionalComponent<Props> = ({
             selectMode={selectMode}
             mediaMode={mediaMode}
             repeat={repeat}
+            class="ml-1 first:ml-0"
           />
         </div>
       </div>

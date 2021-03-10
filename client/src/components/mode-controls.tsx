@@ -16,6 +16,7 @@ interface Props {
   selectMode: SelectMode
   mediaMode: MediaMode
   send: PlayerSend
+  class?: string
 }
 
 const Controls: FunctionalComponent<Props> = ({
@@ -25,9 +26,10 @@ const Controls: FunctionalComponent<Props> = ({
   repeat,
   selectMode,
   mediaMode,
+  class: klass,
 }) => {
   const isRepeat = repeat === Repeat.Song || repeat === Repeat.Video
-  const classes = 'ml-1 first:ml-0'
+  const classes = klass
 
   return (
     <Fragment>
