@@ -1,4 +1,45 @@
-import { Artist } from '../../types'
+import { parse } from 'date-fns'
+import { Artist, VideoWithComments } from '../../types'
+
+const titleParser = (title: string): string =>
+  title.replace(/Live from Quarantine[\s-]+-?/i, '')
+
+const dateRegex = /\b(january|february|march|april|may|june|july|august|september|october|november|december) \d+\b/i
+
+const referenceYear = (year: number | string): Date => {
+  const d = new Date()
+  d.setFullYear(+year)
+  return d
+}
+
+// Special case to sort these videos by their recorded date which is only
+// captured in the title of the video I think. So this parses the date out of
+// the title and then sorts on that
+const dateParser = (video: VideoWithComments) => {
+  const [titleDate] =
+    dateRegex.exec(titleParser(video.snippet.title).toLowerCase()) || []
+
+  const publishedYear = video.snippet.publishedAt.split('-')[0]
+
+  // Doing some hacks here to special case video ids to the year they were performed.
+  // Currently this is for times when the video was performed near the end of a calendar
+  // year and then uploaded in the next year. There is no good way to detect this from a
+  // single video, and would need to examine other videos near it in the list which isn't easy
+  // to do with how the videos are run through the parsers in this file.
+  const specialYear = {
+    h6I2zx7Pju8: 2020,
+  }[video.id]
+
+  const year = specialYear || publishedYear
+
+  if (!titleDate || !year) {
+    throw new Error(
+      `Could not find date when sorting for video: ${video.snippet.title}`
+    )
+  }
+
+  return parse(titleDate, 'MMMM d', referenceYear(year)).toJSON()
+}
 
 const artist: Artist = {
   id: 'seanbonnette',
@@ -13,7 +54,7 @@ const artist: Artist = {
       '<a href="http://shop.ajjtheband.com" target="_blank">Merch</a>',
     ].join(''),
   },
-  titleParser: (title) => title.replace(/Live from Quarantine[\s-]+-?/i, ''),
+  titleParser,
   videoParsers: {
     PmJa6qlob0Q: {
       comments: `0:42 A Big Day for Grimley\n4:23 Oo-de-lally`,
@@ -22,6 +63,11 @@ const artist: Artist = {
       title: (title) =>
         title.replace('(Maggie audio fixed v1.2 final final)', ''),
     },
+  },
+  sortVideos: (videoA, videoB) => {
+    const a = dateParser(videoA)
+    const b = dateParser(videoB)
+    return a < b ? 1 : a > b ? -1 : 0
   },
   omitVideoIds: [
     '4tOQRChKdgQ', // October 19 duplicate with bad audio

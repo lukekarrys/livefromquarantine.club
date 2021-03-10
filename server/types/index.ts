@@ -20,6 +20,7 @@ export interface Artist {
         }
       | undefined
   }
+  sortVideos?: (videoA: VideoWithComments, videoB: VideoWithComments) => number
   commentParsers?: {
     [key: string]: ((comment: string) => string) | undefined
   }
@@ -46,10 +47,7 @@ export type VideoWithComments = Omit<
       'topLevelComment'
     > & {
       topLevelComment: {
-        snippet: Pick<
-          YouTube.CommentSnippet,
-          'publishedAt' | 'textDisplay' | 'updatedAt' | 'likeCount'
-        >
+        snippet: Pick<YouTube.CommentSnippet, 'publishedAt' | 'textDisplay'>
       }
     }
   })[]

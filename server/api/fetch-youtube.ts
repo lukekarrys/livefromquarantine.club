@@ -49,7 +49,11 @@ const getPaginatedVideosFromPlaylist = async (
     )
   }
 
-  return newItems
+  return newItems.sort((videoA, videoB) => {
+    const a = videoA.snippet.publishedAt
+    const b = videoB.snippet.publishedAt
+    return a < b ? 1 : a > b ? -1 : 0
+  })
 }
 
 const getPaginatedComments = async (
@@ -78,7 +82,13 @@ const getPaginatedComments = async (
     return await getPaginatedComments(id, token, nextPageToken, newItems)
   }
 
-  return newItems
+  // Sort by likeCount. YouTube returns comments
+  // by "relevance" but likeCount is a better indicator of timestamps I think
+  return newItems.sort(
+    (a, b) =>
+      b.snippet.topLevelComment.snippet.likeCount -
+      a.snippet.topLevelComment.snippet.likeCount
+  )
 }
 
 const getPlaylistData = async (
@@ -149,18 +159,7 @@ const getFullPlaylistData = async (
   ])
 
   const comments = await Promise.all(
-    videos.map((video) =>
-      getPaginatedComments(video.id, token).then((comments) =>
-        // Sort by likeCount before removing it. YouTube returns comments
-        // by "relevance" but likeCount is a better indicator of timestamps I think
-        comments.sort((a, b) => {
-          return (
-            b.snippet.topLevelComment.snippet.likeCount -
-            a.snippet.topLevelComment.snippet.likeCount
-          )
-        })
-      )
-    )
+    videos.map((video) => getPaginatedComments(video.id, token))
   )
 
   return {

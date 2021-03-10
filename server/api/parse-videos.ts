@@ -98,6 +98,7 @@ export default (
 ): ParsedVideo[] => {
   const data = videos
     .filter((video) => !(artist?.omitVideoIds || []).includes(video.id))
+    .sort(artist?.sortVideos)
     .map((video) => parseVideo(video, artist))
     .filter((video, index, videos) => {
       // The same video could be included multiple times in a playlist so remove dupes
