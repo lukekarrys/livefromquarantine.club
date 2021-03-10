@@ -60,9 +60,14 @@ const UpNext: FunctionalComponent<Props> = ({
   return (
     <Fragment>
       <Button
-        class="flex transition-transform duration-200 fixed right-0 mr-2 c:mt-2 c:mb-0 c:top-0 c:bottom-auto bottom-0 mb-2 z-20"
+        class={cx([
+          'flex transition-transform duration-200 z-20',
+          'fixed right-0 mr-2 mb-2-safe bottom-0 c:mt-2 c:mb-0 c:top-0 c:bottom-auto',
+        ])}
         onClick={(): void => setVisible(true)}
-        style={{ transform: `translate(${visible ? '100%' : '0'})` }}
+        style={{
+          transform: `translate(${visible ? '100%' : '0'})`,
+        }}
       >
         <ListIcon height={18} />
         {upNextOrder.length > 0 && (
@@ -97,6 +102,7 @@ const UpNext: FunctionalComponent<Props> = ({
         )}
         style={{
           transform: `translate(${visible ? '0' : '100%'})`,
+          height: ' -webkit-fill-available',
         }}
       >
         <div
@@ -193,8 +199,7 @@ const UpNext: FunctionalComponent<Props> = ({
             ))}
           </div>
         </div>
-
-        <div class="flex items-center p-2 border-t border-gray-600 shadow">
+        <div class="flex items-center p-2 pb-2-safe border-t border-gray-600 shadow">
           <ModeControls
             ready={ready}
             send={send}

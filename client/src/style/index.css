@@ -25,3 +25,7 @@
 .dangerouslysetinnerhtml a {
   @apply underline;
 }
+
+.fill-available {
+  height: ' -webkit-fill-available';
+}
