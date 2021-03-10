@@ -64,18 +64,9 @@ const getPaginatedComments = async (
     pageToken
   )
 
-  const setlistComments = items
-    .filter((comment) =>
-      findSetlist(comment.snippet.topLevelComment.snippet.textDisplay)
-    )
-    // Sort by likeCount before removing it. YouTube returns comments
-    // by "relevance" but likeCount is a better indicator of timestamps I think
-    .sort((a, b) => {
-      return (
-        b.snippet.topLevelComment.snippet.likeCount -
-        a.snippet.topLevelComment.snippet.likeCount
-      )
-    })
+  const setlistComments = items.filter((comment) =>
+    findSetlist(comment.snippet.topLevelComment.snippet.textDisplay)
+  )
 
   const newItems = [...previousItems, ...setlistComments]
 
@@ -158,7 +149,18 @@ const getFullPlaylistData = async (
   ])
 
   const comments = await Promise.all(
-    videos.map((video) => getPaginatedComments(video.id, token))
+    videos.map((video) =>
+      getPaginatedComments(video.id, token).then((comments) =>
+        // Sort by likeCount before removing it. YouTube returns comments
+        // by "relevance" but likeCount is a better indicator of timestamps I think
+        comments.sort((a, b) => {
+          return (
+            b.snippet.topLevelComment.snippet.likeCount -
+            a.snippet.topLevelComment.snippet.likeCount
+          )
+        })
+      )
+    )
   )
 
   return {

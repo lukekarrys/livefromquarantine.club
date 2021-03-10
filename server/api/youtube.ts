@@ -26,6 +26,7 @@ export const normalizeVideo = (
         videoId: comment.snippet.videoId,
         topLevelComment: {
           snippet: {
+            likeCount: comment.snippet.topLevelComment.snippet.likeCount,
             textDisplay: comment.snippet.topLevelComment.snippet.textDisplay,
             publishedAt: new Date(
               comment.snippet.topLevelComment.snippet.publishedAt

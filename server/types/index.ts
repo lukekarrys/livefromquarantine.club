@@ -48,7 +48,7 @@ export type VideoWithComments = Omit<
       topLevelComment: {
         snippet: Pick<
           YouTube.CommentSnippet,
-          'publishedAt' | 'textDisplay' | 'updatedAt'
+          'publishedAt' | 'textDisplay' | 'updatedAt' | 'likeCount'
         >
       }
     }
