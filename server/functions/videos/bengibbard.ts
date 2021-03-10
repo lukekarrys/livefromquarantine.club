@@ -28,10 +28,6 @@ const artist: Artist = {
       `,
     },
   },
-  omitCommentIds: [
-    'UgyA0JzCcn4gxF1ktmZ4AaABAg', // 3/22/20,
-    'Ugwvw34H4WPb3AU9L1t4AaABAg', // 3/21/20
-  ],
 }
 
 export default artist

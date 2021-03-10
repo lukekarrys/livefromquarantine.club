@@ -14,9 +14,6 @@ const artist: Artist = {
       .replace(/\bw Ben Folds\b/gi, '')
       .replace(/\bBen Folds\b/gi, '')
       .replace(/\bFolds\b/gi, ''),
-  omitCommentIds: [
-    'UgzBJFE06U9bR-ozNRx4AaABAg', // #9 Saturday Apartment Requests w Ben Folds
-  ],
 }
 
 export default artist
