@@ -1,22 +1,38 @@
-import { parse } from 'date-fns'
 import { Artist, VideoWithComments } from '../../types'
+
+const months = [
+  'january',
+  'february',
+  'march',
+  'april',
+  'may',
+  'june',
+  'july',
+  'august',
+  'september',
+  'october',
+  'november',
+  'december',
+]
+
+const dateRegex = new RegExp(`\\b(${months.join('|')})\\s(\\d+)\\b`, 'i')
+
+const parseTitleDate = (year: number, month: string, day: number): Date => {
+  const d = new Date()
+  d.setMonth(months.indexOf(month.toLowerCase()))
+  d.setDate(day)
+  d.setFullYear(year)
+  return d
+}
 
 const titleParser = (title: string): string =>
   title.replace(/Live from Quarantine[\s-]+-?/i, '')
-
-const dateRegex = /\b(january|february|march|april|may|june|july|august|september|october|november|december) \d+\b/i
-
-const referenceYear = (year: number | string): Date => {
-  const d = new Date()
-  d.setFullYear(+year)
-  return d
-}
 
 // Special case to sort these videos by their recorded date which is only
 // captured in the title of the video I think. So this parses the date out of
 // the title and then sorts on that
 const dateParser = (video: VideoWithComments) => {
-  const [titleDate] =
+  const [, month, day] =
     dateRegex.exec(titleParser(video.snippet.title).toLowerCase()) || []
 
   const publishedYear = video.snippet.publishedAt.split('-')[0]
@@ -32,13 +48,13 @@ const dateParser = (video: VideoWithComments) => {
 
   const year = specialYear || publishedYear
 
-  if (!titleDate || !year) {
+  if (!month || !day || !year) {
     throw new Error(
       `Could not find date when sorting for video: ${video.snippet.title}`
     )
   }
 
-  return parse(titleDate, 'MMMM d', referenceYear(year)).toJSON()
+  return parseTitleDate(+year, month, +day).toJSON()
 }
 
 const artist: Artist = {

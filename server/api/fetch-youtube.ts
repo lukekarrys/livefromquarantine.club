@@ -119,15 +119,21 @@ const getFullVideoData = async (
   )
 
   const noVideo = !video
+
+  if (noVideo) {
+    throw new youtube.YouTubeError('Video could not be found', 404)
+  }
+
+  // TODO: this should be typed that video could be undefined but items
+  // will always be an array. Try noUncheckedIndexedAccess
   const isPrivate = isVideoPrivate(video)
   const isFuture = isVideoFuture(video)
 
-  if (!video || isPrivate || isFuture) {
+  if (isPrivate || isFuture) {
     throw new youtube.YouTubeError(
-      'Video could not be found',
+      'Video is private or is in future',
       404,
       `Video could not be found due to the following: ${JSON.stringify({
-        noVideo,
         isPrivate,
         isFuture,
       })}`
