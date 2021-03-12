@@ -24,9 +24,8 @@ jobs:
 
       - name: Fetch new data
         run: |
-          npm run data ${{ github.event.client_payload.artist }}
-          npm run data:fixtures ${{ github.event.client_payload.artist }}
-          npm run build:server
+          npm run data -- ${{ github.event.client_payload.artist }}
+          npm run data:fixtures -- ${{ github.event.client_payload.artist }}
         env:
           API_KEY: ${{ secrets.API_KEY }}
 
