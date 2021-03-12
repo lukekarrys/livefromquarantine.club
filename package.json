@@ -6,6 +6,9 @@
   "bugs": {
     "url": "https://github.com/lukekarrys/livefromquarantine.club/issues"
   },
+  "dependencies": {
+    "@netlify/cache-utils": "^1.0.7"
+  },
   "devDependencies": {
     "husky": "^4.2.5",
     "npm-run-all": "^4.1.5",
@@ -18,6 +21,10 @@
     }
   },
   "license": "MIT",
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
   "private": true,
   "repository": {
     "type": "git",
@@ -38,8 +45,8 @@
     "dev": "run-p dev:**",
     "dev:client": "cd client && npm run dev",
     "dev:server": "cd server && npm run dev",
-    "install:client": "cd client && npm install",
-    "install:server": "cd server && npm install",
+    "install:client": "cd client && if [ ! -d 'node_modules' ]; then npm install; else echo 'Client deps installed'; fi",
+    "install:server": "cd server && if [ ! -d 'node_modules' ]; then npm install; else echo 'Client deps installed'; fi",
     "lint": "run-s lint:**",
     "lint:client": "cd client && npm run lint",
     "lint:server": "cd server && npm run lint",
