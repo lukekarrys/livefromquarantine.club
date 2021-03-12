@@ -17,5 +17,3 @@ const x = {
     )
   },
 }
-
-x.onPreBuild().then(console.log).catch(console.error)
