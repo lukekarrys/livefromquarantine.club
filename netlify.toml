@@ -3,9 +3,9 @@
   command = "npm run postinstall && NODE_ENV=production npm run build && npm run check && npm run test && npm run lint && npm run cleanup"
   functions = "server/functions/"
 
-[[plugins]]
-  package = "./cache-plugin"
-
+# [[plugins]]
+  # package = "./cache-plugin"
+ 
 [[redirects]]
   from = "/ajj"
   to = "/seanbonnette"
