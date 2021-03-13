@@ -8,13 +8,16 @@ module.exports = {
       path.join(d, 'node_modules')
     )
 
-    console.log('onPreBuild: restoring from cache', preBuildDirectories.join(', '))
+    console.log(
+      'onPreBuild: restoring from cache',
+      preBuildDirectories.join(', ')
+    )
 
     await cache.restore(preBuildDirectories)
   },
   async onPostBuild({ utils: { cache } }) {
     await Promise.all(
-      directories.map((d) => {
+      directories.map(async (d) => {
         const saveParameters = [
           path.join(d, 'node_modules'),
           {
