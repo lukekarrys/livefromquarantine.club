@@ -1,34 +1,45 @@
-const path = require('path')
-
-const directories = ['.', 'client', 'server']
-
 module.exports = {
   async onPreBuild({ utils: { cache } }) {
-    const preBuildDirectories = directories.map((d) =>
-      path.join(d, 'node_modules')
-    )
+    const directories = [
+      './node_modules',
+      './client/node_modules',
+      './server/node_modules',
+    ]
 
     console.log(
       'onPreBuild: restoring from cache',
-      preBuildDirectories.join(', ')
+      JSON.stringify(directories, null, 2)
     )
 
-    await cache.restore(preBuildDirectories)
+    await cache.restore(directories)
   },
   async onPostBuild({ utils: { cache } }) {
-    await Promise.all(
-      directories.map(async (d) => {
-        const saveParameters = [
-          path.join(d, 'node_modules'),
-          {
-            digests: [path.join(d, 'package-lock.json')],
-          },
-        ]
+    const directories = [
+      [
+        './node_modules',
+        {
+          digests: ['./node_modules/package-lock.json'],
+        },
+      ],
+      [
+        './client/node_modules',
+        {
+          digests: ['./node_modules/client/package-lock.json'],
+        },
+      ],
+      [
+        './server/node_modules',
+        {
+          digests: ['./node_modules/server/package-lock.json'],
+        },
+      ],
+    ]
 
-        console.log('onPostBuild: saving to cache', saveParameters)
-
-        await cache.save(...saveParameters)
-      })
+    console.log(
+      'onPostBuild: saving to cache',
+      JSON.stringify(directories, null, 2)
     )
+
+    await Promise.all(directories.map((directory) => cache.save(...directory)))
   },
 }
