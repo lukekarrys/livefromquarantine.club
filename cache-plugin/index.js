@@ -2,7 +2,7 @@ const path = require('path')
 
 const directories = ['.', 'client', 'server']
 
-const x = {
+module.exports = {
   async onPreBuild({ utils: { cache } }) {
     const preBuildDirectories = directories.map((d) =>
       path.join(d, 'node_modules')
