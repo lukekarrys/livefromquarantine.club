@@ -8,7 +8,7 @@ module.exports = {
       path.join(d, 'node_modules')
     )
 
-    console.log('onPreBuild:', preBuildDirectories)
+    console.log('onPreBuild: restoring from cache', preBuildDirectories.join(', '))
 
     await cache.restore(preBuildDirectories)
   },
@@ -22,9 +22,9 @@ module.exports = {
           },
         ]
 
-        console.log('onPostBuild:', saveParameters)
+        console.log('onPostBuild: saving to cache', saveParameters)
 
-        cache.save(...saveParameters)
+        await cache.save(...saveParameters)
       })
     )
   },
