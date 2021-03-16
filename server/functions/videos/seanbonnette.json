@@ -6,6 +6,45 @@
   "videos": [
     {
       "contentDetails": {
+        "duration": 1899
+      },
+      "id": "YlQxhtDPieo",
+      "snippet": {
+        "title": "Live From Quarantine - March 15 2021",
+        "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday & Thursday at 7:30 PM AZ time, and sometimes on Wednesday afternoons, on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n1:50 Guided By Voices - Game of Pricks\n3:43 AJJ - Junkie Church\n6:50 Gram Parsons & Emmylou Harris - Return of the Grievous Angel\n11:19 AJJ - I Wanna Be Your Dog Two\n14:07 AJJ - Maggie\n16:45 Oo-de-lally\n17:40 AJJ - Fucc the Devil\n20:20 AJJ - A Big Day for Grimley\n23:47 Silver Jews - Strange Victory, Strange Defeat\n27:00 AJJ - Big Bird\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nCheck out our digital merch table, if you're so inclined: http://shop.ajjtheband.com",
+        "publishedAt": "2021-03-16T16:42:24Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/YlQxhtDPieo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/YlQxhtDPieo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/YlQxhtDPieo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/YlQxhtDPieo/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/YlQxhtDPieo/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        }
+      },
+      "comments": []
+    },
+    {
+      "contentDetails": {
         "duration": 1048
       },
       "id": "LEl7qwlSrUM",
