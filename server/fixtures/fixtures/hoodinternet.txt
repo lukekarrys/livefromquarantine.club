@@ -165,8 +165,8 @@ yAux93_DROw
 51 | Brandy "Baby" (Lyric: "Think about you all the time")
 54 | The Notorious B.I.G. “Big Poppa” (Lyric: “Baby!” + Video: Red tinted big guy in grandpa cap)
 56 | Aaliyah “Back and Forth” (Lyric” Let me see you back and forth, now check it” (x4) + Video: Woman in mask dances)
-57 | Method Man "Bring the Pain" (Audio: Single piano note)
 56 | Craig Mack “Flava In Ya Ear” (Audio: Faint Horn + Video: Man stands beneath a globe wearing a lightning bolt shirt)
+57 | Method Man "Bring the Pain" (Audio: Single piano note)
 58 | Stone Roses “Love Spreads” (Video: Silver dolphin toy)
 61 | Soundgarden “Spoonman” (Lyric: “Come on come on” + Video: Man performs with spoons)
 62 | The Notorious B.I.G. “Big Poppa” (Audio: High Synth + Video: Big man in red light)
@@ -384,8 +384,8 @@ x3X7xOzXTbc
 8 | Big Audio Dynamite “The Globe" (Audio: Guitar riff over the 1991 title card)
 9 | Lenny Kravitz "It Ain't Over Til It's Over" (Video: Drummer does drum roll)
 10 | Michael Jackson “Black or White” (Audio: Guitar riff + Video: Knob turned up to "Louder", / McCauley Culkin strums a red guitar at ) [Thanks Dan C and Jakob Mueller!]
-12 | Big Audio Dynamite "The Globe" (Audio: Sneeze)
 11 | Prince "Gett Off" (Video: Faceless person screams) [Thanks Dan C and candidcastaway!]
+12 | Big Audio Dynamite "The Globe" (Audio: Sneeze)
 15 | Matthew Sweet "Girlfriend" (Video: Drum fill, from their appearance on the Dennis Miller Show 1992)
 16 | ? ? (Video: Woman in pink sings “na na na na”)
 17 | Mariah Carey "Emotions" (Lyric: “You! Got me feeling emotions”) [Thanks Beth Downey!]
@@ -416,8 +416,8 @@ x3X7xOzXTbc
 92 | Naughty By Nature "O.P.P." (Audio: Bass riff ending with two notes on the piano)
 99 | Primus "Jerry Was a Racecar Driver" (Lyric: "Go")
 100 | Black Sheep "The Choice Is Yours" (Lyric: “Engine engine number 9 / On the New York transit line / If my train goes off the track / Pick it up, pick it up, pick it up ...”)
-102 | 2 Unlimited "Get Ready For This" (Lyric: “Yeah”) [Thanks Jakob!]
 100 | Cypress Hill "How I Could Just Kill A Man" (Audio: Drum beat + Video: 2 figures briefly against a light blue background) [Thanks thecandidcastaway!]
+102 | 2 Unlimited "Get Ready For This" (Lyric: “Yeah”) [Thanks Jakob!]
 103 | Naughty By Nature "O.P.P." continues (Audio: Two notes on the piano)
 104 | Nirvana "Smells Like Teen Spirit" continues (Audio: Two notes from the guitar riff in the verse)
 109 | Heavy D and the Boyz "Now That We've Found Love" (Lyric: “Now that we’ve found love what are we gonna do. With it.”)
@@ -1107,6 +1107,7 @@ THE HOOD INTERNET presents 1981
 23 | Stevie Nicks “Edge of Seventeen” reprise (Lyric “Ooh ooh ooh”)
 38 | Joan Jett "I Love Rock n Roll" (Audio: Drum fill while Stevie Nicks sings)
 41 | Teena Marie “Square Biz” (Video: Brunette singer in brown dress + Audio: “Heeeeeee")
+41 | Rick James "Give It To Me Baby" (Around)
 42 | Kool and the Gang “Get Down On It” (Lyric “Get down on it”)
 42 | Men at Work “Land Down Under” (Audio: Flute riff)
 48 | Tom Tom Club “Genius of Love” (Animated children's pictures of three women in jail)
@@ -1157,7 +1158,6 @@ THE HOOD INTERNET presents 1981
 157 | Men at Work “Who Can It Be Now” (Saxophone riff)
 161 | Journey “Don’t Stop Believing” reprise (Lyric: “Don’t Stop. Be leeee-ving”)
 163 | .38 Special “Hold On Loosely" reprise (Lyric: “But don’t let go”)
-41 | Rick James "Give It To Me Baby" (Around)
 ----------
 THE HOOD INTERNET presents 1980
 g_nToRZOqVo

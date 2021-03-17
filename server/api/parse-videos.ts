@@ -64,7 +64,7 @@ const parseVideo = (video: VideoWithComments, artist?: Artist) => {
     id: videoId,
     duration: +duration,
     // Videos with no songs will just have a "Play All" button
-    songs: songs,
+    songs: songs.sort((a, b) => a.start - b.start),
   }
 }
 
