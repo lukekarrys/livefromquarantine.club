@@ -6,6 +6,58 @@
   "videos": [
     {
       "contentDetails": {
+        "duration": 3161
+      },
+      "id": "DCoic7-FwUY",
+      "snippet": {
+        "title": "Ben Gibbard: Live From Home (3/17/21)",
+        "description": "Excited to announce that Ben will be doing a Live From Home show this Wednesday, March 17 at 4pm PT! This will mark exactly 1 year since his first livestream show when the pandemic started. Hope you all have been doing well and staying healthy. Come listen to some tunes and bring some questions. The show will be in benefit of Aurora Commons (http://auroracommons.org), a wonderful organization that provides a safe space for people experiencing homelessness in Seattle – please donate if you are able. Tune in here!",
+        "publishedAt": "2021-03-18T00:00:47Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/DCoic7-FwUY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/DCoic7-FwUY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/DCoic7-FwUY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/DCoic7-FwUY/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/DCoic7-FwUY/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        }
+      },
+      "comments": [
+        {
+          "id": "UgwpHDhbfgskZQiLgIl4AaABAg",
+          "snippet": {
+            "videoId": "DCoic7-FwUY",
+            "topLevelComment": {
+              "snippet": {
+                "textDisplay": "00:46 You Remind Me of Home\n03:43 Black Sun\n08:58 Northern Lights\n14:03 Grapevine Fires\n18:51 Man In Blue\n21:46 Q&A\n29:28 Sleeping In\n32:36 A Moviescript Ending\n38:00 They Don’t Know\n42:48 A Lack Of Color\n48:45 The District Sleeps Alone Tonight",
+                "publishedAt": "2021-03-18T00:19:26.000Z"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "contentDetails": {
         "duration": 3311
       },
       "id": "gc2DILv7U00",
