@@ -42,11 +42,10 @@ const dateParser = (video: VideoWithComments) => {
   // year and then uploaded in the next year. There is no good way to detect this from a
   // single video, and would need to examine other videos near it in the list which isn't easy
   // to do with how the videos are run through the parsers in this file.
-  const specialYear = {
-    h6I2zx7Pju8: 2020,
-  }[video.id]
-
-  const year = specialYear || publishedYear
+  let year = publishedYear
+  if (video.id === 'h6I2zx7Pju8') {
+    year = '2020'
+  }
 
   if (!month || !day || !year) {
     throw new Error(

@@ -9,7 +9,7 @@ type ArtistWithId = Artist & {
 
 export const artistsById: Record<string, Artist> = {
   seanbonnette: { name: 'Sean Bonnette', audio: true },
-  bengibbard: { name: 'Ben Gibbard' },
+  bengibbard: { name: 'Ben Gibbard', audio: true },
   benfolds: { name: 'Ben Folds' },
   tmoe: { name: 'The Tallest Man on Earth' },
   hoodinternet: { name: 'The Hood Internet (Experimental Beta)' },
