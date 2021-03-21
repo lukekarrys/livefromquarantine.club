@@ -6,6 +6,7 @@ const artist: Artist = {
   meta: {
     title: 'The Hood Internet',
   },
+  titleParser: (title) => (title.match(/\d{4}/g) || [])[0] || title,
   videoParsers: {
     JkBgmzocow4: {
       comments:
