@@ -51,8 +51,6 @@ const getSongsFromText = (text: string) => {
 }
 
 const findSetlist = (text?: string): ParsedSong[] | null =>
-  text == null || getLinesWithTimestamp(text).length < 2
-    ? null
-    : getSongsFromText(text)
+  text == null ? null : getSongsFromText(text)
 
 export default findSetlist
