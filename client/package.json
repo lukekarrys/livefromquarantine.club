@@ -48,8 +48,6 @@
     "check": "tsc --project tsconfig.json --noEmit",
     "dev": "preact watch",
     "eslint": "eslint './**/*.{js,jsx,ts,tsx}' --fix",
-    "lint": "npm run prettier && npm run eslint",
-    "postinstall": "patch-package",
     "precommit": "lint-staged",
     "prettier": "prettier '**/*.{js,jsx,ts,tsx,css,md,json}' --write",
     "serve": "sirv build --port 3000 --cors --single",

@@ -1,0 +1,36 @@
+diff --git a/node_modules/preact-cli/lib/commands/build.js b/node_modules/preact-cli/lib/commands/build.js
+index 44a4b30..3dd5259 100644
+--- a/node_modules/preact-cli/lib/commands/build.js
++++ b/node_modules/preact-cli/lib/commands/build.js
+@@ -96,12 +96,12 @@ async function command(src, argv) {
+ 	let cwd = resolve(argv.cwd);
+ 	let modules = resolve(cwd, 'node_modules');
+ 
+-	if (!isDir(modules)) {
+-		return error(
+-			'No `node_modules` found! Please run `npm install` before continuing.',
+-			1
+-		);
+-	}
++	// if (!isDir(modules)) {
++	// 	return error(
++	// 		'No `node_modules` found! Please run `npm install` before continuing.',
++	// 		1
++	// 	);
++	// }
+ 
+ 	if (argv.clean === void 0) {
+ 		let dest = resolve(cwd, argv.dest);
+diff --git a/node_modules/preact-cli/lib/lib/entry.js b/node_modules/preact-cli/lib/lib/entry.js
+index 92e2d61..f6d32ab 100644
+--- a/node_modules/preact-cli/lib/lib/entry.js
++++ b/node_modules/preact-cli/lib/lib/entry.js
+@@ -14,7 +14,7 @@ if (process.env.NODE_ENV === 'development') {
+ 	// only add a debug sw if webpack service worker is not requested.
+ 	if (process.env.ADD_SW === undefined && 'serviceWorker' in navigator) {
+ 		// eslint-disable-next-line no-undef
+-		navigator.serviceWorker.register(__webpack_public_path__ + 'sw-debug.js');
++		// navigator.serviceWorker.register(__webpack_public_path__ + 'sw-debug.js');
+ 	} else if (process.env.ADD_SW && 'serviceWorker' in navigator) {
+ 		// eslint-disable-next-line no-undef
+ 		navigator.serviceWorker.register(
