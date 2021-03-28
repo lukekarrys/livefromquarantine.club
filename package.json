@@ -28,29 +28,25 @@
     "url": "git+https://github.com/lukekarrys/livefromquarantine.club.git"
   },
   "scripts": {
-    "build": "run-s build:client build:server",
-    "build:client": "cd client && npm run build",
-    "build:server": "cd server && npm run build",
-    "check": "run-s check:client check:server",
-    "check:client": "cd client && npm run check",
-    "check:server": "cd server && npm run check",
-    "data": "cd server && npm run data",
-    "data:fixtures": "cd server && npm run data:fixtures",
+    "build": "npm run build -ws",
+    "check": "npm run check -ws",
+    "data": "npm run data -w server",
+    "data:fixtures": "npm run data:fixtures -w server",
     "dev": "run-p dev:**",
-    "dev:client": "cd client && npm run dev",
-    "dev:server": "cd server && npm run dev",
-    "install:client": "cd client && npm install",
-    "install:server": "cd server && npm install",
-    "lint": "run-s lint:**",
-    "lint:client": "cd client && npm run lint",
-    "lint:server": "cd server && npm run lint",
-    "postinstall": "run-s install:**",
-    "precommit": "npm-run-all precommit:*",
-    "precommit:client": "cd client && npm run precommit",
-    "precommit:server": "cd server && npm run precommit",
-    "test": "run-s test:**",
-    "test:client": "cd client && npm test",
-    "test:server": "cd server && npm test",
-    "trigger": "cd server && node api/trigger-gh-preload.js"
-  }
+    "dev:client": "npm run dev -w client",
+    "dev:server": "npm run dev -w server",
+    "lint": "npm run prettier -ws && npm run eslint -ws",
+    "postinstall": "patch-package",
+    "precommit": "npm run precommit -ws",
+    "test": "npm run test -ws",
+    "trigger": "ts-node server/api/trigger-gh-preload.ts"
+  },
+  "volta": {
+    "node": "15.12.0",
+    "npm": "7.7.5"
+  },
+  "workspaces": [
+    "client/",
+    "server/"
+  ]
 }
