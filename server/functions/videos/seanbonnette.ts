@@ -19,7 +19,14 @@ const dateRegex = new RegExp(`\\b(${months.join('|')})\\s(\\d+)\\b`, 'i')
 
 const parseTitleDate = (year: number, month: string, day: number): Date => {
   const d = new Date()
-  d.setMonth(months.indexOf(month.toLowerCase()))
+  // TIL that setMonth takes a second optional parameter. In this case, since we are
+  // trying to create a date by setting month/day/year after creating a new Date(). Since
+  // new Date() is currently set to now, this will cause things to break when the current day
+  // is a day in which other months have no days. Eg March 29 when February has 28 days.
+  // The good news is that this caused tests to break but took me forever to find the cause.
+  // 2021-03-29T https://app.netlify.com/teams/lukekarrys/builds/6061519d3c1a53000722bf1b
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMonth#description
+  d.setMonth(months.indexOf(month.toLowerCase()), day)
   d.setDate(day)
   d.setFullYear(year)
   return d
