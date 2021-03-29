@@ -8,14 +8,20 @@ const artist: Artist = {
     description:
       '<a href="https://venmo.com/BenGibbardLiveFromHome" target="_blank">Venmo</a>',
   },
-  titleParser: (title) =>
-    title.replace(/Ben Gibbard: Live From Home \((.*)\)/i, '$1'),
+  titleParser: (video) =>
+    video.snippet.title.replace(/Ben Gibbard: Live From Home \((.*)\)/i, '$1'),
   videoParsers: {
-    Ei9xuVkbQuU: { title: () => '3/17/20' },
+    Ei9xuVkbQuU: (video) => {
+      video.snippet.title = '3/17/20'
+      return video
+    },
   },
   commentParsers: {
-    Ugy0lRQEKiRUoRpOenN4AaABAg: (text) =>
-      text + '\n16:55 special guest Rachel Demy\n28:40 Q&A',
+    Ugy0lRQEKiRUoRpOenN4AaABAg: (comment) => {
+      comment.snippet.topLevelComment.snippet.textDisplay +=
+        '\n16:55 special guest Rachel Demy\n28:40 Q&A'
+      return comment
+    },
   },
 }
 

@@ -3,11 +3,6 @@ import assert from 'assert'
 import findSetlist from './find-setlist'
 import { VideoWithComments, ParsedVideo, ParsedSong } from '../types'
 
-const callParser = (
-  parser: ((s: string) => string) | undefined,
-  value: string
-): string => (typeof parser === 'function' ? parser(value) : value)
-
 const parseVideo = (video: VideoWithComments, artist?: Artist) => {
   const {
     titleParser,
@@ -16,37 +11,35 @@ const parseVideo = (video: VideoWithComments, artist?: Artist) => {
     omitCommentIds = [],
   } = artist || {}
 
+  const { id: videoId } = video
+  const videoParser = videoParsers[videoId]
+  const parsedVideo = videoParser ? videoParser(video) : video
+
   const {
-    id: videoId,
-    snippet: { title, description },
+    snippet: { description },
     comments,
     contentDetails: { duration },
-  } = video
+  } = parsedVideo
 
   let songs: ParsedSong[] = []
 
-  const videoParser = videoParsers[videoId] || {}
   const descriptionSetlist = findSetlist(description)
-  const parserSetlist = findSetlist(videoParser.comments)
 
   if (descriptionSetlist) {
     songs = descriptionSetlist
-  } else if (parserSetlist) {
-    songs = parserSetlist
   } else {
     for (let i = 0; i < comments.length; i++) {
-      const {
-        id: commentId,
-        snippet: { topLevelComment },
-      } = comments[i]
+      const comment = comments[i]
+      const { id: commentId } = comment
+      const commentParser = commentParsers[commentId]
+      const parsedComment = commentParser ? commentParser(comment) : comment
 
       if (omitCommentIds.includes(commentId)) {
         continue
       }
 
-      const commentParser = commentParsers[commentId]
       const commentSetlist = findSetlist(
-        callParser(commentParser, topLevelComment.snippet.textDisplay)
+        parsedComment.snippet.topLevelComment.snippet.textDisplay
       )
 
       // Comments are already sorted so return the first comment with a valid setlist
@@ -57,10 +50,12 @@ const parseVideo = (video: VideoWithComments, artist?: Artist) => {
     }
   }
 
+  const title = titleParser
+    ? titleParser(parsedVideo)
+    : parsedVideo.snippet.title
+
   return {
-    title: callParser(titleParser, callParser(videoParser.title, title))
-      .trim()
-      .replace(/\s+/g, ' '),
+    title: title.trim().replace(/\s+/g, ' '),
     id: videoId,
     duration: +duration,
     // Videos with no songs will just have a "Play All" button
