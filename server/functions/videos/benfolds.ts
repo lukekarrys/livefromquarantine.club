@@ -8,8 +8,8 @@ const artist: Artist = {
     description:
       '<a href="https://www.patreon.com/BenFolds" target="_blank">Patreon</a>',
   },
-  titleParser: (title) =>
-    title
+  titleParser: (video) =>
+    video.snippet.title
       .split('-')[0]
       .replace(/\bw Ben Folds\b/gi, '')
       .replace(/\bBen Folds\b/gi, '')

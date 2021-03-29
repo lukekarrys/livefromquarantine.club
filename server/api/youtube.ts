@@ -1,6 +1,24 @@
 import axios, { AxiosError } from 'axios'
-import { Token, YouTube, VideoWithComments } from '../types'
+import { Token, YouTube, VideoWithComments, VideoComment } from '../types'
 import duration from 'iso8601-duration'
+
+export const createComment = (
+  video: VideoWithComments,
+  text: string
+): VideoComment => {
+  return {
+    id: `LFQ_CUSTOM_COMMENT_${Math.random().toString().slice(2, 8)}`,
+    snippet: {
+      videoId: video.id,
+      topLevelComment: {
+        snippet: {
+          textDisplay: text,
+          publishedAt: video.snippet.publishedAt,
+        },
+      },
+    },
+  }
+}
 
 export const normalizeVideo = (
   video: YouTube.Video & {

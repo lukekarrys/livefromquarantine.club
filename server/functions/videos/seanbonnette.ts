@@ -1,4 +1,5 @@
 import { Artist, VideoWithComments } from '../../types'
+import { createComment } from '../../api/youtube'
 
 const months = [
   'january',
@@ -17,30 +18,12 @@ const months = [
 
 const dateRegex = new RegExp(`\\b(${months.join('|')})\\s(\\d+)\\b`, 'i')
 
-const parseTitleDate = (year: number, month: string, day: number): Date => {
-  const d = new Date()
-  // TIL that setMonth takes a second optional parameter. In this case, since we are
-  // trying to create a date by setting month/day/year after creating a new Date(). Since
-  // new Date() is currently set to now, this will cause things to break when the current day
-  // is a day in which other months have no days. Eg March 29 when February has 28 days.
-  // The good news is that this caused tests to break but took me forever to find the cause.
-  // 2021-03-29T https://app.netlify.com/teams/lukekarrys/builds/6061519d3c1a53000722bf1b
-  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMonth#description
-  d.setMonth(months.indexOf(month.toLowerCase()), day)
-  d.setDate(day)
-  d.setFullYear(year)
-  return d
-}
-
-const titleParser = (title: string): string =>
+const titleToDateText = (title: string): string =>
   title.replace(/Live from Quarantine[\s-]+-?/i, '')
 
-// Special case to sort these videos by their recorded date which is only
-// captured in the title of the video I think. So this parses the date out of
-// the title and then sorts on that
-const dateParser = (video: VideoWithComments) => {
+const getVideoDate = (video: VideoWithComments) => {
   const [, month, day] =
-    dateRegex.exec(titleParser(video.snippet.title).toLowerCase()) || []
+    dateRegex.exec(titleToDateText(video.snippet.title).toLowerCase()) || []
 
   const publishedYear = video.snippet.publishedAt.split('-')[0]
 
@@ -60,7 +43,25 @@ const dateParser = (video: VideoWithComments) => {
     )
   }
 
-  return parseTitleDate(+year, month, +day).toJSON()
+  const d = new Date()
+  // TIL that setMonth takes a second optional parameter. In this case, since we are
+  // trying to create a date by setting month/day/year after creating a new Date(). Since
+  // new Date() is currently set to now, this will cause things to break when the current day
+  // is a day in which other months have no days. Eg March 29 when February has 28 days.
+  // The good news is that this caused tests to break but took me forever to find the cause.
+  // 2021-03-29T https://app.netlify.com/teams/lukekarrys/builds/6061519d3c1a53000722bf1b
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMonth#description
+  d.setMonth(months.indexOf(month.toLowerCase()), +day)
+  d.setDate(+day)
+  d.setFullYear(+year)
+  return d
+}
+
+const titleParser = (video: VideoWithComments): string => {
+  const date = getVideoDate(video)
+  const month = months[date.getMonth()]
+  const titleMonth = month[0].toUpperCase() + month.slice(1)
+  return `${titleMonth} ${date.getDate()}, ${date.getFullYear()}`
 }
 
 const artist: Artist = {
@@ -78,17 +79,23 @@ const artist: Artist = {
   },
   titleParser,
   videoParsers: {
-    PmJa6qlob0Q: {
-      comments: `0:42 A Big Day for Grimley\n4:23 Oo-de-lally`,
+    PmJa6qlob0Q: (video: VideoWithComments) => {
+      video.comments = [
+        createComment(video, `0:42 A Big Day for Grimley\n4:23 Oo-de-lally`),
+      ]
+      return video
     },
-    JBFJwxSCtwk: {
-      title: (title) =>
-        title.replace('(Maggie audio fixed v1.2 final final)', ''),
+    JBFJwxSCtwk: (video: VideoWithComments) => {
+      video.snippet.title = video.snippet.title.replace(
+        '(Maggie audio fixed v1.2 final final)',
+        ''
+      )
+      return video
     },
   },
   sortVideos: (videoA, videoB) => {
-    const a = dateParser(videoA)
-    const b = dateParser(videoB)
+    const a = getVideoDate(videoA).toJSON()
+    const b = getVideoDate(videoB).toJSON()
     return a < b ? 1 : a > b ? -1 : 0
   },
   omitVideoIds: [
