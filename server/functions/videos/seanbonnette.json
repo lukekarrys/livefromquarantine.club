@@ -7048,18 +7048,6 @@
       },
       "comments": [
         {
-          "id": "UgzHnSKIA4RrQDJbLpJ4AaABAg",
-          "snippet": {
-            "videoId": "dubJxTm0tOM",
-            "topLevelComment": {
-              "snippet": {
-                "textDisplay": "SETLIST \n\n\n0:00 - a bunch of good songs\n\n\n23:17 - the end of the good songs",
-                "publishedAt": "2020-04-08T23:33:46.000Z"
-              }
-            }
-          }
-        },
-        {
           "id": "Ugzys0f6Dt1pTm0UjcR4AaABAg",
           "snippet": {
             "videoId": "dubJxTm0tOM",
@@ -7885,18 +7873,6 @@
           }
         },
         {
-          "id": "UgwhOtsAMFUzIKpZPd94AaABAg",
-          "snippet": {
-            "videoId": "-ir2Yh8UL30",
-            "topLevelComment": {
-              "snippet": {
-                "textDisplay": "Start- \"Loud Mouth\"\n5:55 - \"Rocky racoon\" Beatles cover\n11:15 \"Just like old times\" rod snyder cover\n16:50 \"Fuck boy\" cover \n(Side note: its kaay-po miss me with ka-po)\n19:58 \"I think of demons\" Rocky Erikson cover\n23:32 \"White face black eyes\"",
-                "publishedAt": "2020-03-24T19:51:41.000Z"
-              }
-            }
-          }
-        },
-        {
           "id": "UgxZoW0MhJwaMaQGclZ4AaABAg",
           "snippet": {
             "videoId": "-ir2Yh8UL30",
@@ -7904,6 +7880,18 @@
               "snippet": {
                 "textDisplay": "1:41 Loudmouth\n5:25 Rock Raccoon (The Beatles)\n10:40 Just Like Old Times (Todd Snider)\n16:25 - Fuckboi \n19:07 I Think of Demons (Roky Erikson)\n23:28 White Face, Black Eyes\n\n\nI have a playlist going on Spotify of all the songs Sean has been playing in these! It's just title 'AJJ - Live From Quarantine' for those interested.",
                 "publishedAt": "2020-03-24T21:55:07.000Z"
+              }
+            }
+          }
+        },
+        {
+          "id": "UgwhOtsAMFUzIKpZPd94AaABAg",
+          "snippet": {
+            "videoId": "-ir2Yh8UL30",
+            "topLevelComment": {
+              "snippet": {
+                "textDisplay": "Start- \"Loud Mouth\"\n5:55 - \"Rocky racoon\" Beatles cover\n11:15 \"Just like old times\" rod snyder cover\n16:50 \"Fuck boy\" cover \n(Side note: its kaay-po miss me with ka-po)\n19:58 \"I think of demons\" Rocky Erikson cover\n23:32 \"White face black eyes\"",
+                "publishedAt": "2020-03-24T19:51:41.000Z"
               }
             }
           }

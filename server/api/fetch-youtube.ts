@@ -62,15 +62,16 @@ const getPaginatedComments = async (
   pageToken?: string,
   previousItems: YouTube.CommentThread[] = []
 ): Promise<YouTube.CommentThread[]> => {
-  const { items, nextPageToken } = await youtube.commentThreads(
+  const { items: comments, nextPageToken } = await youtube.commentThreads(
     id,
     token,
     pageToken
   )
 
-  const setlistComments = items.filter((comment) =>
-    findSetlist(comment.snippet.topLevelComment.snippet.textDisplay)
-  )
+  const setlistComments = comments.filter((c) => {
+    const songs = findSetlist(c.snippet.topLevelComment.snippet.textDisplay)
+    return songs && songs.length >= 3
+  })
 
   const newItems = [...previousItems, ...setlistComments]
 

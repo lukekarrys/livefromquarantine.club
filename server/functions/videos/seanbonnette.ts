@@ -89,6 +89,7 @@ const artist: Artist = {
   ],
   omitCommentIds: [
     'UgzHFsG1E5peX5zKYCJ4AaABAg', // June 22. No setlist but this comment has some timestamps
+    'UgwXag5hnNlSNHEd-yZ4AaABAg', // June 22. No setlist but this comment has some timestamps
   ],
 }
 
