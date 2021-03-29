@@ -15,7 +15,7 @@ import {
 // in case oauth on the client isn't ideal with 1hr tokens
 const { API_KEY, LAMBDA_TASK_ROOT } = process.env
 const ROOT = LAMBDA_TASK_ROOT
-  ? path.join(LAMBDA_TASK_ROOT, 'src', 'functions', 'videos')
+  ? path.join(LAMBDA_TASK_ROOT, 'src', 'server', 'functions', 'videos')
   : __dirname
 
 const getVideos = async (id: string, accessToken?: string) => {
