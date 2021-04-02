@@ -355,7 +355,16 @@ const playerMachine = createMachine<
         localStorage.setItem('repeat', repeat.toString())
         localStorage.setItem('shuffle', shuffle.toString())
         localStorage.setItem('selectMode', selectMode.toString())
-        localStorage.setItem('mediaMode', selectMode.toString())
+        localStorage.setItem('mediaMode', mediaMode.toString())
+
+        // the audio param forces to audio mode but now that it is set in localstorage
+        // we can remove the search param so they pressing the button to switch to
+        // video mode will work without needing to manipulate the url there
+        window.history.replaceState(
+          null,
+          '',
+          url.removeParams(window.location.href, 'audio')
+        )
 
         return {
           ...context,
@@ -595,11 +604,7 @@ const playerMachine = createMachine<
               : context.mediaMode
 
           localStorage.setItem('mediaMode', next.toString())
-
-          // the audio param forces to audio mode but now that it is set in localstorage
-          // we can remove the search param so they pressing the button to switch to
-          // video mode will work without needing to manipulate the url there
-          window.location.href = url.removeParams(window.location.href, 'audio')
+          window.location.reload()
 
           // This requires a page reload so return the same value so the UI
           // doesnt shift. TODO: make this possible to happen dynamically
