@@ -6,6 +6,84 @@
   "videos": [
     {
       "contentDetails": {
+        "duration": 363
+      },
+      "id": "9-zFb5dJ3lY",
+      "snippet": {
+        "title": "Live From Quarantine - March 31",
+        "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday & Thursday at 7:30 PM AZ time, and sometimes on Wednesday afternoons, on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n0:30 AJJ - My Brain Is A Human Body\n3:44 AJJ - Linda Ronstadt\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nCheck out our digital merch table, if you're so inclined: http://shop.ajjtheband.com",
+        "publishedAt": "2021-04-01T14:00:02Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/9-zFb5dJ3lY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/9-zFb5dJ3lY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/9-zFb5dJ3lY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/9-zFb5dJ3lY/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/9-zFb5dJ3lY/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        }
+      },
+      "comments": []
+    },
+    {
+      "contentDetails": {
+        "duration": 1094
+      },
+      "id": "pEz4a0a6vRk",
+      "snippet": {
+        "title": "Live From Quarantine - March 29",
+        "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday & Thursday at 7:30 PM AZ time, and sometimes on Wednesday afternoons, on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n0:48 Kimya Dawson - Hadlock Padlock\n4:31 AJJ - Fucc The Devil\n6:57 Pixies - Wave of Mutilation\n10:00 AJJ - Rejoice\n13:21 AJJ - Love In Your Heart\n15:34 AJJ - Sense, Sensibility\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nCheck out our digital merch table, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+        "publishedAt": "2021-03-30T14:00:28Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/pEz4a0a6vRk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/pEz4a0a6vRk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/pEz4a0a6vRk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/pEz4a0a6vRk/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/pEz4a0a6vRk/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        }
+      },
+      "comments": []
+    },
+    {
+      "contentDetails": {
         "duration": 282
       },
       "id": "SQSF112Zm7o",
@@ -7873,18 +7951,6 @@
           }
         },
         {
-          "id": "UgxZoW0MhJwaMaQGclZ4AaABAg",
-          "snippet": {
-            "videoId": "-ir2Yh8UL30",
-            "topLevelComment": {
-              "snippet": {
-                "textDisplay": "1:41 Loudmouth\n5:25 Rock Raccoon (The Beatles)\n10:40 Just Like Old Times (Todd Snider)\n16:25 - Fuckboi \n19:07 I Think of Demons (Roky Erikson)\n23:28 White Face, Black Eyes\n\n\nI have a playlist going on Spotify of all the songs Sean has been playing in these! It's just title 'AJJ - Live From Quarantine' for those interested.",
-                "publishedAt": "2020-03-24T21:55:07.000Z"
-              }
-            }
-          }
-        },
-        {
           "id": "UgwhOtsAMFUzIKpZPd94AaABAg",
           "snippet": {
             "videoId": "-ir2Yh8UL30",
@@ -7892,6 +7958,18 @@
               "snippet": {
                 "textDisplay": "Start- \"Loud Mouth\"\n5:55 - \"Rocky racoon\" Beatles cover\n11:15 \"Just like old times\" rod snyder cover\n16:50 \"Fuck boy\" cover \n(Side note: its kaay-po miss me with ka-po)\n19:58 \"I think of demons\" Rocky Erikson cover\n23:32 \"White face black eyes\"",
                 "publishedAt": "2020-03-24T19:51:41.000Z"
+              }
+            }
+          }
+        },
+        {
+          "id": "UgxZoW0MhJwaMaQGclZ4AaABAg",
+          "snippet": {
+            "videoId": "-ir2Yh8UL30",
+            "topLevelComment": {
+              "snippet": {
+                "textDisplay": "1:41 Loudmouth\n5:25 Rock Raccoon (The Beatles)\n10:40 Just Like Old Times (Todd Snider)\n16:25 - Fuckboi \n19:07 I Think of Demons (Roky Erikson)\n23:28 White Face, Black Eyes\n\n\nI have a playlist going on Spotify of all the songs Sean has been playing in these! It's just title 'AJJ - Live From Quarantine' for those interested.",
+                "publishedAt": "2020-03-24T21:55:07.000Z"
               }
             }
           }
