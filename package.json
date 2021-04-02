@@ -35,7 +35,7 @@
     "dev": "run-p dev:**",
     "dev:client": "npm run dev -w client",
     "dev:server": "npm run dev -w server",
-    "lint": "npm run prettier -ws && npm run eslint -ws",
+    "lint": "npm run lint -ws",
     "postinstall": "patch-package",
     "precommit": "npm run precommit -ws",
     "test": "npm run test -ws",
@@ -43,7 +43,7 @@
   },
   "volta": {
     "node": "15.12.0",
-    "npm": "7.7.5"
+    "npm": "7.8.0"
   },
   "workspaces": [
     "client/",
