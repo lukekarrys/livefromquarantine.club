@@ -6,6 +6,7 @@ import * as trackOrder from './track-order'
 import * as debug from '../lib/debug'
 import { pick } from '../lib/utils'
 import MediaPlayer from '../lib/MediaPlayer'
+import * as url from '../lib/url'
 
 const readyTransitions = {
   SHUFFLE: {
@@ -349,6 +350,13 @@ const playerMachine = createMachine<
         const selectMode = event.selectMode ?? context.selectMode
         const mediaMode = event.mediaMode ?? context.mediaMode
 
+        // Modes can come from other places like the query string
+        // so if we ever call setModes then set all the LS values for next time
+        localStorage.setItem('repeat', repeat.toString())
+        localStorage.setItem('shuffle', shuffle.toString())
+        localStorage.setItem('selectMode', selectMode.toString())
+        localStorage.setItem('mediaMode', selectMode.toString())
+
         return {
           ...context,
           shuffle,
@@ -587,7 +595,11 @@ const playerMachine = createMachine<
               : context.mediaMode
 
           localStorage.setItem('mediaMode', next.toString())
-          window.location.reload()
+
+          // the audio param forces to audio mode but now that it is set in localstorage
+          // we can remove the search param so they pressing the button to switch to
+          // video mode will work without needing to manipulate the url there
+          window.location.href = url.removeParams(window.location.href, 'audio')
 
           // This requires a page reload so return the same value so the UI
           // doesnt shift. TODO: make this possible to happen dynamically

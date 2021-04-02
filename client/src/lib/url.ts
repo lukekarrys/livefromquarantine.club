@@ -45,3 +45,13 @@ export const url = (
   }).toString()
   return url.toString()
 }
+
+export const removeParams = (path: string, ...keys: string[]): string => {
+  const url = relativeUrl(path)
+
+  const params = new URLSearchParams(parseQs(url.search))
+  keys.forEach((k) => params.delete(k))
+  url.search = params.toString()
+
+  return url.toString()
+}

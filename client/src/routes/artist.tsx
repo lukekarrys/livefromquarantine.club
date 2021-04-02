@@ -7,6 +7,7 @@ import Player from '../components/player'
 import fetchData from '../lib/api'
 import * as debugService from '../lib/useDebugService'
 import { artistsById } from '../artists'
+import { parseQs } from '../lib/url'
 import {
   ArtistId,
   Videos,
@@ -26,7 +27,7 @@ interface Props {
 const hash = window.location.hash.slice(1)
 const upNext: TrackId[] = hash ? (hash.split(',') as TrackId[]) : []
 
-const getLocalStorageValues = (artist: ArtistId) => {
+const getModeValues = (artist: ArtistId) => {
   const { audio: artistHasAudio } = artistsById[artist]
 
   const lsMediaMode = localStorage.getItem('mediaMode')
@@ -45,7 +46,16 @@ const getLocalStorageValues = (artist: ArtistId) => {
     lsSelectMode != null ? (+lsSelectMode as SelectMode) : undefined
 
   const mediaMode = artistHasAudio
-    ? lsMediaMode != null
+    ? // If we have a search param then force to audio mode
+      // this will set it in localstorage for future visits in the action.
+      // Otherwise read the value from localstorage and default to YouTube with
+      // no value
+      Object.prototype.hasOwnProperty.call(
+        parseQs(window.location.search),
+        'audio'
+      )
+      ? MediaMode.Audio
+      : lsMediaMode != null
       ? (+lsMediaMode as MediaMode)
       : MediaMode.YouTube
     : MediaMode.YouTubeOnly
@@ -57,7 +67,7 @@ const Artist: FunctionalComponent<Props> = ({ artist, accessToken }) => {
   const [videos, setVideos] = useState<Videos | undefined>(undefined)
   const [meta, setMeta] = useState<ArtistMeta | undefined>(undefined)
   const [state, send, service] = useMachine(playerMachine)
-  const modeValues = useMemo(() => getLocalStorageValues(artist), [artist])
+  const modeValues = useMemo(() => getModeValues(artist), [artist])
 
   debugService.useService(service)
 

@@ -48,4 +48,9 @@ describe('Url utils', () => {
     const newUrl = url.url('/test?test=hello&test2=goodbye', { test2: 'hi' })
     expect(newUrl).toEqual('http://localhost:8080/test?test=hello&test2=hi')
   })
+
+  test('can remove params', () => {
+    const newUrl = url.removeParams('/test?test=hello&test2=goodbye', 'test')
+    expect(newUrl).toEqual('http://localhost:8080/test?test2=goodbye')
+  })
 })
