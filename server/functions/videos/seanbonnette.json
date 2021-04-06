@@ -6,6 +6,84 @@
   "videos": [
     {
       "contentDetails": {
+        "duration": 848
+      },
+      "id": "Swio-Zwx4TU",
+      "snippet": {
+        "title": "Live From Quarantine - April 5",
+        "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday & Thursday at 7:30 PM AZ time, and sometimes on Wednesday afternoons, on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n1:26 AJJ - I Wanna Be Your Dog 2\n4:16 AJJ - Getting Naked and Playing With Guns\n8:13 Gram Parsons - Return of the Grievous Angel\n12:56 Oo-de-lally\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nCheck out our digital merch table, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+        "publishedAt": "2021-04-06T14:00:07Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Swio-Zwx4TU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Swio-Zwx4TU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Swio-Zwx4TU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/Swio-Zwx4TU/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/Swio-Zwx4TU/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        }
+      },
+      "comments": []
+    },
+    {
+      "contentDetails": {
+        "duration": 784
+      },
+      "id": "H_t3JI7jX4c",
+      "snippet": {
+        "title": "Live From Quarantine - April 1",
+        "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday & Thursday at 7:30 PM AZ time, and sometimes on Wednesday afternoons, on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n2:34 AJJ - Goodbye, Oh Goodbye\n6:11 AJJ - Candles of Love\n8:02 AJJ - Kokopelli Face Tattoo\n11:29 AJJ - Hate and Kill\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nCheck out our digital merch table, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+        "publishedAt": "2021-04-02T14:00:15Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/H_t3JI7jX4c/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/H_t3JI7jX4c/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/H_t3JI7jX4c/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/H_t3JI7jX4c/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/H_t3JI7jX4c/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        }
+      },
+      "comments": []
+    },
+    {
+      "contentDetails": {
         "duration": 363
       },
       "id": "9-zFb5dJ3lY",
