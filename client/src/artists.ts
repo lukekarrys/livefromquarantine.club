@@ -7,7 +7,7 @@ type ArtistWithId = Artist & {
   id: string
 }
 
-export const artistsById: Record<string, Artist> = {
+export const artistsById: { [key: string]: Artist | undefined } = {
   seanbonnette: { name: 'Sean Bonnette', audio: true },
   bengibbard: { name: 'Ben Gibbard', audio: true },
   benfolds: { name: 'Ben Folds' },
@@ -16,5 +16,6 @@ export const artistsById: Record<string, Artist> = {
 }
 
 export const artists: ArtistWithId[] = Object.keys(artistsById).map((id) => {
-  return { id, ...artistsById[id] }
+  const artist = artistsById[id] as Artist
+  return { id, ...artist }
 })

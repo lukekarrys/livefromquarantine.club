@@ -28,7 +28,7 @@ const hash = window.location.hash.slice(1)
 const upNext: TrackId[] = hash ? (hash.split(',') as TrackId[]) : []
 
 const getModeValues = (artist: ArtistId) => {
-  const { audio: artistHasAudio } = artistsById[artist]
+  const { audio: artistHasAudio } = artistsById[artist] || {}
 
   const lsMediaMode = localStorage.getItem('mediaMode')
   const lsSelectMode = localStorage.getItem('selectMode')
