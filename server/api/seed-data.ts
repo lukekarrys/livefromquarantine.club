@@ -5,7 +5,7 @@ import { PreloadedData } from '../types'
 import createClient from './fauna'
 import importEnv from './import'
 
-const db = createClient(process.env.FAUNA_SECRET)
+const db = createClient(process.env.FAUNA_KEY)
 
 const getArtist = async (artist: string) => {
   try {
