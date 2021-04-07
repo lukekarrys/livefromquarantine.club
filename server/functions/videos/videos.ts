@@ -4,7 +4,7 @@ import parseVideos from '../../api/parse-videos'
 import { getPlaylist, getVideo } from '../../api/fetch-youtube'
 import { getErrorStatusAndMessage } from '../../api/youtube'
 import importEnv from '../../api/import'
-import * as db from '../../api/fauna'
+import createClient from '../../api/fauna'
 import {
   Artist,
   PreloadedData,
@@ -14,10 +14,12 @@ import {
 
 // Keeping the server side YOUTUBE_KEY around for awhile
 // in case oauth on the client isn't ideal with 1hr tokens
-const { YOUTUBE_KEY, LAMBDA_TASK_ROOT } = process.env
+const { YOUTUBE_KEY, LAMBDA_TASK_ROOT, FAUNA_KEY } = process.env
 const ROOT = LAMBDA_TASK_ROOT
   ? path.join(LAMBDA_TASK_ROOT, 'src', 'server', 'functions', 'videos')
   : __dirname
+
+const db = createClient(FAUNA_KEY)
 
 const getVideos = async (id: string, accessToken?: string) => {
   const token = accessToken ? { accessToken } : { key: YOUTUBE_KEY }

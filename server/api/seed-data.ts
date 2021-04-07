@@ -1,15 +1,18 @@
 import './dotenv'
+
 import { cli } from './artists'
 import { PreloadedData } from '../types'
-import { update } from './fauna'
+import createClient from './fauna'
 import importEnv from './import'
+
+const db = createClient(process.env.FAUNA_SECRET)
 
 const getArtist = async (artist: string) => {
   try {
     const data = await importEnv<PreloadedData>(
       `../functions/videos/${artist}.json`
     )
-    await update(artist, data)
+    await db.update(artist, data)
     return { id: artist, ok: true }
   } catch (error: unknown) {
     return {
