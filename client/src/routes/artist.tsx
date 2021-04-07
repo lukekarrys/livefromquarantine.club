@@ -17,6 +17,7 @@ import {
   Repeat,
   AccessToken,
   MediaMode,
+  DefaultMediaMode,
 } from '../types'
 
 interface Props {
@@ -45,20 +46,30 @@ const getModeValues = (artist: ArtistId) => {
   const selectMode =
     lsSelectMode != null ? (+lsSelectMode as SelectMode) : undefined
 
-  const mediaMode = artistHasAudio
-    ? // If we have a search param then force to audio mode
+  let mediaMode = MediaMode.YouTubeOnly
+
+  if (artistHasAudio) {
+    const forceAudio = Object.prototype.hasOwnProperty.call(
+      parseQs(window.location.search),
+      'audio'
+    )
+    if (forceAudio) {
+      // If we have a search param then force to audio mode
       // this will set it in localstorage for future visits in the action.
-      // Otherwise read the value from localstorage and default to YouTube with
-      // no value
-      Object.prototype.hasOwnProperty.call(
-        parseQs(window.location.search),
-        'audio'
-      )
-      ? MediaMode.Audio
-      : lsMediaMode != null
-      ? (+lsMediaMode as MediaMode)
-      : MediaMode.YouTube
-    : MediaMode.YouTubeOnly
+      mediaMode = MediaMode.Audio
+    } else if (lsMediaMode != null) {
+      const lsMediaModeValue = +lsMediaMode as MediaMode
+      // If the type is YouTubeOnly but the artist has audio
+      // (maybe if this changed previously) then revert to the default
+      mediaMode =
+        lsMediaModeValue === MediaMode.YouTubeOnly
+          ? DefaultMediaMode
+          : lsMediaModeValue
+    } else {
+      // The default is YouTube
+      mediaMode = DefaultMediaMode
+    }
+  }
 
   return { mediaMode, selectMode, shuffle, repeat }
 }

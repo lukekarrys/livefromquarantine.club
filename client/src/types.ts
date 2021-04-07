@@ -46,3 +46,5 @@ export enum MediaMode {
   YouTube,
   YouTubeOnly,
 }
+
+export const DefaultMediaMode = MediaMode.YouTube
