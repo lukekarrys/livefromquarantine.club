@@ -20,7 +20,9 @@ const parseSeconds = (str: string): number =>
 const nonNullable = <T>(value: T): value is NonNullable<T> =>
   value !== null && value !== undefined
 
-const getSongsFromText = (text: string) => {
+const findSetlist = (text?: string): ParsedSong[] | null => {
+  if (text == null) return null
+
   const songs: ParsedSong[] = getLinesWithTimestamp(text)
     .map((line) => {
       const [start] = TIMESTAMP.exec(line) || []
@@ -44,13 +46,11 @@ const getSongsFromText = (text: string) => {
       }
     })
     .filter(nonNullable)
+    .filter((song) => song.name && !isNaN(song.start))
 
   if (!songs[0]) return null
 
-  return songs[0].start > 0 ? [{ name: 'Intro', start: 0 }, ...songs] : songs
+  return songs
 }
-
-const findSetlist = (text?: string): ParsedSong[] | null =>
-  text == null ? null : getSongsFromText(text)
 
 export default findSetlist

@@ -2,7 +2,7 @@ import './dotenv'
 import axios from 'axios'
 import { cli } from './artists'
 
-const main = async (artists: string[] = []) => {
+const main = async (artists: string[]) => {
   const { GITHUB_TOKEN } = process.env
 
   if (!GITHUB_TOKEN) {

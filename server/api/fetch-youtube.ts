@@ -12,6 +12,7 @@ const isVideoFuture = (video: YouTube.Video) =>
 const getPaginatedVideosFromPlaylist = async (
   id: string,
   token: Token,
+  { maxVideos = Infinity }: { maxVideos?: number },
   pageToken?: string,
   previousItems: YouTube.Video[] = []
 ): Promise<YouTube.Video[]> => {
@@ -40,10 +41,11 @@ const getPaginatedVideosFromPlaylist = async (
 
   const newItems = [...previousItems, ...filteredItems]
 
-  if (nextPageToken) {
+  if (nextPageToken && newItems.length < maxVideos) {
     return await getPaginatedVideosFromPlaylist(
       id,
       token,
+      { maxVideos },
       nextPageToken,
       newItems
     )
@@ -59,6 +61,7 @@ const getPaginatedVideosFromPlaylist = async (
 const getPaginatedComments = async (
   id: string,
   token: Token,
+  { maxComments = 300 }: { maxComments?: number },
   pageToken?: string,
   previousItems: YouTube.CommentThread[] = []
 ): Promise<YouTube.CommentThread[]> => {
@@ -70,7 +73,11 @@ const getPaginatedComments = async (
 
   const setlistComments = comments.filter((c) => {
     const songs = findSetlist(c.snippet.topLevelComment.snippet.textDisplay)
-    return songs && songs.length >= 3
+    // A setlist should have more than one song? Most of the time I see single timestamp
+    // comments referring to one cool part of a video. This can get a lot of likes, often
+    // more than a full setlist. So for now remove those. This might be worth revising later
+    // into a more robust way to find the "best" setlist.
+    return songs && songs.length > 1
   })
 
   const newItems = [...previousItems, ...setlistComments]
@@ -79,17 +86,24 @@ const getPaginatedComments = async (
   // that are top on the website even when asking it to sort them by relevance. This is not
   // an ideal solution and could sill return nothing on videos with many thousands of comments
   // but none of the preloaded videos are there yet.
-  if (nextPageToken && newItems.length < 300) {
-    return await getPaginatedComments(id, token, nextPageToken, newItems)
+  if (nextPageToken && newItems.length < maxComments) {
+    return await getPaginatedComments(
+      id,
+      token,
+      { maxComments },
+      nextPageToken,
+      newItems
+    )
   }
 
   // Sort by likeCount. YouTube returns comments
   // by "relevance" but likeCount is a better indicator of timestamps I think
-  return newItems.sort(
-    (a, b) =>
+  return newItems.sort((a, b) => {
+    return (
       b.snippet.topLevelComment.snippet.likeCount -
       a.snippet.topLevelComment.snippet.likeCount
-  )
+    )
+  })
 }
 
 const getPlaylistData = async (
@@ -109,7 +123,8 @@ const getPlaylistData = async (
 
 const getFullVideoData = async (
   videoId: string,
-  token: Token
+  token: Token,
+  { maxComments }: { maxComments?: number } = {}
 ): Promise<PreloadedData> => {
   const {
     items: [video],
@@ -141,7 +156,7 @@ const getFullVideoData = async (
     )
   }
 
-  const comments = await getPaginatedComments(video.id, token)
+  const comments = await getPaginatedComments(video.id, token, { maxComments })
 
   return {
     meta: {
@@ -158,15 +173,18 @@ const getFullVideoData = async (
 
 const getFullPlaylistData = async (
   playlistId: string,
-  token: Token
+  token: Token,
+  { maxVideos, maxComments }: { maxVideos?: number; maxComments?: number } = {}
 ): Promise<PreloadedData> => {
   const [playlist, videos] = await Promise.all([
     getPlaylistData(playlistId, token),
-    getPaginatedVideosFromPlaylist(playlistId, token),
+    getPaginatedVideosFromPlaylist(playlistId, token, { maxVideos }),
   ])
 
   const comments = await Promise.all(
-    videos.map((video) => getPaginatedComments(video.id, token))
+    videos.map((video) =>
+      getPaginatedComments(video.id, token, { maxComments })
+    )
   )
 
   return {

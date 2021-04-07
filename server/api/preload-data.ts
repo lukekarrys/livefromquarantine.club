@@ -7,9 +7,9 @@ import { cliFull } from './artists'
 import { getPlaylist } from './fetch-youtube'
 import { Artist } from '../types'
 
-const { API_KEY = '' } = process.env
+const { YOUTUBE_KEY = '' } = process.env
 
-const hideKey = (str: string) => str.replace(API_KEY, 'X'.repeat(3))
+const hideKey = (str: string) => str.replace(YOUTUBE_KEY, 'X'.repeat(3))
 
 const dataPath = (...parts: string[]) =>
   path.join(__dirname, '..', 'functions', 'videos', ...parts)
@@ -26,10 +26,10 @@ const writeFile = async (fileId: string, resp: Record<string, unknown>) => {
   )
 }
 
-const main = async (artists: Artist[] = []) =>
+const main = async (artists: Artist[]) =>
   Promise.all(
     artists.map((artist) =>
-      getPlaylist(artist.playlistId, { key: API_KEY })
+      getPlaylist(artist.playlistId, { key: YOUTUBE_KEY })
         .then((resp) => writeFile(artist.id, resp))
         .then(() => ({ id: artist.id, ok: true }))
         .catch((error: unknown) => ({

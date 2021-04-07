@@ -38,8 +38,9 @@
     "lint": "npm run lint -ws",
     "postinstall": "patch-package",
     "precommit": "npm run precommit -ws",
+    "seed": "npm run seed -w server",
     "test": "npm run test -ws",
-    "trigger": "ts-node server/api/trigger-gh-preload.ts"
+    "trigger": "npm run trigger -w server"
   },
   "volta": {
     "node": "15.12.0",

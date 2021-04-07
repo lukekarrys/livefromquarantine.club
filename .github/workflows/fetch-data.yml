@@ -19,7 +19,7 @@ jobs:
 
       - name: Use npm 7
         run: |
-          npm install -g npm@7.7.5
+          npm install -g npm@7.8.0
 
       - name: Install
         run: |
@@ -31,7 +31,7 @@ jobs:
           npm run data -- ${{ github.event.client_payload.artist }}
           npm run data:fixtures -- ${{ github.event.client_payload.artist }}
         env:
-          API_KEY: ${{ secrets.API_KEY }}
+          YOUTUBE_KEY: ${{ secrets.YOUTUBE_KEY }}
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3

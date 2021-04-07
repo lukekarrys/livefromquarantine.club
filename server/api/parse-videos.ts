@@ -3,6 +3,17 @@ import assert from 'assert'
 import findSetlist from './find-setlist'
 import { VideoWithComments, ParsedVideo, ParsedSong } from '../types'
 
+const findSetlistWithIntro = (text: string) => {
+  const songs = findSetlist(text)
+  // When parsing the data, add an intro track if the setlist
+  // doesn't already have one. This ensures that in the client
+  // the first track always starts at 0 since most setlists don't
+  // explicitly list that as a  track
+  return songs && songs[0].start > 0
+    ? [{ name: 'Intro', start: 0 }, ...songs]
+    : songs
+}
+
 const parseVideo = (video: VideoWithComments, artist?: Artist) => {
   const {
     titleParser,
@@ -23,7 +34,7 @@ const parseVideo = (video: VideoWithComments, artist?: Artist) => {
 
   let songs: ParsedSong[] = []
 
-  const descriptionSetlist = findSetlist(description)
+  const descriptionSetlist = findSetlistWithIntro(description)
 
   if (descriptionSetlist) {
     songs = descriptionSetlist
@@ -38,7 +49,7 @@ const parseVideo = (video: VideoWithComments, artist?: Artist) => {
         continue
       }
 
-      const commentSetlist = findSetlist(
+      const commentSetlist = findSetlistWithIntro(
         parsedComment.snippet.topLevelComment.snippet.textDisplay
       )
 

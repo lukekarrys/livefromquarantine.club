@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "dotenv": "^8.2.0",
+    "faunadb": "^4.1.3",
     "iso8601-duration": "^1.3.0",
     "mkdirp": "^1.0.4"
   },
@@ -49,6 +50,7 @@
     "lint": "npm run prettier && npm run eslint",
     "precommit": "lint-staged",
     "prettier": "prettier --write '**/*.{js,ts,css,md,json}'",
+    "seed": "ts-node api/seed-data.ts",
     "test": "ava",
     "trigger": "ts-node api/trigger-gh-preload.ts"
   }
