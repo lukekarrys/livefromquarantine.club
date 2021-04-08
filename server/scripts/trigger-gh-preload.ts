@@ -1,6 +1,6 @@
-import './dotenv'
+import '../api/dotenv'
 import axios from 'axios'
-import { cli } from './artists'
+import { cli } from '../api/artists'
 
 const main = async (artists: string[]) => {
   const { GITHUB_TOKEN } = process.env

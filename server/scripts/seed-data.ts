@@ -1,11 +1,11 @@
-import './dotenv'
+import '../api/dotenv'
 
-import { cli } from './artists'
+import { cli } from '../api/artists'
 import { PreloadedData } from '../types'
-import createClient from './fauna'
-import importEnv from './import'
+import createClient from '../api/db'
+import importEnv from '../api/import'
 
-const db = createClient(process.env.FAUNA_KEY)
+const db = createClient()
 
 const getArtist = async (artist: string) => {
   try {
@@ -24,13 +24,15 @@ const getArtist = async (artist: string) => {
 }
 
 // TODO: This is not being used currently but can be used in the future
-// once the API functions are set to also look for preloaded data in Fauna
+// once the API functions are set to also look for preloaded data in the database
 Promise.all(cli().map(getArtist))
   .then((res) => {
+    console.log(JSON.stringify(res, null, 2))
     if (res.some((r) => !r.ok)) {
       throw new Error('Data error')
     }
   })
+  .then(() => db.client.$disconnect())
   .catch((err) => {
     console.error(err)
     process.exit(1)

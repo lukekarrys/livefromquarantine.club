@@ -1,4 +1,4 @@
-import './dotenv'
+import '../api/dotenv'
 import http from 'http'
 import { URLSearchParams } from 'url'
 import { handler as getVideos } from '../functions/videos/videos'
