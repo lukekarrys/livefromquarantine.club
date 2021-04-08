@@ -67,27 +67,15 @@ export const handler = async (
   const logErr = (message: string, err: unknown) =>
     log(message, err instanceof Error ? err.message.split('\n')[0] : err)
 
-  try {
-    const [{ meta, videos }, artist] = await Promise.all([
-      importEnv<PreloadedData>(path.join(ROOT, `${id}.json`)),
-      importEnv<Artist>(path.join(ROOT, id)),
-    ])
-
-    log('Found preloaded')
-
-    return res({
-      meta: {
-        ...meta,
-        ...artist.meta,
-      },
-      data: parseVideos(videos, artist),
-    })
-  } catch (err) {
-    logErr('Not found in preloaded data', err)
-  }
-
   if (!accessToken && !YOUTUBE_KEY) {
     return res({ error: 'Missing required accessToken parameter' }, 400)
+  }
+
+  let preloadedArtist: Artist | null = null
+  try {
+    preloadedArtist = await importEnv<Artist>(path.join(ROOT, id))
+  } catch (err) {
+    logErr('Preloaded artist could not be found', err)
   }
 
   try {
@@ -110,8 +98,11 @@ export const handler = async (
       ;({ meta, videos } = JSON.parse(cachedMedia.json) as PreloadedData)
 
       return res({
-        meta,
-        data: parseVideos(videos),
+        meta: {
+          ...meta,
+          ...preloadedArtist?.meta,
+        },
+        data: parseVideos(videos, preloadedArtist ?? undefined),
       })
     } catch (err) {
       logErr('Not found in database', err)

@@ -14,15 +14,15 @@
 
 ## Preloaded Playlists
 
-Preloaded playlists are fetched and preloaded with the built site via GitHub actions on a set interval. This can also be triggered via a `respository_dispatch` action. A quick script to do this is run via `npm run trigger`. The data is stored in the repo to make deploys faster and less likely to fall since the YouTube API has some transient errors sometimes.
+Preloaded playlists are fetched and saved to this repo. This can also be triggered via a `respository_dispatch` action. A quick script to do this is run via `npm run trigger`. They are also pushed to the database on each push to the main branch. The data is stored in the repo to make deploys faster and less likely to fall since the YouTube API has some transient errors sometimes.
 
 ## Adding a Preloaded Playlist
 
-1. Add a file to `server/functions/playlist/ARTIST_ID.js` with at least `playlistId`, `id` (`parsers` and `meta` are optional)
-1. Create an empty file at `server/functions/playlist/ARTIST_ID.json`
+1. Add a file to `server/functions/videos/ARTIST_ID.js` with the values from [the `types` files](./server/types/index.ts)
+1. Create an empty file at `server/data/ARTIST_ID.json`
 1. Add an entry to `client/artists.json` with a matching `id` and the `name` which will populate the button on the index page
-1. Run `npm run data ID` to save the data to `server/functions/playlist/ARTIST_ID.json`
-1. This playlist will now be updated and built with the site each time
+1. Run `npm run data ID` to save the data to `server/data/ARTIST_ID.json`
+1. Run `npm run data:fixtures ID` to see a visually easier to parse representation of what is parsed from that artist's data
 
 ## Building the site
 

@@ -29,7 +29,7 @@ interface ApiVideo {
   songs: ApiSong[]
 }
 
-interface ApiData {
+export interface ApiData {
   meta: ArtistMeta
   data: ApiVideo[]
   error?: string
