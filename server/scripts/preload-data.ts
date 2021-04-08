@@ -3,7 +3,7 @@ import path from 'path'
 import { promises as fs } from 'fs'
 import prettier from 'prettier'
 import mkdirp from 'mkdirp'
-import { cliFull } from '../api/artists'
+import { cliFull, artistDataPath } from '../api/artists'
 import { getPlaylist } from '../api/fetch-youtube'
 import { Artist } from '../types'
 
@@ -11,14 +11,11 @@ const { YOUTUBE_KEY = '' } = process.env
 
 const hideKey = (str: string) => str.replace(YOUTUBE_KEY, 'X'.repeat(3))
 
-const dataPath = (...parts: string[]) =>
-  path.join(__dirname, '..', 'functions', 'videos', ...parts)
-
 const writeFile = async (fileId: string, resp: Record<string, unknown>) => {
   const prettierOptions = await prettier.resolveConfig(__dirname)
-  await mkdirp(dataPath())
+  await mkdirp(artistDataPath)
   await fs.writeFile(
-    dataPath(`${fileId}.json`),
+    path.join(artistDataPath, `${fileId}.json`),
     prettier.format(JSON.stringify(resp, null, 2), {
       parser: 'json',
       ...prettierOptions,

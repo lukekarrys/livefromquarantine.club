@@ -1,16 +1,9 @@
-import '../api/dotenv'
 import { join } from 'path'
 import { promises as fs } from 'fs'
-import { handler as functionHandler } from '../functions/videos/videos'
-import { ResponseSuccess } from '../types'
+import { getParsedArtist, artistParsedPath } from '../api/artists'
 
 export const build = async (id: string): Promise<string> => {
-  const res = await functionHandler({
-    queryStringParameters: { id },
-    httpMethod: 'GET',
-  })
-
-  const { data } = JSON.parse(res.body) as ResponseSuccess
+  const { data } = await getParsedArtist(id)
 
   if (!data) {
     throw new Error(`Could not get data for ${id}`)
@@ -25,7 +18,7 @@ export const build = async (id: string): Promise<string> => {
     .join(`\n${'-'.repeat(10)}\n`)
 }
 
-const path = (id: string): string => join(__dirname, 'fixtures', `${id}.txt`)
+const path = (id: string): string => join(artistParsedPath, `${id}.txt`)
 
 export const write = (id: string, body: string): Promise<void> =>
   fs.writeFile(path(id), body)

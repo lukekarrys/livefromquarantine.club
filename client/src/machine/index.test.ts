@@ -1,17 +1,14 @@
 import { interpret } from '@xstate/fsm'
 import playerMachine from './index'
-import { handler } from '../../../server/functions/videos/videos'
-import { normalizeData, NormalizedData } from '../lib/api'
+import { getParsedArtist } from '../../../server/api/artists'
+import { normalizeData, NormalizedData, ApiData } from '../lib/api'
 import { PlayerService } from './types'
 
 jest.mock('../lib/MediaPlayer')
 
 const getData = async (id: string) => {
-  const res = await handler({
-    queryStringParameters: { id },
-    httpMethod: 'GET',
-  })
-  return normalizeData(JSON.parse(res.body))
+  const res = await getParsedArtist(id)
+  return normalizeData(res as ApiData)
 }
 
 let service: PlayerService | null = null

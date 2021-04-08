@@ -1,17 +1,23 @@
 import fs from 'fs'
 import path from 'path'
-import { Artist } from '../types'
+import { Artist, PreloadedData, ResponseSuccess } from '../types'
 import importEnv from './import'
+import parseVideos from './parse-videos'
 
-const artistPath = path.resolve(__dirname, '..', 'functions', 'videos')
+export const artistDataPath = path.resolve(__dirname, '..', 'data', 'raw')
+export const artistParsedPath = path.resolve(__dirname, '..', 'data', 'parsed')
+const artistParserPath = path.resolve(__dirname, '..', 'functions', 'videos')
 
 export const artists: string[] = fs
-  .readdirSync(artistPath)
+  .readdirSync(artistDataPath)
   .filter((f: string) => path.extname(f) === '.json')
   .map((f: string) => path.basename(f, '.json'))
 
 const importArtist = async (id: string): Promise<Artist> =>
-  importEnv<Artist>(path.join(artistPath, id))
+  importEnv<Artist>(path.join(artistParserPath, id))
+
+const importArtistData = async (id: string): Promise<PreloadedData> =>
+  importEnv<PreloadedData>(path.join(artistDataPath, `${id}.json`))
 
 const getFull = async (id: string): Promise<Artist> => {
   try {
@@ -22,6 +28,18 @@ const getFull = async (id: string): Promise<Artist> => {
         e instanceof Error && e.stack ? `\n${e.stack}` : ''
       }`
     )
+  }
+}
+
+export const getParsedArtist = async (id: string): Promise<ResponseSuccess> => {
+  const artist = await importArtist(id)
+  const data = await importArtistData(id)
+  return {
+    meta: {
+      ...data.meta,
+      ...artist.meta,
+    },
+    data: parseVideos(data.videos, artist),
   }
 }
 
