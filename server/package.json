@@ -10,15 +10,17 @@
     ]
   },
   "dependencies": {
+    "@prisma/client": "^2.20.1",
     "axios": "^0.21.1",
     "dotenv": "^8.2.0",
-    "faunadb": "^4.1.3",
     "iso8601-duration": "^1.3.0",
-    "mkdirp": "^1.0.4"
+    "mkdirp": "^1.0.4",
+    "ms": "^2.1.3"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.72",
     "@types/mkdirp": "^1.0.1",
+    "@types/ms": "^0.7.31",
     "@types/node": "^14.14.32",
     "@types/prettier": "^2.2.2",
     "@typescript-eslint/eslint-plugin": "^4.16.1",
@@ -30,6 +32,8 @@
     "if-env": "^1.0.4",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
+    "pretty-ms": "^7.0.1",
+    "prisma": "^2.20.1",
     "ts-node": "^9.1.1",
     "typescript": "^4.2.3"
   },
@@ -41,17 +45,17 @@
   "private": true,
   "scripts": {
     "build": "if-env CI=true && tsc --project tsconfig.json || echo 'Only build in CI'",
-    "build:watch": "nodemon --exec 'CI=true npm run build && node api/dev-server.js' --ext ts",
     "check": "tsc --project tsconfig.json --noEmit",
-    "data": "ts-node api/preload-data.ts && ts-node build.ts",
+    "data": "ts-node scripts/preload-data.ts && ts-node build.ts",
     "data:fixtures": "ts-node fixtures/write.ts",
-    "dev": "nodemon --exec 'NODE_ENV=development ts-node api/dev-server.ts' --ext ts",
+    "db:migrate": "prisma migrate deploy",
+    "dev": "nodemon --exec 'NODE_ENV=development ts-node scripts/dev-server.ts' --ext ts",
     "eslint": "eslint '**/*.{js,ts}'  --fix",
     "lint": "npm run prettier && npm run eslint",
     "precommit": "lint-staged",
     "prettier": "prettier --write '**/*.{js,ts,css,md,json}'",
-    "seed": "ts-node api/seed-data.ts",
+    "seed": "ts-node scripts/seed-data.ts",
     "test": "ava",
-    "trigger": "ts-node api/trigger-gh-preload.ts"
+    "trigger": "ts-node scripts/trigger-gh-preload.ts"
   }
 }

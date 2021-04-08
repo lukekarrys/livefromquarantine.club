@@ -1,10 +1,10 @@
-import './dotenv'
+import '../api/dotenv'
 import path from 'path'
 import { promises as fs } from 'fs'
 import prettier from 'prettier'
 import mkdirp from 'mkdirp'
-import { cliFull } from './artists'
-import { getPlaylist } from './fetch-youtube'
+import { cliFull } from '../api/artists'
+import { getPlaylist } from '../api/fetch-youtube'
 import { Artist } from '../types'
 
 const { YOUTUBE_KEY = '' } = process.env

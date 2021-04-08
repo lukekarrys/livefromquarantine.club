@@ -27,16 +27,20 @@
     "type": "git",
     "url": "git+https://github.com/lukekarrys/livefromquarantine.club.git"
   },
+  "prisma": {
+    "schema": "./server/prisma/schema.prisma"
+  },
   "scripts": {
     "build": "npm run build -ws",
     "check": "npm run check -ws",
     "data": "npm run data -w server",
     "data:fixtures": "npm run data:fixtures -w server",
+    "db:migrate": "npm run db:migrate -w server",
     "dev": "run-p dev:**",
     "dev:client": "npm run dev -w client",
     "dev:server": "npm run dev -w server",
     "lint": "npm run lint -ws",
-    "postinstall": "patch-package",
+    "postinstall": "patch-package && prisma generate",
     "precommit": "npm run precommit -ws",
     "seed": "npm run seed -w server",
     "test": "npm run test -ws",

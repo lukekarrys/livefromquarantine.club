@@ -1,6 +1,6 @@
 [build]
   publish = "public/"
-  command = "npm run check && npm run test && npm run lint && NODE_ENV=production npm run build"
+  command = "npm run check && npm run test && npm run lint && NODE_ENV=production npm run build && npm run db:migrate"
   functions = "server/functions/"
 
 # [[plugins]]

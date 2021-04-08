@@ -4,7 +4,7 @@ import parseVideos from '../../api/parse-videos'
 import { getPlaylist, getVideo } from '../../api/fetch-youtube'
 import { getErrorStatusAndMessage } from '../../api/youtube'
 import importEnv from '../../api/import'
-import createClient from '../../api/fauna'
+import * as db from '../../api/db'
 import {
   Artist,
   PreloadedData,
@@ -14,12 +14,10 @@ import {
 
 // Keeping the server side YOUTUBE_KEY around for awhile
 // in case oauth on the client isn't ideal with 1hr tokens
-const { YOUTUBE_KEY, LAMBDA_TASK_ROOT, FAUNA_KEY } = process.env
+const { YOUTUBE_KEY, LAMBDA_TASK_ROOT } = process.env
 const ROOT = LAMBDA_TASK_ROOT
   ? path.join(LAMBDA_TASK_ROOT, 'src', 'server', 'functions', 'videos')
   : __dirname
-
-const db = createClient(FAUNA_KEY)
 
 const getVideos = async (id: string, accessToken?: string) => {
   const token = accessToken ? { accessToken } : { key: YOUTUBE_KEY }
@@ -67,7 +65,7 @@ export const handler = async (
     console.log(id, '-', ...parts)
 
   const logErr = (message: string, err: unknown) =>
-    log(message, err instanceof Error ? err.message : err)
+    log(message, err instanceof Error ? err.message.split('\n')[0] : err)
 
   try {
     const [{ meta, videos }, artist] = await Promise.all([
@@ -97,9 +95,19 @@ export const handler = async (
     let meta: PreloadedData['meta']
 
     try {
-      ;({ videos, meta } = await db.get(id))
+      const cachedMedia = await db.get(id)
 
-      log('Found in database')
+      log('Found in database', {
+        id: cachedMedia.id,
+        lastUpdated: `${cachedMedia.lastUpdated.toJSON()} / ${
+          cachedMedia.lastUpdatedPretty
+        }`,
+      })
+
+      // Here is a comment to prevent prettier from collapsing this empty line
+      // since I started this line with a semicolon. I probably just shouldnt do
+      // that but oh well
+      ;({ meta, videos } = JSON.parse(cachedMedia.json) as PreloadedData)
 
       return res({
         meta,
@@ -114,11 +122,8 @@ export const handler = async (
     log('Found from YT API')
 
     try {
-      // Fauna has a set TTL per document that is being used to purge
-      // the cache. We'll see if that's good enough or if there needs to be
-      // smarting purging using last updated or something.
       const cached = await db.update(id, { videos, meta })
-      log('Cached in database', cached.ref)
+      log('Cached in database', cached.id)
     } catch (err) {
       logErr('Error caching in DB', err)
     }
