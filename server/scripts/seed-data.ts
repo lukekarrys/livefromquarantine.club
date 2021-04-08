@@ -2,10 +2,8 @@ import '../api/dotenv'
 
 import { cli } from '../api/artists'
 import { PreloadedData } from '../types'
-import createClient from '../api/db'
+import * as db from '../api/db'
 import importEnv from '../api/import'
-
-const db = createClient()
 
 const getArtist = async (artist: string) => {
   try {
