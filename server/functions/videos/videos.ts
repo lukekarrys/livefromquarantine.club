@@ -74,6 +74,7 @@ export const handler = async (
   let preloadedArtist: Artist | null = null
   try {
     preloadedArtist = await importEnv<Artist>(path.join(ROOT, id))
+    log('Found preloaded parser and metadata for artist')
   } catch (err) {
     logErr('Preloaded artist could not be found', err)
   }
