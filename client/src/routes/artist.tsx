@@ -83,12 +83,12 @@ const Artist: FunctionalComponent<Props> = ({ artist, accessToken }) => {
   debugService.useService(service)
 
   useEffect(() => {
-    send('FETCH_START')
-
     send({
       type: 'SET_MODES',
       ...modeValues,
     })
+
+    send('FETCH_START')
 
     fetchData(artist, accessToken)
       .then((res) => {
