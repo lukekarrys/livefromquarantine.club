@@ -1,5 +1,5 @@
 import { FunctionalComponent, h, Fragment } from 'preact'
-import { useEffect, useMemo, useState } from 'preact/hooks'
+import { useEffect, useMemo, useState, useLayoutEffect } from 'preact/hooks'
 import { useMachine } from '@xstate/react/lib/fsm'
 import playerMachine from '../machine'
 import * as selectors from '../machine/selectors'
@@ -82,12 +82,14 @@ const Artist: FunctionalComponent<Props> = ({ artist, accessToken }) => {
 
   debugService.useService(service)
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     send({
       type: 'SET_MODES',
       ...modeValues,
     })
+  }, [send, modeValues])
 
+  useEffect(() => {
     send('FETCH_START')
 
     fetchData(artist, accessToken)
