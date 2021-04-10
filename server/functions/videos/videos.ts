@@ -1,5 +1,6 @@
 import { APIGatewayEvent, APIGatewayProxyResult } from 'aws-lambda'
 import path from 'path'
+import ms from 'ms'
 import parseVideos from '../../api/parse-videos'
 import { getPlaylist, getVideo } from '../../api/fetch-youtube'
 import { getErrorStatusAndMessage } from '../../api/youtube'
@@ -84,7 +85,10 @@ export const handler = async (
     let meta: PreloadedData['meta']
 
     try {
-      const cachedMedia = await db.get(id)
+      const cachedMedia = await db.get(id, {
+        // Preloaded artists are updated via CI so always treat those as fresh
+        maxAge: preloadedArtist ? undefined : ms('1d'),
+      })
 
       log('Found in database', {
         id: cachedMedia.id,
