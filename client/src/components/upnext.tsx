@@ -45,6 +45,7 @@ const UpNext: FunctionalComponent<Props> = ({
   useEffect(() => {
     if (visible) {
       setPanelTransitionEnd(false)
+      // This is a hack so I don't have to use forwardRef (I think)
       closeRef.current?.querySelector('button')?.focus()
       document.body.style.overflow = 'hidden'
       return (): void => void (document.body.style.overflow = 'visible')
@@ -69,7 +70,7 @@ const UpNext: FunctionalComponent<Props> = ({
           transform: `translate(${visible ? '100%' : '0'})`,
         }}
       >
-        <ListIcon height={18} />
+        <ListIcon height={24} />
         {upNextOrder.length > 0 && (
           <span
             class="ml-1 tabular-nums"
@@ -110,7 +111,7 @@ const UpNext: FunctionalComponent<Props> = ({
           ref={closeRef}
         >
           <h1>Up Next {upNextOrder.length > 0 && upNextOrder.length}</h1>
-          <Button onClick={(): void => setVisible(false)}>
+          <Button onClick={(): void => setVisible(false)} class="px-2">
             <CloseIcon height={18} />
           </Button>
         </div>
@@ -199,7 +200,7 @@ const UpNext: FunctionalComponent<Props> = ({
             ))}
           </div>
         </div>
-        <div class="flex items-center p-2 pb-2-safe border-t border-gray-600 shadow">
+        <div class="flex p-2 pb-2-safe border-t border-gray-600 shadow">
           <ModeControls
             ready={ready}
             send={send}
@@ -209,6 +210,9 @@ const UpNext: FunctionalComponent<Props> = ({
             repeat={repeat}
             class="ml-1 first:ml-0"
           />
+          <Button onClick={(): void => setVisible(false)} class="ml-auto px-2">
+            <CloseIcon height={18} />
+          </Button>
         </div>
       </div>
     </Fragment>
