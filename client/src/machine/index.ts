@@ -98,7 +98,7 @@ const playerMachine = createMachine<
       shuffle: false,
       repeat: Repeat.None,
       selectMode: SelectMode.Play,
-      mediaMode: MediaMode.YouTube,
+      mediaMode: MediaMode.Empty,
     },
     states: {
       idle: {

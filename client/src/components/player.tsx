@@ -50,41 +50,69 @@ const Player: FunctionalComponent<Props> = ({
 
   const playerContainer = useRef<HTMLDivElement>()
 
+  const {
+    player,
+    upNext,
+    order,
+    tracksById,
+    shuffle,
+    repeat,
+    selectMode,
+    mediaMode,
+  } = state.context
+
+  // Show the loading or error message in the controls
+  // only in audio mode because otherwise it is displayed
+  // inside the player
+  const showMessageInControls =
+    mediaMode === MediaMode.Audio &&
+    (state.matches('loading') ||
+      state.matches('idle') ||
+      state.matches('error'))
+
   return (
     <Fragment>
       <div class="sticky top-0 z-10" ref={playerContainer}>
-        {state.context.mediaMode === MediaMode.Audio ? (
-          <Audio send={send} selected={selected} play={isPlaying} />
-        ) : (
-          <div class={cx(showPlayer ? 'bg-black' : 'shadow-inner bg-gray-200')}>
-            <div class="mx-auto max-w-video-16/9-40vh sm-h:max-w-video-16/9-50vh md-h:max-w-screen-c">
-              <YouTube
-                show={showPlayer}
-                selected={selected}
-                play={isPlaying}
-                send={send}
+        {mediaMode === MediaMode.Empty ? null : (
+          <Fragment>
+            {mediaMode === MediaMode.Audio ? (
+              <Audio send={send} selected={selected} play={isPlaying} />
+            ) : (
+              <div
+                class={cx(showPlayer ? 'bg-black' : 'shadow-inner bg-gray-200')}
               >
-                <div class="w-full h-full flex justify-center items-center flex-col">
-                  <div class="overflow-y-scroll">{children}</div>
+                <div class="mx-auto max-w-video-16/9-40vh sm-h:max-w-video-16/9-50vh md-h:max-w-screen-c">
+                  <YouTube
+                    show={showPlayer}
+                    selected={selected}
+                    play={isPlaying}
+                    send={send}
+                  >
+                    <div class="w-full h-full flex justify-center items-center flex-col">
+                      <div class="overflow-y-scroll">{children}</div>
+                    </div>
+                  </YouTube>
                 </div>
-              </YouTube>
+              </div>
+            )}
+            <div class="bg-white border-b border-t border-gray-600 shadow">
+              <Controls
+                ready={isReady}
+                selected={selected}
+                player={player}
+                play={isVisuallyPlaying}
+                shuffle={shuffle}
+                repeat={repeat}
+                selectMode={selectMode}
+                mediaMode={mediaMode}
+                send={send}
+                onTitleClick={(): void => setScrollTo((s) => !s)}
+              >
+                {showMessageInControls ? children : null}
+              </Controls>
             </div>
-          </div>
+          </Fragment>
         )}
-        <div class="bg-white border-b border-t border-gray-600 shadow">
-          <Controls
-            ready={isReady}
-            selected={selected}
-            player={state.context.player}
-            play={isVisuallyPlaying}
-            shuffle={state.context.shuffle}
-            repeat={state.context.repeat}
-            selectMode={state.context.selectMode}
-            mediaMode={state.context.mediaMode}
-            send={send}
-            onTitleClick={(): void => setScrollTo((s) => !s)}
-          />
-        </div>
       </div>
       <div>
         <Videos
@@ -99,13 +127,13 @@ const Player: FunctionalComponent<Props> = ({
       <UpNext
         send={send}
         selected={selected}
-        upNext={state.context.upNext}
-        order={state.context.order}
-        tracks={state.context.tracksById}
-        shuffle={state.context.shuffle}
-        repeat={state.context.repeat}
-        selectMode={state.context.selectMode}
-        mediaMode={state.context.mediaMode}
+        upNext={upNext}
+        order={order}
+        tracks={tracksById}
+        shuffle={shuffle}
+        repeat={repeat}
+        selectMode={selectMode}
+        mediaMode={mediaMode}
         ready={isReady}
       />
     </Fragment>

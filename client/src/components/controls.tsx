@@ -1,4 +1,4 @@
-import { FunctionalComponent, h } from 'preact'
+import { ComponentChild, FunctionalComponent, h } from 'preact'
 import { useState, useEffect } from 'preact/hooks'
 import { PlayerSend } from '../machine/types'
 import { Track, Repeat, SelectMode, MediaMode } from '../types'
@@ -15,6 +15,7 @@ import cx from 'classnames'
 interface Props {
   ready: boolean
   selected?: Track
+  children?: ComponentChild
   play: boolean
   shuffle: boolean
   repeat: Repeat
@@ -36,6 +37,7 @@ const Controls: FunctionalComponent<Props> = ({
   selectMode,
   mediaMode,
   onTitleClick,
+  children,
 }) => {
   const [progress, setProgress] = useState({ time: 0, percent: 0 })
 
@@ -106,14 +108,16 @@ const Controls: FunctionalComponent<Props> = ({
         >
           <NextIcon height={18} />
         </Button>
-        <button
-          class="truncate pl-1 pr-1 rounded focus:outline-none focus:shadow-outline"
-          onClick={onTitleClick}
-          disabled={!ready}
-          title={title}
-        >
-          {title}
-        </button>
+        {<span class="truncate pl-1 pr-1">{children}</span> || (
+          <button
+            class="truncate pl-1 pr-1 rounded focus:outline-none focus:shadow-outline"
+            onClick={onTitleClick}
+            disabled={!ready}
+            title={title}
+          >
+            {title}
+          </button>
+        )}
         {progress && (
           <span class="ml-auto tabular-nums text-sm italic">
             {`${hhmmss(progress.time)}${

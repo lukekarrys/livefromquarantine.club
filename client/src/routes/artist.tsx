@@ -1,5 +1,5 @@
 import { FunctionalComponent, h, Fragment } from 'preact'
-import { useEffect, useMemo, useState, useLayoutEffect } from 'preact/hooks'
+import { useEffect, useLayoutEffect, useMemo, useState } from 'preact/hooks'
 import { useMachine } from '@xstate/react/lib/fsm'
 import playerMachine from '../machine'
 import * as selectors from '../machine/selectors'
@@ -91,7 +91,6 @@ const Artist: FunctionalComponent<Props> = ({ artist, accessToken }) => {
 
   useEffect(() => {
     send('FETCH_START')
-
     fetchData(artist, accessToken)
       .then((res) => {
         setVideos(res.videos)
@@ -103,7 +102,7 @@ const Artist: FunctionalComponent<Props> = ({ artist, accessToken }) => {
         })
       })
       .catch((error: Error) => send({ type: 'FETCH_ERROR', error }))
-  }, [artist, send, accessToken, modeValues])
+  }, [artist, send, accessToken])
 
   useEffect(() => {
     if (meta?.title) {
