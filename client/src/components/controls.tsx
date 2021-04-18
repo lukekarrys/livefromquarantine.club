@@ -108,7 +108,9 @@ const Controls: FunctionalComponent<Props> = ({
         >
           <NextIcon height={18} />
         </Button>
-        {<span class="truncate pl-1 pr-1">{children}</span> || (
+        {children ? (
+          <span class="truncate pl-1 pr-1">{children}</span>
+        ) : (
           <button
             class="truncate pl-1 pr-1 rounded focus:outline-none focus:shadow-outline"
             onClick={onTitleClick}
