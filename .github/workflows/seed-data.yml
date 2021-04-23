@@ -27,6 +27,10 @@ jobs:
 
       - name: Seed data
         run: |
-          npm run seed
+          npm run data:seed
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
+
+      - name: Prime cache
+        run: |
+          npm run data:cache

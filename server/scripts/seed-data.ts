@@ -22,8 +22,6 @@ const getArtist = async (artist: string) => {
   }
 }
 
-// TODO: This is not being used currently but can be used in the future
-// once the API functions are set to also look for preloaded data in the database
 Promise.all(cli().map(getArtist))
   .then((res) => {
     console.log(JSON.stringify(res, null, 2))

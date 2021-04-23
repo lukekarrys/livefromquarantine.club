@@ -1,5 +1,5 @@
 April 22, 2021
-rcBAkZxzQrY
+ID: rcBAkZxzQrY
 0 | hello
 41 | Willie Nelson - Time of the Preacher
 165 | AJJ - Normalization Blues
@@ -10,7 +10,7 @@ rcBAkZxzQrY
 1055 | oo-de-lally
 ----------
 April 19, 2021
-9OhxjFR1Bak
+ID: 9OhxjFR1Bak
 0 | hello
 55 | Guided By Voices - Motor Away
 208 | AJJ - I Wanna Be Your Dog 2
@@ -19,7 +19,7 @@ April 19, 2021
 804 | AJJ - Linda Ronstadt
 ----------
 April 15, 2021
-bw0Hx8t0UjI
+ID: bw0Hx8t0UjI
 0 | hello
 26 | AJJ - No More Shame, No More Fear, No More Dread
 245 | AJJ - No More Tears
@@ -29,7 +29,7 @@ bw0Hx8t0UjI
 817 | Oo-de-lally
 ----------
 April 12, 2021
-az9TnTsHKCE
+ID: az9TnTsHKCE
 0 | hello
 56 | AJJ - Temple Grandin
 210 | AJJ - My Brain Is A Human Body
@@ -38,7 +38,7 @@ az9TnTsHKCE
 757 | Oo-de-lally
 ----------
 April 8, 2021
-Z9X16-svbZM
+ID: Z9X16-svbZM
 0 | hello
 38 | Pink Floyd - The Final Cut
 313 | AJJ - Fuckboi
@@ -48,7 +48,7 @@ Z9X16-svbZM
 1101 | AJJ - American Body Rentals
 ----------
 April 5, 2021
-Swio-Zwx4TU
+ID: Swio-Zwx4TU
 0 | hello
 86 | AJJ - I Wanna Be Your Dog 2
 256 | AJJ - Getting Naked and Playing With Guns
@@ -56,7 +56,7 @@ Swio-Zwx4TU
 776 | Oo-de-lally
 ----------
 April 1, 2021
-H_t3JI7jX4c
+ID: H_t3JI7jX4c
 0 | hello
 154 | AJJ - Goodbye, Oh Goodbye
 371 | AJJ - Candles of Love
@@ -64,13 +64,13 @@ H_t3JI7jX4c
 689 | AJJ - Hate and Kill
 ----------
 March 31, 2021
-9-zFb5dJ3lY
+ID: 9-zFb5dJ3lY
 0 | hello
 30 | AJJ - My Brain Is A Human Body
 224 | AJJ - Linda Ronstadt
 ----------
 March 29, 2021
-pEz4a0a6vRk
+ID: pEz4a0a6vRk
 0 | hello
 48 | Kimya Dawson - Hadlock Padlock
 271 | AJJ - Fucc The Devil
@@ -80,16 +80,16 @@ pEz4a0a6vRk
 934 | AJJ - Sense, Sensibility
 ----------
 March 25, 2021
-SQSF112Zm7o
+ID: SQSF112Zm7o
 0 | Simon & Garfunkel - I Am A Rock
 ----------
 March 24, 2021
-T2YvRKYrLvw
+ID: T2YvRKYrLvw
 0 | hello
 296 | David Bowie - Quicksand
 ----------
 March 22, 2021
-ilHnya5Fu2Y
+ID: ilHnya5Fu2Y
 0 | hello
 60 | AJJ - Mega Guillotine 2020
 200 | AJJ - Horsehair Vase
@@ -98,7 +98,7 @@ ilHnya5Fu2Y
 879 | AJJ - People
 ----------
 March 18, 2021
-3eutKB7YPjI
+ID: 3eutKB7YPjI
 0 | hello
 47 | AJJ - Schadenfreude Song
 347 | AJJ - Your Voice, As I Remember It
@@ -106,7 +106,7 @@ March 18, 2021
 765 | AJJ - People
 ----------
 March 15, 2021
-YlQxhtDPieo
+ID: YlQxhtDPieo
 0 | hello
 110 | Guided By Voices - Game of Pricks
 223 | AJJ - Junkie Church
@@ -120,7 +120,7 @@ YlQxhtDPieo
 1620 | AJJ - Big Bird
 ----------
 March 11, 2021
-LEl7qwlSrUM
+ID: LEl7qwlSrUM
 0 | hello
 93 | Jeff Rosenstock - Nausea
 316 | John Lennon - Mother
@@ -129,7 +129,7 @@ LEl7qwlSrUM
 983 | AJJ - American Body Rentals
 ----------
 March 10, 2021
-85PUfG_87yo
+ID: 85PUfG_87yo
 0 | hello
 33 | Foot Ox - Lucky Strike
 145 | Foot Ox - New Boyfriend
@@ -142,7 +142,7 @@ March 10, 2021
 1018 | Roger Miller - Reincarnation
 ----------
 March 8, 2021
-GF03vUJ1X6k
+ID: GF03vUJ1X6k
 0 | hello
 25 | Arthur Russell - Time Away
 180 | Frankie Cosmos - My I Love
@@ -153,13 +153,13 @@ GF03vUJ1X6k
 1015 | Sheryl Crow - Strong Enough
 ----------
 March 5, 2021
-PmJa6qlob0Q
+ID: PmJa6qlob0Q
 0 | Intro
 42 | A Big Day for Grimley
 263 | Oo-de-lally
 ----------
 March 1, 2021
-oNybwo_28RU
+ID: oNybwo_28RU
 0 | hello
 39 | Tim Hardin - The Lady Came From Baltimore
 193 | Silver Jews - Candy Jail
@@ -170,14 +170,14 @@ oNybwo_28RU
 1058 | AJJ - Small Red Boy
 ----------
 February 25, 2021
-0VI0U7cBi1k
+ID: 0VI0U7cBi1k
 0 | hello
 61 | AJJ - Space and Time
 212 | Tim Hardin - Black Sheep Boy
 360 | AJJ - Sad Songs
 ----------
 February 22, 2021
-7TWdh8gPQBs
+ID: 7TWdh8gPQBs
 0 | hello
 43 | Bill Callahan / Smog - Cold Blooded Old Times
 295 | Neil Young - Mellow My Mind
@@ -187,7 +187,7 @@ February 22, 2021
 931 | AJJ - Body Terror Song
 ----------
 February 18, 2021
-P9iJQdIVza0
+ID: P9iJQdIVza0
 0 | hello
 85 | Willie Nelson - Time of the Preacher
 207 | Eddy Arnold - I Couldn't Believe It Was True
@@ -198,7 +198,7 @@ P9iJQdIVza0
 1018 | Oo-de-lally
 ----------
 February 15, 2021
-ZcjwnRIA9Tw
+ID: ZcjwnRIA9Tw
 0 | hello
 85 | AJJ - I Wanna Be Your Dog Too
 260 | AJJ - Black Dog
@@ -208,7 +208,7 @@ ZcjwnRIA9Tw
 924 | Kimya Dawson - Hadlock Padlock
 ----------
 February 11, 2021
-SuAL6ve9F3s
+ID: SuAL6ve9F3s
 0 | hello
 67 | Motor Away / Melt With You / All My Happiness Is Gone
 207 | AJJ - Distance
@@ -217,14 +217,14 @@ SuAL6ve9F3s
 605 | Oo-de-lally
 ----------
 February 10, 2021
-21g5pYydtuM
+ID: 21g5pYydtuM
 0 | hello
 65 | Daniel Johnston - True Love Will Find You In The End
 175 | AJJ - Getting Naked, Playing With Guns
 350 | AJJ - Heartilation
 ----------
 February 8, 2021
-MDJSygz3lCM
+ID: MDJSygz3lCM
 0 | hello
 70 | AJJ - Junkie Church
 252 | Dear Nora - Hung Up
@@ -233,7 +233,7 @@ MDJSygz3lCM
 857 | Mount Eerie - You Swan, Go On
 ----------
 February 4, 2021
-XPFO-kqmfHg
+ID: XPFO-kqmfHg
 0 | Intro
 36 | Ween - It's Gonna Be (Alright)
 221 | AJJ - Linda Ronstadt
@@ -241,14 +241,14 @@ XPFO-kqmfHg
 540 | Neil Young - Roll Another Number
 ----------
 February 3, 2021
-t4qpVaI-EnY
+ID: t4qpVaI-EnY
 0 | hello
 64 | Beck - Cyanide Breath Mint
 175 | Neil Young - Mellow My Mind
 345 | AJJ - Best Friend
 ----------
 February 1, 2021
-dd-IGkRK498
+ID: dd-IGkRK498
 0 | hello
 84 | AJJ - Your Voice, As I Remember It
 246 | AJJ - Love In Your Heart
@@ -258,13 +258,13 @@ dd-IGkRK498
 740 | AJJ - Back Pack
 ----------
 January 27, 2021
-Pvx2jcvtd2g
+ID: Pvx2jcvtd2g
 0 | hello
 163 | AJJ - Free Bird
 352 | Oo-de-lally
 ----------
 January 25, 2021
-Z-eOJT45Ii4
+ID: Z-eOJT45Ii4
 0 | hello
 75 | AJJ - Do, Re, Me
 233 | AJJ - Distance
@@ -275,7 +275,7 @@ Z-eOJT45Ii4
 1050 | oo de lally
 ----------
 January 21, 2021
-YVZDjvbAWEY
+ID: YVZDjvbAWEY
 0 | hello
 41 | Fred Neil (Harry Nilsson) - Everybody's Talkin
 300 | AJJ - Schadenfreude
@@ -284,7 +284,7 @@ YVZDjvbAWEY
 788 | AJJ - Big Bird
 ----------
 January 20, 2021
-KbDs5xRKpRw
+ID: KbDs5xRKpRw
 0 | hello
 33 | AJJ - If You Have Love In Your Heart
 176 | Pink Floyd - Wish You Were Here
@@ -292,7 +292,7 @@ KbDs5xRKpRw
 759 | Oo de lally
 ----------
 January 14, 2021
-gyejW82Lj7w
+ID: gyejW82Lj7w
 0 | hello
 38 | Welcome to songs
 67 | AJJ - Cody's Theme
@@ -301,7 +301,7 @@ gyejW82Lj7w
 493 | AJJ - Fucc The Devil
 ----------
 January 13, 2021
-2otiGE2xW9s
+ID: 2otiGE2xW9s
 0 | hello
 42 | AJJ - Brave As A Noun
 113 | Neil Young - Mellow My Mind
@@ -309,7 +309,7 @@ January 13, 2021
 344 | skateboard asmr
 ----------
 January 11, 2021
-Lrig9PtqOF8
+ID: Lrig9PtqOF8
 0 | hello
 24 | Foot Ox - New Boyfriend
 73 | AJJ - You Don't Deserve Yourself
@@ -321,7 +321,7 @@ Lrig9PtqOF8
 1920 | AJJ - Small Red Boy
 ----------
 January 7, 2021
-mmT8pPzDWnc
+ID: mmT8pPzDWnc
 0 | hello
 23 | AJJ - Psychic Warfare
 167 | AJJ - Horsehair Vase
@@ -330,7 +330,7 @@ mmT8pPzDWnc
 706 | AJJ - Goodbye, Oh Goodbye
 ----------
 January 6, 2021
-b07eu-2U_rY
+ID: b07eu-2U_rY
 0 | hello
 40 | Silver Jews - Strange Victory, Strange Defeat
 206 | AJJ - Self Esteem
@@ -338,7 +338,7 @@ b07eu-2U_rY
 393 | AJJ - Kokopelli Face Tattoo
 ----------
 January 4, 2021
-IqHcvl22WmQ
+ID: IqHcvl22WmQ
 0 | AJJ - Heartilation
 122 | Roky Erickson - I Think of Demons
 326 | Dear Nora - Hung Up
@@ -348,7 +348,7 @@ IqHcvl22WmQ
 985 | guitar!!!!!!
 ----------
 December 31, 2020
-h6I2zx7Pju8
+ID: h6I2zx7Pju8
 0 | hello
 183 | The Mountain Goats - This Year
 408 | AJJ - Body Terror
@@ -357,7 +357,7 @@ h6I2zx7Pju8
 1100 | AJJ - Distance
 ----------
 December 28, 2020
-uvvwEH6IdKw
+ID: uvvwEH6IdKw
 0 | noise 1
 253 | Ween - It's Gonna Be (Alright)
 430 | AJJ - Rejoice
@@ -367,7 +367,7 @@ uvvwEH6IdKw
 1365 | Roger Miller - Oo-de-lally
 ----------
 December 21, 2020
-DO2kMdt7Ico
+ID: DO2kMdt7Ico
 0 | hello
 25 | AJJ - Brave as a Noun
 132 | AJJ - Normalization Blues
@@ -376,7 +376,7 @@ DO2kMdt7Ico
 772 | AJJ - Black Dog
 ----------
 December 17, 2020
-oFGAzXeaDEc
+ID: oFGAzXeaDEc
 0 | hello
 93 | Chris Farren - Oo-de-lally
 153 | AJJ - Your Voice, As I Remember It
@@ -386,13 +386,13 @@ oFGAzXeaDEc
 764 | AJJ - Junkie Church
 ----------
 December 16, 2020
-Zd3Vrdqzwsw
+ID: Zd3Vrdqzwsw
 0 | hello
 72 | AJJ - Horsehair Vase
 233 | Mount Eerie - You Swan, Go On
 ----------
 December 14, 2020
-Lh1ZImMqg8g
+ID: Lh1ZImMqg8g
 0 | hello
 51 | AJJ - Mega Guillotine 2020
 260 | Smog - Cold Blooded Old Times
@@ -400,7 +400,7 @@ Lh1ZImMqg8g
 656 | AJJ - People
 ----------
 December 10, 2020
-kDe0pityq18
+ID: kDe0pityq18
 0 | hello
 84 | AJJ - Getting Naked, Playing With Guns
 258 | Kimya Dawson - Hadlock Padlock
@@ -409,7 +409,7 @@ kDe0pityq18
 780 | AJJ - My Brain Is A Human Body
 ----------
 December 9, 2020
-9ej13fXwOUQ
+ID: 9ej13fXwOUQ
 0 | hello
 40 | AJJ - I Wanna Be Your Dog or I Also Wanna Be Your Dog, or something like that
 193 | AJJ - Little Prince
@@ -417,7 +417,7 @@ December 9, 2020
 495 | AJJ - I Wanna Rock Out In My Dreams
 ----------
 December 7, 2020
-nIlXLHrDvSc
+ID: nIlXLHrDvSc
 0 | hello
 44 | Phil Ochs - Draft Dodger Rag
 195 | AJJ - Now That I'm At The Top Of My Game
@@ -426,7 +426,7 @@ nIlXLHrDvSc
 696 | AJJ - Black Dog
 ----------
 December 3, 2020
-8-BvvBYqMWs
+ID: 8-BvvBYqMWs
 0 | hello
 116 | The Mountain Goats - No Children
 350 | AJJ - Horsehair Vase
@@ -435,14 +435,14 @@ December 3, 2020
 793 | AJJ - Body Terror Song
 ----------
 December 2, 2020
-56sfikJSKYA
+ID: 56sfikJSKYA
 0 | hello
 57 | AJJ - A Big Day For Grimley
 259 | AJJ - Children of God
 394 | Daniel Johnston - True Love Will Find You In The End
 ----------
 November 30, 2020
-9IVrICXqVfI
+ID: 9IVrICXqVfI
 0 | hello
 124 | Eddy Arnold - I Couldn't Believe It Was True
 293 | AJJ - Your Voice, As I Remember It
@@ -451,7 +451,7 @@ November 30, 2020
 1069 | Why? - These Few Presidents
 ----------
 November 26, 2020
-m2dram9aI_A
+ID: m2dram9aI_A
 0 | hello
 17 | AJJ - I Wanna Rock Out In My Dreams
 239 | The Beatles - Rocky Raccoon
@@ -459,7 +459,7 @@ m2dram9aI_A
 723 | AJJ - A Big Day for Grimley
 ----------
 November 25, 2020
-A_DSktGdhi0
+ID: A_DSktGdhi0
 0 | hello
 58 | Pixies - Where Is My Mind? (Chris Farren cover)
 223 | AJJ - Distance
@@ -469,7 +469,7 @@ A_DSktGdhi0
 920 | Roger Miller - Reincarnation
 ----------
 November 23, 2020
-3c8WO_n_LUI
+ID: 3c8WO_n_LUI
 0 | hello
 61 | Roger Miller - Oo-de-lally
 117 | AJJ - No More Shame, No More Fear, No More Dread
@@ -479,7 +479,7 @@ November 23, 2020
 833 | AJJ - American Body Rentals
 ----------
 November 19, 2020
-uer1zLuWIvw
+ID: uer1zLuWIvw
 0 | hello
 85 | AJJ - Kokopelli Face Tattoo
 274 | Elliott Smith - Waltz #2
@@ -488,14 +488,14 @@ uer1zLuWIvw
 780 | Roger Miller - Oo-de-lally
 ----------
 November 18, 2020
-vFJpm4GsRT8
+ID: vFJpm4GsRT8
 0 | hello
 125 | Kepi Ghoulie - The Highwayman
 249 | AJJ - Fucc the Devil
 395 | Elliott Smith - Waltz #3
 ----------
 November 16, 2020
-Kie5UAHJqFM
+ID: Kie5UAHJqFM
 0 | Guitar Center Riffs
 147 | AJJ - Love Will Fuck Us Apart
 252 | Daniel Johnston - Devil Town
@@ -506,7 +506,7 @@ Kie5UAHJqFM
 1005 | AJJ - The Michael Jordan of Drunk Driving
 ----------
 November 12, 2020
-NJYwrPJhkIA
+ID: NJYwrPJhkIA
 0 | hello
 80 | Neil Young - My My, Hey Hey (Out of the Blue)
 318 | Neil Young - Don't Cry No Tears
@@ -515,13 +515,13 @@ NJYwrPJhkIA
 972 | Neil Young - Roll Another Number
 ----------
 November 11, 2020
-k-VQENy4ywk
+ID: k-VQENy4ywk
 0 | hello
 12 | AJJ - Linda Ronstadt
 173 | The Magnetic Fields - All My Little Words
 ----------
 November 9, 2020
-IY-EVBrfwNE
+ID: IY-EVBrfwNE
 0 | hello
 35 | AJJ - Evil
 287 | Guided By Voices - Motor Away
@@ -530,7 +530,7 @@ IY-EVBrfwNE
 773 | Daniel Johnston - Devil Town
 ----------
 November 5, 2020
-aKUdrdNxi20
+ID: aKUdrdNxi20
 0 | hello
 128 | Neil Young - Tell Me Why
 280 | Daniel Johnston - True Love Will Find You In The End
@@ -539,14 +539,14 @@ aKUdrdNxi20
 778 | Gram Parsons - Return of the Grievous Angel
 ----------
 November 4, 2020
-YAtAfTVvrpg
+ID: YAtAfTVvrpg
 0 | hello
 66 | AJJ - No Justice, No Peace, No Hope
 278 | noise jam
 351 | AJJ - Body Terror Song
 ----------
 November 2, 2020
-K9hMKBOKdkk
+ID: K9hMKBOKdkk
 0 | hello
 94 | AJJ - A Poem
 198 | AJJ - Normalization Blues
@@ -561,7 +561,7 @@ K9hMKBOKdkk
 1740 | AJJ - A Big Day for Grimley
 ----------
 October 29, 2020
-I6T2FF_7Vis
+ID: I6T2FF_7Vis
 0 | hello
 75 | AJJ - Backpack
 325 | Talking Heads - Heaven
@@ -570,13 +570,13 @@ I6T2FF_7Vis
 958 | AJJ - Feedbag
 ----------
 October 28, 2020
-fA60vBbLYz8
+ID: fA60vBbLYz8
 0 | hello
 44 | AJJ - My Brain Is A Human Body
 240 | Lana Del Rey - Video Games
 ----------
 October 26, 2020
-FYGJtNGx9wk
+ID: FYGJtNGx9wk
 0 | hello
 72 | Joe Jack Talcum - Photograph
 197 | AJJ - Fucc The Devil
@@ -584,7 +584,7 @@ FYGJtNGx9wk
 435 | AJJ - Big Bird
 ----------
 October 22, 2020
-6vPntNqkJKs
+ID: 6vPntNqkJKs
 0 | hello
 22 | AJJ - Mega
 93 | AJJ - Best Friend
@@ -595,7 +595,7 @@ October 22, 2020
 748 | AJJ - Your Voice, As I Remember It
 ----------
 October 21, 2020
-6Rx1XbjkKoM
+ID: 6Rx1XbjkKoM
 0 | hello
 39 | AJJ - Children of God
 181 | Kimya Dawson - Hadlock Padlock
@@ -604,7 +604,7 @@ October 21, 2020
 774 | AJJ - Love in the Time of HPV
 ----------
 October 19, 2020
-JBFJwxSCtwk
+ID: JBFJwxSCtwk
 0 | hello
 37 | AJJ - Temple Grandin
 184 | AJJ - Cody's Theme
@@ -613,7 +613,7 @@ JBFJwxSCtwk
 868 | AJJ - I Wanna Be Your Dog 2
 ----------
 October 15, 2020
-DVTTszv9Cvs
+ID: DVTTszv9Cvs
 0 | hello
 72 | Neil Young - Tell Me Why
 218 | AJJ - #armageddon
@@ -625,7 +625,7 @@ DVTTszv9Cvs
 1646 | Roger Miller - Oo-de-lally
 ----------
 October 14, 2020
-dUYr2ZQfKtA
+ID: dUYr2ZQfKtA
 0 | hello
 110 | AJJ - A Poem
 215 | Mt. Eerie - You Swan, Go On
@@ -633,7 +633,7 @@ dUYr2ZQfKtA
 468 | AJJ - Linda Ronstadt
 ----------
 October 12, 2020
-yHhJGerWhNs
+ID: yHhJGerWhNs
 0 | hello
 83 | Neil Young - Don't Cry No Tears
 296 | Schadenfreude Song
@@ -641,7 +641,7 @@ yHhJGerWhNs
 875 | AJJ - Little Prince
 ----------
 October 1, 2020
-NorsGm2_H8s
+ID: NorsGm2_H8s
 0 | hello
 51 | AJJ - The Michael Jordan of Drunk Driving
 70 | AJJ - Normalization Blues
@@ -652,7 +652,7 @@ NorsGm2_H8s
 1125 | AJJ - Body Terror Song
 ----------
 September 30, 2020
-IUXkEnJDb8Y
+ID: IUXkEnJDb8Y
 0 | hello
 52 | AJJ - Body Terror Song
 199 | Neil Young - Mellow My Mind
@@ -661,7 +661,7 @@ IUXkEnJDb8Y
 833 | AJJ - People
 ----------
 September 28, 2020
-6MpdYIVJBiA
+ID: 6MpdYIVJBiA
 0 | hello
 30 | Neil Young - Tell Me Why
 178 | AJJ - Fucc the Devil
@@ -670,7 +670,7 @@ September 28, 2020
 665 | AJJ - Junkie Church
 ----------
 September 24, 2020
--IdB_dEmXVE
+ID: -IdB_dEmXVE
 0 | hello
 60 | AJJ - When I'm A Dead Boy
 161 | AJJ - Heartilation
@@ -683,7 +683,7 @@ September 24, 2020
 1356 | OODELALLY
 ----------
 September 23, 2020
-g5A6o3n2mUs
+ID: g5A6o3n2mUs
 0 | hello
 118 | AJJ - I Am So Mad At You
 204 | Shellshag - Come Down
@@ -693,7 +693,7 @@ g5A6o3n2mUs
 923 | AJJ - White Face, Black Eyes
 ----------
 September 21, 2020
-aEwjr3Muc00
+ID: aEwjr3Muc00
 0 | hello
 34 | AJJ - Hate Song for Brains
 255 | AJJ - Sad Songs
@@ -703,7 +703,7 @@ aEwjr3Muc00
 1227 | AJJ - Maggie
 ----------
 September 18, 2020
-DObxmmzWgTs
+ID: DObxmmzWgTs
 0 | hello
 86 | AJJ - El Principito
 207 | AJJ - Fucc the Devil
@@ -715,7 +715,7 @@ DObxmmzWgTs
 989 | AJJ - Sense, Sensibility
 ----------
 September 14, 2020
-7XGWjKScsjU
+ID: 7XGWjKScsjU
 0 | hello
 33 | AJJ - Cody's Theme
 166 | The Baetles - Rocky Raccoon
@@ -727,7 +727,7 @@ September 14, 2020
 1328 | Roger Miller - Oo-de-lally
 ----------
 September 11, 2020
-C4P9FieF-ck
+ID: C4P9FieF-ck
 0 | hello
 94 | Daniel Johnston - True Love Will Find You In The End
 338 | Kimya Dawson - Hadlock Padlock
@@ -740,7 +740,7 @@ C4P9FieF-ck
 3014 | AJJ - If You Have Love In Your Heart
 ----------
 September 9, 2020
-AdmlHuwi8bs
+ID: AdmlHuwi8bs
 0 | hello
 69 | AJJ - Maggie
 201 | AJJ - Kokopelli Face Tattoo
@@ -751,7 +751,7 @@ AdmlHuwi8bs
 1083 | Roger Miller - Oo-de-lally
 ----------
 September 7, 2020
-eJUA4T_riYc
+ID: eJUA4T_riYc
 0 | hello
 77 | Joe Jack Talcum - Photograph
 186 | AJJ - When I'm A Dead Boy
@@ -763,7 +763,7 @@ eJUA4T_riYc
 973 | AJJ - Horsehair Vase
 ----------
 September 4, 2020
-nXhUge2oDs0
+ID: nXhUge2oDs0
 0 | hello
 74 | Neil Young - Don't Cry No Tears
 261 | AJJ - Love In Your Heart
@@ -773,7 +773,7 @@ nXhUge2oDs0
 1173 | The "Beatles"??? - Her Majesty
 ----------
 September 2, 2020
-BHf59nBrXas
+ID: BHf59nBrXas
 0 | hello
 48 | AJJ - A Poem
 657 | Laura Stevenson - Dermatillomania
@@ -783,7 +783,7 @@ BHf59nBrXas
 2473 | Roger Miller - Oo-de-lally
 ----------
 August 31, 2020
-we8qLa714ls
+ID: we8qLa714ls
 0 | hello
 29 | Fred Neil - Everybody's Talkin
 167 | AJJ - Horsehair Vase
@@ -793,7 +793,7 @@ we8qLa714ls
 694 | AJJ - Junkie Church
 ----------
 August 28, 2020
-ksoK_uNEY8g
+ID: ksoK_uNEY8g
 0 | "olleH"
 219 | Dreaming of you, Tomorrow
 414 | Sleeping in the Aviary - Pop Song
@@ -803,7 +803,7 @@ ksoK_uNEY8g
 1047 | Xiu Xiu - Helsabot
 ----------
 August 21, 2020
-FbBcTqofqqk
+ID: FbBcTqofqqk
 0 | hello
 38 | David Bowie - Quicksand
 336 | AJJ - White Worms
@@ -814,7 +814,7 @@ FbBcTqofqqk
 1126 | AJJ - People II: The Reckoning
 ----------
 August 19, 2020
-LFdzf7nNLhU
+ID: LFdzf7nNLhU
 0 | hello
 43 | Silver Jews - Candy Jail
 225 | AJJ - Growing Up
@@ -823,7 +823,7 @@ LFdzf7nNLhU
 1760 | Sheryl Crow - Strong Enough
 ----------
 August 17, 2020
-B973VbCAjrg
+ID: B973VbCAjrg
 0 | hello
 32 | AJJ - Maggie
 170 | Frankie Cosmos - My I Love You
@@ -833,7 +833,7 @@ B973VbCAjrg
 929 | AJJ - No More Shame, No More Fear, No More Dread
 ----------
 August 14, 2020
-z8-BfyqC0r0
+ID: z8-BfyqC0r0
 0 | hello
 85 | AJJ - Sad Songs
 325 | Blaze Foley - Clay Pigeons
@@ -844,7 +844,7 @@ z8-BfyqC0r0
 1207 | Roger Miller - Oo-de-lally
 ----------
 August 12, 2020
-rm_3737-u10
+ID: rm_3737-u10
 0 | hello
 41 | AJJ - Heartilation
 170 | AJJ - American Tune
@@ -855,7 +855,7 @@ rm_3737-u10
 998 | AJJ - Coffin Dance
 ----------
 August 10, 2020
-f6tKWAoo3qw
+ID: f6tKWAoo3qw
 0 | hello
 66 | AJJ - Horsehair Vase
 273 | Beck - Cyanide Breath Mint
@@ -864,7 +864,7 @@ f6tKWAoo3qw
 750 | AJJ - Linda Ronstadt
 ----------
 August 7, 2020
-Sza0INetsO0
+ID: Sza0INetsO0
 0 | hello
 63 | AJJ - I Wanna Be Your Dog Part 2
 229 | Elliott Smith - Waltz #2
@@ -875,7 +875,7 @@ Sza0INetsO0
 1038 | Oo-de-lally
 ----------
 August 3, 2020
-yz9iN79i3TM
+ID: yz9iN79i3TM
 0 | hello
 15 | AJJ - I Miss You
 150 | Kepi Ghoulie - Fortune Teller
@@ -884,7 +884,7 @@ yz9iN79i3TM
 746 | AJJ - Maggie
 ----------
 July 31, 2020
-vd_UyiZYuio
+ID: vd_UyiZYuio
 0 | hello
 51 | The Microphones - I Felt Your Shape
 186 | AJJ - I Wanna Be Your Dog, Too
@@ -892,7 +892,7 @@ vd_UyiZYuio
 545 | Daniel Johnston - True Love Will Find You In The End
 ----------
 July 29, 2020
-NghGJi4ovVY
+ID: NghGJi4ovVY
 0 | hello
 16 | AJJ - Gift of the Magi II: Return of the Magi
 130 | AJJ - Border Patrol (Yuma)
@@ -903,7 +903,7 @@ NghGJi4ovVY
 1104 | AJJ - Love In Your Heart
 ----------
 July 27, 2020
-T4ma8qQpoM4
+ID: T4ma8qQpoM4
 0 | hello
 110 | AJJ - Loudmouth
 248 | AJJ - Fucc The Devil
@@ -913,7 +913,7 @@ T4ma8qQpoM4
 928 | AJJ - Big Bird
 ----------
 July 24, 2020
-gV9U4L--EoA
+ID: gV9U4L--EoA
 0 | hello
 125 | Roger Miller - Oo-de-lally
 220 | Shellshag - Come Down
@@ -928,7 +928,7 @@ gV9U4L--EoA
 1426 | Guided By Voices - Motor Away
 ----------
 July 22, 2020
-2vhRxWuQgz4
+ID: 2vhRxWuQgz4
 0 | hello
 20 | AJJ - Rejoice
 212 | AJJ - Body Terror Song
@@ -940,7 +940,7 @@ July 22, 2020
 1044 | The Beatles - Her Majesty
 ----------
 July 20, 2020
-jJf2-aS1fR8
+ID: jJf2-aS1fR8
 0 | hello
 65 | Roger Miller - Annihilation
 178 | AJJ - Normalization Blues
@@ -951,7 +951,7 @@ jJf2-aS1fR8
 1145 | Roger Miller - Reannihilation
 ----------
 July 17, 2020
-xFYWS89ImTA
+ID: xFYWS89ImTA
 0 | hello
 155 | Roger Miller - Reincarnation
 274 | Tim Hardin - Black Sheep Boy
@@ -961,7 +961,7 @@ xFYWS89ImTA
 1031 | AJJ - Small Red Boy
 ----------
 July 15, 2020
-aSv6FKxA-D0
+ID: aSv6FKxA-D0
 0 | hello
 126 | AJJ - Junkie Church
 273 | AJJ - White Face, Black Eyes
@@ -972,7 +972,7 @@ aSv6FKxA-D0
 1167 | OODELALLY
 ----------
 July 13, 2020
-t4_j8JsG8vM
+ID: t4_j8JsG8vM
 0 | hello
 39 | AJJ - #armageddon
 329 | AJJ - Maggie
@@ -984,7 +984,7 @@ t4_j8JsG8vM
 1500 | oo-de-lally!!!!
 ----------
 July 10, 2020
-DnCGwpfHiqo
+ID: DnCGwpfHiqo
 0 | intro
 59 | AJJ - Space and Time
 286 | Kimya Dawson - Hadlock Padlock
@@ -994,7 +994,7 @@ DnCGwpfHiqo
 1150 | AJJ - Big Bird
 ----------
 July 8, 2020
-21f1qLJNpJM
+ID: 21f1qLJNpJM
 0 | Intro
 100 | AJJ - Little Prince
 229 | Dear Nora - Hung Up
@@ -1007,7 +1007,7 @@ July 8, 2020
 1434 | Roger Miller - Oo-de-lally 2: Revenge of Oo-de-lally
 ----------
 July 6, 2020
-G8A-XbaBIxE
+ID: G8A-XbaBIxE
 0 | Intro
 128 | AJJ - American Garbage
 324 | Billy Joel - You May Be Right
@@ -1018,7 +1018,7 @@ G8A-XbaBIxE
 1337 | AJJ - Brave as a Noun
 ----------
 July 3, 2020
-PCaA6POFv0o
+ID: PCaA6POFv0o
 0 | Fuck your rebel flag
 121 | AJJ - Mega Guillotine 2020
 427 | AJJ - Fuckboi
@@ -1028,7 +1028,7 @@ PCaA6POFv0o
 1570 | you know ;)
 ----------
 July 1, 2020
-nOoHRP3H6k8
+ID: nOoHRP3H6k8
 0 | Patreon!
 70 | Jeff Rosenstock - Nausea
 240 | AJJ - Skate Park
@@ -1036,7 +1036,7 @@ nOoHRP3H6k8
 567 | AJJ - Oo-de-lally
 ----------
 June 29, 2020
-V_wQ1Y_lXbM
+ID: V_wQ1Y_lXbM
 0 | Season 2
 43 | AJJ - Normalization Blues
 224 | Willie Nelson - I Couldn't Believe It Was True
@@ -1047,11 +1047,11 @@ V_wQ1Y_lXbM
 940 | AJJ - Skipping Stone
 ----------
 June 22, 2020
-t6VzNxHX8c0
+ID: t6VzNxHX8c0
 
 ----------
 June 21, 2020
-MTHcAFhtBzM
+ID: MTHcAFhtBzM
 0 | Live from Quarantine
 40 | AJJ - Kokopelli Face Tattoo
 265 | AJJ - Feedbag
@@ -1061,7 +1061,7 @@ MTHcAFhtBzM
 1039 | Roger Miller - Oo-de-lally
 ----------
 June 20, 2020
-Uk7bzbP-A_c
+ID: Uk7bzbP-A_c
 0 | Live from Quarantine
 40 | Belle and Sebastian - Lord Anthony
 312 | AJJ - Junkie Church
@@ -1071,7 +1071,7 @@ Uk7bzbP-A_c
 1180 | AJJ - Love in the Time of HPV
 ----------
 June 19, 2020
-SAFGgk93jL0
+ID: SAFGgk93jL0
 0 | hello
 90 | AJJ - Growing Up
 190 | AJJ - Heartilation
@@ -1081,7 +1081,7 @@ SAFGgk93jL0
 935 | AJJ - People
 ----------
 June 18, 2020
-jOOLEVbG3RA
+ID: jOOLEVbG3RA
 0 | hello
 74 | Neil Young - Don't Cry No Tears
 236 | Neil Young - Tell Me Why
@@ -1092,7 +1092,7 @@ jOOLEVbG3RA
 1356 | Neil Young - Hey Hey, My My
 ----------
 June 17, 2020
-JDOQM3Jz69c
+ID: JDOQM3Jz69c
 0 | https://bailproject.org/
 33 | Kimya Dawson - Hadlock Padlock
 288 | AJJ - Gift of the Magi 2: Return of the Magi
@@ -1102,7 +1102,7 @@ JDOQM3Jz69c
 1075 | AJJ - Small Red Boy
 ----------
 June 16, 2020
-iTHiKyhTIw4
+ID: iTHiKyhTIw4
 0 | Blaze Foley - Clay Pigeons
 254 | AJJ - Body Terror Song
 415 | AJJ - Hate and Kill
@@ -1112,7 +1112,7 @@ iTHiKyhTIw4
 1113 | Roger Miller - Reincarnation
 ----------
 June 15, 2020
-8-_CD4BGfBs
+ID: 8-_CD4BGfBs
 0 | The Mountain Goats "This Year"
 210 | AJJ "Heartilation"
 482 | AJJ "Temple Grandin, Too"
@@ -1122,7 +1122,7 @@ June 15, 2020
 1252 | Roger Miller "Oo-de-lally"
 ----------
 June 14, 2020
-1-vt5xly29o
+ID: 1-vt5xly29o
 0 | hello
 22 | AJJ - Now That I'm At The Top Of My Game
 204 | Wiccan Babysitter - Brainframe
@@ -1133,7 +1133,7 @@ June 14, 2020
 1080 | AJJ - Linda Ronstadt
 ----------
 June 13, 2020
-OCzqFlmcWb4
+ID: OCzqFlmcWb4
 0 | Hello
 23 | AJJ - Psychic Warfare
 265 | Kepi Ghoulie - Fortune Teller
@@ -1142,7 +1142,7 @@ OCzqFlmcWb4
 985 | AJJ - People 2: The Reckoning
 ----------
 June 12, 2020
-3Ndp5YxAVsU
+ID: 3Ndp5YxAVsU
 0 | Intro
 10 | Fred Neil/Harry Nilsson - Everybody's Talkin
 213 | AJJ - Hate Song for Brains
@@ -1152,7 +1152,7 @@ June 12, 2020
 1264 | Roger Miler - Oo-de-lally
 ----------
 June 11, 2020
-IgY5bxBxCYY
+ID: IgY5bxBxCYY
 0 | Intro
 110 | Roger Miller - Reincarnation
 226 | AJJ - Deathlessness
@@ -1161,7 +1161,7 @@ IgY5bxBxCYY
 895 | AJJ - People
 ----------
 June 10, 2020
-IIexm62wrxQ
+ID: IIexm62wrxQ
 0 | Intro
 35 | Silver Jews - Candy Jail
 220 | AJJ - No More Tears
@@ -1170,7 +1170,7 @@ IIexm62wrxQ
 957 | Roger Miller - Oo-De-Lally
 ----------
 June 9, 2020
-zwg2xX0nLTU
+ID: zwg2xX0nLTU
 0 | Intro
 106 | AJJ - Love in Your Heart
 185 | AJJ - Self Esteem
@@ -1181,7 +1181,7 @@ zwg2xX0nLTU
 1110 | AJJ - I Wanna Rock Out in My Dreams
 ----------
 June 8, 2020
-2KHY35ZGxU8
+ID: 2KHY35ZGxU8
 0 | Intro
 13 | John Prine - Sam Stone
 318 | AJJ - Cody's Theme
@@ -1191,7 +1191,7 @@ June 8, 2020
 1169 | AJJ - A Big Day for Grimley
 ----------
 June 7, 2020
-mmij9Y6Tj0c
+ID: mmij9Y6Tj0c
 0 | Intro
 107 | David Bowie - Ziggy Stardust
 343 | AJJ - Oldey Timey
@@ -1201,7 +1201,7 @@ mmij9Y6Tj0c
 1091 | AJJ - Little Prince
 ----------
 June 6, 2020
-UWKI-eBtMsk
+ID: UWKI-eBtMsk
 0 | Intro
 125 | Jay Reatard - Fading All Away
 235 | AJJ - A Poem
@@ -1210,7 +1210,7 @@ UWKI-eBtMsk
 965 | Roger Miller - Oo-de-lally
 ----------
 June 5, 2020
-FQJ8SGxKpis
+ID: FQJ8SGxKpis
 0 | Intro
 23 | Breonna Taylor
 212 | AJJ - Your Voice, as I Remember It
@@ -1220,7 +1220,7 @@ FQJ8SGxKpis
 990 | AJJ - Linda Ronstadt
 ----------
 June 4, 2020
-2g-mQHbluH4
+ID: 2g-mQHbluH4
 0 | Intro
 72 | AJJ - Black Dog
 285 | Magnetic Fields - All My Little Words
@@ -1232,7 +1232,7 @@ June 4, 2020
 1238 | AJJ - American Body Rentals
 ----------
 June 3, 2020
-GRyaro9COwY
+ID: GRyaro9COwY
 0 | Intro
 76 | AJJ - People
 185 | AJJ - Children of God
@@ -1241,7 +1241,7 @@ GRyaro9COwY
 860 | AJJ - Love in Your Heart
 ----------
 June 2, 2020
-eMyEXxZeuQU
+ID: eMyEXxZeuQU
 0 | Intro
 103 | AJJ - No More Tears
 160 | Kimya Dawson - Hadlock Padlock
@@ -1250,7 +1250,7 @@ eMyEXxZeuQU
 878 | Roger Miller - Oo-de-lally
 ----------
 June 1, 2020
-zBYWqh9Rj9s
+ID: zBYWqh9Rj9s
 0 | Intro
 42 | Neil Young - Tell Me Why
 191 | AJJ - Normalization Blues
@@ -1260,7 +1260,7 @@ zBYWqh9Rj9s
 966 | AJJ - Small Red Boy
 ----------
 May 31, 2020
-Seifgy52chs
+ID: Seifgy52chs
 0 | Intro
 85 | AJJ - Love in the Time of HPV
 251 | AJJ - Heartilation
@@ -1280,7 +1280,7 @@ Seifgy52chs
 2780 | The Beatles - Her Majesty
 ----------
 May 30, 2020
-nF_HwaGBBoA
+ID: nF_HwaGBBoA
 0 | Intro
 294 | AJJ - American Tune
 523 | AJJ - Space and Time
@@ -1291,7 +1291,7 @@ nF_HwaGBBoA
 1617 | Roger Miller - Oo-de-lally
 ----------
 May 29, 2020
-XsvLho2a66I
+ID: XsvLho2a66I
 0 | Intro
 30 | Silver Jews - Candy Jail
 300 | AJJ - Hate Song for Brains
@@ -1301,7 +1301,7 @@ XsvLho2a66I
 1461 | AJJ - White Face, Black Eyes
 ----------
 May 28, 2020
-SsdyHK6CZwY
+ID: SsdyHK6CZwY
 0 | Intro
 66 | David Bowie - Quicksand
 354 | AJJ - Hate, Rain on Me
@@ -1312,7 +1312,7 @@ SsdyHK6CZwY
 1281 | Roger Miller - Oo-de-lally
 ----------
 May 27, 2020
-_gyU6Yu5A6M
+ID: _gyU6Yu5A6M
 0 | Intro
 10 | The Beatles (or Nirvana?) - Rocky Raccoon
 331 | AJJ - Kokopelli Face Tattoo
@@ -1322,7 +1322,7 @@ _gyU6Yu5A6M
 1348 | AJJ - American Body Rentals
 ----------
 May 26, 2020
-MxAXVXxoAW8
+ID: MxAXVXxoAW8
 0 | Intro
 37 | AJJ - The Michael Jordan of Drunk Driving
 70 | Willie Nelson - I Couldn't Believe It Was True
@@ -1333,7 +1333,7 @@ MxAXVXxoAW8
 830 | Roger Miller - Reincarnation
 ----------
 May 25, 2020
-tQ2xTW8H8FU
+ID: tQ2xTW8H8FU
 0 | Intro
 14 | Graham Parsons & Emmylou Harris - Return of the Grievous Angel
 205 | AJJ - Golden Eagle
@@ -1344,7 +1344,7 @@ tQ2xTW8H8FU
 1063 | Roger Miller - Oo-de-lally
 ----------
 May 24, 2020
-XBbscxneoUs
+ID: XBbscxneoUs
 0 | Intro
 40 | Beck - Cyanide Breath Mint
 154 | AJJ - Rejoice
@@ -1356,7 +1356,7 @@ XBbscxneoUs
 1511 | The Beatles - Her Majesty
 ----------
 May 23, 2020
-CtLHbq5r_is
+ID: CtLHbq5r_is
 0 | Intro
 2 | AJJ - Brave as a Noun
 74 | AJJ - Heartilation
@@ -1367,7 +1367,7 @@ CtLHbq5r_is
 1038 | The Mountain Goats - Alpha Rat's Nest
 ----------
 May 22, 2020
-JVsjXd4h5-Y
+ID: JVsjXd4h5-Y
 0 | Intro
 57 | AJJ - Children of God
 305 | Neil Young - Mellow My Mind
@@ -1377,7 +1377,7 @@ JVsjXd4h5-Y
 1187 | AJJ - Your Voice, as I Remember It
 ----------
 May 21, 2020
-iUYTx-nuSNo
+ID: iUYTx-nuSNo
 0 | Intro
 27 | AJJ - Distance
 173 | Roger Miller - Oo-de-lally
@@ -1390,7 +1390,7 @@ iUYTx-nuSNo
 1214 | AJJ - American Body Rentals
 ----------
 May 20, 2020
-z0NTRylkjYI
+ID: z0NTRylkjYI
 0 | Intro
 34 | Shellshag - Come Down
 269 | AJJ - White Worms
@@ -1400,7 +1400,7 @@ z0NTRylkjYI
 1172 | AJJ - Rejoice
 ----------
 May 19, 2020
-_usLBMYUe5E
+ID: _usLBMYUe5E
 0 | Intro
 29 | Simon and Garfunkel - I Am A Rock
 236 | AJJ - Psychic Warfare
@@ -1409,7 +1409,7 @@ _usLBMYUe5E
 753 | AJJ - No More Shame, No More Fear, No More Dread
 ----------
 May 18, 2020
-dPOQoqBPATk
+ID: dPOQoqBPATk
 0 | Intro
 120 | AJJ - Fucc the Devil
 305 | Silver Jews - Strange Victory, Strange Defeat
@@ -1420,7 +1420,7 @@ dPOQoqBPATk
 1298 | AJJ - Small Red Boy
 ----------
 May 17, 2020
-kPCMurALJgk
+ID: kPCMurALJgk
 0 | Intro
 32 | AJJ - Cody's Theme
 150 | AJJ - Body Terror Song
@@ -1431,7 +1431,7 @@ kPCMurALJgk
 885 | Ween - It's Gonna Be Alright
 ----------
 May 16, 2020
-HWz9M5CMKzo
+ID: HWz9M5CMKzo
 0 | Intro
 2 | AJJ - We Didn't Come Here to Rock
 85 | AJJ - Junkie Church
@@ -1442,7 +1442,7 @@ HWz9M5CMKzo
 1058 | Roky Erickson - I Think of Demons
 ----------
 May 15, 2020
-KgqfTahNL6w
+ID: KgqfTahNL6w
 0 | Intro
 154 | Roger Miller - Reincarnation
 260 | AJJ - Brave as a Noun
@@ -1455,7 +1455,7 @@ KgqfTahNL6w
 1710 | AJJ - A Big Day for Grimley
 ----------
 May 14, 2020
-AE8dvKAKIU4
+ID: AE8dvKAKIU4
 0 | Intro
 25 | AJJ - Space and Time
 335 | Pixies - Where Is My Mind?
@@ -1465,7 +1465,7 @@ AE8dvKAKIU4
 1080 | Neil Young - Roll Another Number
 ----------
 May 13, 2020
-mUIrpAETtd8
+ID: mUIrpAETtd8
 0 | Intro
 20 | AJJ - Kokopelli Face Tattoo
 266 | Novi Split - You Got Served
@@ -1476,7 +1476,7 @@ mUIrpAETtd8
 1151 | AJJ - American Body Rentals
 ----------
 May 12, 2020
-Y8o0p0JQwt4
+ID: Y8o0p0JQwt4
 0 | Intro
 82 | The Pixies - Holiday Song
 183 | The Beatles - Eleanor Rigby
@@ -1486,7 +1486,7 @@ Y8o0p0JQwt4
 851 | AJJ - Free Bird
 ----------
 May 11, 2020
-XeQWj-ghw1M
+ID: XeQWj-ghw1M
 0 | Intro
 42 | The Beatles - Her Majesty
 70 | Tim Hardin - Black Sheep Boy
@@ -1498,7 +1498,7 @@ XeQWj-ghw1M
 900 | AJJ - Big Bird
 ----------
 May 10, 2020
-QLRDtLSIzxg
+ID: QLRDtLSIzxg
 0 | Intro
 60 | AJJ - Distance
 203 | AJJ - I'm Gonna Love My Children
@@ -1510,7 +1510,7 @@ QLRDtLSIzxg
 1025 | AJJ - People II: The Reckoning
 ----------
 May 9, 2020
-4VvG2rMyFN4
+ID: 4VvG2rMyFN4
 0 | Intro
 78 | AJJ - Hate Song for Brains
 260 | AJJ - Feedbag
@@ -1521,7 +1521,7 @@ May 9, 2020
 818 | AJJ - White Face, Black Eyes
 ----------
 May 8, 2020
-1f3VuaIJVts
+ID: 1f3VuaIJVts
 0 | Intro
 111 | AJJ - Brave as a Noun
 180 | AJJ - Survival Song
@@ -1534,7 +1534,7 @@ May 8, 2020
 1515 | AJJ - Little Prince
 ----------
 May 7, 2020
-KOEH6E3YHf4
+ID: KOEH6E3YHf4
 0 | Intro
 65 | Smog - Cold Blooded Old Times
 313 | AJJ - Keep on Chooglin
@@ -1546,7 +1546,7 @@ KOEH6E3YHf4
 1193 | AJJ - Big Bird
 ----------
 May 6, 2020
-QgI8n9Nm8Xg
+ID: QgI8n9Nm8Xg
 0 | Intro
 48 | Temple Grandin
 175 | Children of God
@@ -1562,7 +1562,7 @@ QgI8n9Nm8Xg
 2210 | Angel of Death
 ----------
 May 5, 2020
-OGqcyBysbbY
+ID: OGqcyBysbbY
 0 | Intro
 25 | AJJ - A Big Day for Grimley
 228 | The Magnetic Fields - All My Little Words
@@ -1572,7 +1572,7 @@ OGqcyBysbbY
 830 | AJJ - White Face, Black Eyes
 ----------
 May 4, 2020
-QqGn3KtuCf8
+ID: QqGn3KtuCf8
 0 | Intro
 12 | AJJ - Sad Songs
 222 | Pixies - Wave of Mutilation
@@ -1582,7 +1582,7 @@ QqGn3KtuCf8
 1050 | David Bowie - Rock and Roll Suicide
 ----------
 May 3, 2020
-5IxJW9Z3acw
+ID: 5IxJW9Z3acw
 0 | Intro
 12 | AJJ - I Wanna Rock Out In My Dreams
 264 | Tim Hardin - Lady from Baltimore
@@ -1592,7 +1592,7 @@ May 3, 2020
 862 | The Beatles - Rocky Raccoon
 ----------
 May 2, 2020
-SH_iT61Me9I
+ID: SH_iT61Me9I
 0 | Intro
 3 | AJJ - We Didn't Come Here to Rock
 84 | AJJ - Feedbag
@@ -1602,7 +1602,7 @@ SH_iT61Me9I
 928 | AJJ - Little Prince
 ----------
 May 1, 2020
-lZAWvrrH0UQ
+ID: lZAWvrrH0UQ
 0 | Intro
 27 | David Bowie - Quicksand
 348 | AJJ - We're All Gonna Die
@@ -1612,7 +1612,7 @@ lZAWvrrH0UQ
 1060 | Sheryl Crow - Strong Enough
 ----------
 April 30, 2020
-gJrZXIEwGY4
+ID: gJrZXIEwGY4
 0 | Intro
 35 | AJJ - Your Voice, As I Remember It
 218 | The Thermals - Pillar of Salt
@@ -1622,7 +1622,7 @@ gJrZXIEwGY4
 1048 | AJJ - Goodbye, Oh Goodbye
 ----------
 April 29, 2020
-Qn9HXWyDSos
+ID: Qn9HXWyDSos
 0 | Intro
 9 | AJJ - Children of God
 142 | AJJ - Psychic Warfare
@@ -1633,7 +1633,7 @@ Qn9HXWyDSos
 1025 | AJJ - Rejoice
 ----------
 April 28, 2020
-qHll4LNerNI
+ID: qHll4LNerNI
 0 | Intro
 15 | AJJ - Kokopelli Face Tattoo
 260 | AJJ - Now That I'm at the Top of My Game
@@ -1643,7 +1643,7 @@ qHll4LNerNI
 1095 | AJJ - People II: The Reckoning
 ----------
 April 27, 2020
-AIBbCySzIT0
+ID: AIBbCySzIT0
 0 | Intro
 16 | AJJ - A Poem
 123 | AJJ - Heartilation
@@ -1655,7 +1655,7 @@ AIBbCySzIT0
 1338 | AJJ - American Body Rentals
 ----------
 April 26, 2020
-RMeGSbb6ZKI
+ID: RMeGSbb6ZKI
 0 | Intro
 18 | Leonard Cohen - Bird on a Wire
 295 | AJJ - Keep On Chooglin'
@@ -1666,7 +1666,7 @@ RMeGSbb6ZKI
 1102 | AJJ - A Big Day for Grimley
 ----------
 April 25, 2020
-jafhcRvR1iY
+ID: jafhcRvR1iY
 0 | Intro
 14 | Foot Ox - New Boyfriend
 100 | AJJ - Brave as a Noun
@@ -1677,7 +1677,7 @@ jafhcRvR1iY
 858 | AJJ - Who Are You?
 ----------
 April 24, 2020
-_dS15JS1rfU
+ID: _dS15JS1rfU
 0 | Intro
 68 | Shellshag - Come Down
 202 | AJJ - Self Esteem
@@ -1687,7 +1687,7 @@ _dS15JS1rfU
 968 | AJJ - Temple Grandin
 ----------
 April 23, 2020
-UxDtGetyKJA
+ID: UxDtGetyKJA
 0 | Intro
 20 | AJJ - Heartilation
 207 | Frankie Cosmos - My I Love You
@@ -1699,7 +1699,7 @@ UxDtGetyKJA
 1105 | AJJ - Sense, Sensibility
 ----------
 April 22, 2020
-B95fKLU-R7M
+ID: B95fKLU-R7M
 0 | Intro
 20 | AJJ - Hate, Rain on Me
 200 | AJJ - Border Patrol
@@ -1709,7 +1709,7 @@ B95fKLU-R7M
 1010 | AJJ - Linda Ronstadt
 ----------
 April 21, 2020
-2HrrgJbnisc
+ID: 2HrrgJbnisc
 0 | Intro
 66 | AJJ - Normalization Blues
 242 | Against Me! - Sink, Florida, Sink
@@ -1719,7 +1719,7 @@ April 21, 2020
 1020 | Lana Del Rey - Video Games
 ----------
 April 20, 2020
-N2QzHsWnrrE
+ID: N2QzHsWnrrE
 0 | Intro
 40 | Silver Jews - Strange Victory, Strange Defeat
 168 | Simon and Garfunkel - I Am A Rock
@@ -1730,7 +1730,7 @@ N2QzHsWnrrE
 998 | Daniel Johnston - My Life is Starting Over
 ----------
 April 19, 2020
-E9u4ecwBvZY
+ID: E9u4ecwBvZY
 0 | Intro
 45 | Gram Parsons - Return of the Grievous Angel
 258 | AJJ - Free Bird
@@ -1740,7 +1740,7 @@ E9u4ecwBvZY
 1090 | AJJ - All The Dead Kids / Unicron
 ----------
 April 18, 2020
-33AQ-7nMPco
+ID: 33AQ-7nMPco
 0 | Intro
 10 | AJJ - When I'm A Dead Boy
 80 | David Bowie - Ziggy Stardust
@@ -1750,7 +1750,7 @@ April 18, 2020
 880 | AJJ - Love in the Time of HPV
 ----------
 April 17, 2020
-atruJT4Pd9U
+ID: atruJT4Pd9U
 0 | Intro
 84 | AJJ - Brave as a Noun / Survival Song / Bad Bad Things / No More Tears (no stops!!)
 515 | Elliott Smith - Waltz #2
@@ -1761,7 +1761,7 @@ atruJT4Pd9U
 1689 | AJJ - Big Bird
 ----------
 April 16, 2020
-nUTSDIw546o
+ID: nUTSDIw546o
 0 | Intro
 46 | Pink Floyd - The Final Cut
 361 | AJJ - Psychic Warfare
@@ -1770,7 +1770,7 @@ nUTSDIw546o
 1050 | AJJ - Linda Ronstadt
 ----------
 April 15, 2020
-IfLUpQhPS_Q
+ID: IfLUpQhPS_Q
 0 | Intro
 100 | AJJ - Growing Up
 228 | Smog (Bill Callahan) - Cold Blooded Old Times
@@ -1780,7 +1780,7 @@ IfLUpQhPS_Q
 1336 | AJJ - A Poem
 ----------
 April 14, 2020
-OdoYQ7Yu__I
+ID: OdoYQ7Yu__I
 0 | Intro
 43 | AJJ - Heartilation
 240 | AJJ - Body Terror Song
@@ -1792,7 +1792,7 @@ OdoYQ7Yu__I
 1480 | AJJ - A Big Day for Grimley
 ----------
 April 13, 2020
-ntB5v4hEcr0
+ID: ntB5v4hEcr0
 0 | Intro
 53 | AJJ - Your Voice, as I Remember It
 280 | Talking Heads - Heaven
@@ -1801,7 +1801,7 @@ ntB5v4hEcr0
 1115 | AJJ - White Face, Black Eyes
 ----------
 April 12, 2020
-wR9OQ1Xqxx0
+ID: wR9OQ1Xqxx0
 0 | Intro
 42 | AJJ - Golden Eagle
 194 | Kepi Ghoulie - Fortune Teller
@@ -1811,7 +1811,7 @@ wR9OQ1Xqxx0
 1020 | AJJ - Small Red Boy
 ----------
 April 11, 2020
-ceaVdlyX9Os
+ID: ceaVdlyX9Os
 0 | Intro
 80 | AJJ - Linda Ronstadt
 284 | AJJ - Loudmouth
@@ -1821,7 +1821,7 @@ ceaVdlyX9Os
 1310 | AJJ - American Body Rentals
 ----------
 April 10, 2020
-L0tggV58ouY
+ID: L0tggV58ouY
 0 | Intro
 55 | AJJ - Kokopelli Face Tattoo
 290 | Neil Young - Tell Me Why
@@ -1831,7 +1831,7 @@ L0tggV58ouY
 1104 | The Mountain Goats - This Year
 ----------
 April 9, 2020
-t6IwawYO-x8
+ID: t6IwawYO-x8
 0 | Intro
 35 | AJJ - A Poem
 135 | AJJ - Brave as a Noun
@@ -1841,7 +1841,7 @@ t6IwawYO-x8
 1040 | AJJ - Big Bird
 ----------
 April 8, 2020
-XoXabiKMhmg
+ID: XoXabiKMhmg
 0 | Intro
 52 | John Prine - Sam Stone
 370 | AJJ - Terrifyer
@@ -1853,7 +1853,7 @@ XoXabiKMhmg
 1120 | AJJ - Mega Guillotine 2020
 ----------
 April 7, 2020
-dubJxTm0tOM
+ID: dubJxTm0tOM
 0 | Intro
 90 | Roky Erickson - I Think of Demons
 370 | AJJ - Maggie
@@ -1865,7 +1865,7 @@ dubJxTm0tOM
 1230 | AJJ - Love Will Fuck Us Apart
 ----------
 April 6, 2020
-wPMCbfbq7KU
+ID: wPMCbfbq7KU
 0 | Intro
 45 | Today's set:Silver Jews - Smith and Jones Forever
 235 | AJJ - Cody's Theme
@@ -1877,7 +1877,7 @@ wPMCbfbq7KU
 1180 | AJJ - People
 ----------
 April 5, 2020
-mfCc5mT_I64
+ID: mfCc5mT_I64
 0 | Intro
 62 | The Mountain Goats - No Children
 281 | AJJ - You Don't Deserve Yourself
@@ -1887,7 +1887,7 @@ mfCc5mT_I64
 1443 | Roger Miller - Reincarnation
 ----------
 April 4, 2020
-VY4nSI-0gJQ
+ID: VY4nSI-0gJQ
 0 | Intro
 36 | AJJ - Rejoice
 305 | Jeff Rosenstock - Nausea
@@ -1897,7 +1897,7 @@ VY4nSI-0gJQ
 1314 | AJJ - Linda Ronstadt
 ----------
 April 3, 2020
-kRu_s_Er_vs
+ID: kRu_s_Er_vs
 0 | Intro
 101 | AJJ - When I'm a dead boy
 184 | AJJ - Heartilation
@@ -1909,7 +1909,7 @@ kRu_s_Er_vs
 1294 | AJJ - Free Bird
 ----------
 April 2, 2020
-dkUIfRFo3cE
+ID: dkUIfRFo3cE
 0 | Intro
 157 | AJJ - Angel of Death
 320 | AJJ - Jesus Saves
@@ -1921,7 +1921,7 @@ dkUIfRFo3cE
 1176 | Mount Eerie - You Swan, Go On
 ----------
 April 1, 2020
-6qhGWwgm3qo
+ID: 6qhGWwgm3qo
 0 | Intro
 100 | Do, Re, and Me by the AJJ’s
 309 | Hood by Perfume Genius
@@ -1933,7 +1933,7 @@ April 1, 2020
 1206 | Goodbye, Oh Goodbye by AJJ
 ----------
 March 31, 2020
-rcyFwiauUcw
+ID: rcyFwiauUcw
 0 | Intro
 105 | I Am a Rock by Paul Simon
 398 | I Wanna Rock Out in My Dreams by AJJ
@@ -1943,7 +1943,7 @@ rcyFwiauUcw
 1168 | American Body Rentals
 ----------
 March 30, 2020
-NauXNPCK3Dk
+ID: NauXNPCK3Dk
 0 | Intro
 12 | Junkie Church by AJJ
 179 | Fading All Away by Jay Reatard
@@ -1954,7 +1954,7 @@ NauXNPCK3Dk
 890 | A Big Day for Grimley by AJJ
 ----------
 March 29, 2020
-z65QOiVKiNw
+ID: z65QOiVKiNw
 0 | Intro
 115 | Self Esteem by AJJ
 286 | Lucky Strike by Foot Ox
@@ -1966,7 +1966,7 @@ z65QOiVKiNw
 1133 | Small Red Boy by AJJ
 ----------
 March 28, 2020
-GySHvIDk24U
+ID: GySHvIDk24U
 0 | Intro
 135 | A Poem by AJJ
 263 | Without You by Harry Nilsson
@@ -1977,7 +1977,7 @@ GySHvIDk24U
 1334 | A Poem by AJJ
 ----------
 March 27, 2020
-kWwshUCILQI
+ID: kWwshUCILQI
 0 | Intro
 80 | Maggie by AJJ
 253 | These Few Presidents by WHY?
@@ -1987,7 +1987,7 @@ kWwshUCILQI
 1075 | Love in the Time of Human Papillomavirus by AJJ
 ----------
 March 26, 2020
-E6aX5rGi2aI
+ID: E6aX5rGi2aI
 0 | Intro
 112 | Lucky Strike (Teague Cullen / Foot Ox)
 228 | Backpack
@@ -1997,7 +1997,7 @@ E6aX5rGi2aI
 1023 | Big Bird
 ----------
 March 25, 2020
-8abkrQrdh5U
+ID: 8abkrQrdh5U
 0 | Intro
 104 | You Got Served (Novi Split Cover)
 258 | Bold With Fire (French Quarter Cover)
@@ -2010,7 +2010,7 @@ March 25, 2020
 1377 | People
 ----------
 March 24, 2020
-TGJjttNEvVI
+ID: TGJjttNEvVI
 0 | Intro
 157 | Mega Guillotine 2020
 373 | Bold With Fire (Stephen Steinbrink / French Quarter)
@@ -2022,7 +2022,7 @@ TGJjttNEvVI
 1264 | Brave As A Noun
 ----------
 March 23, 2020
--ir2Yh8UL30
+ID: -ir2Yh8UL30
 0 | Intro
 128 | Loudmouth
 358 | Rocky Raccoon (The Beatles cover)
@@ -2032,7 +2032,7 @@ March 23, 2020
 1410 | White Face, Black Eyes
 ----------
 March 22, 2020
-Up1LshJo2gg
+ID: Up1LshJo2gg
 0 | Intro
 168 | Tell Me Why (Neil Young cover)
 324 | Kokopelli Face Tattoo
@@ -2043,7 +2043,7 @@ Up1LshJo2gg
 1455 | Small Red Boy
 ----------
 March 21, 2020
-NnlUMfxjHfE
+ID: NnlUMfxjHfE
 0 | Intro
 108 | American Body Rentals
 177 | Evil
@@ -2053,7 +2053,7 @@ NnlUMfxjHfE
 1115 | Linda Ronstadt
 ----------
 March 20, 2020
-E1L4rJsFPg0
+ID: E1L4rJsFPg0
 0 | Intro
 75 | Body Terror Song
 250 | Strange Victory, Strange Defeat (Silver Jews cover)
@@ -2062,7 +2062,7 @@ E1L4rJsFPg0
 800 | Distance
 ----------
 March 19, 2020
-zBPt-Bk9CpY
+ID: zBPt-Bk9CpY
 0 | Intro
 88 | candy jail (silver jews)
 254 | coffin dance
@@ -2073,7 +2073,7 @@ zBPt-Bk9CpY
 1100 | michael jordan of drunk driving :)
 ----------
 March 18, 2020
-HHoi6Nr1clM
+ID: HHoi6Nr1clM
 0 | Intro
 117 | Black dog/You are my sunshine
 248 | Black sheep boy (Tim Hardin cover)
@@ -2084,7 +2084,7 @@ HHoi6Nr1clM
 1035 | El principito
 ----------
 March 17, 2020
-CnJl97Y_3W4
+ID: CnJl97Y_3W4
 0 | Intro
 371 | Heartilation
 570 | Shellshag - Comedown
@@ -2093,7 +2093,7 @@ CnJl97Y_3W4
 1125 | I'm gonna love my children
 ----------
 March 16, 2020
-_IUnh0k0hxw
+ID: _IUnh0k0hxw
 0 | Intro
 103 | Motor Away (Guided by Voices)
 237 | Getting Naked and Playing with Guns
@@ -2102,7 +2102,7 @@ _IUnh0k0hxw
 819 | People
 ----------
 March 15, 2020
-LPAGzGi6zNs
+ID: LPAGzGi6zNs
 0 | hello
 64 | Guided By Voices - Game of Pricks
 170 | AJJ - Junkie Church

@@ -1,5 +1,5 @@
 1999
-pnodS29q-Cs
+ID: pnodS29q-Cs
 0 | Dr Dre ft Snoop Doog "Still D.R.E." (Audio: Piano riff + Video: Bouncy cars)
 2 | Sisqo "Thong Song" (Audio: Violin + Video: Car)
 5 | Dead Prez "Hip Hop" (Lyric: "Uh 1, 2, 1, 2")
@@ -70,7 +70,7 @@ pnodS29q-Cs
 199 | Foo Fighters "Learn To Fly" (Dave Grohl flying outside a plane window)
 ----------
 1998
-N9jU8JLziaY
+ID: N9jU8JLziaY
 0 | Massive Attack "Inertia Creeps" (Warbling guitar)
 2 | Mercury Rev "Holes" (Audio: Violin drone)
 6 | Fatboy Slim "Praise You" (Lyric: "We've come a long long way together..." + Video: Dance group)
@@ -141,7 +141,7 @@ N9jU8JLziaY
 194 | Local H “All The Kids Are Right” (Audio: Guitar riff)
 ----------
 1997
-T4Zy3qFo_s0
+ID: T4Zy3qFo_s0
 0 | The Notorious B.I.G. "Sky's The Limit" (Lyric: "Good evening ladies and gentlemen" + Video : Kids walking around)
 2 | ? ? (Lyric: "Ladiiiiiiiiiies aaaaaand gentlemeeeeeeen")
 4 | Radiohead "Paranoid Android" (Audio: Beeping and shaker behind the title card)
@@ -207,7 +207,7 @@ T4Zy3qFo_s0
 197 | The Notorious B.I.G. "Sky's the Limit" reprise (Video: One last image of (the actor playing) Notorious B.I.G., who was shot and killed in March 1997. Note: The last image in the 1996 video is 2Pac. RIP)
 ----------
 1996
-FwnuuFW8Cfk
+ID: FwnuuFW8Cfk
 0 | Primitive Radio Gods "Standing Outside A Broken Phone Booth With Money In My Hand" (Audio: A coin drops. Faint rattling)
 0 | Weezer "El Scorcho" (Audio: Gargling and Toms)
 5 | Mark Morrison "Return of the Mack" (Lyric: "Ooooh. Come on. Ooh yeah ...")
@@ -280,7 +280,7 @@ FwnuuFW8Cfk
 202 | Primitive Radio Gods "Standing Outside A Broken Phone Booth With Money In My Hand" (Audio: A phone hangs up.)
 ----------
 1995
-3uXDh_Ghdso
+ID: 3uXDh_Ghdso
 0 | Skee-Lo - “I Wish” (Video: man tuning radio)
 0 | Soul Asylum "Misery" (Lyric: "1, 2, 1, 2 3 4)
 2 | Björk "Army of Me" (Audio: Crashing sound as title card is displayed)
@@ -351,7 +351,7 @@ FwnuuFW8Cfk
 203 | Alanis Morrisette "Ironic" (Lyric: "Yeah. Yeah eh eh eh")
 ----------
 1994
-yAux93_DROw
+ID: yAux93_DROw
 0 | Bone Thugs n Harmony "Thuggish Ruggish Bone" (Guitar harmonics)
 3 | Weezer “Undone (The Sweater Song)” (Audio: Drum roll + Video: Band silhouettes)
 5 | Portishead “Sour Times” (Audio: Chiming bell and Bassline + Video: Black and white Beth Gibbons lying on a hospital bed)
@@ -452,7 +452,7 @@ yAux93_DROw
 204 | Sunny Day Real Estate “Seven” (Video: Blond Drummer in black and white)
 ----------
 1993
-IKu6LXIaOpk
+ID: IKu6LXIaOpk
 0 | The Breeders - "Cannonball" (percussion, video: cannonball rolls down street)
 8 | U2 - "Numb" (guitar, video: The Edge looks at camera in black and white)
 17 | "Cannonball" again (bassline, women with guitars)
@@ -486,7 +486,7 @@ IKu6LXIaOpk
 193 | James - "Laid" (guitar line starts, video kicks in at with man dancing in kitchen)
 ----------
 1992
-0fKG6TbpeLY
+ID: 0fKG6TbpeLY
 0 | House of Pain "Jump Around" (Fife band) [Thanks Af Hy and Jakob Mueller!]
 0 | Megadeth "Symphony of Destruction" (Audio: Chord + Video: Crowd) [Thanks thecandidcastaway!]
 4 | The Black Crowes "Remedy" (Audio: Guitar Riff + Video: Band playing in a green room / Singer with red trousers) [Thanks The Geecy Project!]
@@ -588,7 +588,7 @@ IKu6LXIaOpk
 210 | Radiohead “Creep” (Lyric: “I don’t belong here”)
 ----------
 1991
-x3X7xOzXTbc
+ID: x3X7xOzXTbc
 0 | Jodeci "Forever My Lady" (Audio: Wind chimes) [Thanks JB!]
 3 | Guns N Roses "November Rain" (Audio: Piano + Video: Axl Rose plays the piano / Bride) [Thanks Dan C and the candidcastaway!]
 7 | NWA "Alwayz Into Somethin" (Lyric: “The year is 1991” + Video: Black and white video of wall with bullet hole)
@@ -671,7 +671,7 @@ x3X7xOzXTbc
 198 | Mr Big "To Be With You" (Black acoustic guitar) [Thanks Deb B!]
 ----------
 1990
-MwDRyW43T6Y
+ID: MwDRyW43T6Y
 0 | Pixies "Dig for Fire" (Audio: Strummed noteless guitar & triangle) [Thanks Alan Hurley!]
 0 | A Tribe Called Quest "Push It Along" (Audio: Wind sound getting louder) [Great work PurplePandaClock!]
 1 | Deee-Lite “Groove is in the Heart” (Audio: Guitar riff + Video: Woman in pink dancing)
@@ -772,7 +772,7 @@ MwDRyW43T6Y
 203 | Wilson Phillips "Hold On" reprise (Lyric: "Hold on for one more day")
 ----------
 1989
-H6N1G-z4dCc
+ID: H6N1G-z4dCc
 0 | Depeche Mode "Personal Jesus" (2 note guitar harmonics) [Thanks Peter Dutton & rob h]
 2 | Madonna "Like a Prayer" (Singers "Oooo")
 2 | Soul II Soul "Back To Life" (Lyric "However do you want me ...")
@@ -837,7 +837,7 @@ H6N1G-z4dCc
 173 | Janet Jackson "Miss You Much" (Lyric: "That's the end?")
 ----------
 1988
-yj97-YKtMfo
+ID: yj97-YKtMfo
 0 | Guns n Roses "Patience" (Lyric "1, 2, 1 2 3")
 4 | U2 "All I want is you" (Lyric "You say, you want, diamonds and rings of gold ... ")
 4 | The La's "There she goes" (16 note electric guitar riff)
@@ -898,7 +898,7 @@ yj97-YKtMfo
 179 | Whitney Houston "One moment in time" (Singer in front of gold stage-risers and wearing a dark pink blouse and black dress bows. Taken from a 1989 Sammy Davis Jr concert.)
 ----------
 1987
-AT1uhV-maZQ
+ID: AT1uhV-maZQ
 0 | Prince “If I was your girlfriend” (Fade in of high synth chord)
 1 | REM “It’s the end of the world as we know it” (Video: Boy with skateboard. Lyric “It’s the end of the world as we know it”)
 3 | Whitesnake “Here I go again ’87” (Woman in white doing cartwheels on cars)
@@ -961,7 +961,7 @@ AT1uhV-maZQ
 171 | Heart “Alone” reprise (Electric piano part at the end. Which is from the beginning of the song. Before their piano exploded at)
 ----------
 1986
-GklP0ATsEtw
+ID: GklP0ATsEtw
 0 | ? ? (Sound of distant thunder)
 0 | Bruce Hornsby and the Range “The Way It Is” (Piano riff)
 0 | ? ? (Synth rhythm underneath)
@@ -1041,7 +1041,7 @@ GklP0ATsEtw
 179 | Beastie Boys “You Gotta Fight For Your Right To Party” (Video: Parents return to find the house in chaos)
 ----------
 1985
-Le6RTavyuxI
+ID: Le6RTavyuxI
 0 | Billy Ocean "Loverboy" (Opening chord, and video of a star-filled galaxy)
 4 | Siouxsie & The Banshees "Cities in Dust" (jaw harp rhythm + video of ... is that blood?)
 8 | Prince "Raspberry Beret" (Lyric "1, 2, 1, 2, 3")
@@ -1098,7 +1098,7 @@ Le6RTavyuxI
 167 | The Replacements "Bastards of Young" (Black and white video of couch and loudspeaker)
 ----------
 1984
-zMg2FF59CMw
+ID: zMg2FF59CMw
 0 | Van Halen "1984" (Audio: Flanged synth sound) [Thanks Brent Murphy!]
 0 | The Ramones "Too Tough To Die" (Lyric: "1 2 3 4") [Thanks awsummoner!]
 2 | The Go-Gos "Head over heels". (Piano bit. That's Belinda Carlisle at the front btw).
@@ -1175,7 +1175,7 @@ zMg2FF59CMw
 176 | New Edition "Cool It Now" (basketball game) [Thanks Liquid Light!]
 ----------
 1983
-rCaBfx872PA
+ID: rCaBfx872PA
 0 | Bonnie Tyler "Total Eclipse of the Heart" (Introductory piano riff)
 0 | Huey Lewis and the News "The Heart of Rock and Roll" (Bass drum)
 4 | REM "Radio Free Europe" (Audio: Flanged rhythmic sound)
@@ -1236,7 +1236,7 @@ rCaBfx872PA
 175 | The Police "Every Breath You Take" (Guitar Riff + Video: Black and white video of guitarist, and cigarettes at the end)
 ----------
 1982
-qdypNbWmEOw
+ID: qdypNbWmEOw
 0 | Fleetwood Mac “Hold Me” (Audio: Piano riff + Video: An archaeologist throws a guitar at glass)
 3 | Grandmaster Flash and the Furious Five “The Message” (Audio: Drum beat + Video: rapper in blue / New York street / broken glass)
 6 | Orange Juice “Rip It Up” (Audio: Guitar riff + Video: Transparent guitarist with red fender strat at)
@@ -1304,7 +1304,7 @@ qdypNbWmEOw
 179 | A Flock of Seagulls “I Ran” (reprise) (Audio: Echoey guitar riff + Video: More people in a hall of mirrors)
 ----------
 1981
-8BdfGD5ZiiA
+ID: 8BdfGD5ZiiA
 0 | Stevie Nicks “Edge of Seventeen” (Audio: Rhythm guitar + Video: Woman in a flowing white dress)
 4 | Yoko Ono "Walking On Thin Ice" (Crescendo-ing electric guitar riff from the original version of this song) [Thanks Southpaw Frizzell!]
 5 | Phil Collins “In The Air Tonight” (Lyric: “I can feel it coming in the air tonight …”)
@@ -1371,7 +1371,7 @@ qdypNbWmEOw
 163 | .38 Special “Hold On Loosely" reprise (Lyric: “But don’t let go”)
 ----------
 1980
-g_nToRZOqVo
+ID: g_nToRZOqVo
 0 | U2 "I Will Follow" (Lyric "1-2-3-4" & guitar)
 2 | The Police "Don't Stand So Close to Me" (Low cello drone)
 8 | The Romantics "What I Like About You" (Strummed Electric guitar)
@@ -1427,7 +1427,7 @@ g_nToRZOqVo
 176 | Pat Benatar "Hit Me With Your Best Shot" reprise (Audio: Ending guitar riff, drum roll and final chord) [Really well spotted, WDP Music!]
 ----------
 1979
-JkBgmzocow4
+ID: JkBgmzocow4
 0 | Boomtown Rats "I don't like Mondays" (Audio: Piano intro + Video: *clap clap* at and ) [Thanks Jakob Mueller!]
 4 | Prince "I wanna be your lover" (Video: pink & black drummer / Prince waving his hair around + Lyric: "I wanna be your. Lover." at)
 10 | The Clash "Train in Vain" (Video: punk band dressed in black. Audio: Little guitar octaves riff)

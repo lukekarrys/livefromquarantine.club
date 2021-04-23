@@ -12,7 +12,7 @@ export const build = async (id: string): Promise<string> => {
   return data
     .map(
       (video) =>
-        `${video.title}\n${video.id}\n` +
+        `${video.title}\nID: ${video.id}\n` +
         video.songs.map((song) => `${song.start} | ${song.name}`).join('\n')
     )
     .join(`\n${'-'.repeat(10)}\n`)
