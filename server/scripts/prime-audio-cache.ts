@@ -16,7 +16,7 @@ const getId = (str: string) => {
   return matches && matches[3]
 }
 
-const main = async (command: string) => {
+const main = async (command: string, dry?: boolean) => {
   console.log('Running command:', command)
 
   const { stdout, stderr } = await exec(command, {
@@ -51,30 +51,32 @@ const main = async (command: string) => {
       queue.add(async () => {
         try {
           results.push(
-            await axios
-              .get(`https://mp3.livefromquarantine.club/cache?id=${id}`)
-              .then((res) => ({
-                id,
-                status: res.status,
-                data: res.data as unknown,
-              }))
-              .catch((err: AxiosError) => {
-                if (err.response) {
-                  return {
+            dry
+              ? id
+              : await axios
+                  .get(`https://mp3.livefromquarantine.club/cache?id=${id}`)
+                  .then((res) => ({
                     id,
-                    status: err.response.status,
-                    data: err.response.data as unknown,
-                  }
-                } else if (err.request) {
-                  return {
-                    id,
-                    status: null,
-                    data: 'REQUEST_ERROR',
-                  }
-                } else {
-                  throw err
-                }
-              })
+                    status: res.status,
+                    data: res.data as unknown,
+                  }))
+                  .catch((err: AxiosError) => {
+                    if (err.response) {
+                      return {
+                        id,
+                        status: err.response.status,
+                        data: err.response.data as unknown,
+                      }
+                    } else if (err.request) {
+                      return {
+                        id,
+                        status: null,
+                        data: 'REQUEST_ERROR',
+                      }
+                    } else {
+                      throw err
+                    }
+                  })
           )
         } catch (e) {
           results.push(e)
@@ -88,13 +90,15 @@ const main = async (command: string) => {
   return results
 }
 
+const justTesting = process.env.NODE_ENV === 'test'
+
 // Test with a known commit containing changes
-const testCommand = 'git show 3ecf934 server/data/parsed'
+const testCommand = 'git show 3ecf934 server/data/parsed/*.txt'
 
 // This will only work for the latest commit but that should work well enough since
 // this only needs to be run for new data which gets commited as a single commit in a PR
-const fullCommand = 'git diff HEAD^ HEAD server/data/parsed/'
+const fullCommand = 'git show server/data/parsed/*.txt'
 
-main(process.env.NODE_ENV === 'test' ? testCommand : fullCommand)
+main(justTesting ? testCommand : fullCommand, justTesting)
   .then((res) => console.log('result', JSON.stringify(res, null, 2)))
   .catch(console.error)
