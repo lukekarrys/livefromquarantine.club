@@ -99,6 +99,6 @@ const testCommand = 'git show 3ecf934 server/data/parsed/*.txt'
 // this only needs to be run for new data which gets commited as a single commit in a PR
 const fullCommand = 'git diff origin/main HEAD server/data/parsed/*.txt'
 
-main(justTesting ? testCommand : fullCommand, true)
+main(justTesting ? testCommand : fullCommand, justTesting)
   .then((res) => console.log('result', JSON.stringify(res, null, 2)))
   .catch(console.error)
