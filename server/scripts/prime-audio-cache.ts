@@ -90,6 +90,9 @@ const main = async (command: string) => {
 
 // Test with a known commit containing changes
 const testCommand = 'git show 3ecf934 server/data/parsed'
+
+// This will only work for the latest commit but that should work well enough since
+// this only needs to be run for new data which gets commited as a single commit in a PR
 const fullCommand = 'git diff HEAD^ HEAD server/data/parsed/'
 
 main(process.env.NODE_ENV === 'test' ? testCommand : fullCommand)
