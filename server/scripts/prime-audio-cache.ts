@@ -5,7 +5,10 @@ import { promisify } from 'util'
 import path from 'path'
 
 const exec = promisify(_exec)
-const rIdLine = /^\+(ID:\s)?([\w-]{11})$/
+const getId = (str: string) => {
+  const matches = /^([+-])(ID:\s)?([\w-]{11})$/.exec(str)
+  return matches && matches[3]
+}
 
 // https://stackoverflow.com/a/58110124/1290619
 type Truthy<T> = T extends false | '' | 0 | null | undefined ? never : T
@@ -26,11 +29,16 @@ const main = async () => {
   const parsedDiff = parseDiff(stdout)
   console.log('Looking for ids in diff', JSON.stringify(parsedDiff, null, 2))
 
-  const ids = parsedDiff
-    .flatMap((f) => f.chunks.flatMap((c) => c.changes))
-    .map((c) => c.type === 'add' && rIdLine.exec(c.content))
-    .map((match) => match && match[2])
+  const changes = parsedDiff.flatMap((f) => f.chunks.flatMap((c) => c.changes))
+
+  const ids = changes
+    .map((c) => c.type === 'add' && getId(c.content))
     .filter(truthy)
+    .filter(
+      // We only want *new* ids so this will check if any other lines in the diff
+      // are for a line that deletes this id, meaning it was just a change and not new
+      (id) => !changes.find((c) => c.type === 'del' && getId(c.content) === id)
+    )
 
   console.log('Priming cache for ids:', ids)
 
