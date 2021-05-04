@@ -6,6 +6,45 @@
   "videos": [
     {
       "contentDetails": {
+        "duration": 922
+      },
+      "id": "s-W_O3ydVFI",
+      "snippet": {
+        "title": "Live From Quarantine - May 3",
+        "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday & Thursday at 7:30 PM AZ time, and sometimes on Wednesday afternoons, on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n1:25 Roky Erickson - I Think of Demons\n4:16 The Beatles - Eleanor Rigby\n6:14 AJJ - A Poem\n8:05 AJJ - I Wanna Be Your Dog 2\n10:47 Shellshag - Come Down\n13:10 Roger Miller - Reincarnation\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nCheck out our digital merch table, if you're so inclined: http://shop.ajjtheband.com\n\nThanks to Warm Audio and Cloud Microphones for making this video sound good.",
+        "publishedAt": "2021-05-04T14:00:17Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/s-W_O3ydVFI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/s-W_O3ydVFI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/s-W_O3ydVFI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/s-W_O3ydVFI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/s-W_O3ydVFI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        }
+      },
+      "comments": []
+    },
+    {
+      "contentDetails": {
         "duration": 1192
       },
       "id": "rcBAkZxzQrY",
