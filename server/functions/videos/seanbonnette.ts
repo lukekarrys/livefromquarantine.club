@@ -93,6 +93,16 @@ const artist: Artist = {
       return video
     },
   },
+  commentParsers: {
+    'UgxyBv5bs7jg6X-FV1p4AaABAg': (comment) => {
+      const { textDisplay } = comment.snippet.topLevelComment.snippet
+      comment.snippet.topLevelComment.snippet.textDisplay = textDisplay
+        .replace('1. Oo-de-lally', '1. Oo-de-lally 1:04')
+        .replace('5. 7:19 Heartilation', '5. Heartilation 7:19')
+        .replace(/\d+\.\s/g, '')
+      return comment
+    },
+  },
   sortVideos: (videoA, videoB) => {
     const a = getVideoDate(videoA).toJSON()
     const b = getVideoDate(videoB).toJSON()
@@ -100,6 +110,7 @@ const artist: Artist = {
   },
   omitVideoIds: [
     '4tOQRChKdgQ', // October 19 duplicate with bad audio
+    'WmpOoCoMvIo', // May 10 extra video
   ],
   omitCommentIds: [
     'UgzHFsG1E5peX5zKYCJ4AaABAg', // June 22. No setlist but this comment has some timestamps
