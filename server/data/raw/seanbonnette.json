@@ -6,6 +6,45 @@
   "videos": [
     {
       "contentDetails": {
+        "duration": 811
+      },
+      "id": "284LOkxDA7o",
+      "snippet": {
+        "title": "Live From Quarantine - May 10, 2021",
+        "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday & Thursday at 7:30 PM AZ time, and sometimes on Wednesday afternoons, on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n0:13 Blaze Foley - Clay Pigeons\n4:26 AJJ - Body Terror Song\n6:47 AJJ - American Body Rentals\n8:06 AJJ - I Wanna Rock Out In My Dreams\n11:35 AJJ - When I'm a Dead Boy\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nCheck out our digital merch table, if you're so inclined: http://shop.ajjtheband.com",
+        "publishedAt": "2021-05-11T14:00:01Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/284LOkxDA7o/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/284LOkxDA7o/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/284LOkxDA7o/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/284LOkxDA7o/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/284LOkxDA7o/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        }
+      },
+      "comments": []
+    },
+    {
+      "contentDetails": {
         "duration": 3148
       },
       "id": "p0-jHyKwhCs",
@@ -1316,6 +1355,45 @@
           }
         }
       ]
+    },
+    {
+      "contentDetails": {
+        "duration": 968
+      },
+      "id": "WmpOoCoMvIo",
+      "snippet": {
+        "title": "Live from Quarantine, May 10 2021",
+        "description": "",
+        "publishedAt": "2021-01-27T20:58:05Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/WmpOoCoMvIo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/WmpOoCoMvIo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/WmpOoCoMvIo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/WmpOoCoMvIo/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/WmpOoCoMvIo/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        }
+      },
+      "comments": []
     },
     {
       "contentDetails": {

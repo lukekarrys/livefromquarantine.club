@@ -1,22 +1,33 @@
+May 10, 2021
+ID: 284LOkxDA7o
+0 | hello
+13 | Blaze Foley - Clay Pigeons
+266 | AJJ - Body Terror Song
+407 | AJJ - American Body Rentals
+486 | AJJ - I Wanna Rock Out In My Dreams
+695 | AJJ - When I'm a Dead Boy
+----------
 May 8, 2021
 ID: p0-jHyKwhCs
 0 | Intro
-123 | 2. Reincarnation
-253 | 3. Brave as a Noun
-326 | 4. A Poem
-587 | 6. Graham Parsons- Return of the Grievous Angel
-862 | 7. Juggalo Juggling
-1137 | 8. My Brain is A Human Body
-1350 | 9. Maggie
-1500 | 10. I Wanna Be Your Dog 2
-1665 | 11. Silver Jews- Candy Jail
-1880 | 12. Linda Ronstadt
-2074 | 13. Raffi- Robin in the Rain
-2260 | 14. Junkie Church
-2417 | 15. Re-Reincarnation
-2554 | 16. Fucc The Devil
-2700 | 17. Mega Guillotine
-2853 | 18. More Juggalo Juggling straight from the dark carnival
+64 | Oo-de-lally
+123 | Reincarnation
+253 | Brave as a Noun
+326 | A Poem
+439 | Heartilation
+587 | Graham Parsons- Return of the Grievous Angel
+862 | Juggalo Juggling
+1137 | My Brain is A Human Body
+1350 | Maggie
+1500 | I Wanna Be Your Dog 2
+1665 | Silver Jews- Candy Jail
+1880 | Linda Ronstadt
+2074 | Raffi- Robin in the Rain
+2260 | Junkie Church
+2417 | Re-Reincarnation
+2554 | Fucc The Devil
+2700 | Mega Guillotine
+2853 | More Juggalo Juggling straight from the dark carnival
 ----------
 May 6, 2021
 ID: q-mnlvqfjQ0
