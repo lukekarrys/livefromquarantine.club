@@ -6,6 +6,35 @@
   "videos": [
     {
       "contentDetails": {
+        "duration": 1243
+      },
+      "id": "F-EdeQQSGvg",
+      "snippet": {
+        "title": "Live From Quarantine - May 27",
+        "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday & Thursday at 7:30 PM AZ time, and sometimes on Wednesday afternoons, on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n1:53 AJJ - A Poem\n3:46 Foot Ox - New Boyfriend\n4:46 Foot Ox - Lucky Strike\n6:16 Lana Del Rey - Video Games\n10:36 AJJ - Coffin Dance\n13:46 AJJ - Small Red Boy\n19:47 AJJ - American Body Rentals\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nCheck out our digital merch table, if you're so inclined: http://shop.ajjtheband.com",
+        "publishedAt": "2021-05-28T14:00:04Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/F-EdeQQSGvg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/F-EdeQQSGvg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/F-EdeQQSGvg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        }
+      },
+      "comments": []
+    },
+    {
+      "contentDetails": {
         "duration": 871
       },
       "id": "7fT6Nn5Vt8E",
