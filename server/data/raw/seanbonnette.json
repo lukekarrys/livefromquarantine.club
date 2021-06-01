@@ -6,6 +6,35 @@
   "videos": [
     {
       "contentDetails": {
+        "duration": 805
+      },
+      "id": "DsJZqSM8kCw",
+      "snippet": {
+        "title": "Live From Quarantine - May 31",
+        "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday & Thursday at 7:30 PM AZ time, and sometimes on Wednesday afternoons, on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 hello\n0:10 Oo-de-lally\n1:03 Beck - Cyanide Breath Mint\n3:00 AJJ - I'm Gonna Love My Children\n5:00 Jay Reatard - Fading All Away\n6:27 AJJ - Fucc The Devil\n8:17 Silver Jews - Candy Jail\n10:47 AJJ - Little Prince\n13:00 The Beatles - Her Majesty\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nCheck out our digital merch table, if you're so inclined: http://shop.ajjtheband.com",
+        "publishedAt": "2021-06-01T14:00:04Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/DsJZqSM8kCw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/DsJZqSM8kCw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/DsJZqSM8kCw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        }
+      },
+      "comments": []
+    },
+    {
+      "contentDetails": {
         "duration": 1243
       },
       "id": "F-EdeQQSGvg",
