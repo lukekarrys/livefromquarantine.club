@@ -923,18 +923,6 @@
           }
         },
         {
-          "id": "Ugyy97bpcqZIYf1oudp4AaABAg",
-          "snippet": {
-            "videoId": "QHTXnGLb4I0",
-            "topLevelComment": {
-              "snippet": {
-                "textDisplay": "SONGS FROM 1997-2001 SETLIST\n\n0:34 - Champagne From A Paper Cup\n3:28 (4:06 for the restart) - Debate Exposes Doubt\n7:53 - Scientist Studies\n13:28 - Wait\n17:17 - Company Calls Epilogue\n(22:04 - Q&A)\n28:17 - Cleveland\n31:05 - This Is The Dream Of Evan And Chan\n34:50 - Blacking Out The Friction\n39:37 - Line of Best Fit\n44:17 - I Was A Kaleidoscope\n(47:30 - Shout out to Dr. John Halpern)\n49:24 - No Joy In Mudville\n55:20 - The Face That Launched 1,000 Sh*ts\n\n(Not sure if I'm supposed to censor profanity even if it's a song title?)",
-                "publishedAt": "2020-03-24T00:28:24.000Z"
-              }
-            }
-          }
-        },
-        {
           "id": "UgxGw6jHzet9UGwWqyZ4AaABAg",
           "snippet": {
             "videoId": "QHTXnGLb4I0",
@@ -942,6 +930,18 @@
               "snippet": {
                 "textDisplay": "0:32 Champagne from a Paper Cup\n4:09 Debate Exposes Doubt\n7:55 Scientist Studies \n13:28 Wait (cover)\n17:27 Company Calls Epilogue \n28:17 Cleveland \n31:05 The Dream of Evan And Chan\n34:50 Blacking out the Friction \n37:40 Line of Best Fit\n44:17 I was a Kaleidoscope \n49:24 No Joy in Mudville \n55:20 The Face that Launched 1000 Shits (cover)",
                 "publishedAt": "2020-03-24T00:36:10.000Z"
+              }
+            }
+          }
+        },
+        {
+          "id": "Ugyy97bpcqZIYf1oudp4AaABAg",
+          "snippet": {
+            "videoId": "QHTXnGLb4I0",
+            "topLevelComment": {
+              "snippet": {
+                "textDisplay": "SONGS FROM 1997-2001 SETLIST\n\n0:34 - Champagne From A Paper Cup\n3:28 (4:06 for the restart) - Debate Exposes Doubt\n7:53 - Scientist Studies\n13:28 - Wait\n17:17 - Company Calls Epilogue\n(22:04 - Q&A)\n28:17 - Cleveland\n31:05 - This Is The Dream Of Evan And Chan\n34:50 - Blacking Out The Friction\n39:37 - Line of Best Fit\n44:17 - I Was A Kaleidoscope\n(47:30 - Shout out to Dr. John Halpern)\n49:24 - No Joy In Mudville\n55:20 - The Face That Launched 1,000 Sh*ts\n\n(Not sure if I'm supposed to censor profanity even if it's a song title?)",
+                "publishedAt": "2020-03-24T00:28:24.000Z"
               }
             }
           }
