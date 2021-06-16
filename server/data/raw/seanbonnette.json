@@ -6,6 +6,35 @@
   "videos": [
     {
       "contentDetails": {
+        "duration": 848
+      },
+      "id": "VwN5gnI4mZU",
+      "snippet": {
+        "title": "Live From Quarantine - June 14",
+        "description": "Support us on Patreon:\nhttp://www.patreon.com/ajjtheband\n\nSean streams on Monday & Thursday at 7:30 PM AZ time, and sometimes on Wednesday afternoons, on the @AJJtheband instagram. Covers, AJJ songs, Q&A, hanging out. Feel free to leave a comment with a question or a song request. Stay home!\n\nToday's set:\n0:00 tour!!!\n1:17 Why? - These Few Presidents\n4:09 AJJ - If You Have Love In Your Heart\n6:03 Silver Jews - Strange Victory, Strange Defeat\n9:18 AJJ - Brave as a Noun\n11:02 AJJ - My Brain is a Human Body\n\nTips! No pressure!\nVenmo: @bonnseanette\nPaypal: paypal.me/bonnseanette\nCash App: $bonnseanette\n\nCheck out our digital merch table, if you're so inclined: http://shop.ajjtheband.com",
+        "publishedAt": "2021-06-15T17:00:23Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/VwN5gnI4mZU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/VwN5gnI4mZU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/VwN5gnI4mZU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        }
+      },
+      "comments": []
+    },
+    {
+      "contentDetails": {
         "duration": 1288
       },
       "id": "PygvxDwxgrA",
