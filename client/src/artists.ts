@@ -8,8 +8,8 @@ type ArtistWithId = Artist & {
 }
 
 export const artistsById: { [key: string]: Artist | undefined } = {
-  seanbonnette: { name: 'Sean Bonnette', audio: true },
-  bengibbard: { name: 'Ben Gibbard', audio: true },
+  seanbonnette: { name: 'Sean Bonnette' },
+  bengibbard: { name: 'Ben Gibbard' },
   benfolds: { name: 'Ben Folds' },
   tmoe: { name: 'The Tallest Man on Earth' },
   hoodinternet: { name: 'The Hood Internet (Experimental Beta)' },
